@@ -33,9 +33,6 @@ require 'sportdb/linters/csv/reports/part_datafiles_by_level.rb'
 require 'sportdb/linters/csv/reports/part_datafiles_by_season.rb'
 
 
-require 'sportdb/linters/txt/writer.rb'
-
-
 ########################
 #  add a "top-level" convience short-cut  - why? why not?
 CsvMatchParser = SportDb::CsvMatchParser

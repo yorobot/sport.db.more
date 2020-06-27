@@ -1,7 +1,6 @@
-# encoding: utf-8
-
-
+module SportDb
 class TxtMatchWriter
+
 
 DE_WEEKDAY = {
   1 => 'Mo',  ## Montag
@@ -57,9 +56,7 @@ def self.write( path, matches, title:, round:, lang: 'en')
 
   out = File.new( path, 'w:utf-8' )
 
-
-  out << "###################################\n"
-  out << "# #{title}\n"
+  out << "= #{title}\n"
 
 
   last_round = nil
@@ -109,14 +106,24 @@ def self.write( path, matches, title:, round:, lang: 'en')
 
      out << '  '
      out << "%-23s" % match.team1    ## note: use %-s for left-align
-     out << ' - '
+
+     if match.score1 && match.score2
+       out << "  #{match.score1}-#{match.score2}"
+       ## out << " (#{match.score1i}-#{match.score2i})"  if match.score1i && match.score2i
+       out << '  '  ## note: separate by at least two spaces for now
+     else
+       out << '  -  '
+     end
+
      out << ("%-23s" % match.team2).strip    ## remove trailing spaces (w7 strip)
      out << "\n"
 
      last_round = match.round
      last_date  = match.date
   end
+
+  out.close
 end # method self.write
 
-
 end # class TxtMatchWriter
+end # module SportDb
