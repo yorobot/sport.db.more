@@ -36,6 +36,31 @@ IT_WEEKDAY = {
   7 => 'Dom',   ## Domenica
 }
 
+FR_WEEKDAY = {
+  1 => 'Lun',
+  2 => 'Mar ',
+  3 => 'Mer',
+  4 => 'Jeu',
+  5 => 'Ven',
+  6 => 'Sam',
+  7 => 'Dim',
+}
+
+FR_MONTH = {
+  1  => 'Jan',
+  2  => 'Fév',
+  3  => 'Mars',
+  4  => 'Avril',
+  5  => 'Mai',
+  6  => 'Juin',
+  7  => 'Juil',
+  8  => 'Août',
+  9  => 'Sept',
+  10 => 'Oct',
+  11 => 'Nov',
+  12 => 'Déc',
+}
+
 
 EN_WEEKDAY = {
   1 => 'Mon',
@@ -95,6 +120,10 @@ def self.write( path, matches, title:, round:, lang: 'en')
          date_buf << IT_WEEKDAY[date.cwday]
          date_buf << '. '
          date_buf << date.strftime( '%-d.%-m.' )   ## e.g. Lun. 11.8.
+       elsif lang == 'fr'
+         date_buf << FR_WEEKDAY[date.cwday]
+         date_buf << " #{date.day}. "
+         date_buf << FR_MONTH[date.month]
        else   ## assume en
          date_buf << EN_WEEKDAY[date.cwday]
          date_buf << ' '
