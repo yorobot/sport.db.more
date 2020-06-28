@@ -102,9 +102,15 @@ def self.write( path, matches, title:, round:, lang: 'en')
      end
 
 
-     if match.round != last_round || match.date != last_date
+     date = if match.date.is_a?( String )
+               Date.strptime( match.date, '%Y-%m-%d' )
+            else  ## assume it's already a date (object)
+               match.date
+            end
 
-       date = Date.strptime( match.date, '%Y-%m-%d' )
+     date_YYYYMMDD = date.strftime( '%Y-%m-%d' )
+
+     if match.round != last_round || date_YYYYMMDD != last_date
 
        date_buf = ''
 
@@ -133,8 +139,12 @@ def self.write( path, matches, title:, round:, lang: 'en')
        out << "[#{date_buf}]\n"
      end
 
+     ## allow strings and structs for team names
+     team1 = match.team1.is_a?( String ) ? match.team1 : match.team1.name
+     team2 = match.team2.is_a?( String ) ? match.team2 : match.team2.name
+
      out << '  '
-     out << "%-23s" % match.team1    ## note: use %-s for left-align
+     out << "%-23s" % team1    ## note: use %-s for left-align
 
      if match.score1 && match.score2
        out << "  #{match.score1}-#{match.score2}"
@@ -144,11 +154,11 @@ def self.write( path, matches, title:, round:, lang: 'en')
        out << '  -  '
      end
 
-     out << ("%-23s" % match.team2).strip    ## remove trailing spaces (w7 strip)
+     out << ("%-23s" % team2).strip    ## remove trailing spaces (w7 strip)
      out << "\n"
 
      last_round = match.round
-     last_date  = match.date
+     last_date  = date_YYYYMMDD
   end
 
   out.close
