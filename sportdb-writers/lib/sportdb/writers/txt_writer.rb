@@ -73,32 +73,28 @@ EN_WEEKDAY = {
 }
 
 
-def self.write( path, matches, title:, round:, lang: 'en')
+## note: build returns buf - an (in-memory) string buf(fer)
+def self.build( matches, name:, round: nil, lang: 'en')
+  buf = String.new('')
 
-  ## for convenience - make sure parent folders/directories exist
-  FileUtils.mkdir_p( File.dirname( path) )  unless Dir.exists?( File.dirname( path ))
-
-
-  out = File.new( path, 'w:utf-8' )
-
-  out << "= #{title}\n"
-
+  buf << "= #{name}\n"
 
   last_round = nil
   last_date  = nil
 
-
   matches.each do |match|
      if match.round != last_round
-       out << "\n\n"
-       if round.is_a?( Proc )
-         out << round.call( match.round )
+       buf << "\n\n"
+       if round.nil?  ## use as is from match
+         buf << "#{match.round}"
+       elsif round.is_a?( Proc )
+         buf << round.call( match.round )
        else
          ## default "class format
          ##   e.g. Runde 1, Spieltag 1, Matchday 1, Week 1
-         out << "#{round} #{match.round}"
+         buf << "#{round} #{match.round}"
        end
-       out << "\n"
+       buf << "\n"
      end
 
 
@@ -136,32 +132,46 @@ def self.write( path, matches, title:, round:, lang: 'en')
          date_buf << date.strftime( '%b/%-d' )   ## e.g. Mon Aug/11
        end
 
-       out << "[#{date_buf}]\n"
+       buf << "[#{date_buf}]\n"
      end
 
      ## allow strings and structs for team names
      team1 = match.team1.is_a?( String ) ? match.team1 : match.team1.name
      team2 = match.team2.is_a?( String ) ? match.team2 : match.team2.name
 
-     out << '  '
-     out << "%-23s" % team1    ## note: use %-s for left-align
+     buf << '  '
+     buf << "%-23s" % team1    ## note: use %-s for left-align
 
      if match.score1 && match.score2
-       out << "  #{match.score1}-#{match.score2}"
-       ## out << " (#{match.score1i}-#{match.score2i})"  if match.score1i && match.score2i
-       out << '  '  ## note: separate by at least two spaces for now
+       buf << "  #{match.score1}-#{match.score2}"
+       ## buf << " (#{match.score1i}-#{match.score2i})"  if match.score1i && match.score2i
+       buf << '  '  ## note: separate by at least two spaces for now
      else
-       out << '  -  '
+       buf << '  -  '
      end
 
-     out << ("%-23s" % team2).strip    ## remove trailing spaces (w7 strip)
-     out << "\n"
+     buf << ("%-23s" % team2).strip    ## remove trailing spaces (w7 strip)
+     buf << "\n"
 
      last_round = match.round
      last_date  = date_YYYYMMDD
   end
+  buf
+end
 
-  out.close
+
+def self.write( path, matches, name:, round: nil, lang: 'en')
+
+  buf = build( matches, name: name,
+                        round: round,
+                        lang: lang )
+
+  ## for convenience - make sure parent folders/directories exist
+  FileUtils.mkdir_p( File.dirname( path) )  unless Dir.exists?( File.dirname( path ))
+
+  File.open( path, 'w:utf-8' ) do |f|
+    f.write( buf )
+  end
 end # method self.write
 
 end # class TxtMatchWriter
