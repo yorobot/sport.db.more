@@ -24,6 +24,32 @@ ES_WEEKDAY = {
   7 => 'Dom',   ## domingo
 }
 
+
+PT_WEEKDAY = {
+  1 => 'Seg',
+  2 => 'Ter',
+  3 => 'Qua',
+  4 => 'Qui',
+  5 => 'Sex',
+  6 => 'Sáb',
+  7 => 'Dom',
+}
+
+PT_MONTH = {
+   1 => 'Jan',
+   2 => 'Fev',
+   3 => 'Março',
+   4 => 'Abril',
+   5 => 'Maio',
+   6 => 'Junho',
+   7 => 'Julho',
+   8 => 'Agosto',
+   9 => 'Set',
+  10 => 'Out',
+  11 => 'Nov',
+  12 => 'Dez',
+}
+
 ##
 # https://en.wikipedia.org/wiki/Date_and_time_notation_in_Italy
 IT_WEEKDAY = {
@@ -118,6 +144,10 @@ def self.build( matches, name:, round: nil, lang: 'en')
          date_buf << ES_WEEKDAY[date.cwday]
          date_buf << '. '
          date_buf << date.strftime( '%-d.%-m.' )   ## e.g. Lun. 11.8.
+       elsif lang == 'pt'
+         date_buf << PT_WEEKDAY[date.cwday]
+         date_buf << ", #{date.day}/"
+         date_buf << PT_MONTH[date.month]  ## e.g. Sáb, 13/Maio  or Sáb 13 Maio
        elsif lang == 'it'
          date_buf << IT_WEEKDAY[date.cwday]
          date_buf << '. '
