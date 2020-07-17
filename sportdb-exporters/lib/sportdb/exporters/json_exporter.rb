@@ -27,6 +27,7 @@ def self.export( league_key, out_root: )
      pp event.league
      puts "teams.count: #{event.teams.count}"
      puts "rounds.count: #{event.rounds.count}"
+     puts "groups.count: #{event.groups.count}"
      puts "matches.count: #{event.matches.count}"
 
 
@@ -49,6 +50,15 @@ def self.export( league_key, out_root: )
        f.write JSON.pretty_generate( data_clubs )
      end
 
+     # note: make groups export optional for now - why? why not?
+     unless event.groups.empty?
+       data_groups = build_groups( event )
+       ## pp data_groups
+       File.open( "#{out_dir}/#{league_basename}.groups.json", 'w' ) do |f|
+         f.write JSON.pretty_generate( data_groups )
+       end
+     end
+
      data_matches = build_matches( event )
      ## pp data_matches
      File.open( "#{out_dir}/#{league_basename}.json", 'w:utf-8' ) do |f|
@@ -56,59 +66,6 @@ def self.export( league_key, out_root: )
      end
   end
 end
-
-
-def self.export_clubs_intl( league_key, out_root: )
-
-  league = Model::League.find_by_key!( league_key )
-
-  league.events.each do |event|
-     puts "** event:"
-     pp event.name
-     pp event.season
-     pp event.league
-     puts "teams.count: #{event.teams.count}"
-     puts "rounds.count: #{event.rounds.count}"
-     puts "groups.count: #{event.groups.count}"
-
-
-     ## build path e.g.
-     ##  2014-15/at.1.clubs.json
-
-     ##  -- check for remapping (e.g. add .1); if not found use league key as is
-     league_basename = LEAGUE_TO_BASENAME[ event.league.key ] || event.league.key
-
-     season_basename = event.season.name.sub('/', '-')  ## e.g. change 2014/15 to 2014-15
-
-
-     out_dir   = "#{out_root}/#{season_basename}"
-     ## make sure folders exist
-     FileUtils.mkdir_p( out_dir ) unless Dir.exists?( out_dir )
-
-
-     data_clubs  = build_clubs( event )
-     ## pp data_clubs
-     File.open( "#{out_dir}/#{league_basename}.clubs.json", 'w' ) do |f|
-       f.write JSON.pretty_generate( data_clubs )
-     end
-
-     # note: make groups export optional for now - why? why not?
-     unless event.groups.empty?
-      data_groups = build_groups( event )
-      ## pp data_groups
-      File.open( "#{out_dir}/#{league_basename}.groups.json", 'w' ) do |f|
-         f.write JSON.pretty_generate( data_groups )
-       end
-     end
-
-     data_matches = build_matches( event )
-     ## pp data_matches
-     File.open( "#{out_dir}/#{league_basename}.json", 'w' ) do |f|
-       f.write JSON.pretty_generate( data_matches )
-     end
-  end
-end
-
 
 
 ###############
