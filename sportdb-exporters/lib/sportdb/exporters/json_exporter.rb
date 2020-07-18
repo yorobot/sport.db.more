@@ -119,19 +119,23 @@ def self.build_matches( event )
     round.matches.each do |match|
       h = { date:  match.date.strftime( '%Y-%m-%d'),
             team1: match.team1.name,
-            team2: match.team2.name,
-            score1: match.score1,
-            score2: match.score2 }
+            team2: match.team2.name }
+
+      score = {}
+      if match.score1 && match.score2
+        score[:ft] = [match.score1, match.score2]
+      end
 
       if match.score1et && match.score2et
-        h[:score1et] = match.score1et
-        h[:score2et] = match.score2et
+        score[:et] = [match.score1et, match.score2et]
       end
 
       if match.score1p && match.score2p
-        h[:score1p] = match.score1p
-        h[:score2p] = match.score2p
+        score[:p]  = [match.score1p, match.score2p]
       end
+
+      h[ :score ] = score   unless score.empty?  ## note: only add if has some data
+
 
       unless match.goals.empty?
         goals1, goals2 = build_goals( match )
