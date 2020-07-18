@@ -169,18 +169,43 @@ def self.build( matches, name:, round: nil, lang: 'en')
      team1 = match.team1.is_a?( String ) ? match.team1 : match.team1.name
      team2 = match.team2.is_a?( String ) ? match.team2 : match.team2.name
 
-     buf << '  '
-     buf << "%-23s" % team1    ## note: use %-s for left-align
+
+     line = String.new('')
+     line << '  '
+     line << "%-23s" % team1    ## note: use %-s for left-align
 
      if match.score1 && match.score2
-       buf << "  #{match.score1}-#{match.score2}"
-       ## buf << " (#{match.score1i}-#{match.score2i})"  if match.score1i && match.score2i
-       buf << '  '  ## note: separate by at least two spaces for now
+       line << "  #{match.score1}-#{match.score2}"
+       ## line << " (#{match.score1i}-#{match.score2i})"  if match.score1i && match.score2i
+       line << '  '  ## note: separate by at least two spaces for now
      else
-       buf << '  -  '
+       line << '  -  '
      end
 
-     buf << ("%-23s" % team2).strip    ## remove trailing spaces (w7 strip)
+     line << "%-23s" % team2
+
+     if match.status
+      line << '  '
+      case match.status
+      when Status::CANCELLED
+        line << '[cancelled]'
+      when Status::AWARDED
+        line << '[awarded]'
+      when Status::ABANDONED
+        line << '[abandoned]'
+      when Status::REPLAY
+        line << '[replay]'
+      when Status::POSTPONED
+        ## note: add NOTHING for postponed for now
+      else
+        puts "!! WARN - unknown match status >#{match.status}<:"
+        pp match
+        line << "[#{match.status.downcase}]"  ## print "literal" downcased for now
+      end
+     end
+
+     ## add match line
+     buf << line.rstrip   ## remove possible right trailing spaces before adding
      buf << "\n"
 
      last_round = match.round

@@ -117,9 +117,17 @@ def self.build_matches( event )
   event.rounds.each do |round|
     matches = []
     round.matches.each do |match|
-      h = { date:  match.date.strftime( '%Y-%m-%d'),
-            team1: match.team1.name,
-            team2: match.team2.name }
+      h = {}
+
+      ## let stage and/or group go first if present/available
+      h[ :stage ] = match.stage.name    if match.stage
+      h[ :group ] = match.group.name    if match.group
+
+
+      h[ :date  ] = match.date.strftime( '%Y-%m-%d')
+      h[ :team1 ] = match.team1.name
+      h[ :team2 ] = match.team2.name
+
 
       score = {}
       if match.score1 && match.score2
@@ -143,8 +151,25 @@ def self.build_matches( event )
         h[ :goals2 ] = goals2
       end
 
-      h[ :group ] = match.group.name    if match.group
-      h[ :stage ] = match.stage.name    if match.stage
+
+      if match.status
+        case match.status
+        when Status::CANCELLED
+          h[ :status ] = 'cancelled'
+        when Status::AWARDED
+          h[ :status ] = 'awarded'
+        when Status::ABANDONED
+          h[ :status ] = 'abandoned'
+        when Status::REPLAY
+          h[ :status ] = 'replay'
+        when Status::POSTPONED
+          ## note: add NOTHING for postponed for now
+        else
+          puts "!! WARN - unknown match status >#{match.status}<:"
+          pp match
+          h[ :status ] = match.status.downcase  ## print "literal" downcased for now
+        end
+      end
 
       matches << h
     end
