@@ -111,14 +111,19 @@ def self.build( matches, name:, round: nil, lang: 'en')
   matches.each do |match|
      if match.round != last_round
        buf << "\n\n"
-       if round.nil?  ## use as is from match
+       if match.round.is_a?( Integer ) ||
+          match.round =~ /^[0-9]+$/   ## all numbers/digits
+          if round.nil?  ## use as is from match/ no round formatter passed in
+            buf << "#{match.round}"
+          elsif round.is_a?( Proc )
+            buf << round.call( match.round )
+          else
+            ## default "class format
+            ##   e.g. Runde 1, Spieltag 1, Matchday 1, Week 1
+            buf << "#{round} #{match.round}"
+          end
+       else ## use as is from match
          buf << "#{match.round}"
-       elsif round.is_a?( Proc )
-         buf << round.call( match.round )
-       else
-         ## default "class format
-         ##   e.g. Runde 1, Spieltag 1, Matchday 1, Week 1
-         buf << "#{round} #{match.round}"
        end
        buf << "\n"
      end
@@ -130,9 +135,9 @@ def self.build( matches, name:, round: nil, lang: 'en')
                match.date
             end
 
-     date_YYYYMMDD = date.strftime( '%Y-%m-%d' )
+     date_yyyymmdd = date.strftime( '%Y-%m-%d' )
 
-     if match.round != last_round || date_YYYYMMDD != last_date
+     if match.round != last_round || date_yyyymmdd != last_date
 
        date_buf = ''
 
@@ -174,15 +179,10 @@ def self.build( matches, name:, round: nil, lang: 'en')
      line << '  '
      line << "%-23s" % team1    ## note: use %-s for left-align
 
-     if match.score1 && match.score2
-       line << "  #{match.score1}-#{match.score2}"
-       ## line << " (#{match.score1i}-#{match.score2i})"  if match.score1i && match.score2i
-       line << '  '  ## note: separate by at least two spaces for now
-     else
-       line << '  -  '
-     end
+     line << "  #{format_score( match, lang: lang )}  "  ## note: separate by at least two spaces for now
 
      line << "%-23s" % team2
+
 
      if match.status
       line << '  '
@@ -209,7 +209,7 @@ def self.build( matches, name:, round: nil, lang: 'en')
      buf << "\n"
 
      last_round = match.round
-     last_date  = date_YYYYMMDD
+     last_date  = date_yyyymmdd
   end
   buf
 end
@@ -228,6 +228,52 @@ def self.write( path, matches, name:, round: nil, lang: 'en')
     f.write( buf )
   end
 end # method self.write
+
+
+
+####
+# helpers
+
+def self.format_score( match, lang: )
+  buf = String.new('')
+
+  if match.score1 && match.score2
+    if lang == 'de'
+      # 2-2 (1-1) n.V. 5-1 i.E.
+      if match.score1et && match.score2et
+        buf << "#{match.score1et}:#{match.score2et}"
+      end
+      if buf.empty?
+        buf << " #{match.score1}:#{match.score2}"
+      else  ## assume pen. and/or a.e.t.
+        buf << " (#{match.score1}:#{match.score2})"
+      end
+      if match.score1et && match.score2et
+        buf << " n.V."
+      end
+      if match.score1p && match.score2p
+        buf << " #{match.score1p}:#{match.score2p} i.E."
+      end
+    else  # assume english
+      if match.score1p && match.score2p
+        buf << "#{match.score1p}-#{match.score2p} pen."
+      end
+      if match.score1et && match.score2et
+        buf << " #{match.score1et}-#{match.score2et} a.e.t."
+      end
+      if buf.empty?
+        buf << " #{match.score1}-#{match.score2}"
+      else  ## assume pen. and/or a.e.t.
+        buf << " (#{match.score1}-#{match.score2})"
+      end
+    end
+  else # assume empty / unknown score
+    buf << '-'
+  end
+
+  buf
+end
+
 
 end # class TxtMatchWriter
 end # module SportDb
