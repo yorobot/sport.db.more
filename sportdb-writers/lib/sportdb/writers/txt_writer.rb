@@ -99,11 +99,139 @@ EN_WEEKDAY = {
 }
 
 
-## note: build returns buf - an (in-memory) string buf(fer)
-def self.build( matches, name:, round: nil, lang: 'en')
-  buf = String.new('')
 
-  buf << "= #{name}\n"
+DATES =
+{
+  ## english (en) -- e.g. Mon Aug/11
+  'en' => ->(date) { buf = String.new('')
+                     buf << EN_WEEKDAY[date.cwday]
+                     buf << ' '
+                     buf << date.strftime( '%b/%-d' )
+                     buf
+                   },
+  ## portuguese (pt)  -- e.g. Sáb, 13/Maio  or Sáb 13 Maio
+  'pt' => ->(date) { buf = String.new('')
+                     buf << PT_WEEKDAY[date.cwday]
+                     buf << ", #{date.day}/"
+                     buf << PT_MONTH[date.month]
+                     buf
+                   },
+  ## german / deutsch (de) -- e.g. Mo 11.8.
+  'de' => ->(date) { buf = String.new('')
+                     buf << DE_WEEKDAY[date.cwday]
+                     buf << ' '
+                     buf << date.strftime( '%-d.%-m.' )
+                     buf
+                   },
+  ## italian / italiano (it) -- e.g. Lun. 11.8.
+  'it' => ->(date) { buf = String.new('')
+                     buf << IT_WEEKDAY[date.cwday]
+                     buf << '. '
+                     buf << date.strftime( '%-d.%-m.' )
+                     buf
+                   },
+  ## spanish / espanol (es) -- e.g. Lun. 11.8.
+  'es' => ->(date) { buf = String.new('')
+                     buf << ES_WEEKDAY[date.cwday]
+                     buf << '. '
+                     buf << date.strftime( '%-d.%-m.' )
+                     buf
+                   },
+  ## french / francais (fr)
+  'fr' => ->( date ) { buf = String.new('')
+                       buf << FR_WEEKDAY[date.cwday]
+                       buf << " #{date.day}. "
+                       buf << FR_MONTH[date.month]
+                       buf
+                      },
+}
+
+SCORES =
+{
+  'en' => -> (match) { buf = String.new('')
+                         ## note: also allow (minimal) scores only with a.e.t. (and no full time)
+                         if (match.score1   && match.score2) ||
+                            (match.score1et && match.score2et )
+                           if match.score1p && match.score2p
+                             buf << "#{match.score1p}-#{match.score2p} pen."
+                           end
+                           if match.score1et && match.score2et
+                             buf << " #{match.score1et}-#{match.score2et} a.e.t."
+                           end
+                          if match.score1 && match.score2
+                            if buf.empty?
+                              buf << " #{match.score1}-#{match.score2}"
+                            else  ## assume pen. and/or a.e.t.
+                              buf << " (#{match.score1}-#{match.score2})"
+                            end
+                          end
+                       else # assume empty / unknown score
+                        buf << '-'
+                       end
+                       buf
+                      },
+  'de' => ->( match ) { buf = String.new('')
+                        ## note: also allow (minimal) scores only with a.e.t. (and no full time)
+                        if (match.score1   && match.score2) ||
+                           (match.score1et && match.score2et )
+                         # 2-2 (1-1) n.V. 5-1 i.E.
+                         if match.score1et && match.score2et
+                           buf << "#{match.score1et}:#{match.score2et}"
+                         end
+                         if match.score1 && match.score2
+                           if buf.empty?
+                             buf << " #{match.score1}:#{match.score2}"
+                           else  ## assume pen. and/or a.e.t.
+                             buf << " (#{match.score1}:#{match.score2})"
+                           end
+                         end
+                         if match.score1et && match.score2et
+                           buf << " n.V."
+                         end
+                         if match.score1p && match.score2p
+                           buf << " #{match.score1p}:#{match.score2p} i.E."
+                         end
+                        else # assume empty / unknown score
+                          buf << '-'
+                        end
+                        buf
+                      },
+}
+
+
+LANGS =
+{
+  'en'     => { round: 'Matchday',                           date: DATES['en'], score: SCORES['en'] },
+  'en_AU'  => { round: 'Round',                              date: DATES['en'], score: SCORES['en'] },
+  'pt'     => { round: 'Jornada',                            date: DATES['pt'], score: SCORES['en'] },
+  'pt_BR'  => { round: 'Rodada',                             date: DATES['pt'], score: SCORES['en'] },
+  'it'     => { round: ->(round) { "%s^ Giornata" % round }, date: DATES['it'], score: SCORES['en'] },
+  'fr'     => { round: 'Journée',                            date: DATES['fr'], score: SCORES['en'] },
+  'es'     => { round: 'Jornada',                            date: DATES['es'], score: SCORES['en'] },
+  'de'     => { round: 'Spieltag',                           date: DATES['de'], score: SCORES['de'] },
+  'de_AT'  => { round: ->(round) { "%s. Runde" % round },    date: DATES['de'], score: SCORES['de'] },
+}
+
+## add 1:1 (more) convenience aliases
+LANGS[ 'de_DE' ] = LANGS[ 'de']
+LANGS[ 'de_CH' ] = LANGS[ 'de']
+LANGS[ 'pt_PT' ] = LANGS[ 'pt']
+LANGS[ 'es_AR' ] = LANGS[ 'es']
+
+
+
+
+## note: build returns buf - an (in-memory) string buf(fer)
+def self.build( matches, lang: 'en' )
+
+  defaults = LANGS[ lang ] || LANGS[ 'en' ]   ## note: fallback for now to english if no defaults defined for lang
+
+  round        = defaults[ :round ]
+  format_date  = defaults[ :date ]
+  format_score = defaults[ :score ]
+
+
+  buf = String.new('')
 
   last_round = nil
   last_date  = nil
@@ -113,9 +241,7 @@ def self.build( matches, name:, round: nil, lang: 'en')
        buf << "\n\n"
        if match.round.is_a?( Integer ) ||
           match.round =~ /^[0-9]+$/   ## all numbers/digits
-          if round.nil?  ## use as is from match/ no round formatter passed in
-            buf << "#{match.round}"
-          elsif round.is_a?( Proc )
+          if round.is_a?( Proc )
             buf << round.call( match.round )
           else
             ## default "class format
@@ -138,36 +264,7 @@ def self.build( matches, name:, round: nil, lang: 'en')
      date_yyyymmdd = date.strftime( '%Y-%m-%d' )
 
      if match.round != last_round || date_yyyymmdd != last_date
-
-       date_buf = ''
-
-       if lang == 'de'
-         date_buf << DE_WEEKDAY[date.cwday]
-         date_buf << ' '
-         date_buf << date.strftime( '%-d.%-m.' )   ## e.g. Mo 11.8.
-       elsif lang == 'es'
-         date_buf << ES_WEEKDAY[date.cwday]
-         date_buf << '. '
-         date_buf << date.strftime( '%-d.%-m.' )   ## e.g. Lun. 11.8.
-       elsif lang == 'pt'
-         date_buf << PT_WEEKDAY[date.cwday]
-         date_buf << ", #{date.day}/"
-         date_buf << PT_MONTH[date.month]  ## e.g. Sáb, 13/Maio  or Sáb 13 Maio
-       elsif lang == 'it'
-         date_buf << IT_WEEKDAY[date.cwday]
-         date_buf << '. '
-         date_buf << date.strftime( '%-d.%-m.' )   ## e.g. Lun. 11.8.
-       elsif lang == 'fr'
-         date_buf << FR_WEEKDAY[date.cwday]
-         date_buf << " #{date.day}. "
-         date_buf << FR_MONTH[date.month]
-       else   ## assume en
-         date_buf << EN_WEEKDAY[date.cwday]
-         date_buf << ' '
-         date_buf << date.strftime( '%b/%-d' )   ## e.g. Mon Aug/11
-       end
-
-       buf << "[#{date_buf}]\n"
+       buf << "[#{format_date.call( date )}]\n"
      end
 
      ## allow strings and structs for team names
@@ -179,7 +276,7 @@ def self.build( matches, name:, round: nil, lang: 'en')
      line << '  '
      line << "%-23s" % team1    ## note: use %-s for left-align
 
-     line << "  #{format_score( match, lang: lang )}  "  ## note: separate by at least two spaces for now
+     line << "  #{format_score.call( match )}  "  ## note: separate by at least two spaces for now
 
      line << "%-23s" % team2
 
@@ -215,70 +312,18 @@ def self.build( matches, name:, round: nil, lang: 'en')
 end
 
 
-def self.write( path, matches, name:, round: nil, lang: 'en')
+def self.write( path, matches, name:, lang: 'en')
 
-  buf = build( matches, name: name,
-                        round: round,
-                        lang: lang )
+  buf = build( matches, lang: lang )
 
   ## for convenience - make sure parent folders/directories exist
   FileUtils.mkdir_p( File.dirname( path) )  unless Dir.exists?( File.dirname( path ))
 
   File.open( path, 'w:utf-8' ) do |f|
+    f.write( "= #{name}\n" )
     f.write( buf )
   end
 end # method self.write
-
-
-
-####
-# helpers
-
-def self.format_score( match, lang: )
-  buf = String.new('')
-
-  ## note: also allow (minimal) scores only with a.e.t. (and no full time)
-  if (match.score1   && match.score2) ||
-     (match.score1et && match.score2et )
-    if lang == 'de'
-      # 2-2 (1-1) n.V. 5-1 i.E.
-      if match.score1et && match.score2et
-        buf << "#{match.score1et}:#{match.score2et}"
-      end
-      if match.score1 && match.score2
-        if buf.empty?
-          buf << " #{match.score1}:#{match.score2}"
-        else  ## assume pen. and/or a.e.t.
-          buf << " (#{match.score1}:#{match.score2})"
-        end
-      end
-      if match.score1et && match.score2et
-        buf << " n.V."
-      end
-      if match.score1p && match.score2p
-        buf << " #{match.score1p}:#{match.score2p} i.E."
-      end
-    else  # assume english
-      if match.score1p && match.score2p
-        buf << "#{match.score1p}-#{match.score2p} pen."
-      end
-      if match.score1et && match.score2et
-        buf << " #{match.score1et}-#{match.score2et} a.e.t."
-      end
-      if match.score1 && match.score2
-        if buf.empty?
-          buf << " #{match.score1}-#{match.score2}"
-        else  ## assume pen. and/or a.e.t.
-          buf << " (#{match.score1}-#{match.score2})"
-        end
-      end
-    end
-  else # assume empty / unknown score
-    buf << '-'
-  end
-
-  buf
-end
 
 
 end # class TxtMatchWriter
