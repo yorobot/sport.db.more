@@ -237,16 +237,20 @@ end # method self.write
 def self.format_score( match, lang: )
   buf = String.new('')
 
-  if match.score1 && match.score2
+  ## note: also allow (minimal) scores only with a.e.t. (and no full time)
+  if (match.score1   && match.score2) ||
+     (match.score1et && match.score2et )
     if lang == 'de'
       # 2-2 (1-1) n.V. 5-1 i.E.
       if match.score1et && match.score2et
         buf << "#{match.score1et}:#{match.score2et}"
       end
-      if buf.empty?
-        buf << " #{match.score1}:#{match.score2}"
-      else  ## assume pen. and/or a.e.t.
-        buf << " (#{match.score1}:#{match.score2})"
+      if match.score1 && match.score2
+        if buf.empty?
+          buf << " #{match.score1}:#{match.score2}"
+        else  ## assume pen. and/or a.e.t.
+          buf << " (#{match.score1}:#{match.score2})"
+        end
       end
       if match.score1et && match.score2et
         buf << " n.V."
@@ -261,10 +265,12 @@ def self.format_score( match, lang: )
       if match.score1et && match.score2et
         buf << " #{match.score1et}-#{match.score2et} a.e.t."
       end
-      if buf.empty?
-        buf << " #{match.score1}-#{match.score2}"
-      else  ## assume pen. and/or a.e.t.
-        buf << " (#{match.score1}-#{match.score2})"
+      if match.score1 && match.score2
+        if buf.empty?
+          buf << " #{match.score1}-#{match.score2}"
+        else  ## assume pen. and/or a.e.t.
+          buf << " (#{match.score1}-#{match.score2})"
+        end
       end
     end
   else # assume empty / unknown score
