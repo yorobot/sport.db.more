@@ -9,13 +9,27 @@ module SportDb
      TEAMS          = Import.catalog.teams
 
 
+    ###
+    ## todo/check/fix:  move to LeagueOutlineReader for (re)use - why? why not?
+    ##                    use sec[:lang] or something?
+    LANGS = {    ## map country keys to lang codes
+    'de' => 'de', ## de - Deutsch (German)
+    'at' => 'de',
+    'ch' => 'de',
+    'fr' => 'fr', ## fr - French
+    'it' => 'it', ## it - Italian
+    'es' => 'es', ## es - Español (Spanish)
+    'mx' => 'es',
+    'ar' => 'es',
+    'pt' => 'pt', ## pt -  Português (Portuguese)
+    'br' => 'pt',
+  }
+
     def self.lint( path,
-                     lang:,
                      mods: nil,
                      exclude: nil,
                     include: nil )
-       new( path ).lint( lang: lang,
-                         mods: mods,
+       new( path ).lint( mods: mods,
                          exclude: exclude,
                          include: include )
     end
@@ -26,7 +40,6 @@ module SportDb
     end
 
     def lint(
-      lang:,
       mods: nil,
       exclude: nil,
       include: nil )
@@ -39,8 +52,6 @@ module SportDb
 
     @pack.include = include
     @pack.exclude = exclude
-
-    Import.config.lang = lang
 
 
     buf     = String.new('')    ## fix: use Buffer.new !!!! check string lang utils?
@@ -76,6 +87,14 @@ module SportDb
           season = sec[:season]
           stage  = sec[:stage]
 
+
+          ## hack for now: switch lang
+          ## todo/fix: set lang for now depending on league country!!!
+          if league.intl?   ## todo/fix: add intl? to ActiveRecord league!!!
+            Import.config.lang = 'en'
+          else  ## assume national/domestic
+            Import.config.lang = LANGS[ league.country.key ] || 'en'
+          end
 
           start  = if season.year?
                      Date.new( season.start_year, 1, 1 )
@@ -203,7 +222,7 @@ module SportDb
                     if mods && mods[ name ]
                       ## double check for too many machtes warning
                       m = CLUBS.match( name )
-                      if m && m.size > 1
+                      if m.size > 1
                         line = "WARN: too many name matches (#{m.size}) found for >#{name}<"
                         ## todo/fix: add / log club matches here too!!!
                         buf << "!! #{line}\n"
