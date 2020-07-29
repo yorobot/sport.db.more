@@ -222,7 +222,10 @@ LANGS[ 'es_AR' ] = LANGS[ 'es']
 
 
 ## note: build returns buf - an (in-memory) string buf(fer)
-def self.build( matches, lang: 'en' )
+def self.build( matches, lang: 'en', rounds: true )
+  ## note: make sure rounds is a bool, that is, true or false  (do NOT pass in strings etc.)
+  raise ArgumentError, "rounds flag - bool expected; got: #{rounds.inspect}"    unless rounds.is_a?( TrueClass ) || rounds.is_a?( FalseClass )
+
 
   defaults = LANGS[ lang ] || LANGS[ 'en' ]   ## note: fallback for now to english if no defaults defined for lang
 
@@ -236,22 +239,27 @@ def self.build( matches, lang: 'en' )
   last_round = nil
   last_date  = nil
 
+
   matches.each do |match|
-     if match.round != last_round
-       buf << "\n\n"
-       if match.round.is_a?( Integer ) ||
-          match.round =~ /^[0-9]+$/   ## all numbers/digits
-          if round.is_a?( Proc )
-            buf << round.call( match.round )
-          else
-            ## default "class format
-            ##   e.g. Runde 1, Spieltag 1, Matchday 1, Week 1
-            buf << "#{round} #{match.round}"
-          end
-       else ## use as is from match
-         buf << "#{match.round}"
+
+     ## note: make rounds optional (set rounds flag to false to turn off)
+     if rounds
+       if match.round != last_round
+         buf << "\n\n"
+         if match.round.is_a?( Integer ) ||
+           match.round =~ /^[0-9]+$/   ## all numbers/digits
+           if round.is_a?( Proc )
+             buf << round.call( match.round )
+           else
+             ## default "class format
+             ##   e.g. Runde 1, Spieltag 1, Matchday 1, Week 1
+             buf << "#{round} #{match.round}"
+           end
+        else ## use as is from match
+          buf << "#{match.round}"
+        end
+        buf << "\n"
        end
-       buf << "\n"
      end
 
 
@@ -263,9 +271,17 @@ def self.build( matches, lang: 'en' )
 
      date_yyyymmdd = date.strftime( '%Y-%m-%d' )
 
-     if match.round != last_round || date_yyyymmdd != last_date
-       buf << "[#{format_date.call( date )}]\n"
-     end
+     if rounds
+       if match.round != last_round || date_yyyymmdd != last_date
+          buf << "[#{format_date.call( date )}]\n"
+       end
+     else
+       if date_yyyymmdd != last_date
+          buf << "\n"    ## note: add an extra leading blank line (if no round headings printed)
+          buf << "[#{format_date.call( date )}]\n"
+       end
+    end
+
 
      ## allow strings and structs for team names
      team1 = match.team1.is_a?( String ) ? match.team1 : match.team1.name
@@ -312,9 +328,9 @@ def self.build( matches, lang: 'en' )
 end
 
 
-def self.write( path, matches, name:, lang: 'en')
+def self.write( path, matches, name:, lang: 'en', rounds: true)
 
-  buf = build( matches, lang: lang )
+  buf = build( matches, lang: lang, rounds: rounds )
 
   ## for convenience - make sure parent folders/directories exist
   FileUtils.mkdir_p( File.dirname( path) )  unless Dir.exists?( File.dirname( path ))
