@@ -207,10 +207,23 @@ LANGS =
   'pt_BR'  => { round: 'Rodada',                             date: DATES['pt'], score: SCORES['en'] },
   'it'     => { round: ->(round) { "%s^ Giornata" % round }, date: DATES['it'], score: SCORES['en'] },
   'fr'     => { round: 'Journée',                            date: DATES['fr'], score: SCORES['en'] },
-  'es'     => { round: 'Jornada',                            date: DATES['es'], score: SCORES['en'] },
+  'es'     => { round: 'Jornada',
+                date: DATES['es'],
+                score: SCORES['en'],
+                ## add simple en-to-es translation for now
+                translations: {
+                  'Quarterfinals' => 'Cuartos de Final',
+                  'Semifinals'    => 'Semifinales',
+                  'Finals'        => 'Final',
+                },
+               },
   'de'     => { round: 'Spieltag',                           date: DATES['de'], score: SCORES['de'] },
   'de_AT'  => { round: ->(round) { "%s. Runde" % round },    date: DATES['de'], score: SCORES['de'] },
 }
+
+
+
+
 
 ## add 1:1 (more) convenience aliases
 LANGS[ 'de_DE' ] = LANGS[ 'de']
@@ -229,9 +242,10 @@ def self.build( matches, lang: 'en', rounds: true )
 
   defaults = LANGS[ lang ] || LANGS[ 'en' ]   ## note: fallback for now to english if no defaults defined for lang
 
-  round        = defaults[ :round ]
-  format_date  = defaults[ :date ]
-  format_score = defaults[ :score ]
+  round              = defaults[ :round ]
+  format_date        = defaults[ :date ]
+  format_score       = defaults[ :score ]
+  round_translations = defaults[ :translations ]
 
 
   buf = String.new('')
@@ -256,7 +270,12 @@ def self.build( matches, lang: 'en', rounds: true )
              buf << "#{round} #{match.round}"
            end
         else ## use as is from match
-          buf << "#{match.round}"
+          ## note: for now assume english names
+          if round_translations
+            buf << "#{round_translations[match.round] || match.round}"
+          else
+            buf << "#{match.round}"
+          end
         end
         buf << "\n"
        end
