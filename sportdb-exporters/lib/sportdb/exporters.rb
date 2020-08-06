@@ -1,4 +1,4 @@
-require 'sportdb/config'
+require 'sportdb/catalogs'
 require 'sportdb/models'
 
 

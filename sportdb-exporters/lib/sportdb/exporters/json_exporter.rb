@@ -18,7 +18,13 @@ LEAGUE_TO_BASENAME = {
 def self.export( league_key, out_root: )
 
   puts "find league >#{league_key}<"
-  league = Model::League.find_by!( key: league_key )
+  league = Model::League.find_by( key: league_key )
+
+  if league.nil?
+    puts "!! WARN: no league found for >#{league_key}<; skipping export json"
+    return
+  end
+
 
   league.events.each do |event|
      puts "** event:"
@@ -44,10 +50,22 @@ def self.export( league_key, out_root: )
      ## make sure folders exist
      FileUtils.mkdir_p( out_dir ) unless Dir.exists?( out_dir )
 
-     data_clubs = build_clubs( event )
-     ## pp data_clubs
-     File.open( "#{out_dir}/#{league_basename}.clubs.json", 'w:utf-8' ) do |f|
-       f.write JSON.pretty_generate( data_clubs )
+     ### note:
+     ##  skip teams for now if no teams on "top-level"
+     ##  - what to do? use all unique teams from matches? yes, yes!!
+     ##  - maybe add stages array to team - why? why not?
+     ##  -  or use teams by stage?
+
+     ## if empty - try regular season stage
+     ##                or apertura stage?
+
+
+     unless event.teams.empty?
+       data_clubs = build_clubs( event )
+       ## pp data_clubs
+       File.open( "#{out_dir}/#{league_basename}.clubs.json", 'w:utf-8' ) do |f|
+         f.write JSON.pretty_generate( data_clubs )
+       end
      end
 
      # note: make groups export optional for now - why? why not?
@@ -113,14 +131,17 @@ end
 
 
 def self.build_matches( event )
-  rounds = []
-  event.rounds.each do |round|
-    matches = []
-    round.matches.each do |match|
+  ## note: no longer list by rounds
+  ##  now list by dates and add round as a "regular" field
+  ##    note: make round optional too!!!
+
+  matches = []
+  event.matches.order( 'date ASC' ).each do |match|
       h = {}
 
       ## let stage and/or group go first if present/available
       h[ :stage ] = match.stage.name    if match.stage
+      h[ :round ] = match.round.name    if match.round
       h[ :group ] = match.group.name    if match.group
 
 
@@ -155,13 +176,13 @@ def self.build_matches( event )
       if match.status
         case match.status
         when Status::CANCELLED
-          h[ :status ] = 'cancelled'
+          h[ :status ] = 'CANCELLED'
         when Status::AWARDED
-          h[ :status ] = 'awarded'
+          h[ :status ] = 'AWARDED'
         when Status::ABANDONED
-          h[ :status ] = 'abandoned'
+          h[ :status ] = 'ABANDONED'
         when Status::REPLAY
-          h[ :status ] = 'replay'
+          h[ :status ] = 'REPLAY'
         when Status::POSTPONED
           ## note: add NOTHING for postponed for now
         else
@@ -172,19 +193,16 @@ def self.build_matches( event )
       end
 
       matches << h
-    end
-
-    rounds << { name:    round.name,
-                matches: matches }
   end
 
   data = {
-    name:   event.name,
-    rounds: rounds
+    name:    event.name,
+    matches: matches
   }
 
   data
 end
+
 
 
 def self.build_goals( match )
