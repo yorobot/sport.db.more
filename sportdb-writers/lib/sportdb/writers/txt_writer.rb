@@ -161,8 +161,20 @@ SCORES =
                           if match.score1 && match.score2
                             if buf.empty?
                               buf << " #{match.score1}-#{match.score2}"
+                              ## note:
+                              ##   avoid 0-0 (0-0)
+                              ##  only print if score1 & score2 NOT 0-0
+                              if (match.score1i && match.score2i) &&
+                                  [match.score1,match.score2] != [0,0]
+                                buf << " (#{match.score1i}-#{match.score2i})"
+                              end
                             else  ## assume pen. and/or a.e.t.
-                              buf << " (#{match.score1}-#{match.score2})"
+                              buf << " (#{match.score1}-#{match.score2}"
+                              if (match.score1i && match.score2i) &&
+                                  [match.score1,match.score2] != [0,0]
+                                buf << ", #{match.score1i}-#{match.score2i}"
+                              end
+                              buf << ")"
                             end
                           end
                        else # assume empty / unknown score
@@ -181,8 +193,20 @@ SCORES =
                          if match.score1 && match.score2
                            if buf.empty?
                              buf << " #{match.score1}:#{match.score2}"
-                           else  ## assume pen. and/or a.e.t.
-                             buf << " (#{match.score1}:#{match.score2})"
+                              ## note:
+                              ##   avoid 0-0 (0-0)
+                              ##  only print if score1 & score2 NOT 0-0
+                              if (match.score1i && match.score2i) &&
+                                 [match.score1,match.score2] != [0,0]
+                               buf << " (#{match.score1i}:#{match.score2i})"
+                              end
+                         else  ## assume pen. and/or a.e.t.
+                             buf << " (#{match.score1}:#{match.score2}"
+                             if (match.score1i && match.score2i) &&
+                                [match.score1,match.score2] != [0,0]
+                               buf << ", #{match.score1i}:#{match.score2i}"
+                             end
+                             buf << ")"
                            end
                          end
                          if match.score1et && match.score2et
@@ -252,6 +276,7 @@ def self.build( matches, lang: 'en', rounds: true )
 
   last_round = nil
   last_date  = nil
+  last_time  = nil
 
 
   matches.each do |match|
@@ -288,16 +313,30 @@ def self.build( matches, lang: 'en', rounds: true )
                match.date
             end
 
+     time = if match.time.is_a?( String )
+              Time.strptime( match.time, '%H:%M')
+            else ## assume it's already a time (object) or nil
+              match.time
+            end
+
+
      date_yyyymmdd = date.strftime( '%Y-%m-%d' )
+
+     ## note: time is OPTIONAL for now
+     ## note: use 17.00 and NOT 17:00 for now
+     time_hhmm     = time ? time.strftime( '%H.%M' ) : nil
+
 
      if rounds
        if match.round != last_round || date_yyyymmdd != last_date
           buf << "[#{format_date.call( date )}]\n"
+          last_time = nil  ## note: reset time for new date
        end
      else
        if date_yyyymmdd != last_date
           buf << "\n"    ## note: add an extra leading blank line (if no round headings printed)
           buf << "[#{format_date.call( date )}]\n"
+          last_time = nil
        end
     end
 
@@ -309,6 +348,19 @@ def self.build( matches, lang: 'en', rounds: true )
 
      line = String.new('')
      line << '  '
+
+     if time
+        if last_time.nil? || last_time != time_hhmm
+          line << "%5s" % time_hhmm
+        else
+          line << '     '
+        end
+        line << '  '
+     else
+      ## do nothing for now
+     end
+
+
      line << "%-23s" % team1    ## note: use %-s for left-align
 
      line << "  #{format_score.call( match )}  "  ## note: separate by at least two spaces for now
@@ -340,8 +392,17 @@ def self.build( matches, lang: 'en', rounds: true )
      buf << line.rstrip   ## remove possible right trailing spaces before adding
      buf << "\n"
 
+     if match.goals
+       buf << '    '               # 4 space indent
+       buf << '       '  if time   # 7 (5+2) space indent (for hour e.g. 17.30)
+       buf << "[#{build_goals(match.goals, lang: lang )}]"
+       buf << "\n"
+     end
+
+
      last_round = match.round
      last_date  = date_yyyymmdd
+     last_time  = time_hhmm
   end
   buf
 end
@@ -359,6 +420,56 @@ def self.write( path, matches, name:, lang: 'en', rounds: true)
     f.write( buf )
   end
 end # method self.write
+
+
+def self.build_goals( goals, lang: )
+  ## todo/fix: for now assumes always minutes (without offset) - add offset support
+
+  ## note: "fold" multiple goals by players
+  team1_goals = {}
+  team2_goals = {}
+  goals.each do |goal|
+    team_goals = goal.team == 1 ? team1_goals : team2_goals
+    player_goals = team_goals[ goal.player ] ||= []
+    player_goals << goal
+  end
+
+  buf = String.new('')
+  if team1_goals.size > 0
+    buf << build_goals_for_team( team1_goals, lang: lang )
+  end
+
+  ## note: only add a separator (;) if BOTH teams have goal scores
+  if team1_goals.size > 0 && team2_goals.size > 0
+    buf << '; '
+  end
+
+  if team2_goals.size > 0
+    buf << build_goals_for_team( team2_goals, lang: lang )
+  end
+  buf
+end
+
+
+def self.build_goals_for_team( team_goals, lang: )
+  buf = String.new('')
+  team_goals.each_with_index do |(player_name, goals),i|
+    buf << ' ' if i > 0
+    buf << "#{player_name} "
+    buf << goals.map do |goal|
+                        str = "#{goal.minute}'"
+                        if ['de', 'de_AT', 'de_DE', 'de_CH'].include?( lang )
+                          str << " (Eigentor)"  if goal.owngoal?
+                          str << " (Elf.)"      if goal.penalty?
+                        else  ## fallback to english (by default)
+                          str << " (o.g.)"      if goal.owngoal?
+                          str << " (pen.)"      if goal.penalty?
+                        end
+                        str
+                     end.join( ', ' )
+  end
+  buf
+end
 
 
 end # class TxtMatchWriter
