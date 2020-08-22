@@ -146,79 +146,20 @@ DATES =
                       },
 }
 
+
 SCORES =
 {
-  'en' => -> (match) { buf = String.new('')
-                         ## note: also allow (minimal) scores only with a.e.t. (and no full time)
-                         if (match.score1   && match.score2) ||
-                            (match.score1et && match.score2et )
-                           if match.score1p && match.score2p
-                             buf << "#{match.score1p}-#{match.score2p} pen."
-                           end
-                           if match.score1et && match.score2et
-                             buf << " #{match.score1et}-#{match.score2et} a.e.t."
-                           end
-                          if match.score1 && match.score2
-                            if buf.empty?
-                              buf << " #{match.score1}-#{match.score2}"
-                              ## note:
-                              ##   avoid 0-0 (0-0)
-                              ##  only print if score1 & score2 NOT 0-0
-                              if (match.score1i && match.score2i) &&
-                                  [match.score1,match.score2] != [0,0]
-                                buf << " (#{match.score1i}-#{match.score2i})"
-                              end
-                            else  ## assume pen. and/or a.e.t.
-                              buf << " (#{match.score1}-#{match.score2}"
-                              if (match.score1i && match.score2i) &&
-                                  [match.score1,match.score2] != [0,0]
-                                buf << ", #{match.score1i}-#{match.score2i}"
-                              end
-                              buf << ")"
-                            end
-                          end
-                       else # assume empty / unknown score
-                        buf << '-'
-                       end
-                       buf
-                      },
-  'de' => ->( match ) { buf = String.new('')
-                        ## note: also allow (minimal) scores only with a.e.t. (and no full time)
-                        if (match.score1   && match.score2) ||
-                           (match.score1et && match.score2et )
-                         # 2-2 (1-1) n.V. 5-1 i.E.
-                         if match.score1et && match.score2et
-                           buf << "#{match.score1et}:#{match.score2et}"
-                         end
-                         if match.score1 && match.score2
-                           if buf.empty?
-                             buf << " #{match.score1}:#{match.score2}"
-                              ## note:
-                              ##   avoid 0-0 (0-0)
-                              ##  only print if score1 & score2 NOT 0-0
-                              if (match.score1i && match.score2i) &&
-                                 [match.score1,match.score2] != [0,0]
-                               buf << " (#{match.score1i}:#{match.score2i})"
-                              end
-                         else  ## assume pen. and/or a.e.t.
-                             buf << " (#{match.score1}:#{match.score2}"
-                             if (match.score1i && match.score2i) &&
-                                [match.score1,match.score2] != [0,0]
-                               buf << ", #{match.score1i}:#{match.score2i}"
-                             end
-                             buf << ")"
-                           end
-                         end
-                         if match.score1et && match.score2et
-                           buf << " n.V."
-                         end
-                         if match.score1p && match.score2p
-                           buf << " #{match.score1p}:#{match.score2p} i.E."
-                         end
-                        else # assume empty / unknown score
-                          buf << '-'
-                        end
-                        buf
+  'en' => -> (match) { Score.new( match.score1i,  match.score2i,
+                                  match.score1,   match.score2,
+                                  match.score1et, match.score2et,
+                                  match.score1p,  match.score2p
+                                ).to_s( lang: 'en' )
+                     },
+  'de' => ->( match ) { Score.new( match.score1i,  match.score2i,
+                                   match.score1,   match.score2,
+                                   match.score1et, match.score2et,
+                                   match.score1p,  match.score2p
+                                 ).to_s( lang: 'de' )
                       },
 }
 
