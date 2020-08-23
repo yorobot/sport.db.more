@@ -149,18 +149,8 @@ DATES =
 
 SCORES =
 {
-  'en' => -> (match) { Score.new( match.score1i,  match.score2i,
-                                  match.score1,   match.score2,
-                                  match.score1et, match.score2et,
-                                  match.score1p,  match.score2p
-                                ).to_s( lang: 'en' )
-                     },
-  'de' => ->( match ) { Score.new( match.score1i,  match.score2i,
-                                   match.score1,   match.score2,
-                                   match.score1et, match.score2et,
-                                   match.score1p,  match.score2p
-                                 ).to_s( lang: 'de' )
-                      },
+  'en' => ->( match ) { match.score.to_s( lang: 'en' ) },
+  'de' => ->( match ) { match.score.to_s( lang: 'de' ) },
 }
 
 
