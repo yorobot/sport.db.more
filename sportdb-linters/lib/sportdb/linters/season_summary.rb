@@ -2,7 +2,21 @@
 module SportDb
 class SeasonSummary  ## rename to AssertSummary or CheckSummary or ????
 
-      EVENTS = Import.catalog.events
+    ####
+  ###  fix: move "upstream" to "canonical" catalog
+  ###    add option preload (or use different) wording
+  ##    check rails for classes option name?
+  ##   use catalog( preload: true  or preload: ['events'])
+  def self.catalog
+    @@catalog ||= begin
+       ## pre-load (on deman) first call
+       Import.catalog.events    ## force pre-load
+
+       Import.catalog
+    end
+  end
+  def catalog() self.class.catalog; end
+
 
 
       def self.build( path )
@@ -15,8 +29,7 @@ class SeasonSummary  ## rename to AssertSummary or CheckSummary or ????
 
 
       def build
-
-        datafiles = Dir[ "#{@path}/**/*.csv" ]
+        datafiles = Dir[ "#{@path}/**/*.csv" ]  ## fix: always use Dir.glob - why? why not?
         puts "#{datafiles.size} datafiles"
 
         errors = []
@@ -29,12 +42,12 @@ class SeasonSummary  ## rename to AssertSummary or CheckSummary or ????
           season_q  = File.basename( File.dirname( datafile ))
 
           ## try mapping of league here - why? why not?
-          league    = Import.catalog.leagues.find!( league_q )
-          season    = Import::Season.new( season_q )  ## normalize season
+          league    = catalog.leagues.find!( league_q )
+          season    = Season.parse( season_q )  ## normalize season
 
 
           ## check if event info exits
-          event = EVENTS.find_by( league: league, season: season )
+          event = catalog.events.find_by( league: league, season: season )
           next if event.nil?    ## skip if not event info found
 
           ## check if any counter is not nil/null

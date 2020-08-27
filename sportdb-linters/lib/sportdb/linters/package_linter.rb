@@ -1,12 +1,25 @@
 module SportDb
   class PackageLinter
 
-     ### "pre-load" leagues & clubs
-     COUNTRIES      = Import.catalog.countries
-     LEAGUES        = Import.catalog.leagues
-     CLUBS          = Import.catalog.clubs
-     NATIONAL_TEAMS = Import.catalog.national_teams
-     TEAMS          = Import.catalog.teams
+  ####
+  ###  fix: move "upstream" to "canonical" catalog
+  ###    add option preload (or use different) wording
+  ##    check rails for classes option name?
+  ##   use catalog( preload: true )
+  def self.catalog
+    @@catalog ||= begin
+       ## pre-load (on deman) first call
+       Import.catalog.countries      ## force pre-load
+       Import.catalog.leagues        ## force pre-load
+       Import.catalog.clubs          ## force pre-load
+       Import.catalog.national_teams
+       Import.catalog.teams
+
+       Import.catalog
+    end
+  end
+
+  def catalog() self.class.catalog; end
 
 
     ###
@@ -45,7 +58,7 @@ module SportDb
       include: nil )
 
     ## convert mods to "internal" mapping
-    mods = CLUBS.build_mods( mods )    if mods
+    mods = catalog.clubs.build_mods( mods )    if mods
 
     ## track all unmatched lines etc.
     errors = []
@@ -221,7 +234,7 @@ module SportDb
        team_rec = if league.clubs?
                     if mods && mods[ name ]
                       ## double check for too many machtes warning
-                      m = CLUBS.match( name )
+                      m = catalog.clubs.match( name )
                       if m.size > 1
                         line = "WARN: too many name matches (#{m.size}) found for >#{name}<"
                         ## todo/fix: add / log club matches here too!!!
@@ -230,10 +243,10 @@ module SportDb
                       end
                       mods[ name ]
                     else
-                      CLUBS.find_by( name: name, country: league.country )
+                      catalog.clubs.find_by( name: name, country: league.country )
                     end
                   else
-                    NATIONAL_TEAMS.find( name )
+                    catalog.national_teams.find( name )
                   end
 
 

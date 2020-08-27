@@ -2,16 +2,33 @@ module SportDb
 class TeamSummary    ### rename to NameSummary, DatafileSummary, etc. why? why not?????
 
 
-  COUNTRIES = Import.catalog.countries
-  LEAGUES   = Import.catalog.leagues
-  CLUBS     = Import.catalog.clubs
+  ####
+  ###  fix: move "upstream" to "canonical" catalog
+  ###    add option preload (or use different) wording
+  ##    check rails for classes option name?
+  ##   use catalog( preload: true )
+  def self.catalog
+    @@catalog ||= begin
+       ## pre-load (on deman) first call
+       Import.catalog.countries ## force pre-load
+       Import.catalog.leagues   ## force pre-load
+       Import.catalog.clubs     ## force pre-load
+
+       Import.catalog
+    end
+  end
+
 
 
 class Names
+  ## fix: use Import.catalog( preload: true )
+  def catalog() TeamSummary.catalog; end
+
+
   def initialize( country_key )
     @names = Hash.new(0)
 
-    @country = COUNTRIES.find( country_key )
+    @country = catalog.countries.find( country_key )
     if @country.nil?
       puts "!! ERROR - no country found for key >#{country_key}<"
       exit 1
@@ -44,7 +61,7 @@ class Names
     clubs = {}  ## check for duplicates
 
     names.each do |rec|
-      club = CLUBS.find_by( name: rec[0], country: @country )
+      club = catalog.clubs.find_by( name: rec[0], country: @country )
       if club.nil?
         puts "!! ERROR - no club match found for >#{rec[0]}<"
         errors << "#{rec[0]} > #{@country.name}"
@@ -111,10 +128,10 @@ end # class Names
   end
 
   def build( start: nil )
-datafiles = Dir[ "#{@path}/**/*.csv" ]
+datafiles = Dir[ "#{@path}/**/*.csv" ]  ## fix: always use Dir.glob - why? why not?
 puts "#{datafiles.size} datafiles"
 
- start_season = start ? Import::Season.new( start ) : nil
+ start_season = start ? Season( start ) : nil
 
 countries = {}
 datafiles.each do |datafile|
@@ -126,7 +143,7 @@ datafiles.each do |datafile|
   ## check for season
   if start_season
     dirname = File.basename( File.dirname( datafile ))
-    season = Import::Season.new( dirname )
+    season = Season.parse( dirname )
     ##  skip if season is older
     next if start_season.start_year > season.start_year
   end
