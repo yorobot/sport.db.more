@@ -1,0 +1,26 @@
+require 'hoe'
+require './lib/sportdb/exporters/version.rb'
+
+Hoe.spec 'sportdb-exporters' do
+
+  self.version = SportDb::Module::Exporters::VERSION
+
+  self.summary = 'sportdb-exporters - export helpers for sport.db data in various formats incl. json, csv, and friends'
+  self.description = summary
+
+  self.urls = { home: 'https://github.com/sportdb/sport.db' }
+
+  self.author = 'Gerald Bauer'
+  self.email = 'opensport@googlegroups.com'
+
+  # switch extension to .markdown for gihub formatting
+  self.readme_file  = 'README.md'
+  self.history_file = 'CHANGELOG.md'
+
+  self.licenses = ['Public Domain']
+
+  self.spec_extras = {
+   required_ruby_version: '>= 2.2.2'
+  }
+
+end
