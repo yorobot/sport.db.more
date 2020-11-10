@@ -1,11 +1,11 @@
 require 'hoe'
-require './lib/webget-football/version.rb'
+require './lib/football-sources/version.rb'
 
-Hoe.spec 'webget-football' do
+Hoe.spec 'football-sources' do
 
-  self.version = Webget::Module::Football::VERSION
+  self.version = FootballSources::VERSION
 
-  self.summary = 'webget-football - get football data via web pages or web api (json) calls'
+  self.summary = 'football-sources - get football data via web pages or web api (json) calls'
   self.description = summary
 
   self.urls = { home: 'https://github.com/sportdb/sport.db' }
@@ -18,10 +18,9 @@ Hoe.spec 'webget-football' do
   self.history_file = 'CHANGELOG.md'
 
   self.extra_deps = [
-    ['webget',  '>= 0.2.1'],
-    ['nokogiri'],
+    ['webget-football',  '>= 0.0.1'],
+    ['sportdb-catalogs', '>= 1.0.0'],
   ]
-
 
   self.licenses = ['Public Domain']
 
