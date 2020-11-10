@@ -8,11 +8,11 @@
 * forum :: [groups.google.com/group/opensport](https://groups.google.com/group/opensport)
 
 
+
 ## Usage
 
 
-
-### `football-data.org` - ur src for machine readable football data
+### Source #1 - `football-data.org` - ur src for machine readable football data
 
 Daniel's dev-friendly football API
 offers a free to use plan
@@ -76,7 +76,7 @@ in your (local) web cache (in `~/.cache/api.football-data.org`) as pretty printe
 
 Convert the (cached) match schedules
 in JSON to the one-line, one-record
-"standard" [Football.CSV format](https://github.com/footballcsv). Example.
+"standard" [Football.CSV format](https://github.com/footballcsv). Example:
 
 ``` ruby
 require 'football/sources'
