@@ -75,7 +75,7 @@ in your (local) web cache (in `~/.cache/api.football-data.org`) as pretty printe
 **Step 2 - Convert (Cached) Match Schedules to Records**
 
 Convert the (cached) match schedules
-in JSON to the one-line, one-record
+in JSON to the one-line, one-match & one-file, one-season
 "standard" [Football.CSV format](https://github.com/footballcsv). Example:
 
 ``` ruby
