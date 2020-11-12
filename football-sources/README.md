@@ -14,7 +14,7 @@
 
 ### Source #1 - `football-data.org` - ur src for machine readable football data
 
-Daniel's dev-friendly football API
+[Daniel Freitag](https://www.football-data.org/about)'s dev-friendly football API
 offers a free to use plan
 for 12 leagues (API key sign-up and use required).
 See [`football-data.org` »](https://www.football-data.org)
