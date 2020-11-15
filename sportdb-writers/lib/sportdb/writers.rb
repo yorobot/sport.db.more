@@ -28,7 +28,4 @@ require 'sportdb/leagues/leagues_world'
 
 
 
-
-
-
-
+puts SportDb::Module::Writers.banner   # say hello

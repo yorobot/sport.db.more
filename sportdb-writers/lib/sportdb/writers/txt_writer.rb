@@ -344,7 +344,7 @@ def self.write( path, matches, name:, lang: 'en', rounds: true)
   buf = build( matches, lang: lang, rounds: rounds )
 
   ## for convenience - make sure parent folders/directories exist
-  FileUtils.mkdir_p( File.dirname( path) )  unless Dir.exists?( File.dirname( path ))
+  FileUtils.mkdir_p( File.dirname( path) )  unless Dir.exist?( File.dirname( path ))
 
   File.open( path, 'w:utf-8' ) do |f|
     f.write( "= #{name}\n" )
