@@ -9,6 +9,9 @@ require 'sportdb/catalogs'
 require 'sportdb/writers/version'
 require 'sportdb/writers/config'
 require 'sportdb/writers/txt_writer'
+
+require 'sportdb/writers/teams'
+require 'sportdb/writers/goals'
 require 'sportdb/writers/write'
 
 ## setup empty leagues (info) hash

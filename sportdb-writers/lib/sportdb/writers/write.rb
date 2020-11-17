@@ -2,113 +2,40 @@
 module Writer
 
 
+class Job     ## todo/check: use a module (and NOT a class) - why? why not?
+def self.write( datasets, source: )
+  datasets.each_with_index do |dataset,i|
+    league  = dataset[0]
+    seasons = dataset[1]
+
+    puts "writing [#{i+1}/#{datasets.size}] #{league}..."
+    seasons.each_with_index do |season,j|
+      puts "  season [#{j+1}/#{season.size}] #{league} #{season}..."
+      Writer.write( league: league,
+                    season: season,
+                    source: source )
+    end
+  end
+end
+end # class Job
+
+
+
 SOURCES = {
-  'one'      =>  { path: '../../stage/one' },
-  'one/o'    =>  { path: '../apis/o' },     ## "o" debug version
+  'one'        => { path: '../../stage/one' },
+  'one/o'      => { path: '../apis/o' },     ## "o" debug version
 
-  'two'     =>  { path: '../../stage/two' },
-  'two/o'   =>  { path: '../cache.weltfussball/o' },      ## "o"   debug version
-  'two/tmp' =>  { path: '../cache.weltfussball/tmp' },    ## "tmp" debug version
+  'two'        => { path: '../../stage/two' },
+  'two/o'      => { path: '../cache.weltfussball/o' },      ## "o"   debug version
+  'two/tmp'    => { path: '../cache.weltfussball/tmp' },    ## "tmp" debug version
 
-  'leagues'   =>  { path: '../../../footballcsv/cache.leagues' },
-  'leagues/o' =>  { path: '../cache.leagues/o' },    ## "o"  debug version
+  'leagues'    => { path: '../../../footballcsv/cache.leagues' },
+  'leagues/o'  => { path: '../cache.leagues/o' },    ## "o"  debug version
 
   'soccerdata' => { path:   '../../../footballcsv/cache.soccerdata',
                     format: 'century', # e.g. 1800s/1888-89
                   }
 }
-
-
-
-def self.merge_goals( matches, goals )
-  goals_by_match = goals.group_by { |rec| rec.match_id }
-  puts "match goal reports - #{goals_by_match.size} records"
-
-  ## lets group by date for easier lookup
-  matches_by_date = matches.group_by { |rec| rec.date }
-
-
-  ## note: "shadow / reuse" matches and goals vars for now in loop
-  ##  find better names to avoid confusion!!
-  goals_by_match.each_with_index do |(match_id, goals),i|
-    ## split match_id
-    team_str, more_str   = match_id.split( '|' )
-    team1_str, team2_str = team_str.split( ' - ' )
-
-    more_str  = more_str.strip
-    team1_str = team1_str.strip
-    team2_str = team2_str.strip
-
-    ## for now assume date in more (and not round or something else)
-    date_str = more_str  # e.g. in 2019-07-26 format
-
-    puts ">#{team1_str}< - >#{team2_str}< | #{date_str},    #{goals.size} goals"
-
-    ## try a join - find matching match
-    matches = matches_by_date[ date_str ]
-    if matches.nil?
-      puts "!! ERROR: no match found for date >#{date_str}<"
-      exit 1
-    end
-
-    found_matches = matches.select {|match| match.team1 == team1_str &&
-                                            match.team2 == team2_str }
-
-    if found_matches.size == 1
-      match = found_matches[0]
-      match.goals = SportDb::Import::Goal.build( goals )
-    else
-      puts "!!! ERROR: found #{found_matches.size} in #{matches.size} matches for date >#{date_str}<:"
-      matches.each do |match|
-        puts "  >#{match.team1}< - >#{match.team2}<"
-      end
-      exit 1
-    end
-  end
-end
-
-
-
-
-########
-# helpers
-#   normalize team names
-#
-#  todo/fix:  for reuse move to sportdb-catalogs
-#                use normalize  - add to module/class ??
-##
-##  todo/fix: check league - if is national_team or clubs or intl etc.!!!!
-
-
-def self.normalize( matches, league:, season: nil )
-    league = SportDb::Import.catalog.leagues.find!( league )
-    country = league.country
-
-    ## todo/fix: cache name lookups - why? why not?
-    matches.each do |match|
-       team1 = SportDb::Import.catalog.clubs.find_by!( name: match.team1,
-                                                       country: country )
-       team2 = SportDb::Import.catalog.clubs.find_by!( name: match.team2,
-                                                       country: country )
-
-       if season
-         team1_name = team1.name_by_season( season )
-         team2_name = team2.name_by_season( season )
-       else
-         team1_name = team1.name
-         team2_name = team2.name
-       end
-
-       puts "#{match.team1} => #{team1_name}"  if match.team1 != team1_name
-       puts "#{match.team2} => #{team2_name}"  if match.team2 != team2_name
-
-       match.update( team1: team1_name )
-       match.update( team2: team2_name )
-    end
-    matches
-end
-
-
 
 
 def self.split_matches( matches, season: )
@@ -146,11 +73,12 @@ end
 
 
 
-def self.write( league, season, source:,
-                                extra: nil,
-                                split: false,
-                                normalize: true,
-                                rounds: true )
+def self.write( league:, season:,
+                source:,
+                extra: nil,
+                split: false,
+                normalize: true,
+                rounds: true )
   season = Season( season )  ## normalize season
 
   league_info = LEAGUES[ league ]
@@ -162,7 +90,8 @@ def self.write( league, season, source:,
   ## check - if source is directory (assume if starting ./ or ../ or /)
   if source.start_with?( './')  ||
      source.start_with?( '../') ||
-     source.start_with?( '/')
+     source.start_with?( '/') ||
+     source.index( ':' )    ## note: for windows check for drive letter (c:/ or such)
      ## check if directory exists
      unless File.exist?( source )
        puts "!! ERROR: source dir >#{source}< does not exist"

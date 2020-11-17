@@ -43,9 +43,7 @@ thus, sleep/wait 10 secs after every request
 require 'football/sources'
 
 
-#############
-## download up (ongoing) 2020 or 2020/21 seasons
-
+# download up (ongoing) 2020 or 2020/21 seasons
 Webget.config.sleep  = 10
 
 Footballdata.schedule( league: 'eng.1', season: '2020/21' )

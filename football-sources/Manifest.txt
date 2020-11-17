@@ -16,6 +16,7 @@ lib/football-sources/worldfootball/config.rb
 lib/football-sources/worldfootball/convert.rb
 lib/football-sources/worldfootball/convert_reports.rb
 lib/football-sources/worldfootball/download.rb
+lib/football-sources/worldfootball/jobs.rb
 lib/football-sources/worldfootball/leagues.rb
 lib/football-sources/worldfootball/leagues/asia.rb
 lib/football-sources/worldfootball/leagues/europe--british_isles.rb
@@ -29,7 +30,6 @@ lib/football-sources/worldfootball/leagues/north_america.rb
 lib/football-sources/worldfootball/leagues/pacific.rb
 lib/football-sources/worldfootball/leagues/south_america.rb
 lib/football-sources/worldfootball/mods.rb
-lib/football-sources/worldfootball/tool.rb
 lib/football-sources/worldfootball/vacuum.rb
 lib/football/sources.rb
 test/helper.rb

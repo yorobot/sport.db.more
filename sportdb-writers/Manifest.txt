@@ -13,6 +13,8 @@ lib/sportdb/leagues/leagues_south_america.rb
 lib/sportdb/leagues/leagues_world.rb
 lib/sportdb/writers.rb
 lib/sportdb/writers/config.rb
+lib/sportdb/writers/goals.rb
+lib/sportdb/writers/teams.rb
 lib/sportdb/writers/txt_writer.rb
 lib/sportdb/writers/version.rb
 lib/sportdb/writers/write.rb
