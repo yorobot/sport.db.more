@@ -18,7 +18,7 @@ Hoe.spec 'football-sources' do
   self.history_file = 'CHANGELOG.md'
 
   self.extra_deps = [
-    ['webget-football',  '>= 0.0.1'],
+    ['webget-football',  '>= 0.1.1'],
     ['sportdb-catalogs', '>= 1.0.0'],
   ]
 

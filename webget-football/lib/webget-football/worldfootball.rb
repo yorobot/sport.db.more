@@ -6,6 +6,7 @@
 
 ## our own code
 require_relative 'worldfootball/config'
+require_relative 'worldfootball/leagues'
 require_relative 'worldfootball/download'
 require_relative 'worldfootball/page'
 require_relative 'worldfootball/page_schedule'

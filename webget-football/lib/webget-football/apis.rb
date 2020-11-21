@@ -5,6 +5,7 @@
 
 ## our own code
 require_relative 'apis/config'
+require_relative 'apis/leagues'
 require_relative 'apis/download'
 
 

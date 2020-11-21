@@ -1,5 +1,22 @@
 module Footballdata
 
+
+#################
+##  porcelain "api"
+def self.schedule( league:, season: )
+  season = Season( season )   ## cast (ensure) season class (NOT string, integer, etc.)
+
+  league_code = LEAGUES[ league.downcase ]
+
+  Metal.teams(   league_code, season.start_year )
+  Metal.matches( league_code, season.start_year )
+end
+
+
+
+##################
+##  plumbing metal "helpers"
+
 ## todo/check: put in Downloader namespace/class - why? why not?
 ##   or use Metal    - no "porcelain" downloaders / machinery
 class Metal
@@ -26,11 +43,14 @@ class Metal
     get( competions_url( 'TIER_THREE' ))
   end
 
-  def self.competition( code, year )
-    get( competition_matches_url( code, year ))
+
+  def self.teams( code, year )
     get( competition_teams_url( code, year ))
   end
 
+  def self.matches( code, year )
+    get( competition_matches_url( code, year ))
+  end
 
 =begin
   def self.matches

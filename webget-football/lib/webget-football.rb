@@ -12,6 +12,10 @@ require 'sportdb/structs'   ## add season support - todo/fix: move to season-for
 # our own code
 require 'webget-football/version' # let version always go first
 
+## shared base code (e.g. Metal::Base, Page::Base, etc.)
+require 'webget-football/metal'
+
+## sources
 require 'webget-football/apis'
 require 'webget-football/worldfootball'
 require 'webget-football/fbref'

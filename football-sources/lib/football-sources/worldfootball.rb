@@ -5,12 +5,7 @@
 
 
 ## our own code
-require_relative 'worldfootball/leagues'
-
 require_relative 'worldfootball/config'
-
-require_relative 'worldfootball/download'
-
 require_relative 'worldfootball/mods'
 require_relative 'worldfootball/vacuum'
 require_relative 'worldfootball/build'

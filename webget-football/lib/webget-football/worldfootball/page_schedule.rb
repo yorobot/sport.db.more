@@ -6,7 +6,7 @@ class Schedule < Page  ## note: use nested class for now - why? why not?
 
 
   def self.from_cache( slug )
-    url  = Worldfootball::Metal.schedule_url( slug )
+    url  = Metal.schedule_url( slug )
     html = Webcache.read( url )
     new( html )
   end

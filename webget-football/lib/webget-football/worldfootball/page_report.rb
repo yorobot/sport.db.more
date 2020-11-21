@@ -6,7 +6,7 @@ class Report < Page  ## note: use nested class for now - why? why not?
 
 
   def self.from_cache( slug )
-    url  = Worldfootball::Metal.report_url( slug )
+    url  = Metal.report_url( slug )
     html = Webcache.read( url )
     new( html )
   end

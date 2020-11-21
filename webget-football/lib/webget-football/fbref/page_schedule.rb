@@ -5,7 +5,7 @@ class Page
   class Schedule < Page  ## note: use nested class for now - why? why not?
 
 def self.from_cache( league:, season: )
-  url = Fbref.schedule_url( league: league, season: season )
+  url = Metal.schedule_url( league: league, season: season )
 
   ## use - super.from_cache( url ) - why? why not?
   html = Webcache.read( url )

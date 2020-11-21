@@ -1,26 +1,41 @@
 
 module Fbref
 
-def self.download_schedule( league:, season: )
-  url = schedule_url( league: league, season: season )
-  get( url )
+#################
+##  porcelain "api"
+def self.schedule( league:, season: )
+  url = Metal.schedule_url( league: league, season: season )
+  Metal.download_page( url )
 end
 
-### add some "old" (back compat) aliases - keep - why? why not?
-class << self
-  alias_method :schedule,  :download_schedule
-end
+
 
 
 ##################
-#  helpers
-#
-#  move into Metal namespace/module - why? why not?
-def self.get( url )  ## get & record/save to cache
-  response = Webget.page( url )  ## fetch (and cache) html page (via HTTP GET)
+##  plumbing metal "helpers"
+class Metal < ::Metal::Base
 
-  ## note: exit on get / fetch error - do NOT continue for now - why? why not?
-  exit 1   if response.status.nok?    ## e.g.  HTTP status code != 200
-end
-end  ## module Fbref
+  BASE_URL = 'https://fbref.com/en'
 
+
+  def self.schedule_url( league:, season: )
+    season = Season( season )
+
+    pages = LEAGUES[ league ]
+    if pages.nil?
+      puts "!! ERROR - no pages (urls) configured for league >#{league}<"
+      exit 1
+    end
+    page = pages[ season.key ]
+    if pages.nil?
+      puts "!! ERROR - no page (url) configured for season >#{season}< for league >#{league}<; available seasons include:"
+      pp pages
+      exit 1
+    end
+
+    "#{BASE_URL}/#{page}"
+  end
+
+
+end # module Metal
+end # module Fbref

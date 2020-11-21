@@ -2,12 +2,46 @@
 
 module Worldfootball
 
+#################
+##  porcelain "api"
+def self.schedule( league:, season: )
+  season = Season( season )   ## cast (ensure) season class (NOT string, integer, etc.)
+
+  league  = find_league( league )
+
+  pages =  league.pages( season: season )
+
+  ## if single (simple) page setup - wrap in array
+  pages = pages.is_a?(Array) ? pages : [pages]
+  pages.each do |page_meta|
+    Metal.download_schedule( page_meta[:slug] )
+  end # each page
+end
 
 
+def self.reports( league:, season:, cache: true ) ## todo/check: rename to reports_for_schedule or such - why? why not?
+  season = Season( season )   ## cast (ensure) season class (NOT string, integer, etc.)
+
+  league  = find_league( league )
+
+  pages =  league.pages( season: season )
+
+  ## if single (simple) page setup - wrap in array
+  pages = pages.is_a?(Array) ? pages : [pages]
+  pages.each do |page_meta|
+    Metal.download_reports_for_schedule( page_meta[:slug], cache: cache )
+  end # each page
+end
+
+
+
+
+##################
+##  plumbing metal "helpers"
 
 ## todo/check: put in Downloader namespace/class - why? why not?
 ##   or use Metal    - no "porcelain" downloaders / machinery
-class Metal
+class Metal < ::Metal::Base
 
   BASE_URL = 'https://www.weltfussball.de'
 
@@ -16,9 +50,32 @@ class Metal
   def self.report_url( slug )    "#{BASE_URL}/spielbericht/#{slug}/"; end
 
 
+##
+## note:
+##   do NOT allow redirects for now - report error!!!
+##   does NOT return 404 page not found errors; always redirects (301) to home page
+##    on missing pages:
+##      301 Moved Permanently location=https://www.weltfussball.de/
+##      301 Moved Permanently location=https://www.weltfussball.de/
+
+
+# url = "https://www.weltfussball.de/alle_spiele/eng-league-one-#{season}/"
+# url = "https://www.weltfussball.de/alle_spiele/eng-league-two-#{season}/"
+#        https://www.weltfussball.de/alle_spiele/eng-national-league-2019-2020/
+#        https://www.weltfussball.de/alle_spiele/eng-fa-cup-2018-2019/
+#        https://www.weltfussball.de/alle_spiele/eng-league-cup-2019-2020/
+
+#        https://www.weltfussball.de/alle_spiele/fra-ligue-2-2019-2020/
+#        https://www.weltfussball.de/alle_spiele/ita-serie-b-2019-2020/
+#        https://www.weltfussball.de/alle_spiele/rus-premier-liga-2019-2020/
+#        https://www.weltfussball.de/alle_spiele/rus-1-division-2019-2020/
+#        https://www.weltfussball.de/alle_spiele/tur-sueperlig-2019-2020/
+#        https://www.weltfussball.de/alle_spiele/tur-1-lig-2019-2020/
+
+
   def self.download_schedule( slug )
     url = schedule_url( slug )
-    get( url )
+    download_page( url )
   end
 
   def self.download_report( slug, cache: true )
@@ -28,15 +85,12 @@ class Metal
     if cache && Webcache.cached?( url )
        puts "  reuse local (cached) copy >#{Webcache.url_to_id( url )}<"
     else
-      get( url )
+      download_page( url )
     end
   end
 
 
-
-
-
-  def self.download_schedule_reports( slug, cache: true ) ## todo/check: rename to reports_for_schedule or such - why? why not?
+  def self.download_reports_for_schedule( slug, cache: true ) ## todo/check: rename to reports_for_schedule or such - why? why not?
 
     page = Page::Schedule.from_cache( slug )
     matches = page.matches
@@ -62,27 +116,6 @@ class Metal
        end
     end
   end
-
-
-  ### add some "old" (back compat) aliases - keep - why? why not?
-  class << self
-    alias_method :schedule,          :download_schedule
-    alias_method :report,            :download_report
-    alias_method :schedule_reports,  :download_schedule_reports
-  end
-
-
-  ##################
-  #  helpers
-  def self.get( url )  ## get & record/save to cache
-
-    response = Webget.page( url )  ## fetch (and cache) html page (via HTTP GET)
-
-    ## note: exit on get / fetch error - do NOT continue for now - why? why not?
-    exit 1   if response.status.nok?    ## e.g.  HTTP status code != 200
-  end
-
-
 end # class Metal
 end # module Worldfootball
 
