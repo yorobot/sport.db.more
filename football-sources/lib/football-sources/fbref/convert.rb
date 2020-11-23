@@ -17,7 +17,7 @@ def self.convert( league:, season: )
   pp recs[0..2]
 
   season = Season.parse( season )
-  path = "#{config.convert.out_dir}/#{league}_#{season.to_path}.csv"
+  path = "#{config.convert.out_dir}/#{season.to_path}/#{league}.csv"
   puts "write #{path}..."
   Cache::CsvMatchWriter.write( path, recs, headers: headers )
 end
