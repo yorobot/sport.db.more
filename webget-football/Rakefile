@@ -18,9 +18,9 @@ Hoe.spec 'webget-football' do
   self.history_file = 'CHANGELOG.md'
 
   self.extra_deps = [
+    ['season-formats'],
     ['webget',  '>= 0.2.3'],
     ['nokogiri'],
-    ['sportdb-structs'],    ## add season support - todo/fix: move to season-formats??
   ]
 
 

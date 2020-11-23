@@ -1,11 +1,11 @@
 ## 3rd party (our own)
-require 'webget'    ## incl. webget, webcache, webclient, etc.
+require 'season/formats'   ## add season support
+require 'webget'           ## incl. webget, webcache, webclient, etc.
 
 ## 3rd party
 require 'nokogiri'
 
 
-require 'sportdb/structs'   ## add season support - todo/fix: move to season-formats??
 
 
 ###
