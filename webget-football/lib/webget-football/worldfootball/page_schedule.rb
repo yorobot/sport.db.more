@@ -33,9 +33,30 @@ class Schedule < Page  ## note: use nested class for now - why? why not?
 
  rows = []
 
- trs.each do |tr|
-   i += 1
 
+## ghost trs? what for? see for an example in bra
+##    check for style display:none - why? why not?
+##
+## <tr class="e2-parent" data-liga_id="88" data-gs_match_id="9062777"
+##                         style="display:none;">
+##          <td colspan="2"></td>
+##          <td colspan="3">
+##            <span class="e2" data-liga_id="88"  data-gs_match_id="9062777"></span>
+##          </td>
+##          <td colspan="2"></td>
+##        </tr>
+
+
+ trs.each do |tr|
+
+   if tr['style'] && tr['style'].index( 'display') &&
+                     tr['style'].index( 'none')
+     puts "!! WARN: skipping ghost line >#{tr.text.strip}<"
+     next
+   end
+
+
+   i += 1
 
    if tr.text.strip =~ /Spieltag/ ||
       tr.text.strip =~ /[1-9]\.[ ]Runde|
@@ -62,6 +83,14 @@ class Schedule < Page  ## note: use nested class for now - why? why not?
      date_str  = squish( tds[0].text )
      time_str  = squish( tds[1].text )
 
+     date_str = last_date_str    if date_str.empty?
+
+     ## note: for debugging - print as we go along (parsing)
+     print '[%03d]    ' % i
+     print "%-10s | " % date_str
+     print "%-5s | " % time_str
+
+
      # was: team1_str = squish( tds[2].text )
 
      ## <td><a href="/teams/hibernian-fc/" title="Hibernian FC">Hibernian FC</a></td>
@@ -75,6 +104,9 @@ class Schedule < Page  ## note: use nested class for now - why? why not?
        team1_ref    = nil
        puts "!! WARN: no team1_ref for >#{team1_str}< found"
      end
+
+     ## note: for debugging - print as we go along (parsing)
+     print "%-22s | " % team1_str
 
      ##  <td> - </td>
      ## e.g. -
@@ -92,6 +124,11 @@ class Schedule < Page  ## note: use nested class for now - why? why not?
        team2_ref    = nil
        puts "!! WARN: no team2_ref for >#{team2_str}< found"
      end
+
+     ## note: for debugging - print as we go along (parsing)
+     print "%-22s | " % team2_str
+
+
 
      ### was: score_str = squish( tds[5].text )
      ## <a href="/spielbericht/premiership-2020-2021-hibernian-fc-st-johnstone-fc/" title="Spielschema Hibernian FC - St. Johnstone FC">-:-</a>
@@ -118,13 +155,6 @@ class Schedule < Page  ## note: use nested class for now - why? why not?
      end
 
 
-     date_str = last_date_str    if date_str.empty?
-
-     print '[%03d]    ' % i
-     print "%-10s | " % date_str
-     print "%-5s | " % time_str
-     print "%-22s | " % team1_str
-     print "%-22s | " % team2_str
      print "%-10s | " % score_str
      print (score_ref ? score_ref : 'n/a')
      print "\n"
