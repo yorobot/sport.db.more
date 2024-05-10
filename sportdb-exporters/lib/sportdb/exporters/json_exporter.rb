@@ -48,7 +48,7 @@ def self.export( league_key, out_root: )
 
      out_dir   = "#{out_root}/#{season_basename}"
      ## make sure folders exist
-     FileUtils.mkdir_p( out_dir ) unless Dir.exists?( out_dir )
+     FileUtils.mkdir_p( out_dir ) unless Dir.exist?( out_dir )
 
      ### note:
      ##  skip teams for now if no teams on "top-level"

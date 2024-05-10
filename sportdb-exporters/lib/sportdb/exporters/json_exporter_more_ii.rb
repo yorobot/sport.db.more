@@ -1,48 +1,15 @@
 module SportDb
 class JsonExporter
 
-## hack: for timezone (add timezone to city - fix/fix/fix)
-
-CITY_TO_TIMEZONE = {
-  ## brazil 2014
-  'Rio de Janeiro'   => 'UTC-3',
-  'Brasília'         => 'UTC-3',
-  'São Paulo'        => 'UTC-3',
-  'Fortaleza'        => 'UTC-3',
-  'Belo Horizonte'   => 'UTC-3',
-  'Salvador'         => 'UTC-3',
-  'Natal'            => 'UTC-3',
-  'Porto Alegre'     => 'UTC-3',
-  'Recife'           => 'UTC-3',
-  'Curitiba'         => 'UTC-3',
-  'Cuiabá'           => 'UTC-4',
-  'Manaus'           => 'UTC-4',
-  ## russia 2018
-  'Kaliningrad'      => 'UTC+2',
-  'Nizhny Novgorod'  => 'UTC+3',
-  'Volgograd'        => 'UTC+3',
-  'Saransk'          => 'UTC+3',
-  'Rostov-on-Don'    => 'UTC+3',
-  'Kazan'            => 'UTC+3',
-  'Sochi'            => 'UTC+3',
-  'Saint Petersburg' => 'UTC+3',
-  'Moscow'           => 'UTC+3',
-  'Samara'           => 'UTC+4',
-  'Ekaterinburg'     => 'UTC+5',
-}
-
-def self.city_to_timezone( city )
-  CITY_TO_TIMEZONE[ city ] || '?'
-end
 
 
-def self.export_worldcup( league_key, out_root: )
+def self.export_euro( league_key, out_root: )
 
   league = Model::League.find_by_key!( league_key )
 
   league.events.each do |event|
      puts "** event:"
-     pp event.title
+     pp event.name
      pp event.season
      pp event.league
      puts "teams.count: #{event.teams.count}"
@@ -54,14 +21,15 @@ def self.export_worldcup( league_key, out_root: )
      grounds = []
      event.grounds.each do |ground|
         grounds << { key:      ground.key,
-                     name:     ground.title,
+                     name:     ground.name,
                      capacity: ground.capacity,
                      city:     ground.city.name,
-                     timezone: city_to_timezone( ground.city.name ) }
+                     timezone: 'UTC+1'   ## use summertime (CEST+2) why? why not? 
+                     }
      end
 
      hash_grounds = {
-      name:     event.title,
+      name:     event.name,
       stadiums: grounds
      }
 
@@ -70,33 +38,13 @@ def self.export_worldcup( league_key, out_root: )
 
      teams = []
      event.teams.each do |team|
-       if team.country.assoc
-         continental = {}
-         team.country.assoc.parent_assocs.each do |parent|
-           ## next if parent.key == 'fifa'  ## skip fifa
-           ##  todo/fix: only include / use (single) continental (parent) org/assoc
-           ##  find/use continental parent only for now
-           if ['caf', 'afc', 'concacaf', 'uefa', 'conmebol', 'ofc'].include? parent.key
-             continental = { name: parent.title,
-                             code: parent.key.upcase }
-           end
-         end
-         assoc = { key:          team.country.assoc.key,
-                   name:         team.country.assoc.title,
-                 }
-         assoc[ :continental ] = continental   unless continental.empty?
-       else
-         assoc = {}
-       end
-       t = { name:      team.title,
-             code:      team.code,
-             continent: team.country.continent.name }
-       t[ :assoc ] = assoc   unless assoc.empty?
+       t = { name:      team.name,
+             code:      team.code }
        teams << t
      end
 
      hash_teams = {
-      name: event.title,
+      name: event.name,
       teams: teams
      }
 
@@ -121,11 +69,11 @@ def self.export_worldcup( league_key, out_root: )
                        }
           end
         end
-        standings << { name: group.title, standings: entries }
+        standings << { name: group.name, standings: entries }
      end
 
      hash_standings = {
-      name:   event.title,
+      name:   event.name,
       groups: standings
      }
 
@@ -136,15 +84,15 @@ def self.export_worldcup( league_key, out_root: )
      event.groups.each do |group|
        teams  = []
        group.teams.each do |team|
-         teams << { name: team.title,
+         teams << { name: team.name,
                     code: team.code
                   }
        end
-       groups << { name: group.title, teams: teams }
+       groups << { name: group.name, teams: teams }
      end
 
      hash_groups = {
-      name: event.title,
+      name: event.name,
       groups: groups
      }
 
@@ -154,16 +102,16 @@ def self.export_worldcup( league_key, out_root: )
      rounds = []
      event.rounds.each do |round|
        matches = []
-       round.games.each do |game|
+       round.matches.each do |game|
          m = {        num:  game.pos,    ## use id - why? why not?
-                      date: game.play_at.strftime( '%Y-%m-%d'),
-                      time: game.play_at.strftime( '%H:%M'),
+                      date: game.date.strftime( '%Y-%m-%d'),
+                     #  time: game.time.strftime( '%H:%M'),
                       team1: {
-                        name: game.team1.title,
+                        name: game.team1.name,
                         code: game.team1.code
                       },
                       team2: {
-                        name: game.team2.title,
+                        name: game.team2.name,
                         code: game.team2.code
                       },
                       score1:    game.score1,
@@ -171,6 +119,8 @@ def self.export_worldcup( league_key, out_root: )
                       score1i:   game.score1i,   # half time / first third (opt)
                       score2i:   game.score2i,   # half time - team 2
                 }
+
+
 
                 if game.knockout
                   m[ :score1et ] = game.score1et  # extratime - team 1 (opt)
@@ -187,23 +137,23 @@ def self.export_worldcup( league_key, out_root: )
                 end
 
                 if game.group
-                  m[ :group ]    =  game.group.title
+                  m[ :group ]    =  game.group.name
                 end
 
                 if game.ground
-                  m[ :stadium  ] = { key: game.ground.key, name: game.ground.title }
+                  m[ :stadium  ] = { key: game.ground.key, name: game.ground.name }
                   m[ :city     ] = game.ground.city.name
-                  m[ :timezone ] = city_to_timezone( game.ground.city.name )
+                  m[ :timezone ] = 'UTC+1'   ## use summertime (CEST+2) why? why not?
                 end
 
           matches << m
        end
 
-       rounds << { name: round.title, matches: matches }
+       rounds << { name: round.name, matches: matches }
      end
 
      hash_matches =  {
-       name: event.title,
+       name: event.name,
        rounds: rounds
      }
 
@@ -215,9 +165,9 @@ def self.export_worldcup( league_key, out_root: )
      ##  2018/worldcup.teams.json
 
      ##  -- check for remapping (e.g. add .1); if not found use league key as is
-     league_basename = LEAGUE_TO_BASENAME[ event.league.key ] || event.league.key
+     league_basename =  event.league.key
 
-     season_basename = event.season.title.sub('/', '-')  ## e.g. change 2014/15 to 2014-15
+     season_basename = event.season.name.sub('/', '-')  ## e.g. change 2014/15 to 2014-15
 
 
      out_dir   = "#{out_root}/#{season_basename}"
