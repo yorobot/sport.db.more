@@ -105,7 +105,7 @@ def self.export_euro( league_key, out_root: )
        round.matches.each do |game|
          m = {        num:  game.pos,    ## use id - why? why not?
                       date: game.date.strftime( '%Y-%m-%d'),
-                     #  time: game.time.strftime( '%H:%M'),
+                      time: game.time,  ## note: time is stored as string!!!
                       team1: {
                         name: game.team1.name,
                         code: game.team1.code
@@ -114,21 +114,29 @@ def self.export_euro( league_key, out_root: )
                         name: game.team2.name,
                         code: game.team2.code
                       },
-                      score1:    game.score1,
-                      score2:    game.score2,
-                      score1i:   game.score1i,   # half time / first third (opt)
-                      score2i:   game.score2i,   # half time - team 2
                 }
 
+                if game.score1
+                  m[ :score1 ] =   game.score1
+                  m[ :score2 ] =   game.score2
+                  if game.score1i
+                    m[ :score1i ] =  game.score1i   # half time / first third (opt)
+                    m[ :score2i ] =  game.score2i   # half time - team 2
+                  end
+                end
 
-
-                if game.knockout
+                ## note: change do NOT check for knockout flag
+                ##         check for scores for now 
+                if game.score1et
                   m[ :score1et ] = game.score1et  # extratime - team 1 (opt)
                   m[ :score2et ] = game.score2et  # extratime - team 2 (opt)
-                  m[ :score1p  ] = game.score1p   # penalty  - team 1 (opt)
-                  m[ :score2p  ] = game.score2p   # penalty  - team 2 (opt) elfmeter (opt)
-                  m[ :knockout ] = game.knockout
-                end
+                  if game.score1p
+                    m[ :score1p  ] = game.score1p   # penalty  - team 1 (opt)
+                    m[ :score2p  ] = game.score2p   # penalty  - team 2 (opt) elfmeter (opt)
+                  end
+                end  
+                #  m[ :knockout ] = game.knockout
+                
 
                 unless game.goals.empty?
                   goals1, goals2 = build_goals( game )
