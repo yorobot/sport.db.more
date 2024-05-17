@@ -8,8 +8,10 @@ def self.schedule( league:, season: )
 
   league_code = LEAGUES[ league.downcase ]
 
-  Metal.teams(   league_code, season.start_year )
-  Metal.matches( league_code, season.start_year )
+  puts "  mapping league >#{league}< to >#{league_code}<"
+
+  MetalV4.teams(   league_code, season.start_year )
+  MetalV4.matches( league_code, season.start_year )
 end
 
 
@@ -17,9 +19,60 @@ end
 ##################
 ##  plumbing metal "helpers"
 
+class Metal
+  def self.get( url, auth: true )
+    token = ENV['FOOTBALLDATA']
+    ## note: because of public workflow log - do NOT output token
+    ## puts token
+
+    headers = {}
+    headers['X-Auth-Token'] = token    if auth && token
+    headers['User-Agent']   = 'ruby'
+    headers['Accept']       = '*/*'
+
+    ## note: add format: 'json' for pretty printing json (before) save in cache
+    response = Webget.call( url, headers: headers )
+
+    ## for debugging print pretty printed json first 400 chars
+    puts response.json.pretty_inspect[0..400]
+
+    exit 1  if response.status.nok?   # e.g. HTTP status code != 200
+  end
+end
+
+
+class MetalV4 < Metal
+  BASE_URL = 'http://api.football-data.org/v4'
+
+
+  def self.competitions( auth: false )
+    get( "#{BASE_URL}/competitions", auth: auth )
+  end
+
+  def self.teams( code, year )
+    get( "#{BASE_URL}/competitions/#{code}/teams?season=#{year}" )
+  end
+
+  def self.matches( code, year )
+    get( "#{BASE_URL}/competitions/#{code}/matches?season=#{year}" )
+  end
+
+  def self.standings( code, year )
+    get( "#{BASE_URL}/competitions/#{code}/standings?season=#{year}" )
+  end
+
+
+  def self.match( id )
+    get( "#{BASE_URL}/matches/#{id}" )
+  end
+end  # class MetalV4
+
+
+
+
 ## todo/check: put in Downloader namespace/class - why? why not?
 ##   or use Metal    - no "porcelain" downloaders / machinery
-class Metal
+class MetalV2 < Metal
   BASE_URL = 'http://api.football-data.org/v2'
 
 
@@ -66,27 +119,6 @@ class Metal
   end
 =end
 
-
-  def self.get( url )
-    token = ENV['FOOTBALLDATA']
-    ## note: because of public workflow log - do NOT output token
-    ## puts token
-
-    headers = {}
-    headers['X-Auth-Token'] = token    if token
-    headers['User-Agent']   = 'ruby'
-    headers['Accept']       = '*/*'
-
-    ## note: add format: 'json' for pretty printing json (before) save in cache
-    response = Webget.call( url, headers: headers )
-
-    ## for debugging print pretty printed json first 400 chars
-    puts response.json.pretty_inspect[0..400]
-
-    exit 1  if response.status.nok?   # e.g. HTTP status code != 200
-  end
-
-
-end  ## class Metal
+end  ## class MetalV2
 end # module Footballdata
 

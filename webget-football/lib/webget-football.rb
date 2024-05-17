@@ -10,15 +10,15 @@ require 'nokogiri'
 
 ###
 # our own code
-require 'webget-football/version' # let version always go first
+require_relative 'webget-football/version' # let version always go first
 
 ## shared base code (e.g. Metal::Base, Page::Base, etc.)
-require 'webget-football/metal'
+require_relative 'webget-football/metal'
 
 ## sources
-require 'webget-football/apis'
-require 'webget-football/worldfootball'
-require 'webget-football/fbref'
+require_relative 'webget-football/apis'   ## incl. football-data.org (by Daniel Friday)
+require_relative 'webget-football/worldfootball'
+require_relative 'webget-football/fbref'
 
 
 puts Webget::Module::Football.banner   # say hello
