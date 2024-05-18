@@ -44,18 +44,18 @@ end
 class MetalV4 < Metal
   BASE_URL = 'http://api.football-data.org/v4'
 
-
   def self.competitions( auth: false )
     get( "#{BASE_URL}/competitions", auth: auth )
   end
 
-  def self.teams( code, year )
-    get( "#{BASE_URL}/competitions/#{code}/teams?season=#{year}" )
-  end
 
-  def self.matches( code, year )
-    get( "#{BASE_URL}/competitions/#{code}/matches?season=#{year}" )
-  end
+  ## just use matches_url - why? why not?
+  def self.competition_matches_url( code, year )  "#{BASE_URL}/competitions/#{code}/matches?season=#{year}"; end
+  def self.competition_teams_url( code, year )    "#{BASE_URL}/competitions/#{code}/teams?season=#{year}";   end
+    
+  def self.teams( code, year )   get( competition_teams_url( code, year )); end
+  def self.matches( code, year ) get( competition_matches_url( code, year )); end
+
 
   def self.standings( code, year )
     get( "#{BASE_URL}/competitions/#{code}/standings?season=#{year}" )

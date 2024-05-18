@@ -6,18 +6,18 @@ module Footballdata
 def self.convert( league:, season: )
 
   ### note/fix: cl (champions league for now is a "special" case)
-  # if league.downcase == 'cl'
-  #   convert_cl( league: league,
-  #              season: season )
-  #  return
-  # end
+  if league.downcase == 'cl'
+    convert_cl( league: league,
+                season: season )
+    return
+  end
 
 
 
   season = Season( season )   ## cast (ensure) season class (NOT string, integer, etc.)
 
-  data           = Webcache.read_json( MetalV4.competition_matches_url( LEAGUES[league.downcase], season.start_year ))
-  data_teams     = Webcache.read_json( MetalV4.competition_teams_url(   LEAGUES[league.downcase], season.start_year ))
+  data           = Webcache.read_json( Metal.competition_matches_url( LEAGUES[league.downcase], season.start_year ))
+  data_teams     = Webcache.read_json( Metal.competition_teams_url(   LEAGUES[league.downcase], season.start_year ))
 
 
   ## build a (reverse) team lookup by name
@@ -30,7 +30,7 @@ def self.convert( league:, season: )
 
   pp teams_by_name.keys
 
-  
+
 
 mods = MODS[ league.downcase ] || {}
 
@@ -39,12 +39,11 @@ recs = []
 
 teams = Hash.new( 0 )
 
-
-# stat  =  Stat.new
+stat  =  Stat.new
 
 matches = data[ 'matches']
 matches.each do |m|
-  # stat.update( m )
+  stat.update( m )
 
   team1 = m['homeTeam']['name']
   team2 = m['awayTeam']['name']
@@ -65,7 +64,6 @@ matches.each do |m|
 
 
     ## e.g. "utcDate": "2020-05-09T00:00:00Z",
-    ##      "utcDate": "2023-08-18T18:30:00Z",
     date_str = m['utcDate']
     date = DateTime.strptime( date_str, '%Y-%m-%dT%H:%M:%SZ' )
 
@@ -75,16 +73,16 @@ matches.each do |m|
     ht       = ''
 
     case m['status']
-    when 'SCHEDULED', 'TIMED'   ## , 'IN_PLAY'
+    when 'SCHEDULED', 'IN_PLAY'
       ft = ''
       ht = ''
     when 'FINISHED'
       ## todo/fix: assert duration == "REGULAR"
-      ft = "#{score['fullTime']['home']}-#{score['fullTime']['away']}"
-      ht = "#{score['halfTime']['home']}-#{score['halfTime']['away']}"
+      ft = "#{score['fullTime']['homeTeam']}-#{score['fullTime']['awayTeam']}"
+      ht = "#{score['halfTime']['homeTeam']}-#{score['halfTime']['awayTeam']}"
     when 'AWARDED'
       ## todo/fix: assert duration == "REGULAR"
-      ft = "#{score['fullTime']['home']}-#{score['fullTime']['away']}"
+      ft = "#{score['fullTime']['homeTeam']}-#{score['fullTime']['awayTeam']}"
       ft << ' (*)'
       ht = ''
       comments = 'awarded'
@@ -104,7 +102,7 @@ matches.each do |m|
 
 
     ## todo/fix: assert matchday is a number e.g. 1,2,3, etc.!!!
-    recs << [m['matchday'].to_s,   ## note: convert integer to string!!!
+    recs << [m['matchday'],
              date.to_date.strftime( '%Y-%m-%d' ),
              team1,
              ft,
@@ -116,13 +114,13 @@ matches.each do |m|
 
     print '%2s' % m['matchday']
     print ' - '
-    print '%-26s' % team1
+    print '%-24s' % team1
     print '  '
     print ft
     print ' '
     print "(#{ht})"    unless ht.empty?
     print '  '
-    print '%-26s' % team2
+    print '%-24s' % team2
     print '  '
     print comments
     print ' | '
@@ -132,9 +130,7 @@ matches.each do |m|
     print date
     print "\n"
   else
-    puts "!!! unexpected stage:"
     puts "-- skipping #{m['stage']}"
-    exit 1
   end
 end # each match
 
@@ -158,14 +154,14 @@ dates = "#{start_date.strftime('%b %-d')} - #{end_date.strftime('%b %-d')}"
 buf = ''
 buf << "#{season.key} (#{dates}) - "
 buf << "#{teams.keys.size} clubs, "
-# buf << "#{stat[:regular_season][:matches]} matches, "
-# buf << "#{stat[:regular_season][:goals]} goals"
+buf << "#{stat[:regular_season][:matches]} matches, "
+buf << "#{stat[:regular_season][:goals]} goals"
 buf << "\n"
 
 puts buf
 
 
-=begin
+
    ## note: warn if stage is greater one and not regular season!!
    File.open( './errors.txt' , 'a:utf-8' ) do |f|
      if stat[:all][:stage].keys != ['REGULAR_SEASON']
@@ -173,6 +169,7 @@ puts buf
       f.write "   #{stat[:all][:stage].keys.inspect}\n"
      end
    end
+
 
    File.open( './logs.txt', 'a:utf-8' ) do |f|
      f.write "\n================================\n"
@@ -196,16 +193,13 @@ puts buf
         f.write "\n"
      end
    end
-=end
+
+
 
 
 # recs = recs.sort { |l,r| l[1] <=> r[1] }
 ## reformat date / beautify e.g. Sat Aug 7 1993
-recs = recs.map do |rec| 
-           rec[1] = Date.strptime( rec[1], '%Y-%m-%d' ).strftime( '%a %b %-d %Y' ) 
-           rec
-       end
-
+recs.each { |rec| rec[1] = Date.strptime( rec[1], '%Y-%m-%d' ).strftime( '%a %b %-d %Y' ) }
 
 headers = [
   'Matchday',
@@ -238,7 +232,7 @@ teams.each do |name, count|
   print "\n"
 end
 
-## pp stat
+pp stat
 end   # method convert
 end #  module Footballdata
 
