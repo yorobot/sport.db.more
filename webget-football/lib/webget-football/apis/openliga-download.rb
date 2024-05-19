@@ -20,8 +20,11 @@ class Metal
     get( "#{BASE_URL}/getmatchdata/#{code}/#{year}" )
   end
  
-  
+  def self.goalgetters( code, year )
+    get( "#{BASE_URL}/getgoalgetters/#{code}/#{year}" )
+  end
 
+  
   def self.get( url )
     headers = {}
     headers['User-Agent']   = 'ruby'
