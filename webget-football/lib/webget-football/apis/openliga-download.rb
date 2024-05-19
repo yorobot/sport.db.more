@@ -7,10 +7,20 @@ class Metal
 
   BASE_URL = 'https://api.openligadb.de'
 
+ 
+  def self.leagues
+    get( "#{BASE_URL}/getavailableleagues" )
+  end  
+ 
+  def self.teams( code, year )
+    get( "#{BASE_URL}/getavailableteams/#{code}/#{year}" )
+  end
+
   def self.matches( code, year )
     get( "#{BASE_URL}/getmatchdata/#{code}/#{year}" )
   end
-
+ 
+  
 
   def self.get( url )
     headers = {}

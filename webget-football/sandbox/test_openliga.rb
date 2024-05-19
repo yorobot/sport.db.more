@@ -12,7 +12,9 @@ puts "  #{Openliga::LEAGUES.keys.size} league(s)"
 
 ## try de.1 - 1. bundesliga
 # Openliga::Metal.matches( 'bl1', 2023 )  # 2023/2024
+# Openliga::Metal.teams( 'bl1', 2023 )  
 # Openliga::Metal.matches( 'bl1', 2022 )  
+# Openliga::Metal.teams( 'bl1', 2022 )  
 # Openliga::Metal.matches( 'bl1', 2021 )  
 # Openliga::Metal.matches( 'bl1', 2020 )  
 
@@ -20,6 +22,7 @@ puts "  #{Openliga::LEAGUES.keys.size} league(s)"
 # Openliga::Metal.matches( 'bl3', 2023 )  
 
 # Openliga::Metal.matches( 'dfb',     2023 )
+# Openliga::Metal.teams( 'dfb',     2023 )
 # Openliga::Metal.matches( 'dfb2022', 2022 )
 
 ## austrian bundeslig
@@ -31,17 +34,22 @@ puts "  #{Openliga::LEAGUES.keys.size} league(s)"
 
 ## champions league
 # Openliga::Metal.matches( 'champion1', 2023 )	
+# Openliga::Metal.teams( 'champion1', 2023 )	
 # Openliga::Metal.matches( 'uefacl22', 2022 )
 # Openliga::Metal.matches( 'uefacl', 2021 )
 
 
-Openliga::Metal.matches( 'WM2022', 2022 )
+# Openliga::Metal.matches( 'WM2022', 2022 )
 
-Openliga::Metal.matches( 'em', 2024 )
-Openliga::Metal.matches( 'em20', 2020 )
+# Openliga::Metal.matches( 'em', 2024 )
+# Openliga::Metal.matches( 'em20', 2020 )
 
-Openliga::Metal.matches( 'CA2024', 2024 )
-Openliga::Metal.matches( 'CA2021', 2021 )
+# Openliga::Metal.matches( 'CA2024', 2024 )
+# Openliga::Metal.matches( 'CA2021', 2021 )
+# Openliga::Metal.teams( 'CA2021', 2021 )
+
+
+# Openliga::Metal.leagues
 
 
 puts "bye"
