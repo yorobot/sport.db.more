@@ -1,6 +1,36 @@
 
 
+##
+##  note - add timezone support here inline for now
+require 'tzinfo'
+
+
+
+
 module Footballdata
+
+
+  TIMEZONES = {
+    'eng.1' => 'Europe/London',  
+    'eng.2' => 'Europe/London',
+  
+    'es.1'  => 'Europe/Madrid',
+  
+    'de.1'  => 'Europe/Berlin',
+    'fr.1'  => 'Europe/Paris', 
+    'it.1'  => 'Europe/Rome',
+  }
+
+
+def self.assert( cond, msg )
+  if cond
+    # do nothing
+  else
+    puts "!!! assert failed (in convert) - #{msg}"
+    exit 1
+  end
+end
+
 
 
 def self.convert( league:, season: )
@@ -19,6 +49,16 @@ def self.convert( league:, season: )
   data           = Webcache.read_json( MetalV4.competition_matches_url( LEAGUES[league.downcase], season.start_year ))
   data_teams     = Webcache.read_json( MetalV4.competition_teams_url(   LEAGUES[league.downcase], season.start_year ))
 
+  ## check for time zone
+  
+  tz_name = TIMEZONES[ league.downcase ]
+  if tz_name.nil?
+    puts "!! ERROR - sorry no timezone configured for league #{league}"
+    exit 1
+  end
+  
+  tz  = TZInfo::Timezone.get( tz_name )
+  pp tz
 
   ## build a (reverse) team lookup by name
   puts "#{data_teams['teams'].size} teams"
@@ -42,6 +82,10 @@ teams = Hash.new( 0 )
 
 # stat  =  Stat.new
 
+#  track stati counts 
+stati = Hash.new(0)
+
+
 matches = data[ 'matches']
 matches.each do |m|
   # stat.update( m )
@@ -64,15 +108,12 @@ matches.each do |m|
     end
 
 
-    ## e.g. "utcDate": "2020-05-09T00:00:00Z",
-    ##      "utcDate": "2023-08-18T18:30:00Z",
-    date_str = m['utcDate']
-    date = DateTime.strptime( date_str, '%Y-%m-%dT%H:%M:%SZ' )
-
 
     comments = ''
     ft       = ''
     ht       = ''
+
+    stati[m['status']] += 1  ## track stati counts for logs
 
     case m['status']
     when 'SCHEDULED', 'TIMED'   ## , 'IN_PLAY'
@@ -80,15 +121,19 @@ matches.each do |m|
       ht = ''
     when 'FINISHED'
       ## todo/fix: assert duration == "REGULAR"
+      assert( score['duration'] == 'REGULAR', 'score.duration REGULAR expected' ) 
       ft = "#{score['fullTime']['home']}-#{score['fullTime']['away']}"
       ht = "#{score['halfTime']['home']}-#{score['halfTime']['away']}"
     when 'AWARDED'
       ## todo/fix: assert duration == "REGULAR"
+      assert( score['duration'] == 'REGULAR', 'score.duration REGULAR expected' ) 
       ft = "#{score['fullTime']['home']}-#{score['fullTime']['away']}"
       ft << ' (*)'
       ht = ''
       comments = 'awarded'
     when 'CANCELLED'
+      ## note cancelled might have scores!!
+      ##   ht only or ft+ht!!!  (see fr 2021/22)
       ft = '(*)'
       ht = ''
       comments  = 'canceled'   ## us eng ? -> canceled, british eng. cancelled ?
@@ -103,14 +148,37 @@ matches.each do |m|
     end
 
 
+    ##
+    ##  add time, timezone(tz)
+    ##    2023-08-18T18:30:00Z
+    ## e.g. "utcDate": "2020-05-09T00:00:00Z",
+    ##      "utcDate": "2023-08-18T18:30:00Z",
+
+    ## -- todo - make sure / assert it's always utc - how???
+    ## utc   = ## tz_utc.strptime( m['utcDate'], '%Y-%m-%dT%H:%M:%SZ' )
+    ##  note:  DateTime.strptime  is supposed to be unaware of timezones!!!
+    ##            use to parse utc
+    utc = DateTime.strptime( m['utcDate'], '%Y-%m-%dT%H:%M:%SZ' ).to_time.utc 
+    assert( utc.strftime( '%Y-%m-%dT%H:%M:%SZ' ) == m['utcDate'], 'utc time mismatch' )
+    
+    local = tz.to_local( utc )
+   
+
+
+
     ## todo/fix: assert matchday is a number e.g. 1,2,3, etc.!!!
     recs << [m['matchday'].to_s,   ## note: convert integer to string!!!
-             date.to_date.strftime( '%Y-%m-%d' ),
+             local.strftime( '%Y-%m-%d' ),
+             utc.hour == 0 && utc.minutes == 0 ? '' : local.strftime( '%H:%M' ),
+             local.strftime( '%Z / UTC%z' ), 
              team1,
              ft,
              ht,
              team2,
-             comments
+             comments,
+             ## add more columns e.g. utc date, status
+             m['status'],  # e.g. FINISHED, TIMED, etc.
+             m['utcDate'],
             ]
 
 
@@ -127,9 +195,9 @@ matches.each do |m|
     print comments
     print ' | '
     ## print date.to_date  ## strip time
-    print date.to_date.strftime( '%a %b %-d %Y' )
+    print utc.strftime( '%a %b %-d %Y' )
     print ' -- '
-    print date
+    print utc
     print "\n"
   else
     puts "!!! unexpected stage:"
@@ -173,9 +241,16 @@ puts buf
       f.write "   #{stat[:all][:stage].keys.inspect}\n"
      end
    end
+=end
+
 
    File.open( './logs.txt', 'a:utf-8' ) do |f|
-     f.write "\n================================\n"
+     f.write "====  #{league} #{season.key}  =============\n"
+     f.write "  match stati: #{stati.inspect}\n"
+   end
+
+=begin
+    f.write "\n================================\n"
      f.write "====  #{league}  =============\n"
      f.write buf
      f.write "  match status: #{stat[:regular_season][:status].inspect}\n"
@@ -199,7 +274,12 @@ puts buf
 =end
 
 
+##
+##  sort buy utc date ??? - why? why not?
+
 # recs = recs.sort { |l,r| l[1] <=> r[1] }
+
+
 ## reformat date / beautify e.g. Sat Aug 7 1993
 recs = recs.map do |rec| 
            rec[1] = Date.strptime( rec[1], '%Y-%m-%d' ).strftime( '%a %b %-d %Y' ) 
@@ -210,11 +290,16 @@ recs = recs.map do |rec|
 headers = [
   'Matchday',
   'Date',
+  'Time',
+  'Timezone',  ## move back column - why? why not?
   'Team 1',
   'FT',
   'HT',
   'Team 2',
-  'Comments'
+  'Comments',
+  ##
+  'Status', # e.g. 
+  'UTC',    # date utc
 ]
 
 ## note: change season_key from 2019/20 to 2019-20  (for path/directory!!!!)
