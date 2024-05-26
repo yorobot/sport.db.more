@@ -7,6 +7,9 @@ module Footballdata
   # AS Monaco FC | Monaco  › Monaco     - Avenue des Castellans Monaco 98000
 
   MODS = {
+    'br.1' => {
+       'América FC' => 'América Mineiro',
+    },
   }
 
 end  # module Footballdata

@@ -19,6 +19,19 @@ module Footballdata
     'de.1'  => 'Europe/Berlin',
     'fr.1'  => 'Europe/Paris', 
     'it.1'  => 'Europe/Rome',
+    'nl.1'  => 'Europe/Amsterdam',
+  
+    'pt.1'  => 'Europe/Lisbon',   
+
+    ## todo/fix - pt.1
+    ##  one team in madeira!!! check for different timezone??
+    ##  CD Nacional da Madeira 
+
+    'br.1'  => 'America/Sao_Paulo',
+    ## todo/fix - brazil has 4 timezones
+    ##           really only two in use for clubs
+    ##             west and east (amazonas et al)
+    ##           for now use west for all - why? why not?
   }
 
 
@@ -164,12 +177,15 @@ matches.each do |m|
     local = tz.to_local( utc )
    
 
-
+    ## do NOT add time if status is SCHEDULED
+    ##                        or POSTPONED for now
+    ##   otherwise assume time always present - why? why not?
+  
 
     ## todo/fix: assert matchday is a number e.g. 1,2,3, etc.!!!
     recs << [m['matchday'].to_s,   ## note: convert integer to string!!!
              local.strftime( '%Y-%m-%d' ),
-             utc.hour == 0 && utc.minutes == 0 ? '' : local.strftime( '%H:%M' ),
+             ['SCHEDULED','POSTPONED'].include?( m['status'] ) ? '' : local.strftime( '%H:%M' ),
              local.strftime( '%Z / UTC%z' ), 
              team1,
              ft,

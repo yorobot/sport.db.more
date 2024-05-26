@@ -1,34 +1,19 @@
 module SportDb
 class TeamSummary    ### rename to NameSummary, DatafileSummary, etc. why? why not?????
 
-
-  ####
-  ###  fix: move "upstream" to "canonical" catalog
-  ###    add option preload (or use different) wording
-  ##    check rails for classes option name?
-  ##   use catalog( preload: true )
-  def self.catalog
-    @@catalog ||= begin
-       ## pre-load (on deman) first call
-       Import.catalog.countries ## force pre-load
-       Import.catalog.leagues   ## force pre-load
-       Import.catalog.clubs     ## force pre-load
-
-       Import.catalog
-    end
-  end
-
+  def self.catalog() Import.catalog; end 
+  def self.world()   Import.world;   end
 
 
 class Names
-  ## fix: use Import.catalog( preload: true )
   def catalog() TeamSummary.catalog; end
+  def world()   TeamSummary.world;   end
 
 
   def initialize( country_key )
     @names = Hash.new(0)
 
-    @country = catalog.countries.find( country_key )
+    @country = world.countries.find( country_key )
     if @country.nil?
       puts "!! ERROR - no country found for key >#{country_key}<"
       exit 1
