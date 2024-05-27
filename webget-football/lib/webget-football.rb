@@ -19,6 +19,7 @@ require_relative 'webget-football/metal'
 require_relative 'webget-football/apis'   ## incl. football-data.org (by Daniel Friday)
 require_relative 'webget-football/worldfootball'
 require_relative 'webget-football/fbref'
+require_relative 'webget-football/footballsquads'
 
 
 puts Webget::Module::Football.banner   # say hello
