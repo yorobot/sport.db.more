@@ -15,11 +15,31 @@ require_relative 'webget-football/version' # let version always go first
 ## shared base code (e.g. Metal::Base, Page::Base, etc.)
 require_relative 'webget-football/metal'
 
-## sources
+
+## by source
+
+###########################
+#  note: split code in two parts
+#    metal  - "bare" basics - no ref to sportdb
+#    and rest / convert  with sportdb references / goodies
+
+
+### by source
+require_relative 'webget-football/worldfootball/config'
+require_relative 'webget-football/worldfootball/leagues'
+require_relative 'webget-football/worldfootball/download'
+require_relative 'webget-football/worldfootball/page'
+require_relative 'webget-football/worldfootball/page_schedule'
+require_relative 'webget-football/worldfootball/page_report'
+
+
+require_relative 'webget-football/footballsquads/download'
+require_relative 'webget-football/footballsquads/page'
+require_relative 'webget-football/footballsquads/page_squad'
+
+
 require_relative 'webget-football/apis'   ## incl. football-data.org (by Daniel Friday)
-require_relative 'webget-football/worldfootball'
 require_relative 'webget-football/fbref'
-require_relative 'webget-football/footballsquads'
 
 
 puts Webget::Module::Football.banner   # say hello

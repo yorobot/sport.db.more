@@ -1,5 +1,41 @@
 
 module Footballsquads
+
+LEAGUES = {
+   ## returns 1) country slug, 2) league slug
+   'eng.1' => ['eng',     'engprem' ], 
+   'de.1'  => ['ger',     'gerbun'  ],   # e.g. ger/2023-2024/gerbun.htm
+   'es.1'  => ['spain',   'spalali' ],   # e.g. spain/2023-2024/spalali.htm
+   'it.1'  => ['italy',   'seriea' ],    # e.g. italy/2023-2024/seriea.htm
+   'fr.1'  => ['france',  'fralig1'],    # e.g. france/2023-2024/fralig1.htm
+
+   'at.1'  => ['austria', 'ausbun' ],
+}
+
+
+
+def self.league( league:, season:, cache: true )
+   season = Season( season )   ## cast (ensure) season class (NOT string, integer, etc.)
+   ## season format is 2023-2024  (use .to_path( :long/:l))
+   season_slug = season.to_path( :long )
+
+   country_slug, league_slug = LEAGUES[ league.downcase ]
+   unless country_slug && league_slug
+      puts "!! ERROR - no league found for >#{league}<"
+      exit 1
+   end
+
+   ## change to LeaguePage (from Page::League) - why? why not?
+   ##           SquadPage  (from Page::Squad) etc.
+   Page::League.get(
+                    country: country_slug,
+                    league:  league_slug,
+                    season:  season_slug,
+                    cache:   cache
+                 )              
+end
+
+
 ##################
 ##  plumbing metal "helpers"
 

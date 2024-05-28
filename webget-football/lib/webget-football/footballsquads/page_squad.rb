@@ -6,13 +6,60 @@ class Page
 
   class League < Page  ## note: use nested class for now - why? why not?
 
+    def self.get( country:, league:, season:, cache: true )
+      ## download if not in cache
+      ## check check first
+      ##   todo/fix: move cache check here from Metal!!!!
+      ##                 why? why not?
+      Metal.league( country: country, 
+                    league:  league, 
+                    season:  season,
+                    cache:   cache )
+
+      from_cache( country: country,
+                  league:  league,
+                  season:  season )
+    end
+
     def self.from_cache( country:, league:, season: )
       url = Metal.league_url( country: country, league: league, season: season )
     
       ## use - super.from_cache( url ) - why? why not?
       html = Webcache.read( url )
-      new( html )
+      new( html, country: country,
+                 league:  league,
+                 season:  season )
     end
+
+    def initialize( html, country:,
+                          league:,
+                          season: )
+      super( html )
+      @country_slug = country
+      @league_slug  = league
+      @season_slug  = season
+    end
+
+    ## add high-level convenience helper 
+    ##  for all team (squad) pages
+    def each_team
+       teams = self.teams
+       puts "   #{teams.size} team(s)"
+       pp teams
+    
+       teams.each do |rec|
+          league_slug = rec['league_slug']
+          team_slug   = rec['team_slug']
+          page = Squad.get(
+                   country:  @country_slug,
+                   league:   league_slug,  ## note: different slug/key from league!!!
+                   season:   @season_slug,
+                   team:     team_slug
+                  )
+          yield( page )
+       end    
+    end    
+
 
 =begin
 <div id="main">
@@ -57,6 +104,24 @@ class Page
 
   class Squad < Page  ## note: use nested class for now - why? why not?
 
+
+def self.get( country:, league:, season:, team:, cache: true )
+  ## download if not in cache
+  ## check check first
+  ##   todo/fix: move cache check here from Metal!!!!
+  ##                 why? why not?
+  Metal.squad( country: country, 
+               league:  league, 
+               season:  season,
+               team:    team,
+               cache:   cache )
+
+  from_cache( country: country, 
+              league:  league, 
+              season:  season, 
+              team:    team )
+end
+
 def self.from_cache( country:, league:, season:,
                      team:
                    )
@@ -67,6 +132,28 @@ def self.from_cache( country:, league:, season:,
   html = Webcache.read( url )
   new( html )
 end
+
+=begin
+<h2 style="margin-top: 0; margin-bottom: 0"><font color="#FF0000">RB Leipzig</font></h2>
+<h3 style="margin-top: 0; margin-bottom: 0"><b>Official Name:</b> RasenBallsport 
+Leipzig</h3>
+=end
+def team_name  # short name
+  @team_name ||= begin
+                h2 = doc.css( 'div#main h2' ).first
+                   ## note - squish whitespaces (name may include newlines and more)
+                   h2.text.strip.gsub( /[ \n\r\t]+/, ' ' )
+               end
+end
+
+def team_name_official  # long name
+  @team_name_official ||= begin
+                   h3 = doc.css( 'div#main h3' ).first
+                   ## note - squish whitespaces (name may include newlines and more)
+                   h3.text.sub( 'Official Name:', '' ).strip.gsub( /[ \n\r\t]+/, ' ' )
+                 end
+end
+
 
 
 =begin
