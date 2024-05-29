@@ -212,7 +212,7 @@ def players
   tables = doc.css( 'div#main table' )
 
   ## todo - assert one table
-  puts "  found #{tables.size} table(s)"
+  # puts "  found #{tables.size} table(s)"
 
   table = tables.first
 
@@ -224,9 +224,9 @@ def players
   data = []
   trs.each_with_index do |tr,i|
     tds = tr.css( 'td' )
-    puts "==> #{i}  - #{tds.size} col(s)"
+    # puts "==> #{i}  - #{tds.size} col(s)"
     values = tds.map {|td| squish( td.text.to_s ) }
-    pp values
+    # pp values
     data << values
   end
 
