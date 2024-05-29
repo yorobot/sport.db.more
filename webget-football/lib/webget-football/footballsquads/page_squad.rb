@@ -153,22 +153,58 @@ end
 <h3 style="margin-top: 0; margin-bottom: 0"><b>Official Name:</b> RasenBallsport 
 Leipzig</h3>
 =end
-def team_name  # short name
-  @team_name ||= begin
-                h2 = doc.css( 'div#main h2' ).first
-                   ## note - squish whitespaces (name may include newlines and more)
-                   squish( h2.text.to_s )
-               end
+
+=begin
+<h3 style="margin-top: 0; margin-bottom: 6"><b>Formed:</b>
+ 1909&nbsp; <b>Ground: </b>Lotto Park (21,500)&nbsp; <b>
+Manager:</b> Brian Riemer [DEN]</h3>
+=end
+
+def _team_info
+  @team_info ||= begin 
+                     h2 = doc.css( 'div#main h2' )
+                     ## note - squish whitespaces (name may include newlines and more)
+                     name = squish( h2[0].text.to_s )
+
+                     h3 = doc.css( 'div#main h3' )
+                     ## note - squish whitespaces (name may include newlines and more)
+                     ##  todo/check - text.to_s needed here (or use h3.text - returns string or something else?)
+                     official_name = squish( h3[0].text.to_s ).sub( 'Official Name:', '' ).strip
+              
+                     ## check for <i>
+                     ##   tags ground as "on loan" / temporary!!!
+                     html = h3[1].inner_html   ## note: inner_html returns (plain vanilla) string
+                     
+                     html = html.gsub( "\u00a0", ' | ' ) 
+                     html = html.gsub( %r{
+                                         <b>|</b>|
+                                         <strong>|</strong>
+                                           }ix, 
+                                           '' )
+                     html = squish( html )
+                     ## pp html
+                     more = html
+
+                     ##  split on &nbsp;  - why? why not?
+                     # parts = html.split( "\u00a0" )
+                     # parts = parts.map { |part| squish( part) }
+                     # pp parts
+
+                   { 'Name' => name,
+                     'Official Name' => official_name,
+                     'More'   =>  more,
+                      # 'Formed' => '?',
+                      # 'Ground' => '?',
+                      # 'Manager' => '?'
+                   }
+                  end
 end
 
-def team_name_official  # long name
-  @team_name_official ||= begin
-                   h3 = doc.css( 'div#main h3' ).first
-                   ## note - squish whitespaces (name may include newlines and more)
-                   ##  todo/check - text.to_s needed here (or use h3.text - returns string or something else?)
-                   squish( h3.text.to_s ).sub( 'Official Name:', '' ).strip
-                 end
-end
+
+def team_info()          _team_info['More'];  end 
+
+def team_name()           _team_info['Name'];          end  # short name
+def team_name_official()  _team_info['Official Name']; end  # long name
 
 
 
