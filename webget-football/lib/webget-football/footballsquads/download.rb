@@ -109,7 +109,7 @@ class Metal < ::Metal::Base
 
       ## check check first
       if cache && Webcache.cached?( url )
-        puts "  reuse local (cached) copy >#{Webcache.url_to_id( url )}<"
+        ## puts "  reuse local (cached) copy >#{Webcache.url_to_id( url )}<"
       else
         download_page( url )
       end
@@ -130,7 +130,7 @@ class Metal < ::Metal::Base
 
      ## check check first
      if cache && Webcache.cached?( url )
-        puts "  reuse local (cached) copy >#{Webcache.url_to_id( url )}<"
+        ## puts "  reuse local (cached) copy >#{Webcache.url_to_id( url )}<"
      else
         download_page( url )
      end

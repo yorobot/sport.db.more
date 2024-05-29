@@ -45,7 +45,7 @@ class Page
     def each_team
        teams = self.teams
        puts "   #{teams.size} team(s)"
-       pp teams
+       # pp teams
     
        teams.each do |rec|
           league_slug = rec['league_slug']
@@ -76,7 +76,7 @@ class Page
       h5s = doc.css( 'div#main h5' )
 
       ## todo - assert one table
-      puts "  found #{h5s.size} h5(s)"
+      # puts "  found #{h5s.size} h5(s)"
       data = []
 
       h5s.each_with_index do |h5,i|
@@ -103,6 +103,21 @@ class Page
 
 
   class Squad < Page  ## note: use nested class for now - why? why not?
+
+
+## todo/fix:
+##  move upstream for reuse in all pages
+##
+def squish( str )
+  ## rails squish! uses
+  ##   gsub!(/[[:space:]]+/, " ")
+  ##  strip!
+  ##   see https://apidock.com/rails/v6.1.7.7/String/squish!
+
+  ## note: add non-break space too 
+  str.gsub( /[ \n\r\t\u00a0]+/, ' ' ).strip
+end
+
 
 
 def self.get( country:, league:, season:, team:, cache: true )
@@ -142,7 +157,7 @@ def team_name  # short name
   @team_name ||= begin
                 h2 = doc.css( 'div#main h2' ).first
                    ## note - squish whitespaces (name may include newlines and more)
-                   h2.text.strip.gsub( /[ \n\r\t]+/, ' ' )
+                   squish( h2.text.to_s )
                end
 end
 
@@ -150,7 +165,8 @@ def team_name_official  # long name
   @team_name_official ||= begin
                    h3 = doc.css( 'div#main h3' ).first
                    ## note - squish whitespaces (name may include newlines and more)
-                   h3.text.sub( 'Official Name:', '' ).strip.gsub( /[ \n\r\t]+/, ' ' )
+                   ##  todo/check - text.to_s needed here (or use h3.text - returns string or something else?)
+                   squish( h3.text.to_s ).sub( 'Official Name:', '' ).strip
                  end
 end
 
@@ -178,7 +194,7 @@ def _build_rows( data )
               ##       different space encoding in unicode
               ##         use \u00a0 for &nbsp;
               
-              line = values[1..-1].join( '' ).gsub( /\u00a0/, '' ).strip
+              line = squish( values[1..-1].join( '' ) )
               if line.empty?
                 false
               else
@@ -201,7 +217,7 @@ def players
   table = tables.first
 
   trs = table.css( 'tr' )
-  puts " #{trs.size} row(s)"
+  # puts " #{trs.size} row(s)"
 
 
   ## step one - convert to string only array of strings
@@ -209,7 +225,7 @@ def players
   trs.each_with_index do |tr,i|
     tds = tr.css( 'td' )
     puts "==> #{i}  - #{tds.size} col(s)"
-    values = tds.map {|td| td.text.to_s.strip }
+    values = tds.map {|td| squish( td.text.to_s ) }
     pp values
     data << values
   end
