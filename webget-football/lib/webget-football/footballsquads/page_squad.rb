@@ -6,6 +6,11 @@ class Page
 
   class League < Page  ## note: use nested class for now - why? why not?
 
+   # todo/fix !!!!!!!!!!!!:
+   #   use self.get( url, cache: true ) !!!!!
+   #    no params allowed here - sorry!!!!
+   #    keep it simple
+
     def self.get( country:, league:, season:, cache: true )
       ## download if not in cache
       ## check check first
@@ -47,7 +52,30 @@ class Page
        puts "   #{teams.size} team(s)"
        # pp teams
     
+     # -- clubs
+     # eng/2023-2024/engprem.htm
+     # eng/2023-2024/engprem/arsenal.htm
+     # eng/2023-2024/engprem/chelsea.htm
+     # austria/2023-2024/ausbun.htm
+     # austria/2023-2024/bundes/austvien.htm
+     # austria/2023-2024/bundes/rapvien.htm  
+     # portugal/2023-2024/porprim.htm
+     # portugal/2023-2024/primeira/benfica.htm
+     # -- national 
+     # national/worldcup/wc2022.htm
+     # national/worldcup/wc2022/argent.htm
+     # national/worldcup/wc2022/mexico.htm
+     # national/eurocham/euro2008.htm
+     # national/eurocham/euro2008/austria.htm
+
        teams.each do |rec|
+
+         #  fix - return complete team/squad team_url!!!
+         #    with htm !!!
+         #   keep it simple
+         #   use urls only!!
+         #    remove league,country, etc. in get/from_cache!!!
+
           league_slug = rec['league_slug']
           team_slug   = rec['team_slug']
           page = Squad.get(

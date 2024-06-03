@@ -1,6 +1,7 @@
 
 module Footballsquads
 
+
 LEAGUES = {
    ## returns 1) country slug, 2) league slug
    'eng.1' => %w[eng engprem], 
@@ -61,7 +62,12 @@ LEAGUES = {
    'jp.1'   => %w[japan  japjlge],   # J1 League
 }
 
-
+=begin
+NATIONAL_LEAGUES = {
+   'euro'  =>  ->(season) { |season| "national/eurocham/euro#{season}.htm" }
+   'world' =>  ->(season) { |season| "national/worldcup/wc2022#{season}.htm" } 
+}
+=end
 
 
 
