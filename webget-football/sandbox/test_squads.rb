@@ -21,6 +21,9 @@ DATASETS = [
   ['it.1',    %w[2023/24]],
 
   ['at.1',    %w[2023/24]],
+  
+  ['world',   %w[2022]],
+  ['euro',    %w[2020]],
 ]
 
 
@@ -31,14 +34,17 @@ DATASETS.each do |league, seasons|
     league_page = Footballsquads.league( league: league, 
                                          season: season )
     pp league_page.title
-    
+    pp league_page.teams
+
     league_page.each_team do |team_page|
        pp team_page.title
-    
+
+=begin
        team_name         =  team_page.team_name
        pp team_name
        team_name_official = team_page.team_name_official
        pp team_name_official
+=end
     
        current, past =  team_page.players
     

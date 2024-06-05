@@ -4,7 +4,16 @@ module Footballsquads
 
 LEAGUES = {
    ## returns 1) country slug, 2) league slug
-   'eng.1' => %w[eng engprem], 
+   
+   ## note - eng.1 uses faprem starting 2017-2018!!
+   'eng.1' => ->(season) { 
+                  season_slug = season.to_path( :long )
+                  if season <= Season( '2017/18' )
+                     "eng/#{season_slug}/faprem.htm"
+                  else
+                     "eng/#{season_slug}/engprem.htm"
+                  end
+               },
    'eng.2' => %w[eng flcham], # Football League Championship
    'eng.3' => %w[eng flone],  # Football League One
    'eng.4' => %w[eng fltwo],  # Football League Two
@@ -54,42 +63,55 @@ LEAGUES = {
    'cl.1'   =>  %w[chile  chileprm],  # Primera División
 
    'us.1'   =>  %w[usa usamls],  # Major League Soccer
+  
    ## note - mexico - uses apetura/clausura !!!
    'mx.1.clausura' => %w[mexico mexclaus],  # Liga MX (Clausura)
+  
    'uy.1'     => %w[uruguay uruprim],  # Primera División
    
    'au.1'   => %w[australia  ausalge],   # A-League
    'jp.1'   => %w[japan  japjlge],   # J1 League
+
+   ## national leagues
+   'euro'   =>  ->(season) { "national/eurocham/euro#{season}.htm" },
+   'world'  =>  ->(season) { "national/worldcup/wc#{season}.htm" }, 
 }
 
-=begin
-NATIONAL_LEAGUES = {
-   'euro'  =>  ->(season) { |season| "national/eurocham/euro#{season}.htm" }
-   'world' =>  ->(season) { |season| "national/worldcup/wc2022#{season}.htm" } 
-}
-=end
-
+## pp LEAGUES
 
 
 def self.league( league:, season:, cache: true )
    season = Season( season )   ## cast (ensure) season class (NOT string, integer, etc.)
-   ## season format is 2023-2024  (use .to_path( :long/:l))
-   season_slug = season.to_path( :long )
 
-   country_slug, league_slug = LEAGUES[ league.downcase ]
-   unless country_slug && league_slug
-      puts "!! ERROR - no league found for >#{league}<"
+   league_def = LEAGUES[ league.downcase ]
+
+   if league_def.nil?
+      puts "!! ERROR - no league found for >#{league}<; sorry"
       exit 1
    end
 
+   ## base_url - find a better name?
+   ##     what is the url part called with out domain???
+   ##   use relative_url
+   relative_url =   if league_def.is_a?( Proc )
+                    league_def.call( season ) 
+                else
+                    ## assume country slug & league_slug for now
+                    country_slug, league_slug = league_def
+                    ## season format is 2023-2024  (use .to_path( :long/:l))
+                    season_slug = season.to_path( :long )
+                    # https://www.footballsquads.co.uk/austria/2023-2024/ausbun.htm  
+                    "#{country_slug}/#{season_slug}/#{league_slug}.htm" 
+                end
+
+ 
    ## change to LeaguePage (from Page::League) - why? why not?
    ##           SquadPage  (from Page::Squad) etc.
-   Page::League.get(
-                    country: country_slug,
-                    league:  league_slug,
-                    season:  season_slug,
-                    cache:   cache
-                 )              
+   url = "#{Metal::BASE_URL}/#{relative_url}"
+
+   Page::League.get( url,
+                     cache:  cache
+                   )              
 end
 
 

@@ -11,38 +11,32 @@ class Page
    #    no params allowed here - sorry!!!!
    #    keep it simple
 
-    def self.get( country:, league:, season:, cache: true )
+    ## def self.get( country:, league:, season:, cache: true )
+    def self.get( url, cache: true )
       ## download if not in cache
       ## check check first
       ##   todo/fix: move cache check here from Metal!!!!
       ##                 why? why not?
-      Metal.league( country: country, 
-                    league:  league, 
-                    season:  season,
-                    cache:   cache )
 
-      from_cache( country: country,
-                  league:  league,
-                  season:  season )
+      ## check check first
+      if cache && Webcache.cached?( url )
+        ## puts "  reuse local (cached) copy >#{Webcache.url_to_id( url )}<"
+      else
+        ::Metal::Base.download_page( url )
+      end
+
+      from_cache( url )
     end
 
-    def self.from_cache( country:, league:, season: )
-      url = Metal.league_url( country: country, league: league, season: season )
-    
+    def self.from_cache( url )
       ## use - super.from_cache( url ) - why? why not?
       html = Webcache.read( url )
-      new( html, country: country,
-                 league:  league,
-                 season:  season )
+      new( html, url: url )
     end
 
-    def initialize( html, country:,
-                          league:,
-                          season: )
+    def initialize( html, url: )
       super( html )
-      @country_slug = country
-      @league_slug  = league
-      @season_slug  = season
+      @url = url
     end
 
     ## add high-level convenience helper 
@@ -76,14 +70,9 @@ class Page
          #   use urls only!!
          #    remove league,country, etc. in get/from_cache!!!
 
-          league_slug = rec['league_slug']
-          team_slug   = rec['team_slug']
-          page = Squad.get(
-                   country:  @country_slug,
-                   league:   league_slug,  ## note: different slug/key from league!!!
-                   season:   @season_slug,
-                   team:     team_slug
-                  )
+          team_url  = rec['team_url']
+          team_name = rec['team_name']
+          page = Squad.get( team_url )
           yield( page )
        end    
     end    
@@ -101,28 +90,27 @@ class Page
 =end
 
     def teams
-      h5s = doc.css( 'div#main h5' )
+
+      ## use anchor links (a) inside h5
+      ##  works with leagues and national comp. ??? 
+      els = doc.css( 'div#main h5 a' )
 
       ## todo - assert one table
-      # puts "  found #{h5s.size} h5(s)"
+      ## puts "  found #{els.size} h5(s)"
       data = []
 
-      h5s.each_with_index do |h5,i|
-            a = h5.at( 'a' )
+      els.each_with_index do |el,i|
+            a = el
 
-            team_name = a.text.to_s.strip
-            href =      a['href']
-            ## split into league slug
-            ##  and        team  slug
-            ##    engprem/brentf.htm
-            values  =  href.sub( /\.htm$/, '' ).split( '/' )
-            league_slug = values[0]
-            team_slug   = values[1]
-
-            data << {  'team_name'   => team_name,
-                       'team_slug'   => team_slug,
-                       'league_slug' => league_slug,
-                     }
+            team_name         = a.text.strip ## todo/fix - use squish!!!  
+                                             #  a.text.to_s.strip
+            team_relative_url = a['href']
+     
+            ## note: return absolute url - keep relative too (for debugging) - why? why not?
+            data << {  'team_url' => URI.join( @url, team_relative_url ).to_s,
+                       'team_relative_url'  => team_relative_url,
+                       'team_name'          => team_name,  
+                    }
       end
       data
     end
@@ -148,29 +136,19 @@ end
 
 
 
-def self.get( country:, league:, season:, team:, cache: true )
-  ## download if not in cache
-  ## check check first
-  ##   todo/fix: move cache check here from Metal!!!!
-  ##                 why? why not?
-  Metal.squad( country: country, 
-               league:  league, 
-               season:  season,
-               team:    team,
-               cache:   cache )
+def self.get( url, cache: true )
 
-  from_cache( country: country, 
-              league:  league, 
-              season:  season, 
-              team:    team )
+  if cache && Webcache.cached?( url )
+    ## puts "  reuse local (cached) copy >#{Webcache.url_to_id( url )}<"
+  else
+    ::Metal::Base.download_page( url )
+  end
+
+  from_cache( url )
 end
 
-def self.from_cache( country:, league:, season:,
-                     team:
-                   )
-  url = Metal.squad_url( country: country, league: league, season: season,
-                         team: team )
 
+def self.from_cache( url )
   ## use - super.from_cache( url ) - why? why not?
   html = Webcache.read( url )
   new( html )
