@@ -39,7 +39,15 @@ LEAGUES = {
    'pt.1'   => %w[portugal porprim], # Primeira Liga
    'nl.1'   => %w[netherl nethere],  # Eredivisie
 
-   'be.1'   => %w[belgium belpro],  # Pro League
+   'be.1'   =>  ->(season) { 
+                     season_slug = season.to_path( :long )
+                     if season <= Season( '2022/23' )
+                       "belgium/#{season_slug}/beleers.htm"
+                     else
+                       "belgium/#{season_slug}/belpro.htm"
+                     end
+                },
+
    'tr.1'   => %w[turkey  tursuper], # Süper Lig
    'gr.1'   => %w[greece  gresuper], # Super League
 
