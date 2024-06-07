@@ -102,9 +102,8 @@ class Page
       els.each_with_index do |el,i|
             a = el
 
-            team_name         = a.text.strip ## todo/fix - use squish!!!  
-                                             #  a.text.to_s.strip
-            team_relative_url = a['href']
+            team_name         = squish( a.text )  
+            team_relative_url = a['href']    
      
             ## note: return absolute url - keep relative too (for debugging) - why? why not?
             data << {  'team_url' => URI.join( @url, team_relative_url ).to_s,
@@ -119,21 +118,6 @@ class Page
 
 
   class Squad < Page  ## note: use nested class for now - why? why not?
-
-
-## todo/fix:
-##  move upstream for reuse in all pages
-##
-def squish( str )
-  ## rails squish! uses
-  ##   gsub!(/[[:space:]]+/, " ")
-  ##  strip!
-  ##   see https://apidock.com/rails/v6.1.7.7/String/squish!
-
-  ## note: add non-break space too 
-  str.gsub( /[ \n\r\t\u00a0]+/, ' ' ).strip
-end
-
 
 
 def self.get( url, cache: true )

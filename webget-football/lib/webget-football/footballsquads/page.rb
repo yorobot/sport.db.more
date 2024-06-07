@@ -27,6 +27,25 @@ def title
    @title ||= doc.css( 'title' ).first
    @title.text  ## get element's text content
 end
+
+
+
+####
+# helpers
+## todo/fix:
+##  move upstream for reuse in all pages
+##
+def squish( str )
+  ## rails squish! uses
+  ##   gsub!(/[[:space:]]+/, " ")
+  ##  strip!
+  ##   see https://apidock.com/rails/v6.1.7.7/String/squish!
+
+  ## note: add non-break space too 
+  str.gsub( /[ \n\r\t\u00a0]+/, ' ' ).strip
+end
+
+
 end # class Page
 end # module Footballsquads
 

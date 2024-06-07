@@ -70,8 +70,14 @@ LEAGUES = {
    'ar.1'   =>  %w[arg  argprim],   # Primera División
    'cl.1'   =>  %w[chile  chileprm],  # Primera División
 
-   'us.1'   =>  %w[usa usamls],  # Major League Soccer
-  
+   'us.1'   =>  ->(season) { 
+                   season_slug = season.to_s
+                   if season <= Season( '2016' )
+                     "usa/#{season_slug}/usamsl.htm"  # Major Soccer League (MSL)
+                   else
+                     "usa/#{season_slug}/usamls.htm"   # Major League Soccer (MLS)
+                   end
+                 },
    ## note - mexico - uses apetura/clausura !!!
    'mx.1.clausura' => %w[mexico mexclaus],  # Liga MX (Clausura)
   
@@ -88,7 +94,10 @@ LEAGUES = {
 ## pp LEAGUES
 
 
-def self.league( league:, season:, cache: true )
+   BASE_URL = 'https://www.footballsquads.co.uk'
+
+
+def self.league_url( league:, season: )
    season = Season( season )   ## cast (ensure) season class (NOT string, integer, etc.)
 
    league_def = LEAGUES[ league.downcase ]
@@ -98,78 +107,28 @@ def self.league( league:, season:, cache: true )
       exit 1
    end
 
-   ## base_url - find a better name?
-   ##     what is the url part called with out domain???
-   ##   use relative_url
-   relative_url =   if league_def.is_a?( Proc )
-                    league_def.call( season ) 
-                else
-                    ## assume country slug & league_slug for now
-                    country_slug, league_slug = league_def
-                    ## season format is 2023-2024  (use .to_path( :long/:l))
-                    season_slug = season.to_path( :long )
-                    # https://www.footballsquads.co.uk/austria/2023-2024/ausbun.htm  
-                    "#{country_slug}/#{season_slug}/#{league_slug}.htm" 
-                end
+   relative_url =  if league_def.is_a?( Proc )
+                     league_def.call( season ) 
+                   else
+                      ## assume country slug & league_slug for now
+                      country_slug, league_slug = league_def
+                      ## season format is 2023-2024  (use .to_path( :long/:l))
+                      season_slug = season.to_path( :long )
+                      # https://www.footballsquads.co.uk/austria/2023-2024/ausbun.htm  
+                      "#{country_slug}/#{season_slug}/#{league_slug}.htm" 
+                   end
 
  
    ## change to LeaguePage (from Page::League) - why? why not?
    ##           SquadPage  (from Page::Squad) etc.
-   url = "#{Metal::BASE_URL}/#{relative_url}"
-
-   Page::League.get( url,
-                     cache:  cache
-                   )              
+   "#{BASE_URL}/#{relative_url}"
 end
 
 
-##################
-##  plumbing metal "helpers"
+def self.league( league:, season:, cache: true )
+   url = league_url( league: league, 
+                     season: season )
+   Page::League.get( url, cache: cache )              
+end
 
-## todo/check: put in Downloader namespace/class - why? why not?
-##   or use Metal    - no "porcelain" downloaders / machinery
-class Metal < ::Metal::Base
-
-    BASE_URL = 'https://www.footballsquads.co.uk'
-
-    
-   def self.league_url( country:, league:, season: )
-      ## https://www.footballsquads.co.uk/austria/2023-2024/ausbun.htm  
-
-      "#{BASE_URL}/#{country}/#{season}/#{league}.htm" 
-   end 
-
-   def self.league( country:, league:, season:,
-                             cache: true )
-      url = league_url( country: country, league: league, season: season )
-
-      ## check check first
-      if cache && Webcache.cached?( url )
-        ## puts "  reuse local (cached) copy >#{Webcache.url_to_id( url )}<"
-      else
-        download_page( url )
-      end
-   end
-
-
-   def self.squad_url( country:, league:, season:,
-                       team: )
-      ## https://www.footballsquads.co.uk/austria/2023-2024/bundes/austvien.htm  
-      "#{BASE_URL}/#{country}/#{season}/#{league}/#{team}.htm"
-   end
-
-   def self.squad( country:, league:, season:,
-                            team:,
-                            cache: true )
-     url = squad_url( country: country, league: league, season: season,
-                      team: team ) 
-
-     ## check check first
-     if cache && Webcache.cached?( url )
-        ## puts "  reuse local (cached) copy >#{Webcache.url_to_id( url )}<"
-     else
-        download_page( url )
-     end
-   end
-end # class Metal
 end # module Footballsquads
