@@ -4,6 +4,63 @@ module Footballsquads
 
 class Page
 
+  class CurrentSquads < Page
+    def self.get( url, cache: true )
+      ## download if not in cache
+      ## check check first
+      ##   todo/fix: move cache check here from Metal!!!!
+      ##                 why? why not?
+
+      ## check check first
+      if cache && Webcache.cached?( url )
+        ## puts "  reuse local (cached) copy >#{Webcache.url_to_id( url )}<"
+      else
+        ::Metal::Base.download_page( url )
+      end
+
+      from_cache( url )
+    end
+
+    def self.from_cache( url )
+      ## use - super.from_cache( url ) - why? why not?
+      html = Webcache.read( url )
+      new( html, url: url )
+    end
+
+    attr_reader :url
+    def initialize( html, url: )
+      super( html )
+      @url = url
+    end
+
+
+    def leagues
+      ## get all links inside div.main
+      els = doc.css( 'div#main a' )
+
+      ## todo - assert one table
+      ## puts "  found #{els.size} h5(s)"
+      data = []
+
+      els.each_with_index do |el,i|
+            a = el
+
+            league_name         = squish( a.text )  
+            league_relative_url = a['href']    
+     
+            ## note: return absolute url - keep relative too (for debugging) - why? why not?
+            data << {  'league_url' => URI.join( @url, league_relative_url ).to_s,
+                       'league_relative_url'  => league_relative_url,
+                       'league_name'          => league_name,  
+                    }
+      end
+      data
+    end
+  end  # class CurrentSquads
+
+
+
+
   class League < Page  ## note: use nested class for now - why? why not?
 
    # todo/fix !!!!!!!!!!!!:
@@ -34,6 +91,7 @@ class Page
       new( html, url: url )
     end
 
+    attr_reader :url
     def initialize( html, url: )
       super( html )
       @url = url
@@ -135,8 +193,15 @@ end
 def self.from_cache( url )
   ## use - super.from_cache( url ) - why? why not?
   html = Webcache.read( url )
-  new( html )
+  new( html, url: url )
 end
+
+attr_reader :url
+def initialize( html, url: )
+  super( html )
+  @url = url
+end
+
 
 =begin
 <h2 style="margin-top: 0; margin-bottom: 0"><font color="#FF0000">RB Leipzig</font></h2>

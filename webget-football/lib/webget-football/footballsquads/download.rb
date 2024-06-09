@@ -97,6 +97,12 @@ LEAGUES = {
    BASE_URL = 'https://www.footballsquads.co.uk'
 
 
+def self.current_squads( cache: true )
+   Page::CurrentSquads.get( "#{BASE_URL}/squads.htm", 
+                            cache: cache )              
+end   
+
+
 def self.league_url( league:, season: )
    season = Season( season )   ## cast (ensure) season class (NOT string, integer, etc.)
 
