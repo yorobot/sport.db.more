@@ -98,9 +98,23 @@ LEAGUES = {
 
 
 def self.current_squads( cache: true )
-   Page::CurrentSquads.get( "#{BASE_URL}/squads.htm", 
+   Page::LeagueSeasons.get( "#{BASE_URL}/squads.htm", 
                             cache: cache )              
 end   
+
+def self.archive_squads( cache: true )
+   # https://www.footballsquads.co.uk/archive.htm
+   Page::LeagueSeasons.get( "#{BASE_URL}/archive.htm", 
+                              cache: cache )              
+end
+
+
+## use/rename to national_team_squads - why? why not?
+def self.national_squads( cache: true )
+   # https://www.footballsquads.co.uk/national.htm
+   Page::LeagueSeasons.get( "#{BASE_URL}/national.htm", 
+                              cache: cache )              
+end
 
 
 def self.league_url( league:, season: )

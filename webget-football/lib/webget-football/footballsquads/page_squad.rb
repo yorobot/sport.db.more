@@ -4,7 +4,13 @@ module Footballsquads
 
 class Page
 
-  class CurrentSquads < Page
+  # LeagueSeasons used for
+  #   - https://www.footballsquads.co.uk/squads.htm
+  #   - https://www.footballsquads.co.uk/national.htm
+  #   - https://www.footballsquads.co.uk/archive.htm
+  #  find a better name ?
+
+  class LeagueSeasons < Page
     def self.get( url, cache: true )
       ## download if not in cache
       ## check check first
@@ -56,7 +62,7 @@ class Page
       end
       data
     end
-  end  # class CurrentSquads
+  end  # class LeagueSeasons
 
 
 
@@ -193,6 +199,35 @@ end
 def self.from_cache( url )
   ## use - super.from_cache( url ) - why? why not?
   html = Webcache.read( url )
+
+  ## try quick hack
+  ## ['https://www.footballsquads.co.uk/eng/1998-1999/faprem/arsenal.htm',
+  #    'https://www.footballsquads.co.uk/eng/1998-1999/faprem/chelsea.htm', 
+  #    'https://www.footballsquads.co.uk/eng/1998-1999/faprem/leeds.htm',
+  ##   ]
+    ## assume all "old" use latin1 encoding ??
+    ## all 1998-1999, 1997-1998 etc.
+
+    ## quick hack possible?
+    ##   check for All Rights Reserved � FootballSquads.com
+    ##     instead of All Rights Reserved © FootballSquads.com
+    ##    for non-utf8 encoding ???
+
+   if url.index( '/1998-1999/' ) ||
+      url.index( '/1997-1998/' ) ||
+      url.index( '/1996-1997/' ) ||
+      url.index( '/1995-1996/' ) ||
+      url.index( '/1994-1995/' ) ||
+      url.index( '/1993-1994/' ) ||
+      url.index( '/eng/2007-2008/flcham/' ) ||
+      url.index( '/eng/2006-2007/flcham/' )
+    puts "!!! convert from ??? encoding to utf-8"   ## ??
+    ###  encoding: 'Windows-1252'
+    html = html.force_encoding( 'Windows-1252' )
+    html = html.encode( Encoding::UTF_8 )
+    html  
+  end
+
   new( html, url: url )
 end
 

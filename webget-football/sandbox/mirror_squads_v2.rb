@@ -10,17 +10,30 @@ require 'webget/football'
 Webcache.root = '../../../cache'  ### c:\sports\cache
 
 
-page = Footballsquads.current_squads
+# page = Footballsquads.current_squads
+# page = Footballsquads.national_squads
+page = Footballsquads.archive_squads
 
 pp page.title
 leagues =  page.leagues
+
+=begin
+## for debugging
+leagues = [
+    {
+    'league_url' => 'https://www.footballsquads.co.uk/eng/1998-1999/faprem.htm',
+    'league_relative_url' => 'eng/1998-1999/faprem.htm',
+    'league_name'  => '1998/99'        
+    }
+]
+=end
+
 pp leagues
 
 
+outdir = "./tmp/cache.footballsquads"
 
-# outdir = "./tmp/cache.footballsquads"
-
-outdir = "../../../footballcsv/cache.footballsquads"
+# outdir = "../../../footballcsv/cache.footballsquads"
 
 
 
