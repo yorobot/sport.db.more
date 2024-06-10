@@ -9,6 +9,8 @@ require 'webget/football'
 
 Webcache.root = '../../../cache'  ### c:\sports\cache
 
+Webget.config.sleep = 1  ## set to 1 second
+
 
 # page = Footballsquads.current_squads
 # page = Footballsquads.national_squads
@@ -49,7 +51,7 @@ leagues.each do |league|
     league_title =  league_page.title
     pp league_title
     teams = league_page.teams
-    pp teams
+    # pp teams
 
    ## quick & dirty hack - use slug from first club for directory
    ##   for generate readme
@@ -90,6 +92,7 @@ leagues.each do |league|
        team_title = team_page.title
        team_url   = URI.parse( team_page.url )
 
+       
        team_title = team_title.sub( 'FootballSquads - ', '' ).strip
        pp team_title
 
@@ -119,8 +122,8 @@ leagues.each do |league|
 
        if current.size > 0
          headers = current[0].keys
-         pp headers
-         pp current[0]
+         # pp headers
+         # pp current[0]
          buf << headers.join( ', ')
          buf << "\n"
          current.each do |rec|
@@ -133,8 +136,8 @@ leagues.each do |league|
           buf << "\n"
           buf << "== Past Players\n\n"
           headers = past[0].keys
-          pp headers
-          pp past[0]
+          # pp headers
+          # pp past[0]
           buf << headers.join( ', ')
           buf << "\n"
           past.each do |rec|

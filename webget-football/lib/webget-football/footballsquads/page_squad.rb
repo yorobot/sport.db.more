@@ -136,6 +136,24 @@ class Page
 
           team_url  = rec['team_url']
           team_name = rec['team_name']
+
+         ###################
+         ### note:    
+         ## skip known pages with broken encodings e.g. Donovan L?n etc.
+         ##    add with broken text e.g. ??? -  why? why not? 
+         ##   add pages to ERRATA.md or such to document !!!!
+         ##     
+         ##  note - footer has ? and many ??? in names
+         ##  All Rights Reserved ? FootballSquads.com   
+         next if [
+            'https://www.footballsquads.co.uk/france/2013-2014/ligue2/auxerre.htm',
+            'https://www.footballsquads.co.uk/france/2012-2013/ligue2/auxerre.htm',
+            'https://www.footballsquads.co.uk/greece/2010-2011/superl/kavala.htm',
+            'https://www.footballsquads.co.uk/arg/2016-2017/primera/sarmiento.htm',
+            'https://www.footballsquads.co.uk/australia/2016-2017/aleague/melbvic.htm',
+                 ].include?( team_url )
+
+
           page = Squad.get( team_url )
           yield( page )
        end    
@@ -215,6 +233,8 @@ def self.from_cache( url )
 
     #
     # todo/check - check auto-convert on "old" seasons - why? why not? 
+    ##  only use for eng !!!!
+=begin
    if url.index( '/1998-1999/' ) ||
       url.index( '/1997-1998/' ) ||
       url.index( '/1996-1997/' ) ||
@@ -226,7 +246,12 @@ def self.from_cache( url )
     html = html.force_encoding( 'Windows-1252' )
     html = html.encode( Encoding::UTF_8 )
     html 
-   elsif html.index( 'All Rights Reserved ©' )
+=end
+
+   if html.index( 'All Rights Reserved ©' )  ||
+      html.index( 'All Rights Reserved ï¿½' )   
+      ## note - ignore ï¿½ for now
+      ##   - e.g. https://www.footballsquads.co.uk/eng/2018-2019/national/bromley.htm
       ##  assume utf-8 encoding
    else
      ### English Football League Championship 2005/06
@@ -272,7 +297,8 @@ def initialize( html, url: )
 
   ###  assert encoding
   ##    for now MUST have copyright char (footer) e.g. ... © ... 
-  unless html.index( 'All Rights Reserved © FootballSquads.com' )
+  unless html.index( 'All Rights Reserved © FootballSquads.com' ) ||
+         html.index( 'All Rights Reserved ï¿½ FootballSquads.com' )   
      puts "!! ERROR - encoding error??"
      puts "   no © found in #{url}"
      exit 1
