@@ -213,20 +213,50 @@ def self.from_cache( url )
     ##     instead of All Rights Reserved © FootballSquads.com
     ##    for non-utf8 encoding ???
 
+    #
+    # todo/check - check auto-convert on "old" seasons - why? why not? 
    if url.index( '/1998-1999/' ) ||
       url.index( '/1997-1998/' ) ||
       url.index( '/1996-1997/' ) ||
       url.index( '/1995-1996/' ) ||
       url.index( '/1994-1995/' ) ||
-      url.index( '/1993-1994/' ) ||
-      url.index( '/eng/2007-2008/flcham/' ) ||
-      url.index( '/eng/2006-2007/flcham/' )
-    puts "!!! convert from ??? encoding to utf-8"   ## ??
+      url.index( '/1993-1994/' ) 
+    puts "!!! convert from windows-1252 encoding to utf-8"   ## ??
     ###  encoding: 'Windows-1252'
     html = html.force_encoding( 'Windows-1252' )
     html = html.encode( Encoding::UTF_8 )
-    html  
-  end
+    html 
+   elsif html.index( 'All Rights Reserved ©' )
+      ##  assume utf-8 encoding
+   else
+     ### English Football League Championship 2005/06
+     ###   and more with encoding: 'Windows-1252' ???
+
+    ## assume Windows-1252 ???
+    ###  encoding: 'Windows-1252'
+    puts "!!! All rights reversed © FootballSquads.com - NOT found"
+    pos = html.index( 'All Rights Reserved' )
+    puts   html[pos, 40]  
+    puts "!!! convert from windows-1252 encoding to utf-8"  
+ 
+    html = html.force_encoding( 'Windows-1252' )
+    html = html.encode( Encoding::UTF_8 )
+    html 
+   end
+
+=begin 
+=end  
+  ###  index on string � NOT working - find proper chars ??
+  ###  might require binary encoding?
+   ## html.index( 'All Rights Reserved � FootballSquads.com' ) ||
+   ##   html.index( 'All Rights Reserved � FootballSquads.com' )
+   ##   url.index( '/eng/2007-2008/flcham/' ) ||
+   ##  url.index( '/eng/2006-2007/flcham/' )
+
+   ## note - utf-8 encoding for copyright char requires two bytes (> 127, 7-bit)!!
+   ##  e.g.     ©  0xC2 0xA9   (0xC2 is extension marker)
+   ##         unicode code is  0xA9 (169)
+   ##          same as Windows-1252  
 
   new( html, url: url )
 end
@@ -235,7 +265,20 @@ attr_reader :url
 def initialize( html, url: )
   super( html )
   @url = url
+
+  # puts "==>  squads page char encoding - #{html.encoding}"
+  # pos = html.index( 'All Rights Reserved' )
+  # puts   html[pos, 40]
+
+  ###  assert encoding
+  ##    for now MUST have copyright char (footer) e.g. ... © ... 
+  unless html.index( 'All Rights Reserved © FootballSquads.com' )
+     puts "!! ERROR - encoding error??"
+     puts "   no © found in #{url}"
+     exit 1
+  end
 end
+
 
 
 =begin
