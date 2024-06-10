@@ -1,10 +1,7 @@
-require 'cocos'
-require 'alphabets'   ## use unaccent
+require_relative 'squads_helper'
 
 
-$LOAD_PATH.unshift( '../../../rubycocos/webclient/webget/lib' )
-$LOAD_PATH.unshift( './lib' )
-require 'webget/football'
+
 
 
 Webcache.root = '../../../cache'  ### c:\sports\cache

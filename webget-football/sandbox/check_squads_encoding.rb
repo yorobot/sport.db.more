@@ -1,10 +1,5 @@
-require 'cocos'
-require 'alphabets'   ## use unaccent
+require_relative 'squads_helper'
 
-
-$LOAD_PATH.unshift( '../../../rubycocos/webclient/webget/lib' )
-$LOAD_PATH.unshift( './lib' )
-require 'webget/football'
 
 
 Webcache.root = '../../../cache'  ### c:\sports\cache
@@ -31,29 +26,19 @@ leagues = [
 
 pp leagues
 
-
-outdir = "./tmp/cache.footballsquads"
-
-# outdir = "../../../footballcsv/cache.footballsquads"
+league_urls = leagues.map {|rec| rec['league_url'] }
 
 
-
-leagues.each do |league|
-    league_url          = league['league_url']
-    league_relative_url = league['league_relative_url']
-    league_name         = league['league_name']
-
-    puts "==> #{league_name} @ #{league_relative_url} ..."
-
+league_urls.each_with_index do |league_url,i|
+    league_relative_url = URI.parse( league_url ).request_uri
+    
+    puts "==> [#{i+1}/#{league_urls.size}]   #{league_relative_url} ..."
 
     league_page = Footballsquads::Page::League.get( league_url )
-    league_title =  league_page.title
-    pp league_title
- 
-   league_page.each_team do |team_page|
-       team_title = team_page.title
-       team_title = team_title.sub( 'FootballSquads - ', '' ).strip
-       pp team_title
+    puts league_page.title
+  
+    league_page.each_team do |team_page|
+      puts '    ' + team_page.title
     end 
 end
 
