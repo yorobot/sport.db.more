@@ -112,6 +112,42 @@ end # class Names
     @path = path
   end
 
+
+  ##
+  #  make more generic to add (quick) mods
+  #
+  def _quick_mods( matches, country:, season: )    
+      matches.map do |m| 
+        if country == 'es' || country == 'br'  
+          teams = [m.team1,m.team2]
+          teams_mods = teams.map do |team|
+                         if team == 'Extremadura'   # es
+                            ## todo - check if 2010/11 is gt 2010 ??
+                            ##             use > 2010/11 - why? why not? 
+                           if season > Season( '2010' )
+                              'Extremadura UD'    
+                           else
+                              'CF Extremadura'  ## or CF Extremadura (-2010)
+                           end
+                          elsif team == 'Bragantino'   # br
+                            if season > Season( '2019' )
+                              'RB Bragantino'
+                            else
+                              'CA Bragantino'  ## or CA Bragantino (1928-2019) 
+                            end
+                          else
+                             team
+                          end
+                        end
+            team1, team2 = teams_mods
+            m.update( team1: team1,
+                      team2: team2 )
+        end
+        m
+      end
+  end  # method _quick_mods 
+  
+
   def build( start: nil )
 datafiles = Dir[ "#{@path}/**/*.csv" ]  ## fix: always use Dir.glob - why? why not?
 puts "#{datafiles.size} datafiles"
@@ -125,19 +161,22 @@ datafiles.each do |datafile|
   ##         result in eng
   country_key = basename.downcase.scan( /^[a-z]+/ )[0]   ## note: scan return an array; use first item
 
-  ## check for season
-  if start_season
-    dirname = File.basename( File.dirname( datafile ))
-    season = Season.parse( dirname )
-    ##  skip if season is older
-    next if start_season.start_year > season.start_year
-  end
+  dirname = File.basename( File.dirname( datafile ))
+  season = Season.parse( dirname )
+ 
+  ##  skip if season is older
+  next if start_season && start_season.start_year > season.start_year
+  
 
 
   countries[ country_key] ||= Names.new( country_key )
   names = countries[ country_key]
 
   matches = CsvMatchParser.read( datafile )
+
+  matches = _quick_mods( matches, country: country_key,
+                                  season:  season, )
+  
 
   pp matches.size
   pp matches[0..2]
