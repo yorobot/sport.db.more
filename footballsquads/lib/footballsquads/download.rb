@@ -151,4 +151,19 @@ def self.league( league:, season:, cache: true )
    Page::League.get( url, cache: cache )              
 end
 
+########
+### helper 
+ 
+
+module Metal
+## todo/fix: use something "generic" from webget gem!!!!
+
+    ## todo/check:  rename to get_page or such - why? why not?
+    def self.download_page( url )  ## get & record/save to cache
+      response = Webget.page( url )  ## fetch (and cache) html page (via HTTP GET)
+
+      ## note: exit on get / fetch error - do NOT continue for now - why? why not?
+      exit 1   if response.status.nok?    ## e.g.  HTTP status code != 200
+    end
+end  # module Metal
 end # module Footballsquads

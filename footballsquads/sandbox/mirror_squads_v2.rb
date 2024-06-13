@@ -6,8 +6,8 @@ Webcache.root = '../../../cache'  ### c:\sports\cache
 Webget.config.sleep = 1  ## set to 1 second
 
 
-# outdir = "./tmp/cache.footballsquads"
-outdir = "../../../footballcsv/cache.footballsquads"
+outdir = "./tmp/cache.footballsquads"
+# outdir = "../../../footballcsv/cache.footballsquads"
 
 
 

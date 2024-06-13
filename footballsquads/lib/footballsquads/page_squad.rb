@@ -4,6 +4,11 @@ module Footballsquads
 
 class Page
 
+
+
+
+
+
   # LeagueSeasons used for
   #   - https://www.footballsquads.co.uk/squads.htm
   #   - https://www.footballsquads.co.uk/national.htm
@@ -21,7 +26,8 @@ class Page
       if cache && Webcache.cached?( url )
         ## puts "  reuse local (cached) copy >#{Webcache.url_to_id( url )}<"
       else
-        ::Metal::Base.download_page( url )
+        ## todo/fix: use something "generic" from webget gem!!!!
+        Metal.download_page( url )
       end
 
       from_cache( url )
@@ -85,7 +91,7 @@ class Page
       if cache && Webcache.cached?( url )
         ## puts "  reuse local (cached) copy >#{Webcache.url_to_id( url )}<"
       else
-        ::Metal::Base.download_page( url )
+        Metal.download_page( url )
       end
 
       from_cache( url )
@@ -207,7 +213,7 @@ def self.get( url, cache: true )
   if cache && Webcache.cached?( url )
     ## puts "  reuse local (cached) copy >#{Webcache.url_to_id( url )}<"
   else
-    ::Metal::Base.download_page( url )
+    Metal.download_page( url )
   end
 
   from_cache( url )

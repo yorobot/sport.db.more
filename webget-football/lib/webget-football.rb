@@ -33,11 +33,6 @@ require_relative 'webget-football/worldfootball/page_schedule'
 require_relative 'webget-football/worldfootball/page_report'
 
 
-require_relative 'webget-football/footballsquads/download'
-require_relative 'webget-football/footballsquads/page'
-require_relative 'webget-football/footballsquads/page_squad'
-
-
 require_relative 'webget-football/apis'   ## incl. football-data.org (by Daniel Friday)
 require_relative 'webget-football/fbref'
 

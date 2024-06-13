@@ -1,16 +1,22 @@
 
 module Footballsquads
 
+##
+##  todo - move Page upstream to webget for (shared) reuse!!!!! 
+###        include Webget (module) or such??
+##               to get (shared) Page and Metal::Base - why? why not?
+
 class Page
-def self.from_cache( url )
+def self.from_cache( url )    ### change/rename to read_cache( url ) - why? why not?
   html = Webcache.read( url )
   new( html )
 end
 
-def self.from_file( path )
+def self.from_file( path )   ## change/rename to read( path ) - why? why not?
   html = File.open( path, 'r:utf-8' ) {|f| f.read }
   new( html )
 end
+
 
 
 def initialize( html )
