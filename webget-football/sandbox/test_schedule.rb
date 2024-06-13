@@ -11,6 +11,4 @@ Webcache.root = './tmp'
 ## Worldfootball.schedule( league: 'at.1', season: '2020/21' )
 ## Worldfootball.schedule( league: 'at.1', season: '2019/20' )
 
-## Footballdata.schedule( league: 'eng.1', season: '2020/21' )
-
 

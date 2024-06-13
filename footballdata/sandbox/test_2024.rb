@@ -1,6 +1,6 @@
 $LOAD_PATH.unshift( '../../../rubycocos/webclient/webget/lib' )
 $LOAD_PATH.unshift( './lib' )
-require 'webget/football'
+require 'footballdata'
 
 
 Webcache.root = '../../../cache'  ### c:\sports\cache
@@ -42,13 +42,14 @@ leagues = ['eng.1', 'eng.2',
           ]
 pp leagues
 
-# leagues.each do |league|
-  # Footballdata.schedule( league: league,  season: '2023/24' )
+season = '2023/24'
+leagues.each do |league|
+  Footballdata.schedule( league: league,  season: season )
   # Footballdata.schedule( league: league,  season: '2022/23' )
   # Footballdata.schedule( league: league,  season: '2021/22' )
   # Footballdata.schedule( league: league,  season: '2020/21' )
-  # sleep( 15 )  ## 15sec pause
-# end
+  sleep( 15 )  ## 15sec pause
+end
 
 # Footballdata.schedule( league: 'eng.1',  season: '2022/23' )
 # Footballdata.schedule( league: 'eng.1',  season: '2021/22' )
