@@ -64,14 +64,34 @@ DATASETS = [
 =end
 
 
-  ['world',  %w[2022 2018 2014 2010]],
-  ['euro',   %w[2020 2016 2012]],
+ # ['world',  %w[2022 2018 2014 2010]],
+ # ['euro',   %w[2024 2020 2016 2012]],
 ]
 
 
+## see 
+##    https://www.footballsquads.co.uk/updates.htm
+DATASETS_UPDATE = [
+  ['euro',         %w[2024 2020]],
+  ['southamerica', %w[2024]],
+
+  ['nl.1',   %w[2023/24]],
+
+  ['eng.1',   %w[2023/24]],
+
+  ['es.1',    %w[2023/24]],
+  ['es.2',    %w[2023/24]],
+
+  ['it.1',    %w[2023/24]],
+
+]
+
+
+datasets = DATASETS_UPDATE
+
 ## get all league (page) urls
 league_urls = []
-DATASETS.each do |league, seasons|
+datasets.each do |league, seasons|
   seasons.each do |season|
     league_urls << Footballsquads.league_url( league: league, 
                                               season: season )
@@ -81,8 +101,10 @@ end
 pp league_urls
 
 
+### noet - cache: false to update - get/fetch lastest pages
+write_squads( league_urls, outdir: outdir,
+                           cache:  false )    
 
-write_squads( league_urls, outdir: outdir )
 
 
 puts "bye"

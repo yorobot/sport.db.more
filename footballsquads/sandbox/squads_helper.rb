@@ -9,14 +9,15 @@ require 'footballsquads'
 
 
 ## change/rename to convert_squads - why? why not?
-def write_squads( league_urls, outdir: )
+def write_squads( league_urls, outdir:, cache: true )
 
   league_urls.each_with_index do |league_url,i|
     league_relative_url = URI.parse( league_url ).request_uri
 
     puts "==> [#{i+1}/#{league_urls.size}]   #{league_relative_url} ..."
 
-    league_page = Footballsquads::Page::League.get( league_url )
+    league_page = Footballsquads::Page::League.get( league_url,
+                                                     cache: cache )
     league_title =  league_page.title
     pp league_title
     teams = league_page.teams
