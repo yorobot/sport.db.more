@@ -89,7 +89,14 @@ LEAGUES = {
    ## national leagues
    'euro'   =>  ->(season) { "national/eurocham/euro#{season}.htm" },
    'world'  =>  ->(season) { "national/worldcup/wc#{season}.htm" }, 
+
+   ## check codes for
+   ##  Copa América           - use america ??
+   ##  Africa Cup of Nations  - use africa - why? why not?
+   'southamerica' => ->(season) { "national/copaamer/copa#{season}.htm" },
+   'africa'       => ->(season) { "national/africacn/acn#{season}.htm" },
 }
+
 
 ## pp LEAGUES
 
