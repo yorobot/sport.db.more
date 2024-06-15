@@ -222,11 +222,16 @@ def self.build_goals( match )
     g = { name:   goal.person.name,
           minute: goal.minute,
         }
+
     g[:offset]  = goal.offset     if goal.offset != 0
-    g[:score1]  = goal.score1
-    g[:score2]  = goal.score2
     g[:penalty] = goal.penalty    if goal.penalty
     g[:owngoal] = goal.owngoal    if goal.owngoal
+
+=begin        
+    g[:score1]  = goal.score1
+    g[:score2]  = goal.score2
+=end
+
     goals << g
   end
   [goals1, goals2]

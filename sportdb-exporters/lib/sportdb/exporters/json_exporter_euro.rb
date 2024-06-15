@@ -116,25 +116,37 @@ def self.export_euro( league_key, out_root: )
                       },
                 }
 
+               score = {}
+
                 if game.score1
-                  m[ :score1 ] =   game.score1
-                  m[ :score2 ] =   game.score2
-                  if game.score1i
-                    m[ :score1i ] =  game.score1i   # half time / first third (opt)
-                    m[ :score2i ] =  game.score2i   # half time - team 2
+                  score[:ft] = [game.score1,
+                                game.score2]
+                   if game.score1i
+                      # half time / first third (opt)
+                      # half time - team 2
+                      score[:ht] = [game.score1i,
+                                    game.score2i]
                   end
                 end
 
                 ## note: change do NOT check for knockout flag
                 ##         check for scores for now 
                 if game.score1et
-                  m[ :score1et ] = game.score1et  # extratime - team 1 (opt)
-                  m[ :score2et ] = game.score2et  # extratime - team 2 (opt)
+                    # extratime - team 1 (opt)
+                    # extratime - team 2 (opt)
+                    score[:et] = [game.score1et,
+                                  game.score2et] 
                   if game.score1p
-                    m[ :score1p  ] = game.score1p   # penalty  - team 1 (opt)
-                    m[ :score2p  ] = game.score2p   # penalty  - team 2 (opt) elfmeter (opt)
+                     # penalty  - team 1 (opt)
+                     # penalty  - team 2 (opt) elfmeter (opt)
+                     score[:p] = [game.score1p,
+                                 game.score2p  
+                                ]
                   end
                 end  
+
+                m[:score] = score
+
                 #  m[ :knockout ] = game.knockout
                 
 
