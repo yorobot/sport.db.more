@@ -9,6 +9,7 @@ require 'sportdb/exporters/json_exporter'
 
 require 'sportdb/exporters/json_exporter_worldcup'     ## for worldcup
 require 'sportdb/exporters/json_exporter_euro'         ## quick hack for euro
+require 'sportdb/exporters/json_exporter_copa'      
 
 
 
