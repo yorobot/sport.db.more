@@ -4,5 +4,7 @@ README.md
 Rakefile
 lib/sportdb/exporters.rb
 lib/sportdb/exporters/json_exporter.rb
-lib/sportdb/exporters/json_exporter_more.rb
+lib/sportdb/exporters/json_exporter_copa.rb
+lib/sportdb/exporters/json_exporter_euro.rb
+lib/sportdb/exporters/json_exporter_worldcup.rb
 lib/sportdb/exporters/version.rb
