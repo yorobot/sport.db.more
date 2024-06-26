@@ -59,9 +59,9 @@ puts "  #{Openliga::LEAGUES.keys.size} league(s)"
 # Openliga::Metal.matches( 'em20', 2020 )
 # Openliga::Metal.goalgetters( 'em20', 2020 )
 
-Openliga::Metal.teams( 'CA2024', 2024 )  
-Openliga::Metal.matches( 'CA2024', 2024 )
-Openliga::Metal.goalgetters( 'CA2024', 2024 )
+# Openliga::Metal.teams( 'CA2024', 2024 )  
+# Openliga::Metal.matches( 'CA2024', 2024 )
+# Openliga::Metal.goalgetters( 'CA2024', 2024 )
 
 
 # Openliga::Metal.matches( 'CA2021', 2021 )

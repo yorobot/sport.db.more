@@ -7,9 +7,13 @@ Webcache.root = '../../../cache'  ### c:\sports\cache
 
 
 
-recs = Openliga::convert( league: 'euro', season: '2024' )
+## recs = Openliga::convert( league: 'euro', season: '2024' )
 
 ## recs = Openliga::convert( league: 'southamerica', season: '2024' )
+
+
+recs = Openliga::convert( league: 'de.cup', season: '2024/25' )
+
 pp recs
 
 
