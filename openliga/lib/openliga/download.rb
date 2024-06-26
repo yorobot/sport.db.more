@@ -12,14 +12,25 @@ class Metal
     get( "#{BASE_URL}/getavailableleagues" )
   end  
  
-  def self.teams( code, year )
-    get( "#{BASE_URL}/getavailableteams/#{code}/#{year}" )
+
+  def self.teams_url( code, year )
+    "#{BASE_URL}/getavailableteams/#{code}/#{year}"
+  end
+
+  def self.teams( code, year ) 
+    get( teams_url( code, year ) )
+  end
+
+  def self.matches_url( code, year )
+    "#{BASE_URL}/getmatchdata/#{code}/#{year}"
   end
 
   def self.matches( code, year )
-    get( "#{BASE_URL}/getmatchdata/#{code}/#{year}" )
+    get( matches_url( code, year ) )
   end
  
+  
+
   def self.goalgetters( code, year )
     get( "#{BASE_URL}/getgoalgetters/#{code}/#{year}" )
   end

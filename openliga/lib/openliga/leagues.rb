@@ -27,8 +27,8 @@ module Openliga
 ## national teams
     'world'    => 'WM2022',  
 
-    'euro'     => 'em'   ## em (2024), em20 (2020)
-
+    'euro'          => 'em',   ## em (2024), em20 (2020)
+    'southamerica'  => 'CA2024',
 
  ##  Copa América 2024		CA2024
  ## Copa América 2021		CA2021   
