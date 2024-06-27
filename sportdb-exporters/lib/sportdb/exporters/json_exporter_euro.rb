@@ -103,7 +103,7 @@ def self.export_euro( league_key, out_root: )
      event.rounds.each do |round|
        matches = []
        round.matches.each do |game|
-         m = {        num:  game.pos,    ## use id - why? why not?
+         m = {        num:  game.num || game.pos,    ## use id - why? why not?
                       date: game.date.strftime( '%Y-%m-%d'),
                       time: game.time,  ## note: time is stored as string!!!
                       team1: {
