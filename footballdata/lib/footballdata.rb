@@ -4,7 +4,6 @@ require 'webget'           ## incl. webget, webcache, webclient, etc.
 
 
 require 'cocos'   ## check if webget incl. cocos ??
-load_env   
 
 
 module Footballdata
@@ -25,6 +24,7 @@ end   # module Footballdata
 # our own code
 require_relative 'footballdata/leagues'
 require_relative 'footballdata/download'
+require_relative 'footballdata/prettyprint'
 
 
 

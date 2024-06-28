@@ -54,22 +54,8 @@ class Metal
     request_headers = request_headers.merge( headers )   unless headers.empty?
 
 
-    @@requests ||= 0
-
-    if @@requests > 0  ## wait/sleep/delay on second request
-       ## todo/fix - make configurable 
-       ##  free tier (tier one) plan - 10 requests/minute   (one request every 6 seconds 6*10=60 secs)
-       ##     10 API calls per minute
-       ## fix!!!!! (re)use webget delay - do NOT duplicate !!!!
-       delay_in_s = 10
-       puts "...sleeping #{delay_in_s} sec(s) - request count #{@@requests} ..."
-       sleep( delay_in_s )  
-    end
-
     ## note: add format: 'json' for pretty printing json (before) save in cache
     response = Webget.call( url, headers: request_headers )
-
-    @@requests += 1
 
     ## for debugging print pretty printed json first 400 chars
     puts response.json.pretty_inspect[0..400]

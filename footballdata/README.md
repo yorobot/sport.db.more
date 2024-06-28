@@ -1,4 +1,4 @@
-# footballdata  - get football data via Daniel Freitag's football-data.org api v3  
+# footballdata  - get football data via Daniel Freitag's football-data.org api v4  
 
 
 ## Usage
