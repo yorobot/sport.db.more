@@ -70,3 +70,114 @@ national teams
      2024-06-14 - 2024-07-14 @ 4
 ==> World (INT) - FIFA World Cup (WC) -- TIER_ONE CUP, 22 season(s)
      2022-11-20 - 2022-12-18 @ 8
+
+
+---
+    
+Premier League
+    "code": "PL",
+    "type": "LEAGUE",
+    "currentSeason":
+      "startDate": "2023-08-11",
+      "endDate": "2024-05-19",
+      "currentMatchday": 37,
+  
+Championship
+    "code": "ELC",
+    "type": "LEAGUE",
+    "currentSeason": 
+      "startDate": "2023-08-04",
+      "endDate": "2024-05-04",
+      "currentMatchday": 46,
+      
+Ligue 1
+    "code": "FL1",
+    "type": "LEAGUE",
+    "currentSeason":
+      "startDate": "2023-08-11",
+      "endDate": "2024-05-19",
+      "currentMatchday": 33,
+ 
+ Bundesliga
+    "code": "BL1",
+    "type": "LEAGUE",
+    "currentSeason":
+      "startDate": "2023-08-18",
+      "endDate": "2024-05-18",
+      "currentMatchday": 34,
+  
+Serie A
+    "code": "SA",
+    "type": "LEAGUE",
+    "currentSeason": 
+      "startDate": "2023-08-19",
+      "endDate": "2024-05-26",
+      "currentMatchday": 37,
+
+Eredivisie
+    "code": "DED",
+    "type": "LEAGUE",
+    "currentSeason": 
+      "startDate": "2023-08-11",
+      "endDate": "2024-05-19",
+      "currentMatchday": 34,
+ 
+ Primeira Liga
+    "code": "PPL",
+    "type": "LEAGUE",
+    "currentSeason": 
+      "startDate": "2023-08-13",
+      "endDate": "2024-05-19",
+      "currentMatchday": 34,
+   
+  Primera Division
+    "code": "PD",
+    "type": "LEAGUE",
+    "currentSeason": 
+      "startDate": "2023-08-13",
+      "endDate": "2024-05-26",
+      "currentMatchday": 37,
+ 
+Campeonato Brasileiro Série A
+    "code": "BSA",
+    "type": "LEAGUE",
+    "currentSeason": 
+      "startDate": "2024-04-13",
+      "endDate": "2024-12-08",
+      "currentMatchday": 7,
+
+
+Copa Libertadores
+    "code": "CLI",
+    "type": "CUP",
+    "currentSeason": 
+      "startDate": "2024-02-07",
+      "endDate": "2024-05-31",
+      "currentMatchday": 5,
+
+UEFA Champions League
+    "code": "CL",
+    "type": "CUP",
+    "currentSeason":
+      "startDate": "2023-09-19",
+      "endDate": "2024-06-01",
+      "currentMatchday": 6,
+
+
+European Championship
+    "code": "EC",
+    "type": "CUP",
+    "currentSeason":
+      "startDate": "2024-06-14",
+      "endDate": "2024-07-14",
+      "currentMatchday": 1,
+
+FIFA World Cup
+    "code": "WC",
+    "type": "CUP",
+    "currentSeason": 
+      "startDate": "2022-11-20",
+      "endDate": "2022-12-18",
+      "currentMatchday": 8,
+
+
