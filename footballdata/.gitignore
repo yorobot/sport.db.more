@@ -34,3 +34,8 @@ build/
 .rvmrc
 
 
+#######
+## ignore dotenv (.env)
+.env
+
+
