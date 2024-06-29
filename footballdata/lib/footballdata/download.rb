@@ -91,6 +91,16 @@ class Metal
            headers: headers ) 
   end
 
+  def self.todays_matches_url( date=Date.today )   
+    "#{BASE_URL}/matches?"+
+    "dateFrom=#{date.strftime('%Y-%m-%d')}&"+
+    "dateTo=#{(date+1).strftime('%Y-%m-%d')}"   
+  end
+  def self.todays_matches( date=Date.today )    ## use/rename to matches_today or such - why? why not? 
+      get( todays_matches_url( date ) )
+  end
+
+
   def self.teams( code, year )    get( competition_teams_url( code, year )); end
   def self.standings( code, year ) get( competition_standings_url( code, year )); end
   def self.scorers( code, year ) get( competition_scorers_url( code, year )); end

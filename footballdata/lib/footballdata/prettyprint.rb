@@ -10,29 +10,23 @@ def self.assert( cond, msg )
   end
 end
 
+def self.fmt_competition( rec )
+   buf = String.new
 
-def self.pp_matches( data )
+   buf << "==> "
+   buf << "#{rec['competition']['name']} (#{rec['competition']['code']}) -- "
+   buf << "#{rec['area']['name']} (#{rec['area']['code']}) "
+   buf << "#{rec['competition']['type']} "
+   buf << "#{rec['season']['startDate']} - #{rec['season']['endDate']} "  
+   buf << "@ #{rec['season']['currentMatchday']}"
+   buf << "\n"
 
-  ## track match status and score duration  
-  stats = { 'status'    => Hash.new(0),
-            'duration'  => Hash.new(0),
-            'stage'     => Hash.new(0),
-            'group'     => Hash.new(0),
-           }
+   buf
+end
 
-  first = Date.strptime( data['resultSet']['first'], '%Y-%m-%d' ) 
-  last  = Date.strptime( data['resultSet']['last'], '%Y-%m-%d' )
-
-  diff = (last - first).to_i  # note - returns rational number (e.g. 30/1)
-
-
-  print "==> #{data['competition']['name']}, "
-  print "#{first.strftime('%a %b %d %Y')} - #{last.strftime('%a %b %d %Y')}"
-  print " (#{diff}d)"
-  print "\n"
-
-  data['matches'].each do |rec|
-
+def self.fmt_match( rec )
+   buf = String.new
+ 
     ## -- todo - make sure / assert it's always utc - how???
     ## utc   = ## tz_utc.strptime( m['utcDate'], '%Y-%m-%dT%H:%M:%SZ' )
     ##  note:  DateTime.strptime  is supposed to be unaware of timezones!!!
@@ -48,45 +42,38 @@ def self.pp_matches( data )
                 IN_PLAY
                ].include?( status ), "unknown status - #{status}" )
 
-     stats['status'][status] += 1  ## track status
-
-     print '%-10s' % status
-     print utc.strftime( '%a %b %d %Y %H:%M')
-     print ' '
-     # print "#{rec['utcDate']} "
+     buf << '%-10s' % status
+     buf << utc.strftime( '%a %b %d %Y %H:%M')
+     buf << ' '
+     # pp rec['utcDate']
 
      team1 = rec['homeTeam']['name'] ?
                   "#{rec['homeTeam']['name']} (#{rec['homeTeam']['tla']})" : '?'
      team2 = rec['awayTeam']['name'] ?
                   "#{rec['awayTeam']['name']} (#{rec['awayTeam']['tla']})" : '?'     
-     print '%22s' % team1
-     print " - "
-     print '%-22s' % team2
-     print "   "
+     buf << '%22s' % team1
+     buf << " - "
+     buf << '%-22s' % team2
+     buf << "   "
 
      stage = rec['stage']
-     stats['stage'][stage] += 1  ## track stage
-
      group = rec['group']
-     stats['group'][group] += 1  if group   ## track group
-
-     print "#{rec['matchday']} - #{stage} "
-     print "/ #{group}  "  if group
-     print "\n"
-
-     print "  "
-     print '%-20s' % rec['score']['duration']
-     print ' '*24
      
-     score = String.new 
+     buf << "#{rec['matchday']} - #{stage} "
+     buf << "/ #{group}  "  if group
+     buf << "\n"
 
+     buf << "  "
+     buf << '%-20s' % rec['score']['duration']
+     buf << ' '*24
+     
      duration = rec['score']['duration']
      assert( %w[REGULAR
                 EXTRA_TIME
                 PENALTY_SHOOTOUT
                ].include?( duration ), "unknown duration - #{duration}" )
 
-     stats['duration'][duration] += 1  ## track duration
+     score = String.new 
 
      if duration == 'PENALTY_SHOOTOUT'
         if rec['score']['extraTime'] 
@@ -123,8 +110,48 @@ def self.pp_matches( data )
      end
  
 
-     print score
-     print "\n"
+     buf << score
+     buf << "\n"
+     buf
+end
+
+
+def self.pp_matches( data )
+
+  ## track match status and score duration  
+  stats = { 'status'    => Hash.new(0),
+            'duration'  => Hash.new(0),
+            'stage'     => Hash.new(0),
+            'group'     => Hash.new(0),
+           }
+
+  first = Date.strptime( data['resultSet']['first'], '%Y-%m-%d' ) 
+  last  = Date.strptime( data['resultSet']['last'], '%Y-%m-%d' )
+
+  diff = (last - first).to_i  # note - returns rational number (e.g. 30/1)
+
+
+  print "==> #{data['competition']['name']}, "
+  print "#{first.strftime('%a %b %d %Y')} - #{last.strftime('%a %b %d %Y')}"
+  print " (#{diff}d)"
+  print "\n"
+
+  data['matches'].each do |rec|
+
+    print fmt_match( rec )
+
+    ## track stats
+    status = rec['status']
+    stats['status'][status] += 1 
+
+    stage = rec['stage']
+    stats['stage'][stage] += 1  
+
+     group = rec['group']
+     stats['group'][group] += 1  if group 
+
+     duration = rec['score']['duration']
+     stats['duration'][duration] += 1       
   end
 
   print "   #{data['resultSet']['played']}/#{data['resultSet']['count']} matches"
