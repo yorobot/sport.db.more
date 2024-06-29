@@ -1,0 +1,15 @@
+dl/
+o/
+o2/
+tmp/
+temp/
+
+####
+# ignore all databases
+*.db
+
+###############
+#  ignore error and logs
+errors.txt
+logs.txt
+

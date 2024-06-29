@@ -1,0 +1,6 @@
+
+== countries
+!! 6 -   >>FK Sileks<< | Sileks, FYR Macedonia != North Macedonia
+!! 25 -   >>Dundalk FC<< | Dundalk, Republic of Ireland != Ireland
+!! 92 -   >>Shamrock Rovers FC<< | Shamrock Rov, Republic of Ireland != Ireland
+
