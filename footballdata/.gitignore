@@ -39,3 +39,12 @@ build/
 .env
 
 
+####
+#  ignore logs and output
+logs.txt
+error.txt
+errors.txt
+o/
+
+
+

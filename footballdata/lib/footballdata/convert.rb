@@ -1,11 +1,5 @@
 
 
-##
-##  note - add timezone support here inline for now
-require 'tzinfo'
-
-
-
 
 module Footballdata
 
@@ -35,16 +29,6 @@ module Footballdata
   }
 
 
-def self.assert( cond, msg )
-  if cond
-    # do nothing
-  else
-    puts "!!! assert failed (in convert) - #{msg}"
-    exit 1
-  end
-end
-
-
 
 def self.convert( league:, season: )
 
@@ -55,15 +39,18 @@ def self.convert( league:, season: )
   #  return
   # end
 
-
-
   season = Season( season )   ## cast (ensure) season class (NOT string, integer, etc.)
 
-  data           = Webcache.read_json( MetalV4.competition_matches_url( LEAGUES[league.downcase], season.start_year ))
-  data_teams     = Webcache.read_json( MetalV4.competition_teams_url(   LEAGUES[league.downcase], season.start_year ))
+  league_code = LEAGUES[league.downcase]
 
-  ## check for time zone
+  matches_url = Metal.competition_matches_url( league_code, season.start_year )
+  teams_url   = Metal.competition_teams_url(   league_code, season.start_year )
+
+  data           = Webcache.read_json( matches_url )
+  data_teams     = Webcache.read_json( teams_url )
+
   
+  ## check for time zone
   tz_name = TIMEZONES[ league.downcase ]
   if tz_name.nil?
     puts "!! ERROR - sorry no timezone configured for league #{league}"
