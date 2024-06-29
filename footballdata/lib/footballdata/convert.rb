@@ -306,7 +306,7 @@ headers = [
 ]
 
 ## note: change season_key from 2019/20 to 2019-20  (for path/directory!!!!)
-Cache::CsvMatchWriter.write( "#{config.convert.out_dir}/#{season.to_path}/#{league.downcase}.csv",
+  write_csv( "#{config.convert.out_dir}/#{season.to_path}/#{league.downcase}.csv",
                              recs,
                              headers: headers )
 
