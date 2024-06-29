@@ -1,15 +1,4 @@
-$LOAD_PATH.unshift( '../../../rubycocos/webclient/webget/lib' )
-$LOAD_PATH.unshift( '../webget-football/lib' )
-$LOAD_PATH.unshift( './lib' )
-
-require 'football/sources'
-
-
-Webcache.root = '../../../cache'  ### c:\sports\cache
-
-
-pp Footballdata::LEAGUES
-
+require_relative 'helper'
 
 
 

@@ -1,31 +1,23 @@
-require 'cocos'   ## fix - add  in  main require page for all !!!
 
+###########
+### export teams
 
 
 module Footballdata
 
-### export teams
-
-
 def self.export_teams( league:, season: )
 
-    season = Season( season )   ## cast (ensure) season class (NOT string, integer, etc.)
-  
-    data_teams = Webcache.read_json( MetalV4.competition_teams_url(  
-                                  LEAGUES[league.downcase], season.start_year ))
+    season      = Season( season )   ## cast (ensure) season class (NOT string, integer, etc.)
+    league_code = LEAGUES[league.downcase]
+
+    teams_url = Metal.competition_teams_url( league_code, 
+                                             season.start_year )
+    data_teams = Webcache.read_json( teams_url )
 
     ## build a (reverse) team lookup by name
     puts "#{data_teams['teams'].size} teams"
 
-=begin
-      "address": "null null null",
-      "website": null,
-      "founded": null,
-      "clubColors": null,
-      "venue": null,
-=end
 
-  
 
     clubs = {}   ## by country
 
@@ -39,11 +31,26 @@ def self.export_teams( league:, season: )
           # buf << "  # #{rec['area']['name']}"
         end
         buf << "\n"
-        buf << " "
-        buf << " | #{rec['shortName']}"  if rec['shortName'] != rec['name']  
-        buf << " | #{rec['tla']}"
-        buf << "\n"
-        buf << "  address: #{rec['address']}"
+
+        alt_names = String.new
+        alt_names << " | #{rec['shortName']}"  if rec['shortName'] &&
+                                                  rec['shortName'] != rec['name'] &&
+                                                  rec['shortName'] != rec['tla']
+
+        alt_names << " | #{rec['tla']}"        if rec['tla'] &&
+                                                  rec['tla'] != rec['name']
+        
+        if alt_names.size > 0
+          buf << " "
+          buf << alt_names
+          buf << "\n"
+        end
+
+        ## clean null in address (or keep nulls) - why? why not?
+        ##  e.g. null Rionegro null
+        ##       Calle 104 No. 13a - 32 Bogotá null 
+
+        buf << "  address: #{rec['address'].gsub( /\bnull\b/, '')}"
         buf << "\n"
         buf << "  web:     #{rec['website']}"
         buf << "\n"

@@ -3,12 +3,6 @@ Manifest.txt
 README.md
 Rakefile
 lib/football-sources.rb
-lib/football-sources/apis.rb
-lib/football-sources/apis/config.rb
-lib/football-sources/apis/convert.rb
-lib/football-sources/apis/convert_cl.rb
-lib/football-sources/apis/mods.rb
-lib/football-sources/apis/stat.rb
 lib/football-sources/fbref.rb
 lib/football-sources/fbref/build.rb
 lib/football-sources/fbref/config.rb

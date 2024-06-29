@@ -38,8 +38,9 @@ require_relative 'footballdata/leagues'
 require_relative 'footballdata/download'
 require_relative 'footballdata/prettyprint'
 
-require_relative 'footballdata/convert'
 require_relative 'footballdata/mods'
+require_relative 'footballdata/convert'
+require_relative 'footballdata/teams'
 
 
 

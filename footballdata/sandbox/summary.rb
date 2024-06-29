@@ -9,28 +9,24 @@ $LOAD_PATH.unshift( '../../../sportdb/sport.db/sportdb-models/lib' )
 $LOAD_PATH.unshift( '../sportdb-linters/lib' )
 
 
-
-
 require 'sportdb/catalogs'
 require 'sportdb/linters'    # e.g. uses TeamSummary class
 
+require 'cocos'   ## todo - (auto-)add/require upstream!!!
+
+
 SportDb::Import.config.catalog_path = '../../../sportdb/sport.db/catalog/catalog.db'
 
-puts "  #{CatalogDb::Metal::Country.count} countries"
-puts "  #{CatalogDb::Metal::Club.count} clubs"
-puts "  #{CatalogDb::Metal::NationalTeam.count} national teams"
-puts "  #{CatalogDb::Metal::League.count} leagues"
-
+CatalogDb::Metal.tables
 
 
 
 
 DATAFILES_DIR = './o'
 
-team_buf,   team_errors   = SportDb::TeamSummary.build( DATAFILES_DIR )
+team_buf, team_errors   = SportDb::TeamSummary.build( DATAFILES_DIR )
 
-File.open( "#{DATAFILES_DIR}/SUMMARY.md", 'w:utf-8' )  { |f| f.write( team_buf ) }
-
+write_text( "#{DATAFILES_DIR}/SUMMARY.md",  team_buf )
 
 puts "#{team_errors.size} error(s) - teams:"
 pp team_errors

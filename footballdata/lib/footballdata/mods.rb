@@ -8,8 +8,15 @@ module Footballdata
 
   MODS = {
     'br.1' => {
-       'América FC' => 'América Mineiro',
+       'América FC' => 'América Mineiro',  # in year 2018 ??
+    },
+    'pt.1' => {
+      'Vitória SC' => 'Vitória Guimarães',  ## avoid easy confusion with Vitória SC <=> Vitória FC
+      'Vitória FC' => 'Vitória Setúbal',
     },
   }
 
 end  # module Footballdata
+
+
+
