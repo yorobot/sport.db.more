@@ -1,0 +1,153 @@
+{:all=>
+  {:stage=>
+    {"REGULAR_SEASON"=>7120,
+     "EUROPA_LEAGUE_PLAYOFF_SEMI_FINALS"=>4,
+     "EUROPA_LEAGUE_PLAYOFF_FINAL"=>2,
+     "PROMOTION_PLAY_OFFS_SEMI_FINALS"=>4,
+     "PROMOTION_PLAY_OFFS_FINAL"=>1,
+     "PRELIMINARY_SEMI_FINALS"=>4,
+     "PRELIMINARY_FINAL"=>2,
+     "1ST_QUALIFYING_ROUND"=>64,
+     "2ND_QUALIFYING_ROUND"=>48,
+     "3RD_QUALIFYING_ROUND"=>40,
+     "PLAY_OFF_ROUND"=>24,
+     "GROUP_STAGE"=>192,
+     "ROUND_OF_16"=>32,
+     "QUARTER_FINALS"=>8,
+     "SEMI_FINALS"=>4,
+     "FINAL"=>1},
+   :duration=>{"REGULAR"=>7540, "PENALTY_SHOOTOUT"=>4, "EXTRA_TIME"=>6},
+   :status=>
+    {"FINISHED"=>6655,
+     "POSTPONED"=>150,
+     "SCHEDULED"=>568,
+     "CANCELLED"=>175,
+     "IN_PLAY"=>1,
+     "AWARDED"=>1},
+   :group=>
+    {"Regular Season"=>7120,
+     nil=>230,
+     "Promotion Play-offs - Final"=>1,
+     "Preliminary Semi-finals"=>4,
+     "Preliminary Final"=>2,
+     "Group B"=>24,
+     "Group A"=>24,
+     "Group C"=>24,
+     "Group D"=>24,
+     "Group E"=>24,
+     "Group F"=>24,
+     "Group G"=>24,
+     "Group H"=>24,
+     "Final"=>1}}}
+
+---
+
+{"NL.1"=>
+  {"2018"=>
+    {:europa_league_playoff_semi_finals=>
+      {:duration=>{"REGULAR"=>4}, :status=>{"FINISHED"=>4}, :group=>{nil=>4}},
+     :europa_league_playoff_final=>
+      {:duration=>{"REGULAR"=>2},
+       :status=>{"FINISHED"=>2},
+       :group=>{nil=>2}}}},
+ "ENG.2"=>
+  {"2018"=>
+    {:promotion_play_offs_semi_finals=>
+      {:duration=>{"REGULAR"=>3, "PENALTY_SHOOTOUT"=>1},
+       :status=>{"FINISHED"=>4},
+       :group=>{nil=>4}},
+     :promotion_play_offs_final=>
+      {:duration=>{"REGULAR"=>1},
+       :status=>{"FINISHED"=>1},
+       :group=>{"Promotion Play-offs - Final"=>1}}}},
+ "CL"=>
+  {"2018"=>
+    {:preliminary_semi_finals=>
+      {:duration=>{"EXTRA_TIME"=>1, "REGULAR"=>1},
+       :status=>{"FINISHED"=>2},
+       :group=>{"Preliminary Semi-finals"=>2}},
+     :preliminary_final=>
+      {:duration=>{"EXTRA_TIME"=>1},
+       :status=>{"FINISHED"=>1},
+       :group=>{"Preliminary Final"=>1}},
+     :"1st_qualifying_round"=>
+      {:duration=>{"REGULAR"=>32},
+       :status=>{"FINISHED"=>32},
+       :group=>{nil=>32}},
+     :"2nd_qualifying_round"=>
+      {:duration=>{"REGULAR"=>24},
+       :status=>{"FINISHED"=>24},
+       :group=>{nil=>24}},
+     :"3rd_qualifying_round"=>
+      {:duration=>{"REGULAR"=>19, "EXTRA_TIME"=>1},
+       :status=>{"FINISHED"=>20},
+       :group=>{nil=>20}},
+     :play_off_round=>
+      {:duration=>{"REGULAR"=>12},
+       :status=>{"FINISHED"=>12},
+       :group=>{nil=>12}},
+     :group_stage=>
+      {:duration=>{"REGULAR"=>96},
+       :status=>{"FINISHED"=>96},
+       :group=>
+        {"Group B"=>12,
+         "Group A"=>12,
+         "Group C"=>12,
+         "Group D"=>12,
+         "Group E"=>12,
+         "Group F"=>12,
+         "Group G"=>12,
+         "Group H"=>12}},
+     :round_of_16=>
+      {:duration=>{"REGULAR"=>15, "EXTRA_TIME"=>1},
+       :status=>{"FINISHED"=>16},
+       :group=>{nil=>16}},
+     :quarter_finals=>
+      {:duration=>{"REGULAR"=>8}, :status=>{"FINISHED"=>8}, :group=>{nil=>8}},
+     :semi_finals=>
+      {:duration=>{"REGULAR"=>4}, :status=>{"FINISHED"=>4}, :group=>{nil=>4}},
+     :final=>
+      {:duration=>{"REGULAR"=>1},
+       :status=>{"FINISHED"=>1},
+       :group=>{"Final"=>1}}},
+   "2019"=>
+    {:preliminary_semi_finals=>
+      {:duration=>{"REGULAR"=>2},
+       :status=>{"FINISHED"=>2},
+       :group=>{"Preliminary Semi-finals"=>2}},
+     :preliminary_final=>
+      {:duration=>{"REGULAR"=>1},
+       :status=>{"FINISHED"=>1},
+       :group=>{"Preliminary Final"=>1}},
+     :"1st_qualifying_round"=>
+      {:duration=>{"REGULAR"=>30, "PENALTY_SHOOTOUT"=>2},
+       :status=>{"FINISHED"=>32},
+       :group=>{nil=>32}},
+     :"2nd_qualifying_round"=>
+      {:duration=>{"REGULAR"=>23, "EXTRA_TIME"=>1},
+       :status=>{"FINISHED"=>24},
+       :group=>{nil=>24}},
+     :"3rd_qualifying_round"=>
+      {:duration=>{"REGULAR"=>19, "PENALTY_SHOOTOUT"=>1},
+       :status=>{"FINISHED"=>20},
+       :group=>{nil=>20}},
+     :play_off_round=>
+      {:duration=>{"REGULAR"=>12},
+       :status=>{"FINISHED"=>12},
+       :group=>{nil=>12}},
+     :group_stage=>
+      {:duration=>{"REGULAR"=>96},
+       :status=>{"FINISHED"=>96},
+       :group=>
+        {"Group F"=>12,
+         "Group G"=>12,
+         "Group E"=>12,
+         "Group H"=>12,
+         "Group A"=>12,
+         "Group B"=>12,
+         "Group C"=>12,
+         "Group D"=>12}},
+     :round_of_16=>
+      {:duration=>{"REGULAR"=>15, "EXTRA_TIME"=>1},
+       :status=>{"FINISHED"=>12, "SCHEDULED"=>4},
+       :group=>{nil=>16}}}}}

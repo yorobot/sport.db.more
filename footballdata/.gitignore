@@ -44,6 +44,13 @@ build/
 logs.txt
 errors.txt
 o/
+o2/
+dl/
+tmp/
+temp/
 
+####
+# ignore all databases
+*.db
 
 
