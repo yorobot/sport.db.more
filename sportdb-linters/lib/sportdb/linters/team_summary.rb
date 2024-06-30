@@ -45,8 +45,15 @@ class Names
 
     clubs = {}  ## check for duplicates
 
+
+    ## quick hack
+    ##   use league 1 (for all countries) for now (auto incl. wales for england, etc,)
+    league = catalog.leagues.find!( @country.key )
+    pp league
+
     names.each do |rec|
-      club = catalog.clubs.find_by( name: rec[0], country: @country )
+      club = catalog.clubs.find_by( name: rec[0], 
+                                    league: league )
       if club.nil?
         puts "!! ERROR - no club match found for >#{rec[0]}<"
         errors << "#{rec[0]} > #{@country.name}"

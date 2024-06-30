@@ -273,10 +273,8 @@ require 'sportdb/catalogs'
 
 SportDb::Import.config.catalog_path = '../../../sportdb/sport.db/catalog/catalog.db'
 
-puts "  #{CatalogDb::Metal::Country.count} countries"
-puts "  #{CatalogDb::Metal::Club.count} clubs"
-puts "  #{CatalogDb::Metal::NationalTeam.count} national teams"
-puts "  #{CatalogDb::Metal::League.count} leagues"
+CatalogDb::Metal.tables  # print table stats
+
 
 
 ## sort by country code
@@ -292,7 +290,7 @@ puts "==> #{clubs.size} teams"
 
 clubs.each_with_index do |(team_name, country_name, city_name),i|
 
-   country = SportDb::Import.catalog.countries.find( country_name )
+   country = SportDb::Import.world.countries.find( country_name )
    if country.nil?
      puts "!! ERROR: no mapping found for country >#{country_name}<:"
      pp team_name
@@ -318,6 +316,3 @@ clubs.each_with_index do |(team_name, country_name, city_name),i|
 end
 
 puts "bye"
-
-__END__
-
