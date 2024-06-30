@@ -205,7 +205,7 @@ matches.each do |m|
   else
     puts "!!! unexpected stage:"
     puts "-- skipping #{m['stage']}"
-    exit 1
+    # exit 1
   end
 end # each match
 

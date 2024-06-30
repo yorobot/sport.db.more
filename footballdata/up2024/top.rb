@@ -1,16 +1,14 @@
 require_relative 'helper'   ## (shared) boot helper
 
+$LOAD_PATH.unshift( '../lib' )
+require 'footballdata'
 
 
-SportDb::Import.config.catalog_path = '../../../sportdb/sport.db/catalog/catalog.db'
+
+SportDb::Import.config.catalog_path = '../../../../sportdb/sport.db/catalog/catalog.db'
 
 ## move (for reusue) to CatalogDb::Metal.tables or such - why? 
-puts "  #{CatalogDb::Metal::Country.count} countries"
-puts "  #{CatalogDb::Metal::Club.count} clubs"
-puts "  #{CatalogDb::Metal::NationalTeam.count} national teams"
-puts "  #{CatalogDb::Metal::League.count} leagues"
-
-
+CatalogDb::Metal.tables
 
 
 ########
@@ -32,17 +30,16 @@ puts "  #{CatalogDb::Metal::League.count} leagues"
 
 
     league = SportDb::Import.catalog.leagues.find!( league )
-    country = league.country
-
+ 
     stats = {}
 
     ## todo/fix: cache name lookups - why? why not?
     puts "   normalize #{matches.size} matches..."
     matches.each_with_index do |match,i|        
        team1 = SportDb::Import.catalog.clubs.find_by!( name: match.team1,
-                                                       country: country )
+                                                       league: league )
        team2 = SportDb::Import.catalog.clubs.find_by!( name: match.team2,
-                                                       country: country )
+                                                       league: league )
 
        if match.team1 != team1.name
           stat = stats[ match.team1 ] ||= Hash.new(0)
@@ -69,35 +66,21 @@ puts "  #{CatalogDb::Metal::League.count} leagues"
 
 
 
-
-DATASETS = [
- # ['eng.2',   %w[2023/24 2022/23 2021/22 2020/21]],
- ['nl.1', %w[2023/24 2022/23 2021/22 2020/21]],
- ['pt.1', %w[2023/24 2022/23 2021/22 2020/21]],
- ['br.1', %w[2024 2023 2022 2021 2020]],
-]
+require_relative 'config'   ## shared config (prepare+top)
 
 
-=begin
-DATASETS = [
-  ['eng.1',   %w[2023/24]],
-
-  ['de.1',    %w[2023/24]],
-  ['es.1',    %w[2023/24]],
-  ['fr.1',    %w[2023/24]],
-  ['it.1',    %w[2023/24]],
-]
-=end
-
-pp DATASETS
+datasets = DATASETS_MORE + DATASETS_TOP
+# datasets = DATASETS_TOP
+pp datasets
 
 
-repos  = find_repos( DATASETS )
+repos  = find_repos( datasets )
 pp repos
 
 
+
 OPTS = {
-   # push: true
+   push: true
 }
 
 
@@ -111,10 +94,10 @@ outdir = if OPTS[:push]
              "./tmp"
          end
 
-source_dir = '../../../stage'
 
+source_dir = Footballdata.config.convert.out_dir
+         
 
-datasets = DATASETS
 datasets.each_with_index do |(league_key, seasons),i|
  
   league = Writer::LEAGUES[ league_key ]
@@ -122,7 +105,7 @@ datasets.each_with_index do |(league_key, seasons),i|
   seasons.each_with_index do |season,j|
     season = Season( season )   ## convert to Season obj
 
-    lang     = league[:lang] || 'en'
+    lang     =  'en'  ## always use english !!!!
     path     = league[:path]
   
     ## note: basename && name might be dynamic, that is, procs!!! (pass in season)
