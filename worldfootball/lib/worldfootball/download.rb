@@ -41,7 +41,7 @@ end
 
 ## todo/check: put in Downloader namespace/class - why? why not?
 ##   or use Metal    - no "porcelain" downloaders / machinery
-class Metal < ::Metal::Base
+class Metal 
 
   BASE_URL = 'https://www.weltfussball.de'
 
@@ -116,6 +116,15 @@ class Metal < ::Metal::Base
        end
     end
   end
+
+  
+  def self.download_page( url )  ## get & record/save to cache
+    response = Webget.page( url )  ## fetch (and cache) html page (via HTTP GET)
+
+    ## note: exit on get / fetch error - do NOT continue for now - why? why not?
+    exit 1   if response.status.nok?    ## e.g.  HTTP status code != 200
+  end
+
 end # class Metal
 end # module Worldfootball
 

@@ -48,8 +48,6 @@ end # module Cache
 ###
 # our own code
 require 'football-sources/version' # let version always go first
-
-require 'football-sources/worldfootball'
 require 'football-sources/fbref'
 
 

@@ -70,7 +70,7 @@ recs.each { |rec| rec[2] = Date.strptime( rec[2], '%Y-%m-%d' ).strftime( '%a %b 
    out_path = "#{config.convert.out_dir}/#{season.path}/#{league.key}.csv"
 
    puts "write #{out_path}..."
-   Cache::CsvMatchWriter.write( out_path, recs, headers: headers )
+   write_csv( out_path, recs, headers: headers )
 end
 
 

@@ -25,14 +25,6 @@ require_relative 'webget-football/metal'
 
 
 ### by source
-require_relative 'webget-football/worldfootball/config'
-require_relative 'webget-football/worldfootball/leagues'
-require_relative 'webget-football/worldfootball/download'
-require_relative 'webget-football/worldfootball/page'
-require_relative 'webget-football/worldfootball/page_schedule'
-require_relative 'webget-football/worldfootball/page_report'
-
-
 require_relative 'webget-football/fbref'
 
 
