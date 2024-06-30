@@ -3,7 +3,8 @@ module Writer
 
 
 class Job     ## todo/check: use a module (and NOT a class) - why? why not?
-def self.write( datasets, source: )
+def self.write( datasets, source:,
+                          normalize: false )
   datasets.each_with_index do |dataset,i|
     league  = dataset[0]
     seasons = dataset[1]
@@ -13,29 +14,14 @@ def self.write( datasets, source: )
       puts "  season [#{j+1}/#{season.size}] #{league} #{season}..."
       Writer.write( league: league,
                     season: season,
-                    source: source )
+                    source: source,
+                    normalize: normalize )
     end
   end
 end
 end # class Job
 
 
-
-SOURCES = {
-  'one'        => { path: '../../stage/one' },
-  'one/o'      => { path: '../apis/o' },     ## "o" debug version
-
-  'two'        => { path: '../../stage/two' },
-  'two/o'      => { path: '../cache.weltfussball/o' },      ## "o"   debug version
-  'two/tmp'    => { path: '../cache.weltfussball/tmp' },    ## "tmp" debug version
-
-  'leagues'    => { path: '../../../footballcsv/cache.leagues' },
-  'leagues/o'  => { path: '../cache.leagues/o' },    ## "o"  debug version
-
-  'soccerdata' => { path:   '../../../footballcsv/cache.soccerdata',
-                    format: 'century', # e.g. 1800s/1888-89
-                  }
-}
 
 
 def self.split_matches( matches, season: )
@@ -73,11 +59,14 @@ end
 
 
 
+##
+##  note: default - do NOT normalize any more
+
 def self.write( league:, season:,
                 source:,
                 extra: nil,
                 split: false,
-                normalize: true,
+                normalize: false,   
                 rounds: true )
   season = Season( season )  ## normalize season
 
@@ -88,24 +77,14 @@ def self.write( league:, season:,
   end
 
   ## check - if source is directory (assume if starting ./ or ../ or /)
-  if source.start_with?( './')  ||
-     source.start_with?( '../') ||
-     source.start_with?( '/') ||
-     source.index( ':' )    ## note: for windows check for drive letter (c:/ or such)
-     ## check if directory exists
-     unless File.exist?( source )
+  ## check if directory exists
+  ##   todo/fix - use Dir.exist? why? why not?
+  unless File.exist?( source )
        puts "!! ERROR: source dir >#{source}< does not exist"
        exit 1
-     end
-     source_info = { path: source }   ## wrap in "plain" source dir in source info
-  else
-    source_info = SOURCES[ source ]
-    if source_info.nil?
-      puts "!! ERROR - no source found for >#{source}<; sorry"
-      exit 1
-    end
   end
-
+  source_info = { path: source }   ## wrap in "plain" source dir in source info
+  
   source_path = source_info[:path]
 
   ## format lets you specify directory layout
@@ -146,11 +125,10 @@ def self.write( league:, season:,
   league_name =  league_name.call( season )   if league_name.is_a?( Proc )  ## is proc/func - name depends on season
   basename    =  basename.call( season )      if basename.is_a?( Proc )  ## is proc/func - name depends on season
 
-  lang         = league_info[ :lang ] || 'en_AU'  ## default / fallback to en_AU (always use rounds NOT matchday for now)
   repo_path    = league_info[ :path ]      # e.g. brazil or world/europe/portugal etc.
 
 
-  season_path = String.new('')    ## note: allow extra path for output!!!! e.g. archive/2000s etc.
+  season_path = String.new     ## note: allow extra path for output!!!! e.g. archive/2000s etc.
   season_path << "#{extra}/"   if extra
   season_path << season.path
 
@@ -196,8 +174,8 @@ def self.write( league:, season:,
     end
 
     buf = build_stage( matches_by_stage, stages: stage_names,
-                                         name: "#{league_name} #{season.key}",
-                                         lang: lang )
+                                         name: "#{league_name} #{season.key}"
+                      )
 
     ## note: might be empty!!! if no matches skip (do NOT write)
     write_buf( "#{config.out_dir}/#{repo_path}/#{season_path}/#{stage_basename}.txt", buf )   unless buf.empty?
@@ -221,21 +199,18 @@ end
 
     SportDb::TxtMatchWriter.write( out_path, matches_i,
                                    name: "#{league_name} #{season.key}",
-                                   lang:  lang,
                                    rounds: rounds )
 
     out_path = "#{config.out_dir}/#{repo_path}/#{season_path}/#{basename}-ii.txt"
 
     SportDb::TxtMatchWriter.write( out_path, matches_ii,
                                    name: "#{league_name} #{season.key}",
-                                   lang:  lang,
                                    rounds: rounds )
   else
     out_path = "#{config.out_dir}/#{repo_path}/#{season_path}/#{basename}.txt"
 
     SportDb::TxtMatchWriter.write( out_path, matches,
                                    name: "#{league_name} #{season.key}",
-                                   lang:  lang,
                                    rounds: rounds )
   end
   end
@@ -263,8 +238,8 @@ end
 
 
 
-def self.build_stage( matches_by_stage, stages:, name:, lang: )
-  buf = String.new('')
+def self.build_stage( matches_by_stage, stages:, name: )
+  buf = String.new
 
   ## note: allow convenience shortcut - assume stage_in is stage_out - auto-convert
   stages = stages.reduce({}) {|h,stage| h[stage]=stage; h }   if stages.is_a?( Array )
@@ -284,7 +259,7 @@ def self.build_stage( matches_by_stage, stages:, name:, lang: )
     buf << "\n\n"   if i > 0 && buf.size > 0
 
     buf << "= #{name}, #{stage_out}\n"
-    buf << SportDb::TxtMatchWriter.build( matches, lang: lang )
+    buf << SportDb::TxtMatchWriter.build( matches )
 
     puts buf
   end
