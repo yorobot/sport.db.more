@@ -2,15 +2,19 @@
 # to run use:
 #    ruby upslugs\up.rb
 
-
-require 'pp'
-require 'optparse'
-
+$LOAD_PATH.unshift( '../../../sportdb/sport.db/sportdb-langs/lib' )
+$LOAD_PATH.unshift( '../../../sportdb/sport.db/sportdb-structs/lib' )
+$LOAD_PATH.unshift( '../../../sportdb/sport.db/sportdb-formats/lib' )
+$LOAD_PATH.unshift( '../../../sportdb/sport.db/sportdb-catalogs/lib' )
+$LOAD_PATH.unshift( '../sportdb-writers/lib' )
 
 $LOAD_PATH.unshift( '../../../rubycocos/webclient/webget/lib' )
 $LOAD_PATH.unshift( './lib' )
 require 'worldfootball'
 
+
+require 'pp'
+require 'optparse'
 
 puts "NAME          : #{$PROGRAM_NAME}"
 puts "-- optparse:"
@@ -63,6 +67,7 @@ league_to_slug = {
    'at.1'    => 'aut-bundesliga-2024-2025',
    'at.2'    => 'aut-2-liga-2024-2025',
    'at.cup'  => 'aut-oefb-cup-2024-2025',
+   'at.3.o'  => 'aut-regionalliga-ost-2024-2025',
    'ch.1'  =>  'sui-super-league-2024-2025',
    'ch.2'  =>  'sui-challenge-league-2024-2025',
    'hu.1'  =>  'hun-nb-i-2024-2025',
