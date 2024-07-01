@@ -7,6 +7,7 @@ DATASETS = [
   ['ie.1',  %w[2020]],    # Ireland - starts Fri Feb/14 (restarts Fri Jul/31)
   ['sco.1', %w[2020/21]],  # starts Sat Aug/1
 
+=begin 
   ### Northern Europe
   ['se.1',  %w[2020]], ## Sweden
   ['se.2',  %w[2020]],
@@ -40,12 +41,26 @@ DATASETS = [
   ### Asia
   ['cn.1',  %w[2020]], ## China
   ['jp.1',  %w[2020]], ## Japan
+=end
 ]
+
 
 pp DATASETS
 
+## use args for query (e.g. at, etc.)
+datasets = filter_datasets( DATASETS, ARGV )
 
-process( DATASETS, includes: ARGV )
+puts "INCLUDES (QUERIES):"
+pp ARGV
+puts "DATASETS:"
+pp datasets
+# puts "REPOS:"
+# pp repos
 
+
+Worldfootball.process( datasets, 
+                          download: OPTS[:download],
+                          push:     OPTS[:push] )
 
 puts "bye"
+

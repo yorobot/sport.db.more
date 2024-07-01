@@ -14,16 +14,21 @@ LEAGUES_EUROPE.merge!({
   'eng.cup'   => { pages: 'eng-fa-cup' },    ## change key to eng.cup.fa or such??
   'eng.cup.l' => { pages: 'eng-league-cup' }, ## change key to ??
 
+
+#  2021 Relegation,sco-premiership-2021-relegation
+#  2021 Championship,sco-premiership-2021-championship
+#  2020/2021,sco-premiership-2020-2021
+  
   'sco.1' => {
     pages: {
-      'sco-premiership-{season}'           => 'Regular Season',
-      'sco-premiership-{end_year}-playoff' => 'Playoffs - Championship',  # note: only uses season.end_year!
-      'sco-premiership-{end_year}-abstieg' => 'Playoffs - Relegation',    # note: only uses season.end_year!
+      'sco-premiership-{season}'                => 'Regular Season',
+      'sco-premiership-{end_year}-championship' => 'Playoffs - Championship',  # note: only uses season.end_year!
+      'sco-premiership-{end_year}-relegation'   => 'Playoffs - Relegation',    # note: only uses season.end_year!
     },
     season: ->( season ) {
       case season
-      when Season('2020/21') then [1]     # just getting started
-      when Season('2019/20') then [1]     # covid-19 - no championship & relegation
+      when Season('2020/21') then [1,2,3]     # just getting started
+      when Season('2019/20') then [1]         # covid-19 - no championship & relegation
       when Season('2018/19') then [1,2,3]
       end
    }
