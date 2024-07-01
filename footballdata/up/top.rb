@@ -1,14 +1,11 @@
+############
+# to run use:
+#    $ ruby up/top.rb
+
+
 require_relative 'helper'   ## (shared) boot helper
 
-$LOAD_PATH.unshift( '../lib' )
-require 'footballdata'
 
-
-
-SportDb::Import.config.catalog_path = '../../../../sportdb/sport.db/catalog/catalog.db'
-
-## move (for reusue) to CatalogDb::Metal.tables or such - why? 
-CatalogDb::Metal.tables
 
 
 ########
@@ -66,7 +63,7 @@ CatalogDb::Metal.tables
 
 
 
-require_relative 'config'   ## shared config (prepare+top)
+require_relative 'datasets'   ## shared config (prepare+top)
 
 
 datasets = DATASETS_MORE + DATASETS_TOP
@@ -74,22 +71,21 @@ datasets = DATASETS_MORE + DATASETS_TOP
 pp datasets
 
 
-repos  = find_repos( datasets )
-pp repos
-
 
 
 OPTS = {
-   push: true
+  # push: true
 }
 
 
+gh = SportDb::GitHubSync.new( datasets )
+
 ## always pull before push!! (use fast_forward)
-git_fast_forward_if_clean( repos )  if OPTS[:push]
+gh.git_fast_forward_if_clean  if OPTS[:push]
 
 
 outdir = if OPTS[:push]
-             "/sports/openfootball"
+             SportDb::GitHubSync.root
          else
              "./tmp"
          end
@@ -105,7 +101,6 @@ datasets.each_with_index do |(league_key, seasons),i|
   seasons.each_with_index do |season,j|
     season = Season( season )   ## convert to Season obj
 
-    lang     =  'en'  ## always use english !!!!
     path     = league[:path]
   
     ## note: basename && name might be dynamic, that is, procs!!! (pass in season)
@@ -129,18 +124,17 @@ datasets.each_with_index do |(league_key, seasons),i|
     outpath = "#{outdir}/#{path}/#{season.to_path}/#{basename}.txt"
     puts "   writing to #{outpath}"
     puts "      name: #{name} #{season.key}"
-    puts "      lang: #{lang}"
     SportDb::TxtMatchWriter.write( outpath, 
                                    matches,
-                                   name: "#{name} #{season.key}",
-                                   lang:  lang ) 
+                                   name: "#{name} #{season.key}"
+                                 ) 
   end
 end
 
 
 
 ## todo/fix: add a getch or something to hit return before commiting pushing - why? why not?
-git_push_if_changes( repos )    if OPTS[:push]
+gh.git_push_if_changes    if OPTS[:push]
 
 
 puts "bye"

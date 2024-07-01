@@ -1,10 +1,13 @@
-$LOAD_PATH.unshift( '../../../../rubycocos/webclient/webget/lib' )
-$LOAD_PATH.unshift( '../lib' )
+############
+# to run use:
+#    $ ruby up/prepapre.rb
 
-require 'footballdata'
+
+require_relative 'helper'   ## (shared) boot helper
 
 
-require_relative 'config'   ## shared config
+
+require_relative 'datasets'   ## shared datasets
 
 
 #########

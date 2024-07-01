@@ -1,4 +1,8 @@
-##
+############
+# to run use:
+#    $ ruby up/check_clubs.rb
+
+
 #
 # todos / ideas
 #  - [ ]  check for shortname if same as canonical (do NOT report)

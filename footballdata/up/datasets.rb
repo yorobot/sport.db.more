@@ -1,19 +1,3 @@
-##########
-##  webcache settings
-Webcache.root = '../../../../cache'  
-#=> /sports/cache
-
-Webget.config.sleep  = 11    ## max. 10 requests/minute
-
-
-#########
-##  staging cache settings
-Footballdata.config.convert.out_dir = '../../../../stage'
-
-pp File.expand_path( Footballdata.config.convert.out_dir )
-#=> /sports/stage
-
-
 #########
 ##  datasets
 
@@ -36,6 +20,13 @@ DATASETS_MORE = [
   ['nl.1',  SEASONS],
   ['br.1', %w[2024 2023 2022 2021 2020]],
 ]
+
+
+## plus add int'l cups
+##    uefa.cl, copa.l  
+##
+## plus cups with national teams!!!
+##    euro, southamerica (copa america)
 
 
 
