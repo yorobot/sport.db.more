@@ -42,8 +42,8 @@ LEAGUES_EUROPE.merge!({
     },
     season: ->( season ) {
                   case season
-                  when Season('2020/21') then [1]
-                  when Season('2018/19')..Season('2019/20') then [1,2,3,4]
+                  when Season('2024/25') then [1]
+                  when Season('2018/19')..Season('2023/24') then [1,2,3,4]
                   else  1   ## use simple format for the rest; note: index NOT wrapped in array
                   end
     },
