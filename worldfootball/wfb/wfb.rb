@@ -66,12 +66,14 @@ Worldfootball.schedule( league: league,
                         season: season )   if OPTS[:download]
 
 
-# Worldfootball.config.convert.out_dir = './o'
+
+Worldfootball.config.convert.out_dir = '../../../cache.wfb'
 
 Worldfootball.convert( league: league,
                        season: season )
 
 
+                       
 Writer.config.out_dir = './tmp'
 
 Writer.write( league: league,
