@@ -161,6 +161,7 @@ def self.write( path, matches, name:, rounds: true)
   ## for convenience - make sure parent folders/directories exist
   FileUtils.mkdir_p( File.dirname( path) )  unless Dir.exist?( File.dirname( path ))
 
+  puts "==> writing to >#{path}<..."
   File.open( path, 'w:utf-8' ) do |f|
     f.write( "= #{name}\n" )
     f.write( buf )
