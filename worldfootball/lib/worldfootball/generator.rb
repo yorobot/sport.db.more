@@ -3,7 +3,7 @@
 ### check - change Generator to Writer 
 ##                   and write( league:, season: ) - why? why not?
 
-module Footballdata
+module Worldfootball
 class Generator
 
 
@@ -15,14 +15,14 @@ def generate( league:, season: )
 
   ## for testing use cached version always - why? why not?    
   ## step 1 - download
-  Footballdata.schedule( league: league, season: season )
+  Worldfootball.schedule( league: league, season: season )
 
   ## step 2 - convert (to .csv)
 
   ## todo/fix - convert in-memory and return matches
-  Footballdata.convert( league: league, season: season )
+  Worldfootball.convert( league: league, season: season )
 
-  source_dir = Footballdata.config.convert.out_dir
+  source_dir = Worldfootball.config.convert.out_dir
 
   Writer.write( league: league, 
                 season: season,
@@ -30,4 +30,4 @@ def generate( league:, season: )
 end  # def generate
 
 end # class Generator
-end # module Footballdata
+end # module Worldfootball

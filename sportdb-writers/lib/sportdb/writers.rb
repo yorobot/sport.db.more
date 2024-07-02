@@ -4,6 +4,10 @@
 require 'sportdb/catalogs'
 
 
+## todo/fix - make sure upstream cocos is included/required
+require 'cocos'
+
+
 module Writer
   class Configuration
      def out_dir()        @out_dir   || './tmp'; end

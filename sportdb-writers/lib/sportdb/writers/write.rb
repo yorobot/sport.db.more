@@ -46,19 +46,6 @@ end
 
 
 
-###
-# todo/check:  use Writer.open() or FileWriter.open() or such - why? why not?
-def self.write_buf( path, buf )  ## write buffer helper
-  ## for convenience - make sure parent folders/directories exist
-  FileUtils.mkdir_p( File.dirname( path ))  unless Dir.exist?( File.dirname( path ))
-
-  File.open( path, 'w:utf-8' ) do |f|
-    f.write( buf )
-  end
-end
-
-
-
 ##
 ##  note: default - do NOT normalize any more
 
@@ -178,7 +165,8 @@ def self.write( league:, season:,
                       )
 
     ## note: might be empty!!! if no matches skip (do NOT write)
-    write_buf( "#{config.out_dir}/#{repo_path}/#{season_path}/#{stage_basename}.txt", buf )   unless buf.empty?
+    write_text( "#{config.out_dir}/#{repo_path}/#{season_path}/#{stage_basename}.txt", 
+                  buf )   unless buf.empty?
   end
   else  ## no stages - assume "regular" plain vanilla season
 

@@ -27,6 +27,8 @@ require_relative 'worldfootball/convert_reports'
 require_relative 'worldfootball/jobs'
 
 
+require_relative 'worldfootball/generator'
+
 
 
 module Worldfootball

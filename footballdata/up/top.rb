@@ -11,6 +11,10 @@ require_relative 'helper'   ## (shared) boot helper
 ########
 # helper
 #   normalize team names
+
+###    fix !!!!!   - always add season:  (for generic interface/api)
+##      e.g. def normalize( matches, league:, season: )
+
   def normalize( matches, league: )
     matches = matches.sort do |l,r|
       ## first by date (older first)
@@ -118,7 +122,11 @@ datasets.each_with_index do |(league_key, seasons),i|
     # pp matches[0]
     # puts
     # pp matches[-1]
-             
+          
+    
+   ##
+   ### fix - allow normalize opt with proc!!!!
+
     matches = normalize( matches, league: league_key )
            
     outpath = "#{outdir}/#{path}/#{season.to_path}/#{basename}.txt"
