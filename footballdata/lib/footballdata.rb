@@ -43,4 +43,11 @@ require_relative 'footballdata/convert'
 require_relative 'footballdata/teams'
 
 
+require_relative 'footballdata/generator'
+
+
+
+### for processing tool
+##   (auto-)add sportdb/writer  (pulls in sportdb/catalogs and gitti)
+require 'sportdb/writers'
 

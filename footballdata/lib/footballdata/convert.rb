@@ -29,7 +29,6 @@ module Footballdata
   }
 
 
-
 def self.convert( league:, season: )
 
   ### note/fix: cl (champions league for now is a "special" case)

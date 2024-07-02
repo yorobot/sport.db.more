@@ -12,10 +12,6 @@ $LOAD_PATH.unshift( './lib' )
 require 'footballdata'
 
 
-##  todo/fix - make sure cocos is included upstream in ???
-require 'cocos'
-
-
 
 SportDb::Import.config.catalog_path = '../../../sportdb/sport.db/catalog/catalog.db'
 
