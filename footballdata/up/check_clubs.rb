@@ -10,25 +10,27 @@
 # -  [ ] check for shortnames too (if present/match)
 
 
-require 'cocos'
-
-$LOAD_PATH.unshift( '../../../rubycocos/webclient/webget/lib' )
-$LOAD_PATH.unshift( './lib' )
-require 'footballdata' 
-
+require_relative  'helper'
 
 
 pp Footballdata::LEAGUES
 puts "  #{Footballdata::LEAGUES.keys.size} league(s)"
 
-Webcache.root = '../../../cache'  ### c:\sports\cache
+
+
 
 TEAMS = {}
 
-def check( league:, year: )
+
+def check( league:, season: )
   root = "#{Webcache.root}/api.football-data.org"
-  path         = "#{root}/v4~~competitions~~#{Footballdata::LEAGUES[league.downcase]}~~matches-I-season~#{year}.json"
-  path_teams   = "#{root}/v4~~competitions~~#{Footballdata::LEAGUES[league.downcase]}~~teams-I-season~#{year}.json"
+
+  season = Season( season )
+  league_code = Footballdata::LEAGUES[league.downcase]
+  year = season.start_year
+
+  path         = "#{root}/v4~~competitions~~#{league_code}~~matches-I-season~#{year}.json"
+  path_teams   = "#{root}/v4~~competitions~~#{league_code}~~teams-I-season~#{year}.json"
 
   data         = read_json( path )
   data_teams   = read_json( path_teams )
@@ -85,44 +87,31 @@ end # method check
 
 
 DATASETS = [
-           ['uefa.cl',    %w[2020 2021 2022 2023]],
+           ['uefa.cl',    %w[2020/21 2021/22 2022/23 2023/24]],
            ['copa.l', %w[2023 2024]],
-           ['eng.1', %w[2020 2021 2022 2023]],
-           ['eng.2', %w[2020 2021 2022 2023]],
-           ['de.1', %w[2020 2021 2022 2023]],
+           ['eng.1', %w[2020/21 2021/22 2022/23 2023/24]],
+           ['eng.2', %w[2020/21 2021/22 2022/23 2023/24]],
+           ['de.1', %w[2020/21 2021/22 2022/23 2023/24]],
            ]
 
 pp DATASETS
 
 
 DATASETS.each do |dataset|
-  basename = dataset[0]
-  dataset[1].each do |year|
-    check( league: basename, year: year )
+  league  = dataset[0]
+  seasons = dataset[1]
+  seasons.each do |season|
+    check( league: league, season: season )
   end
 end
 
 pp TEAMS
 
-
-
-$LOAD_PATH.unshift( '../../../sportdb/sport.db/sportdb-catalogs/lib' )
-$LOAD_PATH.unshift( '../../../sportdb/sport.db/sportdb-langs/lib' )
-$LOAD_PATH.unshift( '../../../sportdb/sport.db/sportdb-structs/lib' )
-$LOAD_PATH.unshift( '../../../sportdb/sport.db/sportdb-catalogs/lib' )
-$LOAD_PATH.unshift( '../../../sportdb/sport.db/sportdb-formats/lib' )
-$LOAD_PATH.unshift( '../../../sportdb/sport.db/sportdb-readers/lib' )
-$LOAD_PATH.unshift( '../../../sportdb/sport.db/sportdb-sync/lib' )
-$LOAD_PATH.unshift( '../../../sportdb/sport.db/sportdb-models/lib' )
-require 'sportdb/catalogs'
-
-SportDb::Import.config.catalog_path = '../../../sportdb/sport.db/catalog/catalog.db'
-
-CatalogDb::Metal.tables
-
-
 puts
 puts "==> #{TEAMS.keys.size} teams"
+
+
+
 
 
 #######################
@@ -132,8 +121,7 @@ TEAMS.each_with_index do |(team_name, team_hash),i|
 
    country_name = team_hash[ :country ]
   
-
-   country = SportDb::Import.world.countries.find( country_name )
+   country = Country.find_by( name: country_name )
    if country.nil?
      puts "!! ERROR: no mapping found for country >#{country_name}<:"
      pp team_name
@@ -141,11 +129,9 @@ TEAMS.each_with_index do |(team_name, team_hash),i|
      exit 1
    end
 
-
    ## note - use lookup with country required
-   club = SportDb::Import.catalog.clubs.find_by( 
-                                  name:    team_name,
-                                  country: country )
+   club = Club.find_by( name:    team_name,
+                        country: country )
    if club.nil?
     puts "!! ERROR: no mapping found for club >#{team_name}, #{country.name}<:"
     pp team_hash

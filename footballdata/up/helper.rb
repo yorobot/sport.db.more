@@ -12,6 +12,12 @@ $LOAD_PATH.unshift( './lib' )
 require 'footballdata'
 
 
+## add convenience shortcuts
+Country = Sports::Country
+League  = Sports::League
+Club    = Sports::Club
+
+
 
 SportDb::Import.config.catalog_path = '../../../sportdb/sport.db/catalog/catalog.db'
 

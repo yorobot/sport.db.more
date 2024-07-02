@@ -30,17 +30,17 @@ require_relative 'helper'   ## (shared) boot helper
     end
 
 
-    league = SportDb::Import.catalog.leagues.find!( league )
+    league = League.find!( league )
  
     stats = {}
 
     ## todo/fix: cache name lookups - why? why not?
     puts "   normalize #{matches.size} matches..."
     matches.each_with_index do |match,i|        
-       team1 = SportDb::Import.catalog.clubs.find_by!( name: match.team1,
-                                                       league: league )
-       team2 = SportDb::Import.catalog.clubs.find_by!( name: match.team2,
-                                                       league: league )
+       team1 = Club.find_by!( name:   match.team1,
+                              league: league )
+       team2 = Club.find_by!( name:   match.team2,
+                              league: league )
 
        if match.team1 != team1.name
           stat = stats[ match.team1 ] ||= Hash.new(0)
@@ -137,6 +137,11 @@ datasets.each_with_index do |(league_key, seasons),i|
                                    matches,
                                    name: "#{name} #{season.key}"
                                  ) 
+
+##  fix/(re)use --->
+##   Writer::Job.write( datasets,
+##     source: Footballdata.config.convert.out_dir )
+                                 
   end
 end
 
