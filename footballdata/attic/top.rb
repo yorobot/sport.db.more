@@ -95,26 +95,53 @@ outdir = if OPTS[:push]
              "./tmp"
          end
 
-Writer.config.out_dir = outdir
-pp Writer.config.out_dir
 
+source_dir = Footballdata.config.convert.out_dir
+         
 
 datasets.each_with_index do |(league_key, seasons),i|
  
+  league = Writer::LEAGUES[ league_key ]
+ 
   seasons.each_with_index do |season,j|
+    season = Season( season )   ## convert to Season obj
 
-    puts "==> [#{i+1}/#{datasets.size}]  #{league_key} #{season} [#{j+1}/#{seasons.size}]..."
+    path     = league[:path]
+  
+    ## note: basename && name might be dynamic, that is, procs!!! (pass in season)
+    basename =  league[:basename]
+    basename =  basename.call( season )  if basename.is_a?(Proc)
+    name     =  league[:name] 
+    name     =  name.call( season )      if name.is_a?(Proc)
+  
+    matches = SportDb::CsvMatchParser.read( 
+                 "#{source_dir}/#{season.to_path}/#{league_key}.csv" )
 
-    ##
-    ### fix - allow normalize opt with proc!!!!
+    puts "==> [#{i+1}/#{datasets.size}]  #{name} #{season.key} [#{j+1}/#{seasons.size}]  -  #{matches.size} match(es)..."
 
-    ## matches = normalize( matches, league: league_key )
+    # puts
+    # pp matches[0]
+    # puts
+    # pp matches[-1]
+          
+    
+   ##
+   ### fix - allow normalize opt with proc!!!!
 
+    matches = normalize( matches, league: league_key )
+           
+    outpath = "#{outdir}/#{path}/#{season.to_path}/#{basename}.txt"
+    puts "   writing to #{outpath}"
+    puts "      name: #{name} #{season.key}"
+    SportDb::TxtMatchWriter.write( outpath, 
+                                   matches,
+                                   name: "#{name} #{season.key}"
+                                 ) 
 
-    Writer.write( league: league_key, 
-                  season: season,
-                  source: Footballdata.config.convert.out_dir,
-                  normalize: false  )                                 
+##  fix/(re)use --->
+##   Writer::Job.write( datasets,
+##     source: Footballdata.config.convert.out_dir )
+                                 
   end
 end
 

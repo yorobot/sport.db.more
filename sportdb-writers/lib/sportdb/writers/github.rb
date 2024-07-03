@@ -6,8 +6,85 @@ module SportDb
 ##   add -i/--interactive flag
 ##     will prompt yes/no  before git operations (with consequences)!!!
 
-
 class GitHubSync
+
+  ## map leagues to repo+path
+  ##  e.g.   fr.1   => europe/france
+  ##         eng..1 => england
+REPOS = {
+  'at.1' =>  'austria',
+  'at.2' =>  'austria',
+  'at.3.o' =>   'austria',
+  'at.cup' =>   'austria',
+
+  'de.1' =>  'deutschland',
+  'de.2' =>  'deutschland',
+  'de.3' =>  'deutschland',
+  'de.cup' => 'deutschland',
+
+  'eng.1' =>  'england',
+'eng.2' =>  'england',
+'eng.3' =>  'england',
+'eng.4' =>  'england',
+'eng.5' =>  'england',
+'eng.cup' => 'england',   # English FA Cup
+ 
+'es.1' => 'espana',
+'es.2' => 'espana',
+
+  'fr.1' =>  'europe/france',
+  'fr.2' =>  'europe/france',
+  
+  'hu.1' => 'europe/hungary',
+  'gr.1' => 'europe/greece',
+  'pt.1' => 'europe/portugal',
+  'pt.2' => 'europe/portugal',
+  
+  'ch.1' => 'europe/switzerland',
+  'ch.2' => 'europe/switzerland',
+
+  'tr.1' => 'europe/turkey',
+  'tr.2' => 'europe/turkey',
+  
+  'is.1' => 'europe/iceland',
+  'sco.1' =>  'europe/scotland',
+  'ie.1' => 'europe/ireland',
+
+  'fi.1' =>  'europe/finland',
+   'se.1'  =>  'europe/sweden',
+   'se.2'  =>  'europe/sweden',
+   'no.1'  =>  'europe/norway',
+   'dk.1'  =>  'europe/denmark',
+   
+   'lu.1'  =>  'europe/luxembourg',
+   'be.1'  =>  'europe/belgium',
+    'nl.1' =>  'europe/netherlands',
+    'cz.1' =>  'europe/czech-republic',
+               
+  'sk.1' =>   'europe/slovakia',
+  'hr.1'  =>  'europe/croatia',
+  'pl.1' =>   'europe/poland',
+  
+  'ro.1' =>  'europe/romania',
+  
+  'ua.1' =>  'europe/ukraine',
+
+   'ru.1' =>  'europe/russia',
+    'ru.2' => 'europe/russia',
+
+    'it.1' =>  'italy',
+    'it.2' =>  'italy',
+
+    'mx.1' => 'mexico',
+
+    'ar.1' => 'south-america/argentina',
+    'br.1' => 'south-america/brazil',
+
+    'cn.1' =>  'world/asia/china',
+    'jp.1' =>  'world/asia/japan',
+}
+
+
 
 ######## 
 ##  (auto)default to Writer.config.out_dir - why? why not?
@@ -88,16 +165,24 @@ end
 ##  ['es.2',    %w[2019/20]],
 ## ]
 
+
 def _find_repos( datasets )
     repos = []
     datasets.each do |dataset|
       league_key = dataset[0]
-      league = Writer::LEAGUES[ league_key ]
-      pp league
-      path = league[:path]
+      path  = REPOS[ league_key ]
+      ## pp path
+      if path.nil?
+         puts "!! ERROR - no repo path found for league >#{league_key}<; sorry"
+         exit 1
+      end
   
+      ## auto-add
+      ##   openfootball/ org here 
+      ##  and keep root "generic" to monoroot - why? why not?
+
       ## use only first part e.g. europe/belgium => europe
-      repos << path.split( %r{[/\\]})[0]
+      repos << path.split( '/' )[0]
     end
     pp repos
     repos.uniq   ## note: remove duplicates (e.g. europe or world or such)

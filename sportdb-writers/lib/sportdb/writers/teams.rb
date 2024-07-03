@@ -17,15 +17,15 @@ module Writer
 
 
 def self.normalize( matches, league:, season: nil )
-  league = SportDb::Import.catalog.leagues.find!( league )
+  league = Sports::League.find!( league )
   country = league.country
 
   ## todo/fix: cache name lookups - why? why not?
   matches.each do |match|
-     team1 = SportDb::Import.catalog.clubs.find_by!( name: match.team1,
-                                                     country: country )
-     team2 = SportDb::Import.catalog.clubs.find_by!( name: match.team2,
-                                                     country: country )
+     team1 = Sports::Club.find_by!( name: match.team1,
+                                    country: country )
+     team2 = Sports::Club.find_by!( name: match.team2,
+                                    country: country )
 
      if season
        team1_name = team1.name_by_season( season )

@@ -41,6 +41,9 @@ Footballdata.config.convert.out_dir = '/sports/cache.api.fbdat'
 pp File.expand_path( Footballdata.config.convert.out_dir )
 #=> /sports/scache.api.fbdat
 
+
+##
+# todo/fix - change to (generic) monoroot  e.g. /sports (or /sites) or such
 SportDb::GitHubSync.root = "/sports/openfootball"
 pp File.expand_path( SportDb::GitHubSync.root )
 

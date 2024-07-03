@@ -112,7 +112,9 @@ def self.write( league:, season:,
   league_name =  league_name.call( season )   if league_name.is_a?( Proc )  ## is proc/func - name depends on season
   basename    =  basename.call( season )      if basename.is_a?( Proc )  ## is proc/func - name depends on season
 
-  repo_path    = league_info[ :path ]      # e.g. brazil or world/europe/portugal etc.
+  ## note - repo_path moved!!!
+  ## repo_path    = league_info[ :path ]      # e.g. brazil or world/europe/portugal etc.
+  repo_path  = SportDb::GitHubSync::REPOS[ league ]
 
 
   season_path = String.new     ## note: allow extra path for output!!!! e.g. archive/2000s etc.
