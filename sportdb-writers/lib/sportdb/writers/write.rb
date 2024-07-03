@@ -107,7 +107,7 @@ def self.write( league:, season:,
         matches = normalize.call( matches, league: league,
                                            season: season )
      else 
-       puts "!! ERROR - normalize; expected proc got #{normalize.inspec}"
+       puts "!! ERROR - normalize; expected proc got #{normalize.inspect}"
        exit 1
      end 
   end
