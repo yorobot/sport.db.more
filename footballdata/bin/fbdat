@@ -1,0 +1,160 @@
+#!/usr/bin/env ruby
+
+## tip: to test run:
+##   ruby -I ./lib bin/fbdat
+
+require 'footballdata'
+
+
+load_env   ## use dotenv (.env)
+
+
+Webcache.root =  if File.exist?( '/sports/cache' )
+                     puts "  setting web cache to >/sports/cache<"
+                     '/sports/cache'
+                 else 
+                     './cache'
+                 end
+
+## note -  free tier (tier one) plan - 10 requests/minute   
+##              (one request every 6 seconds 6*10=60 secs)
+##     10 API calls per minute max.
+##  note - default sleep (delay in secs) is 3 sec(s)
+Webget.config.sleep  = 10
+
+
+require 'optparse'
+
+OPTS = {}
+parser = OptionParser.new do |parser|
+  parser.banner = "Usage: #{$PROGRAM_NAME} [options]"
+
+  parser.on( "--cache", "--cached", "--offline",
+               "use cached data in #{Webcache.root}" ) do |cached|
+    OPTS[:cached] = cached
+  end
+end
+parser.parse!
+
+puts "OPTS:"
+p OPTS
+puts "ARGV:"
+p ARGV
+
+
+## try special args
+
+if ['plan', 'plans', 
+    'comp', 'comps'].include?(ARGV[0]) 
+
+    if OPTS[:cached]
+        ## do nothing
+    else    
+      Footballdata::Metal.competitions( auth: true )   ## get free tier (TIER_ONE) with auth (token)
+    end
+
+  url = Footballdata::Metal.competitions_url
+  pp url
+  #=> "http://api.football-data.org/v4/competitions"
+   
+  data = Webcache.read_json( url )
+  pp data
+    
+  comps = data['competitions']  
+  comps.each do |rec|
+      print "==> "
+      print "#{rec['area']['name']} (#{rec['area']['code']}) - "
+      print "#{rec['name']} (#{rec['code']}) -- "
+      print "#{rec['plan']} #{rec['type']}, "
+      print "#{rec['numberOfAvailableSeasons']} season(s)"
+      print "\n"
+  
+      print "     #{rec['currentSeason']['startDate']} - #{rec['currentSeason']['endDate']} "  
+      print "@ #{rec['currentSeason']['currentMatchday']}"
+      print "\n"
+  end
+  
+  puts "  #{comps.size} competition(s)"
+  exit 0
+end
+
+
+###
+#  pretty print today's matches  (tomorrow/yesterday/etc.)
+
+
+##
+## note - cannot use t for today (used for tomorrow)
+##             find a different shortcode - why? why not?
+
+date =  if ['y', 'yesterday', 't-1'].include?( ARGV[0] )
+            Date.today-1       
+        elsif ['t', 'tomorrow', 't+1'].include?( ARGV[0] )
+            Date.today+1        
+        elsif ['m', 'match', 'matches', 'today'].include?( ARGV[0] )  ## make default - why? why not?
+            Date.today
+        else
+            nil
+        end
+
+if date
+  if OPTS[:cached] 
+      ## do nothing
+  else
+     Footballdata::Metal.todays_matches( date )
+  end
+
+  data = Webcache.read_json( Footballdata::Metal.todays_matches_url( date ) )
+  pp data
+
+  data['matches'].each do |rec|
+    puts Footballdata.fmt_competition( rec )
+    puts Footballdata.fmt_match( rec )
+  end
+  exit 0
+end
+
+
+
+###
+#  league and season - pretty print matches
+#
+##  samples:
+##   national teams
+##    EC 2024  - euro
+##    EC 2021
+##    WC 2022  - world cup
+##   club cups intl
+##    CL 2023  - (uefa/european) champions league
+##    CLI 2204 - (south american) copa libertadores
+##   club leagues 
+##    PL 2024  - england premiere league
+
+
+league_code       = ARGV[0] || 'EC'
+season_start_year = (ARGV[1] || '2024').to_i(10)
+
+pp league_code, season_start_year
+
+if OPTS[:cached]
+    ## do nothing
+else
+    ## download dataset(s)
+    ## try download
+    Footballdata::Metal.matches( league_code, 
+                                 season_start_year )
+end    
+
+url = Footballdata::Metal.competition_matches_url( league_code, 
+                                                   season_start_year )
+pp url
+#=> "http://api.football-data.org/v4/competitions/EC/matches?season=2024"
+
+data = Webcache.read_json( url )
+## pp data
+
+Footballdata.pp_matches( data )
+
+
+puts "bye"
+

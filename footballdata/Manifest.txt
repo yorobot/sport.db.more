@@ -2,6 +2,7 @@ CHANGELOG.md
 Manifest.txt
 README.md
 Rakefile
+bin/fbdat
 lib/footballdata.rb
 lib/footballdata/convert.rb
 lib/footballdata/download.rb

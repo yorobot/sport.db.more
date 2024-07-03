@@ -75,7 +75,7 @@ class Metal
   end
 
   def self.competitions( auth: false )
-    get( competions_url, auth: auth )
+    get( competitions_url, auth: auth )
   end
 
 
