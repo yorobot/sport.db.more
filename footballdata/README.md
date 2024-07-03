@@ -1,4 +1,10 @@
-# footballdata  - get football data via Daniel Freitag's football-data.org api v4  
+# footballdata-api  - get football data via Daniel Freitag's football-data.org api v4  
+
+
+* home  :: [github.com/sportdb/sport.db](https://github.com/sportdb/sport.db)
+* bugs  :: [github.com/sportdb/sport.db/issues](https://github.com/sportdb/sport.db/issues)
+* gem   :: [rubygems.org/gems/footballdata-api](https://rubygems.org/gems/footballdata-api)
+* rdoc  :: [rubydoc.info/gems/footballdata-api](http://rubydoc.info/gems/footballdata-api)
 
 
 

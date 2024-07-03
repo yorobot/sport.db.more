@@ -1,0 +1,14 @@
+CHANGELOG.md
+Manifest.txt
+README.md
+Rakefile
+lib/footballdata.rb
+lib/footballdata/convert.rb
+lib/footballdata/download.rb
+lib/footballdata/generator.rb
+lib/footballdata/leagues.rb
+lib/footballdata/mods.rb
+lib/footballdata/prettyprint.rb
+lib/footballdata/stat.rb
+lib/footballdata/teams.rb
+lib/footballdata/version.rb
