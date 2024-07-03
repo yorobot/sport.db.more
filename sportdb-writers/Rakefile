@@ -11,14 +11,14 @@ Hoe.spec 'sportdb-writers' do
   self.urls = { home: 'https://github.com/sportdb/sport.db' }
 
   self.author = 'Gerald Bauer'
-  self.email  = 'opensport@googlegroups.com'
+  self.email  = 'gerald.bauer@gmail.com'
 
   # switch extension to .markdown for gihub formatting
   self.readme_file  = 'README.md'
   self.history_file = 'CHANGELOG.md'
 
   self.extra_deps = [
-    ['sportdb-catalogs', '>= 1.0.0'],
+    ['sportdb-formats'],    # , '>= 1.0.0'],
   ]
 
   self.licenses = ['Public Domain']

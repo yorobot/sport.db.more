@@ -102,10 +102,18 @@ def self.write( league:, season:,
   pp matches[0]
 
 
-  matches = normalize( matches, league: league, season: season )   if normalize
+  if normalize
+     if normalize.is_a?(Proc)
+        matches = normalize.call( matches, league: league,
+                                           season: season )
+     else 
+       puts "!! ERROR - normalize; expected proc got #{normalize.inspec}"
+       exit 1
+     end 
+  end
+ 
 
-
-
+  
   league_name  = league_info[ :name ]      # e.g. Brasileiro Série A
   basename     = league_info[ :basename]   #.e.g  1-seriea
 

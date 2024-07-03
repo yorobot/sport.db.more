@@ -3,8 +3,6 @@
 #   todo/check/fix:  move upstream for (re)use  - why? why not?
 
 
-module Writer
-
 ########
 # helpers
 #   normalize team names
@@ -16,7 +14,7 @@ module Writer
 
 
 
-def self.normalize( matches, league:, season: nil )
+def normalize( matches, league:, season: nil )
   league = Sports::League.find!( league )
   country = league.country
 
@@ -44,4 +42,39 @@ def self.normalize( matches, league:, season: nil )
   matches
 end
 
-end # module Writer
+
+## ----
+
+ ########
+  # helper
+  #   normalize team names
+  def normalize( matches, league: )
+    matches = matches.sort do |l,r|
+      ## first by date (older first)
+      ## next by matchday (lowwer first)
+      res =   l.date <=> r.date
+      res =   l.round <=> r.round   if res == 0
+      res
+    end
+
+
+    league = SportDb::Import.catalog.leagues.find!( league )
+    country = league.country
+
+    ## todo/fix: cache name lookups - why? why not?
+    matches.each do |match|
+       team1 = SportDb::Import.catalog.clubs.find_by!( name: match.team1,
+                                                       country: country )
+       team2 = SportDb::Import.catalog.clubs.find_by!( name: match.team2,
+                                                       country: country )
+
+       puts "#{match.team1} => #{team1.name}"  if match.team1 != team1.name
+       puts "#{match.team2} => #{team2.name}"  if match.team2 != team2.name
+
+       match.update( team1: team1.name )
+       match.update( team2: team2.name )
+    end
+    matches
+  end
+
+

@@ -15,7 +15,7 @@ require_relative 'helper'   ## (shared) boot helper
 ###    fix !!!!!   - always add season:  (for generic interface/api)
 ##      e.g. def normalize( matches, league:, season: )
 
-  def normalize( matches, league: )
+  def normalize( matches, league:, season: )
     matches = matches.sort do |l,r|
       ## first by date (older first)
       ## next by matchday (lowwer first)
@@ -99,6 +99,12 @@ Writer.config.out_dir = outdir
 pp Writer.config.out_dir
 
 
+normproc = method(:normalize).to_proc
+# pp normproc
+# normproc.call( [], league: 'eng.1' )
+
+
+
 datasets.each_with_index do |(league_key, seasons),i|
  
   seasons.each_with_index do |season,j|
@@ -114,7 +120,8 @@ datasets.each_with_index do |(league_key, seasons),i|
     Writer.write( league: league_key, 
                   season: season,
                   source: Footballdata.config.convert.out_dir,
-                  normalize: false  )                                 
+                  normalize: normproc )
+                  ## normalize: false                                   
   end
 end
 

@@ -5,7 +5,8 @@ $LOAD_PATH.unshift( '../../../sportdb/sport.db/sportdb-catalogs/lib' )
 $LOAD_PATH.unshift( '../sportdb-writers/lib' )
 $LOAD_PATH.unshift( '../sportdb-linters/lib' )
 
-require 'sportdb/writers'   ## requires sportdb/catalog
+require 'sportdb/catalogs'
+require 'sportdb/writers'   ## note - requires sportdb/formats only (require sportdb/catalogs first)!!!
 
 
 $LOAD_PATH.unshift( './lib' )

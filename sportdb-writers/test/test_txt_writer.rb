@@ -1,39 +1,35 @@
 ###
 #  to run use
-#     ruby -I ./lib -I ./test test/test_txt_writer.rb
+#     ruby test/test_txt_writer.rb
 
 
-require 'helper'
+require_relative 'helper'
 
 
-class TestTxtWriter < MiniTest::Test
+class TestTxtWriter < Minitest::Test
 
   TxtMatchWriter = SportDb::TxtMatchWriter
+  CsvMatchParser = SportDb::CsvMatchParser
 
+  STAGE_DIR = '../../../cache.api.fbdat' 
 
   def test_eng
-     matches = SportDb::CsvMatchParser.read( '../../stage/one/2019-20/eng.1.csv' )
+     matches = CsvMatchParser.read( "#{STAGE_DIR}/2023-24/eng.1.csv" )
 
      puts
      pp matches[0]
      puts "#{matches.size} matches"
 
-
      league_name  = 'English Premier League'
-     season_key   = '2019/20'
-
-     matches = normalize( matches, league: league_name )
+     season_key   = '2023/24'
 
      path = './tmp/pl.txt'
      TxtMatchWriter.write( path, matches,
-                             title: "#{league_name} #{season_key}",
-                             round: 'Matchday',
-                             lang:  'en')
-
+                             name: "#{league_name} #{season_key}" )
   end
 
   def test_es
-    matches = SportDb::CsvMatchParser.read( '../../stage/one/2019-20/es.1.csv' )
+    matches = CsvMatchParser.read( "#{STAGE_DIR}/2023-24/es.1.csv" )
 
     puts
     pp matches[0]
@@ -41,20 +37,15 @@ class TestTxtWriter < MiniTest::Test
 
 
     league_name  = 'Primera División de España'
-    season_key   = '2019/20'
-
-    matches = normalize( matches, league: league_name )
+    season_key   = '2023/24'
 
     path = './tmp/liga.txt'
     TxtMatchWriter.write( path, matches,
-                            title: "#{league_name} #{season_key}",
-                            round: 'Jornada',
-                            lang:  'es')
-
+                            name: "#{league_name} #{season_key}" )
  end
 
  def test_it
-  matches = SportDb::CsvMatchParser.read( '../../stage/one/2019-20/it.1.csv' )
+  matches = CsvMatchParser.read( "#{STAGE_DIR}/2023-24/it.1.csv" )
 
   puts
   pp matches[0]
@@ -62,16 +53,13 @@ class TestTxtWriter < MiniTest::Test
 
 
   league_name  = 'Italian Serie A'
-  season_key   = '2019/20'
-
-  matches = normalize( matches, league: league_name )
+  season_key   = '2023/24'
 
   path = './tmp/seriea.txt'
   TxtMatchWriter.write( path, matches,
-                          title: "#{league_name} #{season_key}",
-                          round: ->(round) { "%s^ Giornata" % round },
-                          lang:  'it')
+                          name: "#{league_name} #{season_key}" )
  end
+
 
   #####
   #  note: fix sort order e.g. cover
@@ -87,38 +75,5 @@ class TestTxtWriter < MiniTest::Test
   # 17^ Giornata
   # [Ven. 20.12.]
   #  ACF Fiorentina           1-4  AS Roma
-
-
-  ########
-  # helper
-  #   normalize team names
-  def normalize( matches, league: )
-    matches = matches.sort do |l,r|
-      ## first by date (older first)
-      ## next by matchday (lowwer first)
-      res =   l.date <=> r.date
-      res =   l.round <=> r.round   if res == 0
-      res
-    end
-
-
-    league = SportDb::Import.catalog.leagues.find!( league )
-    country = league.country
-
-    ## todo/fix: cache name lookups - why? why not?
-    matches.each do |match|
-       team1 = SportDb::Import.catalog.clubs.find_by!( name: match.team1,
-                                                       country: country )
-       team2 = SportDb::Import.catalog.clubs.find_by!( name: match.team2,
-                                                       country: country )
-
-       puts "#{match.team1} => #{team1.name}"  if match.team1 != team1.name
-       puts "#{match.team2} => #{team2.name}"  if match.team2 != team2.name
-
-       match.update( team1: team1.name )
-       match.update( team2: team2.name )
-    end
-    matches
-  end
 
 end # class TestTxtWriter
