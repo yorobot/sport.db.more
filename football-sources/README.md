@@ -1,4 +1,4 @@
-# football-sources - get football data via web pages or web api (json) calls
+# football-sources - get football match data (leagues, cups & more) via web pages or web api (json) calls
 
 
 * home  :: [github.com/sportdb/sport.db](https://github.com/sportdb/sport.db)
@@ -23,8 +23,8 @@ The `football-sources` scripts are dedicated to the public domain.
 Use it as you please with no restrictions whatsoever.
 
 
+
 ## Questions? Comments?
 
-Send them along to the
-[Open Sports & Friends Forum/Mailing List](http://groups.google.com/group/opensport).
-Thanks!
+Yes, you can. More than welcome.
+See [Help & Support »](https://github.com/openfootball/help)

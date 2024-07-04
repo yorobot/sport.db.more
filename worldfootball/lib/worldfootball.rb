@@ -97,3 +97,7 @@ def self.process( datasets,
 end
 end  # module Worldfootball
 
+
+
+puts Worldfootball.banner    ## say hello
+

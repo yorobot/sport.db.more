@@ -1,5 +1,5 @@
-module Fbref
 
+module Fbref
 ### add some more config options / settings
 class Configuration
    #########
@@ -11,6 +11,11 @@ class Configuration
 
   def convert()  @convert ||= Convert.new; end
 end # class Configuration
-
-
 end   # module Fbref
+
+
+require_relative 'fbref/build'
+require_relative 'fbref/convert'
+
+
+

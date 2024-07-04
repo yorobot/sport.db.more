@@ -1,11 +1,11 @@
 ###
 #  to run use
-#     ruby -I ./lib -I ./test test/test_version.rb
+#     ruby test/test_version.rb
 
 
-require 'helper'
+require_relative 'helper'
 
-class TestVersion < MiniTest::Test
+class TestVersion < Minitest::Test
 
   def test_version
     pp FootballSources::VERSION

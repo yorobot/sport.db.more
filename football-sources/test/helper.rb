@@ -1,4 +1,5 @@
 $LOAD_PATH.unshift( '../webget/lib')
+$LOAD_PATH.unshift( './lib')
 
 require 'minitest/autorun'
 
