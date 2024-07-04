@@ -23,23 +23,30 @@ Webcache.root =  if File.exist?( '/sports/cache' )
 Webget.config.sleep  = 10
 
 
+
+
 require 'optparse'
 
-OPTS = {}
+
+
+module Footballdata
+def self.main( args=ARGV )
+
+opts = {}
 parser = OptionParser.new do |parser|
   parser.banner = "Usage: #{$PROGRAM_NAME} [options]"
 
   parser.on( "--cache", "--cached", "--offline",
                "use cached data in #{Webcache.root}" ) do |cached|
-    OPTS[:cached] = cached
+    opts[:cached] = cached
   end
 end
-parser.parse!
+parser.parse!( args )
 
 puts "OPTS:"
-p OPTS
+p opts
 puts "ARGV:"
-p ARGV
+p args
 
 
 ## try special args
@@ -47,13 +54,13 @@ p ARGV
 if ['plan', 'plans', 
     'comp', 'comps'].include?(ARGV[0]) 
 
-    if OPTS[:cached]
+    if opts[:cached]
         ## do nothing
     else    
-      Footballdata::Metal.competitions( auth: true )   ## get free tier (TIER_ONE) with auth (token)
+      Metal.competitions( auth: true )   ## get free tier (TIER_ONE) with auth (token)
     end
 
-  url = Footballdata::Metal.competitions_url
+  url = Metal.competitions_url
   pp url
   #=> "http://api.football-data.org/v4/competitions"
    
@@ -87,29 +94,40 @@ end
 ## note - cannot use t for today (used for tomorrow)
 ##             find a different shortcode - why? why not?
 
-date =  if ['y', 'yesterday', 't-1'].include?( ARGV[0] )
+### note - today is default if no args passed in!!!
+
+##
+## todo - add more date offsets - t+2,t+3,t+4, etc.
+
+date =  if ['y', 'yesterday', 't-1', '-1'].include?( args[0] )
             Date.today-1       
-        elsif ['t', 'tomorrow', 't+1'].include?( ARGV[0] )
+        elsif ['t', 'tomorrow', 't+1', '1', '+1'].include?( args[0] )
             Date.today+1        
-        elsif ['m', 'match', 'matches', 'today'].include?( ARGV[0] )  ## make default - why? why not?
+        elsif ['m', 'match', 'matches', 'today'].include?( args[0] || 'today' )  ## make default - why? why not?
             Date.today
         else
             nil
         end
 
 if date
-  if OPTS[:cached] 
+  if opts[:cached] 
       ## do nothing
   else
-     Footballdata::Metal.todays_matches( date )
+     Metal.todays_matches( date )
   end
 
-  data = Webcache.read_json( Footballdata::Metal.todays_matches_url( date ) )
+  data = Webcache.read_json( Metal.todays_matches_url( date ) )
   pp data
 
+  last_comp = nil
   data['matches'].each do |rec|
-    puts Footballdata.fmt_competition( rec )
-    puts Footballdata.fmt_match( rec )
+    ## only print competition header if different from last match
+    comp = fmt_competition( rec )
+    puts comp   if comp != last_comp
+    
+    puts fmt_match( rec )
+
+    last_comp = comp
   end
   exit 0
 end
@@ -131,29 +149,51 @@ end
 ##    PL 2024  - england premiere league
 
 
-league_code       = ARGV[0] || 'EC'
-season_start_year = (ARGV[1] || '2024').to_i(10)
+league_code       = args[0] || 'PL'
+
+###  convenience helpers - lets you use eng.1, euro, etc.
+## check if mapping for league_code
+if LEAGUES.has_key?( league_code.downcase )
+  league_code = LEAGUES[ league_code.downcase ]
+else
+   ## assume  "native" code
+   ##  always upcase e.g. pl => PL etc.
+   league_code = league_code.upcase
+end
+
+
+season            = Season( args[1] ||  
+                             (league_code == 'EC' ? '2024' : '2024/25'))
+
+season_start_year  = season.start_year   ## use year - why? why not?
 
 pp league_code, season_start_year
 
-if OPTS[:cached]
+if opts[:cached]
     ## do nothing
 else
     ## download dataset(s)
     ## try download
-    Footballdata::Metal.matches( league_code, 
-                                 season_start_year )
+    Metal.matches( league_code, 
+                   season_start_year )
 end    
 
-url = Footballdata::Metal.competition_matches_url( league_code, 
-                                                   season_start_year )
+url = Metal.competition_matches_url( league_code, 
+                                      season_start_year )
 pp url
 #=> "http://api.football-data.org/v4/competitions/EC/matches?season=2024"
 
 data = Webcache.read_json( url )
 ## pp data
 
-Footballdata.pp_matches( data )
+pp_matches( data )
+
+end  # def self.main
+end  # module Footballdata
+
+
+
+Footballdata.main( ARGV )
 
 
 puts "bye"
