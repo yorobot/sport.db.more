@@ -19,6 +19,8 @@ Hoe.spec 'sportdb-writers' do
 
   self.extra_deps = [
     ['sportdb-formats'],    # , '>= 1.0.0'],
+    ['gitti'],
+    ['cocos'],   ### fix - move upstream (incl. in sportdb-format)
   ]
 
   self.licenses = ['Public Domain']
