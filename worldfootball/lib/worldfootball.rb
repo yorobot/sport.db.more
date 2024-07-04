@@ -11,6 +11,7 @@ require 'nokogiri'
 
 ###
 # our own code
+require_relative 'worldfootball/version'
 require_relative 'worldfootball/leagues'
 require_relative 'worldfootball/download'
 require_relative 'worldfootball/page'

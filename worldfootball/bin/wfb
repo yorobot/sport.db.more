@@ -1,0 +1,104 @@
+#!/usr/bin/env ruby
+
+## tip: to test run:
+##   ruby -I ./lib bin/wfb
+
+require 'worldfootball'
+
+
+Webcache.root =  if File.exist?( '/sports/cache' )
+                     puts "  setting web cache to >/sports/cache<"
+                     '/sports/cache'
+                 else 
+                     './cache'
+                 end
+
+
+require 'optparse'
+
+
+module Worldfootball
+def self.main( args=ARGV )    
+
+opts = {}
+parser = OptionParser.new do |parser|
+  parser.banner = "Usage: #{$PROGRAM_NAME} [options]"
+
+##
+## check if git has a offline option?? (use same)
+##             check for other tools - why? why not?
+
+
+  parser.on( "--cache", "--cached", "--offline",
+               "use cached data in #{Webcache.root}" ) do |cached|
+    opts[:cached] = cached
+  end
+end
+parser.parse!( args )
+
+puts "OPTS:"
+p opts
+puts "ARGV:"
+p args
+
+
+if ['league', 'leagues', 'ls'].include?( args[0] || 'leagues' )
+    keys = LEAGUES.keys
+     
+    pp keys
+    puts "   #{keys.size} league(s)"
+    
+    # puts
+    # puts " pages:"
+    # pp Worldfootball::PAGES
+
+    exit 0
+end
+
+
+
+league_code = args[0].downcase
+
+league =  find_league( league_code )  ## league info lookup
+ 
+season = Season(  args[1] || '2024/25' )
+
+pages = league.pages( season: season )
+
+pp pages
+puts "   #{pages.size} page(s)"
+
+
+## wrap single page record into array
+pages = pages.is_a?( Array ) ? pages : [pages]
+
+if opts[:cached]  
+     # do nothing
+else  ## download to cache
+    pages.each_with_index do |page_rec,i|
+        slug = page_rec[:slug]
+        puts "==> #{i+1}/#{pages.size} - #{league_code} @ #{slug}..."    
+        page = Metal.download_schedule( slug  )  
+    end  
+end
+
+
+pages.each_with_index do |page_rec,i|
+    slug = page_rec[:slug]
+
+    puts "==> #{i+1}/#{pages.size} - #{league_code} @ #{slug}..."
+    page = Page::Schedule.from_cache( slug )
+    matches = page.matches
+
+    puts "   #{matches.size} match(es)"
+end
+
+
+end   # def self.main
+end   # module Worldfootball
+    
+
+Worldfootball.main( ARGV )
+
+        
+puts "bye"
