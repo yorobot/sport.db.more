@@ -5,7 +5,6 @@
 * bugs  :: [github.com/sportdb/sport.db/issues](https://github.com/sportdb/sport.db/issues)
 * gem   :: [rubygems.org/gems/football-sources](https://rubygems.org/gems/football-sources)
 * rdoc  :: [rubydoc.info/gems/football-sources](http://rubydoc.info/gems/football-sources)
-* forum :: [groups.google.com/group/opensport](https://groups.google.com/group/opensport)
 
 
 
