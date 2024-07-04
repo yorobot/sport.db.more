@@ -52,7 +52,7 @@ p args
 ## try special args
 
 if ['plan', 'plans', 
-    'comp', 'comps'].include?(ARGV[0]) 
+    'comp', 'comps'].include?(args[0]) 
 
     if opts[:cached]
         ## do nothing
