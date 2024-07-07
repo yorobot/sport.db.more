@@ -1,6 +1,6 @@
 ############
 # to run use:
-#    $ ruby up/summary.rb
+#    $ ruby up/fbdat_summary.rb
 
 
 require_relative 'helper'
