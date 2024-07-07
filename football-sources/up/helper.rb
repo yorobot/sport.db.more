@@ -12,6 +12,9 @@ $LOAD_PATH.unshift( './lib' )
 require 'football/sources'
 
 
+load_env   ## use dotenv (.env)
+
+
 
 ### todo/fix:
 ##    add option for -e/--env(ironment)
@@ -32,8 +35,13 @@ parser = OptionParser.new do |parser|
     OPTS[:push] = push
   end
 
+  parser.on( "--dry", "Dry run (dump datasets)") do |dry|
+    OPTS[:dry] = dry
+  end
 end
 parser.parse!
+
+
 
 puts "OPTS:"
 p OPTS

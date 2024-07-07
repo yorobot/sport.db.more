@@ -1,6 +1,3 @@
-require_relative 'helper'
-
-
 
 DATASETS = [
   ### British Isles / Western Europe
@@ -44,23 +41,4 @@ DATASETS = [
 =end
 ]
 
-
-pp DATASETS
-
-## use args for query (e.g. at, etc.)
-datasets = filter_datasets( DATASETS, ARGV )
-
-puts "INCLUDES (QUERIES):"
-pp ARGV
-puts "DATASETS:"
-pp datasets
-# puts "REPOS:"
-# pp repos
-
-
-Worldfootball.process( datasets, 
-                          download: OPTS[:download],
-                          push:     OPTS[:push] )
-
-puts "bye"
 

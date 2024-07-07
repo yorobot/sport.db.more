@@ -1,5 +1,9 @@
 # Notes
 
+## todos
+
+- [ ] add a -f/--file option to fbgen  for datasets
+
 
 ## requiring only parts (metal/convert)
 

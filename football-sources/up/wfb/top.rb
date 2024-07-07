@@ -1,10 +1,3 @@
-##################
-# to run use:
-#    ruby up\top.rb
-
-
-require_relative 'helper'
-
 
 ## top-level countries / leagues
 
@@ -93,24 +86,5 @@ DATASETS_2019 = [
 ]
 
 
-pp DATASETS_2020
-pp DATASETS_2019
 
-
-## use args for query (e.g. at, etc.)
-datasets = filter_datasets( DATASETS_2023, ARGV )
-
-puts "INCLUDES (QUERIES):"
-pp ARGV
-puts "DATASETS:"
-pp datasets
-# puts "REPOS:"
-# pp repos
-
-
-
-Worldfootball.process( datasets, 
-                          download: OPTS[:download],
-                          push:     OPTS[:push] )
-
-puts "bye"
+DATASETS =  DATASETS_2023

@@ -1,4 +1,13 @@
-require_relative '../cache.weltfussball/lib/metal'
+##########
+#  to run use:
+#   $ ruby uphistory/preload.rb
+
+$LOAD_PATH.unshift( '../../../rubycocos/webclient/webget/lib' )
+$LOAD_PATH.unshift( './lib' )
+require 'worldfootball'
+
+
+Webcache.config.root = '../../../cache'
 
 
 Webget.config.sleep = 3
@@ -8,7 +17,7 @@ Webget.config.sleep = 3
 def preload( slug )
   ## note: check if passed in slug is cached too (if not - preload / download too)
   url = Worldfootball::Metal.schedule_url( slug )
-  Worldfootball::Metal.schedule( slug )   unless Webcache.cached?( url )
+  Worldfootball::Metal.download_schedule( slug )   unless Webcache.cached?( url )
 
   page = Worldfootball::Page::Schedule.from_cache( slug )
 
@@ -32,7 +41,7 @@ page.seasons.each_with_index do |rec,i|
    print "\n"
 
    ## download / preload in cache
-   Worldfootball::Metal.schedule( slug )    unless Webcache.cached?( url )
+   Worldfootball::Metal.download_schedule( slug )    unless Webcache.cached?( url )
 end
 end # method preload
 
@@ -99,8 +108,9 @@ SLUGS = [
   'chi-primera-division-2020',
   'uru-primera-division-2020-apertura',
   'col-primera-a-2020',
-  'bol-liga-profesional-2020-apertura',
-  'ecu-serie-a-2020',
+
+  'bol-liga-profesional-2024-clausura',
+  'ecu-serie-a-2024-segunda-etapa',
 
   'egy-premiership-2019-2020',
 ]

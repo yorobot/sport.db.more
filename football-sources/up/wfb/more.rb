@@ -1,10 +1,3 @@
-##################
-# to run use:
-#    ruby up\more.rb
-
-
-require_relative 'helper'
-
 
 ## more top-level countries / leagues
 
@@ -42,25 +35,3 @@ DATASETS = [
  #  fix mx.1 config!! rerun
 # ['mx.1',    %w[2020/21]],   # starts Fri Jul 24
 ]
-
-
-
-pp DATASETS
-
-## use args for query (e.g. at, etc.)
-datasets = filter_datasets( DATASETS, ARGV )
-
-puts "INCLUDES (QUERIES):"
-pp ARGV
-puts "DATASETS:"
-pp datasets
-# puts "REPOS:"
-# pp repos
-
-
-
-Worldfootball.process( datasets, 
-                          download: OPTS[:download],
-                          push:     OPTS[:push] )
-
-puts "bye"

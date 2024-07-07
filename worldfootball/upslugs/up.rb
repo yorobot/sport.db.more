@@ -2,43 +2,8 @@
 # to run use:
 #    ruby upslugs\up.rb
 
-$LOAD_PATH.unshift( '../../../sportdb/sport.db/sportdb-langs/lib' )
-$LOAD_PATH.unshift( '../../../sportdb/sport.db/sportdb-structs/lib' )
-$LOAD_PATH.unshift( '../../../sportdb/sport.db/sportdb-formats/lib' )
-$LOAD_PATH.unshift( '../../../sportdb/sport.db/sportdb-catalogs/lib' )
-$LOAD_PATH.unshift( '../sportdb-writers/lib' )
 
-$LOAD_PATH.unshift( '../../../rubycocos/webclient/webget/lib' )
-$LOAD_PATH.unshift( './lib' )
-require 'worldfootball'
-
-
-require 'pp'
-require 'optparse'
-
-puts "NAME          : #{$PROGRAM_NAME}"
-puts "-- optparse:"
-
-OPTS = {}
-parser = OptionParser.new do |parser|
-  parser.banner = "Usage: #{$PROGAM_NAME} [options]"
-
-  parser.on( "-d", "--download", "Download web pages" ) do |download|
-    OPTS[:download] = download
-  end
-end
-parser.parse!
-
-puts "OPTS:"
-p OPTS
-puts "ARGV:"
-p ARGV
-
-puts "-------"
-puts
-
-
-Webcache.root = '../../../cache'  ### c:\sports\cache
+require_relative 'helper'
 
 
 ## league to slug/page
@@ -123,22 +88,6 @@ puts "  #{recs.size} record(s)"
 headers = ['season','slug']
 write_csv( "./slugs/#{league}.csv", recs, headers: headers  )
 
-
-
-__END__
-
-# Worldfootball.config.convert.out_dir = './o'
-
-Worldfootball.convert( league: league,
-                       season: season )
-
-
-Writer.config.out_dir = './tmp'
-
-Writer.write( league: league,
-              season: season,
-              normalize: false,
-                  source: Worldfootball.config.convert.out_dir )
 
 
 puts "bye"

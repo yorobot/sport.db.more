@@ -1,7 +1,14 @@
-require_relative '../cache.weltfussball/lib/convert'
+##########
+#  to run use:
+#   $ ruby uphistory/list.rb
 
 
-Webcache.config.root = '../../cache'
+$LOAD_PATH.unshift( '../../../rubycocos/webclient/webget/lib' )
+$LOAD_PATH.unshift( './lib' )
+require 'worldfootball'
+
+
+Webcache.config.root = '../../../cache'
 
 
 start_time = Time.now   ## todo: use Timer? t = Timer.start / stop / diff etc. - why? why not?
@@ -11,6 +18,7 @@ start_time = Time.now   ## todo: use Timer? t = Timer.start / stop / diff etc. -
 pages = Dir.glob( "#{Webcache.root}/www.weltfussball.de/alle_spiele/*.html" )
 puts "#{pages.size} pages"   #=> 576 pages
 puts
+
 
 
 leagues = {}
