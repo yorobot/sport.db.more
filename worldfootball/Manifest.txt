@@ -9,7 +9,6 @@ lib/worldfootball/convert.rb
 lib/worldfootball/convert_reports.rb
 lib/worldfootball/download.rb
 lib/worldfootball/generator.rb
-lib/worldfootball/jobs.rb
 lib/worldfootball/leagues.rb
 lib/worldfootball/leagues/asia.rb
 lib/worldfootball/leagues/europe--british_isles.rb

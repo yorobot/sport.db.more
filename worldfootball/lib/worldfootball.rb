@@ -25,8 +25,6 @@ require_relative 'worldfootball/build'
 require_relative 'worldfootball/convert'
 require_relative 'worldfootball/convert_reports'
 
-require_relative 'worldfootball/jobs'
-
 
 require_relative 'worldfootball/generator'
 
@@ -59,7 +57,7 @@ end   # module Worldfootball
 
 ### for processing tool
 ##   (auto-)add sportdb/writer  (pulls in sportdb/catalogs and gitti)
-require 'sportdb/writers'
+#  require 'sportdb/writers'
 
 
 

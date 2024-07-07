@@ -8,5 +8,18 @@ todos
 
 - [ ]  check fix date - change to use timezone!!!!
 
+---
 
+
+## more 
+
+```
+ add more helpers
+  move upstream for (re)use - why? why not?
+
+ todo/check: what to do: if league is both included and excluded?
+   include forces include? or exclude has the last word? - why? why not?
+  Excludes match before includes,
+   meaning that something that has been excluded cannot be included again
+```
 

@@ -2,13 +2,75 @@
 module Worldfootball
 
 
+#################
+# todo/fix -  use timezone instead of offset !!!
+#  e.g
+=begin
+   TIMEZONES = {
+  'eng.1' => 'Europe/London',  
+  'eng.2' => 'Europe/London',
 
-def self.convert( league:, season:, offset: nil )  ## check: rename (optional) offset to time_offset or such?
+  'es.1'  => 'Europe/Madrid',
+
+  'de.1'  => 'Europe/Berlin',
+  'fr.1'  => 'Europe/Paris', 
+  'it.1'  => 'Europe/Rome',
+  'nl.1'  => 'Europe/Amsterdam',
+
+  'pt.1'  => 'Europe/Lisbon',   
+
+  ## todo/fix - pt.1
+  ##  one team in madeira!!! check for different timezone??
+  ##  CD Nacional da Madeira 
+
+  'br.1'  => 'America/Sao_Paulo',
+  ## todo/fix - brazil has 4 timezones
+  ##           really only two in use for clubs
+  ##             west and east (amazonas et al)
+  ##           for now use west for all - why? why not?
+}
+=end
+
+## todo - find "proper/classic" timezone ("winter time")
+
+##  Brasilia - Distrito Federal, Brasil  (GMT-3)  -- summer time?
+##  Ciudad de México, CDMX, México       (GMT-5)  -- summer time?
+##  Londres, Reino Unido (GMT+1)
+##   Madrid -- ?
+##   Lisboa -- ?
+##   Moskow -- ?
+##
+## todo/check - quick fix timezone offsets for leagues for now
+##   - find something better - why? why not?
+## note: assume time is in GMT+1
+OFFSETS = {
+  'eng.1' => -1,
+  'eng.2' => -1,
+  'eng.3' => -1,
+  'eng.4' => -1,
+  'eng.5' => -1,
+
+  'es.1'  => -1,
+  'es.2'  => -1,
+
+  'pt.1'  => -1,
+  'pt.2'  => -1,
+
+  'br.1'  => -5,
+  'mx.1'  => -7,
+}
+
+
+def self.convert( league:, season: )   
   season = Season( season )  ## cast (ensure) season class (NOT string, integer, etc.)
 
   league = find_league( league )
 
   pages = league.pages( season: season )
+
+  ## check: rename (optional) offset to time_offset or such?
+  offset = OFFSETS[ league ]
+
 
   # note: assume stages if pages is an array (of hash table/records)
   #         (and NOT a single hash table/record)
