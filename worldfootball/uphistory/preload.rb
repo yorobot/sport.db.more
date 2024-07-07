@@ -47,7 +47,6 @@ end # method preload
 
 
 SLUGS = [
-=begin
   'aut-bundesliga-2020-2021',
   'aut-2-liga-2020-2021',
   'aut-oefb-cup-2020-2021',
@@ -77,7 +76,8 @@ SLUGS = [
   'lux-nationaldivision-2020-2021',
 
   'chn-super-league-2020',
-=end
+
+
   'arg-primera-division-2019-2020',
 
   'champions-league-2020-2021',

@@ -17,6 +17,7 @@ require_relative 'worldfootball/download'
 require_relative 'worldfootball/page'
 require_relative 'worldfootball/page_schedule'
 require_relative 'worldfootball/page_report'
+require_relative 'worldfootball/cache'
 
 
 require_relative 'worldfootball/mods'

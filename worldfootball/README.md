@@ -11,7 +11,42 @@
 ## Usage
 
 
-To be done
+To get started use the `wfb` command-line tool.
+
+List all (pre-configured) leagues:
+
+```
+$ wfb leagues
+```
+
+Print the match schedue of a league (season). Let's try the English Premier League:
+
+```
+$ wfb eng.1 2024/25
+$ wfb eng.1 2024/25 --offline    # use cached (offline local) pages
+```
+
+Or try the DFB Pokal (that is, the German Cup):
+
+```
+$ wfb de.cup 2024/25 --offline    # use cached (offline local) pages
+```
+
+and so on.
+
+
+
+
+
+
+### More
+
+Debugging tips. List all cached (offline local) match schedule pages:
+
+```
+$ wfb cache
+```
+
 
 
 

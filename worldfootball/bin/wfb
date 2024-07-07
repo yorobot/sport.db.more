@@ -42,6 +42,13 @@ puts "ARGV:"
 p args
 
 
+### check special (built-in) commands first
+if ['cache'].include?( args[0] ) 
+    Worldfootball.list_pages
+    exit 0
+end
+
+
 if ['league', 'leagues', 'ls'].include?( args[0] || 'leagues' )
     keys = LEAGUES.keys
      

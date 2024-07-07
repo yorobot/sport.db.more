@@ -24,6 +24,8 @@ class Schedule < Page  ## note: use nested class for now - why? why not?
  # puts table.class.name  #=> Nokogiri::XML::Element
  # puts table.text
 
+ assert( table, 'no table.standard_tabelle found in schedule page!!')
+
  trs   = table.css( 'tr' )
  # puts trs.size
  i = 0
@@ -58,6 +60,8 @@ class Schedule < Page  ## note: use nested class for now - why? why not?
 
    i += 1
 
+    puts "[debug] row #{i} >#{tr.text.strip}<" 
+
    if tr.text.strip =~ /Spieltag/ ||
       tr.text.strip =~ /[1-9]\.[ ]Runde|
                            Qual\.[ ][1-9]\.[ ]Runde|  # see EL or CL Quali
@@ -68,8 +72,26 @@ class Schedule < Page  ## note: use nested class for now - why? why not?
                            Halbfinale|
                            Finale|
                            Gruppe[ ][A-Z]|    # see CL
-                           Playoffs           # see EL Quali
+                           Gruppe[ ][1-9]|    # see slv-primera-division-2020-2021-clausura_3
+                           Playoffs|           # see EL Quali
+                           Entscheidungsspiel|   # see Serie A 2022-23 Entscheidung Abstieg
+                           Spiele|                # see Serie A 1960-61 Relegation
+                           3\.[ ]Platz|      # see bra-serie-a-2000-yellow-module-playoffs
+                           Spiel[ ]um[ ]Platz[ ]3|  # see campeonato-2009-cuadrangulares-deportivo-cuenca-cs-emelec
+                           Relegation|     # see egy-premiership-2013-2014-abstiegsplayoff    
+                           Copa[ ]Libertadores|  # see ecu-campeonato-2012-segunda-etapa-playoffs 
+                           Copa[ ]Sudamericana|  # see campeonato-2012-liguilla-final-playoffs-cs-emelec-ldu-quito
+                           Repechaje|  # see nca-liga-primera-2023-2024-clausura-playoffs 
+                           Final[ ]de[ ]Grupos|   # see hon-liga-nacional-2020-2021-clausura-playoffs  
+                           Gran[ ]Final|   # see liga-nacional-2020-2021-apertura-playoffs-finale-olimpia-motagua
+                           Finalrunde|  # see hon-liga-nacional-2019-2020-apertura-pentagonal
+                           Zona[ ]A|    # see gua-liga-nacional-2020-2021-clausura      
+                           Zona[ ]B|    # see liga-nacional-2020-2021-clausura-zona-a-comunicaciones-deportivo-malacateco    
+                           Interzone|    # see liga-nacional-2020-2021-clausura-zona-b-achuapa-sanarate
+                           Final[ ]Segunda[ ]Ronda    # see crc-primera-division-2018-2019-apertura-playoffs
                            /x
+
+                          
      puts
      print '[%03d] ' % i
      ## print squish( tr.text )
