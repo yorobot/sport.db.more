@@ -36,6 +36,9 @@ class Schedule < Page  ## note: use nested class for now - why? why not?
  rows = []
 
 
+
+ trs.each do |tr|
+
 ## ghost trs? what for? see for an example in bra
 ##    check for style display:none - why? why not?
 ##
@@ -47,10 +50,15 @@ class Schedule < Page  ## note: use nested class for now - why? why not?
 ##          </td>
 ##          <td colspan="2"></td>
 ##        </tr>
-
-
- trs.each do |tr|
-
+  ##
+  #   <tr class="e2-parent" data-liga_id="530" data-gs_match_id="10259222" 
+  #       style="display:none;">
+  ##    <td colspan="2"></td>
+  ##    <td colspan="3">
+  ##      <span class="e2" data-liga_id="530" data-gs_match_id="10259222"></span>
+  ##    </td>
+  ##    <td colspan="2"></td>
+  ##  </tr>
    if tr['style'] && tr['style'].index( 'display') &&
                      tr['style'].index( 'none')
      puts "!! WARN: skipping ghost line >#{tr.text.strip}<"
@@ -60,8 +68,15 @@ class Schedule < Page  ## note: use nested class for now - why? why not?
 
    i += 1
 
-    puts "[debug] row #{i} >#{tr.text.strip}<" 
+    ## puts "[debug] row #{i} >#{tr.text.strip}<" 
 
+    ### note - assume for now match lines use tds
+    ##            and round lines use ths (NOT tds)!!
+    ##  e.g. <th colspan="7">8. Spieltag</th>
+
+    ths =  tr.css( 'th' )
+    tds =  tr.css( 'td' )
+    
    if tr.text.strip =~ /Spieltag/ ||
       tr.text.strip =~ /[1-9]\.[ ]Runde|
                            Qual\.[ ][1-9]\.[ ]Runde|  # see EL or CL Quali
@@ -88,9 +103,9 @@ class Schedule < Page  ## note: use nested class for now - why? why not?
                            Zona[ ]A|    # see gua-liga-nacional-2020-2021-clausura      
                            Zona[ ]B|    # see liga-nacional-2020-2021-clausura-zona-a-comunicaciones-deportivo-malacateco    
                            Interzone|    # see liga-nacional-2020-2021-clausura-zona-b-achuapa-sanarate
-                           Final[ ]Segunda[ ]Ronda    # see crc-primera-division-2018-2019-apertura-playoffs
+                           Final[ ]Segunda[ ]Ronda|    # see crc-primera-division-2018-2019-apertura-playoffs
+                           Quadrangular      # see crc-primera-division-2016-2017-verano-playoffs
                            /x
-
                           
      puts
      print '[%03d] ' % i
@@ -99,8 +114,14 @@ class Schedule < Page  ## note: use nested class for now - why? why not?
      print "\n"
 
      last_round = tr.text.strip
+   elsif ths.count > 0 && 
+         tds.count == 0
+       ## check for round NOT yet configured!!!
+       puts "!! WARN: found unregistered round line >#{tr.text.strip}<"
+       log( "!! WARN: found unregistered round line >#{tr.text.strip}< in page #{title}" )
+
+       last_round = tr.text.strip
    else   ## assume table row (tr) is match line
-     tds = tr.css( 'td' )
 
      date_str  = squish( tds[0].text )
      time_str  = squish( tds[1].text )
@@ -186,12 +207,21 @@ class Schedule < Page  ## note: use nested class for now - why? why not?
      score_str = score_str.gsub( ':', '-' )
 
      ## convert date from 25.10.2019 to 2019-25-10
-     date     = Date.strptime( date_str, '%d.%m.%Y' )
+
+     ## special case for '00.00.0000'
+     ##   CANNOT parse
+     ##   use empty date - why? why not?
+
+     date     = if date_str == '00.00.0000'
+                  nil
+                else 
+                  Date.strptime( date_str, '%d.%m.%Y' )
+                end
 
      ## note: keep structure flat for now
      ##        (AND not nested e.g. team:{text:,ref:}) - why? why not?
      rows << { round:      last_round,
-               date:       date.strftime( '%Y-%m-%d' ),
+               date:       date ? date.strftime( '%Y-%m-%d' ) : '',
                time:       time_str,
                team1:      team1_str,
                team1_ref:  team1_ref,
