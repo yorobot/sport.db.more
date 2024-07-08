@@ -76,7 +76,8 @@ def self.build( rows, season:, league:, stage: '' )   ## rename to fixup or such
       if round.nil?
         puts "!! ERROR: no mapping for round to english (en) found >#{row[:round]}<:"
         pp row
-        exit 1
+        # exit 1
+        round = row[:round]  ## keep org for now - FIX/FIX/FXI
       end
       print " => #{round}"
     end

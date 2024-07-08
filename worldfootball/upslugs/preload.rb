@@ -21,7 +21,7 @@ def preload( slug )
     print "   OK "
   else
     Worldfootball::Metal.download_schedule( slug ) 
-    print "??    "
+    print "      "
   end
 
    page = Worldfootball::Page::Schedule.from_cache( slug )
@@ -30,91 +30,36 @@ def preload( slug )
    print '  /  '
    ## clean-up title/strip "» Spielplan" from title
    print page.title.sub('» Spielplan', '').strip
+   
+=begin   
    print '  -  '
    ## check for match count
    matches = page.matches
    print "#{matches.size} match(es)"
+=end
    print "\n"
 end # method preload
 
 
 
-more_league_to_slug = {
+datafiles = Dir.glob( "./slugs/**/*.csv" )
+pp datafiles
 
-'it.1' => 'ita-serie-a-2020-2021',
-
-'es.1' => 'esp-primera-division-2020-2021',
-
-'jp.1' => 'jpn-j1-league-2020',
-
-'br.1' =>  'bra-serie-a-2020',
-
-'tr.1' => 'tur-sueperlig-2020-2021',
-
-'ua.1' => 'ukr-premyer-liga-2019-2020',
-
-'se.1' => 'swe-allsvenskan-2020',
-
-'ch.1' => 'sui-super-league-2020-2021',
+puts  "   #{datafiles.size} datafile(s)"
 
 
-'nl.1' =>  'ned-eredivisie-2020-2021',
-
-'lu.1' =>  'lux-nationaldivision-2020-2021',
-
-'cn.1' =>  'chn-super-league-2020',
 
 
-'ar.1' => 'arg-primera-division-2019-2020',
+datafiles.each_with_index do |path, i|
 
-'uefa.cl' =>  'champions-league-2020-2021',
-'eufa.el' =>  'europa-league-2020-2021',
-'copa.l' =>  'copa-libertadores-2020',
-'concacaf.cl'  =>  'concacaf-champions-league-2020',
-
-
-'us.1'   =>  'usa-major-league-soccer-2020',
-'us.2'   =>  'usa-usl-championship-2020',
-'us.cup'  =>  'usa-u-s-open-cup-2019',
-
-
-'mx.1' =>  'mex-primera-division-2020-2021-apertura',
-'mx.cup' => 'mex-copa-mx-2019-2020',
-'mx.2' => 'mex-liga-de-expansion-2020-2021-apertura',
-'mx.3' => 'mex-premier-de-ascenso-2020-2021-grupo-b',
-
-'cr.1' => 'crc-primera-division-2020-2021-apertura',
-'sv.1' => 'slv-primera-division-2020-2021-apertura',
-
-'gt.1' => 'gua-liga-nacional-2020-2021-apertura',
-'hn.1' => 'hon-liga-nacional-2020-2021-apertura',
-
-'ni.1' => 'nca-liga-primera-2020-2021-apertura',
-
-'pe.1' => 'per-primera-division-2020-apertura',
-'cl.1' => 'chi-primera-division-2020',
-'uy.1' => 'uru-primera-division-2020-apertura',
-'co.1' => 'col-primera-a-2020',
-
-'bo.1' => 'bol-liga-profesional-2024-clausura',
-'ec.1' => 'ecu-serie-a-2024-segunda-etapa',
-
-'eg.1' => 'egy-premiership-2019-2020',
-
-
-}
-
-
-more_league_to_slug.keys.reverse.each do |league|
-
-  path = "./slugs/#{league}.csv"
-
+  league = File.basename(path, File.extname(path))
+  puts "==> [#{i+1}/#{datafiles.size}] #{league}..."
   recs = read_csv( path )
   puts "  #{recs.size} record(s)"
 
-  recs.each_with_index do |rec,i|
+  recs.each_with_index do |rec,j|
     slug = rec['slug']
-    puts "#{league} [#{i+1}/#{recs.size}] >#{slug}<"
+    puts "  #{league} [#{j+1}/#{recs.size}] >#{slug}<"
     preload( slug )
   end
 end

@@ -46,7 +46,14 @@ def self.build( matches, rounds: true )
              buf << "#{round} #{match.round}"
          else ## use as is from match
            ## note: for now assume english names
-           buf << round_translations[match.round] || match.round
+            if match.round.nil?
+              ## warn
+              puts "!! ERROR - match with round nil?"
+              pp match
+              exit 1
+            end
+
+           buf << (round_translations[match.round] || match.round)
          end
         buf << "\n"
        end
