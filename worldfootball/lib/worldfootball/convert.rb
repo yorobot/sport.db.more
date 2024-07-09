@@ -44,20 +44,29 @@ module Worldfootball
 ##   - find something better - why? why not?
 ## note: assume time is in GMT+1
 OFFSETS = {
+  'eng' => -1,
   'eng.1' => -1,
   'eng.2' => -1,
   'eng.3' => -1,
   'eng.4' => -1,
   'eng.5' => -1,
 
-  'es.1'  => -1,
-  'es.2'  => -1,
-
+  'pt'    => -1,
   'pt.1'  => -1,
   'pt.2'  => -1,
 
+  'tr'    => 2,  # +2 turkey time/moscow time
+
+  'br'  => -5,
   'br.1'  => -5,
-  'mx.1'  => -7,
+  'ar'   => -5,
+  'ar.1'  => -5,
+
+  'mx'      => -7,
+  'mx.1'    => -7,
+  'mx.2'    => -7,
+  'mx.3'    => -7,
+  'mx.cup'  => -7,
 }
 
 

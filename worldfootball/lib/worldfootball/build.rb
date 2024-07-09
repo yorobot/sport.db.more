@@ -7,6 +7,9 @@ ROUND_TO_EN = {
   '2. Runde'      => 'Round 2',
   '3. Runde'      => 'Round 3',
   '4. Runde'      => 'Round 4',
+  '5. Runde'      => 'Round 5',
+  '6. Runde'      => 'Round 6',
+  '7. Runde'      => 'Round 7',
   'Achtelfinale'  => 'Round of 16',
   'Viertelfinale' => 'Quarterfinals',
   'Halbfinale'    => 'Semifinals',
@@ -47,45 +50,49 @@ def self.build( rows, season:, league:, stage: '' )   ## rename to fixup or such
     print '[%03d] ' % (i+1)
     print row[:round]
 
-    if m = row[:round].match( /([0-9]+)\. Spieltag/ )
+    if (m = row[:round].match( /^(?<num>[0-9]+)\. Spieltag$/ ))
       ## todo/check: always use a string even if number (as a string eg. '1' etc.)
-      round = m[1]  ## note: keep as string (NOT number)
+      round = m[:num]  ## note: keep as string (NOT number)
       print " => #{round}"
     else
-      puts "!! ERROR: cannot find matchday number"
+      puts "!! ERROR: cannot find matchday number in >#{row[:round]}<:"
+      pp row
       exit 1
     end
     print "\n"
-  elsif row[:round] =~ /[1-9]\.[ ]Runde|
+   
+  ## note - must start line e.g. 
+  ##            do NOT match => Qual. 1. Runde  (1. Runde)!!!   
+  elsif row[:round] =~ /^(    
+                          [1-9]\.[ ]Runde|
                           Achtelfinale|
                           Viertelfinale|
                           Halbfinale|
                           Finale
-                          /x
+                         )$
+                        /x
     puts
     print '[%03d] ' % (i+1)
     print row[:round]
 
-
-    ## do NOT translate rounds (to english) - keep in german / deutsch (de)
-    if ['at.cup', 'at.1',    ## at.1 - incl. europa league playoff
-        'de.cup'].include?( league )
-      round = row[:round]
-    else
-      round = ROUND_TO_EN[ row[:round] ]
-      if round.nil?
-        puts "!! ERROR: no mapping for round to english (en) found >#{row[:round]}<:"
-        pp row
-        # exit 1
-        round = row[:round]  ## keep org for now - FIX/FIX/FXI
-      end
-      print " => #{round}"
-    end
+    round = ROUND_TO_EN[ row[:round] ]
+    print " => #{round}"
     print "\n"
+
+    if round.nil?
+      puts "!! ERROR: no mapping for round to english (en) found >#{row[:round]}<:"
+      pp row
+      exit 1
+    end
   else
-    puts "!! ERROR: unknown round >#{row[:round]}< for league >#{league}<:"
+    puts
+    print '[%03d] ' % (i+1)
+    print row[:round]
+    print "\n"
+
+    puts "!! WARN: unknown round >#{row[:round]}< for league >#{league}<:"
     pp row
-    exit 1
+    round = row[:round]
   end
 
 
@@ -160,7 +167,7 @@ end  # build
 
 
 def self.parse_score( score_str )
-  comments = String.new( '' )     ## check - rename to/use status or such - why? why not?
+  comments = String.new     ## check - rename to/use status or such - why? why not?
 
   ## split score
   ft  = ''
@@ -199,6 +206,20 @@ def self.parse_score( score_str )
     ht  = "#{$3}-#{$4}"
     ft  = "#{$5}-#{$6}"
     et  = "#{$7}-#{$8}"
+  # 3-2 (0-0, 1-1) i.E.   - note: no extra time!!! only ht,ft!!!
+  #                         "popular" in southamerica & mexico 
+  elsif score_str =~ /([0-9]+) [ ]*-[ ]* ([0-9]+)
+                          [ ]*
+                      \(([0-9]+) [ ]*-[ ]* ([0-9]+)
+                          [ ]*,[ ]*
+                       ([0-9]+) [ ]*-[ ]* ([0-9]+)\)
+                          [ ]*
+                       i\.E\.
+                     /x
+    pen = "#{$1}-#{$2}"
+    ht  = "#{$3}-#{$4}"
+    ft  = "#{$5}-#{$6}"
+    et  = ''
   # 2-1 (1-0, 1-1) n.V
   elsif score_str =~ /([0-9]+) [ ]*-[ ]* ([0-9]+)
                       [ ]*
@@ -212,13 +233,28 @@ def self.parse_score( score_str )
     et  = "#{$1}-#{$2}"
     ht  = "#{$3}-#{$4}"
     ft  = "#{$5}-#{$6}"
-  elsif score_str =~ /([0-9]+)
-                          [ ]*-[ ]*
-                      ([0-9]+)
+  ### auto-patch fix drop last score 
+  ## 1-3 (0-1, 1-1, 0-2) n.V.  => 1-3 (0-1, 1-1) n.V.
+  elsif score_str =~ /([0-9]+) [ ]*-[ ]* ([0-9]+)
+                      [ ]*
+                    \(([0-9]+) [ ]*-[ ]* ([0-9]+)
+                       [ ]*,[ ]*
+                      ([0-9]+) [ ]*-[ ]* ([0-9]+)  
+                       [ ]*,[ ]* 
+                      ([0-9]+) [ ]*-[ ]* ([0-9]+)
+                      \)
+                       [ ]*
+                       n\.V\.
+                     /x
+    et  = "#{$1}-#{$2}"
+    ht  = "#{$3}-#{$4}"
+    ft  = "#{$5}-#{$6}"
+
+    puts "!! WARN - auto-fix/patch score - >#{score_str}<"  
+    ### todo/fix - log auto-patch/fix - for double checking!!!!!
+  elsif score_str =~ /([0-9]+) [ ]*-[ ]* ([0-9]+)
                           [ ]*
-                      \(([0-9]+)
-                          [ ]*-[ ]*
-                        ([0-9]+)
+                      \(([0-9]+) [ ]*-[ ]* ([0-9]+)
                       \)
                      /x
     ft = "#{$1}-#{$2}"
@@ -235,6 +271,20 @@ def self.parse_score( score_str )
   elsif score_str =~ /^([0-9]+)-([0-9]+)$/
      ft = "#{$1}-#{$2}"     ## e.g. see luxemburg and others
      ht = ''
+  ## auto-fix/patch
+  # 3-3 (0-3, 3-3)  =>  3-3 (0-3) - drop last score 
+  elsif score_str =~ /^([0-9]+) [ ]*-[ ]* ([0-9]+)
+                          [ ]*
+                      \(([0-9]+) [ ]*-[ ]* ([0-9]+)
+                          [ ]*,[ ]*
+                        ([0-9]+) [ ]*-[ ]* ([0-9]+)   
+                      \)$
+                     /x
+    ft = "#{$1}-#{$2}"
+    ht = "#{$3}-#{$4}"
+
+    puts "!! WARN - auto-fix/patch score - >#{score_str}<"  
+    ### todo/fix - log auto-patch/fix - for double checking!!!!!
   else
      puts "!! ERROR - unsupported score format >#{score_str}< - sorry; maybe add a score error fix/patch"
      exit 1
