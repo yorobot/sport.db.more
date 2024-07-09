@@ -284,6 +284,8 @@ leagues = %w[
 
 
 outdir = '/sports/cache.wfb.txt'
+# outdir = '/sports/openfootball/world2'
+
 
 leagues.each_with_index do |league,i|
    puts "==> [#{i+1}/#{leagues.size}] #{league}..."
