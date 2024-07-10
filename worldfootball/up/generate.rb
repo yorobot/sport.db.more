@@ -5,6 +5,27 @@
 #    - allow penality score WITHOUT extra time  (used in mexico etc.)
 
 
+#   quick fix - remove mx.3 for now!!!!!
+#
+#  in mx
+#    fix slugs in mx.2 / mx.3
+#      mx.3 incl. mx.2 from 2020 onwards (old "ascenso mx")
+#   Ascenso MX was replaced by Liga de Expansión MX on April 17, 2020.
+#     from wikipedia
+#
+#   quick hack - remove 3_  from mx - if <= 2019/20
+#                                     or such - why?? why not?
+#
+#  maybe copy slugs from mx.3 to mx.2 - why? why not?
+#  Ascenso MX (anfangs Liga de Ascenso) war über elf Jahre hinweg 
+#  (von 2009/10 bis zur Saison 2019/20) 
+# die zweithöchste Spielklasse im mexikanischen Vereinsfußball. 
+# Sie löste in dieser Eigenschaft die Primera División 'A' ab, 
+# die diese Rolle in den 15 Spielzeiten zwischen 1994/95 und 2008/09
+#  eingenommen hatte, und wurde zur Saison 2020/21 
+# von der Liga de Expansión MX ersetzt.
+
+
 require_relative 'helper'
 
 
@@ -89,81 +110,6 @@ def self._split_name( name )
 end
 
 
-## add (timezone) offset here too - why? why not?
-LEAGUE_SETUPS  = {
-  ## note - for now auto-generate  path via name (downcased)
-  ##         e.g. Belgium => /belgium
-
-  ## top five (europe)
-  'eng' => { code: 'eng', name: 'England'  },
-  'es'  =>  { code: 'esp', name: 'Spain' },
-  # 'fr'  =>  { code: 'fra', name: 'France' },
-  # 'de'  =>  { code: '???', name: 'Germany' },
-  'it'  =>  { code: 'ita', name: 'Italy' },
-
-
-  'be' =>  { code: 'bel', name: 'Belgium'   },  
-  'at' =>  { code: 'aut', name: 'Austria'   },
-  'hu' =>  { code: 'hun', name: 'Hungary'   },
-
-  'tr' =>  { code: 'tur', name: 'Turkey' },
-  'nl' =>  { code: 'ned', name: 'Netherlands' },
-  'ch' =>  { code: 'sui',  name: 'Switzerland' },
-
-
-  'cz' =>  { code: 'cze', name: 'Czech Republic' },
-  'dk' =>  { code: 'den', name: 'Denmark' },
-  'fi' =>  { code: 'fin', name: 'Finland' },
-  'gr' =>  { code: 'gre', name: 'Greece' },
-  
-  'ie' =>  { code: 'irl', name: 'Ireland' },
-  'sco' =>  { code: 'sco', name: 'Scotland' },
-
-  'lu' =>  { code: 'lux', name: 'Luxembourg' },
-  'pl' =>  { code: 'pol', name: 'Poland' },
-  'pt' =>  { code: 'por', name: 'Portugal' },
-  'ro' =>  { code: 'rou', name: 'Romania' },
-  'ru' =>  { code: 'rus', name: 'Russia' },
-  'se' =>  { code: 'swe', name: 'Sweden' },
-  'ua' =>  { code: 'ukr', name: 'Ukraine' },
-  
-
-  'eg' =>  { code: 'egy', name: 'Egypt' },
-  'jp' =>  { code: 'jpn', name: 'Japan' },
-  'cn' =>  { code: 'chn', name: 'China' },
-  
-  ## note - for now do NOT add United States to leage name
-  ##     e.g. 1   - Major League Soccer
-  ##          2   - USL Championship
-  ##          cup - U.S. Open Cup 
-  'us' =>  { code: 'usa', name: nil,  path: 'united-states' },
-
-  'mx' =>  { code: 'mex', name: 'Mexico'    },
-  'ar' =>  { code: 'arg', name: 'Argentina' },
-  'br' =>  { code: 'bra', name: 'Brazil' },
-
-   'uy' =>  { code: 'uru', name: 'Uruguay' },
-  'pe' =>  { code: 'per', name: 'Peru' },
-  'ec' =>  { code: 'ecu', name: 'Ecuador' },
-  'bo' =>  { code: 'bol', name: 'Bolivia' },
-  'cl' =>  { code: 'chi', name: 'Chile' },
-  'co' =>  { code: 'col', name: 'Colombia' },
-  
-   'cr' =>  { code: 'crc', name: 'Costa Rica' },
-  'gt' =>  { code: 'gua', name: 'Guatemala' },  
-  'hn' =>  { code: 'hon', name: 'Honduras' },  
-  'sv' =>  { code: 'slv', name: 'El Salvador' }, 
-  'ni' =>  { code: 'nca', name: 'Nicaragua' },
-
-
-  ## int'l tournaments
-  'uefa.cl'      => { code: nil, name: 'UEFA',     path: 'europe' }, 
-  'uefa.el'      => { code: nil, name: 'UEFA',     path: 'europe' },
-  'concacaf.cl'  => { code: nil, name: nil,       path: 'north-america' },
-  'copa.l'       => { code: nil, name: nil,       path: 'south-america' },
-}
-
-
 
 EXCLUDE_SLUGS = [
   ## uefa.el 
@@ -181,22 +127,20 @@ def self._generate_slug( slug, league:,
     ### derive datafile name from slug
     league_slug, season_slug, stage_slug = _split_slug( slug )
 
-    if start_season && 
-      Season( start_season ) > Season( season_slug )  
+    return  if start_season && 
+              Season( start_season ) > Season( season_slug )  
        ## e.g.   2019/20 >  2019  - yes (true)
        ##        2019/20 >  2018  - yes (true)
        ##        2019/20 >  2019/20 - no (false)
        ##        2019/20 >  2020    - no (false)
        ## note - skip season below start season cut-off
-       return          
-    end
+  
 
     league_slug_pre =  nil  # e.g. 1|2|cup or nil!!!
  
     league_setup  = LEAGUE_SETUPS[ league ] 
-    setup_key =  if league_setup
-                       league   # e.g. uefa.cl, copa.l, etc. 
-                 else   
+    
+    if league_setup.nil?  ## try country only
        ## try country style
        ## note - at.3.o  - at (country) 3 (more)  o (- dropped)                
        league_country, league_more = league.split( '.' )
@@ -213,13 +157,10 @@ def self._generate_slug( slug, league:,
        if league_setup[:path].nil?
           league_setup[:path] = league_setup[:name].downcase.gsub( ' ', '-' ) 
        end 
-
-       league_country   ## return/use country code for setup key e.g. eng|at etc.
-      end
+    end
   
-
     code            = league_setup[:code]     # e.g. aut  or nil!!!
-    name_pre        = league_setup[:name]     # e.g. Austria
+    name_pre        = league_setup[:name]     # e.g. Austria or nil!!!
     extra_path      = league_setup[:path]
  
  
@@ -265,36 +206,16 @@ def self._generate_slug( slug, league:,
                            season: season, 
                            league: league )
             
-    ## note - central european time (cet) - no need for date auto-fix                       
-    if ['at', 'de', 'ch', 
-        'hu', 'cz', 'pl', 
-        'nl', 'lu', 'be',
-        'dk', 'se', 
-        'it',
-        'fr', 'es',
-        ## int'l cup tournaments too
-        'uefa.cl', 'uefa.el',
-         ].include?( setup_key )
-       ## do nothing; assume cet / central european time
-       ##   see https://en.wikipedia.org/wiki/Time_in_Europe  
-    else   
-      ## add quick fix for timezone - all times cet - central european (summer) time                       
-      ## check: rename (optional) offset to time_offset or such?
- 
-      offset = OFFSETS[ setup_key ]
-      if offset.nil?
-        puts "!! ERROR - no timezone/offset configured for league >#{league}< using setup lookup key >#{setup_key}<"
-        exit 1
-      end
-
+     
       ## check for date and time cols
-      puts " check date/time in:"
-      pp recs[0]
-      print "date - "; pp recs[0][2] ## date
-      print "time - "; pp recs[0][3] ## time
+      # puts " check date/time in:"
+      # pp recs[0]
+      # print "date - "; pp recs[0][2] ## date
+      # print "time - "; pp recs[0][3] ## time
 
-      recs = recs.map { |rec| fix_date( rec, offset ) }  
-    end
+      ## note - no op if offset/timezone is cet (gmt/utc+1)
+      recs = fix_dates( recs, league: league  )  
+    
     ## pp recs
 
     ## remove unused columns (e.g. stage, et, p, etc.)

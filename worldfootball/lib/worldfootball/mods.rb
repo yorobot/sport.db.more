@@ -16,6 +16,9 @@ end
 
 
 
+MODS = {}
+
+=begin
 MODS = {
  'at' => {
     ## AT 1
@@ -42,7 +45,7 @@ MODS = {
    'Wellington Phoenix (R)' => 'Wellington Phoenix Reserves',
   },
 }
-
+=end
 
 
 ## fix/patch known score format errors in at/de cups

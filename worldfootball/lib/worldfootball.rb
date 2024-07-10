@@ -13,6 +13,7 @@ require 'nokogiri'
 # our own code
 require_relative 'worldfootball/version'
 require_relative 'worldfootball/leagues'
+require_relative 'worldfootball/config'    ## rename to setup/timezones/layouts or such?
 require_relative 'worldfootball/download'
 require_relative 'worldfootball/page'
 require_relative 'worldfootball/page_schedule'
@@ -23,6 +24,7 @@ require_relative 'worldfootball/cache'
 require_relative 'worldfootball/mods'
 require_relative 'worldfootball/vacuum'
 require_relative 'worldfootball/build'
+require_relative 'worldfootball/build-parse_score'
 require_relative 'worldfootball/convert'
 require_relative 'worldfootball/convert_reports'
 

@@ -23,9 +23,10 @@ ROUND_TO_EN = {
 def self.build( rows, season:, league:, stage: '' )   ## rename to fixup or such - why? why not?
    season = Season( season )  ## cast (ensure) season class (NOT string, integer, etc.)
 
-   raise ArgumentError, "league key as string expected"  unless league.is_a?(String)  ## note: do NOT pass in league struct! pass in key (string)
+   ## note: do NOT pass in league struct! pass in key (string)
+   raise ArgumentError, "league key as string expected"  unless league.is_a?(String)  
 
-   print "  #{rows.size} rows - build #{league} #{season}"
+   print "  #{rows.size} row(s) - Worldfootball.build #{league} #{season}"
    print " - #{stage}" unless stage.empty?
    print "\n"
 
@@ -131,8 +132,6 @@ def self.build( rows, season:, league:, stage: '' )   ## rename to fixup or such
     print "\n"
 
 
-    ## check for 0:3 Wert.   - change Wert. to awd.  (awarded)
-    score_str = score_str.sub( /Wert\./i, 'awd.' )
 
     ## clean team name (e.g. remove (old))
     ##   and asciify (e.g. ’ to ' )
@@ -143,10 +142,7 @@ def self.build( rows, season:, league:, stage: '' )   ## rename to fixup or such
     team2_str = mods[ team2_str ]   if mods[ team2_str ]
 
 
-
-
     ht, ft, et, pen, comments = parse_score( score_str )
-
 
 
     recs <<  [stage,
@@ -163,134 +159,4 @@ def self.build( rows, season:, league:, stage: '' )   ## rename to fixup or such
    end  # each row
    recs
 end  # build
-
-
-
-def self.parse_score( score_str )
-  comments = String.new     ## check - rename to/use status or such - why? why not?
-
-  ## split score
-  ft  = ''
-  ht  = ''
-  et  = ''
-  pen = ''
-  if score_str == '---'   ## in the future (no score yet) - was -:-
-    ft = ''
-    ht = ''
-  elsif score_str == 'n.gesp.' ||   ## cancelled (british) / canceled (us)
-        score_str == 'ausg.'   ||   ## todo/check: change to some other status ????
-        score_str == 'annull.'      ## todo/check: change to some other status (see ie 2012) ????
-    ft = '(*)'
-    ht = ''
-    comments = 'cancelled'
-  elsif score_str == 'abgebr.'  ## abandoned  -- waiting for replay?
-    ft = '(*)'
-    ht = ''
-    comments = 'abandoned'
-  elsif score_str == 'verl.'   ## postponed
-    ft = ''
-    ht = ''
-    comments = 'postponed'
-  # 5-4 (0-0, 1-1, 2-2) i.E.
-  elsif score_str =~ /([0-9]+) [ ]*-[ ]* ([0-9]+)
-                          [ ]*
-                      \(([0-9]+) [ ]*-[ ]* ([0-9]+)
-                          [ ]*,[ ]*
-                        ([0-9]+) [ ]*-[ ]* ([0-9]+)
-                          [ ]*,[ ]*
-                       ([0-9]+) [ ]*-[ ]* ([0-9]+)\)
-                          [ ]*
-                       i\.E\.
-                     /x
-    pen = "#{$1}-#{$2}"
-    ht  = "#{$3}-#{$4}"
-    ft  = "#{$5}-#{$6}"
-    et  = "#{$7}-#{$8}"
-  # 3-2 (0-0, 1-1) i.E.   - note: no extra time!!! only ht,ft!!!
-  #                         "popular" in southamerica & mexico 
-  elsif score_str =~ /([0-9]+) [ ]*-[ ]* ([0-9]+)
-                          [ ]*
-                      \(([0-9]+) [ ]*-[ ]* ([0-9]+)
-                          [ ]*,[ ]*
-                       ([0-9]+) [ ]*-[ ]* ([0-9]+)\)
-                          [ ]*
-                       i\.E\.
-                     /x
-    pen = "#{$1}-#{$2}"
-    ht  = "#{$3}-#{$4}"
-    ft  = "#{$5}-#{$6}"
-    et  = ''
-  # 2-1 (1-0, 1-1) n.V
-  elsif score_str =~ /([0-9]+) [ ]*-[ ]* ([0-9]+)
-                      [ ]*
-                    \(([0-9]+) [ ]*-[ ]* ([0-9]+)
-                       [ ]*,[ ]*
-                      ([0-9]+) [ ]*-[ ]* ([0-9]+)
-                      \)
-                       [ ]*
-                       n\.V\.
-                     /x
-    et  = "#{$1}-#{$2}"
-    ht  = "#{$3}-#{$4}"
-    ft  = "#{$5}-#{$6}"
-  ### auto-patch fix drop last score 
-  ## 1-3 (0-1, 1-1, 0-2) n.V.  => 1-3 (0-1, 1-1) n.V.
-  elsif score_str =~ /([0-9]+) [ ]*-[ ]* ([0-9]+)
-                      [ ]*
-                    \(([0-9]+) [ ]*-[ ]* ([0-9]+)
-                       [ ]*,[ ]*
-                      ([0-9]+) [ ]*-[ ]* ([0-9]+)  
-                       [ ]*,[ ]* 
-                      ([0-9]+) [ ]*-[ ]* ([0-9]+)
-                      \)
-                       [ ]*
-                       n\.V\.
-                     /x
-    et  = "#{$1}-#{$2}"
-    ht  = "#{$3}-#{$4}"
-    ft  = "#{$5}-#{$6}"
-
-    puts "!! WARN - auto-fix/patch score - >#{score_str}<"  
-    ### todo/fix - log auto-patch/fix - for double checking!!!!!
-  elsif score_str =~ /([0-9]+) [ ]*-[ ]* ([0-9]+)
-                          [ ]*
-                      \(([0-9]+) [ ]*-[ ]* ([0-9]+)
-                      \)
-                     /x
-    ft = "#{$1}-#{$2}"
-    ht = "#{$3}-#{$4}"
-  elsif  score_str =~ /([0-9]+)
-                         [ ]*-[ ]*
-                       ([0-9]+)
-                         [ ]*
-                        ([a-z.]+)
-                       /x
-    ft = "#{$1}-#{$2} (*)"
-    ht = ''
-    comments = $3
-  elsif score_str =~ /^([0-9]+)-([0-9]+)$/
-     ft = "#{$1}-#{$2}"     ## e.g. see luxemburg and others
-     ht = ''
-  ## auto-fix/patch
-  # 3-3 (0-3, 3-3)  =>  3-3 (0-3) - drop last score 
-  elsif score_str =~ /^([0-9]+) [ ]*-[ ]* ([0-9]+)
-                          [ ]*
-                      \(([0-9]+) [ ]*-[ ]* ([0-9]+)
-                          [ ]*,[ ]*
-                        ([0-9]+) [ ]*-[ ]* ([0-9]+)   
-                      \)$
-                     /x
-    ft = "#{$1}-#{$2}"
-    ht = "#{$3}-#{$4}"
-
-    puts "!! WARN - auto-fix/patch score - >#{score_str}<"  
-    ### todo/fix - log auto-patch/fix - for double checking!!!!!
-  else
-     puts "!! ERROR - unsupported score format >#{score_str}< - sorry; maybe add a score error fix/patch"
-     exit 1
-  end
-
-  [ht, ft, et, pen, comments]
-end
-
 end # module Worldfootball
