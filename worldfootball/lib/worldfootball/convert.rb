@@ -51,22 +51,60 @@ OFFSETS = {
   'eng.4' => -1,
   'eng.5' => -1,
 
-  'pt'    => -1,
+  'ie' =>  -1, 
+  'sco' =>  -1,
+  
+  'pt' => -1, 
   'pt.1'  => -1,
   'pt.2'  => -1,
+ 
+  'fi' => 1, # +1
+  'gr' => 1, # +1
+  'ro' =>  1, # +1  
+  'ua' =>  1, # +1
+    
+  'ru' =>  2,   # +2
+  'tr'   => 2,  # +2 turkey time/moscow time
 
-  'tr'    => 2,  # +2 turkey time/moscow time
 
-  'br'  => -5,
-  'br.1'  => -5,
-  'ar'   => -5,
-  'ar.1'  => -5,
+  'us'      => -6,   # (gmt-5) new york
 
   'mx'      => -7,
   'mx.1'    => -7,
   'mx.2'    => -7,
   'mx.3'    => -7,
   'mx.cup'  => -7,
+
+  'cr' => -7,    # gmt-6  
+  'gt' => -7,    # gmt-6 
+  'hn' => -7,    # gmt-6 
+  'sv' => -7,    # gmt-6 
+  'ni' => -7,    # gmt-6 
+
+  'uy' =>  -4,     #   gmt-3
+  'pe' =>  -6,     #  gmt-5
+  'ec' =>  -6,     #  gmt-5
+  'co' =>  -6,     #  gmt-5 
+  'bo' =>  -5,     #  gmt-4
+  'cl' =>  -5,     #  gmt-4
+
+  'br'  => -5,    # gmt-3  - change to -4?
+  'br.1'  => -5,
+  'ar'   => -5,   # gmt-3  - change to -4?
+  'ar.1'  => -5,
+
+
+  'eg' =>   2,  # +2  (gmt+3)
+  'jp' =>   8,  # +8  (gmt+9)
+  'cn' =>   7,  # +7  (gmt+7)
+
+  ################
+  ## int'l tournaments
+  # 'uefa.cl' 
+  # 'uefa.el' 
+  'concacaf.cl'  => -7,   ### use mx time 
+  'copa.l'       => -5,    ### use brazil time
+  
 }
 
 
