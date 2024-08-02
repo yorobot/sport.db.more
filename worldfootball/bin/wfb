@@ -13,12 +13,19 @@ Webcache.root =  if File.exist?( '/sports/cache' )
                      './cache'
                  end
 
+## convert (default) output directory
+Worldfootball.config.convert.out_dir = if File.exist?( '/sports/cache.wfb')
+                                           puts "   setting convert out_dir to >/sports/cache.wfb<"
+                                           '/sports/cache.wfb'
+                                        else
+                                           '.' ## use working dir
+                                        end
 
 require 'optparse'
 
 
 module Worldfootball
-def self.main( args=ARGV )    
+def self.main( args=ARGV )
 
 opts = {}
 parser = OptionParser.new do |parser|
@@ -28,12 +35,27 @@ parser = OptionParser.new do |parser|
 ## check if git has a offline option?? (use same)
 ##             check for other tools - why? why not?
 
+## todo - add a single letter option for offline/cached 
 
   parser.on( "--cache", "--cached", "--offline",
-               "use cached data in #{Webcache.root}" ) do |cached|
+               "use cached data in >#{Webcache.root}<" ) do |cached|
     opts[:cached] = cached
   end
+
+  parser.on( "-x", "--export",
+               "export data in comma-separated values (.csv) format in >#{Worldfootball.config.convert.out_dir}<" ) do |export|
+    opts[:export] = export
+  end
+
+  parser.on( "--dry",
+               "dry run / show league page meta info" ) do |dry|
+    opts[:dry] = dry
+  end
 end
+
+
+
+
 parser.parse!( args )
 
 puts "OPTS:"
@@ -67,13 +89,29 @@ end
 league_code = args[0].downcase
 
 league =  find_league( league_code )  ## league info lookup
- 
-season = Season(  args[1] || '2024/25' )
+
+if opts[:dry]
+    ## output more page meta info
+    puts "league meta:"
+    pp league
+end
+
+
+season = Season( args[1] || '2024/25' )
 
 pages = league.pages( season: season )
 
+
+puts
 pp pages
 puts "   #{pages.size} page(s)"
+
+
+if opts[:dry]
+    ## stop here if dry run
+    exit 0
+end
+
 
 
 ## wrap single page record into array
@@ -99,6 +137,14 @@ pages.each_with_index do |page_rec,i|
 
     puts "   #{matches.size} match(es)"
 end
+
+
+if opts[:export] 
+    ## write out (export to) comma-separated values (.csv) datafile
+    convert( league: league_code,
+             season: season )
+end 
+
 
 
 end   # def self.main

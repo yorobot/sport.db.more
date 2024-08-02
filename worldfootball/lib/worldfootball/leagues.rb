@@ -76,7 +76,7 @@ class League
                "#{slug}-#{season.to_path( :long )}"
             end
 
-      puts "  slug=>#{slug}<"
+      ## puts "  slug=>#{slug}<"
 
       slug
     end

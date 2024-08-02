@@ -6,6 +6,12 @@
 require_relative 'helper'
 
 
+
+###########
+### todo/fix
+###  move league_to_slug  to leagues.rb  file for (re)use!!!
+##    and fold in more.rb etc.
+
 ## league to slug/page
 league_to_slug = {
 
