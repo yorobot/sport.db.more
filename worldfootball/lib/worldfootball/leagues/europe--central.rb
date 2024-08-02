@@ -7,11 +7,13 @@ LEAGUES_EUROPE.merge!({
 #  /2-bundesliga-{season}/
 #  /2-bundesliga-2013-2014/
 #  /dfb-pokal-2019-2020/
+#  /regionalliga-bayern-2024-2025/
 
-  'de.1'   => { pages: 'bundesliga' },
-  'de.2'   => { pages: '2-bundesliga' },
-  'de.3'   => { pages: '3-liga' },
-  'de.cup' => { pages: 'dfb-pokal' },
+  'de.1'         => { pages: 'bundesliga' },
+  'de.2'         => { pages: '2-bundesliga' },
+  'de.3'         => { pages: '3-liga' },
+  'de.4.bayern'  => { pages: 'regionalliga-bayern' },
+  'de.cup'       => { pages: 'dfb-pokal' },
 
 
 
@@ -60,9 +62,11 @@ LEAGUES_EUROPE.merge!({
 
   # /sui-super-league-2019-2020/
   # /sui-challenge-league-2019-2020/
+  # /sui-cup-2024-2025/
 
   'ch.1'   => { pages: 'sui-super-league' },
   'ch.2'   => { pages: 'sui-challenge-league' },
+  'ch.cup' => { pages: 'sui-cup' },
 
   # /hun-nb-i-2020-2021/
   'hu.1'   => { pages: 'hun-nb-i' },

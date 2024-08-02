@@ -11,6 +11,22 @@ todos
 ---
 
 
+## How-to update (cached) datasets
+
+Find the (cached) datasets by season in the comma-separated values (.csv) format @ <https://github.com/footballcsv/cache.wfb>
+
+
+
+Sample 1 - Austria (at) 2024/25
+
+- Austrian ÖFB Cup  (at.cup)  =>  `$ wfb at.cup 2024/25`
+
+
+
+
+
+
+
 ## more 
 
 ```
