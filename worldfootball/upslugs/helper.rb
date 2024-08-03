@@ -3,6 +3,10 @@ $LOAD_PATH.unshift( './lib' )
 require 'worldfootball'
 
 
+require_relative 'leagues'   ## pull-in league code to slug maps/configs
+
+
+
 require 'pp'
 require 'optparse'
 
@@ -16,6 +20,11 @@ parser = OptionParser.new do |parser|
   parser.on( "-d", "--download", "Download web pages" ) do |download|
     OPTS[:download] = download
   end
+
+  parser.on( "", "--force", "Always force update" ) do |force|
+    OPTS[:force] = force
+  end
+
 end
 parser.parse!
 
@@ -28,4 +37,6 @@ puts "-------"
 puts
 
 
-Webcache.root = '../../../cache'  ### c:\sports\cache
+Webcache.root = '/sports/cache'    ## note: use absolute path - why? why not?
+
+
