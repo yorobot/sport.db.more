@@ -1,14 +1,9 @@
 ##########
 #  to run use:
-#   $ ruby uphistory/list.rb
+#   $ ruby upslugs/list.rb
 
 
-$LOAD_PATH.unshift( '../../../rubycocos/webclient/webget/lib' )
-$LOAD_PATH.unshift( './lib' )
-require 'worldfootball'
-
-
-Webcache.config.root = '../../../cache'
+require_relative 'helper'
 
 
 start_time = Time.now   ## todo: use Timer? t = Timer.start / stop / diff etc. - why? why not?
@@ -16,7 +11,7 @@ start_time = Time.now   ## todo: use Timer? t = Timer.start / stop / diff etc. -
 
 # pages = Dir.glob( './dl/at*' )
 pages = Dir.glob( "#{Webcache.root}/www.weltfussball.de/alle_spiele/*.html" )
-puts "#{pages.size} pages"   #=> 576 pages
+puts "#{pages.size} pages"   #=> 3672 pages
 puts
 
 

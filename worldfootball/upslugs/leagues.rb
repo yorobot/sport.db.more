@@ -15,6 +15,7 @@ LEAGUE_TO_SLUG = {
   'ie.1' =>  'irl-premier-division-2024',
   'sco.1'  => 'sco-premiership-2024-2025',
 
+
  ### Northern Europe
   'se.1' => 'swe-allsvenskan-2024',
   'se.2' => 'swe-superettan-2024', 
@@ -55,10 +56,23 @@ LEAGUE_TO_SLUG = {
     'pt.2' => 'por-segunda-liga-2023-2024',
   
   'gr.1' => 'gre-super-league-2023-2024',
+
+## note: start with 2012/13 for now!!!
+## in 2011/12 a new format was introduced, in which after the regular season
+##  two play-off groups were played to decide over the Champions League and Europa League starting rounds
+## 1)  - tur-sueperlig-2011-2012
+## 2a) - tur-sueperlig-2012-meisterschaft  -- 2012 Meisterschaft
+## 2b) - tur-sueperlig-2012-platzierung    -- 2012 Platzierung
   'tr.1' => 'tur-sueperlig-2023-2024',
   
  ### Eastern Europe
  'ro.1' => 'rou-liga-1-2023-2024',
+
+##
+## note: ru - special (transition) league format for season 2011/12 (lasting 18 month!!)
+#  1)  rus-premier-liga-2011-2012/     -- 30 rounds
+#  2a) rus-premier-liga-2011-2012-meisterschaft/  -- 2011/2012 Meisterschaft (rounds 31 to 44)
+#   b) rus-premier-liga-2011-2012-relegation/     -- 2011/2012 Relegation    (rounds 31 to 44)
  'ru.1' => 'rus-premier-liga-2024-2025',
 
  'ua.1' => 'ukr-premyer-liga-2019-2020',

@@ -2,12 +2,8 @@
 #  to run use:
 #   $ ruby upslugs/preload.rb
 
-$LOAD_PATH.unshift( '../../../rubycocos/webclient/webget/lib' )
-$LOAD_PATH.unshift( './lib' )
-require 'worldfootball'
 
-
-Webcache.config.root = '../../../cache'
+require_relative 'helper'
 
 
 Webget.config.sleep = 3
@@ -16,21 +12,31 @@ Webget.config.sleep = 3
 
 def preload( slug )
   ## note: check if passed in slug is cached too (if not - preload / download too)
-  url = Worldfootball::Metal.schedule_url( slug )  
+  url = Worldfootball::Metal.schedule_url( slug )
+  
+  cached = false
+
   if Webcache.cached?( url )
     print "   OK "
+    cached = true
   else
     Worldfootball::Metal.download_schedule( slug ) 
     print "      "
   end
 
-   page = Worldfootball::Page::Schedule.from_cache( slug )
 
    print "%-46s" % slug
-   print '  /  '
-   ## clean-up title/strip "» Spielplan" from title
-   print page.title.sub('» Spielplan', '').strip
-   
+
+   if cached
+     ## do NOT read if cached for now
+     ##   to speed-up preload
+   else
+     page = Worldfootball::Page::Schedule.from_cache( slug )
+
+     ## clean-up title/strip "» Spielplan" from title
+     print '  /  '
+     print page.title.sub('» Spielplan', '').strip
+   end
 =begin   
    print '  -  '
    ## check for match count
