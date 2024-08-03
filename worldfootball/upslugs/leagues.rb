@@ -24,6 +24,9 @@ LEAGUE_TO_SLUG = {
 
  ### Benelux / Western Europe
   'nl.1'    => 'ned-eredivisie-2024-2025',
+  'nl.2'    => 'ned-eerste-divisie-2024-2025',
+  'nl.cup'  => 'ned-knvb-beker-2024-2025',
+
   'be.1'    => 'bel-eerste-klasse-a-2024-2025',
   'be.2'    => 'bel-eerste-klasse-b-2024-2025',
   'be.cup'  => 'bel-beker-van-belgie-2023-2024',
@@ -36,8 +39,9 @@ LEAGUE_TO_SLUG = {
    'at.cup'  => 'aut-oefb-cup-2024-2025',
    'at.3.o'  => 'aut-regionalliga-ost-2024-2025',
 
-   'ch.1'  =>  'sui-super-league-2024-2025',
-   'ch.2'  =>  'sui-challenge-league-2024-2025',
+   'ch.1'    =>  'sui-super-league-2024-2025',
+   'ch.2'    =>  'sui-challenge-league-2024-2025',
+   'ch.cup'  =>  'sui-cup-2024-2025',
 
    'hu.1'  =>  'hun-nb-i-2024-2025',
    'cz.1'  =>  'cze-1-fotbalova-liga-2024-2025',
@@ -97,8 +101,15 @@ LEAGUE_TO_SLUG = {
 
 
  ### Int'l Cups / Tournaments
- 'uefa.cl' =>  'champions-league-2020-2021',
- 'uefa.el' =>  'europa-league-2020-2021',
+ 'uefa.cl'   =>  'champions-league-2020-2021',
+ 'uefa.cl.q' => 'champions-league-qual-2024-2025',
+ 'uefa.el'   =>  'europa-league-2020-2021',
+ 'uefa.el.q' =>  'europa-league-qual-2024-2025',
+ ## use conf or other code - why? why not? (drop europa?)
+ 'uefa.ecl'   =>  'europa-conference-league-2023-2024',
+ 'uefa.ecl.q' =>  'europa-conference-league-qual-2024-2025',
+
+
  'copa.l' =>  'copa-libertadores-2020',
  'concacaf.cl'  =>  'concacaf-champions-league-2020',
 
