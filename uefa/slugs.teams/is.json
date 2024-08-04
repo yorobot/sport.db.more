@@ -1,0 +1,66 @@
+{
+  "title": "Icelandic Premier League 2024",
+  "club_count": 12,
+  "clubs": [
+    {
+      "name": "Stjarnan",
+      "ref": "52308--stjarnan",
+      "count": 22
+    },
+    {
+      "name": "Víkingur Reykjavík",
+      "ref": "52697--vikingur-reykjavik",
+      "count": 22
+    },
+    {
+      "name": "Vestri",
+      "ref": "2610384--vestri",
+      "count": 22
+    },
+    {
+      "name": "Fram",
+      "ref": "50088--fram",
+      "count": 22
+    },
+    {
+      "name": "HK",
+      "ref": "2600109--hk",
+      "count": 22
+    },
+    {
+      "name": "KA",
+      "ref": "52966--ka",
+      "count": 22
+    },
+    {
+      "name": "ÍA",
+      "ref": "50135--ia",
+      "count": 22
+    },
+    {
+      "name": "Valur",
+      "ref": "50057--valur",
+      "count": 22
+    },
+    {
+      "name": "KR",
+      "ref": "52307--kr",
+      "count": 22
+    },
+    {
+      "name": "Fylkir",
+      "ref": "75049--fylkir",
+      "count": 22
+    },
+    {
+      "name": "FH",
+      "ref": "59329--fh",
+      "count": 22
+    },
+    {
+      "name": "Breidablik",
+      "ref": "71235--breidablik",
+      "count": 22
+    }
+  ]
+}

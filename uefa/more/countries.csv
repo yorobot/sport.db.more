@@ -6,60 +6,65 @@
 ## check official member country  names
 ###  add official countr codes ???
 
+##
+## note - non uefa-members incl.
+##  Monaco,                 MCO, mc
 
-Albania
-Andorra
-Armenia
-Austria
-Azerbaijan
-Belarus
-Belgium
-Bosnia and Herzegovina
-Bulgaria
-Croatia
-Cyprus
-Czechia
-Denmark
-England
-Estonia
-Faroe Islands
-Finland
-France
-Georgia
-Germany
-Gibraltar
-Greece
-Hungary
-Iceland
-Israel
-Italy
-Kazakhstan
-Kosovo
-Latvia
-Liechtenstein
-Lithuania
-Luxembourg
-Malta
-Moldova
-Montenegro
-Netherlands
-North Macedonia
-Northern Ireland
-Norway
-Poland
-Portugal
-Republic of Ireland
-Romania
-Russia
-San Marino
-Scotland
-Serbia
-Slovakia
-Slovenia
-Spain
-Sweden
-Switzerland
-Türki̇ye
-Ukraine
-Wales
+
+name,   fifa,    code
+Albania, ALB,   al
+Andorra, AND,   ad
+Armenia, ARM,  am
+Austria, AUT,  at
+Azerbaijan, AZE,  az
+Belarus,  BLR,  by
+Belgium, BEL,  be
+Bosnia and Herzegovina, BIH,  ba
+Bulgaria, BUL,  bg
+Croatia, CRO,  hr
+Cyprus, CYP,  cy
+Czechia, CZE, cz
+Denmark, DEN, dk
+England, ENG, eng
+Estonia, EST,  ee
+Faroe Islands, FRO,  fo
+Finland, FIN,  fi
+France, FRA, fr
+Georgia, GEO, ge
+Germany, GER, de
+Gibraltar, GIB, gi
+Greece, GRE,  gr
+Hungary, HUN, hu
+Iceland, ISL, is
+Israel, ISR, il
+Italy, ITA, it
+Kazakhstan, KAZ, kz
+Kosovo, KOS,       kos     ### note - xk (temporary but not in use)
+Latvia, LVA,   lv
+Liechtenstein, LIE, li
+Lithuania, LTU,  lt 
+Luxembourg,  LUX, lu
+Malta,  MLT,  mt
+Moldova, MDA,  md
+Montenegro,  MNE, me
+Netherlands,  NED, nl
+North Macedonia,  MKD, mk
+Northern Ireland,  NIR, nir
+Norway,  NOR, no
+Poland,  POL, pl
+Portugal, POR, pt
+Republic of Ireland, IRL, ie
+Romania,   ROU,  ro 
+Russia,  RUS,  ru
+San Marino,  SMR, sm
+Scotland,  SCO, sco
+Serbia,  SRB,  rs
+Slovakia,  SVK, sk
+Slovenia,  SVN, si
+Spain,   ESP, es
+Sweden,  SWE, se
+Switzerland,  SUI, ch
+Türki̇ye,  TUR, tr
+Ukraine,  UKR, ua 
+Wales,  WAL, wal
 

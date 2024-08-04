@@ -1,0 +1,56 @@
+{
+  "title": "Albanian Super League 2024/25",
+  "club_count": 10,
+  "clubs": [
+    {
+      "name": "Vllaznia",
+      "ref": "52878--vllaznia",
+      "count": 36
+    },
+    {
+      "name": "Partizani",
+      "ref": "52876--partizani",
+      "count": 36
+    },
+    {
+      "name": "AF Elbasani",
+      "ref": "40e0z84h5a2bpuetfvcqe42c--af-elbasani",
+      "count": 36
+    },
+    {
+      "name": "Skënderbeu",
+      "ref": "64114--skenderbeu",
+      "count": 36
+    },
+    {
+      "name": "Bylis",
+      "ref": "64109--bylis",
+      "count": 36
+    },
+    {
+      "name": "Teuta",
+      "ref": "59316--teuta",
+      "count": 36
+    },
+    {
+      "name": "Egnatia",
+      "ref": "88148--egnatia",
+      "count": 36
+    },
+    {
+      "name": "Dinamo City",
+      "ref": "52792--dinamo-city",
+      "count": 36
+    },
+    {
+      "name": "Tirana",
+      "ref": "50049--tirana",
+      "count": 36
+    },
+    {
+      "name": "Laç",
+      "ref": "64111--lac",
+      "count": 36
+    }
+  ]
+}

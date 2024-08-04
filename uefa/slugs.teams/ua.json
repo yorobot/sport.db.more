@@ -1,0 +1,86 @@
+{
+  "title": "Ukrainian Premier League 2024/25",
+  "club_count": 16,
+  "clubs": [
+    {
+      "name": "Dynamo Kyiv",
+      "ref": "52723--dynamo-kyiv",
+      "count": 30
+    },
+    {
+      "name": "Olexandriya",
+      "ref": "77928--olexandriya",
+      "count": 30
+    },
+    {
+      "name": "Polissya Zhytomyr",
+      "ref": "6473hce9r52khyh9ptc6i385c--polissya-zhytomyr",
+      "count": 30
+    },
+    {
+      "name": "Rukh Vynnyky",
+      "ref": "2610818--rukh-vynnyky",
+      "count": 30
+    },
+    {
+      "name": "Karpaty",
+      "ref": "59032--karpaty",
+      "count": 30
+    },
+    {
+      "name": "Veres",
+      "ref": "2608523--veres",
+      "count": 30
+    },
+    {
+      "name": "Chornomorets Odesa",
+      "ref": "53064--chornomorets-odesa",
+      "count": 30
+    },
+    {
+      "name": "Hirnyk",
+      "ref": "2605851--hirnyk",
+      "count": 30
+    },
+    {
+      "name": "FK Livyi Bereh",
+      "ref": "f26po6jmo5p0q8wv7ixx1spp0--fk-livyi-bereh",
+      "count": 30
+    },
+    {
+      "name": "LNZ Cherkasy FC",
+      "ref": "a6nfqzba025ru45ja9lju5uz8--lnz-cherkasy-fc",
+      "count": 30
+    },
+    {
+      "name": "Shakhtar Donetsk",
+      "ref": "52707--shakhtar-donetsk",
+      "count": 30
+    },
+    {
+      "name": "Vorskla Poltava",
+      "ref": "62174--vorskla-poltava",
+      "count": 30
+    },
+    {
+      "name": "Kolos Kovalivka",
+      "ref": "2609189--kolos-kovalivka",
+      "count": 30
+    },
+    {
+      "name": "Obolon-Brovar",
+      "ref": "2606823--obolon-brovar",
+      "count": 30
+    },
+    {
+      "name": "Inhulets Petrove",
+      "ref": "2607543--inhulets-petrove",
+      "count": 30
+    },
+    {
+      "name": "Zorya Luhansk",
+      "ref": "65130--zorya-luhansk",
+      "count": 30
+    }
+  ]
+}

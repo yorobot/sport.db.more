@@ -1,0 +1,76 @@
+{
+  "title": "Israeli Premier League 2024/25",
+  "club_count": 14,
+  "clubs": [
+    {
+      "name": "M. Netanya",
+      "ref": "73561--m-netanya",
+      "count": 26
+    },
+    {
+      "name": "Maccabi Bnei Reineh",
+      "ref": "2611022--maccabi-bnei-reineh",
+      "count": 26
+    },
+    {
+      "name": "Ironi Tiberias FC",
+      "ref": "8k3kbfzfqi2senhosaaimvgjm--ironi-tiberias-fc",
+      "count": 26
+    },
+    {
+      "name": "Maccabi Haifa",
+      "ref": "59045--maccabi-haifa",
+      "count": 26
+    },
+    {
+      "name": "Ashdod",
+      "ref": "64186--ashdod",
+      "count": 26
+    },
+    {
+      "name": "Beitar Jerusalem",
+      "ref": "59034--beitar-jerusalem",
+      "count": 26
+    },
+    {
+      "name": "H. Beer Sheva",
+      "ref": "59340--h-beer-sheva",
+      "count": 26
+    },
+    {
+      "name": "H. Kiryat Shmona",
+      "ref": "2600291--h-kiryat-shmona",
+      "count": 26
+    },
+    {
+      "name": "M. Petah Tikva",
+      "ref": "61576--m-petah-tikva",
+      "count": 26
+    },
+    {
+      "name": "Bnei Sakhnin",
+      "ref": "84319--bnei-sakhnin",
+      "count": 26
+    },
+    {
+      "name": "Hapoel Jerusalem",
+      "ref": "2610277--hapoel-jerusalem",
+      "count": 26
+    },
+    {
+      "name": "Maccabi Tel Aviv",
+      "ref": "57477--maccabi-tel-aviv",
+      "count": 26
+    },
+    {
+      "name": "H. Haifa",
+      "ref": "60573--h-haifa",
+      "count": 26
+    },
+    {
+      "name": "Hapoel Hadera",
+      "ref": "2609512--hapoel-hadera",
+      "count": 26
+    }
+  ]
+}

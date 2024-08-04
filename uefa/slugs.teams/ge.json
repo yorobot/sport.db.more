@@ -1,0 +1,56 @@
+{
+  "title": "Georgian Premier League 2024",
+  "club_count": 10,
+  "clubs": [
+    {
+      "name": "Kolkheti",
+      "ref": "60564--kolkheti",
+      "count": 36
+    },
+    {
+      "name": "Dinamo Batumi",
+      "ref": "59885--dinamo-batumi",
+      "count": 36
+    },
+    {
+      "name": "Telavi",
+      "ref": "2610377--telavi",
+      "count": 36
+    },
+    {
+      "name": "Iberia",
+      "ref": "2605905--iberia",
+      "count": 36
+    },
+    {
+      "name": "Samgurali",
+      "ref": "2605016--samgurali",
+      "count": 36
+    },
+    {
+      "name": "Dinamo Tbilisi",
+      "ref": "52705--dinamo-tbilisi",
+      "count": 36
+    },
+    {
+      "name": "Samtredia",
+      "ref": "59884--samtredia",
+      "count": 36
+    },
+    {
+      "name": "Torpedo Kutaisi",
+      "ref": "64471--torpedo-kutaisi",
+      "count": 36
+    },
+    {
+      "name": "Gagra",
+      "ref": "2600544--gagra",
+      "count": 36
+    },
+    {
+      "name": "Dila",
+      "ref": "64467--dila",
+      "count": 36
+    }
+  ]
+}

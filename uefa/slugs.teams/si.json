@@ -1,0 +1,56 @@
+{
+  "title": "Slovene First League 2024/25",
+  "club_count": 10,
+  "clubs": [
+    {
+      "name": "ND Primorje",
+      "ref": "3arlihywg6nyx9pkjcuau79nh--nd-primorje",
+      "count": 36
+    },
+    {
+      "name": "Olimpija Ljubljana",
+      "ref": "53081--olimpija-ljubljana",
+      "count": 36
+    },
+    {
+      "name": "Koper",
+      "ref": "69617--koper",
+      "count": 36
+    },
+    {
+      "name": "Radomlje",
+      "ref": "2605848--radomlje",
+      "count": 36
+    },
+    {
+      "name": "Nafta",
+      "ref": "89725--nafta",
+      "count": 36
+    },
+    {
+      "name": "Mura",
+      "ref": "2607561--mura",
+      "count": 36
+    },
+    {
+      "name": "Domžale",
+      "ref": "70690--domzale",
+      "count": 36
+    },
+    {
+      "name": "Maribor",
+      "ref": "57490--maribor",
+      "count": 36
+    },
+    {
+      "name": "Bravo",
+      "ref": "2610275--bravo",
+      "count": 36
+    },
+    {
+      "name": "Celje",
+      "ref": "59030--celje",
+      "count": 36
+    }
+  ]
+}

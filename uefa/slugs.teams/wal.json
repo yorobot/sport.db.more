@@ -1,0 +1,66 @@
+{
+  "title": "Welsh Premier League 2024/25",
+  "club_count": 12,
+  "clubs": [
+    {
+      "name": "Aberystwyth",
+      "ref": "64277--aberystwyth",
+      "count": 22
+    },
+    {
+      "name": "Newtown",
+      "ref": "60458--newtown",
+      "count": 22
+    },
+    {
+      "name": "Bala",
+      "ref": "2600717--bala",
+      "count": 22
+    },
+    {
+      "name": "Barry",
+      "ref": "53069--barry",
+      "count": 22
+    },
+    {
+      "name": "Cardiff Met",
+      "ref": "59337--cardiff-met",
+      "count": 22
+    },
+    {
+      "name": "Flint Town United",
+      "ref": "2602230--flint-town-united",
+      "count": 22
+    },
+    {
+      "name": "Haverfordwest",
+      "ref": "64283--haverfordwest",
+      "count": 22
+    },
+    {
+      "name": "Connah's Quay",
+      "ref": "64275--connah-s-quay",
+      "count": 22
+    },
+    {
+      "name": "Caernarfon",
+      "ref": "53071--caernarfon",
+      "count": 22
+    },
+    {
+      "name": "The New Saints",
+      "ref": "60457--the-new-saints",
+      "count": 22
+    },
+    {
+      "name": "Penybont",
+      "ref": "2606314--penybont",
+      "count": 22
+    },
+    {
+      "name": "Briton Ferry Llansawel",
+      "ref": "2607166--briton-ferry-llansawel",
+      "count": 22
+    }
+  ]
+}

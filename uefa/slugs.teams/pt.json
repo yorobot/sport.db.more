@@ -1,0 +1,96 @@
+{
+  "title": "Portuguese First Division 2024/25",
+  "club_count": 18,
+  "clubs": [
+    {
+      "name": "Rio Ave",
+      "ref": "64237--rio-ave",
+      "count": 34
+    },
+    {
+      "name": "Sporting CP",
+      "ref": "50149--sporting-cp",
+      "count": 34
+    },
+    {
+      "name": "Nacional",
+      "ref": "53010--nacional",
+      "count": 34
+    },
+    {
+      "name": "AVS Futebol",
+      "ref": "di8rq9fo3z0bnsx08jljhnnys--avs-futebol",
+      "count": 34
+    },
+    {
+      "name": "Boavista",
+      "ref": "52819--boavista",
+      "count": 34
+    },
+    {
+      "name": "Casa Pia",
+      "ref": "2601241--casa-pia",
+      "count": 34
+    },
+    {
+      "name": "Gil Vicente",
+      "ref": "73926--gil-vicente",
+      "count": 34
+    },
+    {
+      "name": "FC Porto",
+      "ref": "50064--fc-porto",
+      "count": 34
+    },
+    {
+      "name": "Santa Clara",
+      "ref": "73927--santa-clara",
+      "count": 34
+    },
+    {
+      "name": "Estoril",
+      "ref": "87944--estoril",
+      "count": 34
+    },
+    {
+      "name": "Benfica",
+      "ref": "50147--benfica",
+      "count": 34
+    },
+    {
+      "name": "Famalicao",
+      "ref": "2604200--famalicao",
+      "count": 34
+    },
+    {
+      "name": "Moreirense",
+      "ref": "79952--moreirense",
+      "count": 34
+    },
+    {
+      "name": "Farense",
+      "ref": "59875--farense",
+      "count": 34
+    },
+    {
+      "name": "Club Foot Estrela",
+      "ref": "85nuf5511v5omdretfoh0c4k4--club-foot-estrela",
+      "count": 34
+    },
+    {
+      "name": "Braga",
+      "ref": "52336--braga",
+      "count": 34
+    },
+    {
+      "name": "Vitória SC",
+      "ref": "50097--vitoria-sc",
+      "count": 34
+    },
+    {
+      "name": "Arouca",
+      "ref": "2602955--arouca",
+      "count": 34
+    }
+  ]
+}

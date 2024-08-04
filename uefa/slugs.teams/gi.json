@@ -1,0 +1,61 @@
+{
+  "title": "Gibraltarian Premier League 2023/24",
+  "club_count": 11,
+  "clubs": [
+    {
+      "name": "Manchester 62",
+      "ref": "2605574--manchester-62",
+      "count": 25
+    },
+    {
+      "name": "Europa Point",
+      "ref": "2607260--europa-point",
+      "count": 25
+    },
+    {
+      "name": "Europa",
+      "ref": "2606416--europa",
+      "count": 20
+    },
+    {
+      "name": "St Joseph's",
+      "ref": "2605575--st-joseph-s",
+      "count": 25
+    },
+    {
+      "name": "Lions Gibraltar",
+      "ref": "2605573--lions-gibraltar",
+      "count": 20
+    },
+    {
+      "name": "Lynx",
+      "ref": "2605577--lynx",
+      "count": 20
+    },
+    {
+      "name": "Mons Calpe",
+      "ref": "2608011--mons-calpe",
+      "count": 25
+    },
+    {
+      "name": "Glacis",
+      "ref": "2605576--glacis",
+      "count": 20
+    },
+    {
+      "name": "College",
+      "ref": "2606921--college",
+      "count": 20
+    },
+    {
+      "name": "Lincoln Red Imps",
+      "ref": "2605572--lincoln-red-imps",
+      "count": 25
+    },
+    {
+      "name": "Magpies",
+      "ref": "2606279--magpies",
+      "count": 25
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "title": "Latvian First Division 2024",
+  "club_count": 10,
+  "clubs": [
+    {
+      "name": "RFS",
+      "ref": "2609104--rfs",
+      "count": 36
+    },
+    {
+      "name": "Auda",
+      "ref": "79556--auda",
+      "count": 36
+    },
+    {
+      "name": "Tukums 2000",
+      "ref": "2604124--tukums-2000",
+      "count": 36
+    },
+    {
+      "name": "Liepāja",
+      "ref": "2606320--liepaja",
+      "count": 36
+    },
+    {
+      "name": "Daugavpils",
+      "ref": "2606321--daugavpils",
+      "count": 36
+    },
+    {
+      "name": "FS Jelgava",
+      "ref": "4rdex58yrsnwfdbqi8od6bh90--fs-jelgava",
+      "count": 36
+    },
+    {
+      "name": "Riga",
+      "ref": "2607924--riga",
+      "count": 36
+    },
+    {
+      "name": "Grobina",
+      "ref": "2606283--grobina",
+      "count": 36
+    },
+    {
+      "name": "Valmiera",
+      "ref": "2602920--valmiera",
+      "count": 36
+    },
+    {
+      "name": "Metta",
+      "ref": "2602917--metta",
+      "count": 36
+    }
+  ]
+}

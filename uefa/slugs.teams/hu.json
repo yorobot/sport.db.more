@@ -1,0 +1,66 @@
+{
+  "title": "Hungarian First League 2024/25",
+  "club_count": 12,
+  "clubs": [
+    {
+      "name": "MTK",
+      "ref": "52815--mtk",
+      "count": 33
+    },
+    {
+      "name": "ZTE",
+      "ref": "64182--zte",
+      "count": 33
+    },
+    {
+      "name": "Győr",
+      "ref": "52287--gyor",
+      "count": 33
+    },
+    {
+      "name": "Nyíregyháza",
+      "ref": "69166--nyiregyhaza",
+      "count": 33
+    },
+    {
+      "name": "Puskás Akadémia",
+      "ref": "2605472--puskas-akademia",
+      "count": 33
+    },
+    {
+      "name": "Újpest",
+      "ref": "50132--ujpest",
+      "count": 33
+    },
+    {
+      "name": "Paks",
+      "ref": "93452--paks",
+      "count": 33
+    },
+    {
+      "name": "Diósgyőr",
+      "ref": "64176--diosgyor",
+      "count": 33
+    },
+    {
+      "name": "Fehérvár",
+      "ref": "52288--fehervar",
+      "count": 33
+    },
+    {
+      "name": "Kecskemét",
+      "ref": "77898--kecskemet",
+      "count": 33
+    },
+    {
+      "name": "Debrecen",
+      "ref": "52958--debrecen",
+      "count": 33
+    },
+    {
+      "name": "Ferencváros",
+      "ref": "52298--ferencvaros",
+      "count": 33
+    }
+  ]
+}

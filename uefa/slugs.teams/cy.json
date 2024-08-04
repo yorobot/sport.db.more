@@ -1,0 +1,76 @@
+{
+  "title": "Cypriot First Division 2024/25",
+  "club_count": 14,
+  "clubs": [
+    {
+      "name": "APOEL",
+      "ref": "50118--apoel",
+      "count": 26
+    },
+    {
+      "name": "Paralimni",
+      "ref": "52765--paralimni",
+      "count": 26
+    },
+    {
+      "name": "Aris Limassol",
+      "ref": "69529--aris-limassol",
+      "count": 26
+    },
+    {
+      "name": "Karmiotissa",
+      "ref": "2606166--karmiotissa",
+      "count": 26
+    },
+    {
+      "name": "AEL",
+      "ref": "52800--ael",
+      "count": 26
+    },
+    {
+      "name": "ALS Omonia 29is Maiou",
+      "ref": "d8e2i453dp2md5a9r2426t65m--als-omonia-29is-maiou",
+      "count": 26
+    },
+    {
+      "name": "Anorthosis",
+      "ref": "52897--anorthosis",
+      "count": 26
+    },
+    {
+      "name": "Omonia Aradippou",
+      "ref": "2601428--omonia-aradippou",
+      "count": 26
+    },
+    {
+      "name": "AEK Larnaca",
+      "ref": "54191--aek-larnaca",
+      "count": 26
+    },
+    {
+      "name": "Apollon",
+      "ref": "52741--apollon",
+      "count": 26
+    },
+    {
+      "name": "Nea Salamis",
+      "ref": "52901--nea-salamis",
+      "count": 26
+    },
+    {
+      "name": "Pafos",
+      "ref": "2609532--pafos",
+      "count": 26
+    },
+    {
+      "name": "Ethnikos Achnas",
+      "ref": "3306--ethnikos-achnas",
+      "count": 26
+    },
+    {
+      "name": "Omonoia",
+      "ref": "50077--omonoia",
+      "count": 26
+    }
+  ]
+}

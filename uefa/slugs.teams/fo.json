@@ -1,0 +1,56 @@
+{
+  "title": "Faroese Premier Division 2024",
+  "club_count": 10,
+  "clubs": [
+    {
+      "name": "Víkingur",
+      "ref": "59325--vikingur",
+      "count": 27
+    },
+    {
+      "name": "07 Vestur",
+      "ref": "2600620--07-vestur",
+      "count": 27
+    },
+    {
+      "name": "ÍF",
+      "ref": "64153--if",
+      "count": 27
+    },
+    {
+      "name": "KÍ Klaksvík",
+      "ref": "57475--ki-klaksvik",
+      "count": 27
+    },
+    {
+      "name": "B36 Tórshavn",
+      "ref": "57476--b36-torshavn",
+      "count": 27
+    },
+    {
+      "name": "B68",
+      "ref": "59033--b68",
+      "count": 27
+    },
+    {
+      "name": "NSÍ",
+      "ref": "64150--nsi",
+      "count": 27
+    },
+    {
+      "name": "HB",
+      "ref": "59025--hb",
+      "count": 27
+    },
+    {
+      "name": "EB/Streymur",
+      "ref": "77483--eb-streymur",
+      "count": 27
+    },
+    {
+      "name": "Skála",
+      "ref": "79553--skala",
+      "count": 27
+    }
+  ]
+}

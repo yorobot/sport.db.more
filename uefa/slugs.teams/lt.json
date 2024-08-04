@@ -1,0 +1,56 @@
+{
+  "title": "Lithuanian First Division 2024",
+  "club_count": 10,
+  "clubs": [
+    {
+      "name": "Šiauliai",
+      "ref": "77906--siauliai",
+      "count": 36
+    },
+    {
+      "name": "Sūduva",
+      "ref": "79557--suduva",
+      "count": 36
+    },
+    {
+      "name": "Panevėžys",
+      "ref": "2608927--panevezys",
+      "count": 36
+    },
+    {
+      "name": "Džiugas",
+      "ref": "2607898--dziugas",
+      "count": 36
+    },
+    {
+      "name": "Kauno Žalgiris",
+      "ref": "2605907--kauno-zalgiris",
+      "count": 36
+    },
+    {
+      "name": "Banga",
+      "ref": "64348--banga",
+      "count": 36
+    },
+    {
+      "name": "Žalgiris Vilnius",
+      "ref": "2602334--zalgiris-vilnius",
+      "count": 36
+    },
+    {
+      "name": "Dainava",
+      "ref": "69604--dainava",
+      "count": 36
+    },
+    {
+      "name": "TransINVEST",
+      "ref": "2613214--transinvest",
+      "count": 36
+    },
+    {
+      "name": "Hegelmann",
+      "ref": "2607108--hegelmann",
+      "count": 36
+    }
+  ]
+}

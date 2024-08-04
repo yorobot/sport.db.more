@@ -1,0 +1,56 @@
+{
+  "title": "Armenian Premier League 2024/25",
+  "club_count": 10,
+  "clubs": [
+    {
+      "name": "Shirak",
+      "ref": "59877--shirak",
+      "count": 1
+    },
+    {
+      "name": "Banaki Kentronakan Marzakan Akumb",
+      "ref": "8m135k5lrfhwtx9dxxxf56cq--banaki-kentronakan-marzakan-akumb",
+      "count": 1
+    },
+    {
+      "name": "Alashkert",
+      "ref": "2605268--alashkert",
+      "count": 1
+    },
+    {
+      "name": "Ararat",
+      "ref": "59318--ararat",
+      "count": 1
+    },
+    {
+      "name": "Ararat-Armenia",
+      "ref": "2609105--ararat-armenia",
+      "count": 1
+    },
+    {
+      "name": "Van",
+      "ref": "2610994--van",
+      "count": 1
+    },
+    {
+      "name": "FC Gandzasar Kapan",
+      "ref": "2evrs5ueow5u3fw9gto1rbswk--fc-gandzasar-kapan",
+      "count": 1
+    },
+    {
+      "name": "Noah",
+      "ref": "2609987--noah",
+      "count": 1
+    },
+    {
+      "name": "Urartu",
+      "ref": "77866--urartu",
+      "count": 1
+    },
+    {
+      "name": "Pyunik",
+      "ref": "77431--pyunik",
+      "count": 1
+    }
+  ]
+}

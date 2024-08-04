@@ -1,0 +1,86 @@
+{
+  "title": "Czech First League 2024/25",
+  "club_count": 16,
+  "clubs": [
+    {
+      "name": "Pardubice",
+      "ref": "2602727--pardubice",
+      "count": 30
+    },
+    {
+      "name": "Sparta Praha",
+      "ref": "50033--sparta-praha",
+      "count": 30
+    },
+    {
+      "name": "Mladá Boleslav",
+      "ref": "88134--mlada-boleslav",
+      "count": 30
+    },
+    {
+      "name": "Jablonec",
+      "ref": "62169--jablonec",
+      "count": 30
+    },
+    {
+      "name": "Olomouc",
+      "ref": "52905--olomouc",
+      "count": 30
+    },
+    {
+      "name": "České Budějovice",
+      "ref": "64389--ceske-budejovice",
+      "count": 30
+    },
+    {
+      "name": "Baník",
+      "ref": "51886--banik",
+      "count": 30
+    },
+    {
+      "name": "Bohemians Praha",
+      "ref": "52662--bohemians-praha",
+      "count": 30
+    },
+    {
+      "name": "Viktoria Plzeň",
+      "ref": "64388--viktoria-plzen",
+      "count": 30
+    },
+    {
+      "name": "Dukla",
+      "ref": "2600880--dukla",
+      "count": 30
+    },
+    {
+      "name": "Liberec",
+      "ref": "64385--liberec",
+      "count": 30
+    },
+    {
+      "name": "Karviná",
+      "ref": "52906--karvina",
+      "count": 30
+    },
+    {
+      "name": "Slavia Praha",
+      "ref": "52498--slavia-praha",
+      "count": 30
+    },
+    {
+      "name": "Slovácko",
+      "ref": "75794--slovacko",
+      "count": 30
+    },
+    {
+      "name": "Teplice",
+      "ref": "64387--teplice",
+      "count": 30
+    },
+    {
+      "name": "Hradec Králové",
+      "ref": "59878--hradec-kralove",
+      "count": 30
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "title": "Andorran Premier Division 2024/25",
+  "club_count": 10,
+  "clubs": [
+    {
+      "name": "Atlètic Escaldes",
+      "ref": "88371--atletic-escaldes",
+      "count": 27
+    },
+    {
+      "name": "Penya Encarnada",
+      "ref": "2607252--penya-encarnada",
+      "count": 27
+    },
+    {
+      "name": "F.S. La Massana",
+      "ref": "2607250--f-s-la-massana",
+      "count": 27
+    },
+    {
+      "name": "Inter Escaldes",
+      "ref": "63401--inter-escaldes",
+      "count": 27
+    },
+    {
+      "name": "Esperança",
+      "ref": "2613151--esperanca",
+      "count": 27
+    },
+    {
+      "name": "Rànger's",
+      "ref": "78063--ranger-s",
+      "count": 27
+    },
+    {
+      "name": "FC Santa Coloma",
+      "ref": "62180--fc-santa-coloma",
+      "count": 27
+    },
+    {
+      "name": "UE Santa Coloma",
+      "ref": "2600542--ue-santa-coloma",
+      "count": 27
+    },
+    {
+      "name": "Ordino",
+      "ref": "2605362--ordino",
+      "count": 27
+    },
+    {
+      "name": "FC Pas de la Casa",
+      "ref": "61eplt09k35dsd1f168i7jbop--fc-pas-de-la-casa",
+      "count": 27
+    }
+  ]
+}

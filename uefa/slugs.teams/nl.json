@@ -1,0 +1,96 @@
+{
+  "title": "Dutch First Division 2024/25",
+  "club_count": 18,
+  "clubs": [
+    {
+      "name": "NAC",
+      "ref": "64206--nac",
+      "count": 34
+    },
+    {
+      "name": "Groningen",
+      "ref": "50144--groningen",
+      "count": 34
+    },
+    {
+      "name": "Willem II",
+      "ref": "52987--willem-ii",
+      "count": 34
+    },
+    {
+      "name": "Feyenoord",
+      "ref": "52749--feyenoord",
+      "count": 34
+    },
+    {
+      "name": "Twente",
+      "ref": "52818--twente",
+      "count": 34
+    },
+    {
+      "name": "NEC",
+      "ref": "52330--nec",
+      "count": 34
+    },
+    {
+      "name": "AZ Alkmaar",
+      "ref": "52327--az-alkmaar",
+      "count": 34
+    },
+    {
+      "name": "Almere City",
+      "ref": "2604167--almere-city",
+      "count": 34
+    },
+    {
+      "name": "RKC",
+      "ref": "52984--rkc",
+      "count": 34
+    },
+    {
+      "name": "PSV",
+      "ref": "50062--psv",
+      "count": 34
+    },
+    {
+      "name": "Heracles",
+      "ref": "89710--heracles",
+      "count": 34
+    },
+    {
+      "name": "Sparta Rotterdam",
+      "ref": "52332--sparta-rotterdam",
+      "count": 34
+    },
+    {
+      "name": "Zwolle",
+      "ref": "77910--zwolle",
+      "count": 34
+    },
+    {
+      "name": "Utrecht",
+      "ref": "52323--utrecht",
+      "count": 34
+    },
+    {
+      "name": "Fortuna Sittard",
+      "ref": "52325--fortuna-sittard",
+      "count": 34
+    },
+    {
+      "name": "Go Ahead Eagles",
+      "ref": "64207--go-ahead-eagles",
+      "count": 34
+    },
+    {
+      "name": "Heerenveen",
+      "ref": "59862--heerenveen",
+      "count": 34
+    },
+    {
+      "name": "Ajax",
+      "ref": "50143--ajax",
+      "count": 34
+    }
+  ]
+}

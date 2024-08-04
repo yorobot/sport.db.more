@@ -1,0 +1,56 @@
+{
+  "title": "Kosovan Superliga 2024/25",
+  "club_count": 10,
+  "clubs": [
+    {
+      "name": "Feronikeli",
+      "ref": "2608281--feronikeli",
+      "count": 2
+    },
+    {
+      "name": "Ferizaj",
+      "ref": "2608242--ferizaj",
+      "count": 2
+    },
+    {
+      "name": "Gjilani",
+      "ref": "2608285--gjilani",
+      "count": 2
+    },
+    {
+      "name": "Llapi",
+      "ref": "2608286--llapi",
+      "count": 2
+    },
+    {
+      "name": "KF Malisheva",
+      "ref": "a60ufzrtuj1dkkmxtnjchah3o--kf-malisheva",
+      "count": 2
+    },
+    {
+      "name": "Drita",
+      "ref": "2608290--drita",
+      "count": 2
+    },
+    {
+      "name": "FC Suhareka",
+      "ref": "dh738nd4i2mw6zaspd4n6t638--fc-suhareka",
+      "count": 2
+    },
+    {
+      "name": "Prishtina",
+      "ref": "2608287--prishtina",
+      "count": 2
+    },
+    {
+      "name": "Dukagjini",
+      "ref": "2608311--dukagjini",
+      "count": 2
+    },
+    {
+      "name": "Ballkani",
+      "ref": "2609552--ballkani",
+      "count": 2
+    }
+  ]
+}

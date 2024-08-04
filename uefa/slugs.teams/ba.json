@@ -1,0 +1,66 @@
+{
+  "title": "Bosnian-Herzegovinian Premier League 2024/25",
+  "club_count": 12,
+  "clubs": [
+    {
+      "name": "Radnik Bijeljina",
+      "ref": "77878--radnik-bijeljina",
+      "count": 22
+    },
+    {
+      "name": "GOŠK",
+      "ref": "2603734--gosk",
+      "count": 22
+    },
+    {
+      "name": "Široki Brijeg",
+      "ref": "73387--siroki-brijeg",
+      "count": 22
+    },
+    {
+      "name": "Željezničar",
+      "ref": "64381--zeljeznicar",
+      "count": 22
+    },
+    {
+      "name": "Igman",
+      "ref": "2606161--igman",
+      "count": 22
+    },
+    {
+      "name": "Posušje",
+      "ref": "73388--posusje",
+      "count": 22
+    },
+    {
+      "name": "Velež",
+      "ref": "50163--velez",
+      "count": 22
+    },
+    {
+      "name": "Borac",
+      "ref": "50104--borac",
+      "count": 22
+    },
+    {
+      "name": "Sloboda",
+      "ref": "64379--sloboda",
+      "count": 22
+    },
+    {
+      "name": "Sarajevo",
+      "ref": "64378--sarajevo",
+      "count": 22
+    },
+    {
+      "name": "Sloga",
+      "ref": "2604163--sloga",
+      "count": 22
+    },
+    {
+      "name": "Zrinjski",
+      "ref": "73390--zrinjski",
+      "count": 22
+    }
+  ]
+}

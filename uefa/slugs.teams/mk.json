@@ -1,0 +1,66 @@
+{
+  "title": "Macedonian First League 2024/25",
+  "club_count": 12,
+  "clubs": [
+    {
+      "name": "Tikves",
+      "ref": "64397--tikves",
+      "count": 22
+    },
+    {
+      "name": "Struga",
+      "ref": "2609278--struga",
+      "count": 22
+    },
+    {
+      "name": "Shkëndija",
+      "ref": "75807--shkendija",
+      "count": 22
+    },
+    {
+      "name": "KF Besa 1976 Dobërdoll",
+      "ref": "b6flj4o9uzd1kcpij6oh1zh1w--kf-besa-1976-doberdoll",
+      "count": 22
+    },
+    {
+      "name": "Sileks",
+      "ref": "59871--sileks",
+      "count": 22
+    },
+    {
+      "name": "Rabotnicki",
+      "ref": "69601--rabotnicki",
+      "count": 22
+    },
+    {
+      "name": "Vardar",
+      "ref": "53080--vardar",
+      "count": 22
+    },
+    {
+      "name": "Brera Strumica",
+      "ref": "2608458--brera-strumica",
+      "count": 22
+    },
+    {
+      "name": "Gostivari",
+      "ref": "2604876--gostivari",
+      "count": 22
+    },
+    {
+      "name": "Pelister",
+      "ref": "64396--pelister",
+      "count": 22
+    },
+    {
+      "name": "FK Voska Sport Ohrid",
+      "ref": "a8rkjugoee3ztj0x193mf6r6c--fk-voska-sport-ohrid",
+      "count": 22
+    },
+    {
+      "name": "Shkupi",
+      "ref": "2606993--shkupi",
+      "count": 22
+    }
+  ]
+}

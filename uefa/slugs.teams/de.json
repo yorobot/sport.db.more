@@ -1,0 +1,96 @@
+{
+  "title": "German Bundesliga 2024/25",
+  "club_count": 18,
+  "clubs": [
+    {
+      "name": "Leverkusen",
+      "ref": "50109--leverkusen",
+      "count": 34
+    },
+    {
+      "name": "Mönchengladbach",
+      "ref": "52757--monchengladbach",
+      "count": 34
+    },
+    {
+      "name": "Bochum",
+      "ref": "52939--bochum",
+      "count": 34
+    },
+    {
+      "name": "Leipzig",
+      "ref": "2603790--leipzig",
+      "count": 34
+    },
+    {
+      "name": "Kiel",
+      "ref": "2603789--kiel",
+      "count": 34
+    },
+    {
+      "name": "Hoffenheim",
+      "ref": "2600431--hoffenheim",
+      "count": 34
+    },
+    {
+      "name": "Stuttgart",
+      "ref": "50107--stuttgart",
+      "count": 34
+    },
+    {
+      "name": "Freiburg",
+      "ref": "59880--freiburg",
+      "count": 34
+    },
+    {
+      "name": "Bremen",
+      "ref": "50040--bremen",
+      "count": 34
+    },
+    {
+      "name": "Augsburg",
+      "ref": "2600978--augsburg",
+      "count": 34
+    },
+    {
+      "name": "Union Berlin",
+      "ref": "77977--union-berlin",
+      "count": 34
+    },
+    {
+      "name": "Mainz",
+      "ref": "70853--mainz",
+      "count": 34
+    },
+    {
+      "name": "Eintracht Frankfurt",
+      "ref": "50072--eintracht-frankfurt",
+      "count": 34
+    },
+    {
+      "name": "Dortmund",
+      "ref": "52758--dortmund",
+      "count": 34
+    },
+    {
+      "name": "Bayern",
+      "ref": "50037--bayern",
+      "count": 34
+    },
+    {
+      "name": "Wolfsburg",
+      "ref": "64332--wolfsburg",
+      "count": 34
+    },
+    {
+      "name": "Heidenheim",
+      "ref": "2603791--heidenheim",
+      "count": 34
+    },
+    {
+      "name": "St Pauli",
+      "ref": "77894--st-pauli",
+      "count": 34
+    }
+  ]
+}

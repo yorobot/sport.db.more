@@ -1,0 +1,86 @@
+{
+  "title": "Serbian Super League 2024/25",
+  "club_count": 16,
+  "clubs": [
+    {
+      "name": "FK Železničar Pančevo",
+      "ref": "69yj0igv40jefp5ezs23ohmnd--fk-zeleznicar-pancevo",
+      "count": 30
+    },
+    {
+      "name": "Radnički 1923",
+      "ref": "64289--radnicki-1923",
+      "count": 30
+    },
+    {
+      "name": "Partizan",
+      "ref": "50162--partizan",
+      "count": 30
+    },
+    {
+      "name": "Napredak",
+      "ref": "65141--napredak",
+      "count": 30
+    },
+    {
+      "name": "FK Jedinstvo Ub",
+      "ref": "daa2roah2k4uc41yqiwzb6f17--fk-jedinstvo-ub",
+      "count": 30
+    },
+    {
+      "name": "Crvena zvezda",
+      "ref": "50069--crvena-zvezda",
+      "count": 30
+    },
+    {
+      "name": "OFK Beograd",
+      "ref": "65139--ofk-beograd",
+      "count": 30
+    },
+    {
+      "name": "Mladost Lučani",
+      "ref": "64530--mladost-lucani",
+      "count": 30
+    },
+    {
+      "name": "Radnicki Niš",
+      "ref": "52734--radnicki-nis",
+      "count": 30
+    },
+    {
+      "name": "Čukarički",
+      "ref": "60570--cukaricki",
+      "count": 30
+    },
+    {
+      "name": "Spartak Subotica",
+      "ref": "53079--spartak-subotica",
+      "count": 30
+    },
+    {
+      "name": "Novi Pazar",
+      "ref": "2601090--novi-pazar",
+      "count": 30
+    },
+    {
+      "name": "Vojvodina",
+      "ref": "52810--vojvodina",
+      "count": 30
+    },
+    {
+      "name": "FK Tekstilac Odžaci",
+      "ref": "dxd2gnc2seg5zwgyiyzsin0wy--fk-tekstilac-odzaci",
+      "count": 30
+    },
+    {
+      "name": "FK IMT Novi Beograd",
+      "ref": "bxdyd1x6lw23oh0k6ydzbvmis--fk-imt-novi-beograd",
+      "count": 30
+    },
+    {
+      "name": "TSC",
+      "ref": "2610140--tsc",
+      "count": 30
+    }
+  ]
+}

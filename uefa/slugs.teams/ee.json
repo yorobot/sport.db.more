@@ -1,0 +1,56 @@
+{
+  "title": "Estonian First League 2024",
+  "club_count": 10,
+  "clubs": [
+    {
+      "name": "Nõmme United",
+      "ref": "2603023--nomme-united",
+      "count": 36
+    },
+    {
+      "name": "Flora Tallinn",
+      "ref": "59341--flora-tallinn",
+      "count": 36
+    },
+    {
+      "name": "Kalju",
+      "ref": "2600371--kalju",
+      "count": 36
+    },
+    {
+      "name": "Kuressaare",
+      "ref": "75048--kuressaare",
+      "count": 36
+    },
+    {
+      "name": "Trans",
+      "ref": "60565--trans",
+      "count": 36
+    },
+    {
+      "name": "Levadia",
+      "ref": "77482--levadia",
+      "count": 36
+    },
+    {
+      "name": "Tammeka",
+      "ref": "2600100--tammeka",
+      "count": 36
+    },
+    {
+      "name": "Kalev",
+      "ref": "2600097--kalev",
+      "count": 36
+    },
+    {
+      "name": "Paide",
+      "ref": "2600598--paide",
+      "count": 36
+    },
+    {
+      "name": "Vaprus",
+      "ref": "91868--vaprus",
+      "count": 36
+    }
+  ]
+}

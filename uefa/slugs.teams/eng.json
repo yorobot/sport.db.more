@@ -1,0 +1,106 @@
+{
+  "title": "English Premier League 2024/25",
+  "club_count": 20,
+  "clubs": [
+    {
+      "name": "Fulham",
+      "ref": "75386--fulham",
+      "count": 38
+    },
+    {
+      "name": "Man United",
+      "ref": "52682--man-united",
+      "count": 38
+    },
+    {
+      "name": "Liverpool",
+      "ref": "7889--liverpool",
+      "count": 38
+    },
+    {
+      "name": "Ipswich",
+      "ref": "62301--ipswich",
+      "count": 38
+    },
+    {
+      "name": "Wolves",
+      "ref": "53357--wolves",
+      "count": 38
+    },
+    {
+      "name": "Arsenal",
+      "ref": "52280--arsenal",
+      "count": 38
+    },
+    {
+      "name": "Brighton",
+      "ref": "2601105--brighton",
+      "count": 38
+    },
+    {
+      "name": "Everton",
+      "ref": "52281--everton",
+      "count": 38
+    },
+    {
+      "name": "Southampton",
+      "ref": "52923--southampton",
+      "count": 38
+    },
+    {
+      "name": "Newcastle",
+      "ref": "59324--newcastle",
+      "count": 38
+    },
+    {
+      "name": "Bournemouth",
+      "ref": "2601124--bournemouth",
+      "count": 38
+    },
+    {
+      "name": "Nottm Forest",
+      "ref": "52681--nottm-forest",
+      "count": 38
+    },
+    {
+      "name": "Aston Villa",
+      "ref": "52683--aston-villa",
+      "count": 38
+    },
+    {
+      "name": "West Ham",
+      "ref": "53358--west-ham",
+      "count": 38
+    },
+    {
+      "name": "Crystal Palace",
+      "ref": "52916--crystal-palace",
+      "count": 38
+    },
+    {
+      "name": "Brentford",
+      "ref": "2601127--brentford",
+      "count": 38
+    },
+    {
+      "name": "Man City",
+      "ref": "52919--man-city",
+      "count": 38
+    },
+    {
+      "name": "Chelsea",
+      "ref": "52914--chelsea",
+      "count": 38
+    },
+    {
+      "name": "Tottenham",
+      "ref": "1652--tottenham",
+      "count": 38
+    },
+    {
+      "name": "Leicester",
+      "ref": "53577--leicester",
+      "count": 38
+    }
+  ]
+}

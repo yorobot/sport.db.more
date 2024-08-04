@@ -3,34 +3,61 @@ require 'webget'
 
 Webcache.root = '/sports/cache'
 
+Webget.config.sleep = 1  # delay in sec(s)
+
+
 
 ## 3rd party
 require 'nokogiri'
 
 
-url = 'https://www.uefa.com/nationalassociations/teams/50152--malmo/'
-Webget.page( url )
 
+paths = Dir.glob( "./slugs.teams/**/*.json")
+puts "   #{paths.size} datafile(s)"
+
+
+
+paths.each do |path|
+   basename = File.basename( path, File.extname( path ))
+
+
+   data = read_json( path )
+   puts "==> #{data['title']}  -  #{data['clubs'].count} club(s)..."
+
+   ## e.g. https://www.uefa.com/nationalassociations/teams/64277--aberystwyth/
+
+
+   data['clubs'].each do |rec|
+     name = rec['name']
+     ref  = rec['ref'] 
+     team_url = "https://www.uefa.com/nationalassociations/teams/#{ref}/"
+
+     if Webcache.cached?( team_url )
+       puts "  OK #{name}"
+     else
+
+      ##  note - only numbers are / lead to valid team pages
+      ##    61eplt09k35dsd1f168i7jbop--fc-pas-de-la-casa
+
+       if ref =~ /^\d+--/
+         response = Webget.page( team_url )  ## fetch (and cache) html page (via HTTP GET)
+         if response.status.nok?    ## e.g.  HTTP status code != 200
+             puts "!! HTTP ERROR"
+             pp response
+             exit 1
+         end
+        else
+           puts "  !! WARN - no team page for ref >#{ref}<"
+        end
+     end
+   end
+end
 
 
 __END__
 
-## download 2024/25 season
-##  https://www.uefa.com/nationalassociations/aut/domestic/league/1026/
-##
-##  todo/check
-##    follow  redirect https://www.uefa.com/nationalassociations/aut/domestic
-##        to (automagically) get latest league link ??
+88371--atletic-escaldes
 
-LEAGUES = {
-  'at.1' =>  'aut/domestic/league/1026',  # Austrian Bundesliga 2024/25
-  'ch.1' =>  'sui/domestic/league/1055',  # Swiss Super League 2024/25
-
-  'be.1' =>  'bel/domestic/league/1028',  # Belgian First League 2024/25
-  'nl.1' =>  'ned/domestic/league/1032',  # Dutch First Division 2024/25  
-
-  'se.1' =>  'swe/domestic/league/1054',   # Swedish First Division 2024
-}
 
 BASE_URL = 'https://www.uefa.com/nationalassociations'
 
@@ -53,85 +80,6 @@ LEAGUES.each do |league, path|
       end
     end
 end
-
-
-### try get all linked data islands
-
-# path = 'aut/domestic/league/1026' 
-# path = 'sui/domestic/league/1055'
-# path = 'bel/domestic/league/1028'
-# path = 'ned/domestic/league/1032'
-path = 'swe/domestic/league/1054'
-
-
-url = "#{BASE_URL}/#{path}/" 
-html = Webcache.read( url )
-
-pp html[0,300]
-
-
-
-## note: if we use a fragment and NOT a document -
-##   no access to  page head (and meta elements and such)
- 
-doc =  Nokogiri::HTML( html )
-
-
-puts
-puts doc.css( 'title' ).first.text
-
-## get all script sections
-###  type="application/ld+json"
-
-els = doc.css( %Q{script[type*="ld+json"]} )
-
-puts "  #{els.size} script(s) found"
-
-## collect teams
-teams = {}
-
-els.each_with_index do |el,i|
-   data = JSON.parse( el.text )
-   puts "==> #{i+1}"
-   ## pp data
-   
-   if data['@type'] == 'WebPage'
-      ## skip; do nothing
-   elsif data['@type'] == 'SportsEvent'  
-       name   = data['name']
-       status = data['eventStatus']
-       date   = data['startDate']   # e.g. "2025-03-15T00:00:00+00:00",
-      
-       print "%-40s" % name
-       print "  #{status}  #{date}"
-       print "\n"
-
-      [data['awayTeam'],
-       data['homeTeam']
-      ].each do |team|
-           if team['@type'] == 'SportsTeam'
-               rec = teams[ team['name']] ||= { name: team['name'],
-                                                ref:  team['sameAs'],
-                                                count: 0}
-               rec[:count] += 1 
-           else
-              puts "!! ASSERT - SportsTeam expected; got:"
-              pp team
-              exit 1
-           end
-        
-      end
-   else
-     puts "!! ASSERT - SportsTeam|WebPage expected; got:"
-     pp data
-     exit 1
-   end
-end
-
-
-puts
-puts "#{teams.size} team(s):"
-pp teams.values
 
 
 puts "bye"

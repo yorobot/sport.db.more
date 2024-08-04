@@ -1,0 +1,86 @@
+{
+  "title": "Romanian First Division 2024/25",
+  "club_count": 16,
+  "clubs": [
+    {
+      "name": "Unirea Slobozia",
+      "ref": "2609392--unirea-slobozia",
+      "count": 30
+    },
+    {
+      "name": "FCV Farul Constanţa",
+      "ref": "3p3r3bt8hqpia1j9kr9olotwq--fcv-farul-constanta",
+      "count": 30
+    },
+    {
+      "name": "U Craiova",
+      "ref": "2606501--u-craiova",
+      "count": 30
+    },
+    {
+      "name": "Hermannstadt",
+      "ref": "2609390--hermannstadt",
+      "count": 30
+    },
+    {
+      "name": "Poli Iaşi",
+      "ref": "88130--poli-iasi",
+      "count": 30
+    },
+    {
+      "name": "Sepsi",
+      "ref": "2608575--sepsi",
+      "count": 30
+    },
+    {
+      "name": "Rapid Bucureşti",
+      "ref": "59039--rapid-bucuresti",
+      "count": 30
+    },
+    {
+      "name": "UTA",
+      "ref": "64241--uta",
+      "count": 30
+    },
+    {
+      "name": "U Cluj",
+      "ref": "53025--u-cluj",
+      "count": 30
+    },
+    {
+      "name": "FCSB",
+      "ref": "50065--fcsb",
+      "count": 30
+    },
+    {
+      "name": "Dinamo Bucureşti",
+      "ref": "50098--dinamo-bucuresti",
+      "count": 30
+    },
+    {
+      "name": "CFR Cluj",
+      "ref": "88131--cfr-cluj",
+      "count": 30
+    },
+    {
+      "name": "Oţelul",
+      "ref": "50151--otelul",
+      "count": 30
+    },
+    {
+      "name": "Botoşani",
+      "ref": "2605104--botosani",
+      "count": 30
+    },
+    {
+      "name": "AS FC Buzău",
+      "ref": "1lhq8vd2nxhe058qh8goyyusq--as-fc-buzau",
+      "count": 30
+    },
+    {
+      "name": "Petrolul 52",
+      "ref": "2609391--petrolul-52",
+      "count": 30
+    }
+  ]
+}

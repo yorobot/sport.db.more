@@ -1,0 +1,56 @@
+{
+  "title": "Irish Premier Division 2024",
+  "club_count": 10,
+  "clubs": [
+    {
+      "name": "Sligo",
+      "ref": "52660--sligo",
+      "count": 36
+    },
+    {
+      "name": "Bohemians",
+      "ref": "52375--bohemians",
+      "count": 36
+    },
+    {
+      "name": "Drogheda",
+      "ref": "52378--drogheda",
+      "count": 36
+    },
+    {
+      "name": "Derry",
+      "ref": "50086--derry",
+      "count": 36
+    },
+    {
+      "name": "St Patrick's",
+      "ref": "50133--st-patrick-s",
+      "count": 36
+    },
+    {
+      "name": "Galway",
+      "ref": "2606387--galway",
+      "count": 36
+    },
+    {
+      "name": "Shelbourne",
+      "ref": "53020--shelbourne",
+      "count": 36
+    },
+    {
+      "name": "Waterford",
+      "ref": "54188--waterford",
+      "count": 36
+    },
+    {
+      "name": "Dundalk",
+      "ref": "50055--dundalk",
+      "count": 36
+    },
+    {
+      "name": "Shamrock Rovers",
+      "ref": "52381--shamrock-rovers",
+      "count": 36
+    }
+  ]
+}

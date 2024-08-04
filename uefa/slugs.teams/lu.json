@@ -1,0 +1,86 @@
+{
+  "title": "Luxembourger First Division 2024/25",
+  "club_count": 16,
+  "clubs": [
+    {
+      "name": "Racing Union",
+      "ref": "88135--racing-union",
+      "count": 30
+    },
+    {
+      "name": "Rodange",
+      "ref": "75806--rodange",
+      "count": 30
+    },
+    {
+      "name": "Wiltz",
+      "ref": "64195--wiltz",
+      "count": 30
+    },
+    {
+      "name": "Hostert",
+      "ref": "2603093--hostert",
+      "count": 30
+    },
+    {
+      "name": "Fola",
+      "ref": "7607--fola",
+      "count": 30
+    },
+    {
+      "name": "Rosport",
+      "ref": "80404--rosport",
+      "count": 30
+    },
+    {
+      "name": "Diddeleng",
+      "ref": "59028--diddeleng",
+      "count": 30
+    },
+    {
+      "name": "SC Bettembourg",
+      "ref": "2610073--sc-bettembourg",
+      "count": 30
+    },
+    {
+      "name": "Mondorf-les-Bains",
+      "ref": "2603085--mondorf-les-bains",
+      "count": 30
+    },
+    {
+      "name": "Jeunesse Esch",
+      "ref": "50059--jeunesse-esch",
+      "count": 30
+    },
+    {
+      "name": "Union Titus",
+      "ref": "64193--union-titus",
+      "count": 30
+    },
+    {
+      "name": "Swift Hesper",
+      "ref": "52977--swift-hesper",
+      "count": 30
+    },
+    {
+      "name": "Progrès",
+      "ref": "52311--progres",
+      "count": 30
+    },
+    {
+      "name": "Mondercange",
+      "ref": "70419--mondercange",
+      "count": 30
+    },
+    {
+      "name": "UNA Strassen",
+      "ref": "2603092--una-strassen",
+      "count": 30
+    },
+    {
+      "name": "Differdange",
+      "ref": "52309--differdange",
+      "count": 30
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "title": "Scottish Premiership 2024/25",
+  "club_count": 12,
+  "clubs": [
+    {
+      "name": "Rangers",
+      "ref": "50121--rangers",
+      "count": 33
+    },
+    {
+      "name": "Hearts",
+      "ref": "50120--hearts",
+      "count": 33
+    },
+    {
+      "name": "Ross County",
+      "ref": "2601342--ross-county",
+      "count": 33
+    },
+    {
+      "name": "Motherwell",
+      "ref": "53035--motherwell",
+      "count": 33
+    },
+    {
+      "name": "Dundee",
+      "ref": "53033--dundee",
+      "count": 33
+    },
+    {
+      "name": "Dundee United",
+      "ref": "50079--dundee-united",
+      "count": 33
+    },
+    {
+      "name": "Hibernian",
+      "ref": "52821--hibernian",
+      "count": 33
+    },
+    {
+      "name": "St Mirren",
+      "ref": "52552--st-mirren",
+      "count": 33
+    },
+    {
+      "name": "Kilmarnock",
+      "ref": "62178--kilmarnock",
+      "count": 33
+    },
+    {
+      "name": "Celtic",
+      "ref": "50050--celtic",
+      "count": 33
+    },
+    {
+      "name": "Aberdeen",
+      "ref": "50122--aberdeen",
+      "count": 33
+    },
+    {
+      "name": "St Johnstone",
+      "ref": "64249--st-johnstone",
+      "count": 33
+    }
+  ]
+}

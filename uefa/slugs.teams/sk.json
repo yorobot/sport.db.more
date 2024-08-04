@@ -1,0 +1,66 @@
+{
+  "title": "Slovak First League 2024/25",
+  "club_count": 12,
+  "clubs": [
+    {
+      "name": "Michalovce",
+      "ref": "2602944--michalovce",
+      "count": 22
+    },
+    {
+      "name": "Skalica",
+      "ref": "2605757--skalica",
+      "count": 22
+    },
+    {
+      "name": "Žilina",
+      "ref": "61601--zilina",
+      "count": 22
+    },
+    {
+      "name": "Podbrezová",
+      "ref": "2600634--podbrezova",
+      "count": 22
+    },
+    {
+      "name": "Slovan Bratislava",
+      "ref": "52797--slovan-bratislava",
+      "count": 22
+    },
+    {
+      "name": "KFC Komárno",
+      "ref": "2610876--kfc-komarno",
+      "count": 22
+    },
+    {
+      "name": "Dunajská Streda",
+      "ref": "50156--dunajska-streda",
+      "count": 22
+    },
+    {
+      "name": "Košice",
+      "ref": "59029--kosice",
+      "count": 22
+    },
+    {
+      "name": "Trenčín",
+      "ref": "64315--trencin",
+      "count": 22
+    },
+    {
+      "name": "Spartak Trnava",
+      "ref": "52904--spartak-trnava",
+      "count": 22
+    },
+    {
+      "name": "MFK Dukla Banská Bystrica",
+      "ref": "4wplsg3qopnhc3v741nbme1re--mfk-dukla-banska-bystrica",
+      "count": 22
+    },
+    {
+      "name": "Ružomberok",
+      "ref": "64319--ruzomberok",
+      "count": 22
+    }
+  ]
+}

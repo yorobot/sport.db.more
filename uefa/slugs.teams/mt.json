@@ -1,0 +1,66 @@
+{
+  "title": "Maltese Premier League 2024/25",
+  "club_count": 12,
+  "clubs": [
+    {
+      "name": "Birkirkara",
+      "ref": "62171--birkirkara",
+      "count": 11
+    },
+    {
+      "name": "Balzan",
+      "ref": "84734--balzan",
+      "count": 11
+    },
+    {
+      "name": "Mosta",
+      "ref": "79947--mosta",
+      "count": 11
+    },
+    {
+      "name": "Sliema",
+      "ref": "50141--sliema",
+      "count": 11
+    },
+    {
+      "name": "Melita",
+      "ref": "2601998--melita",
+      "count": 11
+    },
+    {
+      "name": "Floriana",
+      "ref": "50092--floriana",
+      "count": 11
+    },
+    {
+      "name": "Hibernians",
+      "ref": "52640--hibernians",
+      "count": 11
+    },
+    {
+      "name": "Naxxar",
+      "ref": "52978--naxxar",
+      "count": 11
+    },
+    {
+      "name": "Saint Patrick FC",
+      "ref": "2604375--saint-patrick-fc",
+      "count": 11
+    },
+    {
+      "name": "Hamrun Spartans ",
+      "ref": "50060--hamrun-spartans",
+      "count": 11
+    },
+    {
+      "name": "Gżira",
+      "ref": "64201--gzira",
+      "count": 11
+    },
+    {
+      "name": "Marsaxlokk",
+      "ref": "79948--marsaxlokk",
+      "count": 11
+    }
+  ]
+}

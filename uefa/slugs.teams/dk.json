@@ -1,0 +1,66 @@
+{
+  "title": "Danish Super League 2024/25",
+  "club_count": 12,
+  "clubs": [
+    {
+      "name": "Midtjylland",
+      "ref": "75795--midtjylland",
+      "count": 22
+    },
+    {
+      "name": "AGF",
+      "ref": "50019--agf",
+      "count": 22
+    },
+    {
+      "name": "AaB",
+      "ref": "54186--aab",
+      "count": 22
+    },
+    {
+      "name": "Nordsjælland",
+      "ref": "79940--nordsj%C3%A6lland",
+      "count": 22
+    },
+    {
+      "name": "SønderjyskE",
+      "ref": "89694--sonderjyske",
+      "count": 22
+    },
+    {
+      "name": "Silkeborg",
+      "ref": "52912--silkeborg",
+      "count": 22
+    },
+    {
+      "name": "Randers",
+      "ref": "64146--randers",
+      "count": 22
+    },
+    {
+      "name": "VB",
+      "ref": "52712--vb",
+      "count": 22
+    },
+    {
+      "name": "Brøndby",
+      "ref": "50021--brondby",
+      "count": 22
+    },
+    {
+      "name": "Viborg",
+      "ref": "69570--viborg",
+      "count": 22
+    },
+    {
+      "name": "Copenhagen",
+      "ref": "52709--copenhagen",
+      "count": 22
+    },
+    {
+      "name": "Lyngby",
+      "ref": "50020--lyngby",
+      "count": 22
+    }
+  ]
+}

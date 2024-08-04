@@ -1,0 +1,71 @@
+{
+  "title": "Kazakh Premier League 2024",
+  "club_count": 13,
+  "clubs": [
+    {
+      "name": "FK Zhenys",
+      "ref": "3ylpmfsjblmm6lv2plo4la6tw--fk-zhenys",
+      "count": 24
+    },
+    {
+      "name": "Astana",
+      "ref": "2600605--astana",
+      "count": 24
+    },
+    {
+      "name": "Aktobe",
+      "ref": "79973--aktobe",
+      "count": 24
+    },
+    {
+      "name": "Kaysar",
+      "ref": "79971--kaysar",
+      "count": 24
+    },
+    {
+      "name": "Kyzylzhar",
+      "ref": "79967--kyzylzhar",
+      "count": 24
+    },
+    {
+      "name": "Kairat",
+      "ref": "79970--kairat",
+      "count": 24
+    },
+    {
+      "name": "Atyrau",
+      "ref": "79961--atyrau",
+      "count": 24
+    },
+    {
+      "name": "FK Yelimay Semey",
+      "ref": "d5b9o32ttzdzppif30h6jgqok--fk-yelimay-semey",
+      "count": 24
+    },
+    {
+      "name": "Shakhter",
+      "ref": "79968--shakhter",
+      "count": 24
+    },
+    {
+      "name": "Ordabasy",
+      "ref": "82825--ordabasy",
+      "count": 24
+    },
+    {
+      "name": "FK Turan Turkistan",
+      "ref": "atfzou0tmslnycdft328nwgh6--fk-turan-turkistan",
+      "count": 24
+    },
+    {
+      "name": "Tobol",
+      "ref": "79969--tobol",
+      "count": 24
+    },
+    {
+      "name": "Zhetysu",
+      "ref": "82828--zhetysu",
+      "count": 24
+    }
+  ]
+}

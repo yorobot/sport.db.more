@@ -1,0 +1,86 @@
+{
+  "title": "Belarusian Premier League 2024",
+  "club_count": 16,
+  "clubs": [
+    {
+      "name": "Dinamo Brest",
+      "ref": "64374--dinamo-brest",
+      "count": 30
+    },
+    {
+      "name": "Isloch",
+      "ref": "2604702--isloch",
+      "count": 30
+    },
+    {
+      "name": "Dnepr",
+      "ref": "68224--dnepr",
+      "count": 30
+    },
+    {
+      "name": "Slavia-Mozyr",
+      "ref": "60605--slavia-mozyr",
+      "count": 30
+    },
+    {
+      "name": "BATE Borisov",
+      "ref": "66168--bate-borisov",
+      "count": 30
+    },
+    {
+      "name": "Minsk",
+      "ref": "2600108--minsk",
+      "count": 30
+    },
+    {
+      "name": "Naftan",
+      "ref": "64372--naftan",
+      "count": 30
+    },
+    {
+      "name": "Neman",
+      "ref": "59024--neman",
+      "count": 30
+    },
+    {
+      "name": "Smorgon",
+      "ref": "2600098--smorgon",
+      "count": 30
+    },
+    {
+      "name": "Dinamo Minsk",
+      "ref": "50161--dinamo-minsk",
+      "count": 30
+    },
+    {
+      "name": "FC Torpedo",
+      "ref": "79551--fc-torpedo",
+      "count": 30
+    },
+    {
+      "name": "Arsenal Dzerzhinsk",
+      "ref": "2610531--arsenal-dzerzhinsk",
+      "count": 30
+    },
+    {
+      "name": "Gomel",
+      "ref": "66169--gomel",
+      "count": 30
+    },
+    {
+      "name": "Slutsk",
+      "ref": "2601270--slutsk",
+      "count": 30
+    },
+    {
+      "name": "Vitebsk",
+      "ref": "64296--vitebsk",
+      "count": 30
+    },
+    {
+      "name": "Shakhtyor",
+      "ref": "64375--shakhtyor",
+      "count": 30
+    }
+  ]
+}

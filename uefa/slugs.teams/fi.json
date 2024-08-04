@@ -1,0 +1,66 @@
+{
+  "title": "Finnish First Division 2024",
+  "club_count": 12,
+  "clubs": [
+    {
+      "name": "Inter Turku",
+      "ref": "64161--inter-turku",
+      "count": 22
+    },
+    {
+      "name": "Gnistan",
+      "ref": "2608730--gnistan",
+      "count": 22
+    },
+    {
+      "name": "Lahti",
+      "ref": "50082--lahti",
+      "count": 22
+    },
+    {
+      "name": "Ilves",
+      "ref": "2602511--ilves",
+      "count": 22
+    },
+    {
+      "name": "Oulu",
+      "ref": "52928--oulu",
+      "count": 22
+    },
+    {
+      "name": "SJK",
+      "ref": "2602520--sjk",
+      "count": 22
+    },
+    {
+      "name": "EIF",
+      "ref": "2602514--eif",
+      "count": 22
+    },
+    {
+      "name": "Mariehamn",
+      "ref": "89248--mariehamn",
+      "count": 22
+    },
+    {
+      "name": "VPS",
+      "ref": "64390--vps",
+      "count": 22
+    },
+    {
+      "name": "Haka",
+      "ref": "52802--haka",
+      "count": 22
+    },
+    {
+      "name": "HJK",
+      "ref": "50052--hjk",
+      "count": 22
+    },
+    {
+      "name": "KuPS",
+      "ref": "52350--kups",
+      "count": 22
+    }
+  ]
+}

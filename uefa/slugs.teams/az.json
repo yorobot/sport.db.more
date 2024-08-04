@@ -1,0 +1,56 @@
+{
+  "title": "Azerbaijani Premier League 2024/25",
+  "club_count": 10,
+  "clubs": [
+    {
+      "name": "Qarabağ",
+      "ref": "60609--qarabag",
+      "count": 36
+    },
+    {
+      "name": "Araz FK Naxçıvan",
+      "ref": "7a2tbo29mvdo54wusbqp6i0wg--araz-fk-naxcivan",
+      "count": 36
+    },
+    {
+      "name": "Turan",
+      "ref": "59319--turan",
+      "count": 36
+    },
+    {
+      "name": "Neftçi",
+      "ref": "59890--neftci",
+      "count": 36
+    },
+    {
+      "name": "Käpäz",
+      "ref": "59889--kapaz",
+      "count": 36
+    },
+    {
+      "name": "Sumqayıt",
+      "ref": "2603921--sumqayit",
+      "count": 36
+    },
+    {
+      "name": "Şamaxı",
+      "ref": "74072--samaxi",
+      "count": 36
+    },
+    {
+      "name": "Sabah",
+      "ref": "2609356--sabah",
+      "count": 36
+    },
+    {
+      "name": "Sabail",
+      "ref": "2608569--sabail",
+      "count": 36
+    },
+    {
+      "name": "Zirä",
+      "ref": "2607480--zira",
+      "count": 36
+    }
+  ]
+}

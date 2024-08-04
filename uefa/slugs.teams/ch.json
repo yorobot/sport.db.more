@@ -1,0 +1,66 @@
+{
+  "title": "Swiss Super League 2024/25",
+  "club_count": 12,
+  "clubs": [
+    {
+      "name": "Grasshoppers",
+      "ref": "50004--grasshoppers",
+      "count": 22
+    },
+    {
+      "name": "Lugano",
+      "ref": "8538--lugano",
+      "count": 22
+    },
+    {
+      "name": "Zürich",
+      "ref": "51150--zurich",
+      "count": 22
+    },
+    {
+      "name": "Yverdon",
+      "ref": "73931--yverdon",
+      "count": 22
+    },
+    {
+      "name": "St. Gallen",
+      "ref": "51151--st-gallen",
+      "count": 22
+    },
+    {
+      "name": "Winterthur",
+      "ref": "77919--winterthur",
+      "count": 22
+    },
+    {
+      "name": "Sion",
+      "ref": "52824--sion",
+      "count": 22
+    },
+    {
+      "name": "Young Boys",
+      "ref": "50031--young-boys",
+      "count": 22
+    },
+    {
+      "name": "Basel",
+      "ref": "59856--basel",
+      "count": 22
+    },
+    {
+      "name": "Lausanne-Sport",
+      "ref": "4251--lausanne-sport",
+      "count": 22
+    },
+    {
+      "name": "Servette",
+      "ref": "50008--servette",
+      "count": 22
+    },
+    {
+      "name": "Luzern",
+      "ref": "52808--luzern",
+      "count": 22
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "title": "Russian Premier League 2024/25",
+  "club_count": 16,
+  "clubs": [
+    {
+      "name": "FK Akron Togliatti",
+      "ref": "4limsu2almsie8d6vw7b4amwa--fk-akron-togliatti",
+      "count": 30
+    },
+    {
+      "name": "Lokomotiv Moskva",
+      "ref": "53065--lokomotiv-moskva",
+      "count": 30
+    },
+    {
+      "name": "Zenit",
+      "ref": "52826--zenit",
+      "count": 30
+    },
+    {
+      "name": "Krylya Sovetov",
+      "ref": "58954--krylya-sovetov",
+      "count": 30
+    },
+    {
+      "name": "CSKA Moskva",
+      "ref": "54266--cska-moskva",
+      "count": 30
+    },
+    {
+      "name": "Rostov",
+      "ref": "64500--rostov",
+      "count": 30
+    },
+    {
+      "name": "Fakel",
+      "ref": "2603841--fakel",
+      "count": 30
+    },
+    {
+      "name": "Dynamo Moscow",
+      "ref": "52704--dynamo-moscow",
+      "count": 30
+    },
+    {
+      "name": "Spartak Moskva",
+      "ref": "50068--spartak-moskva",
+      "count": 30
+    },
+    {
+      "name": "Orenburg",
+      "ref": "2605047--orenburg",
+      "count": 30
+    },
+    {
+      "name": "Krasnodar",
+      "ref": "2601038--krasnodar",
+      "count": 30
+    },
+    {
+      "name": "Akhmat",
+      "ref": "86795--akhmat",
+      "count": 30
+    },
+    {
+      "name": "FK Dynamo Makhachkala",
+      "ref": "f1b4t024a0u37ojeja2una7ai--fk-dynamo-makhachkala",
+      "count": 30
+    },
+    {
+      "name": "Khimki",
+      "ref": "2600096--khimki",
+      "count": 30
+    },
+    {
+      "name": "Rubin",
+      "ref": "82818--rubin",
+      "count": 30
+    },
+    {
+      "name": "Pari NN",
+      "ref": "2609353--pari-nn",
+      "count": 30
+    }
+  ]
+}

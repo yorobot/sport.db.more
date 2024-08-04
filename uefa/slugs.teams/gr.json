@@ -1,0 +1,76 @@
+{
+  "title": "Greek Super League 2024/25",
+  "club_count": 14,
+  "clubs": [
+    {
+      "name": "Olympiacos",
+      "ref": "2610--olympiacos",
+      "count": 26
+    },
+    {
+      "name": "Volos",
+      "ref": "2610134--volos",
+      "count": 26
+    },
+    {
+      "name": "Panserraikos",
+      "ref": "74213--panserraikos",
+      "count": 26
+    },
+    {
+      "name": "PAOK",
+      "ref": "50130--paok",
+      "count": 26
+    },
+    {
+      "name": "Kallithea",
+      "ref": "79943--kallithea",
+      "count": 26
+    },
+    {
+      "name": "Levadiakos",
+      "ref": "89703--levadiakos",
+      "count": 26
+    },
+    {
+      "name": "Asteras",
+      "ref": "2600293--asteras",
+      "count": 26
+    },
+    {
+      "name": "Panathinaikos",
+      "ref": "50084--panathinaikos",
+      "count": 26
+    },
+    {
+      "name": "Aris Thessaloniki ",
+      "ref": "52949--aris-thessaloniki",
+      "count": 26
+    },
+    {
+      "name": "Atromitos",
+      "ref": "84641--atromitos",
+      "count": 26
+    },
+    {
+      "name": "OFI",
+      "ref": "52953--ofi",
+      "count": 26
+    },
+    {
+      "name": "AEK Athens",
+      "ref": "50129--aek-athens",
+      "count": 26
+    },
+    {
+      "name": "Lamia",
+      "ref": "2607719--lamia",
+      "count": 26
+    },
+    {
+      "name": "Panetolikos",
+      "ref": "2601227--panetolikos",
+      "count": 26
+    }
+  ]
+}

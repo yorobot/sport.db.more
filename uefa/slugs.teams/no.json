@@ -1,0 +1,86 @@
+{
+  "title": "Norwegian Premier Division 2024",
+  "club_count": 16,
+  "clubs": [
+    {
+      "name": "Haugesund",
+      "ref": "64214--haugesund",
+      "count": 30
+    },
+    {
+      "name": "Odd",
+      "ref": "71256--odd",
+      "count": 30
+    },
+    {
+      "name": "Bodø/Glimt",
+      "ref": "59333--bodo-glimt",
+      "count": 30
+    },
+    {
+      "name": "Fredrikstad",
+      "ref": "64211--fredrikstad",
+      "count": 30
+    },
+    {
+      "name": "Strømsgodset",
+      "ref": "57485--stromsgodset",
+      "count": 30
+    },
+    {
+      "name": "Molde",
+      "ref": "50142--molde",
+      "count": 30
+    },
+    {
+      "name": "Brann",
+      "ref": "52770--brann",
+      "count": 30
+    },
+    {
+      "name": "Tromsø",
+      "ref": "53001--tromso",
+      "count": 30
+    },
+    {
+      "name": "Kristiansund",
+      "ref": "2602569--kristiansund",
+      "count": 30
+    },
+    {
+      "name": "Lillestrøm",
+      "ref": "52314--lillestrom",
+      "count": 30
+    },
+    {
+      "name": "Sandefjord",
+      "ref": "91865--sandefjord",
+      "count": 30
+    },
+    {
+      "name": "Rosenborg",
+      "ref": "52806--rosenborg",
+      "count": 30
+    },
+    {
+      "name": "Sarpsborg",
+      "ref": "2604486--sarpsborg",
+      "count": 30
+    },
+    {
+      "name": "Viking",
+      "ref": "52319--viking",
+      "count": 30
+    },
+    {
+      "name": "HamKam",
+      "ref": "85937--hamkam",
+      "count": 30
+    },
+    {
+      "name": "KFUM",
+      "ref": "2602571--kfum",
+      "count": 30
+    }
+  ]
+}

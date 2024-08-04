@@ -1,0 +1,86 @@
+{
+  "title": "Belgian First League 2024/25",
+  "club_count": 16,
+  "clubs": [
+    {
+      "name": "Mechelen",
+      "ref": "50075--mechelen",
+      "count": 30
+    },
+    {
+      "name": "Club Brugge",
+      "ref": "50043--club-brugge",
+      "count": 30
+    },
+    {
+      "name": "Union SG",
+      "ref": "2605058--union-sg",
+      "count": 30
+    },
+    {
+      "name": "Dender",
+      "ref": "2600281--dender",
+      "count": 30
+    },
+    {
+      "name": "Leuven",
+      "ref": "2601220--leuven",
+      "count": 30
+    },
+    {
+      "name": "Beerschot Wilrijk",
+      "ref": "2610263--beerschot-wilrijk",
+      "count": 30
+    },
+    {
+      "name": "Sint-Truiden",
+      "ref": "52883--sint-truiden",
+      "count": 30
+    },
+    {
+      "name": "Anderlecht",
+      "ref": "50074--anderlecht",
+      "count": 30
+    },
+    {
+      "name": "Standard Liège",
+      "ref": "52165--standard-liege",
+      "count": 30
+    },
+    {
+      "name": "Genk",
+      "ref": "61582--genk",
+      "count": 30
+    },
+    {
+      "name": "Gent",
+      "ref": "4608--gent",
+      "count": 30
+    },
+    {
+      "name": "Kortrijk",
+      "ref": "68495--kortrijk",
+      "count": 30
+    },
+    {
+      "name": "Antwerp",
+      "ref": "50113--antwerp",
+      "count": 30
+    },
+    {
+      "name": "Charleroi",
+      "ref": "52886--charleroi",
+      "count": 30
+    },
+    {
+      "name": "Cercle Brugge",
+      "ref": "52884--cercle-brugge",
+      "count": 30
+    },
+    {
+      "name": "Westerlo",
+      "ref": "64124--westerlo",
+      "count": 30
+    }
+  ]
+}

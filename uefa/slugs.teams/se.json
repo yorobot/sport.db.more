@@ -1,0 +1,86 @@
+{
+  "title": "Swedish First Division 2024",
+  "club_count": 16,
+  "clubs": [
+    {
+      "name": "Malmö",
+      "ref": "50152--malmo",
+      "count": 30
+    },
+    {
+      "name": "Norrköping",
+      "ref": "50099--norrkoping",
+      "count": 30
+    },
+    {
+      "name": "Kalmar",
+      "ref": "54187--kalmar",
+      "count": 30
+    },
+    {
+      "name": "Hammarby",
+      "ref": "52343--hammarby",
+      "count": 30
+    },
+    {
+      "name": "Brommapojkarna",
+      "ref": "2600094--brommapojkarna",
+      "count": 30
+    },
+    {
+      "name": "GAIS",
+      "ref": "91862--gais",
+      "count": 30
+    },
+    {
+      "name": "Mjällby",
+      "ref": "74233--mjallby",
+      "count": 30
+    },
+    {
+      "name": "Häcken",
+      "ref": "69621--hacken",
+      "count": 30
+    },
+    {
+      "name": "Djurgården",
+      "ref": "52809--djurgarden",
+      "count": 30
+    },
+    {
+      "name": "Göteborg",
+      "ref": "50066--goteborg",
+      "count": 30
+    },
+    {
+      "name": "Halmstad",
+      "ref": "53048--halmstad",
+      "count": 30
+    },
+    {
+      "name": "Sirius",
+      "ref": "2603704--sirius",
+      "count": 30
+    },
+    {
+      "name": "Västerås",
+      "ref": "64260--vasteras",
+      "count": 30
+    },
+    {
+      "name": "AIK",
+      "ref": "52341--aik",
+      "count": 30
+    },
+    {
+      "name": "Värnamo",
+      "ref": "2603706--varnamo",
+      "count": 30
+    },
+    {
+      "name": "Elfsborg",
+      "ref": "52344--elfsborg",
+      "count": 30
+    }
+  ]
+}

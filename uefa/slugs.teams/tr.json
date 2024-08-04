@@ -1,0 +1,101 @@
+{
+  "title": "Turkish Super League 2024/25",
+  "club_count": 19,
+  "clubs": [
+    {
+      "name": "Hatayspor",
+      "ref": "2607118--hatayspor",
+      "count": 36
+    },
+    {
+      "name": "Galatasaray",
+      "ref": "50067--galatasaray",
+      "count": 36
+    },
+    {
+      "name": "Konyaspor",
+      "ref": "84515--konyaspor",
+      "count": 36
+    },
+    {
+      "name": "Kasımpaşa",
+      "ref": "2600289--kasimpasa",
+      "count": 36
+    },
+    {
+      "name": "Göztepe Izmir",
+      "ref": "2605280--goztepe-izmir",
+      "count": 36
+    },
+    {
+      "name": "Antalyaspor",
+      "ref": "60532--antalyaspor",
+      "count": 36
+    },
+    {
+      "name": "Adana Demirspor",
+      "ref": "2604478--adana-demirspor",
+      "count": 36
+    },
+    {
+      "name": "Fenerbahçe",
+      "ref": "52692--fenerbahce",
+      "count": 36
+    },
+    {
+      "name": "Trabzonspor",
+      "ref": "52731--trabzonspor",
+      "count": 36
+    },
+    {
+      "name": "Sivasspor",
+      "ref": "89728--sivasspor",
+      "count": 36
+    },
+    {
+      "name": "Eyuspor",
+      "ref": "2604480--eyuspor",
+      "count": 36
+    },
+    {
+      "name": "Alanyaspor",
+      "ref": "2607117--alanyaspor",
+      "count": 36
+    },
+    {
+      "name": "Beşiktaş",
+      "ref": "50157--besiktas",
+      "count": 36
+    },
+    {
+      "name": "Samsunspor",
+      "ref": "53060--samsunspor",
+      "count": 36
+    },
+    {
+      "name": "İstanbul Başakşehir",
+      "ref": "2600288--istanbul-basaksehir",
+      "count": 36
+    },
+    {
+      "name": "Rizespor",
+      "ref": "2601435--rizespor",
+      "count": 36
+    },
+    {
+      "name": "Gaziantep",
+      "ref": "2603043--gaziantep",
+      "count": 36
+    },
+    {
+      "name": "Bodrum Belediyesi Bodrumspor",
+      "ref": "2607689--bodrum-belediyesi-bodrumspor",
+      "count": 36
+    },
+    {
+      "name": "Kayserispor",
+      "ref": "88359--kayserispor",
+      "count": 36
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "title": "Spanish Liga 2024/25",
+  "club_count": 20,
+  "clubs": [
+    {
+      "name": "Getafe",
+      "ref": "87960--getafe",
+      "count": 38
+    },
+    {
+      "name": "Athletic Club",
+      "ref": "50125--athletic-club",
+      "count": 38
+    },
+    {
+      "name": "Girona",
+      "ref": "2602798--girona",
+      "count": 38
+    },
+    {
+      "name": "Real Betis",
+      "ref": "52265--real-betis",
+      "count": 38
+    },
+    {
+      "name": "Alavés",
+      "ref": "69619--alaves",
+      "count": 38
+    },
+    {
+      "name": "Celta",
+      "ref": "53043--celta",
+      "count": 38
+    },
+    {
+      "name": "Sevilla",
+      "ref": "52714--sevilla",
+      "count": 38
+    },
+    {
+      "name": "Las Palmas",
+      "ref": "64251--las-palmas",
+      "count": 38
+    },
+    {
+      "name": "Leganés",
+      "ref": "2602783--leganes",
+      "count": 38
+    },
+    {
+      "name": "Osasuna",
+      "ref": "53042--osasuna",
+      "count": 38
+    },
+    {
+      "name": "Barcelona",
+      "ref": "50080--barcelona",
+      "count": 38
+    },
+    {
+      "name": "Valencia",
+      "ref": "52268--valencia",
+      "count": 38
+    },
+    {
+      "name": "Rayo Vallecano",
+      "ref": "74070--rayo-vallecano",
+      "count": 38
+    },
+    {
+      "name": "Real Sociedad",
+      "ref": "50123--real-sociedad",
+      "count": 38
+    },
+    {
+      "name": "Real Madrid",
+      "ref": "50051--real-madrid",
+      "count": 38
+    },
+    {
+      "name": "Mallorca",
+      "ref": "53044--mallorca",
+      "count": 38
+    },
+    {
+      "name": "Espanyol",
+      "ref": "54189--espanyol",
+      "count": 38
+    },
+    {
+      "name": "Valladolid",
+      "ref": "52801--valladolid",
+      "count": 38
+    },
+    {
+      "name": "Atlético de Madrid",
+      "ref": "50124--atletico-de-madrid",
+      "count": 38
+    },
+    {
+      "name": "Villarreal",
+      "ref": "70691--villarreal",
+      "count": 38
+    }
+  ]
+}

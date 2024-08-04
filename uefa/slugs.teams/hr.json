@@ -1,0 +1,56 @@
+{
+  "title": "Croatian First League 2024/25",
+  "club_count": 10,
+  "clubs": [
+    {
+      "name": "Istra 1961",
+      "ref": "73518--istra-1961",
+      "count": 36
+    },
+    {
+      "name": "Dinamo Zagreb",
+      "ref": "50164--dinamo-zagreb",
+      "count": 36
+    },
+    {
+      "name": "Varaždin",
+      "ref": "60514--varazdin",
+      "count": 36
+    },
+    {
+      "name": "Gorica",
+      "ref": "2603724--gorica",
+      "count": 36
+    },
+    {
+      "name": "Lokomotiva Zagreb",
+      "ref": "2600783--lokomotiva-zagreb",
+      "count": 36
+    },
+    {
+      "name": "Rijeka",
+      "ref": "52356--rijeka",
+      "count": 36
+    },
+    {
+      "name": "Šibenik",
+      "ref": "64384--sibenik",
+      "count": 36
+    },
+    {
+      "name": "Osijek",
+      "ref": "53082--osijek",
+      "count": 36
+    },
+    {
+      "name": "Slaven",
+      "ref": "64321--slaven",
+      "count": 36
+    },
+    {
+      "name": "Hajduk Split",
+      "ref": "52359--hajduk-split",
+      "count": 36
+    }
+  ]
+}

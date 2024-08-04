@@ -1,0 +1,66 @@
+{
+  "title": "Northern Irish Premiership 2024/25",
+  "club_count": 12,
+  "clubs": [
+    {
+      "name": "Crusaders",
+      "ref": "52992--crusaders",
+      "count": 33
+    },
+    {
+      "name": "Glentoran",
+      "ref": "50056--glentoran",
+      "count": 33
+    },
+    {
+      "name": "Linfield",
+      "ref": "50134--linfield",
+      "count": 33
+    },
+    {
+      "name": "Ballymena",
+      "ref": "52374--ballymena",
+      "count": 33
+    },
+    {
+      "name": "Glenavon",
+      "ref": "50087--glenavon",
+      "count": 33
+    },
+    {
+      "name": "Carrick",
+      "ref": "52990--carrick",
+      "count": 33
+    },
+    {
+      "name": "Coleraine",
+      "ref": "52377--coleraine",
+      "count": 33
+    },
+    {
+      "name": "Dungannon",
+      "ref": "85008--dungannon",
+      "count": 33
+    },
+    {
+      "name": "Loughgall",
+      "ref": "88198--loughgall",
+      "count": 33
+    },
+    {
+      "name": "Larne",
+      "ref": "85009--larne",
+      "count": 33
+    },
+    {
+      "name": "Portadown",
+      "ref": "52996--portadown",
+      "count": 33
+    },
+    {
+      "name": "Cliftonville",
+      "ref": "52991--cliftonville",
+      "count": 33
+    }
+  ]
+}

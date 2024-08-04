@@ -1,0 +1,86 @@
+{
+  "title": "Bulgarian A League 2024/25",
+  "club_count": 16,
+  "clubs": [
+    {
+      "name": "CSKA 1948",
+      "ref": "2610262--cska-1948",
+      "count": 30
+    },
+    {
+      "name": "Cherno More",
+      "ref": "75787--cherno-more",
+      "count": 30
+    },
+    {
+      "name": "Slavia Sofia",
+      "ref": "50117--slavia-sofia",
+      "count": 30
+    },
+    {
+      "name": "FK Krumovgrad",
+      "ref": "cdsomsc9tpcc6jxiade1mtqms--fk-krumovgrad",
+      "count": 30
+    },
+    {
+      "name": "Arda",
+      "ref": "2610060--arda",
+      "count": 30
+    },
+    {
+      "name": "Lokomotiv Plovdiv",
+      "ref": "52369--lokomotiv-plovdiv",
+      "count": 30
+    },
+    {
+      "name": "Levski",
+      "ref": "50044--levski",
+      "count": 30
+    },
+    {
+      "name": "Lokomotiv Sofia",
+      "ref": "2607713--lokomotiv-sofia",
+      "count": 30
+    },
+    {
+      "name": "Botev Plovdiv",
+      "ref": "57466--botev-plovdiv",
+      "count": 30
+    },
+    {
+      "name": "Botev Vratsa",
+      "ref": "75394--botev-vratsa",
+      "count": 30
+    },
+    {
+      "name": "CSKA-Sofia",
+      "ref": "2608297--cska-sofia",
+      "count": 30
+    },
+    {
+      "name": "Ludogorets",
+      "ref": "2603104--ludogorets",
+      "count": 30
+    },
+    {
+      "name": "Spartak Varna",
+      "ref": "2605302--spartak-varna",
+      "count": 30
+    },
+    {
+      "name": "Hebar",
+      "ref": "2610059--hebar",
+      "count": 30
+    },
+    {
+      "name": "Beroe",
+      "ref": "73511--beroe",
+      "count": 30
+    },
+    {
+      "name": "Septemvri",
+      "ref": "68497--septemvri",
+      "count": 30
+    }
+  ]
+}

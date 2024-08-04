@@ -1,0 +1,46 @@
+{
+  "title": "Moldovan First Division 2024/25",
+  "club_count": 8,
+  "clubs": [
+    {
+      "name": "Spartanii",
+      "ref": "2608854--spartanii",
+      "count": 14
+    },
+    {
+      "name": "Floresti",
+      "ref": "2609710--floresti",
+      "count": 14
+    },
+    {
+      "name": "Dacia Buiucani",
+      "ref": "2602915--dacia-buiucani",
+      "count": 14
+    },
+    {
+      "name": "Sheriff",
+      "ref": "69606--sheriff",
+      "count": 14
+    },
+    {
+      "name": "CSF Bălți",
+      "ref": "610dr6z89d02a8u3edzf2va0a--csf-balti",
+      "count": 14
+    },
+    {
+      "name": "Zimbru",
+      "ref": "59036--zimbru",
+      "count": 14
+    },
+    {
+      "name": "Petrocub",
+      "ref": "2607112--petrocub",
+      "count": 14
+    },
+    {
+      "name": "Milsami",
+      "ref": "2600714--milsami",
+      "count": 14
+    }
+  ]
+}

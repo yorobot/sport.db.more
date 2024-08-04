@@ -1,0 +1,106 @@
+{
+  "title": "Italian Serie A 2024/25",
+  "club_count": 20,
+  "clubs": [
+    {
+      "name": "Inter",
+      "ref": "50138--inter",
+      "count": 38
+    },
+    {
+      "name": "Genoa",
+      "ref": "52972--genoa",
+      "count": 38
+    },
+    {
+      "name": "Fiorentina",
+      "ref": "52817--fiorentina",
+      "count": 38
+    },
+    {
+      "name": "Parma",
+      "ref": "54262--parma",
+      "count": 38
+    },
+    {
+      "name": "Monza",
+      "ref": "2602684--monza",
+      "count": 38
+    },
+    {
+      "name": "Empoli",
+      "ref": "64107--empoli",
+      "count": 38
+    },
+    {
+      "name": "Torino",
+      "ref": "50029--torino",
+      "count": 38
+    },
+    {
+      "name": "Milan",
+      "ref": "50058--milan",
+      "count": 38
+    },
+    {
+      "name": "Udinese",
+      "ref": "51310--udinese",
+      "count": 38
+    },
+    {
+      "name": "Bologna",
+      "ref": "52969--bologna",
+      "count": 38
+    },
+    {
+      "name": "Napoli",
+      "ref": "50136--napoli",
+      "count": 38
+    },
+    {
+      "name": "Verona",
+      "ref": "52301--verona",
+      "count": 38
+    },
+    {
+      "name": "Roma",
+      "ref": "50137--roma",
+      "count": 38
+    },
+    {
+      "name": "Cagliari",
+      "ref": "59013--cagliari",
+      "count": 38
+    },
+    {
+      "name": "Venezia",
+      "ref": "69363--venezia",
+      "count": 38
+    },
+    {
+      "name": "Lazio",
+      "ref": "52973--lazio",
+      "count": 38
+    },
+    {
+      "name": "Atalanta",
+      "ref": "52816--atalanta",
+      "count": 38
+    },
+    {
+      "name": "Lecce",
+      "ref": "52974--lecce",
+      "count": 38
+    },
+    {
+      "name": "Como",
+      "ref": "79946--como",
+      "count": 38
+    },
+    {
+      "name": "Juventus",
+      "ref": "50139--juventus",
+      "count": 38
+    }
+  ]
+}

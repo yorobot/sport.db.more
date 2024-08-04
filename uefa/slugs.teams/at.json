@@ -1,0 +1,66 @@
+{
+  "title": "Austrian Bundesliga 2024/25",
+  "club_count": 12,
+  "clubs": [
+    {
+      "name": "Salzburg",
+      "ref": "50030--salzburg",
+      "count": 22
+    },
+    {
+      "name": "GAK",
+      "ref": "51152--gak",
+      "count": 22
+    },
+    {
+      "name": "Tirol",
+      "ref": "2601068--tirol",
+      "count": 22
+    },
+    {
+      "name": "Altach",
+      "ref": "92382--altach",
+      "count": 22
+    },
+    {
+      "name": "LASK",
+      "ref": "63405--lask",
+      "count": 22
+    },
+    {
+      "name": "Hartberg",
+      "ref": "2601074--hartberg",
+      "count": 22
+    },
+    {
+      "name": "Klagenfurt",
+      "ref": "2602682--klagenfurt",
+      "count": 22
+    },
+    {
+      "name": "Wolfsberg",
+      "ref": "2603990--wolfsberg",
+      "count": 22
+    },
+    {
+      "name": "Sturm Graz",
+      "ref": "50111--sturm-graz",
+      "count": 22
+    },
+    {
+      "name": "Rapid Wien",
+      "ref": "50042--rapid-wien",
+      "count": 22
+    },
+    {
+      "name": "Austria Wien",
+      "ref": "50110--austria-wien",
+      "count": 22
+    },
+    {
+      "name": "BW Linz",
+      "ref": "2601061--bw-linz",
+      "count": 22
+    }
+  ]
+}

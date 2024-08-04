@@ -1,0 +1,86 @@
+{
+  "title": "San Marinese Championship 2023/24",
+  "club_count": 16,
+  "clubs": [
+    {
+      "name": "Fiorentino",
+      "ref": "66336--fiorentino",
+      "count": 31
+    },
+    {
+      "name": "Pennarossa",
+      "ref": "64512--pennarossa",
+      "count": 30
+    },
+    {
+      "name": "Domagnano",
+      "ref": "64505--domagnano",
+      "count": 31
+    },
+    {
+      "name": "Cosmos",
+      "ref": "64503--cosmos",
+      "count": 35
+    },
+    {
+      "name": "Tre Penne",
+      "ref": "64515--tre-penne",
+      "count": 35
+    },
+    {
+      "name": "Juvenes/Dogana",
+      "ref": "76593--juvenes-dogana",
+      "count": 33
+    },
+    {
+      "name": "Virtus",
+      "ref": "64516--virtus",
+      "count": 30
+    },
+    {
+      "name": "Tre Fiori",
+      "ref": "64514--tre-fiori",
+      "count": 32
+    },
+    {
+      "name": "Faetano",
+      "ref": "64506--faetano",
+      "count": 30
+    },
+    {
+      "name": "Murata",
+      "ref": "64511--murata",
+      "count": 35
+    },
+    {
+      "name": "Folgore",
+      "ref": "64507--folgore",
+      "count": 33
+    },
+    {
+      "name": "Cailungo",
+      "ref": "64502--cailungo",
+      "count": 30
+    },
+    {
+      "name": "San Marino Academy",
+      "ref": "4egx9qzcnyte5rxie59hmsf84--san-marino-academy",
+      "count": 30
+    },
+    {
+      "name": "San Giovanni",
+      "ref": "64513--san-giovanni",
+      "count": 32
+    },
+    {
+      "name": "Libertas",
+      "ref": "64509--libertas",
+      "count": 30
+    },
+    {
+      "name": "La Fiorita",
+      "ref": "64508--la-fiorita",
+      "count": 35
+    }
+  ]
+}

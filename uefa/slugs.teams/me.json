@@ -1,0 +1,56 @@
+{
+  "title": "Montenegrin First League 2024/25",
+  "club_count": 10,
+  "clubs": [
+    {
+      "name": "Jedinstvo",
+      "ref": "89724--jedinstvo",
+      "count": 19
+    },
+    {
+      "name": "Arsenal Tivat",
+      "ref": "89560--arsenal-tivat",
+      "count": 19
+    },
+    {
+      "name": "Jezero",
+      "ref": "2600543--jezero",
+      "count": 19
+    },
+    {
+      "name": "Bokelj",
+      "ref": "77926--bokelj",
+      "count": 19
+    },
+    {
+      "name": "FK Otrant",
+      "ref": "2602854--fk-otrant",
+      "count": 19
+    },
+    {
+      "name": "Mornar",
+      "ref": "89562--mornar",
+      "count": 19
+    },
+    {
+      "name": "Dečić",
+      "ref": "2600105--decic",
+      "count": 19
+    },
+    {
+      "name": "Sutjeska",
+      "ref": "73936--sutjeska",
+      "count": 19
+    },
+    {
+      "name": "Petrovac",
+      "ref": "2600104--petrovac",
+      "count": 19
+    },
+    {
+      "name": "Budućnost Podgorica",
+      "ref": "53078--buducnost-podgorica",
+      "count": 19
+    }
+  ]
+}

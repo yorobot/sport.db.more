@@ -1,0 +1,96 @@
+{
+  "title": "Polish First Division 2024/25",
+  "club_count": 18,
+  "clubs": [
+    {
+      "name": "Puszcza",
+      "ref": "2604143--puszcza",
+      "count": 34
+    },
+    {
+      "name": "Jagiellonia",
+      "ref": "2600277--jagiellonia",
+      "count": 34
+    },
+    {
+      "name": "Lechia",
+      "ref": "52763--lechia",
+      "count": 34
+    },
+    {
+      "name": "Śląsk",
+      "ref": "52655--slask",
+      "count": 34
+    },
+    {
+      "name": "Radomiak",
+      "ref": "2608858--radomiak",
+      "count": 34
+    },
+    {
+      "name": "Katowice",
+      "ref": "50145--katowice",
+      "count": 34
+    },
+    {
+      "name": "Korona",
+      "ref": "89715--korona",
+      "count": 34
+    },
+    {
+      "name": "Pogoń",
+      "ref": "52652--pogon",
+      "count": 34
+    },
+    {
+      "name": "Zagłębie Lubin",
+      "ref": "53007--zaglebie-lubin",
+      "count": 34
+    },
+    {
+      "name": "Legia",
+      "ref": "50146--legia",
+      "count": 34
+    },
+    {
+      "name": "Piast",
+      "ref": "2600545--piast",
+      "count": 34
+    },
+    {
+      "name": "Cracovia",
+      "ref": "88133--cracovia",
+      "count": 34
+    },
+    {
+      "name": "Górnik Zabrze",
+      "ref": "50063--gornik-zabrze",
+      "count": 34
+    },
+    {
+      "name": "Lech Poznań",
+      "ref": "64227--lech-poznan",
+      "count": 34
+    },
+    {
+      "name": "Raków",
+      "ref": "60566--rakow",
+      "count": 34
+    },
+    {
+      "name": "Motor Lublin SA",
+      "ref": "495gki1v52te79znpgvcdcv12--motor-lublin-sa",
+      "count": 34
+    },
+    {
+      "name": "Widzew",
+      "ref": "52752--widzew",
+      "count": 34
+    },
+    {
+      "name": "Stal Mielec",
+      "ref": "2611455--stal-mielec",
+      "count": 34
+    }
+  ]
+}

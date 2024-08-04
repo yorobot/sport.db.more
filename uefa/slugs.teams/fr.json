@@ -1,0 +1,96 @@
+{
+  "title": "French Ligue 1 2024/25",
+  "club_count": 18,
+  "clubs": [
+    {
+      "name": "Paris",
+      "ref": "52747--paris",
+      "count": 34
+    },
+    {
+      "name": "Le Havre",
+      "ref": "52664--le-havre",
+      "count": 34
+    },
+    {
+      "name": "Marseille",
+      "ref": "52748--marseille",
+      "count": 34
+    },
+    {
+      "name": "Brest",
+      "ref": "2601306--brest",
+      "count": 34
+    },
+    {
+      "name": "Lille",
+      "ref": "75797--lille",
+      "count": 34
+    },
+    {
+      "name": "Reims",
+      "ref": "64165--reims",
+      "count": 34
+    },
+    {
+      "name": "St-Étienne",
+      "ref": "50022--st-etienne",
+      "count": 34
+    },
+    {
+      "name": "Monaco",
+      "ref": "50023--monaco",
+      "count": 34
+    },
+    {
+      "name": "Nice",
+      "ref": "52355--nice",
+      "count": 34
+    },
+    {
+      "name": "Auxerre",
+      "ref": "52269--auxerre",
+      "count": 34
+    },
+    {
+      "name": "Strasbourg",
+      "ref": "59857--strasbourg",
+      "count": 34
+    },
+    {
+      "name": "Montpellier",
+      "ref": "50128--montpellier",
+      "count": 34
+    },
+    {
+      "name": "Nantes",
+      "ref": "52693--nantes",
+      "count": 34
+    },
+    {
+      "name": "Toulouse",
+      "ref": "52934--toulouse",
+      "count": 34
+    },
+    {
+      "name": "Lens",
+      "ref": "52277--lens",
+      "count": 34
+    },
+    {
+      "name": "Angers",
+      "ref": "64162--angers",
+      "count": 34
+    },
+    {
+      "name": "Lyon",
+      "ref": "5312--lyon",
+      "count": 34
+    },
+    {
+      "name": "Rennes",
+      "ref": "55031--rennes",
+      "count": 34
+    }
+  ]
+}
