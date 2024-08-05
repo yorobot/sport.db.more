@@ -6,6 +6,7 @@
 ##           2023-24
 ##            etc.
 ##           check for 1999-00 ??
+##   yes - 1999-00
 
 # https://www.kicker.de/bundesliga-oesterreich/teams/2023-24/
 # https://www.kicker.de/bundesliga-oesterreich/teams/2024-25/
@@ -44,4 +45,6 @@ LEAGUES = {
      'uefa.cl'   => 'champions-league/teams/{season}',
      'uefa.el'   => 'europa-league/teams/{season}',
      'uefa.conf' => 'europa-conference-league/teams/{season}',
+
+     'mx.1'  =>  'liga-mx/teams/{season}',
 }
