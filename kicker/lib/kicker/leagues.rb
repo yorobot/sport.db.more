@@ -12,6 +12,8 @@
 # https://www.kicker.de/bundesliga-oesterreich/teams/2024-25/
 
 
+module Kicker
+
 BASE_URL = 'https://www.kicker.de'
 
 
@@ -23,7 +25,7 @@ LEAGUES = {
 
     'de.1'   => 'bundesliga/teams/{season}',
     'de.2'   => '2-bundesliga/teams/{season}',
-    'de.3'     => '3-liga/teams/{season}', 
+    'de.3'     => '3-liga/teams/{season}',
     'de.4.bayern' => 'regionalliga-bayern/teams/{season}',
     'de.cup' => 'dfb-pokal/teams/{season}',
 
@@ -48,3 +50,6 @@ LEAGUES = {
 
      'mx.1'  =>  'liga-mx/teams/{season}',
 }
+
+end  # module Kicker
+
