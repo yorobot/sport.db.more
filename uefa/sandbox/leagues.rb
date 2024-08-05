@@ -2,7 +2,7 @@
 ## national (domestic) league slugs for 2024 & 2024/25 seaons
 ## e.g. https://www.uefa.com/nationalassociations/aut/domestic/league/1026/
 ##
-##  note - li has (redirects to) cup only - no league 
+##  note - li has (redirects to) cup only - no league
 ##          Liechtensteiner Cup 2024/25
 ##          (different page structure) !!!!
 
@@ -12,12 +12,12 @@
 #  - Faroese Premier Division 2024
 #  - Swedish First Division 2024
 #  - Finnish First Division 2024
-#  - Norwegian Premier Division 2024 
+#  - Norwegian Premier Division 2024
 #  - Lithuanian First Division 2024
 #  - Latvian First Division 2024
 #  - Estonian First League 2024
 #  - Kazakh Premier League 2024
-#  - Georgian Premier League 2024 
+#  - Georgian Premier League 2024
 #  - Belarusian Premier League 2024
 
 ## maybe fix later - still 2023/24
@@ -56,13 +56,13 @@ LEAGUES =  {
  'kz.1'=>'kaz/domestic/league/1084',
  'kos.1'=>'kos/domestic/league/1088',
  'lv.1'=>'lva/domestic/league/1064',
- 'li.1'=>'lie/domestic/cup/1086',
+ ## 'li.1'=>'lie/domestic/cup/1086',
  'lt.1'=>'ltu/domestic/league/1065',
  'lu.1'=>'lux/domestic/league/1072',
  'mt.1'=>'mlt/domestic/league/1073',
  'md.1'=>'mda/domestic/league/1082',
  'me.1'=>'mne/domestic/league/1085',
- 'nl.1'=>'ned/domestic/league/1032',   # Dutch First Division 2024/25  
+ 'nl.1'=>'ned/domestic/league/1032',   # Dutch First Division 2024/25
  'mk.1'=>'mkd/domestic/league/1044',
  'nir.1'=>'nir/domestic/league/1052',
  'no.1'=>'nor/domestic/league/1045',

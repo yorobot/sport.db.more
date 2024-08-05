@@ -36,14 +36,14 @@ BASE_URL = 'https://www.uefa.com/nationalassociations'
 
 LEAGUES.each do |league, path|
     ## note - add trailing slash (/) to avoid (301) redirects!!!
-    url = "#{BASE_URL}/#{path}/"  
+    url = "#{BASE_URL}/#{path}/"
 
     html = Webcache.read( url )
     pp html[0,300]
 
 ## note: if we use a fragment and NOT a document -
 ##   no access to  page head (and meta elements and such)
- 
+
 doc =  Nokogiri::HTML( html )
 
 
@@ -65,14 +65,14 @@ els.each_with_index do |el,i|
    data = JSON.parse( el.text )
    puts "==> #{i+1}"
    ## pp data
-   
+
    if data['@type'] == 'WebPage'
       ## skip; do nothing
-   elsif data['@type'] == 'SportsEvent'  
+   elsif data['@type'] == 'SportsEvent'
        name   = data['name']
        status = data['eventStatus']
        date   = data['startDate']   # e.g. "2025-03-15T00:00:00+00:00",
-      
+
        print "%-40s" % name
        print "  #{status}  #{date}"
        print "\n"
@@ -92,13 +92,13 @@ els.each_with_index do |el,i|
                rec = teams[ team['name']] ||= { name: name,
                                                 ref:  ref,
                                                 count: 0}
-               rec[:count] += 1 
+               rec[:count] += 1
            else
               puts "!! ASSERT - SportsTeam expected; got:"
               pp team
               exit 1
            end
-        
+
       end
    else
      puts "!! ASSERT - SportsTeam|WebPage expected; got:"
@@ -112,8 +112,10 @@ puts
 puts "#{teams.size} team(s):"
 pp teams.values
 
-code = league.split( '.')[0]
-outpath = "./slugs.teams/#{code}.json"
+
+##
+## todo/check - add season (via page title) to outpath - why? why not?
+outpath = "./slugs.teams/#{league}.json"
 
 
 title = title.sub( ' | National associations | UEFA.com', '' )

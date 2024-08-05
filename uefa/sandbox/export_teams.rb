@@ -1,5 +1,6 @@
 $LOAD_PATH.unshift( '../../../rubycocos/webclient/webget/lib' )
 require 'webget'
+require 'season/formats'
 
 Webcache.root = '/sports/cache'
 
@@ -38,19 +39,19 @@ paths.each do |path|
 
    data['clubs'].each do |rec|
      name = rec['name']
-     ref  = rec['ref'] 
+     ref  = rec['ref']
      team_url = "https://www.uefa.com/nationalassociations/teams/#{ref}/"
 
       ##  note - only numbers are / lead to valid team pages
       ##    61eplt09k35dsd1f168i7jbop--fc-pas-de-la-casa
 
       if ref =~ /^\d+--/
-        html = Webcache.read( team_url ) 
+        html = Webcache.read( team_url )
         ## pp html[0,100]
 
         ## note: if we use a fragment and NOT a document -
         ##   no access to  page head (and meta elements and such)
- 
+
         doc =  Nokogiri::HTML( html )
 
         puts
@@ -68,7 +69,7 @@ paths.each do |path|
         ## country code
         els  = doc.css( 'span.team-country-name' )
         assert( els.size == 1, "one span.team-country-name expected" )
-        
+
         code = els.first.text
         pp code
 
@@ -89,9 +90,27 @@ paths.each do |path|
       buf << "\n"
    end
 
-   outpath = "./teams/#{basename}.csv"
-   write_text( outpath, buf)
+   ## get season via title
+   ##   e.g. Andorran Premier Division 2024/25
 
+   re =  %r{\b
+           (?<season>
+               [0-9]{4}
+                 (?: / [0-9]{2} )?
+           )
+           $}x
+
+    if m=re.match( data['title'] )
+      season = Season( m[:season] )
+
+      ## code = basename.split('.')[0]  ## get country code for dir
+      outpath = "../../clubs.sandbox/uefa/#{basename}_#{season.to_path}_(#{rows.size}).csv"
+      write_text( outpath, buf)
+    else
+       puts "!! ERROR - no season found in title:"
+       pp data['title']
+       exit 1
+    end
 end
 
 
