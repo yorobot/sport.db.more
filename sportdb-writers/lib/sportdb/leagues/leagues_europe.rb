@@ -2,6 +2,13 @@ module Writer
 
 LEAGUES.merge!(
 
+  ###
+  # Uefa
+  ##  quick and dirty add for champions league
+  'uefa.cl' => {  name: 'UEFA Champions League',
+                  basename: 'cl',
+               },
+
   ########################
   # France
   'fr.1' => { name:     'French Ligue 1',
