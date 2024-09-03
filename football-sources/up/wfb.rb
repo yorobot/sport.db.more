@@ -27,8 +27,8 @@ pp datasets
 if OPTS[:dry]
     ## do nothing
 else
-  Fbgen.process( datasets,
-                    source: Worldfootball,    
+  Fbup.process( datasets,
+                    source: Worldfootball,
                     download: OPTS[:download],
                     push:     OPTS[:push] )
 end

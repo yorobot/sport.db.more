@@ -1,14 +1,6 @@
-##  just use sportdb/catalogs  ?! - why? why not?
-#  require 'sportdb/importers'   # -- requires db support
-#  require 'sportdb/readers'     # -- requires db support
-#
-#   note - for now only requires sportdb/formats !!!
-#               normalize moved out as a proc!!!
-require 'sportdb/formats'
 
+require 'sportdb/quick'
 
-## todo/fix - make sure upstream cocos is included/required
-require 'cocos'
 
 
 module Writer

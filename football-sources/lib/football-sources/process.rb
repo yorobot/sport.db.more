@@ -1,10 +1,10 @@
 
 
-module Fbgen
+module Fbup
 
 
 class Job     ## todo/check: use a module (NOT a class) - why? why not?
-  ## note - source expected module/class e.g. Footballdata/Worldfootball e.g.    
+  ## note - source expected module/class e.g. Footballdata/Worldfootball e.g.
 def self.download( datasets, source: )
   datasets.each_with_index do |dataset,i|
     league  = dataset[0]
@@ -35,7 +35,7 @@ end
 end  # class Job
 
 
-## change download? to cache - true/false - why? why not?   
+## change download? to cache - true/false - why? why not?
 ##  change push: to sync - true/false - why? why not?
 def self.process( datasets,
                      source:,
@@ -63,6 +63,6 @@ def self.process( datasets,
 
   ## todo/fix: add a getch or something to hit return before commiting pushing - why? why not?
   gh.git_push_if_changes     if push
-end  
+end
 
-end  # module Fbgen
+end  # module Fbup

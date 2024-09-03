@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 ## tip: to test run:
-##   ruby -I ./lib bin/fbgen
+##   ruby -I ./lib bin/fbup
 
 require 'football/sources'
 
@@ -12,14 +12,14 @@ load_env   ## use dotenv (.env)
 Webcache.root =  if File.exist?( '/sports/cache' )
                      puts "  setting web cache to >/sports/cache<"
                      '/sports/cache'
-                 else 
+                 else
                      './cache'
                  end
 
 
 
 ## set openfootball github org root - note - NOT monorepo (github) root dirc
-SportDb::GitHubSync.root = '/sports/openfootball'   
+SportDb::GitHubSync.root = '/sports/openfootball'
 
 
 ## add convenience shortcuts
@@ -48,7 +48,7 @@ Footballdata.config.convert.out_dir =  if File.exist?( '/sports/cache.api.fbdat'
 pp File.expand_path( Footballdata.config.convert.out_dir )
 
 
-## note -  free tier (tier one) plan - 10 requests/minute   
+## note -  free tier (tier one) plan - 10 requests/minute
 ##              (one request every 6 seconds 6*10=60 secs)
 ##     10 API calls per minute max.
 ##  note - default sleep (delay in secs) is 3 sec(s)
@@ -61,7 +61,7 @@ require 'optparse'
 
 
 
-args=ARGV 
+args=ARGV
 
 
 opts = {
@@ -78,7 +78,7 @@ parser = OptionParser.new do |parser|
 #    opts[:cached] = cached
 #  end
 
-  parser.on( "-t NAME", "--type=NAME", 
+  parser.on( "-t NAME", "--type=NAME",
                "use source type - default is (#{opts[:type]})" ) do |type|
      opts[:type] = type
   end
@@ -113,7 +113,7 @@ league      =  (args[0] || 'eng.1' ).downcase
 season      =  (args[1] || '2024/25')
 
 datasets = [
-  [league, [season]]  
+  [league, [season]]
 ]
 
 puts "datasets:"
@@ -121,8 +121,8 @@ pp datasets
 
 
 
-Fbgen.process( datasets,
-                  source:   source,    
+Fbup.process( datasets,
+                  source:   source,
                   download: opts[:download],
                   push:     opts[:push] )
 

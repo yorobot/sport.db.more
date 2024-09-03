@@ -35,11 +35,11 @@ else
 # normproc.call( [], league: 'eng.1' )
 
 ## max. 10 requests/minute
-##          about ~6 request/minute (if delay is 10 secs) 
+##          about ~6 request/minute (if delay is 10 secs)
 Webget.config.sleep  = 10
 
-Fbgen.process( datasets,
-                  source: Footballdata,    
+Fbup.process( datasets,
+                  source: Footballdata,
                   download: OPTS[:download],
                   push:     OPTS[:push] )
 end

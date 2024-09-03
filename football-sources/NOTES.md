@@ -2,7 +2,7 @@
 
 ## todos
 
-- [ ] add a -f/--file option to fbgen  for datasets
+- [ ] add a -f/--file option to fbup  for datasets
 
 
 ## requiring only parts (metal/convert)

@@ -2,7 +2,7 @@ CHANGELOG.md
 Manifest.txt
 README.md
 Rakefile
-bin/fbgen
+bin/fbup
 lib/football-sources.rb
 lib/football-sources/process.rb
 lib/football-sources/version.rb
