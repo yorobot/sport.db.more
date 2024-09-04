@@ -3,9 +3,9 @@
 ## tip: to test run:
 ##   ruby -I ./lib bin/fbtxt
 
-$LOAD_PATH.unshift( '../../../sportdb/sport.db/parser/lib' )
-$LOAD_PATH.unshift( '../../../sportdb/sport.db/sportdb-structs/lib' )
-$LOAD_PATH.unshift( '../../../sportdb/sport.db/quick/lib' )
+# $LOAD_PATH.unshift( '../../../sportdb/sport.db/parser/lib' )
+# $LOAD_PATH.unshift( '../../../sportdb/sport.db/sportdb-structs/lib' )
+# $LOAD_PATH.unshift( '../../../sportdb/sport.db/quick/lib' )
 
 require 'sportdb/writers'
 

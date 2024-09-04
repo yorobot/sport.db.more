@@ -1,0 +1,99 @@
+#!/usr/bin/env ruby
+
+## tip: to test run:
+##   ruby -I ./lib bin/fbgen
+
+
+require 'sportdb/writers'
+
+require 'optparse'
+
+
+
+args=ARGV
+
+
+opts = {
+}
+
+parser = OptionParser.new do |parser|
+  parser.banner = "Usage: #{$PROGRAM_NAME} [options]"
+end
+parser.parse!( args )
+
+puts "OPTS:"
+p opts
+puts "ARGV:"
+p args
+
+
+### split args in datasets with leagues and seasons
+datasets = []
+
+
+args.each do |arg|
+   if arg =~ %r{^[0-9/-]+$}   ##  season
+       if datasets.empty?
+         puts "!! ERROR - league required before season arg; sorry"
+         exit 1
+       end
+
+       season = Season.parse( arg )  ## check season
+       datasets[-1][1] << season
+   else ## assume league key
+       key = arg.downcase
+       league_info = Writer::LEAGUES[ key ]
+
+       if league_info.nil?
+         puts "!! ERROR - no league found for >#{key}<; sorry"
+         exit 1
+       end
+
+       datasets << [key, []]
+   end
+end
+
+pp datasets
+
+
+datasets.each do |league_key, seasons|
+    seasons = [ Season('2024/25') ]   if seasons.empty?
+
+    puts "==> gen #{league_key} - #{seasons.size} seasons(s)..."
+
+    league_info = Writer::LEAGUES[ league_key ]
+    pp league_info
+
+    seasons.each do |season|
+      ### get matches
+      src_dir = "/sports/cache.wfb"
+      path = "#{src_dir}/#{season.to_path}/#{league_key}.csv"
+      puts "  ---> reading matches in #{path} ..."
+      matches = SportDb::CsvMatchParser.read( path )
+      puts "     #{matches.size} matches"
+
+      ## build
+      txt = SportDb::TxtMatchWriter.build( matches )
+      puts txt
+
+      league_name  = league_info[ :name ]      # e.g. Brasileiro Série A
+      basename     = league_info[ :basename]   #.e.g  1-seriea
+
+      league_name =  league_name.call( season )   if league_name.is_a?( Proc )  ## is proc/func - name depends on season
+      basename    =  basename.call( season )      if basename.is_a?( Proc )  ## is proc/func - name depends on season
+
+      buf = String.new
+      buf << "= #{league_name} #{season}\n\n"
+      buf << txt
+
+      ## note - repo_path moved!!!
+      ## repo_path    = league_info[ :path ]      # e.g. brazil or world/europe/portugal etc.
+      repo_path  = SportDb::GitHubSync::REPOS[ league_key ]
+
+      outpath = "./o/#{repo_path}/#{season.to_path}/#{basename}.txt"
+      write_text( outpath, buf )
+    end
+end
+
+
+puts "bye"

@@ -18,15 +18,13 @@ Hoe.spec 'sportdb-writers' do
   self.history_file = 'CHANGELOG.md'
 
   self.extra_deps = [
-    ['sportdb-formats'],    # , '>= 1.0.0'],
+    ['sportdb-quick'],
     ['gitti'],
-    ['cocos'],   ### fix - move upstream (incl. in sportdb-format)
   ]
 
   self.licenses = ['Public Domain']
 
   self.spec_extras = {
-   required_ruby_version: '>= 2.2.2'
+   required_ruby_version: '>= 3.1.0'
   }
-
 end

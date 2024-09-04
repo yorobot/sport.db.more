@@ -2,6 +2,8 @@ CHANGELOG.md
 Manifest.txt
 README.md
 Rakefile
+bin/fbgen
+bin/fbtxt
 lib/sportdb/leagues/leagues_at.rb
 lib/sportdb/leagues/leagues_de.rb
 lib/sportdb/leagues/leagues_eng.rb
