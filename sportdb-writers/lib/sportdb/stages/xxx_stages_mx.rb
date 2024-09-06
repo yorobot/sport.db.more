@@ -1,6 +1,4 @@
-module Writer
 
-LEAGUES.merge!(
 
 ##############################
 # Mexico
@@ -17,7 +15,3 @@ LEAGUES.merge!(
                        {basename: '1-clausura_liguilla', names: ['Clausura - Liguilla']},
                       ],
         },
-)
-
-
-end   # module Writer

@@ -38,20 +38,23 @@ require_relative 'writers/github'   ## github helpers/update machinery
 
 
 
-## setup empty leagues (info) hash
+
+require_relative 'writers/league_config'
+
+
+## setup  leagues (info) table
 module Writer
-  LEAGUES = {}
+  LEAGUES = SportDb::LeagueConfig.new
+
+  ['leagues_europe',
+   'leagues_america',
+   'leagues_world'
+  ].each do |name|
+    recs = read_csv( "#{SportDb::Module::Writers.root}/config/#{name}.csv" )
+    LEAGUES.add( recs )
+  end
 end
 
-require_relative 'leagues/leagues_at'
-require_relative 'leagues/leagues_de'
-require_relative 'leagues/leagues_eng'
-require_relative 'leagues/leagues_es'
-require_relative 'leagues/leagues_europe'
-require_relative 'leagues/leagues_it'
-require_relative 'leagues/leagues_mx'
-require_relative 'leagues/leagues_south_america'
-require_relative 'leagues/leagues_world'
 
 
 

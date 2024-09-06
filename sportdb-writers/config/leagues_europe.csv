@@ -1,0 +1,85 @@
+key,     name,                      basename,       start_season, end_season, comments
+
+at.1,     Österr. Bundesliga,        1-bundesliga,,,
+at.2,     Österr. 2. Liga,           2-liga2,        2018/19,,
+at.2,     Österr. Erste Liga,        2-liga1,               , 2017/18,
+at.3.o,   Österr. Regionalliga Ost,  3-regionalliga-ost,,,
+at.cup,   ÖFB Cup,                   cup,,,
+
+
+de.1,     Deutsche Bundesliga,       1-bundesliga,,,
+de.2,     Deutsche 2. Bundesliga,    2-bundesliga2,,,
+de.3,     Deutsche 3. Liga,          3-liga3,,,
+de.cup,   DFB Pokal,                 cup,,,
+
+it.1,     Italian Serie A,           1-seriea,,,
+it.2,     Italian Serie B,           2-serieb,,,
+
+es.1,     Primera División de España,  1-liga,,,
+es.2,     Segunda División de España,  2-liga2,,,
+
+fr.1,     French Ligue 1,              1-ligue1,,,
+fr.2,     French Ligue 2,              2-ligue2,,,
+
+
+eng.1,    English Premier League,    1-premierleague,  1992/93,,
+eng.1,    English Division One,      1-division1,      1892/93,  1991/92,   ## start of division 1 & 2
+eng.1,    English Football League,   1-footballleague, 1888/89,  1891/92,   ## single league (no divisions)
+
+eng.2,    English Championship,      2-championship,   2004/05,,            ## rebranding divsion 1 => championship
+eng.2,    English Division One,      2-division1,      1992/93,  2003/04,   ## start of premier league
+eng.2,    English Division Two,      2-division2,      1892/93,  1991/92,   ## or use English Football League Second Division ???
+
+eng.3,    English League One,        3-league1,,,
+eng.4,    English League Two,        4-league2,,,
+eng.5,    English National League,   5-nationalleague,,,
+eng.cup,  English FA Cup,            facup,,,
+
+
+hu.1,     Hungarian NB I,             1-nbi,,,
+
+gr.1,     Super League Greece,        1-superleague,,,
+
+pt.1,     Portuguese Primeira Liga,   1-primeiraliga,,,
+pt.2,     Portuguese Segunda Liga,    2-segundaliga,,,
+
+ch.1,     Swiss Super League,         1-superleague,,,
+ch.2,     Swiss Challenge League,     2-challengeleague,,,
+
+tr.1,     Turkish Süper Lig,          1-superlig,,,
+tr.2,     Turkish 1. Lig,             2-lig1,,,
+
+is.1,     Iceland Urvalsdeild,        1-urvalsdeild,,,
+
+sco.1,    Scottish Premiership,       1-premiership,,,
+
+ie.1,     Irish Premier Division,     1-premierdivision,,,
+
+fi.1,     Finland Veikkausliiga,      1-veikkausliiga,,,
+
+se.1,     Sweden Allsvenskan,         1-allsvenskan,,,
+se.2,     Sweden Superettan,          2-superettan,,,
+
+no.1,     Norwegian Eliteserien,       1-eliteserien,,,
+dk.1,     Denmark Superligaen,         1-superligaen,,,
+
+lu.1,     Luxembourger First Division,   1-nationaldivision,,,
+
+be.1,     Belgian First Division A,   1-firstdivisiona,,,
+
+nl.1,     Dutch Eredivisie,    1-eredivisie,,,
+
+cz.1,    Czech First League,    1-firstleague,,,
+sk.1,    Slovakia First League,  1-superliga,,,
+hr.1,    Croatia 1. HNL,          1-hnl,,,
+
+pl.1,    Poland Ekstraklasa,    1-ekstraklasa,,,
+
+ro.1,    Romanian Liga 1,     1-liga1,,,
+
+ua.1,    Ukraine Premier League,  1-premierleague,,,
+
+ru.1,    Russian Premier League,   1-premierliga,,,
+ru.2,    Russian 1. Division,      2-division1,,,
+
+

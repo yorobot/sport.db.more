@@ -1,0 +1,52 @@
+key,  path
+
+at,   austria
+
+de,   deutschland
+eng,  england
+es,   espana
+it,   italy
+
+fr,   europe/france
+
+hu, europe/hungary
+gr, europe/greece
+pt, europe/portugal
+
+ch, europe/switzerland
+
+tr, europe/turkey
+
+is,   europe/iceland
+sco,  europe/scotland
+ie,  europe/ireland
+
+fi,  europe/finland
+se,  europe/sweden
+no,  europe/norway
+dk,  europe/denmark
+
+lu,  europe/luxembourg
+be,  europe/belgium
+nl,  europe/netherlands
+cz,  europe/czech-republic
+
+sk,   europe/slovakia
+hr,  europe/croatia
+pl,   europe/poland
+
+ro,  europe/romania
+
+ua,  europe/ukraine
+
+ru,  europe/russia
+
+
+mx, mexico
+
+ar, south-america/argentina
+br, south-america/brazil
+
+cn,  world/asia/china
+jp,  world/asia/japan
+

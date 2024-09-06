@@ -1,0 +1,6 @@
+key,     name,                      basename,       start_season, end_season, comments
+
+ar.1,    Argentina Primera Division, 1-primeradivision,,,
+br.1,    Brasileiro Série A,         1-seriea,,,
+
+mx.1,    Liga MX,                    1-ligamx,,,    ## note: basename gets overwritten by stages e.g. 1-apertura or 1-clausura

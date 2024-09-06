@@ -11,6 +11,16 @@ class GitHubSync
   ## map leagues to repo+path
   ##  e.g.   fr.1   => europe/france
   ##         eng..1 => england
+
+
+  ##  for other than openfootball (default)
+  ## use @
+  ##   e.g.    myorg@austria
+  ##           austria@myorg ??
+  ##
+  ##           myorg@europe/france
+  ##            europe/france@myorg
+
 REPOS = {
   'at.1' =>  'austria',
   'at.2' =>  'austria',
@@ -28,24 +38,24 @@ REPOS = {
 'eng.4' =>  'england',
 'eng.5' =>  'england',
 'eng.cup' => 'england',   # English FA Cup
- 
+
 'es.1' => 'espana',
 'es.2' => 'espana',
 
   'fr.1' =>  'europe/france',
   'fr.2' =>  'europe/france',
-  
+
   'hu.1' => 'europe/hungary',
   'gr.1' => 'europe/greece',
   'pt.1' => 'europe/portugal',
   'pt.2' => 'europe/portugal',
-  
+
   'ch.1' => 'europe/switzerland',
   'ch.2' => 'europe/switzerland',
 
   'tr.1' => 'europe/turkey',
   'tr.2' => 'europe/turkey',
-  
+
   'is.1' => 'europe/iceland',
   'sco.1' =>  'europe/scotland',
   'ie.1' => 'europe/ireland',
@@ -55,18 +65,18 @@ REPOS = {
    'se.2'  =>  'europe/sweden',
    'no.1'  =>  'europe/norway',
    'dk.1'  =>  'europe/denmark',
-   
+
    'lu.1'  =>  'europe/luxembourg',
    'be.1'  =>  'europe/belgium',
     'nl.1' =>  'europe/netherlands',
     'cz.1' =>  'europe/czech-republic',
-               
+
   'sk.1' =>   'europe/slovakia',
   'hr.1'  =>  'europe/croatia',
   'pl.1' =>   'europe/poland',
-  
+
   'ro.1' =>  'europe/romania',
-  
+
   'ua.1' =>  'europe/ukraine',
 
    'ru.1' =>  'europe/russia',
@@ -86,12 +96,12 @@ REPOS = {
 
 
 
-######## 
+########
 ##  (auto)default to Writer.config.out_dir - why? why not?
 ##
 ##    note - is root for org (NOT monotree for now - why?`why not?)
 def self.root()  @root || "/sports/openfootball"; end
-def self.root=( dir ) @root = dir; end  
+def self.root=( dir ) @root = dir; end
 ## use root_dir (alias) - why? why not?
 
 
@@ -100,10 +110,10 @@ def initialize( datasets )
 end
 
 
-def git_push_if_changes 
+def git_push_if_changes
     _git_push_if_changes( @repos )
-end 
-    
+end
+
 def git_fast_forward_if_clean
    _git_fast_forward_if_clean( @repos )
 end
@@ -157,7 +167,7 @@ end
 
 ## todo/check: find a better name for helper?
 ## note: datasets of format
-##  
+##
 ## DATASETS = [
 ##   ['it.1',    %w[2020/21 2019/20]],
 ##  ['it.2',    %w[2019/20]],
@@ -176,9 +186,9 @@ def _find_repos( datasets )
          puts "!! ERROR - no repo path found for league >#{league_key}<; sorry"
          exit 1
       end
-  
+
       ## auto-add
-      ##   openfootball/ org here 
+      ##   openfootball/ org here
       ##  and keep root "generic" to monoroot - why? why not?
 
       ## use only first part e.g. europe/belgium => europe
@@ -187,9 +197,9 @@ def _find_repos( datasets )
     pp repos
     repos.uniq   ## note: remove duplicates (e.g. europe or world or such)
 end
-  
 
-  
+
+
 
 end  # class GitHub
 end  # module SportDb

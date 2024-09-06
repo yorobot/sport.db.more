@@ -136,6 +136,11 @@ datasets.each do |league_key, seasons|
       filename = "#{season.to_path}/#{league_key}.csv"
       path = find_file( filename, path: source_path )
 
+      if path.nil?
+        puts "!! no source found for #{filename}; sorry"
+        exit 1
+      end
+
       puts "  ---> reading matches in #{path} ..."
       matches = SportDb::CsvMatchParser.read( path )
       puts "     #{matches.size} matches"
