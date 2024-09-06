@@ -5,6 +5,11 @@ LEAGUES.merge!(
   ###
   # Uefa
   ##  quick and dirty add for champions league
+  ##
+  ##  use uefa.1 - why? why not?
+  ##      uefa.2,
+  ##      uefa.3
+
   'uefa.cl' => {  name: 'UEFA Champions League',
                   basename: 'cl',
                },
