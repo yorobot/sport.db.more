@@ -14,12 +14,41 @@ args=ARGV
 
 
 opts = {
+  source_path: [],
+  push:     false,
+  dry:      false,  ## dry run (no write)
+  debug:    true,
 }
 
+
+
 parser = OptionParser.new do |parser|
-  parser.banner = "Usage: #{$PROGRAM_NAME} [options]"
+  parser.banner = "Usage: #{$PROGRAM_NAME} [options] [args]"
+
+    parser.on( "-p", "--push",
+               "fast forward sync and commit & push changes to git repo - default is (#{opts[:push]})" ) do |push|
+      opts[:push] = push
+    end
+    parser.on( "--dry",
+                "dry run; do NOT write - default is (#{opts[:dry]})" ) do |dry|
+      opts[:dry] = dry
+    end
+    parser.on( "-q", "--quiet",
+               "less debug output/messages - default is (#{!opts[:debug]})" ) do |debug|
+      opts[:debug] = !debug
+    end
 end
 parser.parse!( args )
+
+
+
+if opts[:source_path].empty? &&
+  File.exist?( '/sports/cache.api.fbdat')  &&
+  File.exist?( '/sports/cache.wfb' )
+ opts[:source_path] << '/sports/cache.api.fbdat'
+ opts[:source_path] << '/sports/cache.wfb'
+end
+
 
 puts "OPTS:"
 p opts
@@ -56,6 +85,43 @@ end
 pp datasets
 
 
+
+def find_file( filename, path: )
+   path.each do |src_dir|
+      path = "#{src_dir}/#{filename}"
+      return path   if File.exist?( path )
+   end
+
+   ##  fix - raise file not found error!!!
+   nil  ## not found - raise filenot found error - why? why not?
+end
+
+
+source_path = opts[:source_path]
+source_path = ['.']    if source_path.empty?  ## use ./ as default
+
+
+root_dir =  if opts[:push]
+               SportDb::GitHubSync.root   # e.g. "/sports/openfootball"
+            else
+               './o'
+            end
+
+
+puts "  (output) root_dir: >#{root_dir}<"
+
+sync  = if opts[:push]
+             SportDb::GitHubSync.new( datasets )
+        else
+              nil
+        end
+puts "  sync:"
+pp sync
+
+sync.git_fast_forward_if_clean      if sync
+
+
+
 datasets.each do |league_key, seasons|
     seasons = [ Season('2024/25') ]   if seasons.empty?
 
@@ -66,15 +132,17 @@ datasets.each do |league_key, seasons|
 
     seasons.each do |season|
       ### get matches
-      src_dir = "/sports/cache.wfb"
-      path = "#{src_dir}/#{season.to_path}/#{league_key}.csv"
+
+      filename = "#{season.to_path}/#{league_key}.csv"
+      path = find_file( filename, path: source_path )
+
       puts "  ---> reading matches in #{path} ..."
       matches = SportDb::CsvMatchParser.read( path )
       puts "     #{matches.size} matches"
 
       ## build
       txt = SportDb::TxtMatchWriter.build( matches )
-      puts txt
+      puts txt   if opts[:debug]
 
       league_name  = league_info[ :name ]      # e.g. Brasileiro Série A
       basename     = league_info[ :basename]   #.e.g  1-seriea
@@ -86,14 +154,19 @@ datasets.each do |league_key, seasons|
       buf << "= #{league_name} #{season}\n\n"
       buf << txt
 
-      ## note - repo_path moved!!!
-      ## repo_path    = league_info[ :path ]      # e.g. brazil or world/europe/portugal etc.
       repo_path  = SportDb::GitHubSync::REPOS[ league_key ]
 
-      outpath = "./o/#{repo_path}/#{season.to_path}/#{basename}.txt"
-      write_text( outpath, buf )
+      outpath = "#{root_dir}/#{repo_path}/#{season.to_path}/#{basename}.txt"
+      if opts[:dry]
+        puts "   (dry) writing to >#{outpath}<..."
+      else
+        write_text( outpath, buf )
+      end
     end
 end
+
+
+sync.git_push_if_changes   if sync
 
 
 puts "bye"

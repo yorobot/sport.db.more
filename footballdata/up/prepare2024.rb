@@ -7,7 +7,12 @@ require_relative 'helper'   ## (shared) boot helper
 
 
 
-require_relative 'datasets'   ## shared datasets
+require_relative 'datasets2024'   ## shared config (prepare+top)
+
+
+# datasets = DATASETS_MORE + DATASETS_TOP
+datasets = DATASETS_TOP
+pp datasets
 
 
 #########
@@ -42,10 +47,10 @@ require_relative 'datasets'   ## shared datasets
 # convert for staging
 
 
-datasets = DATASETS_TOP + DATASETS_MORE
 datasets.each do |league, seasons|
   seasons.each_with_index do |season,i|
     puts "==> #{league} #{season} - #{i+1}/#{seasons.size}..."
+    Footballdata.schedule( league: league,  season: season )
     Footballdata.convert( league: league, season: season )
   end
 end
