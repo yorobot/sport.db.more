@@ -102,7 +102,7 @@ source_path = ['.']    if source_path.empty?  ## use ./ as default
 
 
 root_dir =  if opts[:push]
-               SportDb::GitHubSync.root   # e.g. "/sports/openfootball"
+               SportDb::GitHubSync.root   # e.g. "/sports"
             else
                './o'
             end
@@ -110,8 +110,12 @@ root_dir =  if opts[:push]
 
 puts "  (output) root_dir: >#{root_dir}<"
 
+
 sync  = if opts[:push]
-             SportDb::GitHubSync.new( datasets )
+             repos = SportDb::GitHubSync.find_repos( datasets )
+             puts "  #{repos.size} repo(s):"
+             pp repos
+             SportDb::GitHubSync.new( repos )
         else
               nil
         end
@@ -159,7 +163,9 @@ datasets.each do |league_key, seasons|
       buf << "= #{league_name} #{season}\n\n"
       buf << txt
 
-      repo_path  = SportDb::GitHubSync::REPOS[ league_key ]
+      repo  = SportDb::GitHubSync::REPOS[ league_key ]
+      repo_path = "#{repo['owner']}/#{repo['name']}"
+      repo_path << "/#{repo['path']}"    if repo['path']  ## note: do NOT forget to add optional extra path!!!
 
       outpath = "#{root_dir}/#{repo_path}/#{season.to_path}/#{basename}.txt"
       if opts[:dry]

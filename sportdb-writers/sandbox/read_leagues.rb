@@ -6,12 +6,12 @@ require 'cocos'
 require 'season-formats'
 
 
-require_relative '../lib/sportdb/writers/league_reader'
+require_relative '../lib/sportdb/writers/league_config'
 
 
 
 leagues = SportDb::LeagueConfig.new
-leagues.add( read_csv( './config/leagues.csv' ))
+leagues.add( read_csv( './config/leagues_europe.csv' ))
 pp leagues
 
 

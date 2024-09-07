@@ -53,7 +53,7 @@ def self.write( league:, season:,
                 source:,
                 extra: nil,
                 split: false,
-                normalize: false,   
+                normalize: false,
                 rounds: true )
   season = Season( season )  ## normalize season
 
@@ -71,7 +71,7 @@ def self.write( league:, season:,
        exit 1
   end
   source_info = { path: source }   ## wrap in "plain" source dir in source info
-  
+
   source_path = source_info[:path]
 
   ## format lets you specify directory layout
@@ -106,14 +106,14 @@ def self.write( league:, season:,
      if normalize.is_a?(Proc)
         matches = normalize.call( matches, league: league,
                                            season: season )
-     else 
+     else
        puts "!! ERROR - normalize; expected proc got #{normalize.inspect}"
        exit 1
-     end 
+     end
   end
- 
 
-  
+
+
   league_name  = league_info[ :name ]      # e.g. Brasileiro Série A
   basename     = league_info[ :basename]   #.e.g  1-seriea
 
@@ -122,7 +122,10 @@ def self.write( league:, season:,
 
   ## note - repo_path moved!!!
   ## repo_path    = league_info[ :path ]      # e.g. brazil or world/europe/portugal etc.
-  repo_path  = SportDb::GitHubSync::REPOS[ league ]
+  repo  = SportDb::GitHubSync::REPOS[ league ]
+  repo_path = "#{repo['owner']}/#{repo['name']}"
+  repo_path << "/#{repo['path']}"    if repo['path']  ## note: do NOT forget to add optional extra path!!!
+
 
 
   season_path = String.new     ## note: allow extra path for output!!!! e.g. archive/2000s etc.
@@ -175,7 +178,7 @@ def self.write( league:, season:,
                       )
 
     ## note: might be empty!!! if no matches skip (do NOT write)
-    write_text( "#{config.out_dir}/#{repo_path}/#{season_path}/#{stage_basename}.txt", 
+    write_text( "#{config.out_dir}/#{repo_path}/#{season_path}/#{stage_basename}.txt",
                   buf )   unless buf.empty?
   end
   else  ## no stages - assume "regular" plain vanilla season

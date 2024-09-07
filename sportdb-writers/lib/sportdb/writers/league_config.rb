@@ -56,7 +56,8 @@ class LeagueItem
             when :name      then  method(:name_by_season).to_proc
             when :basename  then  method(:basename_by_season).to_proc
             else
-                raise ArgumentError, "invalid key #{key}; use :name or :basename"
+                nil  ## return nil - why? why not?
+                ## raise ArgumentError, "invalid key #{key}; use :name or :basename"
             end
         end
     end
@@ -66,15 +67,17 @@ def add( recs )
    recs.each do |rec|
       @table[ rec['key'] ] ||= LeagueItem.new
 
-      ## auto-change seasons to season object or nil
-      rec['start_season'] = rec['start_season'].empty? ? nil : Season.parse( rec['start_season'] )
-      rec['end_season']   = rec['end_season'].empty?   ? nil : Season.parse( rec['end_season'] )
-      @table[ rec['key'] ] << rec
+      ## note: auto-change seasons to season object or nil
+      @table[ rec['key'] ] << {  'name'         => rec['name'],
+                                 'basename'     => rec['basename'],
+                                 'start_season' => rec['start_season'].empty? ? nil : Season.parse( rec['start_season'] ),
+                                 'end_season'   => rec['end_season'].empty?   ? nil : Season.parse( rec['end_season'] ),
+                              }
    end
 end
 
 
-def [](key) @table[ key.to_s ]; end
+def [](key) @table[ key.to_s.downcase ]; end
 
 end # class LeagueConfig
 end # module SportDb

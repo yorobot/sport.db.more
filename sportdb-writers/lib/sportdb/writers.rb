@@ -29,20 +29,9 @@ require_relative 'writers/goals'
 require_relative 'writers/write'
 
 
-
-########################
-#  push & pull github scripts
-require 'gitti'    ## note - requires git machinery
-
-require_relative 'writers/github'   ## github helpers/update machinery
-
-
-
-
+## setup  leagues (info) table
 require_relative 'writers/league_config'
 
-
-## setup  leagues (info) table
 module Writer
   LEAGUES = SportDb::LeagueConfig.new
 
@@ -53,7 +42,53 @@ module Writer
     recs = read_csv( "#{SportDb::Module::Writers.root}/config/#{name}.csv" )
     LEAGUES.add( recs )
   end
+end  # module Writer
+
+
+
+########################
+#  push & pull github scripts
+require 'gitti'    ## note - requires git machinery
+
+require_relative 'writers/github_config'
+require_relative 'writers/github'   ## github helpers/update machinery
+
+
+module SportDb
+class  GitHubSync
+  REPOS = GitHubConfig.new
+  recs = read_csv( "#{SportDb::Module::Writers.root}/config/openfootball.csv" )
+  REPOS.add( recs )
+
+## todo/check: find a better name for helper?
+## note: datasets of format
+##
+## DATASETS = [
+##   ['it.1',    %w[2020/21 2019/20]],
+##  ['it.2',    %w[2019/20]],
+##  ['es.1',    %w[2019/20]],
+##  ['es.2',    %w[2019/20]],
+## ]
+
+def self.find_repos( datasets )
+  repos = []
+  datasets.each do |dataset|
+    league_key = dataset[0]
+    repo  = REPOS[ league_key ]
+    ## pp repo
+    if repo.nil?
+       puts "!! ERROR - no repo config/path found for league >#{league_key}<; sorry"
+       exit 1
+    end
+
+    repos <<  "#{repo['owner']}/#{repo['name']}"
+  end
+
+  pp repos
+  repos.uniq   ## note: remove duplicates (e.g. europe or world or such)
 end
+end  #  class  GitHubSync
+end  # module SportDb
 
 
 
