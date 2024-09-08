@@ -4,12 +4,10 @@ $LOAD_PATH.unshift( '../../../sportdb/sport.db/sportdb-quick/lib' )
 $LOAD_PATH.unshift( '../../../sportdb/sport.db/sportdb-catalogs/lib' )
 $LOAD_PATH.unshift( '../../../sportdb/sport.db/sportdb-search/lib' )
 $LOAD_PATH.unshift( '../../../sportdb/sport.db/sportdb-formats/lib' )
-$LOAD_PATH.unshift( '../sportdb-writers/lib' )
 $LOAD_PATH.unshift( '../sportdb-linters/lib' )
 
 
 require 'sportdb/formats'
-require 'sportdb/writers'   ## note - requires sportdb/formats only (require sportdb/catalogs first)!!!
 
 
 load_env   ## use dotenv (.env)
@@ -48,10 +46,4 @@ Webget.config.sleep  = 10
 Footballdata.config.convert.out_dir = '/sports/cache.api.fbdat'
 pp File.expand_path( Footballdata.config.convert.out_dir )
 #=> /sports/scache.api.fbdat
-
-
-##
-# todo/fix - change to (generic) monoroot  e.g. /sports (or /sites) or such
-SportDb::GitHubSync.root = "/sports/openfootball"
-pp File.expand_path( SportDb::GitHubSync.root )
 

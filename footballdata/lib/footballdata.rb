@@ -17,7 +17,7 @@ module Footballdata
         def out_dir()       @out_dir || './o'; end
         def out_dir=(value) @out_dir = value; end
      end
- 
+
     def convert()  @convert ||= Convert.new; end
   end # class Configuration
 
@@ -44,13 +44,6 @@ require_relative 'footballdata/convert'
 require_relative 'footballdata/teams'
 
 
-require_relative 'footballdata/generator'
-
-
-
-### for processing tool
-##   (auto-)add sportdb/writer  (pulls in sportdb/catalogs and gitti)
-##  require 'sportdb/writers'
 
 
 puts FootballdataApi.banner  ## say hello

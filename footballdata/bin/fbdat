@@ -182,11 +182,13 @@ end
 
 
 season            = Season( args[1] ||
-                             (['euro', 'br.1'].include?(league_code) ? '2024' : '2024/25'))
+                             (['euro',
+                               'copa.l',
+                               'br.1'].include?(league_code) ? '2024' : '2024/25'))
 
 season_start_year  = season.start_year   ## use year - why? why not?
 
-pp metal_league_code, season_start_year
+pp [metal_league_code, season_start_year]
 
 if opts[:cached]
     ## do nothing

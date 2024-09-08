@@ -1,9 +1,3 @@
-$LOAD_PATH.unshift( '../../../sportdb/sport.db/sportdb-langs/lib' )
-$LOAD_PATH.unshift( '../../../sportdb/sport.db/sportdb-structs/lib' )
-$LOAD_PATH.unshift( '../../../sportdb/sport.db/sportdb-formats/lib' )
-$LOAD_PATH.unshift( '../../../sportdb/sport.db/sportdb-catalogs/lib' )
-$LOAD_PATH.unshift( '../sportdb-writers/lib' )
-
 $LOAD_PATH.unshift( '../../../rubycocos/webclient/webget/lib' )
 $LOAD_PATH.unshift( './lib' )
 require 'footballdata'
@@ -12,9 +6,9 @@ require 'footballdata'
 load_env   ## use dotenv (.env)
 
 
-Webcache.root = '../../../cache'  ### c:\sports\cache
+Webcache.root = '/sports/cache'  ### c:\sports\cache
 
-## note -  free tier (tier one) plan - 10 requests/minute   
+## note -  free tier (tier one) plan - 10 requests/minute
 ##              (one request every 6 seconds 6*10=60 secs)
 ##     10 API calls per minute max.
 ##  note - default sleep (delay in secs) is 3 sec(s)

@@ -1,91 +1,75 @@
 # Notes
 
-## Stati
-
 
 ```
-Competition type
-LEAGUE | LEAGUE_CUP | CUP | PLAYOFFS
+eng.2  - championship includes playoff e.g.
+            add later how???
+!!! unexpected stage:
+-- skipping SEMI_FINALS
+!!! unexpected stage:
+-- skipping SEMI_FINALS
+!!! unexpected stage:
+-- skipping SEMI_FINALS
+!!! unexpected stage:
+-- skipping SEMI_FINALS
+!!! unexpected stage:
+-- skipping FINAL
 
-Team type
-CLUB | NATIONAL
+!!! unexpected stage:
+-- skipping SEMI_FINALS
+!!! unexpected stage:
+-- skipping SEMI_FINALS
+!!! unexpected stage:
+-- skipping SEMI_FINALS
+!!! unexpected stage:
+-- skipping SEMI_FINALS
+!!! unexpected stage:
+-- skipping FINAL
 
-Match status
-
-SCHEDULED | TIMED | IN_PLAY | PAUSED | 
-EXTRA_TIME | PENALTY_SHOOTOUT | FINISHED | 
-SUSPENDED | POSTPONED | CANCELLED | AWARDED
-
-status		The status of a match. 
-[ SCHEDULED | LIVE | IN_PLAY | PAUSED | 
-  FINISHED | POSTPONED | SUSPENDED | CANCELLED]
-
-Match stage
-  
-FINAL | THIRD_PLACE | SEMI_FINALS | QUARTER_FINALS | 
-LAST_16 | LAST_32 | LAST_64 | 
-ROUND_4 | ROUND_3 | ROUND_2 | ROUND_1 | 
-GROUP_STAGE | 
-PRELIMINARY_ROUND | 
-QUALIFICATION | QUALIFICATION_ROUND_1 | QUALIFICATION_ROUND_2 | QUALIFICATION_ROUND_3 | 
-PLAYOFF_ROUND_1 | PLAYOFF_ROUND_2 | PLAYOFFS | 
-REGULAR_SEASON | 
-CLAUSURA | APERTURA | 
-CHAMPIONSHIP | RELEGATION | RELEGATION_ROUND
-
-stage	
-FINAL | THIRD_PLACE | SEMI_FINALS | QUARTER_FINALS | 
-LAST_16 | LAST_32 | LAST_64 | 
-ROUND_4 | ROUND_3 | ROUND_2 | ROUND_1 | 
-GROUP_STAGE | 
-PRELIMINARY_ROUND | 
-QUALIFICATION | QUALIFICATION_ROUND_1 | QUALIFICATION_ROUND_2 | QUALIFICATION_ROUND_3 | 
-PLAYOFF_ROUND_1 | PLAYOFF_ROUND_2 | PLAYOFFS | 
-REGULAR_SEASON | 
-CLAUSURA | APERTURA | 
-CHAMPIONSHIP | RELEGATION | RELEGATION_ROUND
+!!! unexpected stage:
+-- skipping PLAYOFFS
+!!! unexpected stage:
+-- skipping PLAYOFFS
+!!! unexpected stage:
+-- skipping PLAYOFFS
+!!! unexpected stage:
+-- skipping PLAYOFFS
+!!! unexpected stage:
+-- skipping PLAYOFFS
 
 
-Match group
-GROUP_A | GROUP_B | GROUP_C | GROUP_D | 
-GROUP_E | GROUP_F | GROUP_G | GROUP_H | 
-GROUP_I | GROUP_J | GROUP_K | GROUP_L
 
-Penalty type
-MATCH | SHOOTOUT
+double check for more (*) awared, cancelled, and such!!!
 
-Score duration
-REGULAR | EXTRA_TIME | PENALTY_SHOOTOUT
 
-Card type
-YELLOW | YELLOW_RED | RED
+!! check for 2020/21 in it.1
+  1,Sat Sep 19 2020,Hellas Verona FC,3-0 (*),,AS Roma,awarded
 
-Goal type
-REGULAR | OWN | PENALTY
+
+!! ERROR: unsupported match status >IN_PLAY< - sorry:
+"utcDate"=>"2024-05-20T16:30:00Z",
+"status"=>"IN_PLAY",
+"matchday"=>37,
+
+note - IN_PLAY (same as playing now!!! LIVE)
+##  retry when match ended!!!!
+
+!! ERROR: unsupported match status >PAUSED< - sorry:
+## - why paused??
+{"area"=>{"id"=>2114, "name"=>"Italy", "code"=>"ITA", "flag"=>"https://crests.football-data.org/784.svg"},
+ "utcDate"=>"2024-05-20T18:45:00Z",
+ "status"=>"PAUSED",
+ "matchday"=>37,
+
+
+
+====  es.1 2023/24  =============
+  match stati: {"FINISHED"=>370, "TIMED"=>10}
+====  it.1 2023/24  =============
+  match stati: {"FINISHED"=>370, "TIMED"=>10}
+====  it.1 2020/21  =============
+  match stati: {"FINISHED"=>379, "AWARDED"=>1}
+====  fr.1 2021/22  =============
+  match stati: {"FINISHED"=>380, "CANCELLED"=>2}
+
 ```
-
-
-## More football api wrappers
-
-search rubygems for football 
-
-
-- <https://rubygems.org/gems/football-butler>
-  - <https://github.com/frontimax/football-butler>
-
-  
-- <https://rubygems.org/gems/football_ruby>
-  - <https://github.com/Saidbek/football_ruby>
-  - <https://github.com/Saidbek/football_cli>
-
-- <https://rubygems.org/gems/football__data>
-  - <https://github.com/delta4d/football-data>
-
-
-- <https://rubygems.org/gems/football_data>
-  - <https://bitbucket.org/PedroGabriel/footballdatagem/src/master/>
-
-- <https://rubygems.org/gems/footballdata>
-
-- <>
-  - <https://github.com/kicsipixel/eper>

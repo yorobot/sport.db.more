@@ -78,60 +78,37 @@ def self.convert_score( score )
 end
 
 
-
-
-STAGE_TO_STAGE = {
-  'REGULAR_SEASON'  => 'Regular',
-  'LEAGUE_STAGE'    => 'League',
-  'GROUP_STAGE'     => 'Group',
-  'PLAYOFFS'        => 'Playoffs',
-
+#######
 ##  map round-like to higher-level stages
-  'PRELIMINARY_ROUND'       => 'Qualifying',
-  'PRELIMINARY_SEMI_FINALS' => 'Qualifying',
-  'PRELIMINARY_FINAL'       => 'Qualifying',
-  '1ST_QUALIFYING_ROUND'    => 'Qualifying',
-  '2ND_QUALIFYING_ROUND'    => 'Qualifying',
-  '3RD_QUALIFYING_ROUND'    => 'Qualifying',
-  'QUALIFICATION_ROUND_1'   => 'Qualifying',
-  'QUALIFICATION_ROUND_2'   => 'Qualifying',
-  'QUALIFICATION_ROUND_3'   => 'Qualifying',
-  'ROUND_1'  =>  'Qualifying',
-  'ROUND_2'  =>  'Qualifying',
-  'ROUND_3'  =>  'Qualifying',
-  'PLAY_OFF_ROUND'          => 'Qualifying',
-  'PLAYOFF_ROUND_1'         => 'Qualifying',
-  'ROUND_OF_16'             => 'Knockout',
-  'LAST_16'                 => 'Knockout',
-  'QUARTER_FINALS'          => 'Knockout',
-  'SEMI_FINALS'             => 'Knockout',
-  'FINAL'                   => 'Knockout',
+STAGES = {
+  'REGULAR_SEASON'          => ['Regular'],
+
+  'PRELIMINARY_ROUND'       => ['Qualifying', 'Preliminary Round' ],
+  'PRELIMINARY_SEMI_FINALS' => ['Qualifying', 'Preliminary Semifinals' ],
+  'PRELIMINARY_FINAL'       => ['Qualifying', 'Preliminary Final' ],
+  '1ST_QUALIFYING_ROUND'    => ['Qualifying', 'Qual. Round 1' ],
+  '2ND_QUALIFYING_ROUND'    => ['Qualifying', 'Qual. Round 2' ],
+  '3RD_QUALIFYING_ROUND'    => ['Qualifying', 'Qual. Round 3' ],
+  'QUALIFICATION_ROUND_1'   => ['Qualifying', 'Qual. Round 1' ],
+  'QUALIFICATION_ROUND_2'   => ['Qualifying', 'Qual. Round 2' ],
+  'QUALIFICATION_ROUND_3'   => ['Qualifying', 'Qual. Round 3' ],
+  'ROUND_1'                 => ['Qualifying', 'Round 1'],    ##  use Qual. Round 1 - why? why not?
+  'ROUND_2'                 => ['Qualifying', 'Round 2'],
+  'ROUND_3'                 => ['Qualifying', 'Round 3'],
+  'PLAY_OFF_ROUND'          => ['Qualifying', 'Playoff Round'],
+  'PLAYOFF_ROUND_1'         => ['Qualifying', 'Playoff Round 1'],
+
+  'LEAGUE_STAGE'            => ['League'],
+  'GROUP_STAGE'             => ['Group'],
+  'PLAYOFFS'                => ['Playoffs'],
+
+  'ROUND_OF_16'             => ['Finals',     'Round of 16'],
+  'LAST_16'                 => ['Finals',     'Round of 16'],  ## use Last 16 - why? why not?
+  'QUARTER_FINALS'          => ['Finals',     'Quarterfinals'],
+  'SEMI_FINALS'             => ['Finals',     'Semifinals'],
+  'FINAL'                   => ['Finals',     'Final'],
 }
 
-
-
-
-STAGE_TO_ROUND = {
-  'PRELIMINARY_ROUND'       => 'Preliminary Round',
-  'PRELIMINARY_SEMI_FINALS' => 'Preliminary Semifinals',
-  'PRELIMINARY_FINAL'       => 'Preliminary Final',
-  '1ST_QUALIFYING_ROUND'    => 'Qual. Round 1',
-  '2ND_QUALIFYING_ROUND'    => 'Qual. Round 2',
-  '3RD_QUALIFYING_ROUND'    => 'Qual. Round 3',
-  'QUALIFICATION_ROUND_1'   => 'Qual. Round 1',
-  'QUALIFICATION_ROUND_2'   => 'Qual. Round 2',
-  'QUALIFICATION_ROUND_3'   => 'Qual. Round 3',
-  'ROUND_1'                 => 'Round 1',  ##  use Qual. Round 1 - why? why not?
-  'ROUND_2'                 => 'Round 2',
-  'ROUND_3'                 => 'round 3',
-  'PLAY_OFF_ROUND'          => 'Playoff Round',
-  'PLAYOFF_ROUND_1'         => 'Playoff Round 1',
-  'ROUND_OF_16'             => 'Round of 16',
-  'LAST_16'                 => 'Last 16',
-  'QUARTER_FINALS'          => 'Quarterfinals',
-  'SEMI_FINALS'             => 'Semifinals',
-  'FINAL'                   => 'Final',
-}
 
 
 
@@ -173,7 +150,7 @@ def self.convert( league:, season: )
      h
   end
 
-  pp teams_by_name.keys
+  ## pp teams_by_name.keys
 
 
 
@@ -210,34 +187,26 @@ matches.each do |m|
 
   stats['stage'][ stage_key ] += 1   ## track stage counts
 
-  stage =  if stage_key
-                 str = STAGE_TO_STAGE[ stage_key ]
-                 if str.nil?
-                   puts "!! ERROR - no stage mapping found for stage >#{stage_key}<"
-                   exit 1
-                 end
-                 str
-           else
-              ''  ## no stage
-           end
+  ## map stage to stage + round
+  stage, stage_round  =  STAGES[ stage_key ]
+
+  if stage.nil?
+      puts "!! ERROR - no stage mapping found for stage >#{stage_key}<"
+      exit 1
+  end
 
   matchday_num = m['matchday']
   matchday_num = nil   if matchday_num == 0   ## change 0 to nil (empty) too
 
-  if ['Regular', 'League', 'Group', 'Playoffs'].include?( stage )
+  if stage_round.nil?  ## e.g. Regular, League, Group, Playoffs
      ## keep/assume matchday number is matchday .e.g
      ##   matchday 1, 2 etc.
      matchday = matchday_num.to_s
   else
-    str = STAGE_TO_ROUND[ stage_key ]
-    if str.nil?
-      puts "!! ERROR - no round mapping found for stage >#{stage_key}<"
-      exit 1
-    end
     ## note - if matchday defined; assume leg e.g. 1|2
     ##     skip if different than one or two for now
     matchday = String.new
-    matchday << str
+    matchday << stage_round
     matchday << " | Leg #{matchday_num}"  if matchday_num &&
                                          (matchday_num == 1 || matchday_num == 2)
   end
@@ -282,11 +251,8 @@ matches.each do |m|
       ft = ''
       ht = ''
     when 'FINISHED'
-      ## todo/fix: assert duration == "REGULAR"
-      # assert( score['duration'] == 'REGULAR', 'score.duration REGULAR expected' )
       ft, ht, et, pen = convert_score( score )
     when 'AWARDED'
-      ## todo/fix: assert duration == "REGULAR"
       assert( score['duration'] == 'REGULAR', 'score.duration REGULAR expected' )
       ft = "#{score['fullTime']['home']}-#{score['fullTime']['away']}"
       ft << ' (*)'
@@ -349,25 +315,6 @@ matches.each do |m|
              m['status'],  # e.g. FINISHED, TIMED, etc.
              m['utcDate'],
             ]
-
-
-    print '%2s' % m['matchday']
-    print ' - '
-    print '%-26s' % team1
-    print '  '
-    print ft
-    print ' '
-    print "(#{ht})"    unless ht.empty?
-    print '  '
-    print '%-26s' % team2
-    print '  '
-    print comments
-    print ' | '
-    ## print date.to_date  ## strip time
-    print utc.strftime( '%a %b %-d %Y' )
-    print ' -- '
-    print utc
-    print "\n"
 end # each match
 
 
@@ -389,8 +336,8 @@ dates = "#{start_date.strftime('%b %-d')} - #{end_date.strftime('%b %-d')}"
 
 buf = ''
 buf << "#{season.key} (#{dates}) - "
-buf << "#{teams.keys.size} clubs, "
-# buf << "#{stat[:regular_season][:matches]} matches, "
+buf << "#{teams.keys.size} teams, "
+buf << "#{recs.size} matches"
 # buf << "#{stat[:regular_season][:goals]} goals"
 buf << "\n"
 
@@ -410,7 +357,7 @@ puts buf
 
    File.open( './logs.txt', 'a:utf-8' ) do |f|
      f.write "====  #{league} #{season.key}  =============\n"
-     f.write "  status: #{stats.inspect}\n"
+     f.write "  #{stats.inspect}\n"
    end
 
 =begin
@@ -485,8 +432,12 @@ teams.each do |name, count|
     print " › #{rec['area']['name']}"
     print "  - #{rec['address']}"
   else
-    puts "!! ERROR  - no team record found in teams.json for #{name}"
-    exit 1
+    if name == 'N.N.'
+      ## ignore missing record
+    else
+      puts "!! ERROR  - no team record found in teams.json for #{name}"
+      exit 1
+    end
   end
   print "\n"
 end
@@ -532,7 +483,7 @@ def self.vacuum( rows, headers: MAX_HEADERS, fixed_headers: MIN_HEADERS )
      end
   end
 
-  pp counter
+  ## pp counter
 
   ## check empty columns
   headers       = []

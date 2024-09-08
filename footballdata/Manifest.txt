@@ -6,7 +6,6 @@ bin/fbdat
 lib/footballdata.rb
 lib/footballdata/convert.rb
 lib/footballdata/download.rb
-lib/footballdata/generator.rb
 lib/footballdata/leagues.rb
 lib/footballdata/mods.rb
 lib/footballdata/prettyprint.rb

@@ -19,15 +19,15 @@ Hoe.spec 'footballdata-api' do
 
   self.extra_deps = [
     ['tzinfo'],
-    ['season-formats'], 
-    ['webget'],    
+    ['season-formats'],
+    ['webget'],
     ['cocos'],  ## later pull in with sportsdb-writers
   ]
 
   self.licenses = ['Public Domain']
 
   self.spec_extras = {
-   required_ruby_version: '>= 2.2.2'
+   required_ruby_version: '>= 3.1.0'
   }
 
 end

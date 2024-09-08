@@ -2,17 +2,17 @@ require_relative 'helper'
 
 
 
-# Footballdata::Metal.competitions( auth: false )   ## get all
-  
+# data = Footballdata::Metal.competitions( auth: false )   ## get all
 data = Footballdata::Metal.competitions( auth: true )   ## get free tier (TIER_ONE) with auth (token)
 pp data
 
 puts "bye"
 
 
+
 __END__
 
-club leagues 
+club leagues
 
 ==> England (ENG) - Premier League (PL) -- TIER_ONE LEAGUE, 126 season(s)
      2024-08-16 - 2025-05-25 @ 1
@@ -49,7 +49,7 @@ national teams
 
 
 ---
-    
+
 Premier League
     "code": "PL",
     "type": "LEAGUE",
@@ -57,15 +57,15 @@ Premier League
       "startDate": "2023-08-11",
       "endDate": "2024-05-19",
       "currentMatchday": 37,
-  
+
 Championship
     "code": "ELC",
     "type": "LEAGUE",
-    "currentSeason": 
+    "currentSeason":
       "startDate": "2023-08-04",
       "endDate": "2024-05-04",
       "currentMatchday": 46,
-      
+
 Ligue 1
     "code": "FL1",
     "type": "LEAGUE",
@@ -73,7 +73,7 @@ Ligue 1
       "startDate": "2023-08-11",
       "endDate": "2024-05-19",
       "currentMatchday": 33,
- 
+
  Bundesliga
     "code": "BL1",
     "type": "LEAGUE",
@@ -81,11 +81,11 @@ Ligue 1
       "startDate": "2023-08-18",
       "endDate": "2024-05-18",
       "currentMatchday": 34,
-  
+
 Serie A
     "code": "SA",
     "type": "LEAGUE",
-    "currentSeason": 
+    "currentSeason":
       "startDate": "2023-08-19",
       "endDate": "2024-05-26",
       "currentMatchday": 37,
@@ -93,31 +93,31 @@ Serie A
 Eredivisie
     "code": "DED",
     "type": "LEAGUE",
-    "currentSeason": 
+    "currentSeason":
       "startDate": "2023-08-11",
       "endDate": "2024-05-19",
       "currentMatchday": 34,
- 
+
  Primeira Liga
     "code": "PPL",
     "type": "LEAGUE",
-    "currentSeason": 
+    "currentSeason":
       "startDate": "2023-08-13",
       "endDate": "2024-05-19",
       "currentMatchday": 34,
-   
+
   Primera Division
     "code": "PD",
     "type": "LEAGUE",
-    "currentSeason": 
+    "currentSeason":
       "startDate": "2023-08-13",
       "endDate": "2024-05-26",
       "currentMatchday": 37,
- 
+
 Campeonato Brasileiro Série A
     "code": "BSA",
     "type": "LEAGUE",
-    "currentSeason": 
+    "currentSeason":
       "startDate": "2024-04-13",
       "endDate": "2024-12-08",
       "currentMatchday": 7,
@@ -126,7 +126,7 @@ Campeonato Brasileiro Série A
 Copa Libertadores
     "code": "CLI",
     "type": "CUP",
-    "currentSeason": 
+    "currentSeason":
       "startDate": "2024-02-07",
       "endDate": "2024-05-31",
       "currentMatchday": 5,
@@ -151,7 +151,7 @@ European Championship
 FIFA World Cup
     "code": "WC",
     "type": "CUP",
-    "currentSeason": 
+    "currentSeason":
       "startDate": "2022-11-20",
       "endDate": "2022-12-18",
       "currentMatchday": 8,
