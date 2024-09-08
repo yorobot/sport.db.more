@@ -12,15 +12,18 @@ load_env   ## use dotenv (.env)
 Webcache.root =  if File.exist?( '/sports/cache' )
                      puts "  setting web cache to >/sports/cache<"
                      '/sports/cache'
-                 else 
+                 else
                      './cache'
                  end
 
-## note -  free tier (tier one) plan - 10 requests/minute   
+## note -  free tier (tier one) plan - 10 requests/minute
 ##              (one request every 6 seconds 6*10=60 secs)
 ##     10 API calls per minute max.
 ##  note - default sleep (delay in secs) is 3 sec(s)
 Webget.config.sleep  = 10
+
+
+Footballdata.config.convert.out_dir = '/sports/cache.api.fbdat'   if File.exist?( '/sports/cache.api.fbdat' )
 
 
 
@@ -32,16 +35,27 @@ require 'optparse'
 module Footballdata
 def self.main( args=ARGV )
 
-opts = {}
+opts = {
+   cached:  false,
+   convert: true,
+}
+
 parser = OptionParser.new do |parser|
-  parser.banner = "Usage: #{$PROGRAM_NAME} [options]"
+  parser.banner = "Usage: #{$PROGRAM_NAME} [options] [args]"
 
   parser.on( "--cache", "--cached", "--offline",
-               "use cached data in #{Webcache.root}" ) do |cached|
+               "use cached data in #{Webcache.root} - default is (#{opts[:cached]})" ) do |cached|
     opts[:cached] = cached
+  end
+
+  parser.on( "--no-convert",
+               "turn off conversion to .csv in #{Footballdata.config.convert.out_dir} - default is (#{!opts[:convert]})" ) do |convert|
+    opts[:convert] = !convert
   end
 end
 parser.parse!( args )
+
+
 
 puts "OPTS:"
 p opts
@@ -51,23 +65,23 @@ p args
 
 ## try special args
 
-if ['plan', 'plans', 
-    'comp', 'comps'].include?(args[0]) 
+if ['plan', 'plans',
+    'comp', 'comps'].include?(args[0])
 
     if opts[:cached]
         ## do nothing
-    else    
+    else
       Metal.competitions( auth: true )   ## get free tier (TIER_ONE) with auth (token)
     end
 
   url = Metal.competitions_url
   pp url
   #=> "http://api.football-data.org/v4/competitions"
-   
+
   data = Webcache.read_json( url )
   pp data
-    
-  comps = data['competitions']  
+
+  comps = data['competitions']
   comps.each do |rec|
       print "==> "
       print "#{rec['area']['name']} (#{rec['area']['code']}) - "
@@ -75,12 +89,12 @@ if ['plan', 'plans',
       print "#{rec['plan']} #{rec['type']}, "
       print "#{rec['numberOfAvailableSeasons']} season(s)"
       print "\n"
-  
-      print "     #{rec['currentSeason']['startDate']} - #{rec['currentSeason']['endDate']} "  
+
+      print "     #{rec['currentSeason']['startDate']} - #{rec['currentSeason']['endDate']} "
       print "@ #{rec['currentSeason']['currentMatchday']}"
       print "\n"
   end
-  
+
   puts "  #{comps.size} competition(s)"
   exit 0
 end
@@ -100,9 +114,9 @@ end
 ## todo - add more date offsets - t+2,t+3,t+4, etc.
 
 date =  if ['y', 'yesterday', 't-1', '-1'].include?( args[0] )
-            Date.today-1       
+            Date.today-1
         elsif ['t', 'tomorrow', 't+1', '1', '+1'].include?( args[0] )
-            Date.today+1        
+            Date.today+1
         elsif ['m', 'match', 'matches', 'today'].include?( args[0] || 'today' )  ## make default - why? why not?
             Date.today
         else
@@ -110,7 +124,7 @@ date =  if ['y', 'yesterday', 't-1', '-1'].include?( args[0] )
         end
 
 if date
-  if opts[:cached] 
+  if opts[:cached]
       ## do nothing
   else
      Metal.todays_matches( date )
@@ -124,7 +138,7 @@ if date
     ## only print competition header if different from last match
     comp = fmt_competition( rec )
     puts comp   if comp != last_comp
-    
+
     puts fmt_match( rec )
 
     last_comp = comp
@@ -145,40 +159,46 @@ end
 ##   club cups intl
 ##    CL 2023  - (uefa/european) champions league
 ##    CLI 2204 - (south american) copa libertadores
-##   club leagues 
+##   club leagues
 ##    PL 2024  - england premiere league
 
+##
+## note - only use "generic" uniform league codes for now!!
 
-league_code       = args[0] || 'PL'
+league_code       = (args[0] || 'eng.1').downcase
+metal_league_code  = nil  ##  todo - find a better name
+                          ##  use internal_league_code or such - why? why not?
 
 ###  convenience helpers - lets you use eng.1, euro, etc.
 ## check if mapping for league_code
-if LEAGUES.has_key?( league_code.downcase )
-  league_code = LEAGUES[ league_code.downcase ]
+if LEAGUES.has_key?( league_code )
+  metal_league_code = LEAGUES[ league_code ]
 else
-   ## assume  "native" code
-   ##  always upcase e.g. pl => PL etc.
-   league_code = league_code.upcase
+  puts "!! ERROR - no code/mapping found for league >#{league_code}<"
+  puts "     mappings include:"
+  pp LEAGUES
+  exit 1
 end
 
 
-season            = Season( args[1] ||  
-                             (league_code == 'EC' ? '2024' : '2024/25'))
+season            = Season( args[1] ||
+                             (['euro', 'br.1'].include?(league_code) ? '2024' : '2024/25'))
 
 season_start_year  = season.start_year   ## use year - why? why not?
 
-pp league_code, season_start_year
+pp metal_league_code, season_start_year
 
 if opts[:cached]
     ## do nothing
 else
     ## download dataset(s)
     ## try download
-    Metal.matches( league_code, 
-                   season_start_year )
-end    
+    ##   note:  include teams (for convert) for now too!!
+    Metal.teams( metal_league_code, season_start_year )
+    Metal.matches( metal_league_code, season_start_year )
+end
 
-url = Metal.competition_matches_url( league_code, 
+url = Metal.competition_matches_url( metal_league_code,
                                       season_start_year )
 pp url
 #=> "http://api.football-data.org/v4/competitions/EC/matches?season=2024"
@@ -187,6 +207,13 @@ data = Webcache.read_json( url )
 ## pp data
 
 pp_matches( data )
+
+
+if opts[:convert]
+  puts "==> converting to .csv"
+  convert( league: league_code, season: season )
+end
+
 
 end  # def self.main
 end  # module Footballdata
