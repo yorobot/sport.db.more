@@ -5,21 +5,21 @@ module Worldfootball
 #  e.g
 =begin
    TIMEZONES = {
-  'eng.1' => 'Europe/London',  
+  'eng.1' => 'Europe/London',
   'eng.2' => 'Europe/London',
 
   'es.1'  => 'Europe/Madrid',
 
   'de.1'  => 'Europe/Berlin',
-  'fr.1'  => 'Europe/Paris', 
+  'fr.1'  => 'Europe/Paris',
   'it.1'  => 'Europe/Rome',
   'nl.1'  => 'Europe/Amsterdam',
 
-  'pt.1'  => 'Europe/Lisbon',   
+  'pt.1'  => 'Europe/Lisbon',
 
   ## todo/fix - pt.1
   ##  one team in madeira!!! check for different timezone??
-  ##  CD Nacional da Madeira 
+  ##  CD Nacional da Madeira
 
   'br.1'  => 'America/Sao_Paulo',
   ## todo/fix - brazil has 4 timezones
@@ -47,7 +47,7 @@ module Worldfootball
 OFFSETS = {
 
   ## fix - change to gmt/utc offset
-  ##        if offset == 1 (GMT/UTC+1)  
+  ##        if offset == 1 (GMT/UTC+1)
   ##           do NOTHING (default date/timezone of pages)
 
   'eng' => 0,
@@ -57,18 +57,18 @@ OFFSETS = {
  # 'eng.4' => 0,
  # 'eng.5' => 0,
 
-  'ie'  =>  0, 
+  'ie'  =>  0,
   'sco' =>  0,
-  
-  'pt' => 0, 
+
+  'pt' => 0,
  # 'pt.1'  => 0,
  # 'pt.2'  => 0,
- 
+
   'fi' => 2, # +2
   'gr' => 2, # +2
-  'ro' =>  2, # +2  
+  'ro' =>  2, # +2
   'ua' =>  2, # +2
-    
+
   'ru' =>  3,   # +3
   'tr'   => 3,  # +3 turkey time/moscow time
 
@@ -81,16 +81,16 @@ OFFSETS = {
  # 'mx.3'    => -6,
  # 'mx.cup'  => -6,
 
-  'cr' => -6,    # gmt-6  
-  'gt' => -6,    # gmt-6 
-  'hn' => -6,    # gmt-6 
-  'sv' => -6,    # gmt-6 
-  'ni' => -6,    # gmt-6 
+  'cr' => -6,    # gmt-6
+  'gt' => -6,    # gmt-6
+  'hn' => -6,    # gmt-6
+  'sv' => -6,    # gmt-6
+  'ni' => -6,    # gmt-6
 
   'uy' =>  -3,     #   gmt-3
   'pe' =>  -5,     #  gmt-5
   'ec' =>  -5,     #  gmt-5
-  'co' =>  -5,     #  gmt-5 
+  'co' =>  -5,     #  gmt-5
   'bo' =>  -4,     #  gmt-4
   'cl' =>  -4,     #  gmt-4
 
@@ -105,32 +105,32 @@ OFFSETS = {
   'cn' =>   7,  # +7  (gmt+7)
 
 
-   ## note - central european time (cet) - no need for date auto-fix                       
-   'at' => 1, 
-   'de' => 1, 
-   'ch' => 1, 
+   ## note - central european time (cet) - no need for date auto-fix
+   'at' => 1,
+   'de' => 1,
+   'ch' => 1,
    'hu' => 1,
-    'cz' => 1, 
-    'pl' => 1, 
-    'nl' => 1, 
-    'lu' => 1, 
+    'cz' => 1,
+    'pl' => 1,
+    'nl' => 1,
+    'lu' => 1,
     'be' => 1,
-    'dk' => 1, 
-    'se' => 1, 
+    'dk' => 1,
+    'se' => 1,
     'it' => 1,
-    'fr' => 1, 
+    'fr' => 1,
     'es' => 1,
-    ##   see https://en.wikipedia.org/wiki/Time_in_Europe  
+    ##   see https://en.wikipedia.org/wiki/Time_in_Europe
 
 
   ################
   ## int'l tournaments
-  # 'uefa.cl' 
-  # 'uefa.el' 
-  'uefa.cl'   => 1, 
+  # 'uefa.cl'
+  # 'uefa.el'
+  'uefa.cl'   => 1,
   'uefa.el'   => 1,
 
-  'concacaf.cl'  => -6,   ### use mx time 
+  'concacaf.cl'  => -6,   ### use mx time
   'copa.l'       => -4,    ### use brazil time
 }
 
@@ -154,7 +154,7 @@ LEAGUE_SETUPS  = {
   'it'  =>  { code: 'ita', name: 'Italy' },
 
 
-  'be' =>  { code: 'bel', name: 'Belgium'   },  
+  'be' =>  { code: 'bel', name: 'Belgium'   },
   'at' =>  { code: 'aut', name: 'Austria'   },
   'hu' =>  { code: 'hun', name: 'Hungary'   },
 
@@ -167,7 +167,7 @@ LEAGUE_SETUPS  = {
   'dk' =>  { code: 'den', name: 'Denmark' },
   'fi' =>  { code: 'fin', name: 'Finland' },
   'gr' =>  { code: 'gre', name: 'Greece' },
-  
+
   'ie' =>  { code: 'irl', name: 'Ireland' },
   'sco' =>  { code: 'sco', name: 'Scotland' },
 
@@ -178,16 +178,16 @@ LEAGUE_SETUPS  = {
   'ru' =>  { code: 'rus', name: 'Russia' },
   'se' =>  { code: 'swe', name: 'Sweden' },
   'ua' =>  { code: 'ukr', name: 'Ukraine' },
-  
+
 
   'eg' =>  { code: 'egy', name: 'Egypt' },
   'jp' =>  { code: 'jpn', name: 'Japan' },
   'cn' =>  { code: 'chn', name: 'China' },
-  
-  ## note - for now do NOT add United States to leage name
+
+  ## note - for now do NOT add United States to league name
   ##     e.g. 1   - Major League Soccer
   ##          2   - USL Championship
-  ##          cup - U.S. Open Cup 
+  ##          cup - U.S. Open Cup
   'us' =>  { code: 'usa', name: nil,  path: 'united-states' },
 
   'mx' =>  { code: 'mex', name: 'Mexico'    },
@@ -200,16 +200,16 @@ LEAGUE_SETUPS  = {
   'bo' =>  { code: 'bol', name: 'Bolivia' },
   'cl' =>  { code: 'chi', name: 'Chile' },
   'co' =>  { code: 'col', name: 'Colombia' },
-  
+
    'cr' =>  { code: 'crc', name: 'Costa Rica' },
-  'gt' =>  { code: 'gua', name: 'Guatemala' },  
-  'hn' =>  { code: 'hon', name: 'Honduras' },  
-  'sv' =>  { code: 'slv', name: 'El Salvador' }, 
+  'gt' =>  { code: 'gua', name: 'Guatemala' },
+  'hn' =>  { code: 'hon', name: 'Honduras' },
+  'sv' =>  { code: 'slv', name: 'El Salvador' },
   'ni' =>  { code: 'nca', name: 'Nicaragua' },
 
 
   ## int'l tournaments
-  'uefa.cl'      => { code: nil, name: 'UEFA',     path: 'europe' }, 
+  'uefa.cl'      => { code: nil, name: 'UEFA',     path: 'europe' },
   'uefa.el'      => { code: nil, name: 'UEFA',     path: 'europe' },
   'concacaf.cl'  => { code: nil, name: nil,       path: 'north-america' },
   'copa.l'       => { code: nil, name: nil,       path: 'south-america' },

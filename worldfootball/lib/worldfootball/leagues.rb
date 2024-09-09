@@ -1,200 +1,146 @@
 
 
-require_relative 'leagues/europe'
-require_relative 'leagues/north_america'
-require_relative 'leagues/south_america'
-require_relative 'leagues/pacific'
-require_relative 'leagues/asia'
-
-
 module Worldfootball
-
-LEAGUES = [LEAGUES_EUROPE,
-           LEAGUES_NORTH_AMERICA,
-           LEAGUES_SOUTH_AMERICA,
-           LEAGUES_PACIFIC,
-           LEAGUES_ASIA].reduce({}) { |mem,h| mem.merge!( h ); mem }
-
-
-class League
-    def initialize( key, data )
-      @key  = key
-      ## @data = data
-
-      @pages       = data[:pages]
-      @season_proc = data[:season] || ->(season) { nil }
-    end
-
-    def key()   @key; end
-
-    def pages( season: )
-      ## note: return for no stages / simple case - just a string
-      ##   and for the stages case ALWAYS an array (even if it has only one page (with stage))
-
-      if @pages.is_a?( String )
-        # assume always "simple/regular" format w/o stages
-        slug = @pages
-        { slug: fill_slug( slug, season: season ) }
-      else
-         ## check for league format / stages
-         ##   return array (of strings) or nil (for no stages - "simple" format)
-         indices = @season_proc.call( season )
-         if indices.nil?
-           puts "!! ERROR - no configuration found for season >#{season}< for league >#{@key}< found; sorry"
-           exit 1
-         elsif indices.is_a?( Integer )  ## single number - single/regular format w/o stage
-          # note: starting with 0 (always use idx-1) !!!
-           slug = if @pages.is_a?( Array )
-                    @pages[indices-1]
-                  else ## assume hash (and key is page slug)
-                    @pages.keys[indices-1]
-                  end
-           { slug: fill_slug( slug, season: season ) }
-         else  ## assume regular case - array of integers
-           recs = []
-           indices.each do |idx|
-              slug = key = @pages.keys[idx-1]
-              recs << { slug:  fill_slug( slug, season: season ),
-                        stage: @pages[key] }  ## note: include mapping for page to stage name!!
-           end
-           recs
-        end
-      end
-    end # pages
-
-
-    ######
-    # helper method
-    def fill_slug( slug, season: )
-      ## note: fill-in/check for place holders too
-      slug = if slug.index( '{season}' )
-               slug.sub( '{season}', season.to_path( :long ) )  ## e.g. 2010-2011
-             elsif slug.index( '{end_year}' )
-               slug.sub( '{end_year}', season.end_year.to_s )   ## e.g. 2011
-             else
-               ## assume convenience fallback - append regular season
-               "#{slug}-#{season.to_path( :long )}"
-            end
-
-      ## puts "  slug=>#{slug}<"
-
-      slug
-    end
-  end # class League
-
-
-
-  def self.find_league( key )  ## league info lookup
-    data = LEAGUES[ key ]
-    if data.nil?
-      puts "!! ERROR - no league found for >#{key}<; add to leagues tables"
-      exit 1
-    end
-    League.new( key, data )   ## use a convenience wrapper for now
-  end
-
-
-
-### "reverse" lookup by page - returns league AND season
-##  note: "blind" season template para - might be season or start_year etc.
-##   e.g.  {season} or {start_year} becomes {}
-
-PAGE_VAR_RE = /{
-                [^}]+
-               }/x
-
-
-def self.norm_slug( slug )
-    ## assume convenience fallback - append regular season
-    slug.index( '{' ) ? slug : "#{slug}-{season}"
+class LeagueConfig
+def initialize
+  @table = {}
 end
 
-PAGES ||=
- LEAGUES.reduce( {} ) do |pages, (key, data)|
-                                     if data[:pages].is_a?( String )
-                                       slug = data[:pages]
-                                       slug = Worldfootball.norm_slug( slug )
-                                       pages[ slug.sub( PAGE_VAR_RE, '{}') ] = { league: key, slug: slug }
-                                     elsif data[:pages].is_a?( Array )
-                                       data[:pages].each do |slug|
-                                        slug = Worldfootball.norm_slug( slug )
-                                         pages[ slug.sub( PAGE_VAR_RE, '{}') ] = { league: key, slug: slug }
-                                       end
-                                        ## elsif data[:pages].nil?
-                                        ## todo/fix: missing pages!!!
-                                     else ## assume hash
-                                      ## add stage to pages too - why? why not?
-                                       data[:pages].each do |slug, stage|
-                                         slug = Worldfootball.norm_slug( slug )
-                                         pages[ slug.sub( PAGE_VAR_RE, '{}') ] = { league: key, slug: slug, stage: stage }
-                                       end
-                                     end
-                                     pages
-                                    end
+class LeagueItem  # nested inside LeagueConfig
+  attr_reader :key, :slug
 
-# e.g. 2000 or 2000-2001
-SEASON_RE = /[0-9]{4}
-              (?:
-                -[0-9]{4}
-              )?
-            /x
+  def initialize( key:, slug: )
+    @key  = key
+    @slug = slug
 
-
-  def self.find_page!( slug )
-    page = find_page( slug )
-    if page.nil?
-      puts "!! ERROR: no mapping for page >#{slug}< found; sorry"
-
-      season_str = nil
-      norm = slug.sub( SEASON_RE ) do |match|  ## replace season with var placeholder {}
-                season_str = match   ## keep reference to season str
-                '{}'  ## replace with {}
-              end
-
-      puts "   season:      >#{season_str}<"
-      puts "   slug (norm): >#{norm}<"
-      puts
-      ## pp PAGES
-      exit 1
-    end
-    page
+    @seasons  = nil
   end
 
 
+  def seasons
+     ## auto-(down)load on first request
 
-  def self.find_page( slug )
-    ## return league key and season
-    season_str = nil
-    norm = slug.sub( SEASON_RE ) do |match|  ## replace season with var placeholder {}
-              season_str = match   ## keep reference to season str
-              '{}'  ## replace with {}
-            end
+     @seasons ||= begin
+       ### todo/fix:
+       ##     use from cache if not older than 1 (or 5/10?) hour(s) or such
+       ##           why? why not?
+       Worldfootball::Metal.download_schedule( @slug )
+       page = Worldfootball::Page::Schedule.from_cache( @slug )
 
-    if season_str.nil?
-      puts "!! ERROR: no season found in page slug >#{slug}<; sorry"
-      exit 1
+     ## pp page.seasons
+=begin
+[{:text=>"2024/2025", :ref=>"aut-oefb-cup-2024-2025"},
+ {:text=>"2023/2024", :ref=>"aut-oefb-cup-2023-2024"},
+ {:text=>"2022/2023", :ref=>"aut-oefb-cup-2022-2023"},
+ {:text=>"2021/2022", :ref=>"aut-oefb-cup-2021-2022"},
+=end
+
+     recs = page.seasons.map { |rec| [rec[:text], rec[:ref]] }
+     pp recs
+     puts "  #{recs.size} record(s)"
+     recs
+
+     seasons = {}
+     ## generate lookup table by season
+     recs.each do |text,slug|
+
+##
+##  fix upstream?? - allow multi-year seasons? why? why not?
+##     for now ignore special case and collect more real-world cases/samples
+##             if possible
+##      ["2019-2021 Playoffs", "regionalliga-bayern-2019-2021-playoffs"],
+##      ["2019-2021", "regionalliga-bayern-2019-2021"],
+##
+
+
+        season, stage = text.split( ' ', 2 )
+
+## todo/fix: add a waring here and auto log to logs.txt!!!!
+        next if season == '2019-2021'
+
+        season = Season.parse( season )
+
+        seasons[ season.key ] ||= []
+        seasons[ season.key] << [slug, stage]
+     end
+     seasons
     end
-
-    rec = PAGES[ norm ]
-    return nil  if rec.nil?
-
-
-    league_key = rec[:league]
-    slug_tmpl  = rec[:slug]
-    season = if slug_tmpl.index( '{start_year}' )
-               ## todo/check - season_str must be year (e.g. 2020 or such and NOT 2020-2021)
-               Season( "#{season_str.to_i}-#{season_str.to_i+1}" )
-             elsif slug_tmpl.index( '{end_year}' )
-               ## todo/check - season_str must be year (e.g. 2020 or such and NOT 2020-2021)
-               Season( "#{season_str.to_i-1}-#{season_str.to_i}" )
-             else  ## assume "regular" seasson - pass through as is
-               Season( season_str )
-             end
-
-    ## return hash table / record
-    { league: league_key,
-      season: season.key }
+    @seasons
   end
 
 
-end # module Worldfootball
+  def pages!( season: )
+    pages = pages( season: season )
+    if pages.nil?
+       puts "!! ERROR - no season #{season} found for #{key}; seasons incl:"
+       puts seasons.keys.join( ', ' )
+       puts "  #{seasons.keys.size} season(s)"
+       exit 1
+    end
+    pages
+  end
+
+  def pages( season: )
+    ### lookup league pages/slugs by season
+    season = Season( season )
+
+    ## note: assume reverse chronological order
+    ##           reverse here
+    ##  e.g.
+    ##   [["aut-bundesliga-2023-2024-qualifikationsgruppe", "Qualifikationsgruppe"],
+    ##    ["aut-bundesliga-2023-2024-playoff", "Playoff"],
+    ##    ["aut-bundesliga-2023-2024-meistergruppe", "Meistergruppe"],
+    ##    ["aut-bundesliga-2023-2024", nil]]
+    ##   =>
+    ##   [["aut-bundesliga-2023-2024", nil],
+    ##     ["aut-bundesliga-2023-2024-meistergruppe", "Meistergruppe"],
+    ##     ["aut-bundesliga-2023-2024-playoff", "Playoff"],
+    ##     ["aut-bundesliga-2023-2024-qualifikationsgruppe", "Qualifikationsgruppe"]]
+    recs = seasons[season.key]
+    recs ?  recs.reverse : nil
+  end
+end # class LeagueItem
+
+
+def add( recs )
+   recs.each do |rec|
+      @table[ rec['key'] ] = LeagueItem.new( key: rec['key'],
+                                             slug: rec['slug'] )
+   end
+end
+
+def [](key)  @table[key.to_s.downcase]; end
+def keys()   @table.keys; end
+def size()   @table.size; end
+end # class LeagueConfig
+
+
+LEAGUES = LeagueConfig.new
+recs = read_csv( "#{Worldfootball.root}/config/leagues.csv" )
+pp recs
+puts "   #{recs.size} league(s)"
+LEAGUES.add( recs )
+
+
+
+###########
+#  (strict) lookup convenience helpers with error reporting
+#              AND abort if no lookup found
+def self.find_league!( league_code )
+  league = LEAGUES[ league_code ]
+  if league.nil?
+     puts "!! ERROR - no config found for #{league_code}; leagues incl:"
+     puts LEAGUES.keys.join( ', ' )
+     puts "  #{LEAGUES.size} leagues(s)"
+     exit 1
+  end
+  league
+end
+
+def self.find_league_pages!( league:, season: )
+  league = find_league!( league )
+  pages  = league.pages!( season: season )
+  pages
+end
+end  # module Worldfootball
+

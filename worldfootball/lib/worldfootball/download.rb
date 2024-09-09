@@ -7,14 +7,9 @@ module Worldfootball
 def self.schedule( league:, season: )
   season = Season( season )   ## cast (ensure) season class (NOT string, integer, etc.)
 
-  league  = find_league( league )
-
-  pages =  league.pages( season: season )
-
-  ## if single (simple) page setup - wrap in array
-  pages = pages.is_a?(Array) ? pages : [pages]
-  pages.each do |page_meta|
-    Metal.download_schedule( page_meta[:slug] )
+  pages = find_league_pages!( league: league, season: season )
+  pages.each do |slug, _|
+    Metal.download_schedule( slug )
   end # each page
 end
 
@@ -22,14 +17,9 @@ end
 def self.reports( league:, season:, cache: true ) ## todo/check: rename to reports_for_schedule or such - why? why not?
   season = Season( season )   ## cast (ensure) season class (NOT string, integer, etc.)
 
-  league  = find_league( league )
-
-  pages =  league.pages( season: season )
-
-  ## if single (simple) page setup - wrap in array
-  pages = pages.is_a?(Array) ? pages : [pages]
-  pages.each do |page_meta|
-    Metal.download_reports_for_schedule( page_meta[:slug], cache: cache )
+  pages = find_league_pages!( league: league, season: season )
+  pages.each do |slug, _|
+    Metal.download_reports_for_schedule( slug, cache: cache )
   end # each page
 end
 
@@ -41,7 +31,7 @@ end
 
 ## todo/check: put in Downloader namespace/class - why? why not?
 ##   or use Metal    - no "porcelain" downloaders / machinery
-class Metal 
+class Metal
 
   BASE_URL = 'https://www.weltfussball.de'
 
@@ -117,7 +107,7 @@ class Metal
     end
   end
 
-  
+
   def self.download_page( url )  ## get & record/save to cache
     response = Webget.page( url )  ## fetch (and cache) html page (via HTTP GET)
 

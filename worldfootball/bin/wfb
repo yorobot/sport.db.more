@@ -9,7 +9,7 @@ require 'worldfootball'
 Webcache.root =  if File.exist?( '/sports/cache' )
                      puts "  setting web cache to >/sports/cache<"
                      '/sports/cache'
-                 else 
+                 else
                      './cache'
                  end
 
@@ -27,7 +27,12 @@ require 'optparse'
 module Worldfootball
 def self.main( args=ARGV )
 
-opts = {}
+opts = {
+    cached:  false,
+    convert: true,
+ }
+
+
 parser = OptionParser.new do |parser|
   parser.banner = "Usage: #{$PROGRAM_NAME} [options]"
 
@@ -35,16 +40,16 @@ parser = OptionParser.new do |parser|
 ## check if git has a offline option?? (use same)
 ##             check for other tools - why? why not?
 
-## todo - add a single letter option for offline/cached 
+## todo - add a single letter option for offline/cached
 
   parser.on( "--cache", "--cached", "--offline",
                "use cached data in >#{Webcache.root}<" ) do |cached|
     opts[:cached] = cached
   end
 
-  parser.on( "-x", "--export",
-               "export data in comma-separated values (.csv) format in >#{Worldfootball.config.convert.out_dir}<" ) do |export|
-    opts[:export] = export
+  parser.on( "--no-convert",
+               "turn off conversion to .csv in #{Worldfootball.config.convert.out_dir} - default is (#{!opts[:convert]})" ) do |convert|
+    opts[:convert] = !convert
   end
 
   parser.on( "--dry",
@@ -65,7 +70,7 @@ p args
 
 
 ### check special (built-in) commands first
-if ['cache'].include?( args[0] ) 
+if ['cache'].include?( args[0] )
     Worldfootball.list_pages
     exit 0
 end
@@ -73,10 +78,10 @@ end
 
 if ['league', 'leagues', 'ls'].include?( args[0] || 'leagues' )
     keys = LEAGUES.keys
-     
+
     pp keys
     puts "   #{keys.size} league(s)"
-    
+
     # puts
     # puts " pages:"
     # pp Worldfootball::PAGES
@@ -88,7 +93,7 @@ end
 
 league_code = args[0].downcase
 
-league =  find_league( league_code )  ## league info lookup
+league =  find_league!( league_code )  ## league info lookup
 
 if opts[:dry]
     ## output more page meta info
@@ -99,7 +104,7 @@ end
 
 season = Season( args[1] || '2024/25' )
 
-pages = league.pages( season: season )
+pages = league.pages!( season: season )
 
 
 puts
@@ -113,24 +118,17 @@ if opts[:dry]
 end
 
 
-
-## wrap single page record into array
-pages = pages.is_a?( Array ) ? pages : [pages]
-
-if opts[:cached]  
+if opts[:cached]
      # do nothing
 else  ## download to cache
-    pages.each_with_index do |page_rec,i|
-        slug = page_rec[:slug]
-        puts "==> #{i+1}/#{pages.size} - #{league_code} @ #{slug}..."    
-        page = Metal.download_schedule( slug  )  
-    end  
+    pages.each_with_index do |(slug,_),i|
+        puts "==> #{i+1}/#{pages.size} - #{league_code} @ #{slug}..."
+        page = Metal.download_schedule( slug )
+    end
 end
 
 
-pages.each_with_index do |page_rec,i|
-    slug = page_rec[:slug]
-
+pages.each_with_index do |(slug,_),i|
     puts "==> #{i+1}/#{pages.size} - #{league_code} @ #{slug}..."
     page = Page::Schedule.from_cache( slug )
     matches = page.matches
@@ -139,19 +137,16 @@ pages.each_with_index do |page_rec,i|
 end
 
 
-if opts[:export] 
+if opts[:convert]
     ## write out (export to) comma-separated values (.csv) datafile
     convert( league: league_code,
              season: season )
-end 
-
-
-
+end
 end   # def self.main
 end   # module Worldfootball
-    
+
 
 Worldfootball.main( ARGV )
 
-        
+
 puts "bye"

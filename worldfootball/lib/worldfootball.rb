@@ -29,9 +29,6 @@ require_relative 'worldfootball/convert'
 require_relative 'worldfootball/convert_reports'
 
 
-require_relative 'worldfootball/generator'
-
-
 
 module Worldfootball
 
@@ -55,12 +52,6 @@ def self.config()    @config ||= Configuration.new;  end
 
 end   # module Worldfootball
 
-
-
-
-### for processing tool
-##   (auto-)add sportdb/writer  (pulls in sportdb/catalogs and gitti)
-#  require 'sportdb/writers'
 
 
 

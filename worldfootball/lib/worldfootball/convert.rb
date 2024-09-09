@@ -2,27 +2,18 @@
 module Worldfootball
 
 
-def self.convert( league:, season: )   
+def self.convert( league:, season: )
   season = Season( season )  ## cast (ensure) season class (NOT string, integer, etc.)
 
-
-  league_code = league     ## required for fix_dates!!!
-
-  ## todo/fix - change league to league_rec/info or such
-  ##   do NOT reuse league (string) with new struct or such          
-  league = find_league( league_code )
-
-  pages = league.pages( season: season )
+  league = find_league!( league )
+  pages  = league.pages!( season: season )
 
 
-  # note: assume stages if pages is an array (of hash table/records)
-  #         (and NOT a single hash table/record)
-  if pages.is_a?(Array)
     recs = []
-    pages.each do |page_meta|
-      slug       = page_meta[:slug]
-      stage_name = page_meta[:stage]
-      ## todo/fix: report error/check if stage.name is nil!!!
+    pages.each do |slug, stage|
+      ## note: stage might be nil
+      ## todo/fix: report error/check if stage is nil!!!
+      stage ||= ''
 
       print "  parsing #{slug}..."
 
@@ -36,44 +27,26 @@ def self.convert( league:, season: )
       print "\n"
 
       rows = page.matches
-      stage_recs = build( rows, 
-                          season: season, 
-                          league: league.key, 
-                          stage: stage_name )
+      stage_recs = build( rows,
+                          season: season,
+                          league: league.key,
+                          stage: stage )
 
       pp stage_recs[0]   ## check first record
       recs += stage_recs
     end
-  else
-    page_meta = pages
-    slug = page_meta[:slug]
-
-    print "  parsing #{slug}..."
-
-    page = Page::Schedule.from_cache( slug )
-    print "  title=>#{page.title}<..."
-    print "\n"
-
-    rows = page.matches
-    recs = build( rows, 
-                  season: season, 
-                  league: league.key )
-
-    pp recs[0]   ## check first record
-  end
 
 
-  ## use league.key (for league_code) here - why? why not?
-  recs = fix_dates( recs, league: league_code )  
-  
+  recs = fix_dates( recs, league: league.key )
+
 
 ##   note:  sort matches by date before saving/writing!!!!
 ##     note: for now assume date in string in 1999-11-30 format (allows sort by "simple" a-z)
 ## note: assume date is third column!!! (stage/round/date/...)
 recs = recs.sort { |l,r| l[2] <=> r[2] }
 ## reformat date / beautify e.g. Sat Aug 7 1993
-recs.each do |rec| 
-         rec[2] = Date.strptime( rec[2], '%Y-%m-%d' ).strftime( '%a %b %-d %Y' ) 
+recs.each do |rec|
+         rec[2] = Date.strptime( rec[2], '%Y-%m-%d' ).strftime( '%a %b %-d %Y' )
        end
 
    ## remove unused columns (e.g. stage, et, p, etc.)
@@ -94,35 +67,35 @@ def self.fix_dates( rows, league: )
 
   ## check: rename (optional) offset to time_offset or such?
   ##   note - retry with league_country (e.g. eng.1 => eng etc.)
-  offset = OFFSETS[ league ] || 
-           OFFSETS[ league.split('.')[0] ] 
+  offset = OFFSETS[ league ] ||
+           OFFSETS[ league.split('.')[0] ]
 
   if offset.nil?
       puts "!! ERROR - no timezone/offset configured for league >#{league}<:"
       pp rows[0]  ## print first row too (for dates etc.)
       exit 1
   end
-    
 
-   ## todo/check - rename offset to timezone 
+
+   ## todo/check - rename offset to timezone
    ##   or utc_offset or such - why? why not
 
-   ## note - assume central european time (cet) - GMT/UTC+1 
+   ## note - assume central european time (cet) - GMT/UTC+1
    ##           e.g. offset = 1 for cet (and 0 for gmt/london) etc.
-   diff_cet  =  offset-1 
+   diff_cet  =  offset-1
 
    return rows   if diff_cet == 0   ## no need to convert if in cet
-       
-   rows.map { |row| _fix_date( row, offset ) }  
+
+   rows.map { |row| _fix_date( row, offset ) }
 end
 
 
 def self._fix_date( row, offset )
   ## note: time (column) required for fix
-  return row    if row[3].nil? || row[3].empty?  
+  return row    if row[3].nil? || row[3].empty?
 
-  ## note - assume central european time (cet) - GMT/UTC+1 
-  diff_cet  =  offset-1 
+  ## note - assume central european time (cet) - GMT/UTC+1
+  diff_cet  =  offset-1
 
   return row   if diff_cet == 0
 

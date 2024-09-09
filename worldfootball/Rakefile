@@ -19,8 +19,8 @@ Hoe.spec 'worldfootball' do
 
   self.extra_deps = [
     ## ['tzinfo'],
-    ['season-formats'], 
-    ['webget'],  
+    ['season-formats'],
+    ['webget'],
     ['nokogiri'],
     ['cocos'],  ## later pull in with sportsdb-writers
   ]
@@ -28,7 +28,7 @@ Hoe.spec 'worldfootball' do
   self.licenses = ['Public Domain']
 
   self.spec_extras = {
-   required_ruby_version: '>= 2.2.2'
+   required_ruby_version: '>= 3.1.0'
   }
 
 end
