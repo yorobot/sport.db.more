@@ -10,6 +10,8 @@ ROUND_TO_EN = {
   '5. Runde'      => 'Round 5',
   '6. Runde'      => 'Round 6',
   '7. Runde'      => 'Round 7',
+  '8. Runde'      => 'Round 8',
+  '9. Runde'      => 'Round 9',
   'Achtelfinale'  => 'Round of 16',
   'Viertelfinale' => 'Quarterfinals',
   'Halbfinale'    => 'Semifinals',
@@ -24,7 +26,7 @@ def self.build( rows, season:, league:, stage: '' )   ## rename to fixup or such
    season = Season( season )  ## cast (ensure) season class (NOT string, integer, etc.)
 
    ## note: do NOT pass in league struct! pass in key (string)
-   raise ArgumentError, "league key as string expected"  unless league.is_a?(String)  
+   raise ArgumentError, "league key as string expected"  unless league.is_a?(String)
 
    print "  #{rows.size} row(s) - Worldfootball.build #{league} #{season}"
    print " - #{stage}" unless stage.empty?
@@ -61,10 +63,10 @@ def self.build( rows, season:, league:, stage: '' )   ## rename to fixup or such
       exit 1
     end
     print "\n"
-   
-  ## note - must start line e.g. 
-  ##            do NOT match => Qual. 1. Runde  (1. Runde)!!!   
-  elsif row[:round] =~ /^(    
+
+  ## note - must start line e.g.
+  ##            do NOT match => Qual. 1. Runde  (1. Runde)!!!
+  elsif row[:round] =~ /^(
                           [1-9]\.[ ]Runde|
                           Achtelfinale|
                           Viertelfinale|

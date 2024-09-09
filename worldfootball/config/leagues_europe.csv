@@ -1,0 +1,75 @@
+key,         slug
+
+de.1,         bundesliga-2024-2025
+de.2,         2-bundesliga-2024-2025
+de.3,         3-liga-2024-2025
+de.4.bayern,  regionalliga-bayern-2024-2025
+de.cup,       dfb-pokal-2024-2025
+
+at.1,        aut-bundesliga-2024-2025
+at.2,        aut-2-liga-2024-2025
+at.3.o,      aut-regionalliga-ost-2024-2025
+at.cup,      aut-oefb-cup-2024-2025
+
+
+ch.1,        sui-super-league-2024-2025
+ch.2,        sui-challenge-league-2024-2025
+ch.cup,      sui-cup-2024-2025
+
+
+hu.1,       hun-nb-i-2024-2025
+
+cz.1,       cze-1-fotbalova-liga-2024-2025
+sk.1,       svk-super-liga-2024-2025
+
+pl.1,       pol-ekstraklasa-2024-2025
+
+
+
+eng.1,       eng-premier-league-2024-2025
+eng.2,       eng-championship-2024-2025
+eng.3,       eng-league-one-2024-2025
+eng.4,       eng-league-two-2024-2025
+eng.5,       eng-national-league-2024-2025
+eng.cup,     eng-fa-cup-2023-2024              ### update to 2024-2025 later!!!
+eng.cup.l,   eng-league-cup-2024-2025
+
+
+sco.1,       sco-premiership-2024-2025
+
+ie.1,        irl-premier-division-2024
+
+
+fr.1,       fra-ligue-1-2024-2025
+fr.2,       fra-ligue-2-2024-2025
+fr.cup,     fra-coupe-de-france-2023-2024     ### update to 2024-2025 later!!!
+
+
+lu.1,     lux-nationaldivision-2024-2025
+nl.1,     ned-eredivisie-2024-2025
+nl.2,     ned-eerste-divisie-2024-2025
+nl.cup,   ned-knvb-beker-2024-2025
+
+be.1,     bel-eerste-klasse-a-2024-2025
+be.2,     bel-eerste-klasse-b-2024-2025
+be.cup,   bel-beker-van-belgie-2024-2025
+
+
+it.1,     ita-serie-a-2024-2025
+it.2,     ita-serie-b-2024-2025
+it.cup,   ita-coppa-italia-2024-2025
+
+pt.1,     por-primeira-liga-2024-2025
+pt.2,     por-segunda-liga-2024-2025
+
+es.1,     esp-primera-division-2024-2025
+es.2,     esp-segunda-division-2024-2025
+es.cup,   esp-copa-del-rey-2023-2024        ##   update to 2024-2025 later!!!
+
+
+tr.1,    tur-sueperlig-2024-2025
+tr.2,    tur-1-lig-2024-2025
+
+gr.1,    gre-super-league-2024-2025
+
+hr.1,    cro-1-hnl-2024-2025

@@ -15,7 +15,7 @@ Webcache.root =  if File.exist?( '/sports/cache' )
 
 ## convert (default) output directory
 Worldfootball.config.convert.out_dir = if File.exist?( '/sports/cache.wfb')
-                                           puts "   setting convert out_dir to >/sports/cache.wfb<"
+                                           puts "  setting convert out_dir to >/sports/cache.wfb<"
                                            '/sports/cache.wfb'
                                         else
                                            '.' ## use working dir
@@ -102,12 +102,16 @@ if opts[:dry]
 end
 
 
-season = Season( args[1] || '2024/25' )
+## note - default to latest season of league
+##              might be 2024/25 or 2024 or
+#                 for world cup 2022 or such
+season = Season( args[1] || league.seasons.keys[0] )
 
 pages = league.pages!( season: season )
 
 
 puts
+pp [league.key, season.key]
 pp pages
 puts "   #{pages.size} page(s)"
 

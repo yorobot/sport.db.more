@@ -44,6 +44,12 @@ module Worldfootball
 ##        todo/fix - consider summertime before conversion too!!!
 
 
+
+##
+##  fix - use timezone names  !!!!!!!!!!!!!!!!!
+###   see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+
 OFFSETS = {
 
   ## fix - change to gmt/utc offset
@@ -101,7 +107,9 @@ OFFSETS = {
 
 
   'eg' =>   3,  # +3  (gmt+3)
+
   'jp' =>   9,  # +9  (gmt+9)
+  'kr' =>   9,     # use Asia/Seoul
   'cn' =>   7,  # +7  (gmt+7)
 
 
@@ -111,6 +119,7 @@ OFFSETS = {
    'ch' => 1,
    'hu' => 1,
     'cz' => 1,
+    'sk' => 1,
     'pl' => 1,
     'nl' => 1,
     'lu' => 1,
@@ -118,6 +127,7 @@ OFFSETS = {
     'dk' => 1,
     'se' => 1,
     'it' => 1,
+    'hr' => 1,   # check croatia is eastern
     'fr' => 1,
     'es' => 1,
     ##   see https://en.wikipedia.org/wiki/Time_in_Europe

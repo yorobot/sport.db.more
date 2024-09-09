@@ -10,6 +10,15 @@ todos
 
 ---
 
+## more data (score) errors
+
+```
+in be.cup 2024/25
+[013] 6. Runde => Round 6
+[013]    2024-09-08 | 16:00 | RJ Rochefortoise FC    | KFC VW Hamme           | 0-0 i.E.
+!! ERROR - unsupported score format >0-0 i.E.< - sorry; maybe add a score error fix/patch
+```
+
 
 ## How-to update (cached) datasets
 
@@ -37,7 +46,7 @@ page_schedule.rb:218:in `strptime': invalid date (Date::Error)
 
 
 
-## more 
+## more
 
 ```
  add more helpers
