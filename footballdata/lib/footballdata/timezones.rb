@@ -10,7 +10,17 @@ class UTC
   ## quick hack -
   ##     use to_time.getutc instead of utc ???
   def self.strptime( str, format )
-      DateTime.strptime( str, format ).to_time.utc
+      d = DateTime.strptime( str, format )
+      ## remove assert check - why? why not?
+      if d.zone != '+00:00'    ### use d.offset != Ration(0,1)  - why? why not?
+         puts "!! ASSERT - UTC parse date; DateTime returns offset != +0:00"
+         pp d.zone
+         pp d
+         exit 1
+      end
+      ## note - ignores offset if any !!!!
+      ##    todo/check - report warn if offset different from 0:00 (0/1) - why? why not?
+      Time.utc( d.year, d.month, d.day, d.hour, d.min, d.sec )
   end
 
   def self.find_zone( name )
