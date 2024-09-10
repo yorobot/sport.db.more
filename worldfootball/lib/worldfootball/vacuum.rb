@@ -6,13 +6,15 @@ MAX_HEADERS = [
 'Round',
 'Date',
 'Time',
+'Timezone',
 'Team 1',
 'FT',
 'HT',
 'Team 2',
 'ET',
 'P',
-'Comments']    ## e.g. awarded, cancelled/canceled, etc.
+'Comments',    ## e.g. awarded, cancelled/canceled, etc.
+'UTC']
 
 MIN_HEADERS = [   ## always keep even if all empty
 'Date',

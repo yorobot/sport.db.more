@@ -18,11 +18,11 @@ Hoe.spec 'worldfootball' do
   self.history_file = 'CHANGELOG.md'
 
   self.extra_deps = [
-    ## ['tzinfo'],
+    ['tzinfo'],
     ['season-formats'],
     ['webget'],
     ['nokogiri'],
-    ['cocos'],  ## later pull in with sportsdb-writers
+    ['cocos'],
   ]
 
   self.licenses = ['Public Domain']

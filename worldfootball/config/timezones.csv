@@ -1,0 +1,81 @@
+key,   zone
+
+eng,    Europe/London
+sco,    Europe/London     ## check if entry or Edingburgh or such exits
+ie,     Europe/Dublin
+
+es,     Europe/Madrid
+de,     Europe/Berlin
+fr,     Europe/Paris
+it,     Europe/Rome
+
+pt,     Europe/Lisbon
+
+## for champs default for not to cet (central european time) - why? why not?
+uefa.cl,  Europe/Paris
+uefa.el,  Europe/Paris
+euro,     Europe/Paris
+
+
+fi,      Europe/Helsinki      # +2
+gr,      Europe/Athens
+ro,      Europe/Bucharest
+ua,     Europe/Kyiv
+
+
+ru,     Europe/Moscow
+tr,     Europe/Istanbul     # +3 turkey time/moscow time
+
+at,     Europe/Vienna
+ch,     Europe/Zurich
+hu,     Europe/Budapest
+cz,    Europe/Prague
+sk,    Europe/Bratislava     # link to Prague !!!
+pl,   Europe/Warsaw
+be,  Europe/Brussels
+lu,  Europe/Luxembourg      # link to Brussels !!!
+nl,  Europe/Amsterdam       # link to Brussels !!!
+
+
+dk,   Europe/Berlin     ## check if country-specific available
+se,   Europe/Berlin     ## check if country-specific available
+hr,   Europe/Belgrade   ## check if country-specific available
+
+
+
+
+us,     America/New_York     # (gmt-5) new york
+ca,     America/Toronto
+
+mx,     America/Mexico_City
+
+
+concacaf.cl,    America/Mexico_City     ### use mx time
+copa.l,         America/Sao_Paulo       ### use brazil time
+
+
+cr,    America/Costa_Rica     # gmt-6
+gt,    America/Guatemala      # gmt-6
+hn,    America/Tegucigalpa    # gmt-6
+sv,    America/El_Salvador    # gmt-6
+ni,    America/Managua       # gmt-6
+
+uy,    America/Montevideo     #   gmt-3
+pe,    America/Lima           #  gmt-5
+ec,    America/Guayaquil      #  gmt-5
+co,    America/Bogota
+bo,    America/La_Paz         #  gmt-4
+cl,    America/Santiago      #  gmt-4
+
+br,    America/Sao_Paulo               # gmt-3  - change to -3?
+ar,    America/Argentina/Buenos_Aires  # gmt-3  - change to -3?
+
+
+
+eg,   Africa/Cairo  # +3  (gmt+3)
+
+jp,   Asia/Tokyo      # +9  (gmt+9)
+kr,   Asia/Seoul
+cn,   Asia/Shanghai   # +7  (gmt+7)
+
+

@@ -37,9 +37,6 @@ def self.convert( league:, season: )
     end
 
 
-  recs = fix_dates( recs, league: league.key )
-
-
 ##   note:  sort matches by date before saving/writing!!!!
 ##     note: for now assume date in string in 1999-11-30 format (allows sort by "simple" a-z)
 ## note: assume date is third column!!! (stage/round/date/...)
@@ -60,63 +57,5 @@ recs.each do |rec|
    puts "write #{out_path}..."
    write_csv( out_path, recs, headers: headers )
 end
-
-
-## helper to fix dates to use local timezone (and not utc/london time)
-def self.fix_dates( rows, league: )
-
-  ## check: rename (optional) offset to time_offset or such?
-  ##   note - retry with league_country (e.g. eng.1 => eng etc.)
-  offset = OFFSETS[ league ] ||
-           OFFSETS[ league.split('.')[0] ]
-
-  if offset.nil?
-      puts "!! ERROR - no timezone/offset configured for league >#{league}<:"
-      pp rows[0]  ## print first row too (for dates etc.)
-      exit 1
-  end
-
-
-   ## todo/check - rename offset to timezone
-   ##   or utc_offset or such - why? why not
-
-   ## note - assume central european time (cet) - GMT/UTC+1
-   ##           e.g. offset = 1 for cet (and 0 for gmt/london) etc.
-   diff_cet  =  offset-1
-
-   return rows   if diff_cet == 0   ## no need to convert if in cet
-
-   rows.map { |row| _fix_date( row, offset ) }
-end
-
-
-def self._fix_date( row, offset )
-  ## note: time (column) required for fix
-  return row    if row[3].nil? || row[3].empty?
-
-  ## note - assume central european time (cet) - GMT/UTC+1
-  diff_cet  =  offset-1
-
-  return row   if diff_cet == 0
-
-
-
-  col = row[2]
-  if col =~ /^\d{4}-\d{2}-\d{2}$/
-    date_fmt = '%Y-%m-%d'   # e.g. 2002-08-17
-  else
-    puts "!!! ERROR - wrong (unknown) date format >>#{col}<<; cannot continue; fix it; sorry"
-    ## todo/fix: add to errors/warns list - why? why not?
-    exit 1
-  end
-
-  date = DateTime.strptime( "#{row[2]} #{row[3]}", "#{date_fmt} %H:%M" )
-  ## NOTE - MUST be -7/24.0!!!! or such to work
-  date = date + (diff_cet/24.0)
-
-  row[2] = date.strftime( date_fmt )  ## overwrite "old"
-  row[3] = date.strftime( '%H:%M' )
-  row   ## return row for possible pipelining - why? why not?
-end
-
 end # module Worldfootball
+

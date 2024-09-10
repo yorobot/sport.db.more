@@ -33,6 +33,9 @@ def self.build( rows, season:, league:, stage: '' )   ## rename to fixup or such
    print "\n"
 
 
+   zone = find_zone!( league: league, season: season )
+
+
    ## note: use only first part from key for lookup
    ##    e.g. at.1  => at
    ##         eng.1 => eng
@@ -105,12 +108,10 @@ def self.build( rows, season:, league:, stage: '' )   ## rename to fixup or such
     team2_str = row[:team2]
     score_str = row[:score]
 
-    ## convert date from string e.g. 2019-25-10
-    date = Date.strptime( date_str, '%Y-%m-%d' )
 
 
     ### check for score_error; first (step 1) lookup by date
-    score_error = score_errors[ date.strftime('%Y-%m-%d') ]
+    score_error = score_errors[ date_str ]
     if score_error
       if team1_str == score_error[0] &&
          team2_str == score_error[1]
@@ -147,17 +148,44 @@ def self.build( rows, season:, league:, stage: '' )   ## rename to fixup or such
     ht, ft, et, pen, comments = parse_score( score_str )
 
 
+   ###################
+   ### calculate date & times
+   ## convert date from string e.g. 2019-25-10
+   ## date = Date.strptime( date_str, '%Y-%m-%d' )
+
+   if time_str.nil? || time_str.empty?
+       ## no time
+       ##   assume  00:00:00T
+       time_str     = ''
+       timezone     = ''
+       utc          = ''
+   else
+      ## note - assume central european (summer) time (cet/cest) - UTC+1 or UTC+2
+      cet = CET.strptime( "#{date_str} #{time_str}", '%Y-%m-%d %H:%M' )
+
+      utc = cet.getutc   ## convert to utc
+      local =  zone.to_local( utc )  # convert to local via utc
+      ## overwrite old with local
+      date_str = local.strftime( '%Y-%m-%d' )
+      time_str = local.strftime( '%H:%M' )
+      timezone = local.strftime( '%Z/%z' )
+      utc      = utc.strftime( '%Y-%m-%dT%H:%MZ' )
+   end
+
+
     recs <<  [stage,
               round,
-              date.strftime( '%Y-%m-%d' ),
+              date_str,
               time_str,
+              timezone,
               team1_str,
               ft,
               ht,
               team2_str,
               et,              # extra: incl. extra time
               pen,             # extra: incl. penalties
-              comments]
+              comments,
+              utc]
    end  # each row
    recs
 end  # build
