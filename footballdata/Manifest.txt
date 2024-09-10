@@ -3,6 +3,8 @@ Manifest.txt
 README.md
 Rakefile
 bin/fbdat
+config/leagues.csv
+config/timezones.csv
 lib/footballdata.rb
 lib/footballdata/convert.rb
 lib/footballdata/download.rb
@@ -11,4 +13,5 @@ lib/footballdata/mods.rb
 lib/footballdata/prettyprint.rb
 lib/footballdata/stat.rb
 lib/footballdata/teams.rb
+lib/footballdata/timezones.rb
 lib/footballdata/version.rb

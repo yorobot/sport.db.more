@@ -6,7 +6,7 @@ module Footballdata
 def self.schedule( league:, season: )
   season = Season( season )   ## cast (ensure) season class (NOT string, integer, etc.)
 
-  league_code = LEAGUES[ league.downcase ]
+  league_code = find_league!( league )
   puts "  mapping league >#{league}< to >#{league_code}<"
 
   Metal.teams(   league_code, season.start_year )
@@ -17,7 +17,7 @@ end
 def self.matches( league:, season: )
   season = Season( season )   ## cast (ensure) season class (NOT string, integer, etc.)
 
-  league_code = LEAGUES[ league.downcase ]
+  league_code = find_league!( league )
   puts "  mapping league >#{league}< to >#{league_code}<"
   Metal.matches( league_code, season.start_year )
 end
@@ -26,7 +26,7 @@ end
 def self.teams( league:, season: )
   season = Season( season )   ## cast (ensure) season class (NOT string, integer, etc.)
 
-  league_code = LEAGUES[ league.downcase ]
+  league_code = find_league!( league )
   puts "  mapping league >#{league}< to >#{league_code}<"
   Metal.teams(   league_code, season.start_year )
 end
@@ -38,7 +38,7 @@ end
 
 class Metal
 
-  def self.get( url, 
+  def self.get( url,
                   auth:    true,
                   headers: {} )
 
@@ -84,19 +84,19 @@ class Metal
   def self.competition_teams_url( code, year )     "#{BASE_URL}/competitions/#{code}/teams?season=#{year}";     end
   def self.competition_standings_url( code, year ) "#{BASE_URL}/competitions/#{code}/standings?season=#{year}"; end
   def self.competition_scorers_url( code, year )   "#{BASE_URL}/competitions/#{code}/scorers?season=#{year}"; end
-    
+
   def self.matches( code, year,
-                    headers: {} )  
-      get( competition_matches_url( code, year ), 
-           headers: headers ) 
+                    headers: {} )
+      get( competition_matches_url( code, year ),
+           headers: headers )
   end
 
-  def self.todays_matches_url( date=Date.today )   
+  def self.todays_matches_url( date=Date.today )
     "#{BASE_URL}/matches?"+
     "dateFrom=#{date.strftime('%Y-%m-%d')}&"+
-    "dateTo=#{(date+1).strftime('%Y-%m-%d')}"   
+    "dateTo=#{(date+1).strftime('%Y-%m-%d')}"
   end
-  def self.todays_matches( date=Date.today )    ## use/rename to matches_today or such - why? why not? 
+  def self.todays_matches( date=Date.today )    ## use/rename to matches_today or such - why? why not?
       get( todays_matches_url( date ) )
   end
 

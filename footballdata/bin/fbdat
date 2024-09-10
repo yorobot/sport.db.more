@@ -20,12 +20,17 @@ Webcache.root =  if File.exist?( '/sports/cache' )
 ##              (one request every 6 seconds 6*10=60 secs)
 ##     10 API calls per minute max.
 ##  note - default sleep (delay in secs) is 3 sec(s)
-Webget.config.sleep  = 10
+
+## change from 10 to 1 sec(s) for interactive use
+Webget.config.sleep  = 1
 
 
-Footballdata.config.convert.out_dir = '/sports/cache.api.fbdat'   if File.exist?( '/sports/cache.api.fbdat' )
-
-
+Footballdata.config.convert.out_dir =  if File.exist?( '/sports/cache.api.fbdat' )
+                                           puts "  setting convert out_dir to >/sports/cache.api.fbdat<"
+                                           '/sports/cache.api.fbdat'
+                                       else
+                                           '.' ## use working dir
+                                       end
 
 
 require 'optparse'
@@ -166,19 +171,12 @@ end
 ## note - only use "generic" uniform league codes for now!!
 
 league_code       = (args[0] || 'eng.1').downcase
-metal_league_code  = nil  ##  todo - find a better name
-                          ##  use internal_league_code or such - why? why not?
 
+##  todo - find a better name
+##  use internal_league_code or such - why? why not?
 ###  convenience helpers - lets you use eng.1, euro, etc.
 ## check if mapping for league_code
-if LEAGUES.has_key?( league_code )
-  metal_league_code = LEAGUES[ league_code ]
-else
-  puts "!! ERROR - no code/mapping found for league >#{league_code}<"
-  puts "     mappings include:"
-  pp LEAGUES
-  exit 1
-end
+metal_league_code = find_league!( league_code )
 
 
 season            = Season( args[1] ||

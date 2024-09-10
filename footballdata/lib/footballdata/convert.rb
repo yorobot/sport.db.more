@@ -1,39 +1,5 @@
 
-
-
 module Footballdata
-
-
-  TIMEZONES = {
-    'eng.1' => 'Europe/London',
-    'eng.2' => 'Europe/London',
-
-    'es.1'  => 'Europe/Madrid',
-
-    'de.1'  => 'Europe/Berlin',
-    'fr.1'  => 'Europe/Paris',
-    'it.1'  => 'Europe/Rome',
-    'nl.1'  => 'Europe/Amsterdam',
-
-    'pt.1'  => 'Europe/Lisbon',
-
-    ## for champs default for not to cet (central european time) - why? why not?
-    'uefa.cl'  => 'Europe/Paris',
-    'euro'     => 'Europe/Paris',
-
-    ## todo/fix - pt.1
-    ##  one team in madeira!!! check for different timezone??
-    ##  CD Nacional da Madeira
-
-    'br.1'  => 'America/Sao_Paulo',
-    ## todo/fix - brazil has 4 timezones
-    ##           really only two in use for clubs
-    ##             west and east (amazonas et al)
-    ##           for now use west for all - why? why not?
-    'copa.l'  => 'America/Sao_Paulo',
-  }
-
-
 
 
 def self.convert_score( score )
@@ -123,7 +89,7 @@ def self.convert( league:, season: )
 
   season = Season( season )   ## cast (ensure) season class (NOT string, integer, etc.)
 
-  league_code = LEAGUES[league.downcase]
+  league_code = find_league!( league )
 
   matches_url = Metal.competition_matches_url( league_code, season.start_year )
   teams_url   = Metal.competition_teams_url(   league_code, season.start_year )
@@ -132,14 +98,10 @@ def self.convert( league:, season: )
   data_teams     = Webcache.read_json( teams_url )
 
 
-  ## check for time zone
-  tz_name = TIMEZONES[ league.downcase ]
-  if tz_name.nil?
-    puts "!! ERROR - sorry no timezone configured for league #{league}"
-    exit 1
-  end
 
-  tz  = TZInfo::Timezone.get( tz_name )
+  ## check for time zone
+  tz  = find_zone!( league: league,
+                    season: season )
   pp tz
 
   ## build a (reverse) team lookup by name
@@ -285,10 +247,23 @@ matches.each do |m|
     ## utc   = ## tz_utc.strptime( m['utcDate'], '%Y-%m-%dT%H:%M:%SZ' )
     ##  note:  DateTime.strptime  is supposed to be unaware of timezones!!!
     ##            use to parse utc
-    utc = DateTime.strptime( m['utcDate'], '%Y-%m-%dT%H:%M:%SZ' ).to_time.utc
+    utc = UTC.strptime( m['utcDate'], '%Y-%m-%dT%H:%M:%SZ' )
     assert( utc.strftime( '%Y-%m-%dT%H:%M:%SZ' ) == m['utcDate'], 'utc time mismatch' )
 
-    local = tz.to_local( utc )
+
+    ## assume NOT valid utc time if 00:00
+    ##   do
+    if utc.hour == 0 && utc.min == 0 &&
+       ['SCHEDULED','POSTPONED'].include?( m['status'] )
+       date     = utc.strftime( '%Y-%m-%d' )
+       time     = ''
+       timezone = ''
+    else
+      local    = tz.to_local( utc )
+      date     = local.strftime( '%Y-%m-%d' )
+      time     = local.strftime( '%H:%M' )
+      timezone = local.strftime( '%Z/%z' )
+    end
 
 
     ## do NOT add time if status is SCHEDULED
@@ -301,9 +276,9 @@ matches.each do |m|
     recs << [stage,
              group,
              matchday,
-             local.strftime( '%Y-%m-%d' ),
-             ['SCHEDULED','POSTPONED'].include?( m['status'] ) ? '' : local.strftime( '%H:%M' ),
-             local.strftime( '%Z / UTC%z' ),
+             date,
+             time,
+             timezone,
              team1,
              ft,
              ht,

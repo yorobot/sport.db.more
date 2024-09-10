@@ -36,6 +36,8 @@ end   # module Footballdata
 # our own code
 require_relative 'footballdata/version'
 require_relative 'footballdata/leagues'
+require_relative 'footballdata/timezones'
+
 require_relative 'footballdata/download'
 require_relative 'footballdata/prettyprint'
 

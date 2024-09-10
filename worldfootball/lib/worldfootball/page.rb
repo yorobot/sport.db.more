@@ -106,7 +106,7 @@ end
 def log( msg )  ### append to log
   File.open( './logs.txt', 'a:utf-8' ) do |f|
     f.write( msg )
-    f.write( "\n" ) 
+    f.write( "\n" )
   end
 end
 
