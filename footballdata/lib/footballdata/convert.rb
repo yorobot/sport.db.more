@@ -1,49 +1,6 @@
 
 module Footballdata
 
-
-def self.convert_score( score )
-  ## duration: REGULAR  · PENALTY_SHOOTOUT  · EXTRA_TIME
-  ft, ht, et, pen = ["","","",""]
-
-  if score['duration'] == 'REGULAR'
-    ft  = "#{score['fullTime']['home']}-#{score['fullTime']['away']}"
-    ht  = "#{score['halfTime']['home']}-#{score['halfTime']['away']}"
-  elsif score['duration'] == 'EXTRA_TIME'
-    et  =  "#{score['regularTime']['home']+score['extraTime']['home']}"
-    et << "-"
-    et << "#{score['regularTime']['away']+score['extraTime']['away']}"
-
-    ft =  "#{score['regularTime']['home']}-#{score['regularTime']['away']}"
-    ht =  "#{score['halfTime']['home']}-#{score['halfTime']['away']}"
-  elsif score['duration'] == 'PENALTY_SHOOTOUT'
-    if score['extraTime']
-      ## quick & dirty hack - calc et via regulartime+extratime
-      pen = "#{score['penalties']['home']}-#{score['penalties']['away']}"
-      et  = "#{score['regularTime']['home']+score['extraTime']['home']}"
-      et << "-"
-      et << "#{score['regularTime']['away']+score['extraTime']['away']}"
-
-      ft = "#{score['regularTime']['home']}-#{score['regularTime']['away']}"
-      ht = "#{score['halfTime']['home']}-#{score['halfTime']['away']}"
-    else  ### south american-style (no extra time)
-        ## quick & dirty hacke - calc ft via fullTime-penalties
-        pen =  "#{score['penalties']['home']}-#{score['penalties']['away']}"
-        ft  =  "#{score['fullTime']['home']-score['penalties']['home']}"
-        ft << "-"
-        ft << "#{score['fullTime']['away']-score['penalties']['away']}"
-        ht  = "#{score['halfTime']['home']}-#{score['halfTime']['away']}"
-    end
-  else
-    puts "!! unknown score duration:"
-    pp score
-    exit 1
-  end
-
-  [ft,ht,et,pen]
-end
-
-
 #######
 ##  map round-like to higher-level stages
 STAGES = {
@@ -79,13 +36,6 @@ STAGES = {
 
 
 def self.convert( league:, season: )
-
-  ### note/fix: cl (champions league for now is a "special" case)
-  # if league.downcase == 'cl'
-  #   convert_cl( league: league,
-  #              season: season )
-  #  return
-  # end
 
   season = Season( season )   ## cast (ensure) season class (NOT string, integer, etc.)
 
@@ -237,22 +187,16 @@ matches.each do |m|
     end
 
 
-    ##
-    ##  add time, timezone(tz)
-    ##    2023-08-18T18:30:00Z
-    ## e.g. "utcDate": "2020-05-09T00:00:00Z",
-    ##      "utcDate": "2023-08-18T18:30:00Z",
 
-    ## -- todo - make sure / assert it's always utc - how???
-    ## utc   = ## tz_utc.strptime( m['utcDate'], '%Y-%m-%dT%H:%M:%SZ' )
-    ##  note:  DateTime.strptime  is supposed to be unaware of timezones!!!
-    ##            use to parse utc
     utc = UTC.strptime( m['utcDate'], '%Y-%m-%dT%H:%M:%SZ' )
     assert( utc.strftime( '%Y-%m-%dT%H:%M:%SZ' ) == m['utcDate'], 'utc time mismatch' )
 
 
+    ## do NOT add time if status is SCHEDULED
+    ##                        or POSTPONED for now
+    ##   otherwise assume time always present - why? why not?
+    ##
     ## assume NOT valid utc time if 00:00
-    ##   do
     if utc.hour == 0 && utc.min == 0 &&
        ['SCHEDULED','POSTPONED'].include?( m['status'] )
        date     = utc.strftime( '%Y-%m-%d' )
@@ -266,13 +210,6 @@ matches.each do |m|
     end
 
 
-    ## do NOT add time if status is SCHEDULED
-    ##                        or POSTPONED for now
-    ##   otherwise assume time always present - why? why not?
-
-
-
-    ## todo/fix: assert matchday is a number e.g. 1,2,3, etc.!!!
     recs << [stage,
              group,
              matchday,

@@ -1,20 +1,13 @@
 ## 3rd party (our own)
-require 'season/formats'   ## add season support
-require 'webget'           ## incl. webget, webcache, webclient, etc.
-
-require 'cocos'
-
-
-## 3rd party
+require 'football/timezones'  ## note - pulls in season/formats, cocos & tzinfo
+require 'webget'              ## incl. webget, webcache, webclient, etc.
 require 'nokogiri'
-require 'tzinfo'
 
 
 ###
 # our own code
 require_relative 'worldfootball/version'
 require_relative 'worldfootball/leagues'
-require_relative 'worldfootball/timezones'
 
 require_relative 'worldfootball/config'    ## rename to setup/timezones/layouts or such?
 require_relative 'worldfootball/download'

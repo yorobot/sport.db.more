@@ -3,7 +3,8 @@ Manifest.txt
 README.md
 Rakefile
 bin/wfb
-config/leagues.csv
+config/leagues_asia.csv
+config/leagues_europe.csv
 lib/worldfootball.rb
 lib/worldfootball/build-parse_score.rb
 lib/worldfootball/build.rb

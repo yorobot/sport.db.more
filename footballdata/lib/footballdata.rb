@@ -1,12 +1,6 @@
 ## 3rd party (our own)
-require 'season/formats'   ## add season support
+require 'football/timezones'  # note - pulls in season/formats, cocos & tzinfo
 require 'webget'           ## incl. webget, webcache, webclient, etc.
-
-
-require 'cocos'   ## check if webget incl. cocos ??
-
-
-require 'tzinfo'
 
 
 module Footballdata
@@ -36,13 +30,13 @@ end   # module Footballdata
 # our own code
 require_relative 'footballdata/version'
 require_relative 'footballdata/leagues'
-require_relative 'footballdata/timezones'
 
 require_relative 'footballdata/download'
 require_relative 'footballdata/prettyprint'
 
 require_relative 'footballdata/mods'
 require_relative 'footballdata/convert'
+require_relative 'footballdata/convert-score'
 require_relative 'footballdata/teams'
 
 
