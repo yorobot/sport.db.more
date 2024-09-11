@@ -51,12 +51,16 @@ class LeagueItem  # nested inside LeagueConfig
 ##      ["2019-2021 Playoffs", "regionalliga-bayern-2019-2021-playoffs"],
 ##      ["2019-2021", "regionalliga-bayern-2019-2021"],
 ##
-
+##
+##   ["1955/1958", "europa-league-1955-1958"]]
+##   ["1958/1960", "uefa-cup-1958-1960"],
 
         season, stage = text.split( ' ', 2 )
 
 ## todo/fix: add a waring here and auto log to logs.txt!!!!
         next if season == '2019-2021'
+        next if season == '1958/1960'
+        next if season == '1955/1958'
 
         season = Season.parse( season )
 

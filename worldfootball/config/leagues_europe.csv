@@ -4,6 +4,10 @@ de.1,         bundesliga-2024-2025
 de.2,         2-bundesliga-2024-2025
 de.3,         3-liga-2024-2025
 de.4.bayern,  regionalliga-bayern-2024-2025
+de.4.n,       regionalliga-nord-2024-2025
+de.4.no,      regionalliga-nordost-2024-2025
+de.4.w,       regionalliga-west-2024-2025
+de.4.sw,      regionalliga-suedwest-2024-2025
 de.cup,       dfb-pokal-2024-2025
 
 at.1,        aut-bundesliga-2024-2025
@@ -73,3 +77,16 @@ tr.2,    tur-1-lig-2024-2025
 gr.1,    gre-super-league-2024-2025
 
 hr.1,    cro-1-hnl-2024-2025
+
+
+uefa.cl,      champions-league-2024-2025
+uefa.cl.q,    champions-league-qual-2024-2025
+uefa.el,      europa-league-2024-2025
+uefa.el.q,    europa-league-qual-2024-2025
+uefa.conf,    conference-league-2024-2025
+uefa.conf.q,  europa-conference-league-qual-2024-2025
+
+uefa.nl.a,    nations-league-a-2024-2025
+uefa.nl.b,    nations-league-b-2024-2025
+uefa.nl.c,    nations-league-c-2024-2025
+uefa.nl.d,    nations-league-d-2024-2025
