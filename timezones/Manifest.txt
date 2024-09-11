@@ -1,0 +1,12 @@
+CHANGELOG.md
+Manifest.txt
+README.md
+Rakefile
+config/timezones_africa.csv
+config/timezones_america.csv
+config/timezones_asia.csv
+config/timezones_europe.csv
+config/timezones_world.csv
+lib/football-timezones.rb
+lib/football-timezones/version.rb
+lib/football/timezones.rb

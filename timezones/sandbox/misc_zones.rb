@@ -134,51 +134,12 @@ pp Date::ABBR_MONTHNAMES
 pp Date::MONTHNAMES
 
 
-### check date.today for utc two hours before midnight?
-##     different day (+1) - why? why not?
-
-=begin
-class TimeUtc
-   def self.now_utc
-class DateUtc
-   def self.todayz
-=end
-
-### get date today as utc
-##  get time now as utc
-
-##
-# synonyms for utc time
-#   world time
-#   z time
-#   utc  / Universal Time Coordinated
-
-
-class UTC
-    def self.now()  Time.now.utc; end
-    def self.today() now.to_date; end
-
-    ## -- todo - make sure / assert it's always utc - how???
-    ## utc   = ## tz_utc.strptime( m['utcDate'], '%Y-%m-%dT%H:%M:%SZ' )
-    ##  note:  DateTime.strptime  is supposed to be unaware of timezones!!!
-    ##            use to parse utc
-    ## quick hack -
-    ##     use to_time.getutc instead of utc
-    def self.strptime( str, format )
-        utc = DateTime.strptime( str, '%Y-%m-%dT%H:%M:%SZ' ).to_time.utc
-    end
-
-end
-
-pp UTC.now
-pp UTC.today
-
 
 pp ENV['TZ']
 pp Time.parse("2019/10/01 23:29:57")
 pp Time.parse("2019/10/01 23:29:57" )
-pp Time.strptime( "2019/10/01 23:29:57", "%Y/%m/%d", UTC.now )
-pp Time.strptime( "2019/10/01 23:29:57", "%Y/%m/%d %H:%M:%S", UTC.now )
+pp Time.strptime( "2019/10/01 23:29:57", "%Y/%m/%d", Time.now.utc )
+pp Time.strptime( "2019/10/01 23:29:57", "%Y/%m/%d %H:%M:%S", Time.now.utc )
 pp Time.now
 pp Date.today
 ENV['TZ'] = 'UTC'
@@ -188,14 +149,6 @@ pp Time.parse("2019/10/01 23:29:57")
 pp Time.now
 pp Date.today
 
-# Ztime
-# WorldTime
-# Utc/UTC
-# e.g.
-#  Ztime.now
-#  WorldTime.now
-#  UTC.now
-#  Utc.now
 
 
 puts "bye"

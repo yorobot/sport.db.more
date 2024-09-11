@@ -1,0 +1,29 @@
+key,   zone
+
+
+us,     America/New_York     # (gmt-5) new york
+ca,     America/Toronto
+
+mx,     America/Mexico_City
+
+
+cr,    America/Costa_Rica     # gmt-6
+gt,    America/Guatemala      # gmt-6
+hn,    America/Tegucigalpa    # gmt-6
+sv,    America/El_Salvador    # gmt-6
+ni,    America/Managua       # gmt-6
+
+uy,    America/Montevideo     #   gmt-3
+pe,    America/Lima           #  gmt-5
+ec,    America/Guayaquil      #  gmt-5
+co,    America/Bogota
+bo,    America/La_Paz         #  gmt-4
+cl,    America/Santiago      #  gmt-4
+
+br,    America/Sao_Paulo               # gmt-3  - change to -3?
+ar,    America/Argentina/Buenos_Aires  # gmt-3  - change to -3?
+
+
+concacaf.cl,    America/Mexico_City     ### use mx time
+copa.l,         America/Sao_Paulo       ### use brazil time
+

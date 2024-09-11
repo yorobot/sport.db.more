@@ -1,5 +1,43 @@
+require 'cocos'
+require 'season/formats'   ## add season support
 
-class UTC
+
+require 'tzinfo'
+
+
+## our own code
+require_relative 'football-timezones/version'
+
+
+####
+### check - nest CET class inside UTC e.g. UTC::CET - why? why not?
+##     make UTC and CET into a module (not class) - why? why not?
+
+module CET   ## central european time helpers
+  def self.now()  zone.now; end
+  def self.today() now.to_date; end
+  def self.strptime( str, format )
+
+    ### fix - change to Time.strptime - why? why not?
+    ##       (simply) ignore offset; double check that hours, minutes
+    ##        get parsed as is (without applying offset)
+
+    d = DateTime.strptime( str, format )
+      ## remove assert check - why? why not?
+      if d.zone != '+00:00'    ### use d.offset != Ration(0,1)  - why? why not?
+        puts "!! ASSERT - CET parse date; DateTime returns offset != +0:00"
+        pp d.zone
+        pp d
+        exit 1
+     end
+   zone.local_time( d.year, d.month, d.day, d.hour, d.min, d.sec )
+  end
+  def self.zone() @zone ||= UTC.find_zone( 'Europe/Vienna' ); end
+end  # class CET
+
+
+
+module UTC
   def self.now()  Time.now.utc; end
   def self.today() now.to_date; end
 
@@ -45,6 +83,14 @@ class Timezone   ## nested inside UTC
       local
    end
 
+   def local_time( year, month=1, mday=1, hour=0, min=0, sec=0 )
+      @zone.local_time( year, month, mday, hour, min, sec )
+   end
+
+   def now() @zone.now; end
+
+
+
    def assert( cond, msg )
     if cond
       # do nothing
@@ -54,31 +100,36 @@ class Timezone   ## nested inside UTC
     end
   end
 end  # class Timezone
-end   # class UTC
+end   # module UTC
 
 
 
-module Footballdata
-def self.find_zone!( league:, season: )
+
+module TimezoneHelper
+def find_zone!( league:, season: )
    @zones ||= begin
-                recs = read_csv( "#{FootballdataApi.root}/config/timezones.csv" )
                 zones = {}
-                recs.each do |rec|
-                    zone = UTC.find_zone( rec['zone'] )
-                    if zone.nil?
-                      ## raise ArgumentError - invalid zone
-                      puts "!! ERROR - cannot find timezone in timezone db:"
-                      pp rec
-                      exit 1
-                    end
-                    zones[ rec['key']] = zone
-                end
-                zones
+                ['timezones_america',
+                 'timezones_asia',
+                 'timezones_europe',
+                 'timezones_world',].each do |name|
+                     recs = read_csv( "#{SportDb::Module::Timezones.root}/config/#{name}.csv" )
+                     recs.each do |rec|
+                        zone = UTC.find_zone( rec['zone'] )
+                        if zone.nil?
+                          ## raise ArgumentError - invalid zone
+                          puts "!! ERROR - cannot find timezone in timezone db:"
+                          pp rec
+                          exit 1
+                        end
+                        zones[ rec['key']] = zone
+                     end
+                 end
+                 zones
               end
 
-
    ## lookup first try by league+season
-   league_code = league.downcase
+   league_code = league.to_s.downcase
    season      = Season( season )
 
    ##  e.g. world+2022, etc.
@@ -101,7 +152,16 @@ def self.find_zone!( league:, season: )
 
    zone
 end
-end # module Footballdata
+end #  module TimezoneHelper
 
 
 
+
+####
+### note - make find_zone! public/global by default - why? why not?
+module Kernel
+   include TimezoneHelper
+end
+
+
+puts SportDb::Module::Timezones.banner   ## say hello
