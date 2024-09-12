@@ -2,6 +2,9 @@
 require 'sportdb/quick'
 
 
+require 'optparse'    ## command-line processing; check if included updstream?
+
+
 
 module Writer
   class Configuration
@@ -45,16 +48,21 @@ module Writer
 end  # module Writer
 
 
+###
+#  fbtxt tool
+require_relative 'fbtxt/main'
+
+
 
 ########################
 #  push & pull github scripts
 require 'gitti'    ## note - requires git machinery
 
-require_relative 'writers/github_config'
-require_relative 'writers/github'   ## github helpers/update machinery
+require_relative 'fbgen/github_config'
+require_relative 'fbgen/github'   ## github helpers/update machinery
 
 
-module SportDb
+module Fbgen
 class  GitHubSync
   REPOS = GitHubConfig.new
   recs = read_csv( "#{SportDb::Module::Writers.root}/config/openfootball.csv" )
@@ -88,9 +96,10 @@ def self.find_repos( datasets )
   repos.uniq   ## note: remove duplicates (e.g. europe or world or such)
 end
 end  #  class  GitHubSync
-end  # module SportDb
+end  # module Fbgen
 
 
+require_relative 'fbgen/main'
 
 
 

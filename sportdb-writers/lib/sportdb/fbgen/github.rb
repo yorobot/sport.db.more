@@ -1,5 +1,5 @@
 
-module SportDb
+module Fbgen
 
 ###
 ## todo/fix:
@@ -80,4 +80,4 @@ def _git_fast_forward_if_clean( pathspec )
     end
 end
 end  # class GitHub
-end  # module SportDb
+end  # module Fbgen

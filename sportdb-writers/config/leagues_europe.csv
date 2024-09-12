@@ -7,10 +7,17 @@ at.3.o,   Österr. Regionalliga Ost,  3-regionalliga-ost,,,
 at.cup,   ÖFB Cup,                   cup,,,
 
 
-de.1,     Deutsche Bundesliga,       1-bundesliga,,,
-de.2,     Deutsche 2. Bundesliga,    2-bundesliga2,,,
-de.3,     Deutsche 3. Liga,          3-liga3,,,
-de.cup,   DFB Pokal,                 cup,,,
+de.1,         Deutsche Bundesliga,           1-bundesliga,,,
+de.2,         Deutsche 2. Bundesliga,        2-bundesliga2,,,
+de.3,         Deutsche 3. Liga,              3-liga3,,,
+de.4.bayern,  Deutsche Regionalliga Bayern,  4-regionalliga-bayern,,,
+de.4.n,       Deutsche Regionalliga Nord,    4-regionalliga-nord,,,
+de.4.no,      Deutsche Regionalliga Nordost, 4-regionalliga-nordost,,,
+de.4.w,       Deutsche Regionalliga West,    4-regionalliga-west,,,
+de.4.sw,      Deutsche Regionalliga Südwest, 4-regionalliga-suedwest,,,
+de.cup,       DFB Pokal,                     cup,,,
+
+
 
 it.1,     Italian Serie A,           1-seriea,,,
 it.2,     Italian Serie B,           2-serieb,,,
@@ -45,6 +52,8 @@ pt.2,     Portuguese Segunda Liga,    2-segundaliga,,,
 
 ch.1,     Swiss Super League,         1-superleague,,,
 ch.2,     Swiss Challenge League,     2-challengeleague,,,
+ch.cup,   Swiss Cup,                  cup,,,
+
 
 tr.1,     Turkish Süper Lig,          1-superlig,,,
 tr.2,     Turkish 1. Lig,             2-lig1,,,

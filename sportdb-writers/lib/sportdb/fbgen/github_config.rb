@@ -1,5 +1,5 @@
 
-module SportDb
+module Fbgen
 class GitHubConfig
 
   ## map leagues to repo+path
@@ -91,7 +91,7 @@ def find_repo( key )
 end
 
 end # class GitHubConfig
-end # module SportDb
+end # module Fbgen
 
 
 
