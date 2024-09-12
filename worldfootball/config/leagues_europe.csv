@@ -53,6 +53,7 @@ fr.cup,     fra-coupe-de-france-2023-2024     ### update to 2024-2025 later!!!
 
 
 lu.1,     lux-nationaldivision-2024-2025
+
 nl.1,     ned-eredivisie-2024-2025
 nl.2,     ned-eerste-divisie-2024-2025
 nl.cup,   ned-knvb-beker-2024-2025
@@ -77,6 +78,13 @@ es.cup,   esp-copa-del-rey-2023-2024        ##   update to 2024-2025 later!!!
 ro.1,     rou-liga-1-2024-2025
 ro.cup,   rou-cupa-romaniei-2024-2025
 
+ru.1,     rus-premier-liga-2024-2025
+ru.2,     rus-premier-liga-2024-2025
+
+ua.1,     ukr-premyer-liga-2024-2025
+
+
+
 tr.1,    tur-sueperlig-2024-2025
 tr.2,    tur-1-lig-2024-2025
 
@@ -88,7 +96,15 @@ ba.1,    bih-premier-liga-2024-2025
 al.1,    alb-kategoria-superiore-2024-2025
 
 
-fi.1,   fin-veikkausliiga-2024-championship
+is.1,   isl-urvalsdeild-2024
+
+se.1,   swe-allsvenskan-2024
+se.2,   swe-superettan-2024
+
+no.1,    nor-eliteserien-2024
+fi.1,    fin-veikkausliiga-2024-championship
+dk.1,    den-superliga-2024-2025
+
 
 
 

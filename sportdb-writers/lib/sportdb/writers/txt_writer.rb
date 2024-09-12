@@ -19,12 +19,85 @@ def self.build( matches, rounds: true )
   ## note: make sure rounds is a bool, that is, true or false  (do NOT pass in strings etc.)
   raise ArgumentError, "rounds flag - bool expected; got: #{rounds.inspect}"    unless rounds.is_a?( TrueClass ) || rounds.is_a?( FalseClass )
 
-  ## note: for now always english  
+
+  ### check for stages & stats
+  stats = {  'stage' => Hash.new(0),
+             'date' =>  { 'start_date' => nil,
+                          'end_date'   => nil, },
+             'teams' => Hash.new(0),
+              }
+
+## add matches played stats too??
+
+  matches.each do |match|
+     stage = match.stage
+     stage = 'Regular Season'   if stage.nil? || stage.empty?
+     stats['stage'][ stage ] += 1
+
+     [match.team1, match.team2].each do |team|
+        stats['teams'][ team ] += 1    if team && !['N.N.'].include?( team )
+     end
+  end
+
+  use_stages =  if stats['stage'].size >= 2  ||
+                   (stats['stage'].size == 1  &&
+                    stats['stage'].keys[0] != 'Regular Season')
+                  true
+                else
+                  false
+                end
+
+
+  if use_stages
+    ## split matches by stage
+    buf = String.new
+
+#    buf << "# Date       \n" # e.g. 13 April – 25 September 2024
+#                             #  or  16 August 2024 – 25 May 2025
+    buf << "# Teams      #{stats['teams'].size}\n"
+    buf << "# Matches    #{matches.size}\n"
+    buf << "# Stages     "
+    stages = stats['stage'].map { |name,count| "#{name} (#{count})" }.join( '  ' )
+    buf << stages
+    buf << "\n\n\n"
+
+
+    matches_by_stage = {}
+    matches.each do |match|
+      stage = match.stage || ''
+      matches_by_stage[stage] ||= []
+      matches_by_stage[stage] << match
+    end
+
+    ## todo/fix
+    ## note - empty stage must go first!!!!
+    matches_by_stage.each_with_index do |(name, matches),i|
+      buf << "\n"  if i != 0   # add extra new line (if not first stage)
+      if name.empty?
+        buf << "# Regular Season\n"   ## empty stage
+      else
+        buf << "== #{name}\n"
+      end
+      buf +=  _build_batch( matches, rounds: rounds )
+      buf << "\n"
+    end
+    buf
+  else
+    buf = _build_batch( matches, rounds: rounds )
+    buf
+  end
+end
+
+
+def self._build_batch( matches, rounds: true )
+  ## note: make sure rounds is a bool, that is, true or false  (do NOT pass in strings etc.)
+  raise ArgumentError, "rounds flag - bool expected; got: #{rounds.inspect}"    unless rounds.is_a?( TrueClass ) || rounds.is_a?( FalseClass )
+
+  ## note: for now always english
   round              = 'Matchday'
   format_date        = ->(date) { date.strftime( '%a %b/%-d' )  }
   format_score       = ->(match) { match.score.to_s( lang: 'en' ) }
   round_translations = ROUND_TRANSLATIONS
-  
 
   buf = String.new
 
@@ -33,12 +106,12 @@ def self.build( matches, rounds: true )
   last_time  = nil
 
 
-  matches.each do |match|
+  matches.each_with_index do |match,i|
 
      ## note: make rounds optional (set rounds flag to false to turn off)
      if rounds
        if match.round != last_round
-         buf << "\n\n"
+         buf << (i == 0 ? "\n" : "\n\n")    ## start with single empty line
          if match.round.is_a?( Integer ) ||
             match.round =~ /^[0-9]+$/   ## all numbers/digits
              ## default "class format
