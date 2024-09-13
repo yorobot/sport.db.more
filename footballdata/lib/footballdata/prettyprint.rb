@@ -39,6 +39,7 @@ def self.fmt_match( rec )
                 TIMED
                 FINISHED
                 POSTPONED
+                AWARDED
                 IN_PLAY
                ].include?( status ), "unknown status - #{status}" )
 
@@ -89,7 +90,11 @@ def self.fmt_match( rec )
        score << "#{et} a.e.t. "
        score << "(#{ft}, #{ht})"
      else
-       score << "#{ft} (#{ht})"
+      if !ht.empty?
+         score << "#{ft} (#{ht})"
+      else
+         score << "#{ft}"
+      end
      end
 
      buf << score

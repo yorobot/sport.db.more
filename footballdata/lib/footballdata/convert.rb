@@ -6,15 +6,16 @@ module Footballdata
 STAGES = {
   'REGULAR_SEASON'          => ['Regular'],
 
+  'QUALIFICATION'           => ['Qualifying'],
   'PRELIMINARY_ROUND'       => ['Qualifying', 'Preliminary Round' ],
   'PRELIMINARY_SEMI_FINALS' => ['Qualifying', 'Preliminary Semifinals' ],
   'PRELIMINARY_FINAL'       => ['Qualifying', 'Preliminary Final' ],
-  '1ST_QUALIFYING_ROUND'    => ['Qualifying', 'Qual. Round 1' ],
-  '2ND_QUALIFYING_ROUND'    => ['Qualifying', 'Qual. Round 2' ],
-  '3RD_QUALIFYING_ROUND'    => ['Qualifying', 'Qual. Round 3' ],
-  'QUALIFICATION_ROUND_1'   => ['Qualifying', 'Qual. Round 1' ],
-  'QUALIFICATION_ROUND_2'   => ['Qualifying', 'Qual. Round 2' ],
-  'QUALIFICATION_ROUND_3'   => ['Qualifying', 'Qual. Round 3' ],
+  '1ST_QUALIFYING_ROUND'    => ['Qualifying', 'Round 1' ],
+  '2ND_QUALIFYING_ROUND'    => ['Qualifying', 'Round 2' ],
+  '3RD_QUALIFYING_ROUND'    => ['Qualifying', 'Round 3' ],
+  'QUALIFICATION_ROUND_1'   => ['Qualifying', 'Round 1' ],
+  'QUALIFICATION_ROUND_2'   => ['Qualifying', 'Round 2' ],
+  'QUALIFICATION_ROUND_3'   => ['Qualifying', 'Round 3' ],
   'ROUND_1'                 => ['Qualifying', 'Round 1'],    ##  use Qual. Round 1 - why? why not?
   'ROUND_2'                 => ['Qualifying', 'Round 2'],
   'ROUND_3'                 => ['Qualifying', 'Round 3'],
@@ -29,6 +30,7 @@ STAGES = {
   'LAST_16'                 => ['Finals',     'Round of 16'],  ## use Last 16 - why? why not?
   'QUARTER_FINALS'          => ['Finals',     'Quarterfinals'],
   'SEMI_FINALS'             => ['Finals',     'Semifinals'],
+  'THIRD_PLACE'             => ['Finals',     'Third place play-off'],
   'FINAL'                   => ['Finals',     'Final'],
 }
 
@@ -95,12 +97,40 @@ matches.each do |m|
   score = m['score']
 
 
-  stage_key = m['stage']
 
+  group = m['group']
+  ## GROUP_A
+  ##  shorten group to A|B|C etc.
+  if group && group =~ /^(GROUP_|Group )/
+        group =  group.sub( /^(GROUP_|Group )/, '' )
+  else
+      if group.nil?
+          group = ''
+      else
+          puts "!! WARN - group defined with NON GROUP!? >#{group}< reset to empty"
+          puts "            and matchday to >#{m['matchday']}<"
+          ## reset group to empty
+          group = ''
+      end
+  end
+
+
+  stage_key = m['stage']
   stats['stage'][ stage_key ] += 1   ## track stage counts
 
-  ## map stage to stage + round
-  stage, stage_round  =  STAGES[ stage_key ]
+
+  stage, stage_round =  if group.empty?
+                          ## map stage to stage + round
+                          STAGES[ stage_key ]
+                        else
+                          ## if group defined ignore stage
+                          ##   hard-core always to group for now
+                           if stage_key != 'GROUP_STAGE'
+                              puts "!! WARN - group defined BUT stage set to >#{stage_key}<"
+                              puts "            and matchday to >#{m['matchday']}<"
+                           end
+                          ['Group', nil]
+                        end
 
   if stage.nil?
       puts "!! ERROR - no stage mapping found for stage >#{stage_key}<"
@@ -115,21 +145,10 @@ matches.each do |m|
      ##   matchday 1, 2 etc.
      matchday = matchday_num.to_s
   else
-    ## note - if matchday defined; assume leg e.g. 1|2
-    ##     skip if different than one or two for now
-    matchday = String.new
-    matchday << stage_round
-    matchday << " | Leg #{matchday_num}"  if matchday_num &&
-                                         (matchday_num == 1 || matchday_num == 2)
+    ## note - if matchday/round defined, use it
+    ##        note - ignore possible leg in matchday for now
+    matchday =  stage_round
   end
-
-
-
-  group = m['group'] || ''
-  ## GROUP_A
-  ##  shorten group to A|B|C etc.
-  group = group.sub( /^GROUP_/, '' )
-
 
 
     teams[ team1 ] += 1
@@ -164,7 +183,7 @@ matches.each do |m|
       ht = ''
     when 'FINISHED'
       ft, ht, et, pen = convert_score( score )
-    when 'AWARDED'
+    when 'AWARDED'   # AWARDED
       assert( score['duration'] == 'REGULAR', 'score.duration REGULAR expected' )
       ft = "#{score['fullTime']['home']}-#{score['fullTime']['away']}"
       ft << ' (*)'
@@ -206,7 +225,17 @@ matches.each do |m|
       local    = tz.to_local( utc )
       date     = local.strftime( '%Y-%m-%d' )
       time     = local.strftime( '%H:%M' )
-      timezone = local.strftime( '%Z/%z' )
+
+      ## pretty print timezone
+      ###   todo/fix - bundle into fmt_timezone method or such for reuse
+      tz_abbr   =  local.strftime( '%Z' )   ## e.g. EEST or if not available +03 or such
+      tz_offset =  local.strftime( '%z' )   ##  e.g. +0300
+
+      timezone =  if tz_abbr =~ /^[+-][0-9]+$/   ## only digits (no abbrev.)
+                     tz_offset
+                  else
+                      "#{tz_abbr}/#{tz_offset}"
+                  end
     end
 
 

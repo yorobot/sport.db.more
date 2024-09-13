@@ -41,7 +41,9 @@ hr,   Europe/Belgrade   ## check if country-specific available
 
 
 ## for champs default for not to cet (central european time) - why? why not?
-uefa.cl,  Europe/Paris
-uefa.el,  Europe/Paris
-euro,     Europe/Paris
+uefa.cl,   Europe/Paris
+uefa.el,   Europe/Paris
+uefa.conf, Europe/Paris
+uefa.nl,   Europe/Paris
+euro,      Europe/Paris
 
