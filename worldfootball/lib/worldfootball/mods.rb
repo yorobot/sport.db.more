@@ -11,6 +11,19 @@ def self.norm_team( team )
    ## clean team name and asciify (e.g. ’->' )
    team = team.sub( '(old)', '' ).strip
    team = team.gsub( '’', "'" )     ## e.g. Hawke’s Bay United FC
+
+   ## Criciúma - SC     =>     Criciúma - SC
+   ## Bahia - BA        =>     Bahia - BA
+   ##  remove inline dash ( - ) with single space
+   team = team.gsub( /[ ]+[-][ ]+/, ' ' )
+
+
+   ##   todo:
+   ##  replace (A)  with II
+   ##    Austria Wien (A)   =>   Austria Wien (A)
+   ##   others too?  - move to mods instead of generic rule - why? why not?
+   team = team.sub( /[ ]+\(A\)/, ' II' )
+
    team
 end
 
@@ -71,8 +84,8 @@ SCORE_ERRORS = {
   },
   'at.cup' => {
      ## 2023/24
-     '2023-07-22' => [ 'SV Leobendorf', 'SV Horn', ['3-2 (2-0, 2-2, 3-2) n.V.', '3-2 (2-0, 2-2) n.V.']], 
-  }, 
+     '2023-07-22' => [ 'SV Leobendorf', 'SV Horn', ['3-2 (2-0, 2-2, 3-2) n.V.', '3-2 (2-0, 2-2) n.V.']],
+  },
 }
 
 

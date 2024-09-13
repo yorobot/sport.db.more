@@ -1,0 +1,64 @@
+key,  name1, name2,
+
+*,   Meisterschaft,    Playoffs - Championship
+*,   Abstieg,          Playoffs - Relegation
+*,   Relegation,       Playoffs - Relegation
+
+
+sco.1,  Championship,   Playoffs - Championship
+sco.1,  Relegation',    Playoffs - Relegation
+
+
+at.1,   Meistergruppe,          Playoffs - Championship
+at.1,   Qualifikationsgruppe,   Playoffs - Relegation
+at.1,   Playoff,                Europa League Finals
+
+
+pl.1,   Playoffs,   Playoffs - Championship
+pl.2,   Abstieg,    Playoffs - Relegation
+
+
+sk.1,   Meisterschaft,   Playoffs - Championship
+sk.1,   Abstieg,         Playoffs - Relegation
+sk.1,   Europa League,   Europa League Finals
+
+
+ro.1, Championship,    Playoffs - Championship
+ro.1, Relegation,      Playoffs - Relegation
+
+ru.1, Meisterschaft,   Playoffs - Championship
+ru.1, Relegation,      Playoffs - Relegation
+
+
+ua.1, Meisterschaft,    Playoffs - Championship
+ua.1, Abstieg,          Playoffs - Relegation
+ua.1, Playoffs EL,      Europa League Finals
+
+
+fi.1,  Meisterschaft,   Playoffs - Championship
+fi.1,  Abstieg,         Playoffs - Challenger
+fi.1,  Playoff EL,      Europa League Finals
+
+dk.1,  Meisterschaft,   Playoffs - Championship
+dk.1,  Abstieg,         Playoffs - Relegation
+dk.1,  Europa League,   Europa League Finals
+
+
+gr.1,  Meisterschaft,    Playoffs - Championship
+gr.1,  Abstieg,          Playoffs - Relegation
+gr.1,  Playoffs,         Playoffs
+gr.1,  Spiel um Platz 6, Match 6th Place
+
+
+
+mx.1,  Apertura Playoffs,   Apertura - Liguilla
+mx.1,  Clausura Playoffs,   Clausura - Liguilla
+
+
+kr.1,   Meisterschaft,    Playoffs - Championship
+kr.1,   Abstieg,          Playoffs - Relegation
+
+
+nz.1,  Playoffs,         Playoff Finals
+
+

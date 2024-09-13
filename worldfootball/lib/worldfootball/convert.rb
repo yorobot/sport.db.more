@@ -15,6 +15,14 @@ def self.convert( league:, season: )
       ## todo/fix: report error/check if stage is nil!!!
       stage ||= ''
 
+      ## try to map stage name if new name defined/found
+      unless stage.empty?
+         stage_new  =  map_stage( stage, league: league.key,
+                                         season: season )
+         stage = stage_new  if stage_new
+      end
+
+
       print "  parsing #{slug}..."
 
       # unless File.exist?( path )

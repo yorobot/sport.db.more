@@ -1,0 +1,8 @@
+
+mx.1,     #  Liga MX
+
+- Apertura
+- Apertura - Liguilla
+- Clausura
+- Clausura - Liguilla
+

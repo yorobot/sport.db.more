@@ -8,8 +8,10 @@ require 'nokogiri'
 # our own code
 require_relative 'worldfootball/version'
 require_relative 'worldfootball/leagues'
+require_relative 'worldfootball/stages'
 
-require_relative 'worldfootball/config'    ## rename to setup/timezones/layouts or such?
+
+
 require_relative 'worldfootball/download'
 require_relative 'worldfootball/page'
 require_relative 'worldfootball/page_schedule'

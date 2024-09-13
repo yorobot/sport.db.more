@@ -92,3 +92,13 @@ ru.1,    Russian Premier League,   1-premierliga,,,
 ru.2,    Russian 1. Division,      2-division1,,,
 
 
+
+##  use uefa.1 - why? why not?
+##      uefa.2,
+##      uefa.3
+uefa.cl,      UEFA Champions League,    cl,,,     ### use champs or such?
+uefa.el,      UEFA Europa League,       el,,,     ### use europa
+uefa.conf,    UEFA Conference League,   conf,,,   ###  use con (conf - confusion with config files?)
+
+uefa.nl,      UEFA Nations League,      nl,,,
+euro,         Euro,   euro,,,

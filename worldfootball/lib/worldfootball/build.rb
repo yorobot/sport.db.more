@@ -2,23 +2,6 @@
 module Worldfootball
 
 
-ROUND_TO_EN = {
-  '1. Runde'      => 'Round 1',
-  '2. Runde'      => 'Round 2',
-  '3. Runde'      => 'Round 3',
-  '4. Runde'      => 'Round 4',
-  '5. Runde'      => 'Round 5',
-  '6. Runde'      => 'Round 6',
-  '7. Runde'      => 'Round 7',
-  '8. Runde'      => 'Round 8',
-  '9. Runde'      => 'Round 9',
-  'Achtelfinale'  => 'Round of 16',
-  'Viertelfinale' => 'Quarterfinals',
-  'Halbfinale'    => 'Semifinals',
-  'Finale'        => 'Final',
-}
-
-
 ## todo/check:  english league cup/trophy has NO ET - also support - make more flexible!!!
 
 ## build "standard" match records from "raw" table rows
@@ -69,36 +52,22 @@ def self.build( rows, season:, league:, stage: '' )   ## rename to fixup or such
 
   ## note - must start line e.g.
   ##            do NOT match => Qual. 1. Runde  (1. Runde)!!!
-  elsif row[:round] =~ /^(
-                          [1-9]\.[ ]Runde|
-                          Achtelfinale|
-                          Viertelfinale|
-                          Halbfinale|
-                          Finale
-                         )$
-                        /x
-    puts
-    print '[%03d] ' % (i+1)
-    print row[:round]
-
-    round = ROUND_TO_EN[ row[:round] ]
-    print " => #{round}"
-    print "\n"
-
-    if round.nil?
-      puts "!! ERROR: no mapping for round to english (en) found >#{row[:round]}<:"
-      pp row
-      exit 1
-    end
   else
     puts
     print '[%03d] ' % (i+1)
     print row[:round]
-    print "\n"
 
-    puts "!! WARN: unknown round >#{row[:round]}< for league >#{league}<:"
-    pp row
-    round = row[:round]
+    round_new = map_round( row[:round], league: league, season: season )
+
+    if round_new
+      round = round_new
+      print " => #{round}"
+      print "\n"
+    else
+      round = row[:round]
+      puts "!! WARN: unknown round >#{row[:round]}< for league >#{league} #{season}<:"
+      pp row
+    end
   end
 
 
@@ -168,7 +137,18 @@ def self.build( rows, season:, league:, stage: '' )   ## rename to fixup or such
       ## overwrite old with local
       date_str = local.strftime( '%Y-%m-%d' )
       time_str = local.strftime( '%H:%M' )
-      timezone = local.strftime( '%Z/%z' )
+
+      ## pretty print timezone
+      ###   todo/fix - bundle into fmt_timezone method or such for reuse
+      tz_abbr   =  local.strftime( '%Z' )   ## e.g. EEST or if not available +03 or such
+      tz_offset =  local.strftime( '%z' )   ##  e.g. +0300
+
+      timezone =  if tz_abbr =~ /^[+-][0-9]+$/   ## only digits (no abbrev.)
+                     tz_offset
+                  else
+                      "#{tz_abbr}/#{tz_offset}"
+                  end
+
       utc      = utc.strftime( '%Y-%m-%dT%H:%MZ' )
    end
 
