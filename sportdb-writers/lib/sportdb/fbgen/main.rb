@@ -26,8 +26,13 @@ parser = OptionParser.new do |parser|
       opts[:debug] = !debug
     end
 
+    parser.on( "-I DIR", "--include DIR",
+                "add directory to (source) search path - default is (#{opts[:source_path].join(',')})") do |dir|
+      opts[:source_path] += path
+    end
+
     parser.on( "-f FILE", "--file FILE",
-                "read leagues via .csv file") do |file|
+                "read leagues (and seasons) via .csv file") do |file|
       opts[:file] = file
     end
 end

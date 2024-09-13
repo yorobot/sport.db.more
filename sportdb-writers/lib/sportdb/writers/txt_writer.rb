@@ -34,6 +34,22 @@ def self.build( matches, rounds: true )
      stage = 'Regular Season'   if stage.nil? || stage.empty?
      stats['stage'][ stage ] += 1
 
+     if match.date
+
+      ## todo/fix - norm date (parse as Date)
+      ##   check format etc.
+      date = if match.date.is_a?( String )
+                Date.strptime( match.date, '%Y-%m-%d' )
+              else  ## assume it's already a date (object)
+                match.date
+              end
+       stats['date']['start_date'] ||= date
+       stats['date']['end_date']   ||= date
+
+       stats['date']['start_date'] = date  if date < stats['date']['start_date']
+       stats['date']['end_date']   = date  if date > stats['date']['end_date']
+      end
+
      [match.team1, match.team2].each do |team|
         stats['teams'][ team ] += 1    if team && !['N.N.'].include?( team )
      end
@@ -48,20 +64,35 @@ def self.build( matches, rounds: true )
                 end
 
 
-  if use_stages
-    ## split matches by stage
+   ### add comment header
     buf = String.new
+    # e.g. 13 April – 25 September 2024
+    #  or  16 August 2024 – 25 May 2025
+    buf << "# Date       "
+    start_date = stats['date']['start_date']
+    end_date   = stats['date']['end_date']
+    if start_date.year != end_date.year
+      buf << "#{start_date.strftime('%a %b/%-d %Y')} - #{end_date.strftime('%a %b/%-d %Y')}"
+    else
+      buf << "#{start_date.strftime('%a %b/%-d')} - #{end_date.strftime('%a %b/%-d %Y')}"
+    end
+    buf << " (#{end_date.jd-start_date.jd}d)"   ## add days
+    buf << "\n"
 
-#    buf << "# Date       \n" # e.g. 13 April – 25 September 2024
-#                             #  or  16 August 2024 – 25 May 2025
     buf << "# Teams      #{stats['teams'].size}\n"
     buf << "# Matches    #{matches.size}\n"
-    buf << "# Stages     "
-    stages = stats['stage'].map { |name,count| "#{name} (#{count})" }.join( '  ' )
-    buf << stages
-    buf << "\n\n\n"
+
+    if use_stages
+      buf << "# Stages     "
+      stages = stats['stage'].map { |name,count| "#{name} (#{count})" }.join( '  ' )
+      buf << stages
+      buf << "\n"
+    end
+    buf << "\n\n"
 
 
+  if use_stages
+    ## split matches by stage
     matches_by_stage = {}
     matches.each do |match|
       stage = match.stage || ''
@@ -79,11 +110,11 @@ def self.build( matches, rounds: true )
         buf << "== #{name}\n"
       end
       buf +=  _build_batch( matches, rounds: rounds )
-      buf << "\n"
+      buf << "\n"    if i+1 != matches_by_stage.size
     end
     buf
   else
-    buf = _build_batch( matches, rounds: rounds )
+    buf += _build_batch( matches, rounds: rounds )
     buf
   end
 end
