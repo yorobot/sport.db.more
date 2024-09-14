@@ -1,5 +1,5 @@
 
-module Fbgen
+module Fbup
 
 ###
 ## todo/fix:
@@ -80,4 +80,4 @@ def _git_fast_forward_if_clean( pathspec )
     end
 end
 end  # class GitHub
-end  # module Fbgen
+end  # module Fbup

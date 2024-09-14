@@ -8,7 +8,7 @@ require 'sportdb/writers'
 
 
 ## same as
-## $ fbgen -f ./leagues.csv
+## $ fbup -f ./leagues.csv
 
 
 # args = ['-f', './leagues_fbdat.history.csv' ]
@@ -18,6 +18,6 @@ args = ['-f', './leagues_fbdat.csv' ]
 
 ## args = ['at.1']
 Fbgen.main( args )
-
+# Fbup.main( args )
 
 puts "bye"

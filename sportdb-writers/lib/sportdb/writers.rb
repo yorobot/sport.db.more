@@ -26,11 +26,6 @@ end   # module Writer
 ###
 # our own code
 require_relative 'writers/version'
-require_relative 'writers/txt_writer'
-
-require_relative 'writers/goals'
-require_relative 'writers/write'
-
 
 ## setup  leagues (info) table
 require_relative 'writers/league_config'
@@ -48,9 +43,14 @@ module Writer
 end  # module Writer
 
 
+require_relative 'writers/goals'
+require_relative 'writers/txt_writer'
+
+
 ###
 #  fbtxt tool
 require_relative 'fbtxt/main'
+require_relative 'fbgen/main'
 
 
 
@@ -58,11 +58,11 @@ require_relative 'fbtxt/main'
 #  push & pull github scripts
 require 'gitti'    ## note - requires git machinery
 
-require_relative 'fbgen/github_config'
-require_relative 'fbgen/github'   ## github helpers/update machinery
+require_relative 'fbup/github_config'
+require_relative 'fbup/github'   ## github helpers/update machinery
 
 
-module Fbgen
+module Fbup
 class  GitHubSync
   REPOS = GitHubConfig.new
   recs = read_csv( "#{SportDb::Module::Writers.root}/config/openfootball.csv" )
@@ -96,10 +96,10 @@ def self.find_repos( datasets )
   repos.uniq   ## note: remove duplicates (e.g. europe or world or such)
 end
 end  #  class  GitHubSync
-end  # module Fbgen
+end  # module Fbup
 
 
-require_relative 'fbgen/main'
+require_relative 'fbup/main'
 
 
 
