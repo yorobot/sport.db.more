@@ -42,11 +42,25 @@ ua,  europe/ukraine
 ru,  europe/russia
 
 
+uefa.cl,    europe-champions-league
+uefa.el,    europe-champions-league
+uefa.conf,  europe-champions-league
+
+euro,       euro
+
+
+
 mx, mexico
 
 ar, south-america/argentina
 br, south-america/brazil
 
+copa.l,  copa-libertadores
+copa.s,  copa-libertadores
+
+
 cn,  world/asia/china
 jp,  world/asia/japan
 
+
+world,   worldcup

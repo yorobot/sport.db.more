@@ -2,3 +2,7 @@ key,     name,                      basename,       start_season, end_season, co
 
 cn.1,    Chinese Super League,      1-superleague,,,
 jp.1,    Japan J1 League,           1-j1league,,,
+
+
+
+world,   World Cup,                 cup,,,

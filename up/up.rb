@@ -11,7 +11,9 @@ require 'sportdb/writers'
 ## $ fbgen -f ./leagues.csv
 
 
-args = ['-f', './leagues.csv' ]
+# args = ['-f', './leagues_fbdat.history.csv' ]
+args = ['-f', './leagues_fbdat.csv' ]
+# args = ['-f', './leagues.csv' ]
 # args <<  '--push'
 
 ## args = ['at.1']
