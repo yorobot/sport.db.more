@@ -1,8 +1,8 @@
 key,   zone
 
-jp,   Asia/Tokyo      # +9  (gmt+9)
+jp,   Asia/Tokyo
 kr,   Asia/Seoul
-cn,   Asia/Shanghai   # +7  (gmt+7)
+cn,   Asia/Shanghai
 
 
 

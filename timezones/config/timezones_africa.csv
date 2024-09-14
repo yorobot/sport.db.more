@@ -1,4 +1,17 @@
 key,   zone
 
-eg,   Africa/Cairo  # +3  (gmt+3)
+eg,   Africa/Cairo
+
+dz,   Africa/Algiers
+
+ma,   Africa/Casablanca
+
+za,   Africa/Johannesburg
+
+
+ng,   Africa/Lagos
+
+ke,   Africa/Nairobi
+
+
 

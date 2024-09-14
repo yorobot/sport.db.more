@@ -84,10 +84,13 @@ class Timezone   ## nested inside UTC
    end
 
    def local_time( year, month=1, mday=1, hour=0, min=0, sec=0 )
-      @zone.local_time( year, month, mday, hour, min, sec )
+    ## add auto-fix for ambigious time (dst vs non-dst)
+    ##    always select first for now (that is, dst)
+      @zone.local_time( year, month, mday, hour, min, sec ) {|time| time.first }
    end
 
    def now() @zone.now; end
+
 
 
 
@@ -107,11 +110,17 @@ end   # module UTC
 
 module TimezoneHelper
 def find_zone!( league:, season: )
+   ## note: do NOT pass in league struct! pass in key (string)
+   raise ArgumentError, "league key as string|symbol expected"  unless league.is_a?(String) || league.is_a?(Symbol)
+
    @zones ||= begin
                 zones = {}
-                ['timezones_america',
+                ['timezones_africa',
+                 'timezones_america',
                  'timezones_asia',
                  'timezones_europe',
+                 'timezones_middle_east',
+                 'timezones_pacific',
                  'timezones_world',].each do |name|
                      recs = read_csv( "#{SportDb::Module::Timezones.root}/config/#{name}.csv" )
                      recs.each do |rec|

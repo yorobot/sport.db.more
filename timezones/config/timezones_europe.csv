@@ -9,34 +9,72 @@ de,     Europe/Berlin
 fr,     Europe/Paris
 it,     Europe/Rome
 
+sm,     Europe/San_Marino
+va,     Europe/Vatican
+
+
 pt,     Europe/Lisbon
+ad,	    Europe/Andorra
+gi,    Europe/Gibraltar
+mc,	    Europe/Monaco
 
 
-
-
-fi,      Europe/Helsinki      # +2
+cy,     Asia/Nicosia
+mt,     Europe/Malta
 gr,      Europe/Athens
+tr,     Europe/Istanbul
 ro,      Europe/Bucharest
+bg,      Europe/Sofia
 ua,     Europe/Kyiv
-
-
 ru,     Europe/Moscow
-tr,     Europe/Istanbul     # +3 turkey time/moscow time
+by,     Europe/Minsk
+
+
+
 
 at,     Europe/Vienna
 ch,     Europe/Zurich
+li,     Europe/Vaduz
+
 hu,     Europe/Budapest
 cz,    Europe/Prague
 sk,    Europe/Bratislava     # link to Prague !!!
+si,    Europe/Ljubljana
+mk,	   Europe/Skopje
+
+
 pl,   Europe/Warsaw
+
 be,  Europe/Brussels
 lu,  Europe/Luxembourg      # link to Brussels !!!
 nl,  Europe/Amsterdam       # link to Brussels !!!
 
 
-dk,   Europe/Berlin     ## check if country-specific available
-se,   Europe/Berlin     ## check if country-specific available
-hr,   Europe/Belgrade   ## check if country-specific available
+
+is,    Iceland
+
+
+dk,   Europe/Copenhagen    ## link to Berlin
+se,   Europe/Stockholm     ## link to Berlin
+no,   Europe/Oslo           # link to Berlin
+fi,   Europe/Helsinki
+
+lv,   Europe/Riga
+ee,   Europe/Tallinn
+lt,    Europe/Vilnius
+
+
+
+hr,   Europe/Zagreb    # link to Belgrade
+al,   Europe/Tirane
+ba,   Europe/Sarajevo   # link to Belgrade
+me,	  Europe/Podgorica
+
+
+
+md,    Europe/Chisinau
+
+
 
 
 
