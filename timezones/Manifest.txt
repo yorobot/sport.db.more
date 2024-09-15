@@ -10,5 +10,7 @@ config/timezones_middle_east.csv
 config/timezones_pacific.csv
 config/timezones_world.csv
 lib/football-timezones.rb
+lib/football-timezones/datasets.rb
+lib/football-timezones/timezones.rb
 lib/football-timezones/version.rb
 lib/football/timezones.rb

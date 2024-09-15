@@ -30,6 +30,8 @@ def self.main( args=ARGV )
 opts = {
     cached:  false,
     convert: true,
+    file:    nil,
+    dry:     false,
  }
 
 
@@ -43,18 +45,23 @@ parser = OptionParser.new do |parser|
 ## todo - add a single letter option for offline/cached
 
   parser.on( "--cache", "--cached", "--offline",
-               "use cached data in >#{Webcache.root}<" ) do |cached|
+               "use cached data in #{Webcache.root}" ) do |cached|
     opts[:cached] = cached
   end
 
-  parser.on( "--no-convert",
-               "turn off conversion to .csv in #{Worldfootball.config.convert.out_dir} - default is (#{!opts[:convert]})" ) do |convert|
-    opts[:convert] = !convert
+  parser.on( "--[no-]convert",
+               "turn on/off conversion to .csv in #{Worldfootball.config.convert.out_dir} - default is (#{opts[:convert]})" ) do |convert|
+    opts[:convert] = convert
   end
 
   parser.on( "--dry",
-               "dry run / show league page meta info" ) do |dry|
+                "dry run; do NOT write - default is (#{opts[:dry]})" ) do |dry|
     opts[:dry] = dry
+  end
+
+  parser.on( "-f FILE", "--file FILE",
+                "read leagues (and seasons) via .csv file") do |file|
+    opts[:file] = file
   end
 end
 
@@ -76,7 +83,7 @@ if ['cache'].include?( args[0] )
 end
 
 
-if ['league', 'leagues', 'ls'].include?( args[0] || 'leagues' )
+if ['league', 'leagues', 'ls'].include?( args[0] )
     keys = LEAGUES.keys
 
     pp keys
@@ -90,62 +97,68 @@ if ['league', 'leagues', 'ls'].include?( args[0] || 'leagues' )
 end
 
 
+####
+#  assume leagues
 
-league_code = args[0].downcase
-
-league =  find_league!( league_code )  ## league info lookup
-
-if opts[:dry]
-    ## output more page meta info
-    puts "league meta:"
-    pp league
-end
+datasets = if opts[:file]
+              read_datasets( opts[:file] )
+           else
+              parse_datasets_args( args )
+           end
 
 
-## note - default to latest season of league
-##              might be 2024/25 or 2024 or
-#                 for world cup 2022 or such
-season = Season( args[1] || league.seasons.keys[0] )
+datasets.each do |league_key, seasons|
 
-pages = league.pages!( season: season )
+  league =  find_league!( league_key )  ## league info lookup
 
+  if opts[:dry]
+     ## output more page meta info
+     puts "league meta:"
+     pp league
+  end
 
-puts
-pp [league.key, season.key]
-pp pages
-puts "   #{pages.size} page(s)"
-
-
-if opts[:dry]
-    ## stop here if dry run
-    exit 0
-end
+  ## note - default to latest season of league
+  ##              might be 2024/25 or 2024 or
+  #                 for world cup 2022 or such
+  seasons = [Season(league.seasons.keys[0])]    if seasons.empty?
 
 
-if opts[:cached]
-     # do nothing
-else  ## download to cache
-    pages.each_with_index do |(slug,_),i|
-        puts "==> #{i+1}/#{pages.size} - #{league_code} @ #{slug}..."
-        page = Metal.download_schedule( slug )
-    end
-end
+  seasons.each do |season|
+      pages = league.pages!( season: season )
+      puts
+      pp [league.key, season.key]
+      pp pages
+      puts "   #{pages.size} page(s)"
 
 
-pages.each_with_index do |(slug,_),i|
-    puts "==> #{i+1}/#{pages.size} - #{league_code} @ #{slug}..."
-    page = Page::Schedule.from_cache( slug )
-    matches = page.matches
+      next  if opts[:dry]    ## stop here if dry run
 
-    puts "   #{matches.size} match(es)"
-end
+      if opts[:cached]
+          # do nothing
+      else  ## download to cache
+        pages.each_with_index do |(slug,_),i|
+          puts "==> #{i+1}/#{pages.size} - #{league_key} @ #{slug}..."
+          page = Metal.download_schedule( slug )
+        end
+      end
+
+      pages.each_with_index do |(slug,_),i|
+        puts "==> #{i+1}/#{pages.size} - #{league_key} @ #{slug}..."
+        page = Page::Schedule.from_cache( slug )
+        matches = page.matches
+
+        puts "   #{matches.size} match(es)"
+      end
+
+      if opts[:convert]
+        ## write out (export to) comma-separated values (.csv) datafile
+        convert( league: league_key,
+                 season: season )
+      end
+end # each seasons
+end # each league
 
 
-if opts[:convert]
-    ## write out (export to) comma-separated values (.csv) datafile
-    convert( league: league_code,
-             season: season )
-end
 end   # def self.main
 end   # module Worldfootball
 
