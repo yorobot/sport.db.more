@@ -77,7 +77,7 @@ p args
 datasets =   if opts[:file]
                   read_datasets( opts[:file] )
              else
-                  parse_datasets( args )
+                  parse_datasets_args( args )
              end
 
 puts "datasets:"
@@ -105,26 +105,22 @@ pp sync
 
 sync.git_fast_forward_if_clean    if opts[:ffwd]
 
+### step 0 - validate and fill-in seasons etc.
+##   reuse from Fbgen tool
+Fbgen.validate_datasets!( datasets, source_path: source_path )
+
 
 datasets.each do |league_key, seasons|
-    seasons = [ Season('2024/25') ]   if seasons.empty?
-
     puts "==> gen #{league_key} - #{seasons.size} seasons(s)..."
 
     league_info = Writer::LEAGUES[ league_key ]
     pp league_info
 
     seasons.each do |season|
-      ### get matches
-
       filename = "#{season.to_path}/#{league_key}.csv"
-      path = find_file( filename, path: source_path )
+      path = Fbgen.find_file( filename, path: source_path )
 
-      if path.nil?
-        puts "!! no source found for #{filename}; sorry"
-        exit 1
-      end
-
+      ### get matches
       puts "  ---> reading matches in #{path} ..."
       matches = SportDb::CsvMatchParser.read( path )
       puts "     #{matches.size} matches"
@@ -160,76 +156,4 @@ end
 sync.git_push_if_changes   if opts[:push]
 
 end  # method self.main
-
-
-
-
-def self.parse_datasets( args )
-### split args in datasets with leagues and seasons
-datasets = []
-args.each do |arg|
-   if arg =~ %r{^[0-9/-]+$}   ##  season
-       if datasets.empty?
-         puts "!! ERROR - league required before season arg; sorry"
-         exit 1
-       end
-
-       season = Season.parse( arg )  ## check season
-       datasets[-1][1] << season
-   else ## assume league key
-       key = arg.downcase
-       league_info = Writer::LEAGUES[ key ]
-
-       if league_info.nil?
-         puts "!! ERROR - no league found for >#{key}<; sorry"
-         exit 1
-       end
-
-       datasets << [key, []]
-   end
-end
-datasets
-end
-
-
-def self.read_datasets( path )
-### split args in datasets with leagues and seasons
-datasets = []
-recs = read_csv( path )
-recs.each do |rec|
-    league_code  = rec['league']
-    key = league_code.downcase
-    league_info = Writer::LEAGUES[ key ]
-
-    if league_info.nil?
-      puts "!! ERROR - no league found for >#{key}<; sorry"
-      exit 1
-    end
-
-    datasets << [key, []]
-
-    seasons_str = rec['seasons']
-    seasons = seasons_str.split( /[ ]+/ )
-
-    seasons.each do |season_str|
-        season = Season.parse( season_str )  ## check season
-        datasets[-1][1] << season
-    end
-end
-datasets
-end
-
-
-def self.find_file( filename, path: )
-    path.each do |src_dir|
-       path = "#{src_dir}/#{filename}"
-       return path   if File.exist?( path )
-    end
-
-    ##  fix - raise file not found error!!!
-    nil  ## not found - raise filenot found error - why? why not?
-end
-
-
-
 end  # module Fbgen
