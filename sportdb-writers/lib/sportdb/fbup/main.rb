@@ -20,7 +20,7 @@ parser = OptionParser.new do |parser|
     parser.on( "-p", "--[no-]push",
                "fast forward sync and commit & push changes to git repo - default is (#{opts[:push]})" ) do |push|
       opts[:push] = push
-      opts[:fwd]  = true   if opts[:push]   ## note: autoset ffwd too if push == true
+      opts[:ffwd]  = true   if opts[:push]   ## note: autoset ffwd too if push == true
     end
     ## todo/check - add a --ffwd flag too - why? why not?
 
