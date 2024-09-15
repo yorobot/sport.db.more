@@ -1,4 +1,4 @@
-# footballdata-api  - get football data via Daniel Freitag's football-data.org api v4  
+# footballdata-api  - get football data via Daniel Freitag's football-data.org api v4
 
 
 * home  :: [github.com/sportdb/sport.db](https://github.com/sportdb/sport.db)
@@ -48,14 +48,13 @@ Footballdata.schedule( league: 'eng.2', season: '2020/21' )
 
 Footballdata.schedule( league: 'de.1', season: '2020/21' )
 Footballdata.schedule( league: 'es.1', season: '2020/21' )
-
 Footballdata.schedule( league: 'fr.1', season: '2020/21' )
 Footballdata.schedule( league: 'it.1', season: '2020/21' )
 
 Footballdata.schedule( league: 'nl.1', season: '2020/21' )
 Footballdata.schedule( league: 'pt.1', season: '2020/21' )
 
-Footballdata.schedule( league: 'cl',   season: '2020/21' )
+Footballdata.schedule( league: 'uefa.cl', season: '2020/21' )
 
 # note: Brasileirão - season is a calendar year (NOT an academic year)
 Footballdata.schedule( league: 'br.1', season: '2020' )
@@ -83,7 +82,7 @@ require 'footballdata'
  'it.1',
  'nl.1',
  'pt.1',
- 'cl',
+ 'uefa.cl',
 ].each do |league|
   Footballdata.convert( league: league, season: '2020/21' )
 end

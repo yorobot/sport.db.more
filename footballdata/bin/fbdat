@@ -16,14 +16,6 @@ Webcache.root =  if File.exist?( '/sports/cache' )
                      './cache'
                  end
 
-## note -  free tier (tier one) plan - 10 requests/minute
-##              (one request every 6 seconds 6*10=60 secs)
-##     10 API calls per minute max.
-##  note - default sleep (delay in secs) is 3 sec(s)
-
-## change from 10 to 1 sec(s) for interactive use
-Webget.config.sleep  = 1
-
 
 Footballdata.config.convert.out_dir =  if File.exist?( '/sports/cache.api.fbdat' )
                                            puts "  setting convert out_dir to >/sports/cache.api.fbdat<"
@@ -43,6 +35,7 @@ def self.main( args=ARGV )
 opts = {
    cached:  false,
    convert: true,
+   file:    nil,
 }
 
 parser = OptionParser.new do |parser|
@@ -53,9 +46,20 @@ parser = OptionParser.new do |parser|
     opts[:cached] = cached
   end
 
-  parser.on( "--no-convert",
-               "turn off conversion to .csv in #{Footballdata.config.convert.out_dir} - default is (#{!opts[:convert]})" ) do |convert|
-    opts[:convert] = !convert
+  parser.on( "--[no-]convert",
+               "turn on/off conversion to .csv in #{Footballdata.config.convert.out_dir} - default is (#{opts[:convert]})" ) do |convert|
+    opts[:convert] = convert
+  end
+
+  parser.on( "--print", "--pp",
+                 "pretty print cached data in #{Webcache.root}; no download & conversion") do |print|
+    opts[:cached] = true
+    opts[:convert] = false
+  end
+
+  parser.on( "-f FILE", "--file FILE",
+                "read leagues (and seasons) via .csv file") do |file|
+    opts[:file] = file
   end
 end
 parser.parse!( args )
@@ -66,6 +70,19 @@ puts "OPTS:"
 p opts
 puts "ARGV:"
 p args
+
+
+## note -  free tier (tier one) plan - 10 requests/minute
+##              (one request every 6 seconds 6*10=60 secs)
+##     10 API calls per minute max.
+##  note - default sleep (delay in secs) is 3 sec(s)
+
+## change from 10 to 1 sec(s) for interactive use
+##   assume --file/-f as non-interactive/batch use for now
+Webget.config.sleep  =    opts[:file] ?  10 : 1
+
+
+
 
 
 ## try special args
@@ -118,11 +135,13 @@ end
 ##
 ## todo - add more date offsets - t+2,t+3,t+4, etc.
 
+
+
 date =  if ['y', 'yesterday', 't-1', '-1'].include?( args[0] )
             Date.today-1
         elsif ['t', 'tomorrow', 't+1', '1', '+1'].include?( args[0] )
             Date.today+1
-        elsif ['m', 'match', 'matches', 'today'].include?( args[0] || 'today' )  ## make default - why? why not?
+        elsif ['m', 'match', 'matches', 'today'].include?( args[0] )
             Date.today
         else
             nil
@@ -170,50 +189,80 @@ end
 ##
 ## note - only use "generic" uniform league codes for now!!
 
-league_code       = (args[0] || 'eng.1').downcase
 
-##  todo - find a better name
-##  use internal_league_code or such - why? why not?
-###  convenience helpers - lets you use eng.1, euro, etc.
-## check if mapping for league_code
-metal_league_code = find_league!( league_code )
+datasets = if opts[:file]
+              read_datasets( opts[:file] )
+           else
+              parse_datasets_args( args )
+           end
 
 
-season            = Season( args[1] ||
-                             (['euro',
-                               'copa.l',
-                               'br.1'].include?(league_code) ? '2024' : '2024/25'))
+## step 0 - validate and fill-up seasons etc.
+datasets.each do |dataset|
+  league_key, seasons = dataset
 
-season_start_year  = season.start_year   ## use year - why? why not?
+  ##  todo - find a better name
+  ##  use internal_league_code or such - why? why not?
+  ###  convenience helpers - lets you use eng.1, euro, etc.
+  ## check if mapping for league_code
+  metal_league_code = find_league!( league_key )
 
-pp [metal_league_code, season_start_year]
-
-if opts[:cached]
-    ## do nothing
-else
-    ## download dataset(s)
-    ## try download
-    ##   note:  include teams (for convert) for now too!!
-    Metal.teams( metal_league_code, season_start_year )
-    Metal.matches( metal_league_code, season_start_year )
+  ## note - default to latest season of league
+  ##              might be 2024/25 or 2024 or
+  #                 for world cup 2022 or such
+  if seasons.empty?
+     seasons = case league_key
+               when  'world'          then [Season('2022')]
+               when  'euro'           then [Season('2024')]
+               when  'br.1', 'copa.l' then [Season('2024')]
+               else                        [Season('2024/25')]
+               end
+    dataset[1] = seasons
+  end
 end
 
-url = Metal.competition_matches_url( metal_league_code,
-                                      season_start_year )
-pp url
-#=> "http://api.football-data.org/v4/competitions/EC/matches?season=2024"
+## step 1 - download
+datasets.each do |league_key, seasons|
+  ##  todo - find a better name
+  ##  use internal_league_code or such - why? why not?
+  ###  convenience helpers - lets you use eng.1, euro, etc.
+  ## check if mapping for league_code
+  metal_league_code = find_league!( league_key )
+  seasons.each do |season|
+     season_start_year  = season.start_year   ## use year - why? why not?
+     pp [metal_league_code, season_start_year]
 
-data = Webcache.read_json( url )
-## pp data
+     if opts[:cached]
+        ## do nothing
+     else
+        ## download dataset(s)
+        ## try download
+        ##   note:  include teams (for convert) for now too!!
+        Metal.teams( metal_league_code, season_start_year )
+        Metal.matches( metal_league_code, season_start_year )
+     end
 
-pp_matches( data )
+     url = Metal.competition_matches_url( metal_league_code,
+                                          season_start_year )
+     pp url
+     #=> "http://api.football-data.org/v4/competitions/EC/matches?season=2024"
+
+     data = Webcache.read_json( url )
+     ## pp data
+
+     pp_matches( data )
+   end  # each season
+end  # each dataset
 
 
 if opts[:convert]
-  puts "==> converting to .csv"
-  convert( league: league_code, season: season )
+   puts "==> converting to .csv"
+   datasets.each do |league_key, seasons|
+      seasons.each do |season|
+         convert( league: league_key, season: season )
+      end
+   end
 end
-
 
 end  # def self.main
 end  # module Footballdata

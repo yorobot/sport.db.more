@@ -1,0 +1,44 @@
+key, code, seasons
+
+eng.1,    PL,    2024/25 2023/24 2022/23 2021/22 2020/21
+    # incl. team(s) from wales
+eng.2,    ELC,    2024/25 2023/24 2022/23 2021/22 2020/21
+     #  PL  - Premier League, England        27 seasons | 2019-08-09 - 2020-07-25 / matchday 31
+     #  ELC - Championship,  England         3 seasons | 2019-08-02 - 2020-07-22 / matchday 38
+
+es.1,    PD,    2024/25 2023/24 2022/23 2021/22 2020/21
+    # PD  - Primera Division, Spain          27 seasons | 2019-08-16 - 2020-07-19 / matchday 31
+
+pt.1,     PPL,    2024/25 2023/24 2022/23 2021/22 2020/21
+    # PPL - Primeira Liga, Portugal        9 seasons | 2019-08-10 - 2020-07-26 / matchday 28
+
+de.1,     BL1,    2024/25 2023/24 2022/23 2021/22 2020/21
+    # BL1 - Bundesliga, Germany        24 seasons | 2019-08-16 - 2020-06-27 / matchday 34
+
+nl.1,     DED,    2024/25 2023/24 2022/23 2021/22 2020/21
+    # DED - Eredivisie, Netherlands    10 seasons | 2019-08-09 - 2020-03-08 / matchday 34
+
+fr.1,     FL1,    2024/25 2023/24 2022/23 2021/22 2020/21
+    # incl. team(s) monaco
+
+it.1,      SA,    2024/25 2023/24 2022/23 2021/22 2020/21
+    # SA  - Serie A, Italy          15 seasons | 2019-08-24 - 2020-08-02 / matchday 27
+
+br.1,       BSA,     2024 2023 2022 2021 2020
+
+
+########
+## int'l cups
+uefa.cl,    CL,    2024/25 2023/24 2022/23 2021/22 2020/21
+    ## note: cl is country code for chile!! - use champs - why? why not?
+    ##  was europe.cl / cl
+    ## todo/check: use champs and NOT cl - why? why not?
+
+copa.l,     CLI,    2024 2023 2022 2021
+   ## Copa Libertadores
+
+
+############
+## national teams
+euro,       EC,   2024 2021
+world,      WC,   2022

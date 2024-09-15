@@ -31,7 +31,6 @@ opts = {
     cached:  false,
     convert: true,
     file:    nil,
-    dry:     false,
  }
 
 
@@ -54,9 +53,10 @@ parser = OptionParser.new do |parser|
     opts[:convert] = convert
   end
 
-  parser.on( "--dry",
-                "dry run; do NOT write - default is (#{opts[:dry]})" ) do |dry|
-    opts[:dry] = dry
+  parser.on( "--print", "--pp",
+                 "pretty print cached data in #{Webcache.root}; no download & conversion") do |print|
+    opts[:cached] = true
+    opts[:convert] = false
   end
 
   parser.on( "-f FILE", "--file FILE",
@@ -107,31 +107,35 @@ datasets = if opts[:file]
            end
 
 
-datasets.each do |league_key, seasons|
+## step 0 - validate and fill-up seasons etc.
+datasets.each do |dataset|
+  league_key, seasons = dataset
 
   league =  find_league!( league_key )  ## league info lookup
 
-  if opts[:dry]
-     ## output more page meta info
-     puts "league meta:"
-     pp league
-  end
+  ## output more page meta info
+  puts "league meta:"
+  pp league
 
   ## note - default to latest season of league
   ##              might be 2024/25 or 2024 or
   #                 for world cup 2022 or such
-  seasons = [Season(league.seasons.keys[0])]    if seasons.empty?
+  if seasons.empty?
+     seasons = [Season(league.seasons.keys[0])]
+     dataset[1] = seasons
+  end
+end
 
 
+## step 1 - download
+datasets.each do |league_key, seasons|
+  league =  find_league!( league_key )  ## league info lookup
   seasons.each do |season|
       pages = league.pages!( season: season )
       puts
       pp [league.key, season.key]
       pp pages
       puts "   #{pages.size} page(s)"
-
-
-      next  if opts[:dry]    ## stop here if dry run
 
       if opts[:cached]
           # do nothing
@@ -149,14 +153,20 @@ datasets.each do |league_key, seasons|
 
         puts "   #{matches.size} match(es)"
       end
+  end # each seasons
+end # each league
 
-      if opts[:convert]
+
+if opts[:convert]
+## step 2 - convert
+  datasets.each do |league_key, seasons|
+    seasons.each do |season|
         ## write out (export to) comma-separated values (.csv) datafile
         convert( league: league_key,
                  season: season )
-      end
-end # each seasons
-end # each league
+    end
+  end
+end
 
 
 end   # def self.main

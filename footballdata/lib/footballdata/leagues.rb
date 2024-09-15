@@ -2,7 +2,7 @@ module Footballdata
 
   def self.find_league!( league )
      @leagues ||= begin
-                     recs = read_csv( "#{FootballdataApi.root}/config/leagues.csv" )
+                     recs = read_csv( "#{FootballdataApi.root}/config/leagues_tier1.csv" )
                      leagues = {}
                      recs.each do |rec|
                         leagues[ rec['key'] ] = rec['code']

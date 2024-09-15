@@ -3,7 +3,7 @@ Manifest.txt
 README.md
 Rakefile
 bin/fbdat
-config/leagues.csv
+config/leagues_tier1.csv
 lib/footballdata.rb
 lib/footballdata/convert-score.rb
 lib/footballdata/convert.rb
