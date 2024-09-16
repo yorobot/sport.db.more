@@ -52,11 +52,12 @@ euro,       euro
 
 mx, mexico
 
+
 ar, south-america/argentina
 br, south-america/brazil
 
-copa.l,  copa-libertadores
-copa.s,  copa-libertadores
+copa.l,  south-america/copa-libertadores
+copa.s,  south-america/copa-libertadores
 
 
 cn,  world/asia/china

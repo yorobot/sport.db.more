@@ -4,10 +4,13 @@ ar.1,    Argentina Primera Division, 1-primeradivision,,,
 br.1,    Brasileiro Série A,         1-seriea,,,
 br.2,    Brasileiro Série B,         1-serieb,,,
 
-mx.1,    Liga MX,                    1-ligamx,,,          ## note: basename gets overwritten by stages e.g. 1-apertura or 1-clausura
+copa.l,  Copa Libertadores,         libertadores,,,
+copa.s,  Copa Sudamericana,         sudamericana,,,
+
+
+mx.1,    Liga MX,                    1-ligamx,,,
 mx.2,    Liga de Expansión MX,       2-ligaexpansionmx,  2020/21,,
 mx.2,    Ascenso MX,                 2-ascensomx,               ,2019/20,
 
 
-copa.l,  Copa Libertadores,         libertadores,,,
 

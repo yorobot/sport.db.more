@@ -20,26 +20,31 @@ parser = OptionParser.new do |parser|
     parser.on( "-p", "--[no-]push",
                "fast forward sync and commit & push changes to git repo - default is (#{opts[:push]})" ) do |push|
       opts[:push] = push
-      opts[:ffwd]  = true   if opts[:push]   ## note: autoset ffwd too if push == true
+      if opts[:push]   ## note: autoset ffwd too if push == true
+        opts[:ffwd] = true
+        opts[:test] = false
+      end
     end
     ## todo/check - add a --ffwd flag too - why? why not?
 
     parser.on( "-t", "--test",
                 "test run; writing output to #{opts[:test_dir]} - default is #{opts[:test]}" ) do |test|
-      opts[:test] = test
+      opts[:test] = true
       opts[:push] = false
       opts[:ffwd] = false
     end
+
     parser.on( "--dry",
                 "dry run; do NOT write - default is (#{opts[:dry]})" ) do |dry|
       opts[:dry] = dry
+      opts[:test] = false
       opts[:push] = false    ### autoset push & ffwd - why? why not?
       opts[:ffwd] = false
     end
 
     parser.on( "-q", "--quiet",
                "less debug output/messages - default is (#{!opts[:debug]})" ) do |debug|
-      opts[:debug] = !debug
+      opts[:debug] = false
     end
 
     parser.on( "-I DIR", "--include DIR",

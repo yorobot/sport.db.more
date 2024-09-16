@@ -14,11 +14,11 @@ parser = OptionParser.new do |parser|
 
     parser.on( "--dry",
                 "dry run; do NOT write - default is (#{opts[:dry]})" ) do |dry|
-      opts[:dry] = dry
+      opts[:dry] = true
     end
     parser.on( "-q", "--quiet",
                "less debug output/messages - default is (#{!opts[:debug]})" ) do |debug|
-      opts[:debug] = !debug
+      opts[:debug] = false
     end
 
     parser.on( "-I DIR", "--include DIR",
