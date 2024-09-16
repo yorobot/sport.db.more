@@ -37,7 +37,18 @@ us.cup,  usa-u-s-open-cup-2024
 
 br.1,    bra-serie-a-2024
 br.2,    bra-serie-b-2024
+br.3,    bra-serie-c-2024-playoffs
+br.4,    bra-serie-d-2024
+
 br.cup,  bra-copa-do-brasil-2024
+
+br.carioca,    bra-campeonato-carioca-2024-taca-guanabara-finals
+br.gauchao,    bra-campeonato-gaucho-2024-playoffs
+br.mineiro,     bra-campeonato-mineiro-2024-fase-final
+br.paranaense,  bra-campeonato-paranaense-2024-fase-final
+br.paulistao,   bra-campeonato-paulista-2024-playoffs
+
+
 
 
 co.1,    col-primera-a-2024-clausura

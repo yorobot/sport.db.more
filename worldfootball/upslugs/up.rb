@@ -15,13 +15,13 @@ slug = LEAGUE_TO_SLUG[league]
 
 if slug.nil?
     puts "!! ERROR - no slug / page configured for league >#{league}<; sorry"
-    exit 1 
+    exit 1
 end
 
 puts "==> #{league} - using page/slug >#{slug}<"
 
 
-Worldfootball::Metal.download_schedule( slug )    if OPTS[:download]
+Worldfootball::Metal.download_schedule( slug )
 
 
 page = Worldfootball::Page::Schedule.from_cache( slug )
@@ -42,10 +42,8 @@ puts "  #{recs.size} record(s)"
 
 ## note - only update local csv dataset on download
 
-if OPTS[:download]
-  headers = ['season','slug']
-  write_csv( "./slugs/#{league}.csv", recs, headers: headers  )
-end
+headers = ['season','slug']
+write_csv( "./slugs/#{league}.csv", recs, headers: headers  )
 
 
 puts "bye"

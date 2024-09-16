@@ -18,10 +18,10 @@ LEAGUE_TO_SLUG = {
 
  ### Northern Europe
   'se.1' => 'swe-allsvenskan-2024',
-  'se.2' => 'swe-superettan-2024', 
+  'se.2' => 'swe-superettan-2024',
   'fi.1' => 'fin-veikkausliiga-2024',
   'dk.1' => 'den-superliga-2024-2025',
-  
+
 
  ### Benelux / Western Europe
   'nl.1'    => 'ned-eredivisie-2024-2025',
@@ -32,7 +32,7 @@ LEAGUE_TO_SLUG = {
   'be.2'    => 'bel-eerste-klasse-b-2024-2025',
   'be.cup'  => 'bel-beker-van-belgie-2023-2024',
   'lu.1'    => 'lux-nationaldivision-2024-2025',
-   
+
 
  #### Central Europe
    'at.1'    => 'aut-bundesliga-2024-2025',
@@ -47,14 +47,20 @@ LEAGUE_TO_SLUG = {
    'hu.1'  =>  'hun-nb-i-2024-2025',
    'cz.1'  =>  'cze-1-fotbalova-liga-2024-2025',
    'pl.1'  =>  'pol-ekstraklasa-2024-2025',
-   
+
   ### Southern Europe
   'it.1' => 'ita-serie-a-2020-2021',
+  'it.2' => 'ita-serie-b-2024-2025',
+  'it.cup' => 'ita-coppa-italia-2024-2025',
 
   'es.1' => 'esp-primera-division-2020-2021',
+  'es.2' =>  'esp-segunda-division-2024-2025',
+  'es.cup' =>  'esp-copa-del-rey-2023-2024',
+
+
    'pt.1' => 'por-primeira-liga-2023-2024',
     'pt.2' => 'por-segunda-liga-2023-2024',
-  
+
   'gr.1' => 'gre-super-league-2023-2024',
 
 ## note: start with 2012/13 for now!!!
@@ -64,7 +70,7 @@ LEAGUE_TO_SLUG = {
 ## 2a) - tur-sueperlig-2012-meisterschaft  -- 2012 Meisterschaft
 ## 2b) - tur-sueperlig-2012-platzierung    -- 2012 Platzierung
   'tr.1' => 'tur-sueperlig-2023-2024',
-  
+
  ### Eastern Europe
  'ro.1' => 'rou-liga-1-2023-2024',
 
@@ -76,10 +82,10 @@ LEAGUE_TO_SLUG = {
  'ru.1' => 'rus-premier-liga-2024-2025',
 
  'ua.1' => 'ukr-premyer-liga-2019-2020',
- 
+
  ### Asia
  'cn.1' => 'chn-super-league-2024',
- 'jp.1' => 'jpn-j1-league-2024', 
+ 'jp.1' => 'jpn-j1-league-2024',
 
  ### Africa
   'eg.1' => 'egy-premiership-2019-2020',
@@ -103,7 +109,25 @@ LEAGUE_TO_SLUG = {
 'ni.1' => 'nca-liga-primera-2020-2021-apertura',
 
  ### South America
- 'br.1' =>  'bra-serie-a-2020',
+ 'br.1'    =>  'bra-serie-a-2020',
+ 'br.2'    =>  'bra-serie-b-2024',
+ 'br.3'    =>  'bra-serie-c-2024-playoffs',
+ 'br.4'    =>  'bra-serie-d-2024',
+ 'br.cup'  =>  'bra-copa-do-brasil-2024',     # Copa do Brasil
+
+ 'br.carioca' => 'bra-campeonato-carioca-2024-taca-guanabara-finals',
+ # Campeonato Carioca
+ 'br.gauchao' => 'bra-campeonato-gaucho-2024-playoffs',
+ # Campeonato Gaúcho
+ 'br.mineiro' => 'bra-campeonato-mineiro-2024-fase-final',
+ # Campeonato Mineiro
+ 'br.paranaense' => 'bra-campeonato-paranaense-2024-fase-final',
+ # Campeonato Paranaense
+  'br.paulistao' => 'bra-campeonato-paulista-2024-playoffs',
+  # Campeonato Paulista
+
+
+
  'ar.1' => 'arg-primera-division-2019-2020',
 
  'pe.1' => 'per-primera-division-2020-apertura',
