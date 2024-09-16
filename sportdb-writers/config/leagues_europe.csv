@@ -21,9 +21,13 @@ de.cup,       DFB Pokal,                     cup,,,
 
 it.1,     Italian Serie A,           1-seriea,,,
 it.2,     Italian Serie B,           2-serieb,,,
+it.cup,   Coppa Italia,              cup,,,
+
 
 es.1,     Primera División de España,  1-liga,,,
 es.2,     Segunda División de España,  2-liga2,,,
+es.cup,   Copa del Rey de España,      cup,,,
+
 
 fr.1,     French Ligue 1,              1-ligue1,,,
 fr.2,     French Ligue 2,              2-ligue2,,,
