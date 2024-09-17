@@ -33,17 +33,29 @@ fr.1,     French Ligue 1,              1-ligue1,,,
 fr.2,     French Ligue 2,              2-ligue2,,,
 
 
-eng.1,    English Premier League,    1-premierleague,  1992/93,,
-eng.1,    English Division One,      1-division1,      1892/93,  1991/92,   ## start of division 1 & 2
-eng.1,    English Football League,   1-footballleague, 1888/89,  1891/92,   ## single league (no divisions)
+##
+## note - starting with the 2004/05 season
+#     the Football League's Division 1, Division 2 and Division 3
+##    changed to Championship, League One and League Two.
 
 eng.2,    English Championship,      2-championship,   2004/05,,            ## rebranding divsion 1 => championship
-eng.2,    English Division One,      2-division1,      1992/93,  2003/04,   ## start of premier league
-eng.2,    English Division Two,      2-division2,      1892/93,  1991/92,   ## or use English Football League Second Division ???
+eng.3,    English League One,        3-league1,        2004/05,,
+eng.4,    English League Two,        4-league2,        2004/05,,
 
-eng.3,    English League One,        3-league1,,,
-eng.4,    English League Two,        4-league2,,,
-eng.5,    English National League,   5-nationalleague,,,
+eng.1,    English Premier League,    1-premierleague,  1992/93,,
+eng.2,    English Division One,      2-division1,      1992/93,  2003/04,   ## start of premier league
+eng.3,    English Division Two,      3-division2,      1992/93,  2003/04,
+eng.4,    English Division Three,    4-division3,      1992/93,  2003/04,
+eng.5,    English National League,   5-nationalleague, 1992/93,,
+
+eng.1,    English Division One,      1-division1,      1892/93,  1991/92,   ## start of division 1 & 2
+eng.2,    English Division Two,      2-division2,      1892/93,  1991/92,   ## or use English Football League Second Division ???
+eng.3,    English Division Three,    3-division3,             ,  1991/92,
+
+eng.1,    English Football League,   1-footballleague, 1888/89,  1891/92,   ## single league (no divisions)
+
+
+
 eng.cup,  English FA Cup,            facup,,,
 
 
