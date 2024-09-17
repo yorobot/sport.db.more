@@ -32,4 +32,15 @@ args = ['br.1', '2024']
 pp parse_datasets_args( args )
 
 
+
+pp parse_datasets( <<TXT )
+league,   seasons
+at.1,     2020/21..2024/25
+at.2,     2020/21..2023/24
+at.3.o,   2021/22..2023/24 2025/26
+br.1,     2020..2024 2025 2027
+TXT
+
+
+
 puts "bye"
