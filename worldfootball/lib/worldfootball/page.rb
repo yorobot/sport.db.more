@@ -8,7 +8,9 @@ module Worldfootball
   end
 
   def initialize( html )
-    @html = html
+    ## todo/fix - fix upstream in wget!!!! why? why not?
+    ##    normalize unicode (to nfc - ruby's default norm form)
+    @html = html.unicode_normalize
   end
 
   def doc

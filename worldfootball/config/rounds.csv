@@ -1,5 +1,6 @@
 key,  name1, name2
 
+## de to en
 *,  1. Runde,      Round 1
 *,  2. Runde,      Round 2
 *,  3. Runde,      Round 3
@@ -13,4 +14,30 @@ key,  name1, name2
 *,  Viertelfinale, Quarterfinals
 *,  Halbfinale,    Semifinals
 *,  Finale,        Final
+
+*,  Vorrunde,      Preliminary round
+
+## es to en
+*,  Recalificación,  Reclassification
+
+
+
+
+## misc - make more generic - why? why not?
+mx.1,  Qual. 1. Runde,  Play-in round 1
+mx.1,  Qual. 2. Runde,  Play-in round 2
+mx.2,  Qual. 1. Runde,  Play-in round 1
+mx.2,  Qual. 2. Runde,  Play-in round 2
+
+
+###
+##    fix - move groups to new groups column!!!!
+ar.1,   Gruppe A,  Group
+ar.1,   Gruppe B,  Group
+ar.1,   Gruppe C,  Group
+ar.1,   Gruppe D,  Group
+ar.1,   Gruppe E,  Group
+ar.1,   Gruppe F,  Group
+ar.1,   Gruppe 1,  Group
+ar.1,   Gruppe 2,  Group
 
