@@ -20,6 +20,9 @@ ch.1,        sui-super-league-2024-2025
 ch.2,        sui-challenge-league-2024-2025
 ch.cup,      sui-cup-2024-2025
 
+# note - li no league, only cup
+#       most (all?) clubs play in switzerland
+li.cup,    lie-fl-1-cup-2024-2025
 
 hu.1,       hun-nb-i-2024-2025
 
@@ -44,7 +47,8 @@ eng.cup.l,   eng-league-cup-2024-2025
 
 
 sco.1,       sco-premiership-2024-2025
-
+wal.1,     wal-premier-league-2024-2025
+nir.1,      nir-premier-league-2024-2025
 ie.1,        irl-premier-division-2024
 
 
@@ -64,9 +68,15 @@ be.2,     bel-eerste-klasse-b-2024-2025
 be.cup,   bel-beker-van-belgie-2024-2025
 
 
-it.1,     ita-serie-a-2024-2025
-it.2,     ita-serie-b-2024-2025
+it.1,      ita-serie-a-2024-2025
+it.2,      ita-serie-b-2024-2025
+it.3.a,    ita-serie-c-girone-a-2024-2025
+it.3.b,    ita-serie-c-girone-b-2024-2025
+it.3.c,    ita-serie-c-girone-c-2024-2025
 it.cup,   ita-coppa-italia-2024-2025
+
+sm.1,      smr-campionato-2024-2025
+
 
 pt.1,     por-primeira-liga-2024-2025
 pt.2,     por-segunda-liga-2024-2025
@@ -75,12 +85,20 @@ es.1,     esp-primera-division-2024-2025
 es.2,     esp-segunda-division-2024-2025
 es.cup,   esp-copa-del-rey-2023-2024        ##   update to 2024-2025 later!!!
 
+ad.1,     and-1a-divisio-2024-2025
+
+gi.1,     gib-premier-divison-2024-2025
+
 
 ro.1,     rou-liga-1-2024-2025
 ro.cup,   rou-cupa-romaniei-2024-2025
 
+bg.1,     bul-parva-liga-2024-2025
+
 ru.1,     rus-premier-liga-2024-2025
 ru.2,     rus-premier-liga-2024-2025
+
+by.1,    blr-cempionat-2024
 
 ua.1,     ukr-premyer-liga-2024-2025
 
@@ -91,13 +109,32 @@ tr.2,    tur-1-lig-2024-2025
 
 gr.1,    gre-super-league-2024-2025
 
+cy.1,    cyp-first-division-2024-2025
+mt.1,    mlt-premier-league-2024-2025-opening
+
 hr.1,    cro-1-hnl-2024-2025
 ba.1,    bih-premier-liga-2024-2025
 
 al.1,    alb-kategoria-superiore-2024-2025
 
+mk.1,    mkd-1-mfl-2024-2025
+md.1,    mda-divizia-nationala-2024-2025-phase-i
+me.1,    mne-1-cfl-2024-2025
+rs.1,    srb-super-liga-2024-2025
+si.1,    svn-prvaliga-2024-2025
+
+## todo/fix - change to kos.1 - why? why not?
+xk.1,     kos-superliga-2024-2025
+kos.1,    kos-superliga-2024-2025
+
+
+am.1,      arm-premier-league-2024-2025
+az.1,      aze-premyer-liqasi-2024-2025
+ge.1,      geo-erovnuli-liga-2024
+
 
 is.1,   isl-urvalsdeild-2024
+fo.1,   fro-effodeildin-2024
 
 se.1,   swe-allsvenskan-2024
 se.2,   swe-superettan-2024
@@ -106,7 +143,9 @@ no.1,    nor-eliteserien-2024
 fi.1,    fin-veikkausliiga-2024-championship
 dk.1,    den-superliga-2024-2025
 
-
+ee.1,    est-meistriliiga-2024
+lt.1,    ltu-a-lyga-2024
+lv.1,    lat-virsliga-2024
 
 
 uefa.cl,      champions-league-2024-2025
