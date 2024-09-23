@@ -63,6 +63,10 @@ class Timezone   ## nested inside UTC
      @zone = zone
    end
 
+   def name() @zone.name; end
+   def dst?() @zone.dst?; end
+
+
    def to_local( time )
       ## assert time is Time (not Date or DateTIme)
       ##  and assert utc!!!
@@ -98,7 +102,17 @@ end   # module UTC
 
 
 module TimezoneHelper
+
 def find_zone!( league:, season: )
+  zone = find_zone( league: league, season: season )
+  if zone.nil?  ## still not found; report error
+    puts "!! ERROR: no timezone found for #{league} #{season}"
+    exit 1
+  end
+  zone
+end
+
+def find_zone( league:, season: )
    ## note: do NOT pass in league struct! pass in key (string)
    raise ArgumentError, "league key as string|symbol expected"  unless league.is_a?(String) || league.is_a?(Symbol)
 
@@ -141,11 +155,6 @@ def find_zone!( league:, season: )
    if zone.nil?
      code, _  = league_code.split( '.', 2 )
      zone = @zones[code]
-   end
-
-   if zone.nil?  ## still not found; report error
-      puts "!! ERROR: no timezone found for #{league} #{season}"
-      exit 1
    end
 
    zone
