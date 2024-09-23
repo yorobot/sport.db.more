@@ -55,9 +55,10 @@ eng.3,    English Division Three,    3-division3,             ,  1991/92,
 eng.1,    English Football League,   1-footballleague, 1888/89,  1891/92,   ## single league (no divisions)
 
 
-
 eng.cup,  English FA Cup,            facup,,,
 
+wal.1,    Welsh Premier League,         1-premierleague,,,
+nir.1,    Northern Irish Premiership,   1-premiership,,,
 
 hu.1,     Hungarian NB I,             1-nbi,,,
 
@@ -107,14 +108,52 @@ ua.1,    Ukraine Premier League,  1-premierleague,,,
 ru.1,    Russian Premier League,   1-premierliga,,,
 ru.2,    Russian 1. Division,      2-division1,,,
 
+by.1,    Belarusian Premier League,  1-premierleague,,,
+
+al.1,    Albanian Super League,       1-superleague,,,
+ad.1,    Andorran Premier Division,   1-premierdisvision,,,
+
+ba.1,    Bosnian-Herzegovinian Premier League,   1-premierleague,,,
+bg.1,    Bulgarian A League,        1-aleague,,,
+
+cy.1,    Cypriot First Division,    1-firstdivision,,,
+
+ee.1,    Estonian First League,     1-firstleague,,,
+lv.1,    Latvian First Division,    1-firstdivision,,,
+lt.1,    Lithuanian First Division, 1-firstdivision,,,
+
+li.cup,  Liechtensteiner Cup,       cup,,,
+
+mk.1,    Macedonian First League,   1-firstleague,,,
+mt.1,    Macedonian First League,   1-firstleague,,,
+md.1,    Moldovan First Division,   1-firstdivision,,,
+me.1,    Montenegrin First League,  1-firstleague,,,
+
+sm.1,   San Marinese Championship,  1-championship,,,
+rs.1,   Serbian Super League,       1-superleague,,,
+si.1,   Slovene First League,       1-firstleague,,,
+
+kos.1,  Kosovan Superliga,    1-superliga,,,
+xk.1,   Kosovan Superliga,    1-superliga,,,
+
+am.1,   Armenian Premier League,   1-premierleague,,,
+az.1,   Azerbaijani Premier League,  1-premierleague,,,
+ge.1,   Georgian Premier League,     1-premierleague,,,
+
+fo.1,   Faroese Premier Division 2024,   1-premierdivision,,,
+gi.1,   Gibraltarian Premier League,    1-premierleague,,,
+
 
 
 ##  use uefa.1 - why? why not?
 ##      uefa.2,
 ##      uefa.3
 uefa.cl,      UEFA Champions League,    cl,,,     ### use champs or such?
-uefa.el,      UEFA Europa League,       el,,,     ### use europa
+uefa.champs,  UEFA Champions League,    champs,,,
+uefa.el,      UEFA Europa League,       el,,,     ### use europa?
+uefa.europa,  UEFA Europa League,       europa,,,
 uefa.conf,    UEFA Conference League,   conf,,,   ###  use con (conf - confusion with config files?)
+uefa.con,     UEFA Conference League,   con,,,
 
 uefa.nl,      UEFA Nations League,      nl,,,
 euro,         Euro,   euro,,,

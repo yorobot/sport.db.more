@@ -42,9 +42,45 @@ ua,  europe/ukraine
 ru,  europe/russia
 
 
-uefa.cl,    champions-league
-uefa.el,    champions-league
-uefa.conf,  champions-league
+al,  europe/albania
+ad,  europe/andorra
+by,  europe/belarus
+ba,  europe/bosnia-herzegovina   ## use bosnia-n-herzegovina ??
+bg,  europe/bulgaria
+cy,  europe/cyprus
+ee,  europe/estonia
+lv,  europe/latvia
+li,  europe/liechtenstein
+lt,  europe/lithuania
+mk,  europe/north-macedonia
+mt,  europe/malta
+md,  europe/moldova
+me,  europe/montenegro
+
+sm,  europe/san-marino
+rs,  europe/serbia
+si,  europe/slovenia
+
+xk,  europe/kosovo
+kos, europe/kosovo
+
+am,  europe/armenia
+az,  europe/azerbaijan
+ge,  europe/georgia
+fo,  europe/faroe-islands
+gi,  europe/gibraltar
+
+wal, europe/wales
+nir, europe/northern-ireland
+
+
+
+uefa.cl,      champions-league
+uefa.champs,  champions-league
+uefa.el,      champions-league
+uefa.europa,  champions-league
+uefa.conf,    champions-league
+uefa.con,     champions-league
 
 euro,       euro
 
@@ -62,6 +98,11 @@ copa.s,  south-america/copa-libertadores
 
 cn,  world/asia/china
 jp,  world/asia/japan
+
+kz,  world/asia/kazakhstan
+
+il,  world/middle-east/israel
+
 
 
 world,   worldcup
