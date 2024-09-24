@@ -38,10 +38,9 @@ STAGES = {
 
 
 
-def self.team_autofill( name, teams: )
-  ## note - no country for place holder teams
-  return name  if name == 'N.N.'
 
+
+def self.find_team_country_code( name, teams: )
   ## add (fifa) country code e.g.
   ##      Liverpool FC => Liverpool FC (ENG)
   ##  or  Liverpool FC => Liverpool FC (URU)
@@ -59,7 +58,7 @@ def self.team_autofill( name, teams: )
     exit 1
   end
 
-  "#{name} (#{country.code})"
+  country.code
 end
 
 
@@ -196,19 +195,28 @@ matches.each do |m|
   teams[ team1 ] += 1
   teams[ team2 ] += 1
 
-  ####
-  #   auto-add (fifa) country code if int'l club tournament
-  if clubs_intl
-    team1 = team_autofill( team1, teams: teams_by_name )
-    team2 = team_autofill( team2, teams: teams_by_name )
-  end
-
 
     ### mods - rename club names
     unless mods.nil? || mods.empty?
       team1 = mods[ team1 ]      if mods[ team1 ]
       team2 = mods[ team2 ]      if mods[ team2 ]
     end
+
+  ####
+  #   auto-add (fifa) country code if int'l club tournament
+  if clubs_intl
+    ## note - use "original" name (not moded) for lookup
+    team1_org = m['homeTeam']['name']
+    team2_org = m['awayTeam']['name']
+    if team1_org   ## note - ignore no team/placeholder (e.g. N.N)
+      country_code = find_team_country_code( team1_org, teams: teams_by_name )
+      team1 = "#{team1} (#{country_code})"
+    end
+    if team2_org   ## note - ignore no team/placeholder (e.g. N.N)
+      country_code = find_team_country_code( team2_org, teams: teams_by_name )
+      team2 = "#{team2} (#{country_code})"
+    end
+  end
 
 
 

@@ -12,6 +12,9 @@ module Footballdata
     'br.1' => {
        'América FC' => 'América Mineiro',  # in year 2018 ??
     },
+    'copa.l' => {
+       'América FC' => 'América Mineiro',  # in year 2022
+    },
     'pt.1' => {
       'Vitória SC' => 'Vitória Guimarães',  ## avoid easy confusion with Vitória SC <=> Vitória FC
       'Vitória FC' => 'Vitória Setúbal',
