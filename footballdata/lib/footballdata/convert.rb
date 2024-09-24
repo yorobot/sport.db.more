@@ -3,6 +3,8 @@ module Footballdata
 
 #######
 ##  map round-like to higher-level stages
+##      fix - map by league codes
+##              or * (all)
 STAGES = {
   'REGULAR_SEASON'          => ['Regular'],
 
@@ -36,6 +38,31 @@ STAGES = {
 
 
 
+def self.team_autofill( name, teams: )
+  ## note - no country for place holder teams
+  return name  if name == 'N.N.'
+
+  ## add (fifa) country code e.g.
+  ##      Liverpool FC => Liverpool FC (ENG)
+  ##  or  Liverpool FC => Liverpool FC (URU)
+  rec = teams[ name ]
+  if rec.nil?
+    puts "!! ERROR - no team record found in teams.json for #{name}"
+    pp teams.keys
+    exit 1
+  end
+
+  country_name = rec['area']['name']
+  country  = Fifa.world.find_by_name( country_name )
+  if country.nil?
+    puts "!! ERROR - no country record found for #{country_name}"
+    exit 1
+  end
+
+  "#{name} (#{country.code})"
+end
+
+
 
 def self.convert( league:, season: )
 
@@ -49,6 +76,14 @@ def self.convert( league:, season: )
   data           = Webcache.read_json( matches_url )
   data_teams     = Webcache.read_json( teams_url )
 
+
+  ## note - for internation club tournaments
+  ##         auto-add (fifa) country code e.g.
+  ##      Liverpool FC  => Liverpool FC (ENG)
+  ##
+  ##  todo/fix -  move flag to league_info via .csv config - why? why not?
+  clubs_intl  =  ['uefa.cl',
+                  'copa.l'].include?(league.downcase) ? true : false
 
 
   ## check for time zone
@@ -94,9 +129,16 @@ matches.each do |m|
   team1 = m['homeTeam']['name'] || 'N.N.'
   team2 = m['awayTeam']['name'] || 'N.N.'
 
+   ## auto-fix copa.l 2024
+   ##  !! ERROR: unsupported match status >IN_PLAY< - sorry:
+   if m['status'] == 'IN_PLAY' &&
+      team1 == 'Club Aurora' && team2 == 'FBC Melgar'
+        m['status'] = 'FINISHED'
+   end
+
+
+
   score = m['score']
-
-
 
   group = m['group']
   ## GROUP_A
@@ -151,8 +193,16 @@ matches.each do |m|
   end
 
 
-    teams[ team1 ] += 1
-    teams[ team2 ] += 1
+  teams[ team1 ] += 1
+  teams[ team2 ] += 1
+
+  ####
+  #   auto-add (fifa) country code if int'l club tournament
+  if clubs_intl
+    team1 = team_autofill( team1, teams: teams_by_name )
+    team2 = team_autofill( team2, teams: teams_by_name )
+  end
+
 
     ### mods - rename club names
     unless mods.nil? || mods.empty?
@@ -160,13 +210,6 @@ matches.each do |m|
       team2 = mods[ team2 ]      if mods[ team2 ]
     end
 
-
-   ## auto-fix copa.l 2024
-   ##  !! ERROR: unsupported match status >IN_PLAY< - sorry:
-   if m['status'] == 'IN_PLAY' &&
-      team1 == 'Club Aurora' && team2 == 'FBC Melgar'
-        m['status'] = 'FINISHED'
-   end
 
 
     comments = ''
@@ -178,7 +221,7 @@ matches.each do |m|
     stats['status'][m['status']]  += 1  ## track status counts
 
     case m['status']
-    when 'SCHEDULED', 'TIMED'   ## , 'IN_PLAY'
+    when 'SCHEDULED', 'TIMED'   ## , 'IN_PLAY', 'PAUSED'
       ft = ''
       ht = ''
     when 'FINISHED'

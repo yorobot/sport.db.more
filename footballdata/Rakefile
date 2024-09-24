@@ -19,6 +19,7 @@ Hoe.spec 'footballdata-api' do
 
   self.extra_deps = [
     ['football-timezones'],
+    ['fifa'],
     ['webget'],
   ]
 
