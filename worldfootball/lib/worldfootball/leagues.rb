@@ -120,7 +120,8 @@ end # class LeagueConfig
 
 
 LEAGUES = LeagueConfig.new
-['leagues_america',
+['leagues_africa',
+ 'leagues_america',
  'leagues_asia',
  'leagues_europe',
  'leagues_middle_east',
