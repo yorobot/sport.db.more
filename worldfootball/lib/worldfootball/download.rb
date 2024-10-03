@@ -38,7 +38,7 @@ class Metal
 
   def self.schedule_url( slug )  "#{BASE_URL}/alle_spiele/#{slug}/";  end
   def self.report_url( slug )    "#{BASE_URL}/spielbericht/#{slug}/"; end
-
+  def self.team_url( slug )   "#{BASE_URL}/teams/#{slug}/"; end
 
 ##
 ## note:
@@ -47,6 +47,19 @@ class Metal
 ##    on missing pages:
 ##      301 Moved Permanently location=https://www.weltfussball.de/
 ##      301 Moved Permanently location=https://www.weltfussball.de/
+
+
+def self.download_team( slug, cache: true )
+  url  = team_url( slug )
+
+  ## check check first
+  if cache && Webcache.cached?( url )
+     puts "  reuse local (cached) copy >#{Webcache.url_to_id( url )}<"
+  else
+    download_page( url )
+  end
+end
+
 
 
 # url = "https://www.weltfussball.de/alle_spiele/eng-league-one-#{season}/"
@@ -61,7 +74,6 @@ class Metal
 #        https://www.weltfussball.de/alle_spiele/rus-1-division-2019-2020/
 #        https://www.weltfussball.de/alle_spiele/tur-sueperlig-2019-2020/
 #        https://www.weltfussball.de/alle_spiele/tur-1-lig-2019-2020/
-
 
   def self.download_schedule( slug )
     url = schedule_url( slug )
