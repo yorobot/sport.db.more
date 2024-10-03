@@ -15,7 +15,14 @@ key,  name1, name2
 *,  Halbfinale,    Semifinals
 *,  Finale,        Final
 
+*,  Spiel um Platz 3,   Match for 3rd place
+
 *,  Vorrunde,      Preliminary round
+
+*,  Qual. 1. Runde,  Qual. Round 1
+*,  Qual. 2. Runde,  Qual. Round 2
+
+
 
 ## es to en
 *,  Recalificación,  Reclassification
@@ -31,7 +38,7 @@ mx.2,  Qual. 2. Runde,  Play-in round 2
 
 
 ###
-##    fix - move groups to new groups column!!!!
+##   quick fix - move groups to new groups column!!!!
 ar.1,   Gruppe A,  Group
 ar.1,   Gruppe B,  Group
 ar.1,   Gruppe C,  Group
@@ -40,4 +47,12 @@ ar.1,   Gruppe E,  Group
 ar.1,   Gruppe F,  Group
 ar.1,   Gruppe 1,  Group
 ar.1,   Gruppe 2,  Group
+
+co.1,   Gruppe A,  Group
+co.1,   Gruppe B,  Group
+
+caf.cl, Gruppe A,  Group
+caf.cl, Gruppe B,  Group
+caf.cl, Gruppe C,  Group
+caf.cl, Gruppe D,  Group
 
