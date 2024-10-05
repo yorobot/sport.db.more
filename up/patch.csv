@@ -17,8 +17,11 @@ league, seasons
 
 
 caf.cl,   2023/24 2024/25
+afl,      2023
 
-co.1,    2023 2024     ## Colombia
 
-al.1, 2023/24 2024/25          ## Albania
-sm.1, 2023/24 2024/25          ## San Marino
+
+# co.1,    2023 2024     ## Colombia
+
+# al.1, 2023/24 2024/25          ## Albania
+# sm.1, 2023/24 2024/25          ## San Marino
