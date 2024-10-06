@@ -20,7 +20,6 @@ Hoe.spec 'sportdb-writers' do
   self.extra_deps = [
     ['football-timezones'],
     ['sportdb-quick'],
-    ['gitti'],
   ]
 
   self.licenses = ['Public Domain']

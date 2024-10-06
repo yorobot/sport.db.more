@@ -4,7 +4,6 @@
 * bugs  :: [github.com/sportdb/sport.db/issues](https://github.com/sportdb/sport.db/issues)
 * gem   :: [rubygems.org/gems/sportdb-writers](https://rubygems.org/gems/sportdb-writers)
 * rdoc  :: [rubydoc.info/gems/sportdb-writers](http://rubydoc.info/gems/sportdb-writers)
-* forum :: [groups.google.com/group/opensport](https://groups.google.com/group/opensport)
 
 
 
