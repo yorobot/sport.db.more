@@ -229,7 +229,8 @@ matches.each do |m|
     stats['status'][m['status']]  += 1  ## track status counts
 
     case m['status']
-    when 'SCHEDULED', 'TIMED'   ## , 'IN_PLAY', 'PAUSED'
+    when 'SCHEDULED', 'TIMED',
+         'PAUSED', 'IN_PLAY'   ## IN_PLAY, PAUSED
       ft = ''
       ht = ''
     when 'FINISHED'

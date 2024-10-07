@@ -40,7 +40,9 @@ def self.fmt_match( rec )
                 FINISHED
                 POSTPONED
                 AWARDED
+                CANCELLED
                 IN_PLAY
+                PAUSED
                ].include?( status ), "unknown status - #{status}" )
 
      buf << '%-10s' % status
