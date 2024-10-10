@@ -19,7 +19,24 @@ module CET   ## central european time helpers
         pp d
         exit 1
      end
-   zone.local_time( d.year, d.month, d.day, d.hour, d.min, d.sec )
+
+  ###  2006-03-26 02:00:00
+  ##  raise exception
+  ##    is an invalid local time. (TZInfo::PeriodNotFound)
+    ## quick fix add +1
+  ##  2012-03-25 02:00:00
+  ##   is an invalid local time. (TZInfo::PeriodNotFound)
+
+     if ['2018-03-25 02:00',
+         '2012-03-25 02:00',
+         '2006-03-26 02:00',
+        ].include?( d.strftime( '%Y-%m-%d %H:%M' ))
+       puts "!! hack - fix CET date #{d} - add +1 hour"
+       pp d
+       zone.local_time( d.year, d.month, d.day, d.hour+1, d.min, d.sec )
+     else
+       zone.local_time( d.year, d.month, d.day, d.hour, d.min, d.sec )
+     end
   end
   def self.zone() @zone ||= UTC.find_zone( 'Europe/Vienna' ); end
 end  # class CET
