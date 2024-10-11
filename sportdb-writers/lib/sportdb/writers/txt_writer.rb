@@ -159,14 +159,18 @@ def self._build_batch( matches, rounds: true )
 
            buf << (round_translations[match.round] || match.round)
          end
-        buf << "\n"
+         ## note - reset last_date & last_time on every new round header
+         last_date = nil
+         last_time = nil
+
+         buf << "\n"
        end
      end
 
 
      date = if match.date.is_a?( String )
                Date.strptime( match.date, '%Y-%m-%d' )
-            else  ## assume it's already a date (object)
+            else  ## assume it's already a date (object) or nil!!!!
                match.date
             end
 
@@ -177,25 +181,22 @@ def self._build_batch( matches, rounds: true )
             end
 
 
-     date_yyyymmdd = date.strftime( '%Y-%m-%d' )
+     ## note - date might be NIL!!!!!
+     date_yyyymmdd = date ? date.strftime( '%Y-%m-%d' ) : nil
 
      ## note: time is OPTIONAL for now
      ## note: use 17.00 and NOT 17:00 for now
      time_hhmm     = time ? time.strftime( '%H.%M' ) : nil
 
 
-     if rounds
-       if match.round != last_round || date_yyyymmdd != last_date
-          buf << "[#{format_date.call( date )}]\n"
-          last_time = nil  ## note: reset time for new date
-       end
-     else
-       if date_yyyymmdd != last_date
-          buf << "\n"    ## note: add an extra leading blank line (if no round headings printed)
-          buf << "[#{format_date.call( date )}]\n"
-          last_time = nil
-       end
-    end
+     if date_yyyymmdd
+         if date_yyyymmdd != last_date
+            ## note: add an extra leading blank line (if no round headings printed)
+            buf << "\n"   unless rounds
+            buf << "[#{format_date.call( date )}]\n"
+            last_time = nil
+         end
+     end
 
 
      ## allow strings and structs for team names
@@ -207,16 +208,15 @@ def self._build_batch( matches, rounds: true )
      line << '  '
 
      if time
-        if last_time.nil? || last_time != time_hhmm
+        if last_time != time_hhmm
           line << "%5s" % time_hhmm
         else
           line << '     '
         end
         line << '  '
      else
-      ## do nothing for now
+       line << '       '
      end
-
 
      line << "%-23s" % team1    ## note: use %-s for left-align
 
@@ -237,7 +237,8 @@ def self._build_batch( matches, rounds: true )
       when Status::REPLAY
         line << '[replay]'
       when Status::POSTPONED
-        ## note: add NOTHING for postponed for now
+        line << '[postponed]'
+        ## was -- note: add NOTHING for postponed for now
       else
         puts "!! WARN - unknown match status >#{match.status}<:"
         pp match
