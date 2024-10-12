@@ -1,5 +1,11 @@
 key,     name,                      basename,       start_season, end_season, comments
 
+
+###
+# Austria
+#  - (at.2)  Erste Liga renamed to (=>) 2. Liga  starting 2018/19
+
+
 at.1,     Österr. Bundesliga,        1-bundesliga,,,
 at.2,     Österr. 2. Liga,           2-liga2,        2018/19,,
 at.2,     Österr. Erste Liga,        2-liga1,               , 2017/18,
@@ -38,6 +44,12 @@ fr.2,     French Ligue 2,              2-ligue2,,,
 ## note - starting with the 2004/05 season
 #     the Football League's Division 1, Division 2 and Division 3
 ##    changed to Championship, League One and League Two.
+##
+##  - (eng.1)  Premier League starting in 1992/93
+##  - (eng.2)  Division One renamed to (=>) Championship starting in 2004/05
+##  - (eng.3)  Division Two renamed to (=>) League One in 2004/05
+##  - (eng.4)  Division Three renamed to (=>) League Two in 2004/05
+
 
 eng.2,    English Championship,      2-championship,   2004/05,,            ## rebranding divsion 1 => championship
 eng.3,    English League One,        3-league1,        2004/05,,
@@ -149,12 +161,66 @@ gi.1,   Gibraltarian Premier League,    1-premierleague,,,
 ##  use uefa.1 - why? why not?
 ##      uefa.2,
 ##      uefa.3
-uefa.cl,      UEFA Champions League,    cl,,,     ### use champs or such?
-uefa.champs,  UEFA Champions League,    champs,,,
-uefa.el,      UEFA Europa League,       el,,,     ### use europa?
-uefa.europa,  UEFA Europa League,       europa,,,
-uefa.conf,    UEFA Conference League,   conf,,,   ###  use con (conf - confusion with config files?)
-uefa.con,     UEFA Conference League,   con,,,
 
-uefa.nl,      UEFA Nations League,      nl,,,
-euro,         Euro,   euro,,,
+##
+## note - UEFA Champions League branding starting in 1992/93
+##         (originally adopted only in the group stage in 1991/92).
+uefa.cl,      UEFA Champions League,    cl,     1992/93,,     ### use champs or such?
+uefa.champs,  UEFA Champions League,    champs, 1992/93,,
+
+## commonly known as  European Cup
+euro.champs,  European Champion Clubs' Cup, champs, 1955/56, 1991/92,
+
+
+##
+## By 1968, all UEFA member nations had set up domestic cup competitions
+## due to the success of the Cup Winners' Cup. UEFA regarded it as
+## the second most prestigious competition,
+## behind the European Cup (later the UEFA Champions League)
+## and ahead of the Fairs Cup (later the UEFA Cup).
+## Therefore, a team qualified for both the European Cup
+## and the Cup Winners' Cup would play in the European Cup,
+## whereas a team qualified for both the UEFA Cup and the Cup Winners' Cup
+## would play in the Cup Winners' Cup.
+## Nevertheless, many commentators and fans regarded the Cup Winners' Cup
+## as weaker than the UEFA Cup, which had more and better teams
+## from the stronger European leagues.
+
+## old "2-nd" tier cup (merged into uefa cup)
+##    renamed the UEFA Cup Winners' Cup in 1994/95
+euro.cup,     European Cup Winners' Cup,   cupwinners, 1960/61, 1998/99,
+
+# uefa europa league starting in 2009/10
+uefa.el,      UEFA Europa League,       el,     2009/10,,     ### use europa?
+uefa.europa,  UEFA Europa League,       europa, 2009/10,,
+
+## uefa cup changed to europa league in 2009/10
+##  note - The UEFA Cup was preceded by the Inter-Cities Fairs Cup,
+##  which was a European football competition played between 1955 and 1971.
+uefa.cup,     UEFA Cup,                 cup,   1971/72, 2008/09,
+
+## uefa conference league starting in 2021/22
+##    naming history
+##    2021/22 - 2023/24 -   UEFA Europa Conference League
+##    2024/25 -             UEFA Conference League   (dropping Europa)
+uefa.conf,    UEFA Conference League,   conf, 2021/22,,   ###  use con (conf - confusion with config files?)
+uefa.con,     UEFA Conference League,   con,  2021/22,,
+
+
+## note - official name was originally the Super Competition,
+##  and later the European Super Cup.
+##  It was renamed the UEFA Super Cup in 1995.
+##   note - use calendar year for season!!!
+uefa.super,   UEFA Super Cup,           super, 1972,,
+
+
+### note - nations league starting in 2018/19
+uefa.nl,      UEFA Nations League,      nl, 2018/19,,
+
+
+##   euro starting in 1960 (every four years)
+#      2020 in 2021 (!!)
+## naming history
+##   1960, 1964 -  European Nations' Cup
+##   1968 -        European Championship
+euro,         Euro,   euro, 1960,,
