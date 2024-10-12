@@ -68,16 +68,19 @@ def self.build( matches, rounds: true )
     buf = String.new
     # e.g. 13 April – 25 September 2024
     #  or  16 August 2024 – 25 May 2025
-    buf << "# Date       "
-    start_date = stats['date']['start_date']
-    end_date   = stats['date']['end_date']
-    if start_date.year != end_date.year
-      buf << "#{start_date.strftime('%a %b/%-d %Y')} - #{end_date.strftime('%a %b/%-d %Y')}"
-    else
-      buf << "#{start_date.strftime('%a %b/%-d')} - #{end_date.strftime('%a %b/%-d %Y')}"
+    ## note - date is optional!!
+    if stats['date']['start_date']
+      buf << "# Date       "
+      start_date = stats['date']['start_date']
+      end_date   = stats['date']['end_date']
+      if start_date.year != end_date.year
+        buf << "#{start_date.strftime('%a %b/%-d %Y')} - #{end_date.strftime('%a %b/%-d %Y')}"
+      else
+        buf << "#{start_date.strftime('%a %b/%-d')} - #{end_date.strftime('%a %b/%-d %Y')}"
+      end
+      buf << " (#{end_date.jd-start_date.jd}d)"   ## add days
+      buf << "\n"
     end
-    buf << " (#{end_date.jd-start_date.jd}d)"   ## add days
-    buf << "\n"
 
     buf << "# Teams      #{stats['teams'].size}\n"
     buf << "# Matches    #{matches.size}\n"
