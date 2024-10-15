@@ -33,9 +33,7 @@ require_relative 'writers/league_config'
 module Writer
   LEAGUES = SportDb::LeagueConfig.new
 
-  ['leagues_europe',
-   'leagues_america',
-   'leagues_world'
+  ['leagues',
   ].each do |name|
     recs = read_csv( "#{SportDb::Module::Writers.root}/config/#{name}.csv" )
     LEAGUES.add( recs )

@@ -18,10 +18,10 @@ de.1,         Deutsche Bundesliga,           1-bundesliga,,,
 de.2,         Deutsche 2. Bundesliga,        2-bundesliga2,,,
 de.3,         Deutsche 3. Liga,              3-liga3,,,
 de.4.bayern,  Deutsche Regionalliga Bayern,  4-regionalliga-bayern,,,
-de.4.n,       Deutsche Regionalliga Nord,    4-regionalliga-nord,,,
-de.4.no,      Deutsche Regionalliga Nordost, 4-regionalliga-nordost,,,
-de.4.w,       Deutsche Regionalliga West,    4-regionalliga-west,,,
-de.4.sw,      Deutsche Regionalliga Südwest, 4-regionalliga-suedwest,,,
+## de.4.n,       Deutsche Regionalliga Nord,    4-regionalliga-nord,,,
+## de.4.no,      Deutsche Regionalliga Nordost, 4-regionalliga-nordost,,,
+## de.4.w,       Deutsche Regionalliga West,    4-regionalliga-west,,,
+## de.4.sw,      Deutsche Regionalliga Südwest, 4-regionalliga-suedwest,,,
 de.cup,       DFB Pokal,                     cup,,,
 
 
@@ -147,7 +147,7 @@ rs.1,   Serbian Super League,       1-superleague,,,
 si.1,   Slovene First League,       1-firstleague,,,
 
 kos.1,  Kosovan Superliga,    1-superliga,,,
-xk.1,   Kosovan Superliga,    1-superliga,,,
+## xk.1,   Kosovan Superliga,    1-superliga,,,
 
 am.1,   Armenian Premier League,   1-premierleague,,,
 az.1,   Azerbaijani Premier League,  1-premierleague,,,
@@ -166,7 +166,7 @@ gi.1,   Gibraltarian Premier League,    1-premierleague,,,
 ## note - UEFA Champions League branding starting in 1992/93
 ##         (originally adopted only in the group stage in 1991/92).
 uefa.cl,      UEFA Champions League,    cl,     1992/93,,     ### use champs or such?
-uefa.champs,  UEFA Champions League,    champs, 1992/93,,
+## uefa.champs,  UEFA Champions League,    champs, 1992/93,,
 
 ## commonly known as  European Cup
 euro.champs,  European Champion Clubs' Cup, champs, 1955/56, 1991/92,
@@ -192,7 +192,7 @@ euro.cup,     European Cup Winners' Cup,   cupwinners, 1960/61, 1998/99,
 
 # uefa europa league starting in 2009/10
 uefa.el,      UEFA Europa League,       el,     2009/10,,     ### use europa?
-uefa.europa,  UEFA Europa League,       europa, 2009/10,,
+## uefa.europa,  UEFA Europa League,       europa, 2009/10,,
 
 ## uefa cup changed to europa league in 2009/10
 ##  note - The UEFA Cup was preceded by the Inter-Cities Fairs Cup,
@@ -204,7 +204,7 @@ uefa.cup,     UEFA Cup,                 cup,   1971/72, 2008/09,
 ##    2021/22 - 2023/24 -   UEFA Europa Conference League
 ##    2024/25 -             UEFA Conference League   (dropping Europa)
 uefa.conf,    UEFA Conference League,   conf, 2021/22,,   ###  use con (conf - confusion with config files?)
-uefa.con,     UEFA Conference League,   con,  2021/22,,
+## uefa.con,     UEFA Conference League,   con,  2021/22,,
 
 
 ## note - official name was originally the Super Competition,

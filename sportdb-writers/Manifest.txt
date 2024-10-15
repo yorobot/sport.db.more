@@ -4,9 +4,7 @@ README.md
 Rakefile
 bin/fbgen
 bin/fbtxt
-config/leagues_america.csv
-config/leagues_europe.csv
-config/leagues_world.csv
+config/leagues.csv
 lib/sportdb/fbgen/main.rb
 lib/sportdb/fbtxt/main.rb
 lib/sportdb/writers.rb

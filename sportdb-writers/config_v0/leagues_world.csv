@@ -17,7 +17,7 @@ dz.1,   Algeria Ligue 1,       1-ligue1,,,
 
 afl,     African Football League,   afl,,,
 caf.cl,       CAF Champions League,     cl,,,
-caf.champs,   CAF Champions League,     champs,,,   ## use alternate code - why? why not?
+##  caf.champs,   CAF Champions League,     champs,,,   ## use alternate code - why? why not?
 
 
 world,   World Cup,                 cup,,,
