@@ -1,5 +1,16 @@
 
 
+##
+# use/find a better name
+#    League Set, League Sheet,
+#    Leagueset/LeagueSet, LeagueSheet/Leaguesheet  
+#    or Leagues (only)??
+#    or League Book, League Setup, ??
+#
+#
+#   move league config over here from sportdb-writers too!!!!!
+
+
 module Datasets
 def self.parse_args( args )
     ### split args in datasets with leagues and seasons

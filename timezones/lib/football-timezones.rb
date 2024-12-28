@@ -26,5 +26,11 @@ def parse_datasets( str )       Datasets.parse( str ); end
 def parse_datasets_args( args ) Datasets.parse_args( args ); end
 
 
+###
+##  change to
+#    read_leagueset
+#    parse_leagueset
+#    parse_leagueset_args
+
 
 puts SportDb::Module::Timezones.banner   ## say hello
