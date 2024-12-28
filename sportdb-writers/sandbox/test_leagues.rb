@@ -1,6 +1,6 @@
 ###
 ##  to run use:
-##    $ ruby sandbox/test_seasons.rb
+##    $ ruby sandbox/test_leagues.rb
 
 $LOAD_PATH.unshift( '../../../sportdb/sport.db/parser/lib' )
 $LOAD_PATH.unshift( '../../../sportdb/sport.db/sportdb-structs/lib' )

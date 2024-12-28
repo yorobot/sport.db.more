@@ -49,7 +49,6 @@ require_relative 'writers/txt_writer'
 #  fbtxt tool
 require 'football/timezones'    ## pulls in read_datasets, etc.
 
-require_relative 'fbtxt/main'
 require_relative 'fbgen/main'
 
 
