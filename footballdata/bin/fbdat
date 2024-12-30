@@ -191,16 +191,14 @@ end
 
 
 datasets = if opts[:file]
-              read_datasets( opts[:file] )
+              read_leagueset( opts[:file] )
            else
-              parse_datasets_args( args )
+              parse_leagueset_args( args )
            end
 
 
 ## step 0 - validate and fill-up seasons etc.
-datasets.each do |dataset|
-  league_key, seasons = dataset
-
+datasets.each do |league_key, seasons|
   ##  todo - find a better name
   ##  use internal_league_code or such - why? why not?
   ###  convenience helpers - lets you use eng.1, euro, etc.
@@ -211,13 +209,13 @@ datasets.each do |dataset|
   ##              might be 2024/25 or 2024 or
   #                 for world cup 2022 or such
   if seasons.empty?
-     seasons = case league_key
-               when  'world'          then [Season('2022')]
-               when  'euro'           then [Season('2024')]
-               when  'br.1', 'copa.l' then [Season('2024')]
-               else                        [Season('2024/25')]
+     season = case league_key
+               when  'world'          then Season('2022')
+               when  'euro'           then Season('2024')
+               when  'br.1', 'copa.l' then Season('2024')
+               else                        Season('2024/25')
                end
-    dataset[1] = seasons
+    seasons << season
   end
 end
 
