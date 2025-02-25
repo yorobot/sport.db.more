@@ -73,7 +73,7 @@ def _build_goal( rec )
     if rec['scorer'].nil? || rec['scorer'].empty?
         puts "!! WARN - (goals) scorer empty:"
         pp rec
-        rec['scorer'] = '??'
+        rec['scorer'] = 'N.N.'    ## note - use N.N. NOT ?? for n/a
         ## raise ArgumentError, "scorer empty"
     end
 
