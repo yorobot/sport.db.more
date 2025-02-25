@@ -2,8 +2,8 @@ require 'cocos'
 require 'alphabets'
 
 
-# root_dir = "/sports/openfootball/internationals"
-root_dir = "./o"
+root_dir = "/sports/openfootball/internationals"
+# root_dir = "./o"
 
 
 repo_dir = "/sports/more/international_results"
@@ -67,16 +67,23 @@ recs.each do |rec|
 end
 
 
+##
+## todo - add "xx" to names - why? why not?
+##   todo/check - allow/support "Didi" or such for name - why?
+SCORER_FIX = {
+  %q{Eduardo "Volkswagen" Hernández}     => "Eduardo Hernández", ## fix!!!
+  %q{Delio "Maravilla" Gamboa}           => "Delio Gamboa",      ## fix!!!
+  %q{Alex "Didí" Valverde}               => "Alex Valverde",     ## fix!!!
+
+  "Carlos Castillo, honduran footballer" => "Carlos Castillo", 
+  "John Kerr, Jr."                       => "John Kerr Jr.", 
+  "it:Lee Ki-Bum"                        => "Lee Ki-Bum", 
+}
+
 
 def _build_goal( rec )
 
-    if rec['scorer'].nil? || rec['scorer'].empty?
-        puts "!! WARN - (goals) scorer empty:"
-        pp rec
-        rec['scorer'] = 'N.N.'    ## note - use N.N. NOT ?? for n/a
-        ## raise ArgumentError, "scorer empty"
-    end
-
+ 
     if  rec['minute'].nil? || rec['minute'].empty?
         puts "!! WARN - (goals) minute empty:"
         pp rec
@@ -85,8 +92,22 @@ def _build_goal( rec )
         ## raise ArgumentError, "minute empty"
     end
 
+    scorer = rec['scorer']
+
+    if scorer.nil? || scorer.empty?
+        puts "!! WARN - (goals) scorer empty:"
+        pp rec
+        scorer = 'N.N.'    ## note - use N.N. NOT ?? for n/a
+        ## raise ArgumentError, "scorer empty"
+    end
+
+    ###
+    ## auto-fix scorer
+    scorer = SCORER_FIX[scorer] || scorer
+
+
     buf = String.new
-    buf << rec['scorer']
+    buf << scorer
     buf << " #{rec['minute']}'"
     buf << " (o.g.)"   if rec['own_goal'] == 'TRUE'
     buf << " (pen.)"   if rec['penalty'] == 'TRUE'
@@ -194,7 +215,13 @@ recs_by_year.each do |year, tournaments|
          match = "#{rec['home_team']} - #{rec['away_team']}"
          score = "#{rec['home_score']}-#{rec['away_score']}"
      
-         geo   = "#{rec['city']}, #{rec['country']}"
+### fix city
+##     Name starting with ' - what to do?
+#         @ 'Atele, Tonga
+          city = rec['city']
+          city = "Atele"   if city == "‘Atele"
+
+         geo   = "#{city}, #{rec['country']}"
          # if neutral  add (*) to geo
          #  geo   += " (*)"  if rec['neutral'] == 'TRUE'     
      
@@ -230,10 +257,3 @@ end   # each year
 
 puts "bye"
 
-
-
-###
-##  generate INDEX.md
-##     generate index by year
-##    year
-##       tournaments (matches)     #  teams, from to)
