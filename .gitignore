@@ -19,3 +19,8 @@ temp/
 *.db
 
 
+##
+# ignore local cache
+cache/
+
+
