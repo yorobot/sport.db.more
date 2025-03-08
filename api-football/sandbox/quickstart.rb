@@ -91,117 +91,15 @@ AT1 = 218
 ## pp ApiFootball.fixtures( league: 'world', season: '2022' )
 
 
-def build_score( data )
-=begin
-"score"=>
-     {"halftime"=>{"home"=>0, "away"=>0},
-      "fulltime"=>{"home"=>1, "away"=>0},
-      "extratime"=>{"home"=>nil, "away"=>nil},
-      "penalty"=>{"home"=>nil, "away"=>nil}}}]}
-=end
- 
-     ht = [data['halftime']['home'],
-           data['halftime']['away']
-          ]
-     ft = [data['fulltime']['home'],
-           data['fulltime']['away']
-          ]
-     et = [data['extratime']['home'],
-           data['extratime']['away']
-          ]
-     pen = [data['penalty']['home'],
-            data['penalty']['away']
-           ]
 
-
-##
-##  pass in status and check elapsed e.g. 90 or 120???
-
-     if pen[0] && pen[1]
-         buf = "#{pen[0]}-#{pen[1]} pen "
-
-         if et[0] && et[1]
-           buf << "(#{et[0]+ft[0]}-#{et[1]+ft[1]}, #{ft[0]}-#{ft[1]}, #{ht[0]}-#{ht[1]})"
-         else  ## no extra time
-           buf << "(#{ft[0]}-#{ft[1]}, #{ht[0]}-#{ht[1]})"
-         end
-         buf
-     elsif et[0] && et[1]
-         "#{et[0]+ft[0]}-#{et[1]+ft[1]} aet " +
-         "(#{ft[0]}-#{ft[1]}, #{ht[0]}-#{ht[1]})"
-     else 
-         "#{ft[0]}-#{ft[1]} (#{ht[0]}-#{ht[1]})"
-     end 
-end
-
-
-=begin
-### parse time utc time
-###     
-"timezone": "UTC",
-        "date": "2023-06-18T18:45:00+00:00",
-        "timestamp": 1687113900,
-=end
-
-
-
-def pp_fixtures( data )
-
-## assert fixture status
-##      plus league and year always same etc.
-
-
-  res = data['response']
-  puts "  #{res.size} record(s)"
-
-
-  last_round = nil
-
-  res.each do |rec|
-
-      round      = rec['league']['round']
-
-      if last_round != round
-        ## puts ">> #{round}"
-        puts "» #{round}"
-      end
-
-    
-
-      team1_name = rec['teams']['home']['name']
-      team2_name = rec['teams']['away']['name']
-      print "     #{team1_name} v #{team2_name}"
-
-      score =  build_score( rec['score'] )
-      print "  #{score}"
-
-
-      if rec['fixture']['venue']
-        ## note - venue_name/city MAY incl. comma!!
-
-        venue_name = rec['fixture']['venue']['name']
-        venue_city = rec['fixture']['venue']['city']
-        print "   @ #{venue_name} › #{venue_city}"
-      else
-        print " !!! no venue found"
-      end
-      
-      print "\n"
-
-      last_round = round
-  end
-
-  puts "  #{res.size} record(s)"
-end
-
-
-
-## fixtures = ApiFootball.fixtures( league: 'uefa.nl', season: '2022' )
+fixtures = ApiFootball.fixtures( league: 'uefa.nl', season: '2022' )
 ## fixtures = ApiFootball.fixtures( league: 'southamerica', season: '2021' )
 ## fixtures = ApiFootball.fixtures( league: 'world', season: '2022' )
 
 
 ## fixtures = ApiFootball.fixtures( league: 'copa.l', season: '2023' )
+## fixtures = ApiFootball.fixtures( league: 'copa.l', season: '2023' )
+
 ## fixtures = ApiFootball.fixtures( league: 'copa.s', season: '2023' )
 
 ## fixtures = ApiFootball.fixtures( league: 'at.1', season: '2023/24' )
@@ -214,14 +112,32 @@ end
 ## fixtures = ApiFootball.fixtures( league: 'be.1', season: '2023/24' )
 
 ## fixtures = ApiFootball.fixtures( league: 'eng.1', season: '2023/24' )
-fixtures = ApiFootball.fixtures( league: 'eng.fa.cup', season: '2023/24' )
+## fixtures = ApiFootball.fixtures( league: 'eng.fa.cup', season: '2023/24' )
 
 
 
 pp fixtures
 
 
-pp_fixtures( fixtures )
+league_name    = fixtures['response'][0]['league']['name']
+league_country = fixtures['response'][0]['league']['country']
+season         = '2023/24'   ## use year from fixtures - why? why not?
+
+
+buf = String.new 
+if league_country != 'World'
+  buf << "= #{league_country} | #{league_name}"  
+else
+  buf << "= #{league_name}"
+end
+buf << " #{season}\n\n"
+
+
+buf << "  # Matches   #{fixtures['response'].size}"
+buf << "\n\n"
+buf += ApiFootball._build_fixtures( fixtures )
+
+puts buf
 
 
 puts "bye"
