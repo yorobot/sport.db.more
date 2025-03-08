@@ -2,6 +2,8 @@ require 'cocos'
 require 'webget'           ## incl. webget, webcache, webclient, etc.
 require 'season/formats' 
 
+require 'fifa'
+
 
 =begin
 Webcache.root =  if File.exist?( '/sports/cache' )

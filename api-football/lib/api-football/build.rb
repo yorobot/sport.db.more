@@ -100,7 +100,36 @@ def self.norm_name( str )
 end
 
 
-def self._build_fixtures( data, sort: true )
+
+def self._build_fixtures( fixtures, 
+                          sort: true, 
+                          teams: nil )
+
+    ####
+    #   auto-add (fifa) country code if int'l club tournament
+    if teams  
+      clubs_intl = true
+
+     ## collect all teams
+     teams_by_id = {}
+     teams['response'].each do |rec|
+     
+       team_id      = rec['team']['id']
+       ## team_name    = norm_name( rec['team']['name'] ) 
+       team_country = rec['team']['country']
+    
+       cty = Fifa.world.find_by_name( team_country )
+       if cty.nil?
+         pp rec['team']
+         puts "!! ERROR - no country found for >#{team_country}<"
+         exit 1
+       end
+    
+       teams_by_id[ team_id ] = cty.code
+     end
+   end
+
+
 
   buf = String.new
 
@@ -108,7 +137,7 @@ def self._build_fixtures( data, sort: true )
 ##      plus league and year always same etc.
 
 
-  res = data['response']
+  res = fixtures['response']
 
   
 
@@ -244,8 +273,28 @@ def self._build_fixtures( data, sort: true )
 
       team1_name =  norm_name( rec['teams']['home']['name'] )
       team2_name =  norm_name( rec['teams']['away']['name'] )
-      buf << "     #{team1_name} v #{team2_name}"
+      
 
+      if clubs_intl   ## auto-add country code
+          team1_id =  rec['teams']['home']['id'] 
+          team2_id =  rec['teams']['away']['id'] 
+         
+          team1_cty = teams_by_id[ team1_id ]
+          team2_cty = teams_by_id[ team2_id ]
+
+         if team1_cty.nil? || team2_cty.nil?
+           pp rec['teams']
+           puts "!! error - no team mapping (with country) found"
+           exit 1
+         end
+         
+         team1_name = "#{team1_name} (#{team1_cty})"
+         team2_name = "#{team2_name} (#{team2_cty})"
+      end
+      
+
+      buf << "     #{team1_name} v #{team2_name}"
+      
       score =  _build_score( score: rec['score'], 
                             status: rec['fixture']['status'] )
       buf << "  #{score}"
@@ -276,6 +325,7 @@ def self.build_fixtures( league:, season: )
 
    fixtures = fixtures( league: league, season: season )
    ## pp fixtures
+
 
    league_name    = fixtures['response'][0]['league']['name']
    league_country = fixtures['response'][0]['league']['country']
@@ -329,7 +379,17 @@ def self.build_fixtures( league:, season: )
    buf << "  # Matches    #{fixtures['response'].size}\n"
    buf << "\n"
    buf << "  # Note - All Times in UTC\n\n"
-   buf += _build_fixtures( fixtures )
+
+
+   buf +=   if ['copa.l', 'copa.s',
+                'uefa.cl', 'uefa.el', 'uefa.conf',
+               ].include?( league ) 
+               teams = teams( league: league, season: season )
+               _build_fixtures( fixtures, 
+                                teams: teams )
+            else
+              _build_fixtures( fixtures )
+            end
 
    buf
 end
