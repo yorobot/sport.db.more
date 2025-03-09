@@ -26,18 +26,7 @@ leagues = [
 
 
 
-leagues.each_with_index do |(league, seasons),i|
-   seasons.each_with_index do |season,j|
-      puts "==> #{i+1} | #{league} #{j+1}/#{seasons.size}"
-      buf = ApiFootball.build_fixtures( league: league, season: season ) 
-      puts buf
-
-      season = Season( season )
-      path = "./o/#{season.to_path}/#{league}.txt"
-      write_txt( path, buf )
-   end
-end
-
+ApiFootball.build( leagues, outdir: './o' )
 
 
 puts "bye"

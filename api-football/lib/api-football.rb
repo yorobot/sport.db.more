@@ -1,7 +1,9 @@
 require 'cocos'
 require 'webget'           ## incl. webget, webcache, webclient, etc.
-require 'season/formats' 
 
+##  pull-in football machinery support
+require 'season/formats' 
+require 'football/timezones'   
 require 'fifa'
 
 

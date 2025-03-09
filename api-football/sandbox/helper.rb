@@ -1,5 +1,6 @@
 $LOAD_PATH.unshift( './lib' )
 $LOAD_PATH.unshift( '/sports/rubycocos/webclient/webget/lib' )
+$LOAD_PATH.unshift( '/sports/sportdb/sport.db/timezones/lib' )
 require 'api-football'
 
 

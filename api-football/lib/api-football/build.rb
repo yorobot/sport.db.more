@@ -9,17 +9,50 @@ def self.assert( cond, msg )
 end
   
 
+### change to build_leagues or such - why? why not?
+##   - todo - add count for all leagues and seasons with reduce - why? why not?
+def self.build( leagues,  outdir: './o' )
+  leagues.each_with_index do |(league, seasons),i|
+    seasons.each_with_index do |season,j|
+       puts "==> #{i+1} | #{league} #{j+1}/#{seasons.size}"
+       buf = build_fixtures( league: league, season: season ) 
+       puts buf
+
+       season = Season( season )
+       path = "#{outdir}/#{season.to_path}/#{league}.txt"
+       write_txt( path, buf )
+    end
+  end
+end
+
+
+
 
 def self._build_score( score:, status: )
+
+  ## todo - fix
+  ##  pass in fixture NOT score, status - need also access to goal section!!!
+
+
    status_long  = status['long']   ##  Match Finished
    status_short = status['short'].upcase   ## make Canc into CANC
    status_elapsed = status['elapsed']  ## 90, 120
+   ## note - elapsed is nil for Walkover
  
 
    if status_long == 'Match Cancelled' && status_short == 'CANC' 
       return '[cancelled]'  
    end       
   
+   if status_long == 'Match Postponed' && status_short == 'PST'
+      return '[postponed]'
+   end
+
+   if status_long == 'Walkover' && status_short == 'WO'
+      return '[walkover]'
+      ## note -  walkover has no winner or such
+      ##           not possible what team didn't show up
+   end
 
 
    assert status_long == 'Match Finished', "match status finished expected; got #{status_long}"
@@ -56,9 +89,19 @@ def self._build_score( score:, status: )
 ##
 ##  todo/fix - use match status for score format - why? why not?
 
+##
+##  note - for austrian cup the penalties are missing
+##            many score are aet with a draw, for example
+##              nothing we can do here (if the data is wrong upstream)
+
      if pen[0] && pen[1]
          buf = "#{pen[0]}-#{pen[1]} pen "
 
+         ###  note - really NOT working;  et[0] && et[1] is 0-0 
+         ##                                cannot tell if extra time used or not
+         ##                                 status also has always elapsed 120 mins!!
+         ##                                     not 90!!!
+         ##                                 example is copa america and others!!
          if et[0] && et[1]
            buf << "(#{et[0]+ft[0]}-#{et[1]+ft[1]}, #{ft[0]}-#{ft[1]}, #{ht[0]}-#{ht[1]})"
          else  ## no extra time
@@ -66,21 +109,22 @@ def self._build_score( score:, status: )
          end
          buf
      elsif et[0] && et[1]
-         "#{et[0]+ft[0]}-#{et[1]+ft[1]} aet " +
-         "(#{ft[0]}-#{ft[1]}, #{ht[0]}-#{ht[1]})"
-     else 
+         ## quick fix 
+         if et[0] == 0 && et[1] == 0 &&
+            ht[0] == 0 && ht[1] == 0
+             ## todo/fix - use goal[0] && goal[1]
+               "#{ft[0]}-#{ft[1]} aet"       ## assume ft score is really aet score
+         else
+               "#{et[0]+ft[0]}-#{et[1]+ft[1]} aet " +
+               "(#{ft[0]}-#{ft[1]}, #{ht[0]}-#{ht[1]})"
+         end
+     elsif ft[0] && ft[1] && !ht[0] && !ht[1]   ## no halftime score available/present 
+          "#{ft[0]}-#{ft[1]}"
+     else   ## assume fulltime & halftime
          "#{ft[0]}-#{ft[1]} (#{ht[0]}-#{ht[1]})"
      end 
 end
 
-
-=begin
-### parse time utc time
-###     
-"timezone": "UTC",
-        "date": "2023-06-18T18:45:00+00:00",
-        "timestamp": 1687113900,
-=end
 
 
 
@@ -104,6 +148,8 @@ end
 def self._build_fixtures( fixtures, 
                           sort: true, 
                           teams: nil )
+
+
 
     ####
     #   auto-add (fifa) country code if int'l club tournament
@@ -165,19 +211,18 @@ def self._build_fixtures( fixtures,
     ## sort by insert order of round & if same timestamp
     res = res.sort do |l,r|
                 ## 1) sort by date only (first - no time)
-                ##     note - make sure timezone is UTC!!!
-                l_utc = Time.at(l['fixture']['timestamp']).utc
-                r_utc = Time.at(r['fixture']['timestamp']).utc
-                l_date =  "%d-%02d-%02d" % [l_utc.year, l_utc.month, l_utc.day]
-                r_date =  "%d-%02d-%02d" % [r_utc.year, r_utc.month, r_utc.day]
+                l_local = l['fixture']['local']
+                r_local = r['fixture']['local']
+                l_date =  "%d-%02d-%02d" % [l_local.year, l_local.month, l_local.day]
+                r_date =  "%d-%02d-%02d" % [r_local.year, r_local.month, r_local.day]
                 cmp = l_date <=> r_date
                 if cmp == 0 
                      l_round_index = rounds_by_index[l['league']['round']]
                      r_round_index = rounds_by_index[r['league']['round']] 
                      cmp =  l_round_index <=> r_round_index
                 end 
-                ## sort by timestamp (incl. hour/min/etc.)
-                cmp =  l_utc <=> r_utc  if cmp == 0
+                ## sort by local date&time (incl. hour/min/etc.)
+                cmp =  l_local <=> r_local  if cmp == 0
                 cmp
              end  
   end
@@ -192,48 +237,13 @@ def self._build_fixtures( fixtures,
   last_time  = nil
   last_year  = nil
 
-## assert league_name, league_county and league_season  
-=begin
-"league"=>
-     {"id"=>218,
-      "name"=>"Bundesliga",
-      "country"=>"Austria",
-      "logo"=>"https://media.api-sports.io/football/leagues/218.png",
-      "flag"=>"https://media.api-sports.io/flags/at.svg",
-      "season"=>2023,
-=end
-   league_name    = res[0]['league']['name']
-   league_country = res[0]['league']['country']
-   league_season  = res[0]['league']['season']
-
 
   res.each do |rec|
 
-     assert  rec['league']['name'] == league_name,       "league name NOT matching"
-     assert  rec['league']['country'] == league_country, "league country NOT matching"
-     assert  rec['league']['season'] == league_season,   "league season NOT matching"
-
-
-### check dates
-# "timezone": "UTC",
-# "date": "2023-07-28T18:45:00+00:00",
-# "timestamp": 1690569900,
- 
-      timezone     = rec['fixture']['timezone']
-      assert timezone == 'UTC',                "timezone UTC expected; got #{timezone}"      
-
-      date_str = rec['fixture']['date']
-
-   
-      utc       = Time.parse_utc( date_str )
-      timestamp = Time.at( rec['fixture']['timestamp'] )
-    
-      ## pp utc, timestamp, utc == timestamp
-      ##  note - utc datetime may move date to next day
-      ##                e.g. if time is brazil or such!!!
-      ##   later add a timezone option for changing timezone!!
-
-      round      = rec['league']['round']
+      ## note - local date&time (as object of class Time required)
+      ##           auto-add upstream!!!
+      local = rec['fixture']['local']
+      round  = rec['league']['round']
 
       if last_round != round
         puts "» #{round}"
@@ -245,30 +255,30 @@ def self._build_fixtures( fixtures,
       end
 
 
-      if last_year != utc.year   ## note - add year to date first time 
-        date_utc = utc.strftime('%a %b %-d %Y')
-        time_utc = utc.strftime('%H.%M')     
-        puts "  #{date_utc}"
-        buf << "  #{date_utc}\n"   ## note - start newline for new date
-        buf << "    #{time_utc}"       
+      if last_year != local.year   ## note - add year to date first time 
+        date_local = local.strftime('%a %b %-d %Y')
+        time_local = local.strftime('%H.%M')     
+        puts "  #{date_local}"
+        buf << "  #{date_local}\n"   ## note - start newline for new date
+        buf << "    #{time_local}"       
       else
-        date_utc = utc.strftime('%a %b %-d')
-        time_utc = utc.strftime('%H.%M')
+        date_local = local.strftime('%a %b %-d')
+        time_local = local.strftime('%H.%M')
     
-        if date_utc != last_date
-          puts "  #{date_utc}"
-          buf << "  #{date_utc}\n"   ## note - start newline for new date
-          buf << "    #{time_utc}"
-        elsif date_utc == last_date && time_utc != last_time 
-           buf << "    #{time_utc}"
+        if date_local != last_date
+          puts "  #{date_local}"
+          buf << "  #{date_local}\n"   ## note - start newline for new date
+          buf << "    #{time_local}"
+        elsif date_local == last_date && time_local != last_time 
+           buf << "    #{time_local}"
         else  ## assume same date & time
            buf << "         "
         end
       end
 
-      last_date = date_utc
-      last_time = time_utc
-      last_year = utc.year
+      last_date = date_local
+      last_time = time_local
+      last_year = local.year
 
 
       team1_name =  norm_name( rec['teams']['home']['name'] )
@@ -326,35 +336,48 @@ def self.build_fixtures( league:, season: )
    fixtures = fixtures( league: league, season: season )
    ## pp fixtures
 
+   zone = find_zone!( league: league, season: season )
+ 
 
    league_name    = fixtures['response'][0]['league']['name']
    league_country = fixtures['response'][0]['league']['country']
+   league_season  = fixtures['response'][0]['league']['season']
    
-   buf = String.new 
-   if league_country != 'World'
-      buf << "= #{league_country} | #{league_name}"  
-   else
-      buf << "= #{league_name}"
-   end
-   buf << " #{season}\n\n"
 
-
-  ### collect stats
+  ### collect stats and do asserts and add (local timezone) date conversions
   stats = {  'date' =>  { 'start_date' => nil,
                           'end_date'   => nil, },
              'teams' => Hash.new(0),
               }
 
+
+
   fixtures['response'].each do |rec|
+       assert  rec['league']['name'] == league_name,       "league name NOT matching"
+       assert  rec['league']['country'] == league_country, "league country NOT matching"
+       assert  rec['league']['season'] == league_season,   "league season NOT matching"
+
+       timezone     = rec['fixture']['timezone']
+       assert timezone == 'UTC', "timezone UTC expected; got #{timezone}"      
+
        date_str = rec['fixture']['date']   
        utc       = Time.parse_utc( date_str )
 
+       ## timestamp = Time.at( rec['fixture']['timestamp'] )
+       ##
+       ## pp utc, timestamp, utc == timestamp
+  
+       ### change to local time
+       local     = zone.to_local( utc )
+       rec['fixture']['local'] = local   ## note: is ruby object (of Time class) NOT string!!!
 
-       stats['date']['start_date'] ||= utc
-       stats['date']['end_date']   ||= utc
 
-       stats['date']['start_date'] = utc  if utc < stats['date']['start_date']
-       stats['date']['end_date']   = utc  if utc > stats['date']['end_date']
+
+       stats['date']['start_date'] ||= local
+       stats['date']['end_date']   ||= local
+
+       stats['date']['start_date'] = local  if local < stats['date']['start_date']
+       stats['date']['end_date']   = local  if local > stats['date']['end_date']
       
        [rec['teams']['home']['name'],
         rec['teams']['away']['name']].each do |team|
@@ -362,6 +385,14 @@ def self.build_fixtures( league:, season: )
        end
   end
 
+
+   buf = String.new 
+   if league_country != 'World'
+      buf << "= #{league_country} | #{league_name}"  
+   else
+      buf << "= #{league_name}"
+   end
+   buf << " #{season}\n\n"
 
   buf << "  # Date       "
   start_date = stats['date']['start_date']
@@ -378,7 +409,7 @@ def self.build_fixtures( league:, season: )
    buf << "  # Teams      #{stats['teams'].size}\n"
    buf << "  # Matches    #{fixtures['response'].size}\n"
    buf << "\n"
-   buf << "  # Note - All Times in UTC\n\n"
+   buf << "  # Note - All times in #{zone.name}\n\n"
 
 
    buf +=   if ['copa.l', 'copa.s',
