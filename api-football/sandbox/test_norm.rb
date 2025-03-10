@@ -3,8 +3,9 @@ require_relative 'helper'
 
 ##
 ## in the future for special names allow - why? why not?
-##   Ashford Town (Middlesex) =>  <Ashford Town (Middlesex)>  or such 
-##   Pro:Direct Stadium       =>  <Pro:Direct Stadium> 
+##   Ashford Town (Middlesex)     =>   <Ashford Town (Middlesex)>  or such 
+##   Pro:Direct Stadium           =>   <Pro:Direct Stadium> 
+##   Cheshire Silk 106.9 Stadium  =>   <Cheshire Silk 106.9 Stadium>
 
 
 texts = [
