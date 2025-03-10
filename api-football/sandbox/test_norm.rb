@@ -19,7 +19,11 @@ texts = [
     "Westfield (Surrey)",
     "Bradford (Park Avenue)",
     "St Pauls’ Sports Ground",
+    "Stade Communal de  Quevaucamps",
+    "Sands  Stadium",
+    "Stade  Gierle F.C.",
 ]
+
 
 
 texts.each do |text|

@@ -49,7 +49,7 @@ def self._build_score( score:, status: )
    end
 
    if status_long == 'Walkover' && status_short == 'WO'
-      return '[walkover]'
+      return '[w/o]'    ##  use [w/o] for now, NOT [walkover]  - why? why not?
       ## note -  walkover has no winner or such
       ##           not possible what team didn't show up
    end
@@ -129,6 +129,20 @@ end
 
 
 def self.norm_name( str )
+
+  ##
+  ## todo/fix geo - use its own regex!!!
+  ##    cannot handle  v (vs.) in name e.g.
+  ##       Stadion v Městských sadech  
+
+
+   ###
+   ##  Stade Communal de  Quevaucamps  =>  Stade Communal de Quevaucamps 
+   ##  Sands  Stadium                  =>  Sands Stadium
+   ##  Stade  Gierle F.C.              =>  Stade Gierle F.C.
+   ##    fix - norm spaces to one
+   str = str.gsub( /[ ]{2,}/, ' ' )
+
 
    ### how to deal with  
    ##    - Ashford Town (Middlesex)
