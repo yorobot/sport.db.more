@@ -110,8 +110,8 @@ leagues = [
 
 
 
-outdir = './o'
-# outdir = '/sports/openfootball/world.more'
+# outdir = './o'
+outdir = '/sports/openfootball/world.more'
 
 
 ApiFootball.build( leagues, outdir: outdir )

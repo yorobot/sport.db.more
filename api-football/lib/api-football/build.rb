@@ -129,12 +129,40 @@ end
 
 
 def self.norm_name( str )
+
+   ### how to deal with  
+   ##    - Ashford Town (Middlesex)
+   ##    - Westfield (Surrey)
+   ##    - Bradford (Park Avenue)
+   ##   quick fix for now remove () e.g.
+   ##    =>  Ashford Town Middlesex
+   ##    =>  Westfield Surrey
+   str = str.gsub(  %r{\(
+                         ([^)]+?)
+                       \)
+                    }x, '\1' )
+
+
   ## e.g. U.N.A.M. - Pumas   =>  U.N.A.M.-Pumas
   #          FavAC - Platz      =>    FavAC-Platz
+  #      CITY ARENA – Štadión Antona Malatinského  =>  CITY ARENA–Štadión Antona Malatinského
   #
   #  Silz / Mötz                 =>  Silz/Mötz 
   #  Oberwart / Rotenturm        =>  Oberwart/Rotenturm
   #  Wallern / Marienkirchen
+  #
+  #  Oswestry / Croesoswallt, Shropshire   =>  Oswestry/Croesoswallt, Shropshire 
+
+  ### change unicode dash (–)  to ascii dash (-) !!!
+  ##   todo/fix - make gerneric for complete text!!!
+  str = str.gsub( /[–]/, '-' )
+  ##  K’s Denki Stadium › Mito
+  str = str.gsub( /[’]/, "'" )
+
+  ## data fix  remove colon in name with space e.g.
+  ##   Pro:Direct Stadium
+  ##   or use  Pro_Direct Stadium ??
+  str = str.gsub( ':', ' ')
 
   #######
   ## use / ([/-]) /, '\1'   -- why? why not?
@@ -142,6 +170,7 @@ def self.norm_name( str )
   str = str.gsub( / \/ /, '/' )
   str
 end
+
 
 
 
@@ -314,7 +343,17 @@ def self._build_fixtures( fixtures,
         ## note - venue_name/city MAY incl. comma!!
 
         venue_name = norm_name( rec['fixture']['venue']['name'] )
-        venue_city = rec['fixture']['venue']['city']
+        venue_city = norm_name( rec['fixture']['venue']['city'] )
+
+###
+##   mods / data fixes:
+##  Gem Sportcentrum Rooienberg Pitch 3 › 2570
+        if venue_name == 'Gem Sportcentrum Rooienberg Pitch 3' &&
+           venue_city == '2570'
+           ## change to Duffel   - 2570 for now not valid geo name!!!
+           venue_city = 'Duffel'
+        end
+
         buf << "   @ #{venue_name} › #{venue_city}"
       else
         print " !!! no venue found"
