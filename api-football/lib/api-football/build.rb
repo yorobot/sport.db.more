@@ -129,11 +129,14 @@ end
 
 
 def self.norm_name( str )
-
+  ##  note - fixed with GEO_TEXT_RE
   ##
-  ## todo/fix geo - use its own regex!!!
-  ##    cannot handle  v (vs.) in name e.g.
+  ##    handle  v (vs.) in name e.g.
   ##       Stadion v Městských sadech  
+  #
+  #     handle  time like numbers e.g. 106.9 
+  #    Cheshire Silk 106.9 Stadium   --  Silk 106.9 (is a radio station)
+  #
 
 
    ###
@@ -166,10 +169,6 @@ def self.norm_name( str )
   #  Wallern / Marienkirchen
   #
   #  Oswestry / Croesoswallt, Shropshire   =>  Oswestry/Croesoswallt, Shropshire 
-  #
-  #  what to do with 
-  #    Cheshire Silk 106.9 Stadium   --  Silk 106.9 (is a radio station)
-  #
 
   ### change unicode dash (–)  to ascii dash (-) !!!
   ##   todo/fix - make gerneric for complete text!!!
@@ -370,10 +369,6 @@ def self._build_fixtures( fixtures,
            venue_city == '2570'
            ## change to Duffel   - 2570 for now not valid geo name!!!
            venue_city = 'Duffel'
-        end
-
-        if venue_name == 'Cheshire Silk 106.9 Stadium'
-           venue_name = 'Cheshire Silk 106_9 Stadium'  ## quick fix for now
         end
 
         buf << "   @ #{venue_name} › #{venue_city}"
