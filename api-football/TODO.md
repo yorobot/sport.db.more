@@ -1,5 +1,25 @@
 # TODOS
 
+
+- [ ]  fix TEXT  - starting with St-A   - not possible??
+
+```
+St-Aubin Guérande
+```
+
+
+- [ ] add more leagues
+
+```
+Nordirland    - Premiership
+Wales         -  Cymru Premier
+
+Saudi-Arabien -   Prof. League
+Isreal        -   Premier League
+```
+
+
+
 - [ ] fix tokenize errors
 
 ```

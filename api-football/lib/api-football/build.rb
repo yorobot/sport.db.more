@@ -139,6 +139,11 @@ def self.norm_name( str )
   #
 
 
+    ###
+    ## note (team) name - may include trailing tab e.g "Atlético Morelia\t" 
+    str = str.strip    
+
+    
    ###
    ##  Stade Communal de  Quevaucamps  =>  Stade Communal de Quevaucamps 
    ##  Sands  Stadium                  =>  Sands Stadium
@@ -174,17 +179,28 @@ def self.norm_name( str )
   ##   todo/fix - make gerneric for complete text!!!
   str = str.gsub( /[–]/, '-' )
   ##  K’s Denki Stadium › Mito
-  str = str.gsub( /[’]/, "'" )
+  ##   ‘s-Gravenhage
+  str = str.gsub( /[’‘]/, "'" )
 
   ## data fix  remove colon in name with space e.g.
   ##   Pro:Direct Stadium
   ##   or use  Pro_Direct Stadium ??
   str = str.gsub( ':', ' ')
 
+  ### MAC³PARK Stadion  (Zwolle, NL)
+  str = str.gsub( '³', '3')
+
+
   #######
   ## use / ([/-]) /, '\1'   -- why? why not?
   str = str.gsub( / - /, '-' )
   str = str.gsub( / \/ /, '/' )
+
+  ### e.g.  - for now simply remove @  
+  ## St. Andrew's @ Knighthead Park  => St. Andrew's Knighthead Park
+  ##   check if there are other grounds using @ 
+  str = str.gsub( / @ /, ' ' )
+
   str
 end
 
@@ -370,6 +386,12 @@ def self._build_fixtures( fixtures,
            ## change to Duffel   - 2570 for now not valid geo name!!!
            venue_city = 'Duffel'
         end
+
+                    
+        if venue_name == 'Covebo Stadion-De Koel -'
+           venue_name = 'Covebo Stadion-De Koel'
+        end
+
 
         buf << "   @ #{venue_name} › #{venue_city}"
       else
