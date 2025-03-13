@@ -16,6 +16,6 @@ Webcache.root = './cache'
 ##              (one request every 6 seconds 6*10=60 secs)
 ##     10 API calls per minute max.
 ##  note - default sleep (delay in secs) is 3 sec(s)
-## Webget.config.sleep  = 10
+Webget.config.sleep  = 10
 
 

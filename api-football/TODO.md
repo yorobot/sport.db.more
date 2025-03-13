@@ -1,6 +1,12 @@
 # TODOS
 
 
+- [ ]  export stadiums/grounds by country
+         sort by capacity
+
+-----
+
+
 - [ ]  fix TEXT  - starting with St-A   - not possible??
 
 ```

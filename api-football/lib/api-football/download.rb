@@ -16,6 +16,12 @@ module ApiFootball
     get( url )
   end
 
+  def self.venues( country: )
+    url = Metal.venues_url( country: country )
+    get( url )
+  end
+
+
   def self.fixtures( league:, season: )
     season    = Season( season )
     league_id = find_league!( league )
@@ -34,6 +40,10 @@ module ApiFootball
     get( url )
   end
 
+  def self.teams_by_country( country )
+     url = Metal.teams_by_country_url( country )
+     get( url )
+  end
 
 
   def self.get( url )
@@ -82,13 +92,19 @@ module Metal
   def self.leagues_url() "#{BASE_URL}/leagues"; end
   def self.leagues() get( leagues_url ); end
 
-  def self.venues
-    get( "#{BASE_URL}/venues?country=Austria" )
-  end
+  def self.venues_url(  country: ) "#{BASE_URL}/venues?country=#{country}"; end
+  def self.venues( country: ) get( venues_url( country: country )); end
+
 
   def self.teams_url( league:, season: )
     "#{BASE_URL}/teams?league=#{league}&season=#{season}"
   end
+
+  def self.teams_by_country_url( country )
+    "#{BASE_URL}/teams?country=#{country}"
+  end
+
+  
 
   def self.fixtures_url( league:, season: )
     "#{BASE_URL}/fixtures?league=#{league}&season=#{season}"
