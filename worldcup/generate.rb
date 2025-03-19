@@ -1,3 +1,9 @@
+###
+# to run use:
+#    $ ruby ./generate.rb
+
+
+
 require 'cocos'
 
 
@@ -5,35 +11,41 @@ require_relative 'helper'
 
 
 
-app_recs = read_csv( './data-csv/player_appearances.csv')
-puts "  #{app_recs.size } record(s)"
+app_recs = read_csv( "#{DATA_DIR}/player_appearances.csv" )
+puts "  #{app_recs.size } app record(s)"
 # pp recs[0]
 
-sub_recs = read_csv( './data-csv/substitutions.csv')
-puts "  #{sub_recs.size } record(s)"
+sub_recs = read_csv( "#{DATA_DIR}/substitutions.csv" )
+puts "  #{sub_recs.size } sub record(s)"
 # pp recs[0]
 # pp recs[1]
 
-goal_recs = read_csv( './data-csv/goals.csv')
-puts "  #{goal_recs.size } record(s)"
+goal_recs = read_csv( "#{DATA_DIR}/goals.csv" )
+puts "  #{goal_recs.size } goal record(s)"
 # pp recs[0]
 
-pen_recs = read_csv( './data-csv/penalty_kicks.csv')
-puts "  #{pen_recs.size } record(s)"
-# pp recs[0]
-
-
-card_recs = read_csv( './data-csv/bookings.csv')
-puts "  #{card_recs.size } record(s)"
+pen_recs = read_csv( "#{DATA_DIR}/penalty_kicks.csv" )
+puts "  #{pen_recs.size } pen record(s)"
 # pp recs[0]
 
 
-more_app_recs = read_csv( './data-csv/player_appearances_more.csv')
-puts "  #{more_app_recs.size } record(s)"
+card_recs = read_csv( "#{DATA_DIR}/bookings.csv" )
+puts "  #{card_recs.size } card record(s)"
 # pp recs[0]
 
-more_card_recs = read_csv( './data-csv/bookings_more.csv')
-puts "  #{more_card_recs.size } record(s)"
+
+more_app_recs = read_csv( "#{DATA_DIR}/player_appearances_more.csv" )
+puts "  #{more_app_recs.size } more app record(s)"
+# pp recs[0]
+
+more_card_recs = read_csv( "#{DATA_DIR}/bookings_more.csv" )
+puts "  #{more_card_recs.size } more card record(s)"
+
+
+match_recs = read_csv( "#{DATA_DIR}/matches.csv" )
+puts "  #{match_recs.size } match record(s)"
+# pp recs[0]
+ 
 
 
 
@@ -44,6 +56,7 @@ worldcup.collect_lineups( more_app_recs )
 worldcup.collect_subs( sub_recs )
 worldcup.collect_goals( goal_recs )
 worldcup.collect_penalties( pen_recs )
+worldcup.collect_matches( match_recs )
 
 worldcup.collect_bookings( card_recs )
 worldcup.collect_bookings( more_card_recs )
@@ -51,6 +64,8 @@ worldcup.collect_bookings( more_card_recs )
 
 
 
+$LAST_ROUND = nil
+$LAST_YEAR  = nil
 
 def _build_match( rec )
 
@@ -64,8 +79,97 @@ def _build_match( rec )
 
 
    buf = String.new
-   buf << "#{rec['date']}   #{rec['team1']['name']} v #{rec['team2']['name']}\n"
+
+##
+##   add round
+
+    stage_name = rec['stage_name']
+    ## upcase first letter e.g. group stage to Group stage etc.
+    stage_name[0] = stage_name[0].upcase
+
+    round =  if rec['group_stage']  
+                  group_name = rec['group_name']               
+                 if  group_name != 'not applicable' 
+                   "#{stage_name} - #{group_name}"
+                 else
+                   "#{stage_name}"
+                 end
+             elsif rec['knockout_stage']
+                 "#{stage_name}"
+             else
+              pp rec
+              raise ArgumentError, "unknown stage; expected group_stage|knockout_stage"
+             end
+
+   round += " - Replay"   if rec['replay']   ## add replay
+
+=begin
+"match_date"=>"1930-07-13",
+"match_time"=>"15:00",
+"stadium_id"=>"S-240",
+"stadium_name"=>"Estadio Pocitos",
+"city_name"=>"Montevideo",
+"country_name"=>"Uruguay",
+=end
+
+### todo - check for last_round (only print if different)
+
+   if $LAST_ROUND != round
+     buf << "» #{round}\n"
+   end
+
+   $LAST_ROUND = round
+
+
+   ## parse date
+   ##  move "upstream" on collect - why? why not?
+   date = Date.strptime( rec['date'], '%Y-%m-%d' )
+
+
+###  todo - check last_date  (only print year if different)
+   if $LAST_YEAR != date.year
+      buf << "#{date.strftime('%a %b/%-d %Y')}"
+   else
+      buf << "#{date.strftime('%a %b/%-d')}"
+   end
+
+   $LAST_YEAR = date.year
+
+   buf << " @ "
+   buf << "#{rec['stadium_name']}"
+   buf << " › #{rec['city_name']}"
+   buf << ", #{rec['country_name']}"  
+   buf << "\n"
    
+   buf << "  #{rec['team1']['name']} v #{rec['team2']['name']}"
+   buf << "  #{rec['score']}"
+
+=begin
+"score"=>"4–1",
+"extra_time"=>"0",
+"penalty_shootout"=>"0",
+"score_penalties"=>"0-0",
+
+## check golden goal  in extra time - how modeled???
+##   what world cup season is golden goal??
+=end
+   
+   if rec['extra_time'] 
+      if rec['penalty_shootout']
+        buf << " [aet; #{rec['score_penalties']} on pens]"
+      else
+        buf << " [aet]"
+      end
+   elsif !rec['extra_time'] && rec['penalty_shootout']
+      ## possible  
+      raise ArgumentError, "fix penalty shoout without extratime!!!"
+   else
+      ## do nothing
+   end
+
+   buf << "\n"
+   
+
    if rec['goals1'].size > 0 ||
       rec['goals2'].size > 0
       buf << _build_goals( rec )
@@ -162,7 +266,7 @@ def _fmt_lineup( lineup, indent: 3, width: 70 )
                if i == lineup.size-1  ## is last player row
                   lines.add( "#{player}" )
                else  
-                  lines.add( "#{player} - " )
+                  lines.add( "#{player}, " )  ## lines.add( "#{player} - " )
                end
             else
                lines.add( "#{player}, " )
@@ -183,7 +287,7 @@ def _build_goals( rec )
    if goals1.size == 0
       ## print "  -; "
    else
-      buf << "  "
+      buf << (' '*4)   ## indent by 4
       buf << goals1.join(' ')
       if goals2.size == 0
          buf << "\n"
@@ -193,7 +297,7 @@ def _build_goals( rec )
    end
    
    if goals2.size != 0
-      buf << "  "
+      buf << (' '*4)  ## indent by 4
       buf << goals2.join(' ')
       buf << "\n"
    end
@@ -207,8 +311,8 @@ def fmt_goal( rec )
    buf << fmt_name( rec )
    buf << ' '   
    buf << fmt_minute( rec )
-   buf << " (og)"  if rec['own_goal']
-   buf << " (pen)" if rec['penalty']
+   buf << "(og)"  if rec['own_goal']
+   buf << "(p)" if rec['penalty']
    buf
 end
 

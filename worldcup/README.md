@@ -1,5 +1,13 @@
 # Notes
 
+```
+note - sent off   includes red cards 
+           PLUS second yellow card (aka yellow/red card)  !!!
+
+  use sent off for now   
+```
+
+
 
 ## Wikipedia Pages
 

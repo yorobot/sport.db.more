@@ -370,6 +370,37 @@ end
 
 
 
+def collect_matches( recs )
+   recs.each do |rec|
+      ## skip women's worldcup for now; sorry
+      next if rec['tournament_name'].index('Women')
+  
+      tournament_id = rec['tournament_id']
+      match_id      = rec['match_id']
+      m = _get_match( tournament_id, match_id )
+
+      ## add more props
+      m['group_stage']    = (rec['group_stage'] == '1' )
+      m['knockout_stage'] = (rec['knockout_stage'] == '1' )
+      m['replay'] = (rec['replay'] == '1')
+
+      m['stage_name'] = rec['stage_name']  ## e.g. group phase, group stage, round of 16, etc.
+      m['group_name'] = rec['group_name']  ## e.g. Group 1
+ 
+      m['stadium_name'] = rec['stadium_name']  # e.g. Estadio Pocitos
+      m['city_name']    = rec['city_name']     # e.g.  Montevideo
+      m['country_name'] = rec['country_name']  # e.g. Uruguay
+
+      m['extra_time']       = (rec['extra_time'] == '1') 
+      m['penalty_shootout'] = (rec['penalty_shootout'] == '1')
+
+      ## note - normalize (unicode) dash 
+      m['score']           =   rec['score'].gsub( /[–]/, '-' )
+      m['score_penalties'] =   rec['score_penalties'].gsub( /[–]/, '-' ) 
+    end  
+end
+
+
 def collect_bookings( recs )
   recs.each do |rec|
     ## skip women's worldcup for now; sorry
