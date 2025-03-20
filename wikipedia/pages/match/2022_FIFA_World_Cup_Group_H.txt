@@ -1,0 +1,1106 @@
+{{Short description|Football group consisting of Portugal, Ghana, Uruguay, and South Korea}}
+[[File:Uruguay vs Portugal.jpg|thumb|The opening ceremony of the match between Uruguay and Portugal]]
+{{Use dmy dates|date=March 2022}}
+Matches in Group H of the [[2022 FIFA World Cup]] took place from 24 November to 2 December 2022.<ref name="match schedule">{{cite web |url=https://digitalhub.fifa.com/m/464f16f856f5ed05/original/FIFA-World-Cup-Qatar-2022-Match-Schedule.pdf |title=FIFA World Cup Qatar 2022 – Match Schedule |website=FIFA.com |publisher=Fédération Internationale de Football Association |date=11 August 2022 |access-date=11 August 2022}}</ref> The group consisted of [[Portugal national football team|Portugal]], [[Ghana national football team|Ghana]], [[Uruguay national football team|Uruguay]] and [[South Korea national football team|South Korea]]. The top two teams, Portugal and South Korea, advanced to the [[2022 FIFA World Cup knockout stage#Round of 16|round of 16]].<ref name="regulations">{{cite web |url=https://digitalhub.fifa.com/m/2744a0a5e3ded185/original/FIFA-World-Cup-Qatar-2022-Regulations_EN.pdf |title=Regulations – FIFA World Cup Qatar 2022 |website=FIFA.com |publisher=Fédération Internationale de Football Association |date=15 December 2021 |access-date=30 March 2022}}</ref> Uruguay exited the tournament after failing to progress the group stage for the first time since [[2002 FIFA World Cup|2002]], with South Korea's shock 2–1 victory over Portugal contributing to the elimination.
+
+==Teams==
+{| class="wikitable sortable"
+|-
+!rowspan=2| Draw position
+!rowspan=2| Team
+!rowspan=2| Pot
+!rowspan=2| Confederation
+!rowspan=2| Method of<br />qualification
+!rowspan=2| Date of<br />qualification
+!rowspan=2 data-sort-type="number"| Finals<br />appearance
+!rowspan=2| Last<br />appearance
+!rowspan=2| Previous best<br />performance
+!colspan=2| [[FIFA Men's World Ranking|FIFA Rankings]]<ref>{{cite web |url=https://www.fifa.com/fifa-world-ranking/men |title=Men's Ranking |publisher=[[FIFA]] |access-date=21 November 2022}}</ref>
+|-
+! March 2022{{refn|group=nb|The rankings of March 2022 were used for [[2022 FIFA World Cup seeding|seeding for the final draw]].}}
+! October 2022
+|-
+| H1 || style=white-space:nowrap | {{#invoke:flagg|main|unpe|avar=fb|POR}} || 1 || [[UEFA]] || [[2022 FIFA World Cup qualification – UEFA second round#Path C|UEFA second round Path C]] winners || {{dts|29 March 2022|addkey=2}} || 8th || [[2018 FIFA World Cup|2018]] || data-sort-value="6.1" | Third place ([[1966 FIFA World Cup|1966]]) || 8 || 9
+|-
+| H2 || style=white-space:nowrap | {{#invoke:flagg|main|unpe|avar=fb|GHA}} || 4 || [[Confederation of African Football|CAF]] || [[2022 FIFA World Cup qualification – CAF third round|CAF third round]] winners || {{dts|29 March 2022|addkey=1}} || 4th || [[2014 FIFA World Cup|2014]] || data-sort-value="4.1" | Quarter-finals ([[2010 FIFA World Cup|2010]]) || 60 || 61
+|-
+| H3 || style=white-space:nowrap | {{#invoke:flagg|main|unpe|avar=fb|URU}} || 2 || [[CONMEBOL]] || [[2022 FIFA World Cup qualification (CONMEBOL)|CONMEBOL round robin]] third place || 24 March 2022 || 14th || [[2018 FIFA World Cup|2018]] || data-sort-value="8.2" | '''Winners''' ([[1930 FIFA World Cup|1930]], [[1950 FIFA World Cup|1950]]) || 13 || 14
+|-
+| H4 || style=white-space:nowrap | {{#invoke:flagg|main|unpe|avar=fb|KOR}} || 3 || [[Asian Football Confederation|AFC]] || [[2022 FIFA World Cup qualification – AFC third round#Group A|AFC third round Group A]] runners-up || 1 February 2022 || 11th || [[2018 FIFA World Cup|2018]] || data-sort-value="5.1" | Fourth place ([[2002 FIFA World Cup|2002]]) || 29 || 28
+|}
+'''Notes'''
+{{reflist|group=nb}}
+
+==Standings==
+{{2022 FIFA World Cup group tables|Group H}}
+
+In the [[2022 FIFA World Cup knockout stage#Round of 16|round of 16]]:
+* The winners of Group H, Portugal, advanced to play the runners-up of [[2022 FIFA World Cup Group G|Group G]], [[Switzerland national football team|Switzerland]].
+* The runners-up of Group H, South Korea, advanced to play the winners of [[2022 FIFA World Cup Group G|Group G]], [[Brazil national football team|Brazil]].
+
+==Matches==
+All times listed are local, [[Arabia Standard Time|AST]] ([[UTC+03:00|UTC+3]]).<ref name="match schedule"/>
+
+===Uruguay vs South Korea===
+The teams had previously met eight times, including twice in the World Cup, both matches won by Uruguay: a [[1990 FIFA World Cup Group E#South Korea vs Uruguay|1–0 group stage victory]] in [[1990 FIFA World Cup|1990]] and a [[2010 FIFA World Cup knockout stage#Uruguay vs South Korea|2–1 round of 16 success]] in [[2010 FIFA World Cup|2010]].
+
+The match ended in a goalless draw, with the best chances coming when [[Diego Godín]] and [[Federico Valverde]] both hit the post for Uruguay.
+
+<section begin=H1 />{{Football box
+|date       = {{Start date|2022|11|24|df=y}}
+|time       = 16:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|URU}}
+|score      = {{score link|2022 FIFA World Cup Group H#Uruguay vs South Korea|0–0}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|KOR}}
+|goals1     =
+|goals2     =
+|stadium    = [[Education City Stadium]], [[Al Rayyan (city)|Al Rayyan]]
+|attendance = 41,663
+|referee    = [[Clément Turpin]] ([[French Football Federation|France]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235491
+}}<section end=H1 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _uru22h
+ |pattern_b  = _uru22H
+ |pattern_ra = _uru22h
+ |pattern_sh = _uru22h
+ |pattern_so = _uru22hl
+ |leftarm    = 80AFFF
+ |body       = 80AFFF
+ |rightarm   = 80AFFF
+ |shorts     = 000000
+ |socks      = 000000
+ |title      = Uruguay
+}}
+|{{Football kit
+ |pattern_la = _kor22h
+ |pattern_b  = _kor22H
+ |pattern_ra = _kor22h
+ |pattern_sh = _kor22h
+ |pattern_so =
+ |leftarm    = F53737
+ |body       = F53737
+ |rightarm   = F53737
+ |shorts     = F53737
+ |socks      = F53737
+ |title      = <span class="nowrap">South Korea</span>
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''23'''||[[Sergio Rochet]]
+|-
+|RB ||'''22'''||[[Martín Cáceres]] || {{yel|57}}
+|-
+|CB ||'''3''' ||[[Diego Godín]] ([[Captain (association football)|c]])
+|-
+|CB ||'''2''' ||[[José María Giménez|José Giménez]]
+|-
+|LB ||'''16'''||[[Mathías Olivera]] || || {{suboff|79}}
+|-
+|CM ||'''15'''||[[Federico Valverde]]
+|-
+|CM ||'''6''' ||[[Rodrigo Bentancur]]
+|-
+|CM ||'''5''' ||[[Matías Vecino]] || || {{suboff|79}}
+|-
+|RF ||'''8''' ||[[Facundo Pellistri]] || || {{suboff|88}}
+|-
+|CF ||'''9''' ||[[Luis Suárez]] || || {{suboff|64}}
+|-
+|LF ||'''11'''||[[Darwin Núñez]]
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|FW ||'''21'''||[[Edinson Cavani]] || || {{subon|64}}
+|-
+|MF ||'''7''' ||[[Nicolás de la Cruz]] || || {{subon|79}}
+|-
+|DF ||'''17'''||[[Matías Viña]] || || {{subon|79}}
+|-
+|DF ||'''13'''||[[Guillermo Varela]] || || {{subon|88}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Diego Alonso]]
+|}
+|valign="top"|[[File:URU-KOR 2022-11-24.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Kim Seung-gyu]]
+|-
+|RB ||'''15'''||[[Kim Moon-hwan]]
+|-
+|CB ||'''4''' ||[[Kim Min-jae (footballer)|Kim Min-jae]]
+|-
+|CB ||'''19'''||[[Kim Young-gwon]]
+|-
+|LB ||'''3''' ||[[Kim Jin-su]]
+|-
+|CM ||'''6''' ||[[Hwang In-beom]]
+|-
+|CM ||'''5''' ||[[Jung Woo-young]]
+|-
+|RW ||'''17'''||[[Na Sang-ho]] || || {{suboff|74}}
+|-
+|AM ||'''10'''||[[Lee Jae-sung (footballer, born 1992)|Lee Jae-sung]] || || {{suboff|74}}
+|-
+|LW ||'''7''' ||[[Son Heung-min]] ([[Captain (association football)|c]])
+|-
+|CF ||'''16'''||[[Hwang Ui-jo]] || || {{suboff|74}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|FW ||'''9''' ||[[Cho Gue-sung]] || {{yel|88}} || {{subon|74}}
+|-
+|MF ||'''13'''||[[Son Jun-ho (footballer)|Son Jun-ho]] || || {{subon|74}}
+|-
+|MF ||'''18'''||[[Lee Kang-in]] || || {{subon|74}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|{{#invoke:flag|icon|POR}} [[Paulo Bento]] || {{yel|90+8}}
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Federico Valverde]] (Uruguay)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/world-cup-qatar-2022-uruguay-v-korea-republic-match-review-report |title=Woodwork denies Uruguay in Korean stalemate |publisher=[[FIFA]] |date=24 November 2022 |access-date=24 November 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Nicolas Danos ([[French Football Federation|France]])
+<br />Cyril Gringore ([[French Football Federation|France]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[István Kovács (referee)|István Kovács]] ([[Romanian Football Federation|Romania]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Vasile Marinescu ([[Romanian Football Federation|Romania]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Jérôme Brisard]] ([[French Football Federation|France]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Benoît Millot]] ([[French Football Federation|France]])
+<br />Djibril Camara ([[Senegalese Football Federation|Senegal]])
+<br />[[Rédouane Jiyed]] ([[Royal Moroccan Football Federation|Morocco]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />[[Rafael Foltyn]] ([[German Football Association|Germany]])
+|}
+
+===Portugal vs Ghana===
+The teams had met once before, being Portugal's [[2014 FIFA World Cup Group G#Portugal vs Ghana|2–1 group stage victory]] at the [[2014 FIFA World Cup]].
+
+After a goalless first half, Portugal were awarded a penalty in the 65th minute, when [[Mohammed Salisu]] fouled [[Cristiano Ronaldo]] in the penalty area. Ronaldo took the penalty and scored, shooting high to the left of the goalkeeper, to put Portugal into the lead. [[André Ayew]] equalised for Ghana in the 73rd minute with a close range finish after a low cross from [[Mohammed Kudus]] on the left. Portugal swiftly responded with two quick goals from World Cup debutants, the first coming from [[João Félix]] in the 78th minute with a clipped finish from the right over the advancing goalkeeper, and the second from substitute [[Rafael Leão]] two minutes later with a low finish into the right corner of the goal after a pass from [[Bruno Fernandes]]. In the 89th minute, Ghanaian substitute [[Osman Bukari]] scored with a header from six yards out to reduce the deficit. Then, in stoppage time, Ghana nearly equalized when Portugal goalkeeper [[Diogo Costa]] put the ball on the ground, preparing to kick it upfield, and Ghana's [[Iñaki Williams]] came from behind Costa to take the ball but slipped as he was about to shoot, with the ball subsequently cleared from danger by Portugal.<ref>{{cite web|url=https://www.bbc.com/sport/football/63657472|title=Portugal 3 Ghana 2|date=24 November 2022|work=BBC Sport|access-date=29 November 2022}}</ref>
+
+With his goal, Ronaldo became the first male player to score at [[FIFA World Cup records and statistics#Goalscoring|five different FIFA World Cup tournaments]].<ref>{{cite web|url=https://www.theguardian.com/football/2022/nov/24/portugal-ghana-world-cup-group-h-match-report|title=Cristiano Ronaldo scores in fifth World Cup as Portugal see off Ghana in thriller|date=24 November 2022|work=The Guardian|access-date=29 November 2022}}</ref> At the age of 37 years and 292 days, he also became the second-oldest player to score at a World Cup, behind only [[Roger Milla]] for [[Cameroon national football team|Cameroon]] in [[1994 FIFA World Cup|1994]] (aged 42 years and 39 days).<ref>{{cite news|url=https://www.skysports.com/football/news/12098/12754069/world-cup-2022-portugal-3-2-ghana-cristiano-ronaldo-creates-yet-another-piece-of-history-in-five-goal-thriller|title=Portugal 3-2 Ghana: Cristiano Ronaldo creates yet another piece of history in five-goal thriller|date=24 November 2022|work=Sky Sports|access-date=29 November 2022}}</ref>
+
+<section begin=H2 />{{Football box
+|date       = {{Start date|2022|11|24|df=y}}
+|time       = 19:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|POR}}
+|score      = {{score link|2022 FIFA World Cup Group H#Portugal vs Ghana|3–2}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|GHA}}
+|goals1     =
+*[[Cristiano Ronaldo|Ronaldo]] {{goal|65|pen.}}
+*[[João Félix|Félix]] {{goal|78}}
+*[[Rafael Leão|Leão]] {{goal|80}}
+|goals2     =
+*[[André Ayew|A. Ayew]] {{goal|73}}
+*[[Osman Bukari|Bukari]] {{goal|89}}
+|stadium    = [[Stadium 974]], [[Doha]]
+|attendance = 42,662
+|referee    = [[Ismail Elfath]] ([[United States Soccer Federation|United States]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235493
+}}<section end=H2 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _por22h
+ |pattern_b  = _por22H
+ |pattern_ra = _por22h
+ |pattern_sh = _por22h
+ |pattern_so = _por22h
+ |leftarm    = DB1D27
+ |body       = DB1D27
+ |rightarm   = DB1D27
+ |shorts     = 0F7540
+ |socks      = DB1D27
+ |title      = Portugal
+}}
+|{{Football kit
+ |pattern_la = _gha22H
+ |pattern_b  = _GHA22H
+ |pattern_ra = _gha22H
+ |pattern_sh = _gha22h
+ |pattern_so = _gha22hl
+ |leftarm    = FFFFFF
+ |body       = FFFFFF
+ |rightarm   = FFFFFF
+ |shorts     = FFFFFF
+ |socks      = FFFFFF
+ |title      = Ghana
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''22'''||[[Diogo Costa]]
+|-
+|RB ||'''20'''||[[João Cancelo]]
+|-
+|CB ||'''4''' ||[[Rúben Dias]]
+|-
+|CB ||'''13'''||[[Danilo Pereira]] || {{yel|90+1}}
+|-
+|LB ||'''5''' ||[[Raphaël Guerreiro]]
+|-
+|DM ||'''18'''||[[Rúben Neves]] || || {{suboff|77}}
+|-
+|CM ||'''8''' ||[[Bruno Fernandes]] || {{yel|90+5}}
+|-
+|CM ||'''25'''||[[Otávio (footballer, born 1995)|Otávio]] || || {{suboff|56}}
+|-
+|AM ||'''10'''||[[Bernardo Silva]] || || {{suboff|88}}
+|-
+|CF ||'''11'''||[[João Félix]] || || {{suboff|88}}
+|-
+|CF ||'''7''' ||[[Cristiano Ronaldo]] ([[Captain (association football)|c]]) || || {{suboff|88}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|MF ||'''14'''||[[William Carvalho]] || || {{subon|56}}
+|-
+|FW ||'''15'''||[[Rafael Leão]] || || {{subon|77}}
+|-
+|MF ||'''6''' ||[[João Palhinha]] || || {{subon|88}}
+|-
+|FW ||'''26'''||[[Gonçalo Ramos]] || || {{subon|88}}
+|-
+|MF ||'''17'''||[[João Mário (footballer, born January 1993)|João Mário]] || || {{subon|88}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Fernando Santos (footballer, born 1954)|Fernando Santos]]
+|}
+|valign="top"|[[File:POR-GHA 2022-11-24.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Lawrence Ati-Zigi]]
+|-
+|CB ||'''18'''||[[Daniel Amartey]]
+|-
+|CB ||'''23'''||[[Alexander Djiku]] || || {{suboff|90+2}}
+|-
+|CB ||'''4''' ||[[Mohammed Salisu]]
+|-
+|RWB||'''26'''||[[Alidu Seidu]] || {{yel|57}} || {{suboff|66}}
+|-
+|LWB||'''17'''||[[Baba Rahman]]
+|-
+|CM ||'''5''' ||[[Thomas Partey]]
+|-
+|CM ||'''20'''||[[Mohammed Kudus]] || {{yel|45+1}} || {{suboff|77}}
+|-
+|CM ||'''21'''||[[Salis Abdul Samed]] || || {{suboff|90+2}}
+|-
+|CF ||'''10'''||[[André Ayew]] ([[Captain (association football)|c]]) || {{yel|49}} || {{suboff|77}}
+|-
+|CF ||'''19'''||[[Iñaki Williams]] || {{yel|90+1}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|DF ||'''2''' ||[[Tariq Lamptey]] || || {{subon|66}}
+|-
+|MF ||'''11'''||[[Osman Bukari]] || || {{subon|77}}
+|-
+|FW ||'''9''' ||[[Jordan Ayew]] || || {{subon|77}}
+|-
+|MF ||'''8''' ||[[Daniel-Kofi Kyereh]] || || {{subon|90+2}}
+|-
+|FW ||'''25'''||[[Antoine Semenyo]] || || {{subon|90+2}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Otto Addo]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Cristiano Ronaldo]] (Portugal)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/world-cup-qatar-2022-portugal-v-ghana-match-review-report |title=Portugal win thriller as Ronaldo makes World Cup history
+ |publisher=[[FIFA]] |date=24 November 2022 |access-date=24 November 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Kyle Atkins ([[United States Soccer Federation|United States]])
+<br />Corey Parker ([[United States Soccer Federation|United States]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[Stéphanie Frappart]] ([[French Football Federation|France]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Karen Díaz Medina ([[Mexican Football Federation|Mexico]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Armando Villarreal]] ([[United States Soccer Federation|United States]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Drew Fischer]] ([[Canadian Soccer Association|Canada]])
+<br />Alessandro Giallatini ([[Italian Football Federation|Italy]])
+<br />[[Shaun Evans (referee)|Shaun Evans]] ([[Football Australia|Australia]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Elvis Noupue ([[Cameroonian Football Federation|Cameroon]])
+|}
+
+===South Korea vs Ghana===
+The teams had faced each other eight times, most recently in 2014, 4–0 friendly win by Ghana.
+
+In the first half, Ghana scored two goals against the run of play within a ten-minute span to take a 2–0 lead, coming from [[Mohammed Salisu]] and [[Mohammed Kudus]]. South Korea would then reply in the second half with two goals of their own, both headers scored within three minutes of each other by [[Cho Gue-sung]], to level the game at 2–2. Kudus scored the decisive goal and his second of the match in the 68th minute, coming after [[Iñaki Williams]] had mistimed his initial shot, to put Ghana back in front. Ghanaian goalkeeper [[Lawrence Ati-Zigi]] made multiple crucial saves and Salisu cleared an effort off the line late on to secure them a 3–2 victory.<ref>{{cite news|url=https://www.bbc.com/sport/football/63698280|title=South Korea 2 Ghana 3|publisher=BBC Sport|date=28 November 2022|access-date=29 November 2022}}</ref>
+
+Cho Gue-sung and Kudus each became the first players to score multiple goals in a single World Cup match for their respective countries.<ref>{{cite news|url=https://www.skysports.com/football/news/11095/12757305/world-cup-2022-south-korea-2-3-ghana-mohammed-kudus-scores-twice-in-pulsating-encounter|title=South Korea 2-3 Ghana: Mohammed Kudus scores twice in pulsating encounter|publisher=Sky Sports|date=29 November 2022|access-date=29 November 2022}}</ref>
+
+When referee [[Anthony Taylor (referee)|Anthony Taylor]] ended the game instead of allowing a South Korean player to kick off a corner, South Korea's head coach [[Paulo Bento]] ran onto the field and screamed at the referee, for which he was shown a [[Red card (sport)|red card]], making it the first time in World Cup history that a coach was sent off after the conclusion of the match. Counting players' [[Leandro Cufré]]'s and [[Josip Šimunić]]'s red cards (both in [[2006 FIFA World Cup|2006]]), this was the third time a sending off occurred after the match had ended.<ref>{{cite web |url=https://www.eurosport.de/fussball/wm/2022/historischer-platzverweis-sudkoreas-paulo-bento-sieht-gegen-ghana-als-erster-trainer-der-wm-geschich_sto9249055/story.shtml |title=WM 2022 – Historischer Platzverweis: Südkoreas Paulo Bento sieht gegen Ghana als erster Trainer der WM-Geschichte Rot |date=28 November 2022 |access-date=29 November 2022 |last=Steinmann |first=Pascal |publisher=[[Eurosport]] |language=de |trans-title=World Cup 2022 – Historical sending-off: South Korea's Paulo Bento sees red against Ghana as first coach in World Cup history}}</ref>
+
+<section begin=H3 />{{Football box
+|date       = {{Start date|2022|11|28|df=y}}
+|time       = 16:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|KOR}}
+|score      = {{score link|2022 FIFA World Cup Group H#South Korea vs Ghana|2–3}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|GHA}}
+|goals1     =
+*[[Cho Gue-sung]] {{goal|58||61}}
+|goals2     =
+*[[Mohammed Salisu|Salisu]] {{goal|24}}
+*[[Mohammed Kudus|Kudus]] {{goal|34||68}}
+|stadium    = [[Education City Stadium]], [[Al Rayyan (city)|Al Rayyan]]
+|attendance = 43,983
+|referee    = [[Anthony Taylor (referee)|Anthony Taylor]] ([[The Football Association|England]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235489
+}}<section end=H3 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _kor22h
+ |pattern_b  = _kor22H
+ |pattern_ra = _kor22h
+ |pattern_sh = _kor22h
+ |pattern_so =
+ |leftarm    = F53A3A
+ |body       = F53A3A
+ |rightarm   = F53A3A
+ |shorts     = F53A3A
+ |socks      = F53A3A
+ |title      = <span class="nowrap">South Korea</span>
+}}
+|{{Football kit
+ |pattern_la = _gha22H
+ |pattern_b  = _GHA22H
+ |pattern_ra = _gha22H
+ |pattern_sh = _gha22h
+ |pattern_so = _gha22hl
+ |leftarm    = FFFFFF
+ |body       = FFFFFF
+ |rightarm   = FFFFFF
+ |shorts     = FFFFFF
+ |socks      = FFFFFF
+ |title      = Ghana
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Kim Seung-gyu]]
+|-
+|RB ||'''15'''||[[Kim Moon-hwan]]
+|-
+|CB ||'''4''' ||[[Kim Min-jae (footballer)|Kim Min-jae]] || || {{suboff|90+2}}
+|-
+|CB ||'''19'''||[[Kim Young-gwon]] || {{yel|77}}
+|-
+|LB ||'''3''' ||[[Kim Jin-su]]
+|-
+|CM ||'''6''' ||[[Hwang In-beom]]
+|-
+|CM ||'''5''' ||[[Jung Woo-young]] || {{yel|27}} || {{suboff|78}}
+|-
+|RW ||'''22'''||[[Kwon Chang-hoon]] || || {{suboff|57}}
+|-
+|AM ||'''25'''||[[Jeong Woo-yeong]] || || {{suboff|46}}
+|-
+|LW ||'''7''' ||[[Son Heung-min]] ([[Captain (association football)|c]])
+|-
+|CF ||'''9''' ||[[Cho Gue-sung]]
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|MF ||'''17'''||[[Na Sang-ho]] || || {{subon|46}}
+|-
+|MF ||'''18'''||[[Lee Kang-in]] || || {{subon|57}}
+|-
+|FW ||'''16'''||[[Hwang Ui-jo]] || || {{subon|78}}
+|-
+|DF ||'''20'''||[[Kwon Kyung-won]] || || {{subon|90+2}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|{{#invoke:flag|icon|POR}} [[Paulo Bento]] || {{sent off|0|90+12}}
+|}
+|valign="top"|[[File:KOR-GHA 2022-11-28.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Lawrence Ati-Zigi]]
+|-
+|RB ||'''2''' ||[[Tariq Lamptey]] || {{yel|73}} || {{suboff|78}}
+|-
+|CB ||'''18'''||[[Daniel Amartey]] || {{yel|21}}
+|-
+|CB ||'''4''' ||[[Mohammed Salisu]]
+|-
+|LB ||'''14'''||[[Gideon Mensah (footballer, born 1998)|Gideon Mensah]] || || {{suboff|88}}
+|-
+|DM ||'''21'''||[[Salis Abdul Samed]]
+|-
+|CM ||'''5''' ||[[Thomas Partey]]
+|-
+|CM ||'''20'''||[[Mohammed Kudus]] || || {{suboff|83}}
+|-
+|RF ||'''10'''||[[André Ayew]] ([[Captain (association football)|c]]) || || {{suboff|78}}
+|-
+|CF ||'''19'''||[[Iñaki Williams]]
+|-
+|LF ||'''9''' ||[[Jordan Ayew]] || || {{suboff|78}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|MF ||'''22'''||[[Kamaldeen Sulemana]] || || {{subon|78}}
+|-
+|MF ||'''8''' ||[[Daniel-Kofi Kyereh]] || || {{subon|78}}
+|-
+|DF ||'''3''' ||[[Denis Odoi]] || || {{subon|78}}
+|-
+|DF ||'''23'''||[[Alexander Djiku]] || || {{subon|83}}
+|-
+|DF ||'''17'''||[[Baba Rahman]] || || {{subon|88}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Otto Addo]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Mohammed Kudus]] (Ghana)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/korea-republic-ghana-fifa-world-cup-qatar-2022 |title=Kudus hits Ghana winner in breathless Korea Republic clash |publisher=[[FIFA]] |date=28 November 2022 |access-date=28 November 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Gary Beswick ([[The Football Association|England]])
+<br />Adam Nunn ([[The Football Association|England]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[Kevin Ortega]] ([[Peruvian Football Federation|Peru]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Michael Orué ([[Peruvian Football Federation|Peru]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Tomasz Kwiatkowski]] ([[Polish Football Association|Poland]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Alejandro Hernández Hernández]] ([[Royal Spanish Football Federation|Spain]])
+<br />Kyle Atkins ([[United States Soccer Federation|United States]])
+<br />[[Ricardo de Burgos Bengoetxea]] ([[Royal Spanish Football Federation|Spain]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Corey Parker ([[United States Soccer Federation|United States]])
+|}
+
+===Portugal vs Uruguay===
+The teams had met three times prior, including Uruguay's [[2018 FIFA World Cup knockout stage#Uruguay vs Portugal|2–1 round of 16 victory]] at the [[2018 FIFA World Cup]].
+
+[[Bruno Fernandes]] put Portugal into the lead during the second half when his cross from the left deceived Uruguay keeper [[Sergio Rochet]], after [[Cristiano Ronaldo]] had tried to glance the ball past him with his head. Ronaldo was initially ruled as the goalscorer before FIFA determined that he hadn't connected with the ball, and instead awarded the goal to Fernandes.<ref>{{cite web|url=https://www.independent.co.uk/sport/football/world-cup/portugal-uruguay-result-final-score-b2234792.html|title=Bruno Fernandes shines to lessen load on Cristiano Ronaldo as Portugal ease past Uruguay|date=28 November 2022|work=The Independent|access-date=29 November 2022}}</ref><ref>{{cite web|url=https://www.bbc.com/sport/football/63789392|title=World Cup 2022: Cristiano Ronaldo comes close but misses out on landmark goal|date=28 November 2022|work=BBC Sport|access-date=29 November 2022}}</ref> Fernandes scored a second in the third minute of stoppage time, a penalty awarded by the [[Video assistant referee|VAR]] for handball by [[José María Giménez|José Giménez]], which he rolled into the left side of the net.<ref>{{cite web|url=https://www.bbc.com/sport/football/63698279|title=Portugal 2 Uruguay 0|date=28 November 2022|work=BBC Sport|access-date=29 November 2022}}</ref>
+With this victory, Portugal secured a place in the knockout stage.<ref>{{cite web|url=https://www.skysports.com/football/portugal-vs-uruguay/report/462989|title=Portugal 2–0 Uruguay: Bruno Fernandes scores twice as Cristiano Ronaldo claims goal to qualify for last 16|date=28 November 2022|work=Sky Sports|access-date=29 November 2022}}</ref>
+
+<section begin=H4 />{{Football box
+|date       = {{Start date|2022|11|28|df=y}}
+|time       = 22:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|POR}}
+|score      = {{score link|2022 FIFA World Cup Group H#Portugal vs Uruguay|2–0}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|URU}}
+|goals1     =
+*[[Bruno Fernandes|Fernandes]] {{goal|54||90+3|pen.}}
+|goals2     =
+|stadium    = [[Lusail Stadium]], [[Lusail]]
+|attendance = 88,668
+|referee    = [[Alireza Faghani]] ([[Football Federation Islamic Republic of Iran|Iran]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235492
+}}<section end=H4 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _por22h
+ |pattern_b  = _por22H
+ |pattern_ra = _por22h
+ |pattern_sh = _por22h
+ |pattern_so = _por22h
+ |leftarm    = DB1D27
+ |body       = DB1D27
+ |rightarm   = DB1D27
+ |shorts     = 0F7540
+ |socks      = DB1D27
+ |title      = Portugal
+}}
+|{{Football kit
+ |pattern_la = _uru22a
+ |pattern_b  = _uru22A
+ |pattern_ra = _uru22a
+ |pattern_sh = _uru22a
+ |pattern_so = _uru22al
+ |leftarm    = FFFFFF
+ |body       = FFFFFF
+ |rightarm   = FFFFFF
+ |shorts     = FFFFFF
+ |socks      = FFFFFF
+ |title      = Uruguay
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''22'''||[[Diogo Costa]]
+|-
+|RB ||'''20'''||[[João Cancelo]]
+|-
+|CB ||'''4''' ||[[Rúben Dias]] || {{yel|89}}
+|-
+|CB ||'''3''' ||[[Pepe (footballer, born 1983)|Pepe]]
+|-
+|LB ||'''19'''||[[Nuno Mendes (footballer, born 2002)|Nuno Mendes]] || || {{suboff|42}}
+|-
+|DM ||'''18'''||[[Rúben Neves]] || {{yel|38}} || {{suboff|69}}
+|-
+|CM ||'''10'''||[[Bernardo Silva]]
+|-
+|CM ||'''14'''||[[William Carvalho]] || || {{suboff|82}}
+|-
+|AM ||'''8''' ||[[Bruno Fernandes]]
+|-
+|CF ||'''7''' ||[[Cristiano Ronaldo]] ([[Captain (association football)|c]]) || || {{suboff|82}}
+|-
+|CF ||'''11'''||[[João Félix]] || {{yel|77}} || {{suboff|82}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|DF ||'''5''' ||[[Raphaël Guerreiro]] || || {{subon|42}}
+|-
+|FW ||'''15'''||[[Rafael Leão]] || || {{subon|69}}
+|-
+|MF ||'''23'''||[[Matheus Nunes]] || || {{subon|82}}
+|-
+|FW ||'''26'''||[[Gonçalo Ramos]] || || {{subon|82}}
+|-
+|MF ||'''6''' ||[[João Palhinha]] || || {{subon|82}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Fernando Santos (footballer, born 1954)|Fernando Santos]]
+|}
+|valign="top"|[[File:POR-URU 2022-11-28.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''23'''||[[Sergio Rochet]]
+|-
+|CB ||'''2''' ||[[José María Giménez|José Giménez]]
+|-
+|CB ||'''3''' ||[[Diego Godín]] ([[Captain (association football)|c]]) || || {{suboff|62}}
+|-
+|CB ||'''19'''||[[Sebastián Coates]]
+|-
+|DM ||'''6''' ||[[Rodrigo Bentancur]] || {{yel|6}}
+|-
+|CM ||'''15'''||[[Federico Valverde]]
+|-
+|CM ||'''5''' ||[[Matías Vecino]] || || {{suboff|62}}
+|-
+|RW ||'''13'''||[[Guillermo Varela]]
+|-
+|LW ||'''16'''||[[Mathías Olivera]] || {{yel|44}} || {{suboff|86}}
+|-
+|CF ||'''11'''||[[Darwin Núñez]] || || {{suboff|72}}
+|-
+|CF ||'''21'''||[[Edinson Cavani]] || || {{suboff|72}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|FW ||'''8''' ||[[Facundo Pellistri]] || || {{subon|62}}
+|-
+|MF ||'''10'''||[[Giorgian de Arrascaeta]] || || {{subon|62}}
+|-
+|FW ||'''18'''||[[Maxi Gómez]] || || {{subon|72}}
+|-
+|FW ||'''9''' ||[[Luis Suárez]] || || {{subon|72}}
+|-
+|DF ||'''17'''||[[Matías Viña]] || || {{subon|86}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Diego Alonso]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Bruno Fernandes]] (Portugal)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/cristiano-ronaldo-bruno-fernandes-portugal-uruguay-fifa-world-cup-qatar-2022 |title=Fernandes strikes twice to confirm Portugal last-16 spot |publisher=[[FIFA]] |date=28 November 2022 |access-date=28 November 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />[[Mohammadreza Mansouri]] ([[Football Federation Islamic Republic of Iran|Iran]])
+<br />Mohammadreza Abolfazli ([[Football Federation Islamic Republic of Iran|Iran]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[Abdulrahman Al-Jassim]] ([[Qatar Football Association|Qatar]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Saud Al-Maqaleh ([[Qatar Football Association|Qatar]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Abdulla Al-Marri]] ([[Qatar Football Association|Qatar]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Shaun Evans (referee)|Shaun Evans]] ([[Football Australia|Australia]])
+<br />Anton Shchetinin ([[Football Australia|Australia]])
+<br />[[Rédouane Jiyed]] ([[Royal Moroccan Football Federation|Morocco]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Ashley Beecham ([[Football Australia|Australia]])
+|}
+
+===Ghana vs Uruguay===
+The teams had one prior meeting, which came in the [[2010 FIFA World Cup]] [[2010 FIFA World Cup knockout stage#Uruguay vs Ghana|quarter-finals]]; Uruguay won 4–2 on penalties following a 1–1 draw after extra time.
+
+In the first half, Ghana were awarded a penalty after Uruguay goalkeeper [[Sergio Rochet]] was adjudged to have fouled [[Mohammed Kudus]] inside the area; however, Rochet then saved the subsequent spot kick taken by Ghana captain [[André Ayew]]. Shortly after this, midfielder [[Giorgian de Arrascaeta]] scored Uruguay's first two goals of the tournament within a span of six minutes to earn his side a 2–0 half-time lead, which saw them rise to second place in the live group standings. However, Uruguay would then be pushed down to third in the table on goals scored following South Korea's winner against Portugal late into the second half of the group's other ongoing game. Uruguay were unable to find the third goal they now required to advance, with Ghana keeper [[Lawrence Ati-Zigi]] making saves late on to deny both [[Edinson Cavani]] and [[Maxi Gómez]], and thus failed to progress past the first round for the first time since [[2002 FIFA World Cup Group A|2002]]. Defeat also saw Ghana eliminated, finishing bottom of the group with only three points.<ref>{{cite web |title=Ghana 0 Uruguay 2 |url=https://www.bbc.com/sport/football/63752147 |access-date=2 December 2022 |work=BBC Sport |date=2 December 2022}}</ref>
+
+Referee [[Daniel Siebert (referee)|Daniel Siebert]] and his assistants were angrily confronted by Uruguayan players following the final whistle, after both Siebert and the [[Video assistant referee|VAR]] had disagreed with Uruguay's penalty appeals in the second half: first for a coming together between [[Darwin Núñez]] and Ghana's [[Alidu Seidu]], and then in stoppage time after Cavani went down in the area. In January 2023, FIFA would go on to punish several Uruguayan players for their actions in the aftermath of the contest, deeming their behaviour "discriminatory", "offensive", and a "violation of the principles of fair play"; substitute keeper [[Fernando Muslera]] and defender [[José María Giménez|José Giménez]] both received four-match bans, while Cavani and captain [[Diego Godín]] each served a one-game suspension. All four players were also required to pay fines along with the [[Uruguayan Football Association|nation's football association]], and carry out a form of football community service.<ref>{{cite news |title=Cavani among Uruguay players given bans for World Cup disorder |url=https://www.espn.com/soccer/story/_/id/37635879/cavani-uruguay-players-given-bans-world-cup-disorder |access-date=12 February 2023 |publisher=ESPN |date=27 January 2023}}</ref>
+
+With De Arrascaeta's goals, Uruguay became the last team of all 32 participants to score at the 2022 FIFA World Cup.<ref>{{cite news |last1=Magomedova |first1=Marina |title=Uruguayan Football Association president harshly criticizes referees at 2022 World Cup in Qatar |url=https://www.telecomasia.net/news/football/uruguayan-football-association-president-harshly-criticizes-referees-at-2022-world-cup-in-qatar/ |access-date=12 February 2023 |work=[[True Corporation|TelecomAsia]] |date=12 June 2022}}</ref>
+
+<section begin=H5 />{{Football box
+|date       = {{Start date|2022|12|2|df=y}}
+|time       = 18:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|GHA}}
+|score      = {{score link|2022 FIFA World Cup Group H#Ghana vs Uruguay|0–2}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|URU}}
+|goals1     =
+|goals2     =
+*[[Giorgian de Arrascaeta|De Arrascaeta]] {{goal|26||32}}
+|stadium    = [[Al Janoub Stadium]], [[Al Wakrah]]
+|attendance = 43,443
+|referee    = [[Daniel Siebert (referee)|Daniel Siebert]] ([[German Football Association|Germany]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235494
+}}<section end=H5 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _gha22H
+ |pattern_b  = _GHA22H
+ |pattern_ra = _gha22H
+ |pattern_sh = _gha22h
+ |pattern_so = _gha22hl
+ |leftarm    = FFFFFF
+ |body       = FFFFFF
+ |rightarm   = FFFFFF
+ |shorts     = FFFFFF
+ |socks      = FFFFFF
+ |title      = Ghana
+}}
+|{{Football kit
+ |pattern_la = _uru22h
+ |pattern_b  = _uru22H
+ |pattern_ra = _uru22h
+ |pattern_sh = _uru22h
+ |pattern_so = _uru22hl
+ |leftarm    = 80AFFF
+ |body       = 80AFFF
+ |rightarm   = 80AFFF
+ |shorts     = 000000
+ |socks      = 000000
+ |title      = Uruguay
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Lawrence Ati-Zigi]]
+|-
+|RB ||'''26'''||[[Alidu Seidu]] || {{yel|90+9}}
+|-
+|CB ||'''18'''||[[Daniel Amartey]]
+|-
+|CB ||'''4''' ||[[Mohammed Salisu]]
+|-
+|LB ||'''17'''||[[Baba Rahman]]
+|-
+|CM ||'''5''' ||[[Thomas Partey]]
+|-
+|CM ||'''21'''||[[Salis Abdul Samed]] || || {{suboff|72}}
+|-
+|RW ||'''20'''||[[Mohammed Kudus]] || || {{suboff|90+8}}
+|-
+|AM ||'''10'''||[[André Ayew]] ([[Captain (association football)|c]]) || || {{suboff|46}}
+|-
+|LW ||'''9''' ||[[Jordan Ayew]] || || {{suboff|46}}
+|-
+|CF ||'''19'''||[[Iñaki Williams]] || || {{suboff|72}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|MF ||'''22'''||[[Kamaldeen Sulemana]] || {{yel|86}} || {{subon|46}}
+|-
+|MF ||'''11'''||[[Osman Bukari]] || || {{subon|46}}
+|-
+|FW ||'''25'''||[[Antoine Semenyo]] || || {{subon|72}}
+|-
+|MF ||'''8''' ||[[Daniel-Kofi Kyereh]] || || {{subon|72}}
+|-
+|MF ||'''7''' ||[[Abdul Fatawu Issahaku]] || || {{subon|90+8}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Otto Addo]]
+|}
+|valign="top"|[[File:GHA-URU 2022-12-02.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''23'''||[[Sergio Rochet]]
+|-
+|RB ||'''13'''||[[Guillermo Varela]]
+|-
+|CB ||'''2''' ||[[José María Giménez|José Giménez]] || {{yel|90+10}}
+|-
+|CB ||'''19'''||[[Sebastián Coates]] || {{yel|87}}
+|-
+|LB ||'''16'''||[[Mathías Olivera]]
+|-
+|RM ||'''8''' ||[[Facundo Pellistri]] || || {{suboff|66}}
+|-
+|CM ||'''15'''||[[Federico Valverde]]
+|-
+|CM ||'''6''' ||[[Rodrigo Bentancur]] || || {{suboff|34}}
+|-
+|LM ||'''10'''||[[Giorgian de Arrascaeta]] || || {{suboff|80}}
+|-
+|CF ||'''9''' ||[[Luis Suárez]] ([[Captain (association football)|c]]) || {{yel|60}} || {{suboff|66}}
+|-
+|CF ||'''11'''||[[Darwin Núñez]] || {{yel|20}} || {{suboff|80}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|MF ||'''5''' ||[[Matías Vecino]] || || {{subon|34}}
+|-
+|FW ||'''21'''||[[Edinson Cavani]] || {{yel|90+10}} || {{subon|66}}
+|-
+|MF ||'''7''' ||[[Nicolás de la Cruz]] || || {{subon|66}}
+|-
+|FW ||'''18'''||[[Maxi Gómez]] || || {{subon|80}}
+|-
+|MF ||'''24'''||[[Agustín Canobbio]] || || {{subon|80}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Diego Alonso]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Giorgian de Arrascaeta]] (Uruguay)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/ghana-uruguay-anrew-ayew-darwin-nunez-sergio-rochet-fifa-world-cup-qatar-2022 |title=Uruguay out despite Ghana victory |publisher=[[FIFA]] |date=2 December 2022 |access-date=2 December 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />[[Jan Seidel]] ([[German Football Association|Germany]])
+<br />[[Rafael Foltyn]] ([[German Football Association|Germany]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[Yoshimi Yamashita]] ([[Japan Football Association|Japan]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Vasile Marinescu ([[Romanian Football Federation|Romania]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Bastian Dankert]] ([[German Football Association|Germany]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Pol van Boekel]] ([[Royal Dutch Football Association|Netherlands]])
+<br />Ciro Carbone ([[Italian Football Federation|Italy]])
+<br />[[Paolo Valeri]] ([[Italian Football Federation|Italy]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Alessandro Giallatini ([[Italian Football Federation|Italy]])
+|}
+
+===South Korea vs Portugal===
+Prior to this match, the teams had met once before, being South Korea's [[2002 FIFA World Cup Group D#Portugal vs South Korea|1–0 group stage victory]] in the [[2002 FIFA World Cup]] (which they co-hosted with Japan).
+
+A rotated Portugal side took the lead in the opening five minutes, when [[Ricardo Horta]] scored on his World Cup debut with a first-time shot. South Korea would equalize in the 27th minute, when Portugal failed to clear a corner which hit the back of [[Cristiano Ronaldo]], landing at the feet of [[Kim Young-gwon]] who scored from close range. In a second half where both sides saw opportunities, South Korea would find the winner in stoppage time, after [[Son Heung-min]] recovered the ball off a counter from a Portugal corner and slipped it to [[Hwang Hee-chan]], who finished his shot into the bottom corner of the net.<ref>{{cite web|url=https://www.bbc.com/sport/football/63752148|title=South Korea 2 Portugal 1|work=BBC Sport|date=2 December 2022|access-date=2 December 2022}}</ref>
+
+This late victory saw South Korea leapfrog Uruguay in the group standings on goals scored to join Portugal in the knockout stage, progressing to the second round for the first time since [[2010 FIFA World Cup|2010]].
+
+<section begin=H6 />{{Football box
+|date       = {{Start date|2022|12|2|df=y}}
+|time       = 18:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|KOR}}
+|score      = {{score link|2022 FIFA World Cup Group H#South Korea vs Portugal|2–1}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|POR}}
+|goals1     =
+*[[Kim Young-gwon]] {{goal|27}}
+*[[Hwang Hee-chan]] {{goal|90+1}}
+|goals2     =
+*[[Ricardo Horta|Horta]] {{goal|5}}
+|stadium    = [[Education City Stadium]], [[Al Rayyan (city)|Al Rayyan]]
+|attendance = 44,097
+|referee    = [[Facundo Tello]] ([[Argentine Football Association|Argentina]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235490
+}}<section end=H6 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _kor22h
+ |pattern_b  = _kor22H
+ |pattern_ra = _kor22h
+ |pattern_sh = _kor22h
+ |pattern_so =
+ |leftarm    = F53A3A
+ |body       = F53A3A
+ |rightarm   = F53A3A
+ |shorts     = F53A3A
+ |socks      = F53A3A
+ |title      = <span class="nowrap">South Korea</span>
+}}
+|{{Football kit
+ |pattern_la = _por22a
+ |pattern_b  = _por22A
+ |pattern_ra = _por22a
+ |pattern_sh = _por22a
+ |pattern_so = _por22a
+ |leftarm    = FFFDEE
+ |body       = FFFDEE
+ |rightarm   = FFFDEE
+ |shorts     = FFFDEE
+ |socks      = FFFDEE
+ |title      = Portugal
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Kim Seung-gyu]]
+|-
+|RB ||'''15'''||[[Kim Moon-hwan]]
+|-
+|CB ||'''20'''||[[Kwon Kyung-won]]
+|-
+|CB ||'''19'''||[[Kim Young-gwon]] || || {{suboff|81}}
+|-
+|LB ||'''3''' ||[[Kim Jin-su]]
+|-
+|DM ||'''5''' ||[[Jung Woo-young]]
+|-
+|CM ||'''6''' ||[[Hwang In-beom]]
+|-
+|CM ||'''18'''||[[Lee Kang-in]] || {{yel|36}} || {{suboff|81}}
+|-
+|RF||'''10'''||[[Lee Jae-sung]] || || {{suboff|65}}
+|-
+|CF ||'''9''' ||[[Cho Gue-sung]] || || {{suboff|90+3}}
+|-
+|LF ||'''7''' ||[[Son Heung-min]] ([[Captain (association football)|c]])
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|MF ||'''11'''||[[Hwang Hee-chan]] || {{yel|90+2}} || {{subon|65}}
+|-
+|FW ||'''16'''||[[Hwang Ui-jo]] || || {{subon|81}}
+|-
+|MF ||'''13'''||[[Son Jun-ho (footballer)|Son Jun-ho]] || || {{subon|81}}
+|-
+|DF ||'''24'''||[[Cho Yu-min]] || || {{subon|90+3}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|{{#invoke:flag|icon|POR}} [[Sérgio Costa (football manager)|Sérgio Costa]]{{refn|group=note|South Korea manager [[Paulo Bento]] was suspended for the match due to his sending off in [[#South Korea vs Ghana|South Korea's match against Ghana]]. Assistant manager [[Sérgio Costa (football manager)|Sérgio Costa]] filled in as manager.}}
+|}
+|valign="top"|[[File:KOR-POR 2022-12-02.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''22'''||[[Diogo Costa]]
+|-
+|RB ||'''2''' ||[[Diogo Dalot]]
+|-
+|CB ||'''3''' ||[[Pepe (footballer, born 1983)|Pepe]]
+|-
+|CB ||'''24'''||[[António Silva (footballer)|António Silva]]
+|-
+|LB ||'''20'''||[[João Cancelo]]
+|-
+|DM ||'''18'''||[[Rúben Neves]] || || {{suboff|65}}
+|-
+|CM ||'''23'''||[[Matheus Nunes]] || || {{suboff|65}}
+|-
+|CM ||'''16'''||[[Vitinha (footballer, born February 2000)|Vitinha]] || || {{suboff|81}}
+|-
+|RF ||'''21'''||[[Ricardo Horta]]
+|-
+|CF ||'''7''' ||[[Cristiano Ronaldo]] ([[Captain (association football)|c]]) || || {{suboff|65}}
+|-
+|LF ||'''17'''||[[João Mário (footballer, born January 1993)|João Mário]] || || {{suboff|81}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|MF ||'''6''' ||[[João Palhinha]] || || {{subon|65}}
+|-
+|FW ||'''15'''||[[Rafael Leão]] || || {{subon|65}}
+|-
+|FW ||'''9''' ||[[André Silva (footballer, born 1995)|André Silva]] || || {{subon|65}}
+|-
+|FW ||'''10'''||[[Bernardo Silva]] || || {{subon|81}}
+|-
+|MF ||'''14'''||[[William Carvalho]] || || {{subon|81}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Fernando Santos (footballer, born 1954)|Fernando Santos]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Hwang Hee-chan]] (South Korea)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/korea-republic-portugal-world-cup-qatar-2022-group-h-match-report |title=Stoppage-time strike sends Korea Republic through |publisher=[[FIFA]] |date=2 December 2022 |access-date=2 December 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Ezequiel Brailovsky ([[Argentine Football Association|Argentina]])
+<br />Gabriel Chade ([[Argentine Football Association|Argentina]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[Maguette Ndiaye]] ([[Senegalese Football Federation|Senegal]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Djibril Camara ([[Senegalese Football Federation|Senegal]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Nicolás Gallo (referee)|Nicolás Gallo]] ([[Colombian Football Federation|Colombia]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Juan Soto (referee)|Juan Soto]] ([[Venezuelan Football Federation|Venezuela]])
+<br />Bruno Boschilia ([[Brazilian Football Confederation|Brazil]])
+<br />[[Armando Villarreal]] ([[United States Soccer Federation|United States]]) 
+<br />'''[[Video assistant referee#Assistant video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Bruno Pires ([[Brazilian Football Confederation|Brazil]])
+|}
+
+==Discipline==
+Fair play points would have been used as tiebreakers if the overall and head-to-head records of teams were tied. These were calculated based on yellow and red cards received in all group matches as follows:<ref name="regulations"/>
+*first yellow card: −1 point;
+*indirect red card (second yellow card): −3 points;
+*direct red card: −4 points;
+*yellow card and direct red card: −5 points;
+
+Only one of the above deductions was applied to a player in a single match.
+
+{| class="wikitable sortable" style="text-align:center;"
+|-
+!rowspan=2|Team
+!colspan=4 style="border-left:3px solid gray"|Match 1
+!colspan=4 style="border-left:3px solid gray"|Match 2
+!colspan=4 style="border-left:3px solid gray"|Match 3
+!rowspan=2 style="border-left:3px solid gray"|Points
+|-
+!style="border-left:3px solid gray"|{{yel}}
+!{{sent off|2}}
+!{{sent off|0}}
+!{{sent off|1}}
+!style="border-left:3px solid gray"|{{yel}}
+!{{sent off|2}}
+!{{sent off|0}}
+!{{sent off|1}}
+!style="border-left:3px solid gray"|{{yel}}
+!{{sent off|2}}
+!{{sent off|0}}
+!{{sent off|1}}
+|-
+|align=left|{{#invoke:flagg|main|unpe|avar=fb|POR}}
+|style="border-left:3px solid gray"| 2 ||  ||  || 
+|style="border-left:3px solid gray"| 3 ||  ||  || 
+|style="border-left:3px solid gray"|  ||  ||  || 
+!style="border-left:3px solid gray"| −5
+|-
+|align=left|{{#invoke:flagg|main|unpe|avar=fb|KOR}}
+|style="border-left:3px solid gray"| 1 ||  ||  || 
+|style="border-left:3px solid gray"| 2 ||  ||  ||  
+|style="border-left:3px solid gray"| 2 ||  ||  || 
+!style="border-left:3px solid gray"| −5
+|-
+|align=left|{{#invoke:flagg|main|unpe|avar=fb|GHA}}
+|style="border-left:3px solid gray"| 4 ||  ||  || 
+|style="border-left:3px solid gray"| 2 ||  ||  || 
+|style="border-left:3px solid gray"| 2 ||  ||  || 
+!style="border-left:3px solid gray"| −8
+|-
+|align=left|{{#invoke:flagg|main|unpe|avar=fb|URU}}
+|style="border-left:3px solid gray"| 1 ||  ||  || 
+|style="border-left:3px solid gray"| 2 ||  ||  || 
+|style="border-left:3px solid gray"| 5 ||  ||  || 
+!style="border-left:3px solid gray"| −8
+|}
+
+==See also==
+*[[Ghana at the FIFA World Cup]]
+*[[Portugal at the FIFA World Cup]]
+*[[South Korea at the FIFA World Cup]]
+*[[Uruguay at the FIFA World Cup]]
+
+==Notes==
+{{reflist|group=note}}
+
+==References==
+{{reflist}}
+
+==External links==
+{{Commons category}}
+* {{Official website|https://www.fifa.com/tournaments/mens/worldcup/qatar2022}}
+
+{{2022 FIFA World Cup}}
+
+{{DEFAULTSORT:Group H}}
+[[Category:2022 FIFA World Cup]]
+[[Category:Portugal at the 2022 FIFA World Cup]]
+[[Category:Ghana at the 2022 FIFA World Cup]]
+[[Category:Uruguay at the 2022 FIFA World Cup]]
+[[Category:South Korea at the 2022 FIFA World Cup]]
+[[Category:FIFA World Cup group stages]]

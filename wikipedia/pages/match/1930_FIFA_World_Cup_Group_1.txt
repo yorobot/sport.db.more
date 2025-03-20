@@ -1,0 +1,783 @@
+{{Short description|None}}
+{{Use dmy dates|date=May 2018}}
+[[File:Stabile hurac 1926.jpg|thumb|upright|[[Guillermo Stábile]] scored five times for [[Argentina national football team|Argentina]] in Group 1 as he went on to win the [[FIFA World Cup Golden Boot]]]]
+Group 1 of the [[1930 FIFA World Cup]] was one of four groups in the opening round of tournament. The group featured [[Argentina national football team|Argentina]], [[Chile national football team|Chile]], [[France national football team|France]] and [[Mexico national football team|Mexico]]. Play began on 13 July 1930 when France defeated Mexico  4–1 in the opening match. [[Lucien Laurent]] scored the first goal in World Cup history after 19 minutes to give his side the lead. France played again in the second fixture, suffering defeat against Argentina in a controversial match which saw the referee mistakenly blow the whistle for full-time six minutes early.
+
+Chile defeated Mexico 3–0 in the two sides' first World Cup match, before Chile eliminated France in their next game with a 1–0 victory in a match which featured the first penalty kick awarded in World Cup history, [[Carlos Vidal]]'s effort was saved by French goalkeeper [[Alex Thépot]]. Argentina defeated Mexico 6–3 in the group's next match in which [[Guillermo Stábile]] scored a [[hat-trick]] on his international debut. Play concluded on 22 July 1930 with Argentina playing Chile to determine the group winner for a place in the semi-finals. Stábile added two more goals as his side won 3–1 to win the group and advance. Chile, France and Mexico were subsequently eliminated from the competition. Argentina went on to reach the [[1930 FIFA World Cup final|final]], losing 4–2 to hosts [[Uruguay national football team|Uruguay]].
+
+==Background==
+Group 1 was one of four groups in the opening round of the [[1930 FIFA World Cup]] in Uruguay. The competition featured 13 sides, split into one group of four teams and three groups of three teams. The sides would play each other on a [[Round-robin tournament|round-robin basis]] with the top nation in each group advancing to the semi-finals.<ref name="mc">{{cite web |url=https://www.fifa.com/tournaments/mens/worldcup/1930uruguay/match-center |title=Match Centre 1930 FIFA World Cup |publisher=FIFA |accessdate=19 January 2023}}</ref> There was no qualification process for the competition, instead all 41 member states of governing body [[FIFA]] were invited to participate. However,
+the choice of Uruguay as host nation resulted in most declining to participate due to costs and the length of travel involved.<ref name="tft">{{cite web |url=https://thesefootballtimes.co/2014/09/04/the-story-of-the-1930-world-cup/ |title=The Story of the 1930 World Cup |work=These Football Times |last=Benjamin |first=Brian |date=4 September 2014 |accessdate=19 January 2023}}</ref>
+
+The tournament did prove popular with teams from the Americas and 9 of the 13 participants came from the region. Three of these, [[Argentina national football team|Argentina]], [[Chile national football team|Chile]] and [[Mexico national football team|Mexico]] were placed into Group 1 along with one of the four European entrants, [[France national football team|France]].<ref>{{harvnb|FIFA|2017|p=17}}</ref> Argentina were one of the favourites for the tournament having reached the final of the [[Football at the 1928 Summer Olympics|1928 Olympics]] before being beaten by Uruguay.<ref>{{harvnb|Glanville|2005|p=16}}</ref> Mexico, in contrast, were relatively unknown as their [[Mexican Football Association|football association]] had only been founded three years prior to the tournament and their only international victories had come against [[Guatemala national football team|Guatemala]].<ref>{{harvnb|Crouch|2002|p=4}}</ref><ref name="freddi3"/> France had been reluctant to enter but had been persuaded by FIFA president [[Jules Rimet]], a Frenchman, to participate, although coach [[Gaston Barreau]] and leading player [[Manuel Anatol]] both refused to travel.<ref name="tft"/>
+
+==Standings==
+<onlyinclude>{{#invoke:sports table|main|style=WDL
+|section=Standings
+
+|show_positions=y
+|winpoints=2
+
+|team1=ARG|name_ARG={{fb|ARG|1861}}
+|team2=CHI|name_CHI={{fb|CHI}}
+|team3=FRA|name_FRA={{fb|FRA|1794}}
+|team4=MEX|name_MEX={{fb|MEX|1916}}
+|update=complete
+|win_ARG=3|draw_ARG=0|loss_ARG=0|gf_ARG=10|ga_ARG=4
+|win_CHI=2|draw_CHI=0|loss_CHI=1|gf_CHI=5|ga_CHI=3
+|win_FRA=1|draw_FRA=0|loss_FRA=2|gf_FRA=4|ga_FRA=3
+|win_MEX=0|draw_MEX=0|loss_MEX=3|gf_MEX=4|ga_MEX=13
+
+|res_col_header=Q
+|result1=Q |result2=
+|col_Q=green1 |text_Q=Advance to the [[1930 FIFA World Cup knockout stage|knockout stage]]
+
+|source=[https://www.espn.com.sg/football/table/_/league/FIFA.WORLD/season/1930 ESPN]
+}}</onlyinclude>
+
+==Matches==
+===France vs Mexico===
+[[File:Lucien Laurent, Marcel Langiller, 1930.jpg|thumb|upright|[[Lucien Laurent]] and [[Marcel Langiller]], the scorers of the first and second goals in [[FIFA World Cup|World Cup]] history]]
+This was the first ever meeting between the two sides,<ref>{{cite web |url=https://www.11v11.com/teams/mexico/tab/opposingTeams/opposition/France/ |title=Mexico national football team: record v France |website=11v11.com |publisher=AFS Enterprises |accessdate=19 January 2023}}</ref> and would be one of the two opening games of the tournament, starting at the same time as the [[United States men's national soccer team|United States]] against [[Belgium national football team|Belgium]] match in [[1930 FIFA World Cup Group 4|Group 4]].<ref name="freddi3"/> France had been chosen for the opening match to mark [[Bastille Day]] the following day.<ref>{{cite book |title=The Dunlop Book of the World Cup |year=1973 |last=Guiney |first=David |publisher=Eastland Press |location=Suffolk |page=13 |isbn=0903214032}}</ref> There had been some snowfall prior to the start of the competition, leaving the conditions cold and wintery. France opened the scoring after 19 minutes, [[Lucien Laurent]] converting a cross from [[Ernest Libérati]] to score the first goal in World Cup history.<ref>{{cite web |url=https://www.fifa.com/tournaments/mens/worldcup/1930uruguay/news/lucien-laurent-the-first-world-cup-goalscorer |title=Lucien Laurent, the first World Cup goalscorer |publisher=FIFA |date=13 July 2020 |accessdate=24 January 2023}}</ref> The French goalkeeper [[Alex Thépot]] was forced off the field with injury during the first half after being kicked in the jaw during a challenge with an opposition player. With no substitutions allowed, halfback [[Augustin Chantrel]] was chosen to play in his place for the remainder of the match.<ref name="freddi3">{{harvnb|Freddi|2002|p=3}}</ref><ref>{{harvnb|Glanville|2005|p=17}}</ref> Despite their man disadvantage, France extended their lead twice before half-time; [[Marcel Langiller]] made it 2–0 before [[André Maschinot]] added a third shortly before the break.<ref name="freddi3"/>
+
+Mexico looked to push forward in the second half and were able to score their first goal of the competition when [[Juan Carreño]] finished from [[Dionisio Mejía]]'s pass. However, it proved to be only a consolation goal as France scored a fourth in the final minutes of the game, Maschinot scoring his second after Langiller had played a cross into the penalty area. Mexico's [[Manuel Rosas (footballer, born 1912)|Manuel]] and [[Felipe Rosas]] became the first brothers to play together in a World Cup during the game.<ref name="freddi3"/> The match would remain the highest scoring World Cup opening match until [[Germany national football team|Germany]] defeated [[Costa Rica national football team|Costa Rica]] 4–2 in the opening game of the [[2006 FIFA World Cup|2006 World Cup]].<ref>{{cite news |url=https://www.11v11.com/matches/germany-v-costa-rica-09-june-2006-273710/ |title=Germany v Costa Rica, 09 June 2006 |website=11v11.com |publisher=AFS Enterprises |accessdate=19 January 2023}}</ref>
+
+<onlyinclude>{{#invoke:football box|main|section=1-1
+|date = 13 July 1930
+|time = 15:00 UYT ([[UTC−03:30]])
+|team1 = {{fb-rt|FRA|1794}}
+|score = 4–1
+|report = [https://www.fifa.com/worldcup/archive/uruguay1930/matches/match/1096 Report]
+|team2 = {{fb|MEX|1916}}
+|goals1 = [[Lucien Laurent|L. Laurent]] {{goal|19}}<br />[[Marcel Langiller|Langiller]] {{goal|40}}<br />[[André Maschinot|Maschinot]] {{goal|43||87}}
+|goals2 = [[Juan Carreño|Carreño]] {{goal|70}}
+|stadium = [[Estadio Pocitos]], [[Montevideo]]
+|attendance = 4,444
+|referee = Domingo Lombardi ([[Uruguayan Football Association|Uruguay]])
+}}</onlyinclude>
+{{col-begin}}
+{{col-2}}
+{{Football kit
+| pattern_la           = 
+| pattern_b             = _collar_buttons_2
+| pattern_ra            = 
+| pattern_sh            = 
+| pattern_so            = 
+| leftarm               = 0099ff
+| body                 =  0099ff
+| rightarm              = 0099ff
+| shorts               = ffffff
+| socks                 =000000
+ | title           = France
+}}
+{{col-2}}
+{{Football kit
+| pattern_la        = 
+| pattern_b         = _old_laced
+| pattern_ra        = 
+| pattern_sh        = 
+| pattern_so        = 
+| leftarm           = 800000
+| body             = 800000
+| rightarm           =800000
+| shorts             = 000066
+| socks              = 000066
+|title            =  Mexico
+}}
+{{col-end}}
+{{col-begin}}
+{{col-2}}
+{| style="font-size:90%; margin:0.2em auto;" cellspacing="0" cellpadding="0"
+|-
+!width="25"| !!width="25"|
+|-
+|GK || ||[[Alex Thépot]]
+|-
+|FB || ||[[Étienne Mattler]]
+|-
+|FB || ||[[Marcel Capelle]]
+|-
+|HB || ||[[Augustin Chantrel]]
+|-
+|HB || ||[[Alexandre Villaplane]] ([[Captain (association football)|c]])
+|-
+|HB || ||[[Edmond Delfour]]
+|-
+|FW || ||[[Marcel Pinel]]
+|-
+|FW || ||[[Lucien Laurent]]
+|-
+|FW ||||[[André Maschinot]]
+|-
+|FW || ||[[Ernest Libérati]]
+|-
+|FW || ||[[Marcel Langiller]]
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=4| [[Raoul Caudron]]
+|}
+{{col-2}}
+{| style="font-size: 90%" cellspacing="0" cellpadding="0" align=center
+|-
+!width="25"| !!width="25"|
+|-
+|GK || ||[[Oscar Bonfiglio]]
+|-
+|FB || ||[[Rafael Garza Gutiérrez]] ([[Captain (association football)|c]])
+|-
+|FB || ||[[Manuel Rosas (footballer, born 1912)|Manuel Rosas]]
+|-
+|HB || ||[[Efraín Amézcua]]
+|-
+|HB || ||[[Alfredo Viejo Sánchez|Alfredo Sánchez]]
+|-
+|HB || ||[[Felipe Rosas]]
+|-
+|FW || ||[[Hilario López]]
+|-
+|FW || ||[[José Ruiz (footballer, born 1904)|José Ruíz]]
+|-
+|FW || ||[[Dionisio Mejía]]
+|-
+|FW || ||[[Juan Carreño]]
+|-
+|FW || ||[[Luis Pérez (footballer born 1907)|Luis Pérez]]
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=4| [[Juan Luque de Serrallonga]]
+|}
+{{col-end}}
+{| width=100% style="font-size: 90%"
+|
+'''Linesmen:'''
+<br />[[Henri Christophe (referee)|Henri Christophe]] ([[Royal Belgian Football Association|Belgium]])
+<br />[[Gilberto de Almeida Rêgo|Almeida Rêgo]] ([[Brazilian Football Confederation|Brazil]])
+|}
+
+===Argentina vs France===
+Unusually, France played their next match 48 hours later, this time meeting Argentina in their opponent's first game.<ref name="freddi3"/> This was the first ever meeting between the two sides.<ref>{{cite web |url=https://www.11v11.com/teams/france/tab/opposingTeams/opposition/Argentina/ |title=France national football team: record v Argentina |website=11v11.com |publisher=AFS Enterprises |accessdate=19 January 2023}}</ref> Despite his injury in the previous game, Thépot started in goal for the French but his side suffered another injury in the opening minutes of the match when [[Luis Monti]] heavily tackled Laurent resulting in the French player spending the rest of the game limping and ineffective.<ref name="freddi4">{{harvnb|Freddi|2002|p=4}}</ref> The Argentinians were the stronger of the two sides and only the goalkeeping of Thépot was able to keep them from scoring for much of the game. However, his resilience came to an end in the 81st minute when Monti scored direct from a free-kick with Thépot's view blocked by his teammates assembling a wall.<ref name="freddi4"/>
+
+France immediately pushed for an equaliser with Langiller breaking through the Argentine defence in the 84th minute. However, Brazilian referee [[Gilberto de Almeida Rêgo|Almeida Rêgo]] blew his whistle to signal full-time despite having six minutes of regular time remaining. The French players immediately accosted the referee but it took several minutes for order to be restored as mounted police tried to clear celebrating Uruguyan and Argentine fans from the pitch and [[Roberto Cherro]] received treatment after fainting. Eventually, the match resumed but France were unable to find an equalising goal as the match ended 1–0.<ref>{{harvnb|Glanville|2005|p=18}}</ref><ref>{{harvnb|Lisi|2007|p=11}}</ref>
+
+<onlyinclude>{{#invoke:football box|main|section=1-2
+|date = 15 July 1930
+|time = 16:00 UYT ([[UTC−03:30]])
+|team1 = {{fb-rt|ARG|1861}}
+|score = 1–0
+|report = [https://www.fifa.com/worldcup/archive/uruguay1930/matches/match/1085 Report]
+|team2 = {{fb|FRA|1794}}
+|goals1 = [[Luis Monti|Monti]] {{goal|81}}
+|stadium = [[Estadio Gran Parque Central|Estadio Parque Central]], [[Montevideo]]
+|attendance = 23,409
+|referee = [[Gilberto de Almeida Rêgo|Almeida Rêgo]] ([[Brazilian Football Confederation|Brazil]])
+}}</onlyinclude>
+{{col-begin}}
+{{col-2}}
+{{Football kit
+ | pattern_la = _white_stripes
+ | pattern_b  = _3stripesonwhite
+ | pattern_ra = _white_stripes
+ | pattern_sh =
+ | pattern_so = _white_bands
+ | leftarm    = 99CCFF
+ | body       = 99CCFF
+ | rightarm   = 99CCFF
+ | shorts     = 999999
+ | socks      = 000000
+ | title      = Argentina
+}}
+{{col-2}}
+{{Football kit
+|pattern_la= 
+|pattern_b= _collar_buttons_2
+|pattern_ra= 
+|pattern_sh= 
+|pattern_so= 
+|leftarm= 0099ff
+|body   = 0099ff
+|rightarm = 0099ff
+|shorts= ffffff
+|socks= 000000
+| title   =France
+}}
+{{col-end}}
+{{col-begin}}
+{{col-2}}
+{| style="font-size:90%; margin:0.2em auto;" cellspacing="0" cellpadding="0"
+|-
+!width="25"| !!width="25"|
+|-
+|GK ||'''1''' ||[[Ángel Bossio]]
+|-
+|FB ||'''2''' ||[[José Della Torre]]
+|-
+|FB ||'''3''' ||[[Ramón Muttis]]
+|-
+|HB ||'''4''' ||[[Juan Evaristo]]
+|-
+|HB ||'''5''' ||[[Luis Monti]]
+|-
+|HB ||'''6''' ||[[Pedro Arico Suárez|Arico Suárez]]
+|-
+|FW ||'''7''' ||[[Natalio Perinetti]]
+|-
+|FW ||'''8''' ||[[Francisco Varallo]]
+|-
+|FW ||'''9''' ||[[Manuel Ferreira (footballer)|Manuel Ferreira]] ([[Captain (association football)|c]])
+|-
+|FW ||'''10'''||[[Roberto Cherro]]
+|-
+|FW ||'''11'''||[[Mario Evaristo]]
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=4| [[Juan José Tramutola]]
+|}
+{{col-2}}
+{| style="font-size: 90%" cellspacing="0" cellpadding="0" align=center
+|-
+!width="25"| !!width="25"|
+|-
+|GK ||'''1''' ||[[Alex Thépot]]
+|-
+|FB ||'''2''' ||[[Étienne Mattler]]
+|-
+|FB ||'''3''' ||[[Marcel Capelle]]
+|-
+|HB ||'''4''' ||[[Augustin Chantrel]]
+|-
+|HB ||'''5''' ||[[Alexandre Villaplane]] ([[Captain (association football)|c]])
+|-
+|HB ||'''6''' ||[[Edmond Delfour]]
+|-
+|FW ||'''7''' ||[[Marcel Pinel]]
+|-
+|FW ||'''8''' ||[[Lucien Laurent]]
+|-
+|FW ||'''9''' ||[[André Maschinot]]
+|-
+|FW ||'''10'''||[[Ernest Libérati]]
+|-
+|FW ||'''11'''||[[Marcel Langiller]]
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=4| [[Raoul Caudron]]
+|}
+{{col-end}}
+{| width=100% style="font-size: 90%"
+|
+'''Linesmen:'''
+<br />[[Ulises Saucedo]] ([[Bolivian Football Federation|Bolivia]])
+<br />[[Constantin Rădulescu (footballer, born 1896)|Costel Rădulescu]] ([[Romanian Football Federation|Romania]])
+|}
+
+===Chile vs Mexico===
+This was the first ever meeting between the two sides.<ref>{{cite web |url=https://www.11v11.com/teams/chile/tab/opposingTeams/opposition/Mexico/ |title=Chile national football team: record v Mexico |website=11v11.com |publisher=AFS Enterprises |accessdate=19 January 2023}}</ref> [[Carlos Vidal]] gave Chile an early advantage, scoring a low shot into the bottom corner of the net from 12 yards after only four minutes following a headed layoff by [[Eberardo Villalobos]]. Mexico appealed for a handball by Vidal but this was dismissed by referee [[Henri Christophe (referee)|Henri Christophe]].<ref name="freddi4"/><ref name="condors">{{cite web |last1=Tuesta |first1=Ignacio Pérez |last2=Bustos |first2=Eugenio Figueroa |title=''"Cóndores Blancos, la historia desconocida de Chile en el Mundial de 1930"''|url=http://www.anfp.cl/imagenes/notas/CHILE%201930%20WEB.pdf |accessdate=14 December 2014 |year=2014 |publisher=Santiago |language=es}}</ref> There were numerous further chances in the first half; both sides struck the goal frame, first Chile's [[Guillermo Subiabre]] hit the crossbar with a long-range drive before Mexico's [[Efraín Amézcua]] hit the post with an effort. The [[Asociación Nacional de Fútbol Profesional]] noted that the Mexicans had surprised the Chilean side prompting manager [[György Orth]] to reorganise his team and berate his forwards.<ref name="condors"/>
+
+Early in the second half, Chile extended their lead when Mexican defender Manuel Rosas became the first player to score an own goal in the World Cup when he inadvertently headed the ball into his own net.<ref name="rosas"/> Rosas had been attempting to head Villalobos' throw in.<ref name="condors"/> Unusually, this made Rosas the youngest player ever to score at a World Cup despite doing so in the wrong goal, a record which stood until the [[1958 FIFA World Cup|1958 World Cup]] when it was beaten by [[Pelé]].<ref name="rosas">{{cite web |url=https://www.fifa.com/fifaplus/en/articles/manuel-rosas-sanchez-the-mexican-who-made-fifa-world-cup-history |title=Manuel Rosas Sanchez: The Mexican who made FIFA World Cup history |publisher=FIFA |last=Oinam |first=Jayanta |accessdate=20 January 2023}}</ref>{{refn|group=nb|Some sources claim that Rosas was 22 at the time of the tournament, this article uses the official FIFA listing.}} Vidal rounded out the scoring for his side late on, scoring his second and Chile's third.<ref name="freddi4"/> The goal came from a quick breakaway by [[Guillermo Saavedra (footballer)|Guillermo Saavedra]] who ran 30 metres and passed to [[Tomás Ojeda]], who played in Vidal to finish from four yards out.<ref name="condors"/>
+
+<onlyinclude>{{#invoke:transcludable section|main|section=1-3|text={{football box
+|date = 16 July 1930
+|time = 14:45 UYT ([[UTC−03:30]])
+|team1 = {{fb-rt|CHI}}
+|score = 3–0
+|report = [https://www.fifa.com/worldcup/archive/uruguay1930/matches/match/1095 Report]
+|team2 = {{fb|MEX|1916}}
+|goals1 = [[Carlos Vidal|Vidal]] {{goal|3||65}}</onlyinclude>{{refn|group=nb|name=dispute|This is one of several goals for which the statistical details are disputed. The goalscorers and timings used here are those of FIFA, the official record. Some other sources, such as RSSSF, state a different scorer, timing, or both. See {{cite web |title=World Cup 1930 finals |work=[[Rec.Sport.Soccer Statistics Foundation]] (RSSSF) |url=https://www.rsssf.org/tables/30full.html | accessdate= 15 August 2010 }}}}<onlyinclude><br />[[Manuel Rosas (footballer, born 1912)|M. Rosas]] {{goal|52|o.g.}}
+|goals2 = 
+|stadium = [[Estadio Gran Parque Central|Estadio Parque Central]], [[Montevideo]]
+|attendance = 9,249
+|referee = [[Henri Christophe (referee)|Henri Christophe]] ([[Royal Belgian Football Association|Belgium]])
+}}}}</onlyinclude>
+{{col-begin}}
+{{col-2}}
+{{Football kit
+| pattern_la           = 
+| pattern_b             = _old_laced
+| pattern_ra            = 
+| pattern_sh            = 
+| pattern_so            = _2_white_stripes
+| leftarm               = ffffff
+| body                 = ffffff
+| rightarm              =ffffff
+| shorts               =0261BF
+| socks                 = 000000
+ | title           = Chile
+}}
+{{col-2}}
+{{Football kit
+| pattern_la        = 
+| pattern_b         = _old_laced
+| pattern_ra        = 
+| pattern_sh        = 
+| pattern_so        = 
+| leftarm           = 800000
+| body             = 800000
+| rightarm           = 800000
+| shorts             = 000066
+| socks              = 000066
+|title            =  Mexico
+}}
+{{col-end}}
+<!-- (text) -->
+{{col-begin}}
+{{col-2}}
+{| style="font-size:90%; margin:0.2em auto;" cellspacing="0" cellpadding="0"
+|-
+!width="25"| !!width="25"|
+|-
+|GK || ||[[Roberto Cortés (Chilean footballer)|Roberto Cortés]]
+|-
+|FB || ||[[Ulises Poirier]]
+|-
+|FB || ||[[Víctor Morales (Chilean footballer)|Víctor Morales]]
+|-
+|HB || ||[[Arturo Torres Carrasco|Arturo Torres]]
+|-
+|HB || ||[[Guillermo Saavedra (footballer)|Guillermo Saavedra]]
+|-
+|HB || ||[[Humberto Elgueta]]
+|-
+|FW || ||[[Tomás Ojeda]]
+|-
+|FW || ||[[Guillermo Subiabre]]
+|-
+|FW || ||[[Eberardo Villalobos]]
+|-
+|FW || ||[[Carlos Vidal]]
+|-
+|FW || ||[[Carlos Schneeberger]] ([[Captain (association football)|c]])
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=4|{{flagicon|HUN|1920}} [[György Orth]]
+|}
+{{col-2}}
+{| style="font-size: 90%" cellspacing="0" cellpadding="0" align=center
+|-
+!width="25"| !!width="25"|
+|-
+|GK ||  ||[[Isidoro Sota]]
+|-
+|FB || ||[[Rafael Garza Gutiérrez]] ([[Captain (association football)|c]])
+|-
+|FB || ||[[Manuel Rosas (footballer, born 1912)|Manuel Rosas]]
+|-
+|HB || ||[[Efraín Amézcua]]
+|-
+|HB || ||[[Alfredo Viejo Sánchez|Alfredo Sánchez]]
+|-
+|HB || ||[[Felipe Rosas]]
+|-
+|FW || ||[[Hilario López]]
+|-
+|FW || ||[[Roberto Gayón]]
+|-
+|FW || ||[[José Ruiz (footballer, born 1904)|José Ruíz]]
+|-
+|FW || ||[[Juan Carreño]]
+|-
+|FW || ||[[Luis Pérez (footballer born 1907)|Luis Pérez]]
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=4| [[Juan Luque de Serrallonga]]
+|}
+{{col-end}}
+{| width=100% style="font-size: 90%"
+|
+'''Linesmen:'''
+<br />Martin Aphesteguy ([[Uruguayan Football Association|Uruguay]])
+<br />[[John Langenus]] ([[Royal Belgian Football Association|Belgium]])
+|}
+
+===Chile vs France===
+This was the first ever meeting between the two sides,<ref>{{cite web |url=https://www.11v11.com/teams/france/tab/opposingTeams/opposition/Chile/ |title=France national football team: record v Chile |website=11v11.com |publisher=AFS Enterprises |accessdate=20 January 2023}}</ref> and served as the first part of a [[Doubleheader (television)|doubleheader]] at the recently completed [[Estadio Centenario]], the centrepiece stadium for the competition which had been delayed due to construction issues.<ref name="freddi5"/> Chile started the stronger of the two sides, forcing several saves from Thépot in the French goal, and were awarded a penalty in the first half, the first in World Cup history. Vidal took the kick but his effort was saved by Thépot. France's best chance of the half came from an error by Chilean defender [[Guillermo Riveros]] but his goalkeeper [[Roberto Cortés (Chilean footballer)|Roberto Cortés]] managed to recover the ball from the oncoming attackers to end the danger.<ref name="condors"/> The French resistance was eventually broken in the 64th minute when [[Guillermo Subiabre]] headed in for Chile from a cross by Vidal. The score remained 1–0, eliminating France from the competition and giving Chile their first clean sheet in an international fixture at the 42nd attempt.<ref name="freddi5">{{harvnb|Freddi|2002|p=5}}</ref>
+
+<onlyinclude>{{#invoke:football box|main|section=1-4
+|date = 19 July 1930
+|time = 12:50 UYT ([[UTC−03:30]])
+|team1 = {{fb-rt|CHI}}
+|score = 1–0
+|report = [https://www.fifa.com/worldcup/archive/uruguay1930/matches/match/1094 Report]
+|team2 = {{fb|FRA|1794}}
+|goals1 = [[Guillermo Subiabre|Subiabre]] {{goal|67}}</onlyinclude>{{refn|group=nb|name=dispute}}<onlyinclude>
+|stadium = [[Estadio Centenario]], [[Montevideo]]
+|attendance = 2,000
+|referee = Anibal Tejada ([[Uruguayan Football Association|Uruguay]])
+}}</onlyinclude>
+{{col-begin}}
+{{col-2}}
+{{Football kit
+| pattern_la           = 
+| pattern_b             = _old_laced
+| pattern_ra            = 
+| pattern_sh            = 
+| pattern_so            = _2_white_stripes
+| leftarm               = ffffff
+| body                 = ffffff
+| rightarm              =ffffff
+| shorts               =0261BF
+| socks                 = 000000
+ | title           = Chile
+}}
+{{col-2}}
+{{Football kit
+| pattern_la           = 
+| pattern_b             = _collar_buttons_2
+| pattern_ra            = 
+| pattern_sh            = 
+| pattern_so            = 
+| leftarm               = 0099ff
+| body                 =  0099ff
+| rightarm              = 0099ff
+| shorts               = ffffff
+| socks                 =000000
+ | title           = France
+}}
+{{col-end}}
+{{col-begin}}
+{{col-2}}
+{| style="font-size:90%; margin:0.2em auto;" cellspacing="0" cellpadding="0"
+|-
+!width="25"| !!width="25"|
+|-
+|GK || ||[[Roberto Cortés (Chilean footballer)|Roberto Cortés]]
+|-
+|FB || ||[[Ernesto Chaparro]]
+|-
+|FB || ||[[Guillermo Riveros]]
+|-
+|HB || ||[[Arturo Torres Carrasco|Arturo Torres]]
+|-
+|HB || ||[[Guillermo Saavedra (footballer)|Guillermo Saavedra]]
+|-
+|HB || ||[[Casimiro Torres (Chilean footballer)|Casimiro Torres]]
+|-
+|FW || ||[[Tomás Ojeda]]
+|-
+|FW || ||[[Guillermo Subiabre]]
+|-
+|FW || ||[[Eberardo Villalobos]]
+|-
+|FW || ||[[Carlos Vidal]]
+|-
+|FW || ||[[Carlos Schneeberger]] ([[Captain (association football)|c]])
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=4|{{flagicon|HUN|1920}} [[György Orth]]
+|}
+{{col-2}}
+{| style="font-size: 90%" cellspacing="0" cellpadding="0" align=center
+|-
+!width="25"| !!width="25"|
+|-
+|GK || ||[[Alex Thépot]]
+|-
+|FB || ||[[Marcel Capelle]]
+|-
+|FB || ||[[Étienne Mattler]]
+|-
+|HB || ||[[Augustin Chantrel]]
+|-
+|HB || ||[[Célestin Delmer]]
+|-
+|HB || ||[[Alexandre Villaplane]] ([[Captain (association football)|c]])
+|-
+|FW || ||[[Ernest Libérati]]
+|-
+|FW || ||[[Edmond Delfour]]
+|-
+|FW || ||[[Marcel Pinel]]
+|-
+|FW || ||[[Emile Veinante]]
+|-
+|FW || ||[[Marcel Langiller]]
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=4| [[Raoul Caudron]]
+|}
+{{col-end}}
+{| width=100% style="font-size: 90%"
+|
+'''Linesmen:'''
+<br />Domingo Lombardi ([[Uruguayan Football Association|Uruguay]])
+<br />[[Gilberto de Almeida Rêgo|Almeida Rêgo]] ([[Brazilian Football Confederation|Brazil]])
+|}
+
+===Argentina vs Mexico===
+{{see also|Argentina–Mexico football rivalry}}
+This was the first ever meeting between the two sides and served as the second part of the double header after the France against Chile match played earlier in the day.<ref name="freddi5"/><ref>{{cite web |url=https://www.11v11.com/teams/argentina/tab/opposingTeams/opposition/Mexico/ |title=Argentina national football team: record v Mexico |website=11v11.com |publisher=AFS Enterprises |accessdate=20 January 2023}}</ref> With captain [[Manuel Ferreira (footballer)|Manuel Ferreira]] having returned home to sit a law exam, [[Guillermo Stábile]] was selected in attack for Argentina to make his international debut. He led his side into an early lead, scoring twice in the opening 17 minutes either side of a goal by teammate [[Adolfo Zumelzú]]. Argentina had a chance to add a fourth five minutes later when they were awarded a penalty after a handball, but [[Fernando Paternoster]]'s effort was saved by [[Oscar Bonfiglio]].<ref name="freddi5"/> Some sources have stated that Paternoster, disagreeing with the decision to award a penalty and in the spirit of fair play, deliberately hit the ball weakly to Bonfiglio. While the referee, also conceding his decision to award the penalty was incorrect, deliberately extended his stride to measure the distance for the spot kick, leaving Paternoster four yards further away than required.<ref>{{cite web |url=https://elpais.com/deportes/mundial-futbol/2022-11-25/argentina-mexico-1930-el-primer-fair-play-de-la-historia-de-los-mundiales.html |title=Argentina - México 1930: el primer 'fair play' de la historia de los Mundiales |publisher=El Pais |last=Burgo |first=Andres |date=25 November 2022 |accessdate=23 January 2023 |language=es}}</ref>
+
+Mexico pulled a goal back shortly before half-time; Manuel Rosas became the first person to score a penalty at a World Cup when he converted his effort.<ref name="lisi12">{{harvnb|Lisi|2007|p=12}}</ref> Argentina added two more goals in the early stages of the second half, [[Francisco Varallo]] scored his first goal of the competition before Zumelzú scored his second two minutes later.<ref name="freddi5"/> Mexico were awarded a second penalty in the 72nd minute, Rosas' initial effort was saved by [[Ángel Bossio]], deputising as captain in Ferreira's absence, in the Argentine goal but he always able to convert the rebound.<ref>{{harvnb|FIFA|2017|p=18}}</ref> This spurred the Mexicans on and they scored a third soon after through [[Roberto Gayón]] to bring the score to 5–3. However, Stábile completed his hat-trick shortly after to end Argentina's nerves as the match finished 6–3, eliminating Mexico.<ref name="freddi6">{{harvnb|Freddi|2002|p=6}}</ref>
+
+<onlyinclude>{{#invoke:football box|main|section=1-5
+|date = 19 July 1930
+|time = 15:00 UYT ([[UTC−03:30]])
+|team1 = {{fb-rt|ARG|1861}}
+|score = 6–3
+|report = [https://www.fifa.com/worldcup/archive/uruguay1930/matches/match/1086 Report]
+|team2 = {{fb|MEX|1916}}
+|goals1 = [[Guillermo Stábile|Stábile]] {{goal|8||17||80}}<br />[[Adolfo Zumelzú|Zumelzú]] {{goal|12||55}}<br />[[Francisco Varallo|Varallo]] {{goal|53}}
+|goals2 = [[Manuel Rosas (footballer, born 1912)|M. Rosas]] {{goal|42|pen.|65}}<br />[[Roberto Gayón|Gayón]] {{goal|75}}
+|stadium = [[Estadio Centenario]], [[Montevideo]]
+|attendance = 42,100
+|referee = [[Ulises Saucedo]] ([[Bolivian Football Federation|Bolivia]])
+}}</onlyinclude>
+{{col-begin}}
+{{col-2}}
+{{Football kit
+ | pattern_la = _white_stripes
+ | pattern_b  = _3stripesonwhite
+ | pattern_ra = _white_stripes
+ | pattern_sh =
+ | pattern_so = _white_bands
+ | leftarm    = 99CCFF
+ | body       = 99CCFF
+ | rightarm   = 99CCFF
+ | shorts     = 999999
+ | socks      = 000000
+ | title      = Argentina
+}}
+{{col-2}}
+{{Football kit
+|pattern_la= 
+|pattern_b= _old_laced
+|pattern_ra= 
+|pattern_sh= 
+|pattern_so= 
+|leftarm= 800000
+|body= 800000
+|rightarm= 800000
+|shorts= 000066
+|socks= 000066
+| title   = Mexico
+}}
+{{col-end}}
+{{col-begin}}
+{{col-2}}
+{| style="font-size:90%; margin:0.2em auto;" cellspacing="0" cellpadding="0"
+|-
+!width="25"| !!width="25"|
+|-
+|GK || ||[[Ángel Bossio]] ([[Captain (association football)|c]])
+|-
+|FB || ||[[José Della Torre]]
+|-
+|FB || ||[[Fernando Paternoster]]
+|-
+|HB || ||[[Alberto Chividini]]
+|-
+|HB || ||[[Adolfo Zumelzú]]
+|-
+|HB || ||[[Rodolfo Orlandini]]
+|-
+|FW || ||[[Carlos Peucelle]]
+|-
+|FW || ||[[Francisco Varallo]]
+|-
+|FW || ||[[Guillermo Stábile]]
+|-
+|FW ||||[[Attilio Demaría]]
+|-
+|FW || ||[[Carlos Spadaro]]
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=4| [[Juan José Tramutola]]
+|}
+{{col-2}}
+{| style="font-size: 90%" cellspacing="0" cellpadding="0" align=center
+|-
+!width="25"| !!width="25"|
+|-
+|GK || ||[[Oscar Bonfiglio]]
+|-
+|FB || ||[[Rafael Garza Gutiérrez]] ([[Captain (association football)|c]])
+|-
+|FB || ||[[Manuel Rosas (footballer, born 1912)|Manuel Rosas]]
+|-
+|HB || ||[[Felipe Olivares]]
+|-
+|HB || ||[[Alfredo Viejo Sánchez|Alfredo Sánchez]]
+|-
+|HB || ||[[Raymundo Rodríguez]]
+|-
+|FW || ||[[Francisco Garza Gutiérrez]]
+|-
+|FW || ||[[Felipe Rosas]]
+|-
+|FW || ||[[Hilario López]]
+|-
+|FW || ||[[Roberto Gayón]]
+|-
+|FW || ||[[Juan Carreño]]
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=4| [[Juan Luque de Serrallonga]]
+|}
+{{col-end}}
+{| width=100% style="font-size: 90%"
+|
+'''Linesmen:'''
+<br />Gualberto Alonso ([[Uruguayan Football Association|Uruguay]])
+<br />[[Constantin Rădulescu (footballer, born 1896)|Costel Rădulescu]] ([[Romanian Football Federation|Romania]])
+|}
+
+===Argentina vs Chile===
+This was the 18th meeting between the two sides in international competition, with Chile having never beaten Argentina in their previous fixtures.<ref>{{cite web |url=https://www.11v11.com/teams/chile/tab/opposingTeams/opposition/Argentina/ |title=Chile national football team: record v Argentina |website=11v11.com |publisher=AFS Enterprises |accessdate=20 January 2023}}</ref> The match would determine which team would win the group and advance to the semi-finals. Stábile continued his good form from the previous match by scoring twice in the opening 15 minutes, although Chile pulled a goal back almost immediately through Subiabre.<ref name="lisi12"/> Shortly before halftime, Monti came together with [[Casimiro Torres (Chilean footballer)|Casimiro Torres]], bringing down the Chilean with a heavy tackle, which led to a mass brawl between the two sides. Referee [[John Langenus]] later described the aftermath of the tackle: "the Chilean grabbed hold of Monti's head with one hand and, with the other, delivered a vicious uppercut". The brawl quickly spread to the rest of the teams, with Langenus noting "All at once, every Argentinian player seemed to throw themselves upon the nearest Chilean and engage in 11 separate boxing matches".<ref>{{harvnb|FIFA|2017|p=19}}</ref> Officials and police desperately tried to restore order and the half was eventually brought to and end with the score remaining 2–1.<ref name="freddi6"/>
+
+Despite the tensions in the first half, the second saw no repeat of any animosity. Argentina extended their lead in the 51st minute when [[Mario Evaristo]] scored. Bossio produced several saves to deny Chile any further goals as Argentina secured a 3–1 victory, advancing them to the semi-finals and eliminating Chile.<ref name="freddi6"/><ref name="lisi13">{{harvnb|Lisi|2007|p=13}}</ref>
+
+<onlyinclude>{{#invoke:football box|main|section=1-6
+|date = 22 July 1930
+|time = 14:45 UYT ([[UTC−03:30]])
+|team1 = {{fb-rt|ARG|1861}}
+|score = 3–1
+|report = [https://www.fifa.com/worldcup/archive/uruguay1930/matches/match/1084 Report]
+|team2 = {{fb|CHI}}
+|goals1 = [[Guillermo Stábile|Stábile]] {{goal|12||13}}<br />[[Mario Evaristo|M. Evaristo]] {{goal|51}}
+|goals2 = [[Guillermo Subiabre|Subiabre]] {{goal|15}}</onlyinclude>{{refn|group=nb|name=dispute}}<onlyinclude>
+|stadium = [[Estadio Centenario]], [[Montevideo]]
+|attendance = 41,459
+|referee = [[John Langenus]] ([[Royal Belgian Football Association|Belgium]])
+}}</onlyinclude>
+{{col-begin}}
+{{col-2}}
+{{Football kit
+ | pattern_la = _white_stripes
+ | pattern_b  = _3stripesonwhite
+ | pattern_ra = _white_stripes
+ | pattern_sh =
+ | pattern_so = _white_bands
+ | leftarm    = 99CCFF
+ | body       = 99CCFF
+ | rightarm   = 99CCFF
+ | shorts     = 999999
+ | socks      = 000000
+ | title      = Argentina
+}}
+{{col-2}}
+{{Football kit
+|pattern_la= 
+|pattern_b= _old_laced
+|pattern_ra= 
+|pattern_sh= 
+|pattern_so= _2_white_stripes
+|leftarm= ffffff
+|body=ffffff
+|rightarm= ffffff
+|shorts= 0261BF
+|socks= 000000
+| title   = Chile
+}}
+{{col-end}}
+{{col-begin}}
+{{col-2}}
+{| style="font-size:90%; margin:0.2em auto;" cellspacing="0" cellpadding="0"
+|-
+!width="25"| !!width="25"|
+|-
+|GK || ||[[Ángel Bossio]]
+|-
+|FB || ||[[José Della Torre]]
+|-
+|FB || ||[[Fernando Paternoster]]
+|-
+|HB || ||[[Juan Evaristo]]
+|-
+|HB || ||[[Luis Monti]]
+|-
+|HB || ||[[Rodolfo Orlandini]]
+|-
+|FW || ||[[Carlos Peucelle]]
+|-
+|FW || ||[[Francisco Varallo]]
+|-
+|FW || ||[[Guillermo Stábile]]
+|-
+|FW || ||[[Manuel Ferreira (footballer)|Manuel Ferreira]] ([[Captain (association football)|c]])
+|-
+|FW ||'''11'''||[[Mario Evaristo]]
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=4| [[Juan José Tramutola]]
+|}
+{{col-2}}
+{| style="font-size: 90%" cellspacing="0" cellpadding="0" align=center
+|-
+!width="25"| !!width="25"|
+|-
+|GK || ||[[Roberto Cortés (Chilean footballer)|Roberto Cortés]]
+|-
+|FB || ||[[Ernesto Chaparro]]
+|-
+|FB || ||[[Víctor Morales (Chilean footballer)|Víctor Morales]]
+|-
+|HB || ||[[Arturo Torres Carrasco|Arturo Torres]]
+|-
+|HB || ||[[Guillermo Saavedra (footballer)|Guillermo Saavedra]]
+|-
+|HB ||||[[Casimiro Torres (Chilean footballer)|Casimiro Torres]]
+|-
+|FW || ||[[Guillermo Arellano]]
+|-
+|FW || ||[[Guillermo Subiabre]] ([[Captain (association football)|c]])
+|-
+|FW || ||[[Eberardo Villalobos]]
+|-
+|FW || ||[[Carlos Vidal]]
+|-
+|FW || ||[[Juan Aguilera (Chilean footballer)|Juan Aguilera]]
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=4|{{flagicon|HUN|1920}} [[György Orth]]
+|}
+{{col-end}}
+{| width=100% style="font-size: 90%"
+|
+'''Linesmen:'''
+<br />[[Henri Christophe (referee)|Henri Christophe]] ([[Royal Belgian Football Association|Belgium]])
+<br />[[Ulises Saucedo]] ([[Bolivian Football Federation|Bolivia]])
+|}
+
+==Aftermath==
+Argentina's three victories saw them finish top of Group 1 with six points, advancing them to the semi-finals. Chile finished second with four points, France came third with two points while Mexico finished last after losing all three matches.<ref name="freddi6"/> Argentina went on to play the United States in the semi-finals, securing a comfortable 6–1 victory to reach the first [[1930 FIFA World Cup final|World Cup final]] against hosts Uruguay.  Despite taking a 2–1 lead, Argentina went on to lose the final 4–2.<ref>{{harvnb|FIFA|2017|pp=21–22}}</ref> Stábile's five goals in Group 1 contributed to him winning the [[FIFA World Cup Golden Boot|Golden Boot]] as the tournament's highest goalscorer, finishing with eight.<ref>{{cite web|url=https://www.fifa.com/mm/document/fifafacts/mencompwc/51/97/30/ip-301_01a_fwc-stats.pdf|archive-url=https://web.archive.org/web/20090612055816/http://www.fifa.com/mm/document/fifafacts/mencompwc/51/97/30/ip-301_01a_fwc-stats.pdf|url-status=dead|archive-date=12 June 2009|title=FIFA World Cup: Statistics|publisher=FIFA|access-date=20 January 2023}}</ref>
+
+France returned to the World Cup four years later, being defeated in the first round by [[Austria national football team|Austria]].<ref>{{harvnb|FIFA|2017|p=26}}</ref> Following their elimination, Chile did not player another international match for five years and would not appear at another World Cup finals until [[1950 FIFA World Cup|1950]].<ref>{{cite web |url=https://www.rsssf.org/tablesc/chil-intres.html |title=Chile – International Results |last=Ballesteros |first=Frank |website=[[RSSSF]] |accessdate=20 January 2023}}</ref> Mexico would also not return to the World Cup until 1950.<ref>{{cite web |url=https://www.rsssf.org/tablesc/chil-intres.html |title=Mexico – International Results |last=Lugo |first=Erik Francisco |website=[[RSSSF]] |accessdate=20 January 2023}}</ref>
+
+==See also==
+*[[Argentina at the FIFA World Cup]]
+*[[Chile at the FIFA World Cup]]
+*[[France at the FIFA World Cup]]
+*[[Mexico at the FIFA World Cup]]
+
+==Notes==
+{{reflist|group=nb}}
+
+==References==
+{{reflist}}
+
+;Bibliography
+*{{Cite book |last=Crouch |first=Terry |url=https://archive.org/details/worldcupcomplete0000crou_f0z0 |title=The World Cup: The Complete History |date=2002 |publisher=Aurum |isbn=1-85410-843-3 |location=London |oclc=48930580 |url-access=registration }}
+*{{cite book |title=The Official History of the FIFA World Cup |author=FIFA World Football Museum |publisher=Carlton Books |year=2017 |location=London |isbn=9781787390188 |ref={{harvid|FIFA|2017}}}}
+*{{cite book |last=Freddi |first=Cris |title=Complete Book of the World Cup 2006 |publisher=HarperCollins |location=London |year=2002 |isbn=0-00-722916-X }}
+*{{cite book |last=Glanville |first=Brian |title=The Story of the World Cup |publisher=Faber and Faber |location=London |year=2005 |isbn=0-571-22944-1 }}
+*{{cite book |title=A history of the World Cup: 1930–2006 |first=Clemente Angelo |last=Lisi |location=Lanham, Maryland |publisher=Scarecrow Press |year=2007 |isbn=978-0-8108-5905-0 }}
+
+{{1930 FIFA World Cup}}
+
+{{DEFAULTSORT:World Cup}}
+[[Category:1930 FIFA World Cup|Group 1]]
+[[Category:Argentina at the 1930 FIFA World Cup|Group]]
+[[Category:France at the 1930 FIFA World Cup|Group]]
+[[Category:Chile at the 1930 FIFA World Cup|Group]]
+[[Category:Mexico at the 1930 FIFA World Cup|Group]]

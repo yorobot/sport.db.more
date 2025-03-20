@@ -1,0 +1,1124 @@
+{{Short description|State of association football tournament}}
+{{good article}}
+{{Use dmy dates|date=March 2022}}
+Group B of the [[2022 FIFA World Cup]] took place from 21 to 29 November 2022. The group consisted of national [[association football]] teams from [[England national football team|England]], [[Iran national football team|Iran]], the [[United States men's national soccer team|United States]] and [[Wales national football team|Wales]]. Both England and the United States progressed to the round of 16 undefeated. England won the group, winning two games and drawing the other, while the United States won one game and drew the other two. Iran finished the group third, having won a game, with Wales finishing fourth with a single point.
+
+Initially noted for unusually containing four teams all ranked in the top 20 at the time of the tournament, as well as two teams within the same sovereign state and other geopolitical conflicts, various incidents relating to Qatar's ban on [[LGBTQ+]] symbols affected the games on the first match day.
+
+==Teams==
+The teams were decided by the [[2022 FIFA World Cup seeding|World Cup draw]] that took place on 1 April 2022.<ref name=draw>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/qatar-2022-all-qualified-teams-groups-dates-match-schedule-tickets-more |publisher=FIFA |title=Qatar 2022 all qualified teams, groups and match schedule}}</ref> The group was set to receive one team from each pot, which sorted all World Cup teams by position on the [[FIFA Men's World Ranking|FIFA World Rankings]].<ref name=draw/><ref name=format/> The first team drawn was [[England national football team|England]], which secured qualification as a pot one team by winning [[2022 FIFA World Cup qualification – UEFA Group I|Group I of UEFA qualification]].<ref>{{Cite web |url=https://www.uefa.com/european-qualifiers/standings/ |title=European Qualifiers – Standings |publisher=UEFA}}</ref> The second pot team, the [[United States men's national soccer team|United States]], qualified by finishing third in [[2022 FIFA World Cup qualification – CONCACAF third round|CONCACAF qualification]].<ref>{{Cite web |url=https://www.concacaf.com/en/world-cup-qualifying-men/schedule-results-world-cup-qualifying-men/ |title=Schedule & Results |date=9 March 2021 |website=Concacaf}}</ref> The third team was [[Iran national football team|Iran]], which won [[2022 FIFA World Cup qualification – AFC third round#Group A|Group A of the AFC third round]].<ref>{{Cite web |url=https://www.the-afc.com/en/national/asian_qualifiers/asian_qualifiers_fixtures__standings_r3.html |title=AFC Asian Qualifiers – Road to Qatar Fixtures & Standings |website=the-AFC}}</ref> The final team was not known at the time of the draw, as it was the [[2022 FIFA World Cup qualification – UEFA second round#Path A|UEFA second round Path A]] winner.  [[Wales national football team|Wales]] defeated  [[Ukraine national football team|Ukraine]] 1–0 to qualify for this position.<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/match-centre/competition/520?tab=competitionMatches&prev=competition&date=2022-06-05 |title=UEFA Qualifiers |publisher=FIFA}}</ref>
+
+Group B was widely described as the "[[group of death]]" before the tournament.<ref>{{Cite web |last=Rayson |first=Zac |url=https://www.foxsports.com.au/football/world-cup/2022-world-cup-draw-analysis-group-of-death-socceroos-england-qualifying-hardest-group-scores-fixtures-details/news-story/9607f5bd6bf1ef874f09ec776f917ecb |title=Socceroos eye 'revenge' for 2018; shock 'Group of Death': World Cup draw analysed |date=1 April 2022 |website=Fox Sports (Australia) |agency=Agence France-Presse}}</ref> It had the highest average FIFA ranking of any group,<ref>{{Cite web |first=Rod |last=Liddle |title=World Cup draw: There's no 'group of death', but I'm excited about England in the group of fervent political hatred |url=https://www.thetimes.co.uk/article/world-cup-draw-theres-no-group-of-death-but-im-excited-about-england-in-the-group-of-fervent-political-hatred-5sjzl0bkr |work=The Sunday Times |date=3 April 2022 |url-access=subscription}}</ref> and controversy given the political hostility between [[Iran–United Kingdom relations|Iran and the United Kingdom]], and between [[Iran–United States relations|Iran and the United States]].<ref>{{Cite web |url=https://theathletic.com/3364622/2022/06/14/2022-world-cup-group-analysis/ |title=Which World Cup group is the hardest? |first=Luke |last=Bosher |website=The Athletic |date=14 June 2022 |url-access=subscription}}</ref><ref>{{Cite magazine |url=https://www.si.com/soccer/2022/06/07/usmnt-world-cup-group-wales-england-iran-qatar |title=Just How Difficult Is the USMNT's World Cup Group? |first=Avi |last=Creditor |magazine=Sports Illustrated |date=7 June 2022}}</ref><ref>{{Cite web |url=https://theathletic.com/3350376/2022/06/05/wales-usmnt-england-world-cup/ |title=So, who are Wales? Introducing the team joining the U.S., England and Iran in Group B |first=Jacob |last=Whitehead |website=The Athletic |date=5 June 2022 |url-access=subscription}}</ref>
+
+{| class="wikitable sortable"
+|-
+|+FIFA World Cup Group B draw<ref>{{Cite web |url=https://www.sportingnews.com/us/soccer/news/world-cup-2022-group-b-draw-teams-schedule-fixtures-times/acptybvjxmt2t8vvxqaiojan |title=World Cup 2022 Group B: Match schedule, fixtures, times and dates for England, USA, Iran, Wales in Qatar |website=sportingnews.com|date=29 March 2022 }}</ref>
+!rowspan=2| Draw position
+!rowspan=2| Team<ref>{{Cite web |title=World Cup 2022 Group B: Match schedule, fixtures, times and dates for England, USA, Iran, Wales in Qatar |url=https://www.sportingnews.com/us/soccer/news/world-cup-2022-group-b-draw-teams-schedule-fixtures-times/acptybvjxmt2t8vvxqaiojan |access-date=2022-11-04 |website=sportingnews.com |date=29 March 2022 }}</ref>
+!rowspan=2| Pot
+!rowspan=2| Confederation
+!rowspan=2| Method of<br />qualification
+!rowspan=2| Date of<br />qualification
+!rowspan=2 data-sort-type="number"| Finals<br />appearance
+!rowspan=2| Last<br />appearance
+!rowspan=2| Previous best<br />performance
+!colspan=2| [[FIFA Men's World Ranking|FIFA Rankings]]<ref>{{cite web |url=https://www.fifa.com/fifa-world-ranking/men |title=Men's Ranking |publisher=[[FIFA]] |access-date=21 November 2022}}</ref>
+|-
+! March 2022{{refn|group=nb|The rankings of March 2022 were used for [[2022 FIFA World Cup seeding|seeding for the final draw]].}}
+! October 2022
+|-
+| B1 || style=white-space:nowrap |{{#invoke:flagg|main|unpe|avar=fb|ENG}} || 1 || [[UEFA]] || [[2022 FIFA World Cup qualification – UEFA Group I|UEFA Group I]] winners || 15 November 2021 || 16th || [[2018 FIFA World Cup|2018]] || data-sort-value="8.1" | '''Winners''' ([[1966 FIFA World Cup|1966]]) || 5 || 5
+|-
+| B2 || style=white-space:nowrap |{{#invoke:flagg|main|unpe|avar=fb|IRN}} || 3 || [[Asian Football Confederation|AFC]] || [[2022 FIFA World Cup qualification – AFC third round#Group A|AFC third round Group A]] winners || 27 January 2022 || 6th || [[2018 FIFA World Cup|2018]] || data-sort-value="2.5" | Group stage ([[1978 FIFA World Cup|1978]], [[1998 FIFA World Cup|1998]], [[2006 FIFA World Cup|2006]], [[2014 FIFA World Cup|2014]], [[2018 FIFA World Cup|2018]]) || 21 || 20
+|-
+| B3 || style=white-space:nowrap |{{#invoke:flagg|main|unpe|avar=fb|USA}} || 2 || [[CONCACAF]] || [[2022 FIFA World Cup qualification – CONCACAF third round|CONCACAF third round]] third place || 30 March 2022 || 11th || [[2014 FIFA World Cup|2014]] || data-sort-value="6.1" | Third place ([[1930 FIFA World Cup|1930]]) || 15 || 16
+|-
+| B4 || style=white-space:nowrap |{{#invoke:flagg|main|unpe|avar=fb|WAL}} || 4{{refn|group=nb|name=Placeholder|As the identity of the [[2022 FIFA World Cup qualification – UEFA second round#Path A|UEFA second round Path A]] winners was not known at the time of the final draw, positions in the FIFA Rankings were not taken into account, and the placeholder in the draw was automatically seeded into pot 4.<ref name=format>{{cite web |url=https://www.fifa.com/tournaments/mens/worldcup/qatar2022/media-releases/procedures-for-the-final-draw-for-the-fifa-world-cup-qatar-2022-tm-released |title=Procedures for the Final Draw for the FIFA World Cup Qatar 2022 released |publisher=[[FIFA]] |date=22 March 2022 |access-date=22 March 2022}}</ref>}} || [[UEFA]] || [[2022 FIFA World Cup qualification – UEFA second round#Path A|UEFA second round Path A]] winners || 5 June 2022 || 2nd || [[1958 FIFA World Cup|1958]] || data-sort-value="4.1" | Quarter-finals ([[1958 FIFA World Cup|1958]]) || 18{{refn|group=nb|name=Placeholder}} || 19
+|}
+'''Notes'''
+{{reflist|group=nb}}
+
+==LGBT symbol incidents==
+{{see also|LGBT issues at the 2022 FIFA World Cup}}
+
+===Captains' armbands===
+[[File:دیدار تیم‌های فوتبال ایران و انگلیس- جام جهانی ۲۰۲۲ (19).jpg|thumb|alt=See caption.|Harry Kane in England's first match, wearing a FIFA "No discrimination" armband]]
+England captain [[Harry Kane]], Wales captain [[Gareth Bale]], and several other European captains intended to wear [[OneLove]] [[Rainbow flag (LGBT)|rainbow armbands]] promoting acceptance and diversity during the World Cup; shortly before England's opening match (the first match to feature one of these nations), however, [[FIFA]] announced that players wearing these armbands would face "unlimited" sanctions, with a [[Penalty card#Association football|yellow card]] given at minimum.<ref>{{cite news |title=World Cup 2022: Why are people talking about the OneLove armband |website=CBBC Newsround |url=https://www.bbc.co.uk/newsround/63702853 |access-date=2022-11-24}}</ref><ref name=Wembley/> The affected [[football association]]s said they would not put their players in this position, criticising FIFA for the ruling.<ref name=":1">{{Cite web |last=Collings |first=Simon |date=2022-11-21 |title=Alex Scott wears OneLove armband during BBC coverage of England vs Iran |url=https://www.standard.co.uk/sport/football/alex-scott-one-love-armband-bbc-england-iran-world-cup-2022-b1041448.html |access-date=2022-11-21 |website=Evening Standard}}</ref><ref name=":2">{{Cite news |last=Rumsby |first=Ben |date=2022-11-21 |title=BBC's Alex Scott wears OneLove armband after Kane and England bow to Fifa pressure |work=The Telegraph |url=https://www.telegraph.co.uk/world-cup/2022/11/21/bbc-pundit-alex-scott-wears-onelove-armband-england-u-turn/ |access-date=2022-11-21 |issn=0307-1235}}</ref><ref>{{Cite web |title=World Cup news – latest: Anger at iPlayer issues; 'tickets disappear from phones' in Qatar; Welsh fans have rainbow bucket hats removed |url=https://news.sky.com/story/world-cup-news-latest-england-face-armband-dilemma-amid-instant-yellow-card-fears-as-bbc-prompts-storm-with-qatar-opening-ceremony-decision-12752191 |access-date=2022-11-22 |publisher=Sky News }}</ref> A spokesperson for [[Rishi Sunak]], the [[Prime Minister of the United Kingdom|British Prime Minister]], also criticised FIFA for introducing player punishment for the armbands.<ref>{{Cite news |date=2022-11-21 |title=WM 2022: Fifa verbietet nach "One Love"-Binde auch belgische Trikots |language=de |work=DIE WELT |url=https://www.welt.de/sport/fussball/article242242459/WM-2022-Fifa-verbietet-nach-One-Love-Binde-auch-belgische-Trikots.html |access-date=2022-11-22}}</ref> After the first United States match, and though the US had not been intending to wear the armband, [[Antony Blinken]], the [[United States Secretary of State]], described the ban as "concerning".<ref>{{Cite web |last1=Reals |first1=Tucker |last2=Williams |first2=Holly |date=22 November 2022 |title=Blinken calls FIFA's "One Love" armband ban "concerning" as LGBTQ soccer fans lament "tarnished" World Cup |url=https://www.cbsnews.com/news/2022-world-cup-fifa-qatar-lgbtq-armband-blinken-freedom-expression/ |access-date=2022-11-22 |publisher=CBS}}</ref>
+
+At the England–Iran match, [[BBC]] pundit and former [[England women's national football team|England women's team]] captain [[Alex Scott (footballer, born 1984)|Alex Scott]] chose to wear a OneLove armband while being interviewed pitchside ahead of the match, a move that was praised on social media.<ref name=":1" /><ref name=":2" /> At the United States–Wales match, though she did not appear on screen, German [[ZDF]] broadcaster Claudia Neumann wore a rainbow armband and [[Pride flag|Pride]] shirt, later telling the [[Sport-Informations-Dienst]] that she wanted to set an example, lamenting that the captains would not be able to wear the armbands.<ref>{{Cite web |date=22 November 2022 |title=German World Cup commentator wears rainbow in broadcast |url=https://www.dw.com/en/german-world-cup-commentator-wears-rainbow-in-broadcast/a-63836494 |access-date=2022-11-22 |publisher=Deutsche Welle}}</ref> England would change their armband to one that simply read "no discrimination".<ref>{{Cite web|url=https://www.skysports.com/football/news/11095/12752273/england-three-lions-among-seven-countries-to-confirm-they-will-not-wear-onelove-armband-in-qatar|title=England: Three Lions among seven countries to confirm they will not wear OneLove armband in Qatar|website=Sky Sports}}</ref> During England's second match, the [[Wembley Stadium]] arch, iconic of the team's home stadium, was lit up in rainbow colours.<ref name=Wembley>{{cite news |title=Unlimited sanctions threat on OneLove armband – FA |work=BBC Sport |url=https://www.bbc.com/sport/football/63763638 |access-date=2022-11-27}}</ref>
+
+===Other Pride items===
+Many Wales fans in attendance at their first match as part of the nation's official [[LGBTQ+]] supporters group wore the group's rainbow [[Wales bucket hat]]s. Women who had these hats, including former [[Wales women's national football team|women's team]] captain [[Laura McAllister]], were prohibited from entering the stadium with them; McAllister reported that the security officials told her it was "a banned symbol".<ref>{{Cite web |date=2022-11-21 |title=Wales fans have rainbow-coloured hats confiscated before USA game in Qatar |url=https://www.theguardian.com/football/2022/nov/21/wales-fans-have-rainbow-coloured-hats-confiscated-before-usa-game-in-qatar |access-date=2022-11-22 |website=The Guardian }}</ref> At the same match, American journalist [[Grant Wahl]] was reportedly detained for 25 minutes when attempting to enter the stadium wearing a Pride shirt, being told it was "political" and being asked if he was British; he said that FIFA later apologised to him and security allowed him to enter with the shirt.<ref>{{Cite web |date=2022-11-21 |title=US journalist Grant Wahl says he was detained in Qatar for rainbow shirt |url=https://www.theguardian.com/football/2022/nov/21/us-journalist-grant-wahl-says-he-was-detained-in-qatar-for-rainbow-shirt |access-date=2022-11-22 |website=The Guardian }}</ref>
+
+After the match, the [[Football Association of Wales]] confronted FIFA about the confiscation of the bucket hats, and FIFA entered talks with the Qatari Supreme Committee to discuss Qatar's commitment to make all fans welcome at the World Cup, also citing an incident of an American fan with a rainbow flag being harassed.<ref>{{Cite web |date=2022-11-22 |title=Fifa and Qatar in urgent talks after Wales rainbow hats confiscated |url=https://www.theguardian.com/football/2022/nov/22/fifa-qatar-talks-wales-rainbow-hats-confiscated-world-cup |access-date=2022-11-22 |website=The Guardian }}</ref>
+
+==Standings==
+{{2022 FIFA World Cup group tables|Group B}}
+
+In the [[2022 FIFA World Cup knockout stage#Round of 16|round of 16]]:
+* The winners of Group B, England, advanced to play the runners-up of [[2022 FIFA World Cup Group A|Group A]], [[Senegal national football team|Senegal]].
+* The runners-up of Group B, the United States, advanced to play the winners of [[2022 FIFA World Cup Group A|Group A]], the [[Netherlands national football team|Netherlands]].
+
+==Matches==
+Matches took place between 21 and 29 November 2022.<ref name="match schedule">{{cite web |url=https://digitalhub.fifa.com/m/464f16f856f5ed05/original/FIFA-World-Cup-Qatar-2022-Match-Schedule.pdf |title=FIFA World Cup Qatar 2022 – Match Schedule |publisher=FIFA |date=11 August 2022 |access-date=11 August 2022}}</ref> All times listed are local, [[UTC+03:00#Arabia Standard Time|AST]] ([[UTC+03:00|UTC+3]]).<ref name="match schedule"/>
+
+===England vs Iran===
+The opening match of Group B was contested between England and Iran.<ref>{{Cite web |url=https://www.skysports.com/football/news/12098/12752185/england-vs-iran-harry-maguire-to-start-in-world-cup-opener-as-gareth-southgate-set-to-play-4-3-3 |title=England vs Iran: Harry Maguire to start in World Cup opener as Gareth Southgate set to play 4–3–3 |website=Sky Sports}}</ref> The two sides had never played each other in a competitive match.<ref>{{Cite web |url=https://theathletic.com/live-blogs/england-iran-score-world-cup-2022/EyRR2LILf2AV/ |title=England vs Iran live updates |website=The Athletic|date=21 November 2022 }}</ref> Many England supporters missed the start of the match due to problems with FIFA's ticketing app.<ref>{{cite web |url=https://www.bbc.com/sport/football/63704491 |title=World Cup 2022: Ticketing app issues mean hundreds of fans miss start of England v Iran |access-date=2022-11-22 |date=2022-11-21  |website=BBC Sport}}</ref> In defiance of their government, the Iranian team refused to sing their [[National Anthem of the Islamic Republic of Iran|national anthem]] ahead of the match, a sign of support for the [[Mahsa Amini protests]] in their own country.<ref>{{Cite news |title=Iran players decline to sing national anthem |work=BBC Sport |url=https://www.bbc.com/sport/football/63706487 |access-date=2022-11-21}}</ref> Many Iranian women, some of them bearing protest signs, were in attendance at the match, a gesture which by itself was considered an act of protest as women are barred from football matches in Iran.<ref>{{cite web |last=Lim |first=Clarissa-Jan |title=Iranian Soccer Players And Fans Protested At The World Cup In Solidarity With Anti-Government Demonstrations Back Home |url=https://www.buzzfeednews.com/article/clarissajanlim/iran-world-cup-players-fans-protests |access-date=2022-11-22 |website=BuzzFeed News|date=22 November 2022 }}</ref>
+
+The match was delayed for seven minutes in the first half after head to head collision between the Iranian goalkeeper [[Alireza Beiranvand]] and defender [[Majid Hosseini]].<ref>{{cite news |last1=McNulty |first1=Phil |title=England 6–2 Iran: England's Fifa World Cup campaign opened in thoroughly convincing fashion as they outclassed Iran in an incident-packed match in Doha |work=BBC Sport |url=https://www.bbc.com/sport/football/63603382 |access-date=21 November 2022}}</ref> Beiranvand initially seemed to be convinced to continue playing by Iran captain [[Ehsan Hajsafi]] despite appearing to be dazed and taking his gloves and shirt off after he received treatment, drawing criticism from the brain injury charity Headway.<ref>{{Cite web |date=2022-11-21 |title='Utter disgrace': Iran goalkeeper allowed to play on at World Cup after head clash |url=https://www.theguardian.com/football/2022/nov/21/iran-goalkeeper-head-clash-headway-world-cup |access-date=2022-11-22 |website=The Guardian }}</ref> After collapsing on the field minutes later, Beiranvand was substituted for [[Hossein Hosseini (footballer, born 1992)|Hossein Hosseini]].<ref>{{Cite web |url=https://www.standard.co.uk/sport/football/england-iran-goalkeeper-head-injury-alireza-beiranvand-world-cup-2022-b1041468.html |title='An utter disgrace': Iran goalkeeper plays on despite bad head injury |first=Nizaar |last=Kinsella |date=21 November 2022 |website=Evening Standard}}</ref> England scored three first-half goals: [[Jude Bellingham]] opened with his first ever senior England goal in the 35th minute (becoming the first player born in the [[21st century]] to score a goal in a World Cup), with [[Bukayo Saka]] (in the 43rd minute) and [[Raheem Sterling]] (in the first minute of stoppage time) being the other contributors to the scoreline up to this point.<ref name="auto">{{Cite web |url=https://www.theguardian.com/football/live/2022/nov/21/england-v-iran-world-cup-2022-live-score-updates |title=England 6–2 Iran: World Cup 2022 – as it happened |date=21 November 2022 |website=The Guardian |page=2}}</ref>
+
+In the second half, England's Saka scored his second of the game in the 62nd minute, before Iran's [[Mehdi Taremi]] scored with their first shot on target.<ref name="auto" /> England defender [[Harry Maguire]] was then removed from play after also suffering a head injury.<ref>{{Cite web |date=2022-11-21 |title=England open World Cup in style with Bukayo Saka double in 6–2 rout of Iran |url=https://www.theguardian.com/football/2022/nov/21/england-iran-world-cup-group-b-match-report |access-date=2022-11-21 |website=The Guardian }}</ref> Substitute [[Marcus Rashford]], who had been introduced a minute before, scored England's fifth goal with his third touch of the game.<ref name="auto" /> Shortly into stoppage time, [[Jack Grealish]] scored England's sixth goal.<ref>{{Cite web |url=https://www.theguardian.com/football/live/2022/nov/21/england-v-iran-world-cup-2022-live-score-updates |title=England 6–2 Iran: World Cup 2022 – as it happened |date=21 November 2022 |website=The Guardian |page=1}}</ref> The final goal, a contentious penalty kick for Iran, was scored two-and-a-half minutes after the final whistle, awarded only after a review of a late-occurring foul was suggested by the [[Video assistant referee|VAR]]. Taremi converted from the penalty kick with the final score being 6–2.<ref>{{cite journal |url=https://www.rte.ie/sport/world-cup-2022/2022/1121/1337360-world-cup-2022-england-v-iran-updates/ |title=World Cup 2022: England 6–2 Iran recap |first=Rob |last=Wright |date=21 November 2022 |website=RTE Sport}}</ref>
+
+The [[Mass media in Iran|Iranian media]] blamed the "humiliating" loss on the protests in their country affecting their players' mindset, additionally claiming that the United States and its allies, including the United Kingdom, had manufactured the protests to disrupt Iran; though these nations comprise all of Iran's group stage competition, the line of blame is common due to longstanding political tensions.<ref>{{Cite web |title=Iran media blames humiliating World Cup loss on protests |date=22 November 2022 |url=https://news.yahoo.com/iran-media-blames-humiliating-world-105809238.html |access-date=2022-11-22 |publisher=Yahoo! News }}</ref> Iran manager Queiroz had supported protests by players prior to the tournament,<ref>[https://edition.cnn.com/2022/11/16/football/iran-soccer-world-cup-qatar-protest-spt-intl/index.html Iranian men's soccer manager Carlos Queiroz says players can protest at World Cup within FIFA regulations]</ref> then said that such protests were "not welcomed" following the loss.<ref>[https://www.eurosport.com/football/world-cup/2022/carlos-queiroz-critical-over-politicising-of-iran-team-at-2022-world-cup-after-england-defeat_sto9238674/story.shtml Carlos Queiroz critical over politicising of Iran team at 2022 World Cup after England defeat]</ref>
+
+<section begin=B1 />{{Football box
+|date       = {{Start date|2022|11|21|df=y}}
+|time       = 16:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|ENG}}
+|score      = {{score link|2022 FIFA World Cup Group B#England vs Iran|6–2}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|IRN}}
+|goals1     =
+*[[Jude Bellingham|Bellingham]] {{goal|35}}
+*[[Bukayo Saka|Saka]] {{goal|43||62}}
+*[[Raheem Sterling|Sterling]] {{goal|45+1}}
+*[[Marcus Rashford|Rashford]] {{goal|71}}
+*[[Jack Grealish|Grealish]] {{goal|90}}
+|goals2     =
+*[[Mehdi Taremi|Taremi]] {{goal|65||90+13|pen.}}
+|stadium    = [[Khalifa International Stadium]], [[Al Rayyan (city)|Al Rayyan]]
+|attendance = 45,334
+|referee    = [[Raphael Claus]] ([[Brazilian Football Confederation|Brazil]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235458
+}}<section end=B1 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _eng22h
+ |pattern_b  = _eng22H
+ |pattern_ra = _eng22h
+ |pattern_sh = _eng22h
+ |pattern_so = _eng22h
+ |leftarm    = FFFFFF
+ |body       = FFFFFF
+ |rightarm   = FFFFFF
+ |shorts     = 000066
+ |socks      = FFFFFF
+ |title      = England
+}}
+|{{Football kit
+ |pattern_la = _irn22a
+ |pattern_b  = _irn22A
+ |pattern_ra = _irn22a
+ |pattern_sh =
+ |pattern_so =
+ |leftarm    = FF0000
+ |body       = FF0000
+ |rightarm   = FF0000
+ |shorts     = FF0000
+ |socks      = FF0000
+ |title      = Iran
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Jordan Pickford]]
+|-
+|RB ||'''12'''||[[Kieran Trippier]]
+|-
+|CB ||'''5''' ||[[John Stones]]
+|-
+|CB ||'''6''' ||[[Harry Maguire]] || || {{suboff|70}}
+|-
+|LB ||'''3''' ||[[Luke Shaw]]
+|-
+|CM ||'''22'''||[[Jude Bellingham]]
+|-
+|CM ||'''4''' ||[[Declan Rice]]
+|-
+|RW ||'''17'''||[[Bukayo Saka]] || || {{suboff|70}}
+|-
+|AM ||'''19'''||[[Mason Mount]] || || {{suboff|70}}
+|-
+|LW ||'''10'''||[[Raheem Sterling]] || || {{suboff|70}}
+|-
+|CF ||'''9''' ||[[Harry Kane]] ([[Captain (association football)|c]]) || || {{suboff|75}}
+|-
+|colspan=3|'''Substitutions:'''{{refn|group=note|name=concussions}}
+|-
+|DF ||'''15'''||[[Eric Dier]] || || {{subon|70}}
+|-
+|FW ||'''11'''||[[Marcus Rashford]] || || {{subon|70}}
+|-
+|MF ||'''20'''||[[Phil Foden]] || || {{subon|70}}
+|-
+|FW ||'''7''' ||[[Jack Grealish]] || || {{subon|70}}
+|-
+|FW ||'''24'''||[[Callum Wilson]] || || {{subon|75}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Gareth Southgate]]
+|}
+|valign="top"|[[File:ENG-IRN 2022-11-21.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Alireza Beiranvand]] || || {{suboff|20}}
+|-
+|CB ||'''8''' ||[[Morteza Pouraliganji]] || {{yel|48}}
+|-
+|CB ||'''15'''||[[Rouzbeh Cheshmi]] || || {{suboff|46}}
+|-
+|CB ||'''19'''||[[Majid Hosseini]]
+|-
+|RWB||'''2''' ||[[Sadegh Moharrami]]
+|-
+|LWB||'''5''' ||[[Milad Mohammadi]] || || {{suboff|63}}
+|-
+|RM ||'''7''' ||[[Alireza Jahanbakhsh]] || {{yel|25}} || {{suboff|46}}
+|-
+|CM ||'''21'''||[[Ahmad Nourollahi]] || || {{suboff|77}}
+|-
+|CM ||'''18'''||[[Ali Karimi (footballer, born 1994)|Ali Karimi]] || || {{suboff|46}}
+|-
+|LM ||'''3''' ||[[Ehsan Hajsafi]] ([[Captain (association football)|c]])
+|-
+|CF ||'''9''' ||[[Mehdi Taremi]]
+|-
+|colspan=3|'''Substitutions:'''{{refn|group=note|name=concussions|Due to the concussion protocol, both teams were allowed up to six substitutions (rather than five) during the match.<ref>{{Cite web|url=https://www.usatoday.com/story/sports/soccer/worldcup/2022/11/21/fifa-concussion-protocol-explained-2022-world-cup/10748644002/|title=What is FIFA concussion protocol for World Cup 2022?|website=USA TODAY}}</ref>}}
+|-
+|GK ||'''24'''||[[Hossein Hosseini (footballer, born 1992)|Hossein Hosseini]] || || {{subon|20}}
+|-
+|MF ||'''6''' ||[[Saeid Ezatolahi]] || || {{subon|46}}
+|-
+|DF ||'''13'''||[[Hossein Kanaanizadegan]] || || {{subon|46}}
+|-
+|MF ||'''17'''||[[Ali Gholizadeh]] || || {{subon|46}}
+|-
+|MF ||'''16'''||[[Mehdi Torabi]] || || {{subon|63}}
+|-
+|FW ||'''20'''||[[Sardar Azmoun]] || || {{subon|77}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|{{#invoke:flag|icon|POR}} [[Carlos Queiroz]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Bukayo Saka]] (England)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/world-cup-qatar-2022-england-v-iran-group-b-first-game-result-match-review |title=England lay down gauntlet by thrashing IR Iran in World Cup opener |publisher=[[FIFA]] |date=21 November 2022 |access-date=21 November 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Rodrigo Figueiredo ([[Brazilian Football Confederation|Brazil]])
+<br />Danilo Simon Manis ([[Brazilian Football Confederation|Brazil]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[Kevin Ortega]] ([[Peruvian Football Federation|Peru]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Michael Orué ([[Peruvian Football Federation|Peru]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Leodán González]] ([[Uruguayan Football Association|Uruguay]])
+<br />'''[[Video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Julio Bascuñán]] ([[Football Federation of Chile|Chile]])
+<br /> Martin Soppi ([[Uruguayan Football Association|Uruguay]])
+<br />[[Juan Martínez Munuera]] ([[Royal Spanish Football Federation|Spain]])
+<br />'''[[Video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Juan Pablo Belatti ([[Argentine Football Association|Argentina]])
+|}
+
+===United States vs Wales===
+The teams had met twice previously, both in friendly matches: the United States won 2–0 in 2003 and the two teams drew 0–0 in 2020.<ref>{{cite web |title=Wales national football team: record v USA |url=https://www.11v11.com/teams/wales/tab/opposingTeams/opposition/usa/ |website=11v11.com |access-date=6 June 2022}}</ref> The game was broadcast on [[ITV (TV network)|ITV]] in the United Kingdom, with the network announcing during the broadcast that its technical director, Roger Pearce, had died in Qatar.<ref>{{cite news |date=21 November 2022|title=ITV Sport's technical director dies while covering World Cup in Qatar |url=https://www.independent.co.uk/news/uk/qatar-twitter-tvs-b2230063.html |access-date=22 November 2022 |work=The Independent }}</ref>
+
+The United States scored the opening goal in the 32nd minute when [[Timothy Weah]] scored after a pass over the top by [[Christian Pulisic]] (and becoming the second player born in the [[21st century]] to score a goal in a World Cup, hours after England's [[Jude Bellingham]]).<ref>{{Cite web |title=USMNT vs Wales live updates |last=Athletic |first=The |work=The Athletic |date=21 November 2022 |access-date=22 November 2022 |url=https://theathletic.com/live-blogs/usmnt-wales-score-world-cup-2022/Kw3TljXXWffv/}}</ref> The United States had the better of the chances in the first half, but in the second half Wales improved, particularly after introducing substitute [[Kieffer Moore]].<ref name="auto1">{{Cite web |url=https://www.espn.co.uk/football/report/_/gameId/633787 |title=United States vs. Wales – Football Match Report – November 21, 2022 – ESPN |publisher=ESPN}}</ref> In the second period, Wales had a chance to equalize through [[Ben Davies (footballer, born 1993)|Ben Davies]], but his header was saved. Wales would nonetheless eventually manage to score their first World Cup goal in 64 years after Bale was fouled in the box by [[Walker Zimmerman]] and scored the resulting [[penalty kick]] himself. After over nine minutes of stoppage time,<ref>{{Cite web |date=21 November 2022 |title=USA 1–1 Wales: World Cup 2022 – as it happened |url=https://www.theguardian.com/football/live/2022/nov/21/usa-v-wales-world-cup-2022-live-score-updates |access-date=22 November 2022 |work=The Guardian }}</ref> the match finished 1–1, with the United States picking up four yellow cards, the most they had received in a World Cup game since their [[2002 FIFA World Cup|2002]] quarter-final against [[Germany national football team|Germany]].<ref name="auto1" />
+
+<section begin=B2 />{{Football box
+|date       = {{Start date|2022|11|21|df=y}}
+|time       = 22:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|USA}}
+|score      = {{score link|2022 FIFA World Cup Group B#United States vs Wales|1–1}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|WAL}}
+|goals1     =
+*[[Timothy Weah|Weah]] {{goal|36}}
+|goals2     =
+*[[Gareth Bale|Bale]] {{goal|82|pen.}}
+|stadium    = [[Ahmad bin Ali Stadium]], [[Al Rayyan (city)|Al Rayyan]]
+|attendance = 43,418
+|referee    = [[Abdulrahman Al-Jassim]] ([[Qatar Football Association|Qatar]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235455
+}}<section end=B2 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _usa22H
+ |pattern_b  = _usa22h
+ |pattern_ra = _usa22H
+ |pattern_sh = _usa22h
+ |pattern_so = _usa22h2
+ |leftarm    = FFFFFF
+ |body       = FFFFFF
+ |rightarm   = FFFFFF
+ |shorts     = FFFFFF
+ |socks      = FFFFFF
+ |title      = <span class="nowrap">United States</span>
+}}
+|{{Football kit
+ |pattern_la = _wal22h
+ |pattern_b  = _wal22H
+ |pattern_ra = _wal22h
+ |pattern_sh = _wal22a
+ |pattern_so = _3_stripes_white
+ |leftarm    = FF0000
+ |body       = FF0000
+ |rightarm   = FF0000
+ |shorts     = FF0000
+ |socks      = FF0000
+ |title      = Wales
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Matt Turner (soccer)|Matt Turner]]
+|-
+|RB ||'''2''' ||[[Sergiño Dest]] || {{yel|11}} || {{suboff|74}}
+|-
+|CB ||'''3''' ||[[Walker Zimmerman]]
+|-
+|CB ||'''13'''||[[Tim Ream]] || {{yel|51}}
+|-
+|LB ||'''5''' ||[[Antonee Robinson]]
+|-
+|DM ||'''4''' ||[[Tyler Adams]] ([[Captain (association football)|c]])
+|-
+|CM ||'''8''' ||[[Weston McKennie]] || {{yel|13}} || {{suboff|66}}
+|-
+|CM ||'''6''' ||[[Yunus Musah]] || || {{suboff|75}}
+|-
+|RF ||'''21'''||[[Timothy Weah]] || || {{suboff|88}}
+|-
+|CF ||'''24'''||[[Josh Sargent]] || || {{suboff|74}}
+|-
+|LF ||'''10'''||[[Christian Pulisic]]
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|FW ||'''11'''||[[Brenden Aaronson]] || || {{subon|66}}
+|-
+|FW ||'''19'''||[[Haji Wright]] || || {{subon|74}}
+|-
+|DF ||'''22'''||[[DeAndre Yedlin]] || || {{subon|74}}
+|-
+|MF ||'''23'''||[[Kellyn Acosta]] || {{yel|90+10}} || {{subon|75}}
+|-
+|FW ||'''16'''||[[Jordan Morris]] || || {{subon|88}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Gregg Berhalter]]
+|}
+|valign="top"|[[File:USA-WAL 2022-11-21.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Wayne Hennessey]]
+|-
+|CB ||'''5''' ||[[Chris Mepham]] || {{yel|45+2}}
+|-
+|CB ||'''6''' ||[[Joe Rodon]]
+|-
+|CB ||'''4''' ||[[Ben Davies (footballer, born 1993)|Ben Davies]]
+|-
+|DM ||'''15'''||[[Ethan Ampadu]] || || {{suboff|90+5}}
+|-
+|CM ||'''10'''||[[Aaron Ramsey]]
+|-
+|CM ||'''8''' ||[[Harry Wilson (footballer, born 1997)|Harry Wilson]] || || {{suboff|90+3}}
+|-
+|RW ||'''14'''||[[Connor Roberts (footballer, born 1995)|Connor Roberts]]
+|-
+|LW ||'''3''' ||[[Neco Williams]] || || {{suboff|79}}
+|-
+|CF ||'''11'''||[[Gareth Bale]] ([[Captain (association football)|c]]) || {{yel|40}}
+|-
+|CF ||'''20'''||[[Daniel James (footballer)|Daniel James]] || || {{suboff|46}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|FW ||'''13'''||[[Kieffer Moore]] || || {{subon|46}}
+|-
+|FW ||'''9''' ||[[Brennan Johnson]] || || {{subon|79}}
+|-
+|MF ||'''22'''||[[Sorba Thomas]] || || {{subon|90+3}}
+|-
+|MF ||'''16'''||[[Joe Morrell]] || || {{subon|90+5}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Rob Page]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Gareth Bale]] (Wales)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/match-report-usa-wales-gareth-bale-timothy-weah-fifa-world-cup-qatar-2022 |title=Bale makes Wales point in gripping USA clash |publisher=[[FIFA]] |date=21 November 2022 |access-date=21 November 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Taleb Al-Marri ([[Qatar Football Association|Qatar]])
+<br />Saud Al-Maqaleh ([[Qatar Football Association|Qatar]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[Ma Ning (referee)|Ma Ning]] ([[Chinese Football Association|China]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Cao Yi ([[Chinese Football Association|China]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Abdulla Al-Marri]] ([[Qatar Football Association|Qatar]])
+<br />'''[[Video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Redouane Jiyed]] ([[Royal Moroccan Football Federation|Morocco]])
+<br /> Mokrane Gourari ([[Algerian Football Federation|Algeria]])
+<br />[[Adil Zourak]] ([[Royal Moroccan Football Federation|Morocco]])
+<br />'''[[Video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Elvis Noupue ([[Cameroonian Football Federation|Cameroon]])
+|}
+
+===Wales vs Iran===
+[[File:Iran v Wales in the 2022 FIFA World Cup Match 17 - 11.jpg | thumb|During the match between Wales and Iran]]
+Wales had faced Iran previously only once, a 1–0 friendly win in 1978.<ref>{{cite web |title=Wales national football team: record v Iran |url=https://www.11v11.com/teams/wales/tab/opposingTeams/opposition/iran/ |website=11v11.com |access-date=6 June 2022}}</ref> The Iranian team opted to sing their national anthem at this match.
+
+The game was driven by Iran in attack and quick counter-attack, with Wales mostly holding in defence; though Wales made attempts in attack, their midfield was described by [[BBC Sport]]'s Dafydd Pritchard as "worryingly porous". In the first half, Iran had a goal from [[Ali Gholizadeh]] disallowed by VAR for offside. Early in the second half, Iran had two attempts hit each post in quick succession.<ref name=BBCWalesIran/> In the 86th minute, Welsh goalkeeper [[Wayne Hennessey]] was originally given a yellow card for a foul he committed outside his [[penalty area]]. However, following review by VAR, this was upgraded to a red card. Iran substitute [[Rouzbeh Cheshmi]] scored the match's first goal eight minutes into stoppage time, followed by [[Ramin Rezaeian]] scoring three minutes later to give Iran a first-ever win against a European team at the FIFA World Cup.<ref>{{Cite web|url=https://www.espn.co.uk/football/story/_/id/37634267/2022-world-cup-stats-fifa-qatar-eliminated-iran-beat-wales-enner-valencia-record|title=2022 World Cup stats: Iran get first win over European side, hosts Qatar eliminated|date=26 November 2022|website=ESPN.com}}</ref> Cheshmi's goal was the latest-minute match-winning goal scored in any World Cup game (excluding extra time) since the [[1966 FIFA World Cup]] in [[England]], when exact goal times were first made available.<ref>{{cite web |url=https://www.skysports.com/football/Wales-vs-Iran/462978 |last=Wright |first=Nick |title=World Cup 2022 – Wales 0–2 Iran: Late goals condemn Rob Page's side to defeat after Wayne Hennessey sent off |publisher=skysports.co |date=25 November 2022 |access-date=25 November 2022}}</ref> Officially, nine minutes of stoppage time were added; with further delays in the added time, over twelve minutes were actually played.<ref name=BBCWalesIran>{{Cite news |title=Iran loss leaves Wales in danger of World Cup exit |work=BBC Sport |access-date=25 November 2022 |url=https://www.bbc.co.uk/sport/football/63603418}}</ref>
+
+<section begin=B3 />{{Football box
+|date       = {{Start date|2022|11|25|df=y}}
+|time       = 13:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|WAL}}
+|score      = {{score link|2022 FIFA World Cup Group B#Wales vs Iran|0–2}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|IRN}}
+|goals1     =
+|goals2     = 
+*[[Rouzbeh Cheshmi|Cheshmi]] {{goal|90+8}}
+*[[Ramin Rezaeian|Rezaeian]] {{goal|90+11}}
+|stadium    = [[Ahmad bin Ali Stadium]], [[Al Rayyan (city)|Al Rayyan]]
+|attendance = 40,875
+|referee    = [[Mario Escobar (referee)|Mario Escobar]] ([[National Football Federation of Guatemala|Guatemala]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235453
+}}<section end=B3 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _wal22h
+ |pattern_b  = _wal22H
+ |pattern_ra = _wal22h
+ |pattern_sh = _wal22a
+ |pattern_so = _3_stripes_white
+ |leftarm    = FF0000
+ |body       = FF0000
+ |rightarm   = FF0000
+ |shorts     = FF0000
+ |socks      = FF0000
+ |title      = Wales
+}}
+|{{Football kit
+ |pattern_la = _irn22h
+ |pattern_b  = _irn22H
+ |pattern_ra = _irn22h
+ |pattern_sh = 
+ |pattern_so =
+ |leftarm    = FFFFFF
+ |body       = FFFFFF
+ |rightarm   = FFFFFF
+ |shorts     = FFFFFF
+ |socks      = FFFFFF
+ |title      = Iran
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Wayne Hennessey]] || {{sent off|0|86}}
+|-
+|CB ||'''5''' ||[[Chris Mepham]]
+|-
+|CB ||'''6''' ||[[Joe Rodon]] || {{yel|45+3}}
+|-
+|CB ||'''4''' ||[[Ben Davies (footballer, born 1993)|Ben Davies]]
+|-
+|DM ||'''15'''||[[Ethan Ampadu]] || || {{suboff|77}}
+|-
+|CM ||'''10'''||[[Aaron Ramsey]] || || {{suboff|87}}
+|-
+|CM ||'''8''' ||[[Harry Wilson (footballer, born 1997)|Harry Wilson]] || || {{suboff|57}}
+|-
+|RW ||'''14'''||[[Connor Roberts (footballer, born 1995)|Connor Roberts]] || || {{suboff|57}}
+|-
+|LW ||'''3''' ||[[Neco Williams]]
+|-
+|CF ||'''11'''||[[Gareth Bale]] ([[Captain (association football)|c]])
+|-
+|CF ||'''13'''||[[Kieffer Moore]]
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|FW ||'''9'''||[[Brennan Johnson]] || || {{subon|57}}
+|-
+|FW ||'''20'''||[[Daniel James (footballer)|Daniel James]] || || {{subon|57}}
+|-
+|MF ||'''7'''||[[Joe Allen]] || || {{subon|77}}
+|-
+|GK ||'''12'''||[[Danny Ward (Welsh footballer)|Danny Ward]] || || {{subon|87}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Rob Page]]
+|}
+|valign="top"|[[File:WAL-IRN 2022-11-25.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''24'''||[[Hossein Hosseini (footballer, born 1992)|Hossein Hosseini]]
+|-
+|RB ||'''23'''||[[Ramin Rezaeian]] || {{yel|90+5}}
+|-
+|CB ||'''19'''||[[Majid Hosseini]]
+|-
+|CB ||'''8''' ||[[Morteza Pouraliganji]]
+|-
+|LB ||'''5''' ||[[Milad Mohammadi]]
+|-
+|RM ||'''17'''||[[Ali Gholizadeh]] || || {{suboff|77}}
+|-
+|CM ||'''6''' ||[[Saeid Ezatolahi]] || || {{suboff|83}}
+|-
+|CM ||'''21'''||[[Ahmad Nourollahi]] || || {{suboff|77}}
+|-
+|LM ||'''3''' ||[[Ehsan Hajsafi]] ([[Captain (association football)|c]]) || || {{suboff|77}}
+|-
+|SS ||'''9''' ||[[Mehdi Taremi]]
+|-
+|CF ||'''20'''||[[Sardar Azmoun]] || || {{suboff|68}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|FW ||'''10'''||[[Karim Ansarifard]] || || {{subon|68}}
+|-
+|MF ||'''16'''||[[Mehdi Torabi]] || || {{subon|77}}
+|-
+|MF ||'''7'''||[[Alireza Jahanbakhsh]] || {{yel|90+5}} || {{subon|77}}
+|-
+|DF ||'''15'''||[[Rouzbeh Cheshmi]] || || {{subon|77}}
+|-
+|MF ||'''18'''||[[Ali Karimi (footballer, born 1994)|Ali Karimi]] || || {{subon|83}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|{{#invoke:flag|icon|POR}} [[Carlos Queiroz]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Rouzbeh Cheshmi]] (Iran)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/wales-ir-iran-review-group-b-fifa-world-cup-qatar-2022 |title=Stoppage-time strikes seal famous Iran win |publisher=[[FIFA]] |date=25 November 2022 |access-date=25 November 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Caleb Wales ([[Trinidad and Tobago Football Association|Trinidad and Tobago]])
+<br />Juan Carlos Mora ([[Costa Rican Football Federation|Costa Rica]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[Maguette Ndiaye]] ([[Senegalese Football Federation|Senegal]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Djibril Camara ([[Senegalese Football Federation|Senegal]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Drew Fischer]] ([[Canadian Soccer Association|Canada]])
+<br />'''[[Video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Fernando Guerrero (referee)|Fernando Guerrero]] ([[Mexican Football Federation|Mexico]])
+<br /> Nicolás Taran ([[Uruguayan Football Association|Uruguay]])
+<br />[[Adil Zourak]] ([[Royal Moroccan Football Federation|Morocco]])
+<br />'''[[Video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Bruno Pires ([[Brazilian Football Confederation|Brazil]])
+|}
+
+===England vs United States===
+The sides had previously met twice in the World Cup: the United States [[United States v England (1950 FIFA World Cup)|famously won 1–0]] in the [[1950 FIFA World Cup|1950 tournament]] in [[Brazil]], and the teams drew [[2010 FIFA World Cup Group C#England vs United States|1–1]] in the [[2010 FIFA World Cup|2010 edition]] in [[South Africa]]. Their most recent meeting was a 3–0 friendly victory for England in 2018.<ref>{{Cite web |url=https://www.sportsmole.co.uk/football/england/world-cup-2022/feature/world-cup-2022-england-vs-usa-head-to-head-record_500523.html |title=World Cup 2022: England vs. USA head-to-head record |website=Sports Mole}}</ref>
+
+[[Harry Kane]] had a shot blocked in the box for England in the 9th minute, before United States midfielder [[Weston McKennie]] missed a shot in the six-yard box, and teammate [[Christian Pulisic]] hit the crossbar in the 32nd minute.<ref>{{Cite web |url=https://talksport.com/football/1251851/world-cup-2022-live-commentary-england-vs-usa-score-result-updates/ |title=England 0–0 USA – World Cup 2022: LIVE commentary, updates and reaction |date=25 November 2022}}</ref> The match featured only a small number of chances, with only four shots on target between the two teams.<ref>{{Cite web |url=https://theathletic.com/live-blogs/england-usa-score-2022-world-cup/AGiSASTGdpAh/ |title=Live reaction to England's draw with the USMNT |first=The |last=Athletic |website=The Athletic|date=26 November 2022 }}</ref><ref>{{Cite web|url=https://theathletic.com/live-blogs/england-usa-score-2022-world-cup/AGiSASTGdpAh/|title=How the USMNT came close to upsetting England|first=The|last=Athletic|date=26 November 2022|website=The Athletic}}</ref> Despite avoiding defeat, many England fans booed the team after the match ended, expressing criticism of a perceived lacking performance.<ref>{{cite news |url=https://www.telegraph.co.uk/world-cup/2022/11/25/england-gareth-southgate-terrible-usa-draw-world-reacted/ |title=Gareth Southgate urges calm as England labelled 'terrible' – how world reacted |newspaper=The Telegraph |date=25 November 2022 |last=Law |first=Matt}}</ref>
+
+<section begin=B4 />{{Football box
+|date       = {{Start date|2022|11|25|df=y}}
+|time       = 22:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|ENG}}
+|score      = {{score link|2022 FIFA World Cup Group B#England vs United States|0–0}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|USA}}
+|goals1     =
+|goals2     =
+|stadium    = [[Al Bayt Stadium]], [[Al Khor]]
+|attendance = 68,463
+|referee    = [[Jesús Valenzuela]] ([[Venezuelan Football Federation|Venezuela]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235457
+}}<section end=B4 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _eng22h
+ |pattern_b  = _eng22H
+ |pattern_ra = _eng22h
+ |pattern_sh = _eng22h2
+ |pattern_so = _eng22h
+ |leftarm    = FFFFFF
+ |body       = FFFFFF
+ |rightarm   = FFFFFF
+ |shorts     = FFFFFF
+ |socks      = FFFFFF
+ |title      = England
+}}
+|{{Football kit
+ |pattern_la = _usa22A
+ |pattern_b  = _usa22a
+ |pattern_ra = _usa22A
+ |pattern_sh = _usa22a
+ |pattern_so = 
+ |leftarm    = 132FD1
+ |body       = 132FD1
+ |rightarm   = 132FD1
+ |shorts     = 132FD1
+ |socks      = 132FD1
+ |title      = <span class="nowrap">United States</span>
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Jordan Pickford]]
+|-
+|RB ||'''12'''||[[Kieran Trippier]]
+|-
+|CB ||'''5''' ||[[John Stones]]
+|-
+|CB ||'''6''' ||[[Harry Maguire]]
+|-
+|LB ||'''3''' ||[[Luke Shaw]]
+|-
+|CM ||'''22'''||[[Jude Bellingham]] || || {{suboff|68}}
+|-
+|CM ||'''4''' ||[[Declan Rice]]
+|-
+|RW ||'''17'''||[[Bukayo Saka]] || || {{suboff|77}}
+|-
+|AM ||'''19'''||[[Mason Mount]]
+|-
+|LW ||'''10'''||[[Raheem Sterling]] || || {{suboff|68}}
+|-
+|CF ||'''9''' ||[[Harry Kane]] ([[Captain (association football)|c]])
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|FW ||'''7''' ||[[Jack Grealish]] || || {{subon|68}}
+|-
+|MF ||'''8''' ||[[Jordan Henderson]] || || {{subon|68}}
+|-
+|FW ||'''11'''||[[Marcus Rashford]] || || {{subon|77}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Gareth Southgate]]
+|}
+|valign="top"|[[File:ENG-USA 2022-11-25.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Matt Turner (soccer)|Matt Turner]]
+|-
+|RB ||'''2''' ||[[Sergiño Dest]] || || {{suboff|77}}
+|-
+|CB ||'''3''' ||[[Walker Zimmerman]]
+|-
+|CB ||'''13'''||[[Tim Ream]]
+|-
+|LB ||'''5''' ||[[Antonee Robinson]]
+|-
+|RM ||'''8''' ||[[Weston McKennie]] || || {{suboff|77}}
+|-
+|CM ||'''4''' ||[[Tyler Adams]] ([[Captain (association football)|c]])
+|-
+|CM ||'''6''' ||[[Yunus Musah]]
+|-
+|LM ||'''10'''||[[Christian Pulisic]]
+|-
+|CF ||'''21'''||[[Timothy Weah]] || || {{suboff|83}}
+|-
+|CF ||'''19'''||[[Haji Wright]] || || {{suboff|83}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|FW ||'''11'''||[[Brenden Aaronson]] || || {{subon|77}}
+|-
+|DF ||'''18'''||[[Shaq Moore]] || || {{subon|77}}
+|-
+|FW ||'''7''' ||[[Giovanni Reyna]] || || {{subon|83}}
+|-
+|FW ||'''24'''||[[Josh Sargent]] || || {{subon|83}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Gregg Berhalter]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Christian Pulisic]] (United States)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/england-usa-fifa-world-cup-qatar-2022 |title=USA and England share World Cup draw |publisher=[[FIFA]] |date=25 November 2022 |access-date=25 November 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Jorge Urrego ([[Venezuelan Football Federation|Venezuela]])
+<br />Tulio Moreno ([[Venezuelan Football Federation|Venezuela]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[Yoshimi Yamashita]] ([[Japan Football Association|Japan]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Neuza Back ([[Brazilian Football Confederation|Brazil]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Juan Soto (referee)|Juan Soto]] ([[Venezuelan Football Federation|Venezuela]])
+<br />'''[[Video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Nicolás Gallo (referee)|Nicolás Gallo]] ([[Colombian Football Federation|Colombia]])
+<br /> Diego Bonfá ([[Argentine Football Association|Argentina]])
+<br />[[Julio Bascuñán]] ([[Football Federation of Chile|Chile]])
+<br />'''[[Video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Ezequiel Brailovsky ([[Argentine Football Association|Argentina]])
+|}
+
+===Wales vs England===
+The teams had met 103 times, most recently in a friendly game in 2020 won 3–0 by England. This was their second meeting in a major tournament, the first being the group stage of [[UEFA Euro 2016]], which ended in a [[UEFA Euro 2016 Group B#England vs Wales|2–1]] win for England. The teams had met in multiple [[FIFA World Cup qualification|FIFA World Cup qualifiers]], including two [[British Home Championship]] matches that served as World Cup qualifiers (in [[1949–50 British Home Championship|1949–50]] and [[1953–54 British Home Championship|1953–54]]), as well as in the [[1974 FIFA World Cup qualification – UEFA Group 5|1974]] and [[2006 FIFA World Cup qualification – UEFA Group 6|2006]] qualification campaigns.<ref>{{cite web |title=England national football team: record v Wales |url=https://www.11v11.com/teams/england/tab/opposingTeams/opposition/Wales/ |access-date=5 June 2022 |website=11v11.com}}</ref>
+
+[[Marcus Rashford]] had the best chance of the opening period, but his chipped shot was saved by Wales goalkeeper [[Danny Ward (Welsh footballer)|Danny Ward]]. Following a goalless first half, Rashford scored a direct free kick in the 51st minute to give England the lead. Shortly after the restart, England would double the lead after Rashford won the ball in the Welsh defence and passed to [[Harry Kane]], whose crossed ball low from the right was converted at the back post by [[Phil Foden]]. Rashford got his second of the game in the 68th minute, with a shot from deep inside the Welsh penalty area that went through the goalkeeper's legs.<ref>{{cite web |url=https://www.bbc.com/sport/football/63603442 |title=Wales 0 England 3 |date=29 November 2022 |work=BBC Sport |access-date=30 November 2022}}</ref> The victory was enough for England to finish at the top of the group, whilst Wales finished at the bottom with just one point.<ref>{{cite web |url=https://www.theguardian.com/football/2022/nov/29/wales-england-world-cup-group-b-match-report |title=Marcus Rashford double puts England top of group and sends Wales home |date=29 November 2022 |work=The Guardian |accessdate=30 November 2022}}</ref>
+
+<section begin="B5" />{{Football box
+|date       = {{Start date|2022|11|29|df=y}}
+|time       = 22:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|WAL}}
+|score      = {{score link|2022 FIFA World Cup Group B#Wales vs England|0–3}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|ENG}}
+|goals1     =
+|goals2     =
+*[[Marcus Rashford|Rashford]] {{goal|50||68}}
+*[[Phil Foden|Foden]] {{goal|51}}
+|stadium    = [[Ahmad bin Ali Stadium]], [[Al Rayyan (city)|Al Rayyan]]
+|attendance = 44,297
+|referee    = [[Slavko Vinčić]] ([[Football Association of Slovenia|Slovenia]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235454
+}}<section end=B5 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _wal22h
+ |pattern_b  = _wal22H
+ |pattern_ra = _wal22h
+ |pattern_sh = _wal22h
+ |pattern_so = _3_stripes_white
+ |leftarm    = FF0000
+ |body       = FF0000
+ |rightarm   = FF0000
+ |shorts     = FFFFFF
+ |socks      = FF0000
+ |title      = Wales
+}}
+|{{Football kit
+ |pattern_la = _eng22h
+ |pattern_b  = _eng22H
+ |pattern_ra = _eng22h
+ |pattern_sh = _eng22h
+ |pattern_so = _eng22h
+ |leftarm    = FFFFFF
+ |body       = FFFFFF
+ |rightarm   = FFFFFF
+ |shorts     = 000066
+ |socks      = FFFFFF
+ |title      = England
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''12'''||[[Danny Ward (Welsh footballer)|Danny Ward]]
+|-
+|RB ||'''3''' ||[[Neco Williams]] || || {{suboff|36}}
+|-
+|CB ||'''5''' ||[[Chris Mepham]]
+|-
+|CB ||'''6''' ||[[Joe Rodon]]
+|-
+|LB ||'''4''' ||[[Ben Davies (footballer, born 1993)|Ben Davies]] || || {{suboff|57}}
+|-
+|DM ||'''15'''||[[Ethan Ampadu]]
+|-
+|CM ||'''10'''||[[Aaron Ramsey]] || {{yel|61}}
+|-
+|CM ||'''7''' ||[[Joe Allen]] || || {{suboff|81}}
+|-
+|RF ||'''11'''||[[Gareth Bale]] ([[Captain (association football)|c]]) || || {{suboff|46}}
+|-
+|CF ||'''13'''||[[Kieffer Moore]]
+|-
+|LF ||'''20'''||[[Daniel James (footballer)|Daniel James]] || {{yel|29}} || {{suboff|77}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|DF ||'''14'''||[[Connor Roberts (footballer, born 1995)|Connor Roberts]] || || {{subon|36}}
+|-
+|FW ||'''9''' ||[[Brennan Johnson]] || || {{subon|46}}
+|-
+|MF ||'''16'''||[[Joe Morrell]] || || {{subon|57}}
+|-
+|MF ||'''8''' ||[[Harry Wilson (footballer, born 1997)|Harry Wilson]] || || {{subon|77}}
+|-
+|MF ||'''25'''||[[Rubin Colwill]] || || {{subon|81}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Rob Page]]
+|}
+|valign="top"|[[File:WAL-ENG 2022-11-29.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Jordan Pickford]]
+|-
+|RB ||'''2''' ||[[Kyle Walker]] || || {{suboff|57}}
+|-
+|CB ||'''5''' ||[[John Stones]]
+|-
+|CB ||'''6''' ||[[Harry Maguire]]
+|-
+|LB ||'''3''' ||[[Luke Shaw]] || || {{suboff|65}}
+|-
+|DM ||'''4''' ||[[Declan Rice]] || || {{suboff|57}}
+|-
+|CM ||'''8''' ||[[Jordan Henderson]]
+|-
+|CM ||'''22'''||[[Jude Bellingham]]
+|-
+|RF ||'''20'''||[[Phil Foden]]
+|-
+|CF ||'''9''' ||[[Harry Kane]] ([[Captain (association football)|c]]) || || {{suboff|57}}
+|-
+|LF ||'''11'''||[[Marcus Rashford]] || || {{suboff|75}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|DF ||'''18'''||[[Trent Alexander-Arnold]] || || {{subon|57}}
+|-
+|FW ||'''24'''||[[Callum Wilson]] || || {{subon|57}}
+|-
+|MF ||'''14'''||[[Kalvin Phillips]] || || {{subon|57}}
+|-
+|DF ||'''12'''||[[Kieran Trippier]] || || {{subon|65}}
+|-
+|FW ||'''7''' ||[[Jack Grealish]] || || {{subon|75}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Gareth Southgate]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Marcus Rashford]] (England)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/world-cup-qatar-2022-wales-v-england-match-review-report-highlights-press-conference-reaction-analysis-stats |title=Rashford unstoppable as England fly into last 16 |publisher=[[FIFA]] |date=29 November 2022 |access-date=29 November 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Tomaž Klančnik ([[Football Association of Slovenia|Slovenia]])
+<br />Andraž Kovačič ([[Football Association of Slovenia|Slovenia]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[Yoshimi Yamashita]] ([[Japan Football Association|Japan]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Karen Díaz Medina ([[Mexican Football Federation|Mexico]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Marco Fritz]] ([[German Football Association|Germany]])
+<br />'''[[Video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Paolo Valeri]] ([[Italian Football Federation|Italy]])
+<br /> Paweł Sokolnicki ([[Polish Football Association|Poland]])
+<br />[[Bastian Dankert]] ([[German Football Association|Germany]])
+<br />'''[[Video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Vasile Marinescu ([[Romanian Football Federation|Romania]])
+|}
+
+===Iran vs United States===
+The teams had met twice previously: Iran won [[United States v Iran (1998 FIFA World Cup)|2–1]] during the [[1998 FIFA World Cup]] in France, and the teams drew 1–1 in a 2000 friendly.<ref>{{Cite web |url=https://www.11v11.com/teams/usa/tab/opposingTeams/opposition/Iran/ |title=USA national soccer team: record v Iran |website=11v11.com}}</ref> Prior to the match, the [[United States Soccer Federation]] displayed the [[flag of Iran]] on social media without the [[Emblem of Iran|emblem of the country]]. The removal of the emblem showed support for the women in Iran fighting for basic human rights, according to the Federation.<ref>{{Cite news |url=https://www.haaretz.com/us-news/2022-11-27/ty-article/u-s-soccer-scrubs-islamic-emblem-from-iran-flag/00000184-b875-de87-a9d5-b8fd66c90000 |title=FIFA World Cup &#124; U.S. Soccer Scrubs Islamic Emblem From Iran Flag |newspaper=Haaretz}}</ref> In response, Iranian state media reported that the United States should be immediately removed from the tournament and suspended for ten games for a "distorted image" of the country's flag.<ref>{{cite news |first=Andrew |last=Das |title=Iran calls for the U.S. to be expelled from the World Cup |newspaper=The New York Times |date=27 November 2022 |url=https://www.nytimes.com/2022/11/27/sports/soccer/iran-flag-us-world-cup.html}}</ref><ref>{{cite web |first1=Ben |last1=Morse |first2=Wayne |last2=Sterling |title=Iran calls for US to be kicked out of 2022 World Cup after it changes Iran flag on social media to show support for protesters |publisher=CNN |date=28 November 2022 |url=https://edition.cnn.com/2022/11/27/football/iran-us-flag-protesters-klinsmann-2022-world-cup-spt-intl/index.html}}</ref> Following this, the emblem was returned to the flag.<ref>{{cite news |first=Jeff |last=Carlisle |title=US not feeling the pressure of facing Iran yet, though social media furore has fueled prematch tension |publisher=ESPN |date=27 November 2022}}</ref>
+
+Both teams were guaranteed qualification to the round of 16 with a win, whilst Iran would qualify with a draw, provided Wales did not defeat England.<ref>{{cite web |title=Group B: What each team needs to qualify for the round of 16 of the World Cup |work=Diario AS |date=29 November 2022 |access-date=30 November 2022 |url=https://en.as.com/soccer/group-b-what-each-team-needs-to-qualify-for-the-round-of-16-of-the-world-cup-n-2/}}</ref> [[Christian Pulisic]] scored the only goal of the game for the United States in the 38th minute, being injured in the process.<ref>{{Cite news |title=World Cup 2022 – Iran 0–1 USA: Christian Pulisic scores brave winner to send USA into last-16 |work=Sky Sports |access-date=30 November 2022 |url=https://www.skysports.com/football/news/12098/12757062/world-cup-2022-iran-0-1-usa-christian-pulisic-scores-brave-winner-to-send-usa-into-last-16}}</ref><ref>{{Cite news |title=World Cup: USA to face Netherlands in last 16 after win over Iran |work=BBC Sport |date=28 November 2022 |access-date=30 November 2022 |url=https://www.bbc.com/sport/live/football/60976202}}</ref> The United States thus advanced to the round of 16 as group runners-up with five points, whilst England finished top of the group with seven.<ref name="regulations">{{cite web |url=https://digitalhub.fifa.com/m/2744a0a5e3ded185/original/FIFA-World-Cup-Qatar-2022-Regulations_EN.pdf |title=Regulations – FIFA World Cup Qatar 2022 |website=FIFA.com |publisher=Fédération Internationale de Football Association |date=15 December 2021 |access-date=30 March 2022}}</ref>
+
+<section begin=B6 />{{Football box
+|date       = {{Start date|2022|11|29|df=y}}
+|time       = 22:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|IRN}}
+|score      = {{score link|2022 FIFA World Cup Group B#Iran vs United States|0–1}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|USA}}
+|goals1     =
+|goals2     =
+*[[Christian Pulisic|Pulisic]] {{goal|38}}
+|stadium    = [[Al Thumama Stadium]], [[Doha]]
+|attendance = 42,127
+|referee    = [[Antonio Mateu Lahoz]] ([[Royal Spanish Football Federation|Spain]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235456
+}}<section end=B6 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _irn22h
+ |pattern_b  = _irn22H
+ |pattern_ra = _irn22h
+ |pattern_sh = 
+ |pattern_so =
+ |leftarm    = FFFFFF
+ |body       = FFFFFF
+ |rightarm   = FFFFFF
+ |shorts     = FFFFFF
+ |socks      = FFFFFF
+ |title      = Iran
+}}
+|{{Football kit
+ |pattern_la = _usa22A
+ |pattern_b  = _usa22a
+ |pattern_ra = _usa22A
+ |pattern_sh = _usa22a
+ |pattern_so =
+ |leftarm    = 132FD1
+ |body       = 132FD1
+ |rightarm   = 132FD1
+ |shorts     = 132FD1
+ |socks      = 132FD1
+ |title      = <span class="nowrap">United States</span>
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Alireza Beiranvand]]
+|-
+|RB ||'''23'''||[[Ramin Rezaeian]]
+|-
+|CB ||'''19'''||[[Majid Hosseini]] || {{yel|77}}
+|-
+|CB ||'''8''' ||[[Morteza Pouraliganji]]
+|-
+|LB ||'''5''' ||[[Milad Mohammadi]] || || {{suboff|45+2}}
+|-
+|RM ||'''17'''||[[Ali Gholizadeh]] || || {{suboff|77}}
+|-
+|CM ||'''6''' ||[[Saeid Ezatolahi]]
+|-
+|CM ||'''21'''||[[Ahmad Nourollahi]] || || {{suboff|71}}
+|-
+|LM ||'''3''' ||[[Ehsan Hajsafi]] ([[Captain (association football)|c]]) || || {{suboff|71}}
+|-
+|SS ||'''9''' ||[[Mehdi Taremi]]
+|-
+|CF ||'''20'''||[[Sardar Azmoun]] || || {{suboff|46}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|MF ||'''18'''||[[Ali Karimi (footballer, born 1994)|Ali Karimi]] || || {{subon|45+2}}
+|-
+|MF ||'''14'''||[[Saman Ghoddos]] || || {{subon|46}}
+|-
+|MF ||'''16'''||[[Mehdi Torabi]] || || {{subon|71}}
+|-
+|DF ||'''25'''||[[Abolfazl Jalali]] || {{yel|90+6}} || {{subon|71}}
+|-
+|FW ||'''10'''||[[Karim Ansarifard]] || || {{subon|77}}
+|-
+|colspan=3|'''Other disciplinary actions:'''
+|-
+|DF ||'''13'''||[[Hossein Kanaanizadegan]] || {{yel|83}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|{{#invoke:flag|icon|POR}} [[Carlos Queiroz]]
+|}
+|valign="top"|[[File:IRN-USA 2022-11-29.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Matt Turner (soccer)|Matt Turner]]
+|-
+|RB ||'''2''' ||[[Sergiño Dest]] || || {{suboff|82}}
+|-
+|CB ||'''20'''||[[Cameron Carter-Vickers]]
+|-
+|CB ||'''13'''||[[Tim Ream]]
+|-
+|LB ||'''5''' ||[[Antonee Robinson]]
+|-
+|DM ||'''4''' ||[[Tyler Adams]] ([[Captain (association football)|c]]) || {{yel|43}}
+|-
+|CM ||'''6''' ||[[Yunus Musah]]
+|-
+|CM ||'''8''' ||[[Weston McKennie]] || || {{suboff|65}}
+|-
+|RF ||'''21'''||[[Timothy Weah]] || || {{suboff|82}}
+|-
+|CF ||'''24'''||[[Josh Sargent]] || || {{suboff|77}}
+|-
+|LF ||'''10'''||[[Christian Pulisic]] || || {{suboff|46}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|FW ||'''11'''||[[Brenden Aaronson]] || || {{subon|46}}
+|-
+|MF ||'''23'''||[[Kellyn Acosta]] || || {{subon|65}}
+|-
+|FW ||'''19'''||[[Haji Wright]] || || {{subon|77}}
+|-
+|DF ||'''18'''||[[Shaq Moore]] || || {{subon|82}}
+|-
+|DF ||'''3''' ||[[Walker Zimmerman]] || || {{subon|82}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Gregg Berhalter]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Christian Pulisic]] (United States)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/iran-usa-christian-pulisic-fifa-world-cup-qatar-2022-match-review |title=Pulisic strike sends USA into Netherlands last-16 tie |publisher=[[FIFA]] |date=29 November 2022 |access-date=29 November 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Pau Cebrián Devís ([[Royal Spanish Football Federation|Spain]])
+<br />Roberto Díaz Pérez del Palomar ([[Royal Spanish Football Federation|Spain]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[Kevin Ortega]] ([[Peruvian Football Federation|Peru]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Jesús Sánchez ([[Peruvian Football Federation|Peru]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Juan Martínez Munuera]] ([[Royal Spanish Football Federation|Spain]])
+<br />'''[[Video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Ricardo de Burgos Bengoetxea]] ([[Royal Spanish Football Federation|Spain]])
+<br /> Neuza Back ([[Brazilian Football Confederation|Brazil]])
+<br />[[Alejandro Hernández Hernández]] ([[Royal Spanish Football Federation|Spain]])
+<br />'''[[Video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Bruno Pires ([[Brazilian Football Confederation|Brazil]])
+|}
+
+==Discipline==
+Fair play points would have been used as tiebreakers if the overall and head-to-head records of teams were tied. These were calculated based on yellow and red cards received in all group matches as follows:<ref name="regulations"/>
+*first yellow card: −1 point;
+*indirect red card (second yellow card): −3 points;
+*direct red card: −4 points;
+*yellow card and direct red card: −5 points;
+
+Only one of the above deductions was applied to a player in a single match.
+
+{| class="wikitable sortable" style="text-align:center;"
+|-
+!rowspan=2|Team
+!colspan=4 style="border-left:3px solid gray"|Match 1
+!colspan=4 style="border-left:3px solid gray"|Match 2
+!colspan=4 style="border-left:3px solid gray"|Match 3
+!rowspan=2 style="border-left:3px solid gray"|Points
+|-
+!style="border-left:3px solid gray"|{{yel}}
+!{{sent off|2}}
+!{{sent off|0}}
+!{{sent off|1}}
+!style="border-left:3px solid gray"|{{yel}}
+!{{sent off|2}}
+!{{sent off|0}}
+!{{sent off|1}}
+!style="border-left:3px solid gray"|{{yel}}
+!{{sent off|2}}
+!{{sent off|0}}
+!{{sent off|1}}
+|-
+|align=left|{{#invoke:flagg|main|unpe|avar=fb|ENG}}
+|style="border-left:3px solid gray"|  ||  ||  || 
+|style="border-left:3px solid gray"|  ||  ||  || 
+|style="border-left:3px solid gray"|  ||  ||  || 
+!style="border-left:3px solid gray"| 0
+|-
+|align=left|{{#invoke:flagg|main|unpe|avar=fb|USA}}
+|style="border-left:3px solid gray"| 4 ||  ||  || 
+|style="border-left:3px solid gray"|  ||  ||  || 
+|style="border-left:3px solid gray"| 1 ||  ||  || 
+!style="border-left:3px solid gray"| −5
+|-
+|align=left|{{#invoke:flagg|main|unpe|avar=fb|IRN}}
+|style="border-left:3px solid gray"| 2 ||  ||  || 
+|style="border-left:3px solid gray"| 2 ||  ||  || 
+|style="border-left:3px solid gray"| 3 ||  ||  || 
+!style="border-left:3px solid gray"| −7
+|-
+|align=left|{{#invoke:flagg|main|unpe|avar=fb|WAL}}
+|style="border-left:3px solid gray"| 2 ||  ||  || 
+|style="border-left:3px solid gray"| 1 ||  || 1 ||  
+|style="border-left:3px solid gray"| 2 || ||  || 
+!style="border-left:3px solid gray"| −9
+|}
+
+==See also==
+*[[England at the FIFA World Cup]]
+*[[Iran at the FIFA World Cup]]
+*[[United States at the FIFA World Cup]]
+*[[Wales at the FIFA World Cup]]
+
+==Notes==
+{{reflist|group=note}}
+
+==References==
+{{reflist}}
+
+==External links==
+{{Commons category}}
+* {{Official website|https://www.fifa.com/tournaments/mens/worldcup/qatar2022}}
+
+{{2022 FIFA World Cup}}
+
+{{DEFAULTSORT:Group B}}
+[[Category:2022 FIFA World Cup]]
+[[Category:England at the 2022 FIFA World Cup]]
+[[Category:Iran at the 2022 FIFA World Cup]]
+[[Category:United States at the 2022 FIFA World Cup]]
+[[Category:Wales at the 2022 FIFA World Cup]]
+[[Category:FIFA World Cup group stages]]

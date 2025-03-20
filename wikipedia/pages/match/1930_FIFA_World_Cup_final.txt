@@ -1,0 +1,285 @@
+{{Short description|Inaugural World Cup final, held in Uruguay}}
+{{Use dmy dates|date=April 2018}}
+{{Infobox football match
+| title              = 1930 FIFA World Cup final
+| image              = Uruguay national football team 1930.jpg
+| image_size = 250
+| caption            = [[Uruguay national football team|Uruguay]] are champions
+| event              = [[1930 FIFA World Cup]]
+| team1              = [[Uruguay national football team|Uruguay]]
+| team1association   = {{flagdeco|URU|size=30px}}
+| team1score         = 4
+| team2              = [[Argentina national football team|Argentina]]
+| team2association   = {{flagdeco|ARG|1861|size=30px}}
+| team2score         = 2
+| details            =
+| date               = {{Start date|1930|7|30|df=y}}
+| stadium            = [[Estadio Centenario]]
+| city               = [[Montevideo]]
+| man_of_the_match1a =
+| referee            = [[John Langenus]] ([[Belgian Football Association|Belgium]])
+| attendance         = 68,346
+| weather            =
+| next               = [[1934 FIFA World Cup final|1934]]
+}}
+The '''1930 FIFA World Cup final''' was a [[Association football|football]] tournament match that culminated in the inaugural [[1930 FIFA World Cup]] champions. [[Uruguay national football team|Uruguay]] and [[Argentina national football team|Argentina]] contested in what was a rematch of the [[Football at the 1928 Summer Olympics#Gold medal match|gold medal match of the 1928 Olympics]], which Uruguay won after a [[Replay (sports)|replay]].
+
+The final was played at the [[Estadio Centenario]] in [[Montevideo]], Uruguay, on 30 July, a Wednesday. It was one of only two World Cup finals to be played on a day other than Sunday, the other being the [[1966 FIFA World Cup final]], which was played on a Saturday. A disagreement overshadowed the build-up to the match as which team would provide the match ball. [[FIFA]] intervened with a compromise, that Argentina would provide the ball for the first half, and Uruguay for the second.<ref name="BBC1930">{{cite news |url=http://news.bbc.co.uk/sport3/worldcup2002/hi/history/newsid_1632000/1632201.stm |title=Uruguay 1930 |date=11 April 2002 |work=[[BBC Sport]] |access-date=25 February 2007}}</ref>
+
+The stadium gates were opened at eight in the morning, six hours before kick-off, and at noon the ground was full,<ref name="Glanville19">Glanville, p19</ref>{{full citation|date=July 2020}} officially holding 93,000 people.<ref name="origin">{{cite web |url=https://www.fifa.com/mm/document/fifafacts/mcwc/ip-201_02e_fwc-origin_8816.pdf |archive-url=https://web.archive.org/web/20071129182243/http://www.fifa.com/mm/document/fifafacts/mcwc/ip-201_02e_fwc-origin_8816.pdf |url-status=dead |archive-date=29 November 2007 |title=FIFA World Cup Origin |work=[[FIFA]] |access-date=20 May 2007}}</ref> Uruguay successfully "defended" its Olympic gold medal achievement 4–2, coming back from a 2–1 deficit at half-time. 
+
+Uruguay manager [[Alberto Suppici]] was 31 at the time, and still holds the record for being youngest coach of a FIFA World Cup winning team. [[Jules Rimet]], president of FIFA, presented Uruguay with the [[FIFA World Cup Trophy#Jules Rimet Trophy|World Cup Trophy]], later to be named after him. The following day was declared a national holiday in Uruguay.<ref name="origin"/> In [[Buenos Aires]], a mob threw stones at the Uruguayan consulate.<ref>Glanville, p21</ref>{{full citation|date=July 2020}}
+
+The last living player from the final was Argentine striker [[Francisco Varallo]], who died on 30 August 2010 aged 100.<ref>{{cite web |url=https://www.fifa.com/classicfootball/players/do-you-remember/newsid=1166517/index.html |archive-url=https://web.archive.org/web/20130628083753/http://www.fifa.com/classicfootball/players/do-you-remember/newsid=1166517/index.html |url-status=dead |archive-date=28 June 2013 |title=Francisco Varallo, 100 not out |work=[[FIFA]] |access-date=20 June 2014}}</ref> The last living Uruguayan from the final was [[Ernesto Mascheroni]], who died on 3 July 1984 aged 76.
+
+==Route to the final==
+{| style="width:100%;text-align:center"
+|- style="vertical-align:top;background:#9cf"
+! colspan="2" style="width:1*" |Uruguay
+!Round
+! colspan="2" style="width:1*" |Argentina
+|- style="vertical-align:top;background:#c1e0ff"
+|Opponent
+|Result
+|[[1930 FIFA World Cup#First round|First round]]
+|Opponent
+|Result
+|-
+|{{fb|PER|1825}}
+|[[1930 FIFA World Cup Group 3#Uruguay vs Peru|1–0]]
+| style="background:#c1e0ff" |Match 1
+|{{fb|FRA|1794}}
+|[[1930 FIFA World Cup Group 1#Argentina vs France|1–0]]
+|-
+|{{fb|ROU}}
+|[[1930 FIFA World Cup Group 3#Uruguay vs Romania|4–0]]
+| style="background:#c1e0ff" |Match 2
+|{{fb|MEX|1916}}
+|[[1930 FIFA World Cup Group 1#Argentina vs Mexico|6–3]]
+|-
+|
+|
+| style="background:#c1e0ff" |Match 3
+|{{fb|CHI}}
+|[[1930 FIFA World Cup Group 1#Argentina vs Chile|3–1]]
+|-
+| colspan="2" style="text-align:center" |
+{| class="wikitable" style="text-align:center"
+|-
+! width="175" |Team
+! width="20" |{{abbr|Pld|Matches played}}
+! width="20" |{{abbr|W|Matches won}}
+! width="20" |{{abbr|D|Matches drawn}}
+! width="20" |{{abbr|L|Matches lost}}
+! width="20" |{{abbr|GF|Goals for}}
+! width="20" |{{abbr|GA|Goals against}}
+! width="20" |{{abbr|GD|Goal difference}}
+! width="20" |{{abbr|Pts|Points}}
+|-
+| align="left" |'''{{fb|URU}}'''
+|2||2||0||0||5||0||+5||'''4'''
+|-
+| align="left" |{{fb|ROU}}
+|2||1||0||1||3||5||−2||'''2'''
+|-
+| align="left" |{{fb|PER|1825}}
+|2||0||0||2||1||4||−3||'''0'''
+|}
+| style="background:#c1e0ff" |Final standing
+| colspan="2" style="text-align:center" |
+{| class="wikitable" style="text-align:center"
+|-
+! width="175" |Team
+! width="20" |{{abbr|Pld|Matches played}}
+! width="20" |{{abbr|W|Matches won}}
+! width="20" |{{abbr|D|Matches drawn}}
+! width="20" |{{abbr|L|Matches lost}}
+! width="20" |{{abbr|GF|Goals for}}
+! width="20" |{{abbr|GA|Goals against}}
+! width="20" |{{abbr|GD|Goal difference}}
+! width="20" |{{abbr|Pts|Points}}
+|-
+| align="left" |'''{{fb|ARG|1861}}'''
+|3||3||0||0||10||4||+6||'''6'''
+|-
+| align="left" |{{fb|CHI}}
+|3||2||0||1||5||3||+2||'''4'''
+|-
+| align="left" |{{fb|FRA|1794}}
+|3||1||0||2||4||3||+1||'''2'''
+|-
+| align="left" |{{fb|MEX|1916}}
+|3||0||0||3||4||13||−9||'''0'''
+|}
+|- style="vertical-align:top;background:#c1e0ff"
+|Opponent
+|Result
+|[[1930 FIFA World Cup knockout stage|Knockout stage]]
+|Opponent
+|Result
+|-
+|{{fb|Kingdom of Yugoslavia}}
+|[[1930 FIFA World Cup knockout stage#Uruguay vs Yugoslavia|6–1]]
+| style="background:#c1e0ff" |Semi-finals
+|{{fb|USA|1912}}
+|[[1930 FIFA World Cup knockout stage#Argentina vs United States|6–1]]
+|}
+
+==Match==
+
+===Summary===
+After 12 minutes, [[Pablo Dorado]] put the hosts into the lead, before Argentina winger [[Carlos Peucelle]] equalised 8 minutes later, beating goalkeeper [[Enrique Ballestrero]] with a powerful shot. In the 37th minute, tournament top scorer [[Guillermo Stábile]] gave Argentina a 2–1 lead going into the break. Uruguay leveled the score 12 minutes into the second half via a goal from [[Pedro Cea]], and took the lead back for good with a [[Santos Iriarte]] goal in the 68th minute. With a minute remaining, [[Héctor Castro]] put Uruguay up 4–2, sealing victory in the inaugural World Cup.<ref>{{cite news |last=Molinaro |first=John F. |url=http://www.cbc.ca/sports/soccer/1930-world-cup-uruguay-welcomes-the-soccer-world-1.843670 |title=1930 World Cup: Uruguay welcomes the soccer world |website=[[CBC Sports]] |publisher=[[Canadian Broadcasting Corporation]] |date=26 November 2009 |access-date=8 April 2018}}</ref>
+
+===Details===
+<section begin=Final />{{football box
+|date={{Start date|1930|07|30|df=y}}
+|time=12:45 UYT ([[UTC-03:30]])
+|team1={{fb-rt|URU}}
+|score=4–2
+|report=https://www.fifa.com/worldcup/archive/uruguay1930/matches/match/1087
+|team2={{fb|ARG|1861}}
+|goals1=[[Pablo Dorado|Dorado]] {{goal|12}}<br/>[[Pedro Cea|Cea]] {{goal|57}}<br/>[[Santos Iriarte|Iriarte]] {{goal|68}}<br/>[[Héctor Castro|Castro]] {{goal|89}}
+|goals2=[[Carlos Peucelle|Peucelle]] {{goal|20}}<br/>[[Guillermo Stábile|Stábile]] {{goal|37}}
+|stadium=[[Estadio Centenario]], [[Montevideo]]
+|attendance=68,346
+|referee=[[John Langenus]] ([[Royal Belgian Football Association|Belgium]])
+}}<section end=Final />
+<section begin=Lineups />
+{| width=92%
+|-
+|{{Football kit
+ | pattern_la = _whiteborder
+ | pattern_b  = _collarwhite_laced
+ | pattern_ra = _whiteborder
+ | pattern_sh =
+ | pattern_so =_white_bands
+ | leftarm    = 99CCFF
+ | body       = 99CCFF
+ | rightarm   = 99CCFF
+ | shorts     = 000000
+ | socks      = 000000
+ | title      = Uruguay
+}}
+|{{Football kit
+ | pattern_la = _white_stripes
+ | pattern_b  = _3stripesonwhite
+ | pattern_ra = _white_stripes
+ | pattern_sh =
+ | pattern_so = _white_bands
+ | leftarm    = 99CCFF
+ | body       = 99CCFF
+ | rightarm   = 99CCFF
+ | shorts     = 999999
+ | socks      = 000000
+ | title      = Argentina
+}}
+|}
+
+{| width="100%"
+|valign="top" width="50%"|
+{| style="font-size: 90%" cellspacing="0" cellpadding="0"
+|-
+!width="25"|
+|-
+|GK ||[[Enrique Ballestrero]]
+|-
+|RB ||[[José Nasazzi]] ([[Captain (association football)|c]])
+|-
+|LB ||[[Ernesto Mascheroni]]
+|-
+|RH ||[[José Leandro Andrade|José Andrade]]
+|-
+|CH ||[[Lorenzo Fernández]]
+|-
+|LH ||[[Álvaro Gestido]]
+|-
+|OR ||[[Pablo Dorado]]
+|-
+|IR ||[[Héctor Scarone]]
+|-
+|CF ||[[Héctor Castro]]
+|-
+|IL ||[[Pedro Cea]]
+|-
+|OL ||[[Santos Iriarte]]
+|-
+|colspan=4|'''Manager:'''
+|-
+|colspan="4"|[[Alberto Suppici]]
+|}
+|valign="top"|[[File:URU-ARG 1930-07-30.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size: 90%" cellspacing="0" cellpadding="0" align=center
+|-
+!width="25"|
+|-
+|GK ||[[Juan Botasso]]
+|-
+|RB ||[[José Della Torre]]
+|-
+|LB ||[[Fernando Paternoster]]
+|-
+|RH ||[[Juan Evaristo]]
+|-
+|CH ||[[Luis Monti]]
+|-
+|LH ||[[Arico Suárez]]
+|-
+|OR ||[[Carlos Peucelle]]
+|-
+|IR ||[[Francisco Varallo]]
+|-
+|CF ||[[Guillermo Stábile]]
+|-
+|IL ||[[Manuel Ferreira (footballer)|Manuel Ferreira]] ([[Captain (association football)|c]])
+|-
+|OL ||[[Mario Evaristo]]
+|-
+|colspan=4|'''Managers:'''
+|-
+|colspan="4"|[[Francisco Olazar]]<br />[[Juan José Tramutola]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />[[Ulises Saucedo]] ([[Bolivian Football Federation|Bolivia]])
+<br />[[Henri Christophe (referee)|Henri Christophe]] ([[Royal Belgian Football Association|Belgium]])
+<includeonly>|}</includeonly><section end=Lineups />
+|style="width:60%; vertical-align:top;"|
+'''Match rules'''
+*90 minutes
+*30 minutes of [[Overtime (sports)#Association football|extra time]] if necessary
+*[[Replay (sports)#Association football|Replay]] if scores still level
+*No substitutions permitted
+|}
+
+==See also==
+*[[Argentina at the FIFA World Cup]]
+*[[Uruguay at the FIFA World Cup]]
+* [[Argentina–Uruguay football rivalry]]
+
+==References==
+{{Reflist}}
+
+==External links==
+{{Commons category}}
+
+* [https://www.fifa.com/tournaments/archive/worldcup/uruguay1930/matches/round=405/match=1087/index.html 1930 FIFA World Cup final fifa.com]
+
+{{1930 FIFA World Cup}}
+{{FIFA World Cup}}
+{{Uruguay national football team matches}}
+{{Argentina national football team matches}}
+
+{{DEFAULTSORT:1930 Fifa World Cup Final}}
+[[Category:1930 FIFA World Cup|Final]]
+[[Category:FIFA World Cup finals]]
+[[Category:Uruguay national football team matches]]
+[[Category:Argentina national football team matches]]
+[[Category:Argentina at the 1930 FIFA World Cup|Final]]
+[[Category:Uruguay at the 1930 FIFA World Cup|Final]]
+[[Category:Argentina–Uruguay football rivalry]]
+[[Category:July 1930 in sports|FIFA World Cup Final]]
+[[Category:Football competitions in Montevideo|World Cup Final]]

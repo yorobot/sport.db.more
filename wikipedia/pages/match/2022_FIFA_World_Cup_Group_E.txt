@@ -1,0 +1,1115 @@
+{{Short description|None}}
+{{Use dmy dates|date=March 2022}}
+Matches in Group E of the [[2022 FIFA World Cup]] took place from 23 November to 1 December 2022.<ref name="match schedule">{{cite web |url=https://digitalhub.fifa.com/m/464f16f856f5ed05/original/FIFA-World-Cup-Qatar-2022-Match-Schedule.pdf |title=FIFA World Cup Qatar 2022 – Match Schedule |website=FIFA.com |publisher=Fédération Internationale de Football Association |date=11 August 2022 |access-date=11 August 2022}}</ref> The group consisted of [[Spain national football team|Spain]], [[Costa Rica national football team|Costa Rica]], [[Germany national football team|Germany]], and [[Japan national football team|Japan]]. The top two teams, Japan and Spain, advanced to the [[2022 FIFA World Cup knockout stage#Round of 16|round of 16]].<ref name="regulations">{{cite web |url=https://digitalhub.fifa.com/m/2744a0a5e3ded185/original/FIFA-World-Cup-Qatar-2022-Regulations_EN.pdf |title=Regulations – FIFA World Cup Qatar 2022 |website=FIFA.com |publisher=Fédération Internationale de Football Association |date=15 December 2021 |access-date=30 March 2022}}</ref> Japan became the third ever and the first Asian team to win a World Cup group since themselves in [[2002 FIFA World Cup Group H|Group H]] and [[South Korea national football team|South Korea]] in [[2002 FIFA World Cup Group D|Group D]], both in the [[2002 FIFA World Cup|2002]] edition, a tournament both countries co-hosted. Germany was eliminated in the group stage for the second consecutive tournament after going out as defending champions in [[2018 FIFA World Cup Group F|2018]]. This was the second time the reigning world champions were eliminated in the group stage of the two subsequent tournaments, following [[Italy national football team|Italy]], who was eliminated in the following two group stages after winning the [[2006 FIFA World Cup final|2006]] edition.
+
+==Teams==
+{| class="wikitable sortable"
+|-
+!rowspan=2| Draw position
+!rowspan=2| Team
+!rowspan=2| Pot
+!rowspan=2| Confederation
+!rowspan=2| Method of<br />qualification
+!rowspan=2| Date of<br />qualification
+!rowspan=2 data-sort-type="number"| Finals<br />appearance
+!rowspan=2| Last<br />appearance
+!rowspan=2| Previous best<br />performance
+!colspan=2| [[FIFA Men's World Ranking|FIFA Rankings]]<ref>{{cite web |url=https://www.fifa.com/fifa-world-ranking/men |title=Men's Ranking |publisher=[[FIFA]] |access-date=21 November 2022}}</ref>
+|-
+! March 2022{{refn|group=nb|The rankings of March 2022 were used for [[2022 FIFA World Cup seeding|seeding for the final draw]].}}
+! October 2022
+|-
+| E1 || style=white-space:nowrap |{{#invoke:flagg|main|unpe|avar=fb|ESP}} || 1 || [[UEFA]] || [[2022 FIFA World Cup qualification – UEFA Group B|UEFA Group B]] winners || 14 November 2021 || 16th || [[2018 FIFA World Cup|2018]] || data-sort-value="8.1" | '''Winners''' ([[2010 FIFA World Cup|2010]]) || 7 || 7
+|-
+| E2 || style=white-space:nowrap | {{#invoke:flagg|main|unpe|avar=fb|CRC}} || 4{{refn|group=nb|name=Placeholder|As the identity of the [[2022 FIFA World Cup qualification (CONCACAF–OFC play-off)|CONCACAF v OFC play-off]] winners was not known at the time of the final draw, positions in the FIFA Rankings were not taken into account, and the placeholder in the draw was automatically seeded into pot 4.<ref>{{cite web |url=https://www.fifa.com/tournaments/mens/worldcup/qatar2022/media-releases/procedures-for-the-final-draw-for-the-fifa-world-cup-qatar-2022-tm-released |title=Procedures for the Final Draw for the FIFA World Cup Qatar 2022 released |publisher=[[FIFA]] |date=22 March 2022 |access-date=22 March 2022}}</ref>}} || [[CONCACAF]] || [[2022 FIFA World Cup qualification (CONCACAF–OFC play-off)|CONCACAF v OFC play-off]] winners || 14 June 2022 || 6th || [[2018 FIFA World Cup|2018]] || data-sort-value="4.1" | Quarter-finals ([[2014 FIFA World Cup|2014]]) || 31{{refn|group=nb|name=Placeholder}} || 31
+|-
+| E3 || style=white-space:nowrap |{{#invoke:flagg|main|unpe|avar=fb|GER}} || 2 || [[UEFA]] || [[2022 FIFA World Cup qualification – UEFA Group J|UEFA Group J]] winners || 11 October 2021 || 20th{{refn|group=nb|Germany competed between 1951 and 1990 as West Germany.}} || [[2018 FIFA World Cup|2018]] || data-sort-value="8.4" | '''Winners''' ([[1954 FIFA World Cup|1954]], [[1974 FIFA World Cup|1974]], [[1990 FIFA World Cup|1990]], [[2014 FIFA World Cup|2014]]) || 12 || 11
+|-
+| E4 || style=white-space:nowrap |{{#invoke:flagg|main|unpe|avar=fb|JPN}} || 3 || [[Asian Football Confederation|AFC]] || [[2022 FIFA World Cup qualification – AFC third round#Group B|AFC third round Group B]] runners-up || 24 March 2022 || 7th || [[2018 FIFA World Cup|2018]] || data-sort-value="3.3" | Round of 16 ([[2002 FIFA World Cup|2002]], [[2010 FIFA World Cup|2010]], [[2018 FIFA World Cup|2018]]) || 23 || 24
+|}
+'''Notes'''
+{{reflist|group=nb}}
+
+==Standings==
+{{2022 FIFA World Cup group tables|Group E}}
+
+In the [[2022 FIFA World Cup knockout stage#Round of 16|round of 16]]:
+* The winners of Group E, Japan, advanced to play the runners-up of [[2022 FIFA World Cup Group F|Group F]], [[Croatia national football team|Croatia]].
+* The runners-up of Group E, Spain, advanced to play the winners of [[2022 FIFA World Cup Group F|Group F]], [[Morocco national football team|Morocco]].
+
+==Matches==
+All times listed are local, [[Arabia Standard Time|AST]] ([[UTC+03:00|UTC+3]]).<ref name="match schedule"/>
+
+===Germany vs Japan===
+The two teams had faced each other twice, most recently in 2006 friendly, a 2–2 draw.<ref>{{cite news |title=Germany national football team: record v Japan |url=https://www.11v11.com/teams/germany/tab/opposingTeams/opposition/Japan/ |access-date=28 September 2023 |website=11v11.com}}</ref>
+
+Japan's [[Daizen Maeda]] would convert a cross into the net 8 minutes in, but the goal was ruled out for offside. In the 33rd minute, Germany was awarded a penalty when Japanese goalkeeper [[Shūichi Gonda]] fouled [[David Raum]] inside the area. [[İlkay Gündoğan]] converted the penalty via a shot down the middle of the net, with the goalkeeper diving to the right.<ref>{{cite web|url=https://www.bbc.com/sport/football/63644792|title=Germany 1 Japan 2|date=23 November 2022|work=BBC Sport|access-date=1 December 2022}}</ref> Germany would have the ball in the net again just before half-time through [[Kai Havertz]], but the goal was then once again disallowed for offside.
+
+In the 75th minute, Japan equalized through [[Ritsu Dōan]], after he finished a rebound into the net following goalkeeper [[Manuel Neuer]]'s save from a low shot from the left. Japan went in front eight minutes later, when [[Takuma Asano]] received the ball down the right wing before pulling away from defender [[Nico Schlotterbeck]] towards the penalty area and shooting high above Neuer into the net past the near post.<ref>{{cite web|url=https://www.the42.ie/japan-germany-5927859-Nov2022/|title=Japan come from behind in stunning win against Germany|date=23 November 2022|work=The 42|access-date=1 December 2022}}</ref>
+
+The result marked the second consecutive occasion that Germany lost their opening World Cup match, after a [[2018 FIFA World Cup Group F#Germany vs Mexico|1–0 defeat to Mexico]] in [[2018 FIFA World Cup|2018]]. Following his substitution on in the 79th minute, the contest also saw the return of [[Mario Götze]] in a World Cup match, his first since scoring the decisive goal in extra time of the [[2014 FIFA World Cup final|2014 final]] against [[Argentina national football team|Argentina]].<ref>{{cite web|url=https://www.theguardian.com/football/live/2022/nov/23/germany-v-japan-world-cup-2022-live|title=Germany 1 Japan 2: As it happened|date=23 November 2022|work=The Guardian|access-date=1 December 2022}}</ref>
+
+<section begin=E1 />{{Football box
+|date       = {{Start date|2022|11|23|df=y}}
+|time       = 16:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|GER}}
+|score      = {{score link|2022 FIFA World Cup Group E#Germany vs Japan|1–2}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|JPN}}
+|goals1     =
+*[[İlkay Gündoğan|Gündoğan]] {{goal|33|pen.}}
+|goals2     =
+*[[Ritsu Dōan|Dōan]] {{goal|75}}
+*[[Takuma Asano|Asano]] {{goal|83}}
+|stadium    = [[Khalifa International Stadium]], [[Al Rayyan (city)|Al Rayyan]]
+|attendance = 42,608
+|referee    = [[Iván Barton]] ([[Salvadoran Football Federation|El Salvador]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235476
+}}<section end=E1 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _ger22h
+ |pattern_b  = _ger22H
+ |pattern_ra = _ger22h
+ |pattern_sh = _ger22h
+ |pattern_so = _ger22hl
+ |leftarm    = FFFFFF
+ |body       = FFFFFF
+ |rightarm   = FFFFFF
+ |shorts     = 000000
+ |socks      = FFFFFF
+ |title      = Germany
+}}
+|{{Football kit
+ |pattern_la = _jpn22h
+ |pattern_b  = _jpn22H
+ |pattern_ra = _jpn22h
+ |pattern_sh = _jpn22h
+ |pattern_so = _jpn22hl
+ |leftarm    = 1038C5
+ |body       = 1038C5
+ |rightarm   = 1038C5
+ |shorts     = FFFFFF
+ |socks      = 1038C5
+ |title      = Japan
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Manuel Neuer]] ([[Captain (association football)|c]])
+|-
+|RB ||'''15'''||[[Niklas Süle]]
+|-
+|CB ||'''2''' ||[[Antonio Rüdiger]]
+|-
+|CB ||'''23'''||[[Nico Schlotterbeck]]
+|-
+|LB ||'''3''' ||[[David Raum]]
+|-
+|CM ||'''6''' ||[[Joshua Kimmich]]
+|-
+|CM ||'''21'''||[[İlkay Gündoğan]] || || {{suboff|67}}
+|-
+|RW ||'''10'''||[[Serge Gnabry]] || || {{suboff|90}}
+|-
+|AM ||'''13'''||[[Thomas Müller]] || || {{suboff|67}}
+|-
+|LW ||'''14'''||[[Jamal Musiala]] || || {{suboff|79}}
+|-
+|CF ||'''7''' ||[[Kai Havertz]] || || {{suboff|79}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|MF ||'''18'''||[[Jonas Hofmann]] || || {{subon|67}}
+|-
+|MF ||'''8''' ||[[Leon Goretzka]] || || {{subon|67}}
+|-
+|MF ||'''11'''||[[Mario Götze]] || || {{subon|79}}
+|-
+|FW ||'''9''' ||[[Niclas Füllkrug]] || || {{subon|79}}
+|-
+|FW ||'''26'''||[[Youssoufa Moukoko]] || || {{subon|90}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Hansi Flick]]
+|}
+|valign="top"|[[File:GER-JPN 2022-11-23.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''12'''||[[Shūichi Gonda]]
+|-
+|RB ||'''19'''||[[Hiroki Sakai]] || || {{suboff|75}}
+|-
+|CB ||'''4''' ||[[Ko Itakura]]
+|-
+|CB ||'''22'''||[[Maya Yoshida]] ([[Captain (association football)|c]])
+|-
+|LB ||'''5''' ||[[Yuto Nagatomo]] || || {{suboff|57}}
+|-
+|CM ||'''6''' ||[[Wataru Endo]]
+|-
+|CM ||'''17'''||[[Ao Tanaka]] || || {{suboff|71}}
+|-
+|RW ||'''14'''||[[Junya Itō (footballer, born 1993)|Junya Itō]]
+|-
+|AM ||'''15'''||[[Daichi Kamada]]
+|-
+|LW ||'''11'''||[[Takefusa Kubo]] || || {{suboff|46}}
+|-
+|CF ||'''25'''||[[Daizen Maeda]] || || {{suboff|57}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|DF ||'''16'''||[[Takehiro Tomiyasu]] || || {{subon|46}}
+|-
+|MF ||'''9''' ||[[Kaoru Mitoma]] || || {{subon|57}}
+|-
+|FW ||'''18'''||[[Takuma Asano]] || || {{subon|57}}
+|-
+|MF ||'''8''' ||[[Ritsu Dōan]] || || {{subon|71}}
+|-
+|MF ||'''10'''||[[Takumi Minamino]] || || {{subon|75}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Hajime Moriyasu]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Shūichi Gonda]] (Japan)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/germany-japan-group-e-world-cup-qatar-2022-match-report-asano-doan-gundogan |title=Germany stunned by Japanese comeback |publisher=[[FIFA]] |date=23 November 2022 |access-date=23 November 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />David Morán ([[Salvadoran Football Federation|El Salvador]])
+<br />Zachari Zeegelaar ([[Surinamese Football Association|Suriname]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[Saíd Martínez]] ([[National Autonomous Federation of Football of Honduras|Honduras]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Helpys Raymundo Feliz ([[Dominican Football Federation|Dominican Republic]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Mauro Vigliano]] ([[Argentine Football Association|Argentina]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Armando Villarreal]] ([[United States Soccer Federation|United States]])
+<br />Kathryn Nesbitt ([[United States Soccer Federation|United States]])
+<br />[[Fernando Guerrero (referee)|Fernando Guerrero]] ([[Mexican Football Federation|Mexico]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Mahmoud Abouelregal ([[Egyptian Football Association|Egypt]])
+|}
+
+===Spain vs Costa Rica===
+The teams had met on three occasions, all of them friendlies, with the most recent being a 5–0 home win for Spain in 2017.<ref name="MundoDeportivo">{{cite news |last1=Muñoz |first1=Felip |title=Rival de España: Nueva Zelanda o Costa Rica, dos selecciones asequibles |url=https://www.mundodeportivo.com/futbol/mundial/20220401/1001778613/rival-espana-nueva-zelanda-costa-rica-dos-equipos-asequibles.html |access-date=1 April 2022 |work=[[Mundo Deportivo]] |date=1 April 2022 |language=es}}</ref>
+
+Spain dominated possession, and were up 3–0 at half-time thanks to goals scored in a span of 20 minutes by [[Dani Olmo]], [[Marco Asensio]] and [[Ferran Torres]] from the penalty spot. Torres would get his second goal of the match nine minutes into the second half, before teenager [[Gavi (footballer)|Gavi]] scored Spain's fifth goal via an outside-of-the-foot volley in the 74th minute. Late strikes from substitutes [[Carlos Soler]] and [[Álvaro Morata]] saw the match conclude in a 7–0 Spanish win, the biggest margin of victory in a World Cup game since [[Portugal national football team|Portugal]] beat [[North Korea national football team|North Korea]] by the [[2010 FIFA World Cup Group G#Portugal vs North Korea|same scoreline]] in 2010. Costa Rica failed to record a single shot throughout the entirety of the contest, whilst Spain scored with each of their first seven shots on target.<ref>{{cite news|url=https://www.skysports.com/football/news/12098/12753911/world-cup-2022-spain-7-0-costa-rica-ferran-torres-scores-twice-as-luis-enriques-side-make-rampant-start|title=Spain 7-0 Costa Rica: Ferran Torres scores twice as Luis Enrique's side make rampant start|publisher=Sky Sports|date=24 November 2022|access-date=24 November 2022}}</ref>
+
+Costa Rica equalled their worst ever defeat, a 7–0 loss to [[Mexico men's national football team|Mexico]] in 1975, while this was Spain's biggest win at a World Cup, surpassing their [[1998 FIFA World Cup Group D#Spain vs Bulgaria|6–1 success]] against [[Bulgaria national football team|Bulgaria]] in 1998.<ref>{{cite web|url=https://brazilian.report/liveblog/2022/11/23/costa-rica-spain-world-cup-debut/|title=Costa Rica crushed by Spain in World Cup debut|website=The Brazilian Report|date=23 November 2022|access-date=23 November 2022}}</ref> At the age of 18 years and 110 days, Gavi became the youngest ever player to both play and score in a World Cup match for Spain; he was also the youngest player to score for any team in the competition since [[Pelé]] for [[Brazil national football team|Brazil]] in [[1958 FIFA World Cup|1958]].<ref>{{cite web|url=https://www.bbc.com/sport/football/63644789|title=Spain 7 Costa Rica 0|work=BBC Sport|date=23 November 2022|access-date=24 November 2022}}</ref>
+
+<section begin=E2 />{{Football box
+|date       = {{Start date|2022|11|23|df=y}}
+|time       = 19:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|ESP}}
+|score      = {{score link|2022 FIFA World Cup Group E#Spain vs Costa Rica|7–0}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|CRC}}
+|goals1     =
+*[[Dani Olmo|Olmo]] {{goal|11}}
+*[[Marco Asensio|Asensio]] {{goal|21}}
+*[[Ferran Torres|F. Torres]] {{goal|31|pen.|54}}
+*[[Gavi (footballer)|Gavi]] {{goal|74}}
+*[[Carlos Soler|Soler]] {{goal|90}}
+*[[Álvaro Morata|Morata]] {{goal|90+2}}
+|goals2     =
+|stadium    = [[Al Thumama Stadium]], [[Doha]]
+|attendance = 40,013
+|referee    = [[Mohammed Abdulla Hassan Mohamed]] ([[United Arab Emirates Football Association|United Arab Emirates]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235472
+}}<section end=E2 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _esp22h
+ |pattern_b  = _esp22H
+ |pattern_ra = _esp22h
+ |pattern_sh = _esp22h2
+ |pattern_so = _esp22h2
+ |leftarm    = E00000
+ |body       = E00000
+ |rightarm   = E00000
+ |shorts     = E00000
+ |socks      = E00000
+ |title      = Spain
+}}
+|{{Football kit
+ |pattern_la = _crc22a
+ |pattern_b  = _crc22A
+ |pattern_ra = _crc22a
+ |pattern_sh = _sides_on_white
+ |pattern_so =
+ |leftarm    = FFFFFF
+ |body       = FFFFFF
+ |rightarm   = FFFFFF
+ |shorts     = 0033FF
+ |socks      = FFFFFF
+ |title      = <span class="nowrap">Costa Rica</span>
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''23'''||[[Unai Simón]]
+|-
+|RB ||'''2''' ||[[César Azpilicueta]]
+|-
+|CB ||'''16'''||[[Rodri (footballer, born 1996)|Rodri]]
+|-
+|CB ||'''24'''||[[Aymeric Laporte]]
+|-
+|LB ||'''18'''||[[Jordi Alba]] || || {{suboff|64}}
+|-
+|DM ||'''5''' ||[[Sergio Busquets]] ([[Captain (association football)|c]]) || || {{suboff|64}}
+|-
+|CM ||'''9''' ||[[Gavi (footballer)|Gavi]]
+|-
+|CM ||'''26'''||[[Pedri]] || || {{suboff|57}}
+|-
+|RF ||'''11'''||[[Ferran Torres]] || || {{suboff|57}}
+|-
+|CF ||'''10'''||[[Marco Asensio]] || || {{suboff|69}}
+|-
+|LF ||'''21'''||[[Dani Olmo]]
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|FW ||'''7''' ||[[Álvaro Morata]] || || {{subon|57}}
+|-
+|MF ||'''19'''||[[Carlos Soler]] || || {{subon|57}}
+|-
+|DF ||'''14'''||[[Alejandro Balde]] || || {{subon|64}}
+|-
+|MF ||'''8''' ||[[Koke (footballer, born 1992)|Koke]] || || {{subon|64}}
+|-
+|FW ||'''12'''||[[Nico Williams]] || || {{subon|69}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Luis Enrique]]
+|}
+|valign="top"|[[File:ESP-CRC 2022-11-23.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Keylor Navas]] ([[Captain (association football)|c]])
+|-
+|RB ||'''16'''||[[Carlos Martínez (footballer, born 1999)|Carlos Martínez]] || || {{suboff|46}}
+|-
+|CB ||'''6''' ||[[Óscar Duarte (footballer, born 1989)|Óscar Duarte]]
+|-
+|CB ||'''15'''||[[Francisco Calvo]] || {{yel|68}}
+|-
+|LB ||'''8''' ||[[Bryan Oviedo]] || || {{suboff|82}}
+|-
+|RM ||'''4''' ||[[Keysher Fuller]]
+|-
+|CM ||'''5''' ||[[Celso Borges]] || || {{suboff|72}}
+|-
+|CM ||'''17'''||[[Yeltsin Tejeda]]
+|-
+|LM ||'''9''' ||[[Jewison Bennette]] || || {{suboff|61}}
+|-
+|CF ||'''12'''||[[Joel Campbell]] || {{yel|90+7}}
+|-
+|CF ||'''7''' ||[[Anthony Contreras]] || || {{suboff|61}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|DF ||'''19'''||[[Kendall Waston]] || || {{subon|46}}
+|-
+|MF ||'''26'''||[[Álvaro Zamora]] || || {{subon|61}}
+|-
+|MF ||'''10'''||[[Bryan Ruiz]] || || {{subon|61}}
+|-
+|MF ||'''20'''||[[Brandon Aguilera]] || || {{subon|72}}
+|-
+|DF ||'''22'''||[[Rónald Matarrita]] || || {{subon|82}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|{{#invoke:flag|icon|COL}} [[Luis Fernando Suárez]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Gavi (footballer)|Gavi]] (Spain)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/world-cup-qatar-2022-spain-v-costa-rica-match-review-report-goal-scorers-analysis-stats-quotes |title=Seven-up Spain trounce Ticos |publisher=[[FIFA]] |date=23 November 2022 |access-date=23 November 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Mohamed Al-Hammadi ([[United Arab Emirates Football Association|United Arab Emirates]])
+<br />Hasan Al-Mahri ([[United Arab Emirates Football Association|United Arab Emirates]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[Ma Ning (referee)|Ma Ning]] ([[Chinese Football Association|China]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Shi Xiang ([[Chinese Football Association|China]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Abdulla Al-Marri]] ([[Qatar Football Association|Qatar]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Muhammad Taqi (referee)|Muhammad Taqi]] ([[Football Association of Singapore|Singapore]])
+<br />Bruno Pires ([[Brazilian Football Confederation|Brazil]])
+<br />[[Tomasz Kwiatkowski]] ([[Polish Football Association|Poland]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Taleb Al-Marri ([[Qatar Football Association|Qatar]])
+|}
+
+===Japan vs Costa Rica===
+The teams had previously met four times, all in friendly matches, with Japan winning three and drawing one;<ref>{{cite web |title=Japan national football team: record v Costa Rica |url=https://www.11v11.com/teams/japan/tab/opposingTeams/opposition/Costa%20Rica/ |access-date=1 April 2022 |website=11v11.com}}</ref> their most recent encounter was a 3–0 home victory for the Japanese in 2018.<ref>{{cite news |title=Japón golea 3–0 a Costa Rica en amistoso |url=https://www.reuters.com/article/futbol-japon-costarica-idLTAKCN1LR1H0-OUSLS |access-date=1 April 2022 |work=Reuters |date=11 September 2018 |language=es}}</ref>
+
+Japan, who made five changes to their starting lineup that won against Germany, dominated the match, but it was Costa Rica who would go in front with nine minutes remaining.<ref>{{cite web|url=https://www.bbc.com/sport/football/63692163|title=Japan 0 Costa Rica 1|date=27 November 2022|work=BBC Sport|access-date=1 December 2022}}</ref> [[Keysher Fuller]] scored with a shot from the right which was deflected and misjudged by Japan goalkeeper [[Shūichi Gonda]], and this would end up being the only goal of the game.<ref>{{cite news|url=https://www.skysports.com/football/news/12098/12755147/world-cup-2022-japan-0-1-costa-rica-keysher-fuller-scores-late-winner-for-los-ticos-to-blow-group-e-wide-open|title=World Cup 2022 – Japan 0–1 Costa Rica: Keysher Fuller scores late winner for Los Ticos to blow Group E wide open|date=27 November 2022|publisher=Sky Sports|access-date=1 December 2022}}</ref><ref>{{cite web|url=https://www.bbc.com/sport/live/football/61016539|title=Japan 0 Costa Rica 1: Live|date=27 November 2022|work=BBC Sport|access-date=1 December 2022}}</ref>
+
+<section begin=E3 />{{Football box
+|date       = {{Start date|2022|11|27|df=y}}
+|time       = 13:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|JPN}}
+|score      = {{score link|2022 FIFA World Cup Group E#Japan vs Costa Rica|0–1}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|CRC}}
+|goals1     =
+|goals2     =
+*[[Keysher Fuller|Fuller]] {{goal|81}}
+|stadium    = [[Ahmad bin Ali Stadium]], [[Al Rayyan (city)|Al Rayyan]]
+|attendance = 41,479
+|referee    = [[Michael Oliver (referee)|Michael Oliver]] ([[The Football Association|England]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235471
+}}<section end=E3 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _jpn22h
+ |pattern_b  = _jpn22H
+ |pattern_ra = _jpn22h
+ |pattern_sh = _jpn22h
+ |pattern_so = _jpn22hl
+ |leftarm    = 1038C5
+ |body       = 1038C5
+ |rightarm   = 1038C5
+ |shorts     = FFFFFF
+ |socks      = 1038C5
+ |title      = Japan
+}}
+|{{Football kit
+ |pattern_la = _crc22h
+ |pattern_b  = _crc22H
+ |pattern_ra = _crc22h
+ |pattern_sh = _whitesides
+ |pattern_so =
+ |leftarm    = F80707
+ |body       = F80707
+ |rightarm   = F80707
+ |shorts     = 0033FF
+ |socks      = FFFFFF
+ |title      = <span class="nowrap">Costa Rica</span>
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''12'''||[[Shūichi Gonda]]
+|-
+|RB ||'''2''' ||[[Miki Yamane]] || {{yel|44}} || {{suboff|62}}
+|-
+|CB ||'''4''' ||[[Ko Itakura]] || {{yel|84}}
+|-
+|CB ||'''22'''||[[Maya Yoshida]] ([[Captain (association football)|c]])
+|-
+|LB ||'''5''' ||[[Yuto Nagatomo]] || || {{suboff|46}}
+|-
+|CM ||'''6''' ||[[Wataru Endo]] || {{yel|90+3}}
+|-
+|CM ||'''13'''||[[Hidemasa Morita]]
+|-
+|RW ||'''8''' ||[[Ritsu Dōan]] || || {{suboff|67}}
+|-
+|AM ||'''15'''||[[Daichi Kamada]]
+|-
+|LW ||'''24'''||[[Yuki Soma]] || || {{suboff|82}}
+|-
+|CF ||'''21'''||[[Ayase Ueda]] || || {{suboff|46}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|DF ||'''26'''||[[Hiroki Itō (footballer, born 1999)|Hiroki Itō]] || || {{subon|46}}
+|-
+|FW ||'''18'''||[[Takuma Asano]] || || {{subon|46}}
+|-
+|MF ||'''9''' ||[[Kaoru Mitoma]] || || {{subon|62}}
+|-
+|MF ||'''14'''||[[Junya Itō (footballer, born 1993)|Junya Itō]] || || {{subon|67}}
+|-
+|MF ||'''10'''||[[Takumi Minamino]] || || {{subon|82}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Hajime Moriyasu]]
+|}
+|valign="top"|[[File:JPN-CRC 2022-11-27.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Keylor Navas]] ([[Captain (association football)|c]])
+|-
+|CB ||'''6''' ||[[Óscar Duarte (footballer, born 1989)|Óscar Duarte]]
+|-
+|CB ||'''19'''||[[Kendall Waston]]
+|-
+|CB ||'''15'''||[[Francisco Calvo]] || {{yel|70}}
+|-
+|RWB||'''4''' ||[[Keysher Fuller]]
+|-
+|LWB||'''8''' ||[[Bryan Oviedo]]
+|-
+|RM ||'''13'''||[[Gerson Torres]] || || {{suboff|65}}
+|-
+|CM ||'''5''' ||[[Celso Borges]] || {{yel|61}} || {{suboff|89}}
+|-
+|CM ||'''17'''||[[Yeltsin Tejeda]]
+|-
+|LM ||'''12'''||[[Joel Campbell]] || || {{suboff|90+5}}
+|-
+|CF ||'''7''' ||[[Anthony Contreras]] || {{yel|41}} || {{suboff|65}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|MF ||'''20'''||[[Brandon Aguilera]] || || {{subon|65}}
+|-
+|MF ||'''9''' ||[[Jewison Bennette]] || || {{subon|65}}
+|-
+|MF ||'''14'''||[[Youstin Salas]] || || {{subon|89}}
+|-
+|MF ||'''2''' ||[[Daniel Chacón (footballer)|Daniel Chacón]] || || {{subon|90+5}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|{{#invoke:flag|icon|COL}} [[Luis Fernando Suárez]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Keysher Fuller]] (Costa Rica)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/article-greater-than-fwc-2022-greater-than-japan-v-costa-rica-match-review |title=Costa Rica bounce back by beating Japan |publisher=[[FIFA]] |date=27 November 2022 |access-date=27 November 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Stuart Burt ([[The Football Association|England]])
+<br />Simon Bennett ([[The Football Association|England]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[Maguette Ndiaye]] ([[Senegalese Football Federation|Senegal]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />El Hadj Malick Samba ([[Senegalese Football Federation|Senegal]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Jérôme Brisard]] ([[French Football Federation|France]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Benoît Millot]] ([[French Football Federation|France]])
+<br />Cyril Gringore ([[French Football Federation|France]])
+<br />[[Adil Zourak]] ([[Royal Moroccan Football Federation|Morocco]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Nicolas Danos ([[French Football Federation|France]])
+|}
+
+===Spain vs Germany===
+The teams had previously met four times in the World Cup: Germany recorded a [[1966 FIFA World Cup Group 2#West Germany vs Spain|2–1 group stage victory]] in [[1966 FIFA World Cup|1966]] and a [[1982 FIFA World Cup Group B#West Germany vs Spain|2–1 second group stage win]] in [[1982 FIFA World Cup|1982]], the sides had a [[1994 FIFA World Cup Group C#Germany vs Spain|1–1 group stage draw]] in [[1994 FIFA World Cup|1994]], and Spain earned a [[2010 FIFA World Cup knockout stage#Germany vs Spain|1–0 semi-final win]] in [[2010 FIFA World Cup|2010]]. Their most recent meeting was in the [[2020–21 UEFA Nations League]], with Spain winning [[2020–21 UEFA Nations League A#Spain v Germany|6–0]].<ref>{{cite web |title=Spain national football team: record v Germany |url=https://www.11v11.com/teams/spain/tab/opposingTeams/opposition/Germany/ |access-date=28 September 2023 |website=11v11.com}}</ref>
+
+In the first half, Spain's [[Dani Olmo]] had a shot that goalkeeper [[Manuel Neuer]] turned onto the bar. In the 62nd minute, substitute [[Álvaro Morata]] put Spain into the lead when he flicked [[Jordi Alba]]'s cross from the left into the net at the near post.<ref>{{cite web|url=https://www.bbc.com/sport/football/63692161|title=Spain 1 Germany 1|date=27 November 2022|work=BBC Sport|access-date=1 December 2022}}</ref>
+With seven minutes to go, [[Niclas Füllkrug]], also a substitute, equalized for Germany when he lashed the ball with his right foot high past Spanish goalkeeper [[Unai Simón]] from the right. [[Leroy Sané]] nearly won the contest for Germany in stoppage time when he was through on goal, but the ball eventually went out of bounds after he ran out of space to run.<ref>{{cite web|url=https://www.theguardian.com/football/live/2022/nov/27/spain-v-germany-world-cup-2022-live|title=Spain 1 Germany 1: As it happened|date=27 November 2022|work=The Guardian|access-date=1 December 2022}}</ref>
+
+<section begin=E4 />{{Football box
+|date       = {{Start date|2022|11|27|df=y}}
+|time       = 22:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|ESP}}
+|score      = {{score link|2022 FIFA World Cup Group E#Spain vs Germany|1–1}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|GER}}
+|goals1     =
+*[[Álvaro Morata|Morata]] {{goal|62}}
+|goals2     =
+*[[Niclas Füllkrug|Füllkrug]] {{goal|83}}
+|stadium    = [[Al Bayt Stadium]], [[Al Khor]]
+|attendance = 68,895
+|referee    = [[Danny Makkelie]] ([[Royal Dutch Football Association|Netherlands]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235474
+}}<section end=E4 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _esp22h
+ |pattern_b  = _esp22H
+ |pattern_ra = _esp22h
+ |pattern_sh = _esp22h2
+ |pattern_so = _esp22h2
+ |leftarm    = E00000
+ |body       = E00000
+ |rightarm   = E00000
+ |shorts     = E00000
+ |socks      = E00000
+ |title      = Spain
+}}
+|{{Football kit
+ |pattern_la = _ger22h
+ |pattern_b  = _ger22H
+ |pattern_ra = _ger22h
+ |pattern_sh = _ger22h2
+ |pattern_so = _ger22hl
+ |leftarm    = FFFFFF
+ |body       = FFFFFF
+ |rightarm   = FFFFFF
+ |shorts     = FFFFFF
+ |socks      = FFFFFF
+ |title      = Germany
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''23'''||[[Unai Simón]]
+|-
+|RB ||'''20'''||[[Dani Carvajal]]
+|-
+|CB ||'''16'''||[[Rodri (footballer, born 1996)|Rodri]]
+|-
+|CB ||'''24'''||[[Aymeric Laporte]]
+|-
+|LB ||'''18'''||[[Jordi Alba]] || || {{suboff|82}}
+|-
+|DM ||'''5''' ||[[Sergio Busquets]] ([[Captain (association football)|c]]) || {{yel|44}}
+|-
+|CM ||'''9''' ||[[Gavi (footballer)|Gavi]] || || {{suboff|66}}
+|-
+|CM ||'''26'''||[[Pedri]]
+|-
+|RF ||'''11'''||[[Ferran Torres]] || || {{suboff|54}}
+|-
+|CF ||'''10'''||[[Marco Asensio]] || || {{suboff|66}}
+|-
+|LF ||'''21'''||[[Dani Olmo]]
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|FW ||'''7''' ||[[Álvaro Morata]] || || {{subon|54}}
+|-
+|MF ||'''8''' ||[[Koke (footballer, born 1992)|Koke]] || || {{subon|66}}
+|-
+|FW ||'''12'''||[[Nico Williams]] || || {{subon|66}}
+|-
+|DF ||'''14'''||[[Alejandro Balde]] || || {{subon|82}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Luis Enrique]]
+|}
+|valign="top"|[[File:ESP-GER 2022-11-27.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Manuel Neuer]] ([[Captain (association football)|c]])
+|-
+|RB ||'''5''' ||[[Thilo Kehrer]] || {{yel|37}} || {{suboff|70}}
+|-
+|CB ||'''15'''||[[Niklas Süle]]
+|-
+|CB ||'''2''' ||[[Antonio Rüdiger]]
+|-
+|LB ||'''3''' ||[[David Raum]] || || {{suboff|87}}
+|-
+|CM ||'''6''' ||[[Joshua Kimmich]] || {{yel|60}}
+|-
+|CM ||'''8''' ||[[Leon Goretzka]] || {{yel|58}}
+|-
+|RW ||'''10'''||[[Serge Gnabry]] || || {{suboff|85}}
+|-
+|AM ||'''21'''||[[İlkay Gündoğan]] || || {{suboff|70}}
+|-
+|LW ||'''14'''||[[Jamal Musiala]]
+|-
+|CF ||'''13'''||[[Thomas Müller]] || || {{suboff|70}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|FW ||'''9''' ||[[Niclas Füllkrug]] || || {{subon|70}}
+|-
+|DF ||'''16'''||[[Lukas Klostermann]] || || {{subon|70}}
+|-
+|MF ||'''19'''||[[Leroy Sané]] || || {{subon|70}}
+|-
+|MF ||'''18'''||[[Jonas Hofmann]] || || {{subon|85}}
+|-
+|DF ||'''23'''||[[Nico Schlotterbeck]] || || {{subon|87}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Hansi Flick]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Álvaro Morata]] (Spain)<ref>{{cite web |url= https://www.fifa.com/fifaplus/en/articles/germany-spain-antonio-rudiger-hansi-flick-luis-enrique-alvaro-morata-niclas-fullkrug-fifa-world-cup-qatar-2022 |title= Substitute Fullkrug strikes for vital Germany point
+|publisher=[[FIFA]] |date=27 November 2022 |access-date=27 November 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Hessel Steegstra ([[Royal Dutch Football Association|Netherlands]])
+<br />Jan de Vries ([[Royal Dutch Football Association|Netherlands]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[István Kovács (referee)|István Kovács]] ([[Romanian Football Federation|Romania]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Vasile Marinescu ([[Romanian Football Federation|Romania]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Pol van Boekel]] ([[Royal Dutch Football Association|Netherlands]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Massimiliano Irrati]] ([[Italian Football Federation|Italy]])
+<br />Taleb Al-Marri ([[Qatar Football Association|Qatar]])
+<br />[[Paolo Valeri]] ([[Italian Football Federation|Italy]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Ovidiu Artene ([[Romanian Football Federation|Romania]])
+|}
+
+===Japan vs Spain===
+The teams previously faced each other once in 2001, a friendly won 1–0 by Spain.<ref>{{cite news |title=Spain national football team: record v Japan |url=https://www.11v11.com/teams/spain/tab/opposingTeams/opposition/Japan/ |access-date=28 September 2023 |website=11v11.com}}</ref>
+
+After [[Álvaro Morata]] scored with a header from five yards out after a cross from [[César Azpilicueta]] on the right to give Spain a 1–0 half-time lead, [[Ritsu Dōan]] equalized for Japan early into the second period, with his strike from outside the penalty area overpowering goalkeeper [[Unai Simón]] and going into the top right corner of the net. [[Ao Tanaka]] put Japan in front just three minutes later with a close range finish, with the assist coming from a cut-back by [[Kaoru Mitoma]] on the left, seeing the ball hover within millimeters of the left sideline.<ref>{{cite news|url=https://www.telegraph.co.uk/football/2022/12/01/japan-vs-spain-world-cup-2022-live-score-pedri-group-e/|title=Japan vs Spain result: VAR gives Japan victory and puts Germany out of World Cup|first1=Sam|last1=Dean|first2=James|last2=Ducker|first3=Daniel|last3=Zeqiri|newspaper=The Telegraph |date=1 December 2022}}</ref> This would prove to be the decisive goal, as Japan won 2–1 to top Group E ahead of Spain and Germany, the latter being eliminated in the first round for the second tournament in a row.
+
+Due to the tightness of the call, the circumstances surrounding Japan's second goal sparked much discussion.<ref>{{cite news|url=https://www.goal.com/en-gb/news/explained-why-japan-second-goal-spain-controversially-allowed-var/blt78d3cdd7144ece65|title=Explained: Why Japan's second goal against Spain was controversially allowed by VAR despite ball appearing to be out of play|website=Goal.com}}</ref> The live television camera angle created an optical illusion as if the pass to Tanaka was out of bounds, and the [[video assistant referee]] took several minutes to confirm that a sliver of the ball stayed in the field, making it a valid goal. The crucial evidence that settled the dispute was the [[bird's eye view|bird's eye]] photo taken by Petr David Josek, released by the [[Associated Press]] after the match.<ref name="AP interview Josek"/><ref name="Bunshun.jp interview Josek"/> Josek revealed that a total of four agencies — AP, [[Reuters]], [[Agence France-Presse|AFP]] and [[Getty Images]] —<ref name="Bunshun.jp interview Josek"/> were approved to enter the [[Catwalk (theater)|suspended catwalk]] to take bird's eye photos, but the latter three missed the shot because they were at the opposite side of the pitch anticipating a Spanish goal instead.<ref name="AP interview Josek">{{cite news|title=AP photo catches key moment before Japan’s World Cup goal|work=Associated Press News|first=Ciarán |last=Fahey|date=2022-12-02|url=https://apnews.com/article/world-cup-sports-soccer-middle-east-international-82a14c07535319540767aaae1f1ce6e5|archiveurl=https://web.archive.org/web/20221222152611/https://apnews.com/article/world-cup-sports-soccer-middle-east-international-82a14c07535319540767aaae1f1ce6e5|archivedate=2022-12-22}}</ref><ref name="Bunshun.jp interview Josek">{{cite news|title=三笘薫"奇跡の1ミリ"、あの証拠写真を撮影した外国人カメラマンに直撃取材「なぜ撮れた？」「地上50mからニッポンのゴールを待っていた」|last=齋藤裕|work=Sports Graphic Number |publisher=Bungeishunju|date=4 December 2022|url=https://number.bunshun.jp/articles/-/855640|archiveurl=https://archive.today/20230822051828/https://number.bunshun.jp/articles/-/855640|archivedate=22 August 2023}}</ref>
+
+Japan's victory with only 18% of possession was the lowest for a winning side at a FIFA World Cup match since records began in [[1966 FIFA World Cup|1966]].<ref name="OptaJoe"/> The match would later draw comparisons with the [[Japan women's national football team|Japan women's team]]'s 4–0 win against [[Spain women's national football team|Spain]] at the [[2023 FIFA Women's World Cup Group C|2023 Women's World Cup]], with Japan's mere 23% possession also breaking the record for lowest by a winning side at the tournament (since recordings began in [[2011 FIFA Women's World Cup|2011]]).<ref name="OptaJoe">{{cite news|title=The lowest share of possession for a winning side |work=Opta Joe|date=31 July 2023|url=https://twitter.com/OptaJoe/status/1685940156623413249}}</ref> Both the men's and women's team showed a similar tactical plan against their Spanish counterparts.<ref name="TA Japan">{{cite news|title=Japan are the best side at the World Cup so far – Spain didn’t know how to cope with them|work=The Athletic|date=31 July 2023|first=Michael|last=Cox|url=https://theathletic.com/4735279/2023/07/31/japan-spain-womens-world-cup/}}</ref> Japan's progression from the group marked the first time they ever reached the knockout stage in consecutive World Cups.<ref>{{cite web | url=https://www.independent.ie/sport/soccer/world-cup/world-cup-shock-as-germany-dumped-out-after-japan-stun-spain-in-dramatic-finale-42189474.html | title=World Cup shock as Germany dumped out after Japan stun Spain in dramatic finale |publisher=The Independent}}</ref><ref>{{cite web|url=https://www.bbc.com/sport/football/63829718|title=World Cup 2022: Did it cross the line? Germany out as Japan and Spain progress|date=1 December 2022|work=BBC Sport|access-date=2 December 2022}}</ref>
+
+<section begin=E5 />{{Football box
+|date       = {{Start date|2022|12|1|df=y}}
+|time       = 22:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|JPN}}
+|score      = {{score link|2022 FIFA World Cup Group E#Japan vs Spain|2–1}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|ESP}}
+|goals1     =
+*[[Ritsu Dōan|Dōan]] {{goal|48}}
+*[[Ao Tanaka|Tanaka]] {{goal|51}}
+|goals2     =
+*[[Álvaro Morata|Morata]] {{goal|11}}
+|stadium    = [[Khalifa International Stadium]], [[Al Rayyan (city)|Al Rayyan]]
+|attendance = 44,851
+|referee    = [[Victor Gomes]] ([[South African Football Association|South Africa]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235475
+}}<section end=E5 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _jpn22h
+ |pattern_b  = _jpn22H
+ |pattern_ra = _jpn22h
+ |pattern_sh = _jpn22h
+ |pattern_so = _jpn22hl
+ |leftarm    = 1038C5
+ |body       = 1038C5
+ |rightarm   = 1038C5
+ |shorts     = FFFFFF
+ |socks      = 1038C5
+ |title      = Japan
+}}
+|{{Football kit
+ |pattern_la = _esp22h
+ |pattern_b  = _esp22H
+ |pattern_ra = _esp22h
+ |pattern_sh = _esp22h2
+ |pattern_so = _esp22h2
+ |leftarm    = E00000
+ |body       = E00000
+ |rightarm   = E00000
+ |shorts     = E00000
+ |socks      = E00000
+ |title      = Spain
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''12'''||[[Shūichi Gonda]]
+|-
+|CB ||'''4''' ||[[Ko Itakura]] || {{yel|39}}
+|-
+|CB ||'''22'''||[[Maya Yoshida]] ([[Captain (association football)|c]]) || {{yel|45}}
+|-
+|CB ||'''3''' ||[[Shogo Taniguchi]] || {{yel|44}}
+|-
+|RM ||'''14'''||[[Junya Itō (footballer, born 1993)|Junya Itō]]
+|-
+|CM ||'''13'''||[[Hidemasa Morita]]
+|-
+|CM ||'''17'''||[[Ao Tanaka]] || || {{suboff|87}}
+|-
+|LM ||'''5''' ||[[Yuto Nagatomo]] || || {{suboff|46}}
+|-
+|RF ||'''15'''||[[Daichi Kamada]] || || {{suboff|69}}
+|-
+|CF ||'''25'''||[[Daizen Maeda]] || || {{suboff|62}}
+|-
+|LF ||'''11'''||[[Takefusa Kubo]] || || {{suboff|46}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|MF ||'''8''' ||[[Ritsu Dōan]] || || {{subon|46}}
+|-
+|MF ||'''9''' ||[[Kaoru Mitoma]] || || {{subon|46}}
+|-
+|FW ||'''18'''||[[Takuma Asano]] || || {{subon|62}}
+|-
+|DF ||'''16'''||[[Takehiro Tomiyasu]] || || {{subon|69}}
+|-
+|MF ||'''6''' ||[[Wataru Endo]] || || {{subon|87}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Hajime Moriyasu]]
+|}
+|valign="top"|[[File:JPN-ESP 2022-12-01.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''23'''||[[Unai Simón]]
+|-
+|RB ||'''2''' ||[[César Azpilicueta]] || || {{suboff|46}}
+|-
+|CB ||'''16'''||[[Rodri (footballer, born 1996)|Rodri]]
+|-
+|CB ||'''4''' ||[[Pau Torres]]
+|-
+|LB ||'''14'''||[[Alejandro Balde]] || || {{suboff|68}}
+|-
+|DM ||'''5''' ||[[Sergio Busquets]] ([[Captain (association football)|c]])
+|-
+|CM ||'''9''' ||[[Gavi (footballer)|Gavi]] || || {{suboff|68}}
+|-
+|CM ||'''26'''||[[Pedri]]
+|-
+|RF ||'''12'''||[[Nico Williams]] || || {{suboff|57}}
+|-
+|CF ||'''7''' ||[[Álvaro Morata]] || || {{suboff|57}}
+|-
+|LF ||'''21'''||[[Dani Olmo]]
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|DF ||'''20'''||[[Dani Carvajal]] || || {{subon|46}}
+|-
+|FW ||'''11'''||[[Ferran Torres]] || || {{subon|57}}
+|-
+|FW ||'''10'''||[[Marco Asensio]] || || {{subon|57}}
+|-
+|FW ||'''25'''||[[Ansu Fati]] || || {{subon|68}}
+|-
+|DF ||'''18'''||[[Jordi Alba]] || || {{subon|68}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Luis Enrique]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Ao Tanaka]] (Japan)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/japan-spain-alvaro-morata-ritus-doan-ao-tanaka-fifa-world-cup-qatar-2022 |title=Japan repeat Germany heroics to stun Spain |publisher=[[FIFA]] |date=1 December 2022 |access-date=1 December 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Zakhele Siwela ([[South African Football Association|South Africa]])
+<br />Souru Phatsoane ([[Lesotho Football Association|Lesotho]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[Salima Mukansanga]] ([[Rwanda Football Federation|Rwanda]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />El Hadj Malick Samba ([[Senegalese Football Federation|Senegal]])
+<br />'''[[Video assistant referee]]:'''
+<br />Fernando Guerrero ([[Mexican Football Federation|Mexico]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Armando Villarreal]] ([[United States Soccer Federation|United States]]) 
+<br />Kyle Atkins ([[United States Soccer Federation|United States]])
+<br />[[Adil Zourak]] ([[Royal Moroccan Football Federation|Morocco]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Nicolás Taran ([[Uruguayan Football Association|Uruguay]])
+|}
+
+===Costa Rica vs Germany===
+The teams had only met once prior, when hosts Germany defeated Costa Rica 4–2 in [[2006 FIFA World Cup Group A#Germany vs Costa Rica|the opening match]] of the [[2006 FIFA World Cup]].<ref>{{cite news |title=Germany 4–2 Costa Rica |url=http://news.bbc.co.uk/sport2/hi/football/world_cup_2006/4852498.stm |access-date=1 April 2022 |work=BBC Sport |publisher=British Broadcasting Corporation|date=9 June 2006}}</ref>
+
+After taking the lead in the first half through [[Serge Gnabry]], Germany would be pegged pack in the second period following goals from Costa Rica scored by [[Yeltsin Tejeda]] and [[Juan Pablo Vargas]]. Germany would quickly rally back with a brace from [[Kai Havertz]] and a late effort converted by [[Niclas Füllkrug]] to win the match 4–2, the same scoreline as the teams' previous World Cup encounter.
+
+Despite the victory, Germany were still edged out of second place in the group by Spain, as a result of the latter's superior goal difference. This meant that the [[2014 FIFA World Cup final|2014 champions]] had failed to reach the knockout stage in the two subsequent tournaments following their last World Cup title (having finished bottom of their group in [[2018 FIFA World Cup Group F|2018]]), the same fate that befell [[2014 FIFA World Cup final|2006 winners]] [[Italy national football team|Italy]] in [[2010 FIFA World Cup Group F|2010]] and [[2014 FIFA World Cup Group D|2014]].<ref>{{cite web|url=https://www.bbc.com/sport/football/63829138|title=World Cup 2022: 'Germany exit as a fallen giant of world football'|date=1 December 2022|work=BBC Sport|access-date=2 December 2022}}</ref> Costa Rica exited the competition as the team with the worst goal differential, in spite of the fact they won one of their three matches.
+
+<section begin=E6 />{{Football box
+|date       = {{Start date|2022|12|1|df=y}}
+|time       = 22:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|CRC}}
+|score      = {{score link|2022 FIFA World Cup Group E#Costa Rica vs Germany|2–4}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|GER}}
+|goals1     =
+*[[Yeltsin Tejeda|Tejeda]] {{goal|58}}
+*[[Juan Pablo Vargas|Vargas]] {{goal|70}}
+|goals2     =
+*[[Serge Gnabry|Gnabry]] {{goal|10}}
+*[[Kai Havertz|Havertz]] {{goal|73||85}}
+*[[Niclas Füllkrug|Füllkrug]] {{goal|89}}
+|stadium    = [[Al Bayt Stadium]], [[Al Khor]]
+|attendance = 67,054
+|referee    = [[Stéphanie Frappart]] ([[French Football Federation|France]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235473
+}}<section end=E6 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _crc22h
+ |pattern_b  = _crc22H
+ |pattern_ra = _crc22h
+ |pattern_sh = _whitesides
+ |pattern_so =
+ |leftarm    = F80707
+ |body       = F80707
+ |rightarm   = F80707
+ |shorts     = 0033FF
+ |socks      = F80707
+ |title      = <span class="nowrap">Costa Rica</span>
+}}
+|{{Football kit
+ |pattern_la = _ger22h
+ |pattern_b  = _ger22H
+ |pattern_ra = _ger22h
+ |pattern_sh = _ger22h2
+ |pattern_so = _ger22hl
+ |leftarm    = FFFFFF
+ |body       = FFFFFF
+ |rightarm   = FFFFFF
+ |shorts     = FFFFFF
+ |socks      = FFFFFF
+ |title      = Germany
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Keylor Navas]] ([[Captain (association football)|c]])
+|-
+|CB ||'''19'''||[[Kendall Waston]]
+|-
+|CB ||'''6''' ||[[Óscar Duarte (footballer, born 1989)|Óscar Duarte]] || {{yel|77}}
+|-
+|CB ||'''3''' ||[[Juan Pablo Vargas]]
+|-
+|RWB ||'''4''' ||[[Keysher Fuller]] || || {{suboff|74}}
+|-
+|LWB ||'''8''' ||[[Bryan Oviedo]] || || {{suboff|90+3}}
+|-
+|RM ||'''12'''||[[Joel Campbell]]
+|-
+|CM ||'''5''' ||[[Celso Borges]]
+|-
+|CM ||'''17'''||[[Yeltsin Tejeda]] || || {{suboff|90+3}}
+|-
+|LM ||'''20'''||[[Brandon Aguilera]] || || {{suboff|46}}
+|-
+|CF ||'''11'''||[[Johan Venegas]] || || {{suboff|74}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|MF ||'''14'''||[[Youstin Salas]] || || {{subon|46}}
+|-
+|DF ||'''22'''||[[Rónald Matarrita]] || || {{subon|74}}
+|-
+|MF ||'''9''' ||[[Jewison Bennette]] || || {{subon|74}}
+|-
+|FW ||'''7''' ||[[Anthony Contreras]] || || {{subon|90+3}}
+|-
+|MF ||'''24'''||[[Roan Wilson]] || || {{subon|90+3}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|{{#invoke:flag|icon|COL}} [[Luis Fernando Suárez]]
+|}
+|valign="top"|[[File:CRC-GER 2022-12-01.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Manuel Neuer]] ([[Captain (association football)|c]])
+|-
+|RB ||'''6''' ||[[Joshua Kimmich]]
+|-
+|CB ||'''15'''||[[Niklas Süle]] || || {{suboff|90+3}}
+|-
+|CB ||'''2''' ||[[Antonio Rüdiger]]
+|-
+|LB ||'''3''' ||[[David Raum]] || || {{suboff|66}}
+|-
+|CM ||'''8''' ||[[Leon Goretzka]] || || {{suboff|46}}
+|-
+|CM ||'''21'''||[[İlkay Gündoğan]] || || {{suboff|55}}
+|-
+|RW ||'''19'''||[[Leroy Sané]]
+|-
+|AM ||'''14'''||[[Jamal Musiala]]
+|-
+|LW ||'''10'''||[[Serge Gnabry]]
+|-
+|CF ||'''13'''||[[Thomas Müller]] || || {{suboff|66}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|DF ||'''16'''||[[Lukas Klostermann]] || || {{subon|46}}
+|-
+|FW ||'''9''' ||[[Niclas Füllkrug]] || || {{subon|55}}
+|-
+|FW ||'''7''' ||[[Kai Havertz]] || || {{subon|66}}
+|-
+|MF ||'''11'''||[[Mario Götze]] || || {{subon|66}}
+|-
+|DF ||'''4''' ||[[Matthias Ginter]] || || {{subon|90+3}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Hansi Flick]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Kai Havertz]] (Germany)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/germany-costa-rica-group-e-elimination-fifa-world-cup-qatar-2022 |title=Germany crash out despite Costa Rica victory |publisher=[[FIFA]] |date=1 December 2022 |access-date=1 December 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Neuza Back ([[Brazilian Football Confederation|Brazil]])
+<br />Karen Díaz Medina ([[Mexican Football Federation|Mexico]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[Saíd Martínez]] ([[National Autonomous Federation of Football of Honduras|Honduras]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Walter López ([[National Autonomous Federation of Football of Honduras|Honduras]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Drew Fischer]] ([[Canadian Soccer Association|Canada]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Jerome Brisard]] ([[French Football Federation|France]])
+<br />Kathryn Nesbitt ([[United States Soccer Federation|United States]])
+<br />[[Massimiliano Irrati]] ([[Italian Football Federation|Italy]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Corey Parker ([[United States Soccer Federation|United States]])
+|}
+
+==Discipline==
+Fair play points would have been used as tiebreakers if the overall and head-to-head records of teams were tied. These were calculated based on yellow and red cards received in all group matches as follows:<ref name="regulations"/>
+*first yellow card: −1 point;
+*indirect red card (second yellow card): −3 points;
+*direct red card: −4 points;
+*yellow card and direct red card: −5 points;
+
+Only one of the above deductions was applied to a player in a single match.
+
+{| class="wikitable sortable" style="text-align:center;"
+|-
+!rowspan=2|Team
+!colspan=4 style="border-left:3px solid gray"|Match 1
+!colspan=4 style="border-left:3px solid gray"|Match 2
+!colspan=4 style="border-left:3px solid gray"|Match 3
+!rowspan=2 style="border-left:3px solid gray"|Points
+|-
+!style="border-left:3px solid gray"|{{yel}}
+!{{sent off|2}}
+!{{sent off|0}}
+!{{sent off|1}}
+!style="border-left:3px solid gray"|{{yel}}
+!{{sent off|2}}
+!{{sent off|0}}
+!{{sent off|1}}
+!style="border-left:3px solid gray"|{{yel}}
+!{{sent off|2}}
+!{{sent off|0}}
+!{{sent off|1}}
+|-
+|align=left|{{#invoke:flagg|main|unpe|avar=fb|ESP}}
+|style="border-left:3px solid gray"|  ||  ||  || 
+|style="border-left:3px solid gray"| 1 ||  ||  || 
+|style="border-left:3px solid gray"|  ||  ||  || 
+!style="border-left:3px solid gray"| −1
+|-
+|align=left|{{#invoke:flagg|main|unpe|avar=fb|GER}}
+|style="border-left:3px solid gray"|  ||  ||  || 
+|style="border-left:3px solid gray"| 3 ||  ||  || 
+|style="border-left:3px solid gray"|  ||  ||  || 
+!style="border-left:3px solid gray"| −3
+|-
+|align=left|{{#invoke:flagg|main|unpe|avar=fb|CRC}}
+|style="border-left:3px solid gray"| 2 ||  ||  || 
+|style="border-left:3px solid gray"| 3 ||  ||  || 
+|style="border-left:3px solid gray"| 1 ||  ||  || 
+!style="border-left:3px solid gray"| −6
+|-
+|align=left|{{#invoke:flagg|main|unpe|avar=fb|JPN}}
+|style="border-left:3px solid gray"|  ||  ||  || 
+|style="border-left:3px solid gray"| 3 ||  ||  ||  
+|style="border-left:3px solid gray"| 3 ||  ||  || 
+!style="border-left:3px solid gray"| −6
+|}
+
+==See also==
+*[[Costa Rica at the FIFA World Cup]]
+*[[Germany at the FIFA World Cup]]
+*[[Japan at the FIFA World Cup]]
+*[[Spain at the FIFA World Cup]]
+
+==References==
+{{reflist}}
+
+==External links==
+{{Commons category}}
+* {{Official website|https://www.fifa.com/tournaments/mens/worldcup/qatar2022}}
+
+{{2022 FIFA World Cup}}
+
+{{DEFAULTSORT:Group E}}
+[[Category:2022 FIFA World Cup]]
+[[Category:Spain at the 2022 FIFA World Cup]]
+[[Category:Costa Rica at the 2022 FIFA World Cup]]
+[[Category:Germany at the 2022 FIFA World Cup]]
+[[Category:Japan at the 2022 FIFA World Cup]]
+[[Category:FIFA World Cup group stages]]

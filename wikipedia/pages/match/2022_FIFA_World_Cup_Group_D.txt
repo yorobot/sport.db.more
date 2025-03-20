@@ -1,0 +1,1088 @@
+{{Short description|None}}
+[[File:2022 FIFA World Cup France 4–1 Australia - (11).jpg|thumb|220x124px|right|France vs Australia]]
+{{Use dmy dates|date=March 2022}}
+Matches in  Group D of the [[2022 FIFA World Cup]] took place from 22 to 30 November 2022.<ref name="match schedule">{{cite web |url=https://digitalhub.fifa.com/m/464f16f856f5ed05/original/FIFA-World-Cup-Qatar-2022-Match-Schedule.pdf |title=FIFA World Cup Qatar 2022 – Match Schedule |website=FIFA.com |publisher=Fédération Internationale de Football Association |date=11 August 2022 |access-date=11 August 2022}}</ref> The group consisted of reigning world champions [[France national football team|France]], [[Australia men's national soccer team|Australia]], [[Denmark national football team|Denmark]] and [[Tunisia national football team|Tunisia]]. The top two teams, France and Australia advanced to the [[2022 FIFA World Cup knockout stage#Round of 16|round of 16]].<ref name="regulations">{{cite web |url=https://digitalhub.fifa.com/m/2744a0a5e3ded185/original/FIFA-World-Cup-Qatar-2022-Regulations_EN.pdf |title=Regulations – FIFA World Cup Qatar 2022 |website=FIFA.com |publisher=Fédération Internationale de Football Association |date=15 December 2021 |access-date=30 March 2022}}</ref> Australia, Denmark and France were also in [[2018 FIFA World Cup Group C|Group C]] of the [[2018 FIFA World Cup|previous World Cup]].<ref>{{Cite news |last=Kelner |first=Martha |date=2017-12-01 |title=England draw Belgium, Panama and Tunisia in 2018 World Cup group |url=https://www.theguardian.com/football/2017/dec/01/england-draw-belgium-panama-tunisia-2018-world-cup-draw-russia |access-date=2024-06-27 |work=The Guardian |language=en-GB |issn=0261-3077}}</ref>
+
+==Teams==
+{| class="wikitable sortable"
+|-
+!rowspan=2| Draw position
+!rowspan=2| Team
+!rowspan=2| Pot
+!rowspan=2| Confederation
+!rowspan=2| Method of<br />qualification
+!rowspan=2| Date of<br />qualification
+!rowspan=2 data-sort-type="number"| Finals<br />appearance
+!rowspan=2| Last<br />appearance
+!rowspan=2| Previous best<br />performance
+!colspan=2| [[FIFA Men's World Ranking|FIFA Rankings]]<ref>{{cite web |url=https://www.fifa.com/fifa-world-ranking/men |title=Men's Ranking |publisher=[[FIFA]] |access-date=21 November 2022}}</ref>
+|-
+! March 2022{{refn|group=nb|The rankings of March 2022 were used for [[2022 FIFA World Cup seeding|seeding for the final draw]].}}
+! October 2022
+|-
+| D1 || style=white-space:nowrap | {{#invoke:flagg|main|unpe|avar=fb|FRA}} || 1 || [[UEFA]] || [[2022 FIFA World Cup qualification – UEFA Group D|UEFA Group D]] winners || 13 November 2021 || 16th || [[2018 FIFA World Cup|2018]] || data-sort-value="8.2" | '''Winners''' ([[1998 FIFA World Cup|1998]], [[2018 FIFA World Cup|2018]]) || 3 || 4
+|-
+| D2 || style=white-space:nowrap | {{#invoke:flagg|main|unpe|avar=fb|AUS}} || 4{{refn|group=nb|name=Placeholder|As the identity of the [[2022 FIFA World Cup qualification (AFC–CONMEBOL play-off)|AFC v CONMEBOL play-off]] winners was not known at the time of the final draw, positions in the FIFA Rankings were not taken into account, and the placeholder in the draw was automatically seeded into pot 4.<ref>{{cite web |url=https://www.fifa.com/tournaments/mens/worldcup/qatar2022/media-releases/procedures-for-the-final-draw-for-the-fifa-world-cup-qatar-2022-tm-released |title=Procedures for the Final Draw for the FIFA World Cup Qatar 2022 released |publisher=[[FIFA]] |date=22 March 2022 |access-date=22 March 2022}}</ref>}} || [[Asian Football Confederation|AFC]] || [[2022 FIFA World Cup qualification (AFC–CONMEBOL play-off)|AFC v CONMEBOL play-off]] winners || 13 June 2022 || 6th || [[2018 FIFA World Cup|2018]] || data-sort-value="3.1" | Round of 16 ([[2006 FIFA World Cup|2006]]) || 42{{refn|group=nb|name=Placeholder}} || 38
+|-
+| D3 || style=white-space:nowrap | {{#invoke:flagg|main|unpe|avar=fb|DEN}} || 2 || [[UEFA]] || [[2022 FIFA World Cup qualification – UEFA Group F|UEFA Group F]] winners || 12 October 2021 || 6th || [[2018 FIFA World Cup|2018]] || data-sort-value="4.1" | Quarter-finals ([[1998 FIFA World Cup|1998]]) || 11 || 10
+|-
+| D4 || style=white-space:nowrap | {{#invoke:flagg|main|unpe|avar=fb|TUN}} || 3 || [[Confederation of African Football|CAF]] || [[2022 FIFA World Cup qualification – CAF third round|CAF third round]] winners || 29 March 2022 || 6th || [[2018 FIFA World Cup|2018]] || data-sort-value="2.5" | Group stage ([[1978 FIFA World Cup|1978]], [[1998 FIFA World Cup|1998]], [[2002 FIFA World Cup|2002]], [[2006 FIFA World Cup|2006]], [[2018 FIFA World Cup|2018]]) || 35 || 30
+|}
+'''Notes'''
+{{reflist|group=nb}}
+
+==Standings==
+{{2022 FIFA World Cup group tables|Group D}}
+
+In the [[2022 FIFA World Cup knockout stage#Round of 16|round of 16]]:
+* The winners of Group D, France, advanced to play the runners-up of [[2022 FIFA World Cup Group C|Group C]], [[Poland national football team|Poland]].
+* The runners-up of Group D, Australia, advanced to play the winners of [[2022 FIFA World Cup Group C|Group C]], [[Argentina national football team|Argentina]].
+
+==Matches==
+All times listed are local, [[Arabia Standard Time|AST]] ([[UTC+03:00|UTC+3]]).<ref name="match schedule"/>
+
+===Denmark vs Tunisia===
+The teams had faced each other twice, most recently in 2002, a 2–1 win for Denmark in a friendly game.
+
+Denmark were not able to capitalize in their opening game, with [[Andreas Cornelius]] heading onto the post in the 70th minute. Although Tunisia failed to score themselves, midfielder [[Aïssa Laïdouni]] earned the Man of the Match award for his defensive heroics.<ref>{{cite web|url=https://www.theguardian.com/football/2022/nov/22/denmark-tunisia-world-cup-group-d-match-report|title=Denmark's Hjulmand shows strain after lively Tunisia claim draw|date=22 November 2022|work=The Guardian|accessdate=23 November 2022}}</ref>
+
+<section begin=D1 />{{Football box
+|date       = {{Start date|2022|11|22|df=y}}
+|time       = 16:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|DEN}}
+|score      = {{score link|2022 FIFA World Cup Group D#Denmark vs Tunisia|0–0}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|TUN}}
+|goals1     =
+|goals2     =
+|stadium    = [[Education City Stadium]], [[Al Rayyan (city)|Al Rayyan]]
+|attendance = 42,925
+|referee    = [[César Arturo Ramos]] ([[Mexican Football Federation|Mexico]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235466
+}}<section end=D1 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _den22h
+ |pattern_b  = _den22home
+ |pattern_ra = _den22h
+ |pattern_sh = _den22h
+ |pattern_so =
+ |leftarm    = ED0C17
+ |body       = ED0C17
+ |rightarm   = ED0C17
+ |shorts     = ED0C17
+ |socks      = ED0C17
+ |title      = Denmark
+}}
+|{{Football kit
+ |pattern_la = _tun22A
+ |pattern_b  = _tun22away
+ |pattern_ra = _tun22A
+ |pattern_sh = _monaco2223h
+ |pattern_so = _redtop
+ |leftarm    = FFFFFF
+ |body       = FFFFFF
+ |rightarm   = FFFFFF
+ |shorts     = FFFFFF
+ |socks      = FFFFFF
+ |title      = Tunisia
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Kasper Schmeichel]]
+|-
+|CB ||'''2''' ||[[Joachim Andersen (footballer)|Joachim Andersen]]
+|-
+|CB ||'''4''' ||[[Simon Kjær]] ([[Captain (association football)|c]]) || || {{suboff|65}}
+|-
+|CB ||'''6''' ||[[Andreas Christensen]]
+|-
+|DM ||'''8''' ||[[Thomas Delaney]] || || {{suboff|45+1}}
+|-
+|CM ||'''23'''||[[Pierre-Emile Højbjerg]]
+|-
+|CM ||'''10'''||[[Christian Eriksen]]
+|-
+|RW ||'''13'''||[[Rasmus Kristensen]] || {{yel|24}}
+|-
+|LW ||'''5''' ||[[Joakim Mæhle]]
+|-
+|CF ||'''11'''||[[Andreas Skov Olsen]] || || {{suboff|65}}
+|-
+|CF ||'''12'''||[[Kasper Dolberg]] || || {{suboff|65}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|MF ||'''14'''||[[Mikkel Damsgaard]] || || {{subon|45+1}}
+|-
+|FW ||'''21'''||[[Andreas Cornelius]] || || {{subon|65}}
+|-
+|MF ||'''7''' ||[[Mathias Jensen]] || {{yel|78}} || {{subon|65}}
+|-
+|MF ||'''25'''||[[Jesper Lindstrøm]] || || {{subon|65}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Kasper Hjulmand]]
+|}
+|valign="top"|[[File:DEN-TUN 2022-11-22.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''16'''||[[Aymen Dahmen]]
+|-
+|CB ||'''6''' ||[[Dylan Bronn]]
+|-
+|CB ||'''4''' ||[[Yassine Meriah]]
+|-
+|CB ||'''3''' ||[[Montassar Talbi]]
+|-
+|RM ||'''20'''||[[Mohamed Dräger]] || || {{suboff|88}}
+|-
+|CM ||'''17'''||[[Ellyes Skhiri]]
+|-
+|CM ||'''14'''||[[Aïssa Laïdouni]] || || {{suboff|88}}
+|-
+|LM ||'''24'''||[[Ali Abdi (footballer)|Ali Abdi]]
+|-
+|AM ||'''25'''||[[Anis Ben Slimane]] || || {{suboff|67}}
+|-
+|AM ||'''7''' ||[[Youssef Msakni]] ([[Captain (association football)|c]]) || || {{suboff|80}}
+|-
+|CF ||'''9''' ||[[Issam Jebali]] || || {{suboff|80}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|FW ||'''23'''||[[Naïm Sliti]] || || {{subon|67}}
+|-
+|MF ||'''8''' ||[[Hannibal Mejbri]] || || {{subon|80}}
+|-
+|FW ||'''11'''||[[Taha Yassine Khenissi]] || {{yel|86}} || {{subon|80}}
+|-
+|DF ||'''21'''||[[Wajdi Kechrida]] || || {{subon|88}}
+|-
+|MF ||'''13'''||[[Ferjani Sassi]] || || {{subon|88}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Jalel Kadri]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Aïssa Laïdouni]] (Tunisia)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/world-cup-qatar-2022-denmark-tunisia-group-d-first-game-result-match-review |title=No goals as Denmark fail to hit stride |publisher=[[FIFA]] |date=22 November 2022 |access-date=22 November 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Alberto Morín ([[Mexican Football Federation|Mexico]])
+<br />Miguel Hernández ([[Mexican Football Federation|Mexico]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[Saíd Martínez]] ([[National Autonomous Federation of Football of Honduras|Honduras]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Walter López ([[National Autonomous Federation of Football of Honduras|Honduras]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Fernando Guerrero (referee)|Fernando Guerrero]] ([[Mexican Football Federation|Mexico]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Armando Villarreal]] ([[United States Soccer Federation|United States]])
+<br />Gabriel Chade ([[Argentine Football Association|Argentina]])
+<br />[[Juan Martínez Munuera]] ([[Royal Spanish Football Federation|Spain]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Mahmoud Abouelregal ([[Egyptian Football Association|Egypt]])
+|}
+
+===France vs Australia===
+The teams had previously faced each other five times, including once in the World Cup, a [[2018 FIFA World Cup Group C#France vs Australia|2–1 France victory]] in [[2018 FIFA World Cup|2018]] en route to the title. They also met in [[2001 FIFA Confederations Cup Group A#Australia v France|Australia's 1–0 win against the reigning world champions]] (having previously won the [[1998 FIFA World Cup|1998 World Cup]]) at the [[2001 FIFA Confederations Cup]].
+
+[[Craig Goodwin]] gave Australia the lead in the ninth minute, when he finished at the back post high into the net after a low cross from the right by [[Mathew Leckie]]. [[Adrien Rabiot]] equalized for France when he headed to the net from a [[Théo Hernandez]] cross from the left. France took the lead five minutes later after [[Olivier Giroud]]'s side footed shot found the back of the net from a low cross from Rabiot from the left. [[Jackson Irvine]] had a chance to equalize in first half stoppage time, but headed onto the post.<ref>{{cite web|url=https://www.theguardian.com/football/live/2022/nov/22/france-vs-australia-world-cup-qatar-2022-live-score-updates-socceroos-francia-fra-v-aus-kick-off-time-national-football-team-list-squad-soccer-fifa|title=France 4 Australia 1: As it happened|date=22 November 2022|work=The Guardian|access-date=23 November 2022}}</ref>
+In the 68th minute, [[Kylian Mbappé]] scored France's third goal with a header from six yards out to the left corner, after a cross from [[Ousmane Dembélé]] on the right. Giroud got his second with another header after a Mbappé cross from the left to make it 4–1.<ref>{{cite web|url=https://www.bbc.com/sport/football/63631781|title=France 4 Australia 1|date=22 November 2022|work=BBC Sport|access-date=23 November 2022}}</ref>
+
+Giroud's second goal equalled [[Thierry Henry]]'s all-time scoring [[List of leading goalscorers for the France national football team|record]] of 51 goals for France.<ref>{{cite web|url=https://www.skysports.com/football/france-vs-australia/report/462965|title=France 4–1 Australia: Olivier Giroud scores record-equalling goal as Kylian Mbappe helps holders shrug off early scare in World Cup Group D|date=22 November 2022|work=Sky Sports|access-date=23 November 2022}}</ref> France's win marked the first time since [[2006 FIFA World Cup|2006]] that the defending World Cup champions won their opening game. On the other hand, Goodwin's goal was the fastest France had conceded in the tournament since [[1982 FIFA World Cup Group 4#England vs France|1982]].<ref>{{cite web |url=https://www.sport-express.ru/football/world/2022/news/kreyg-gudvin-zabil-samyy-bystryy-gol-v-vorota-francii-na-chempionate-mira-s-1982-goda-2001747|title=Крейг Гудвин забил самый быстрый гол в ворота Франции на чемпионате мира с 1982 года |last=Gorshkova |first=Anna|date=22 November 2022 |access-date=26 November 2022 |language=ru |trans-title=Craig Goodwin scores the fastest World Cup goal against France since 1982}}</ref>
+
+French defender [[Lucas Hernandez]] suffered a [[Anterior cruciate ligament injury|torn ACL]] after 13 minutes of the match, ruling him out for the remainder of the tournament.<ref>{{cite news |url=https://www.fifa.com/fifaplus/en/member-associations/france/articles/article-world-cup-qatar-france-lucas-hernandez-bayern |title=Hernandez out of World Cup with ACL injury |publisher=[[FIFA]] |date=23 November 2022 |access-date=23 November 2022}}</ref> He would be substituted by his brother Théo during the match.
+
+<section begin=D2 />{{Football box
+|date       = {{Start date|2022|11|22|df=y}}
+|time       = 22:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|FRA}}
+|score      = {{score link|2022 FIFA World Cup Group D#France vs Australia|4–1}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|AUS}}
+|goals1     =
+*[[Adrien Rabiot|Rabiot]] {{goal|27}}
+*[[Olivier Giroud|Giroud]] {{goal|32||71}}
+*[[Kylian Mbappé|Mbappé]] {{goal|68}}
+|goals2     =
+*[[Craig Goodwin|Goodwin]] {{goal|9}}
+|stadium    = [[Al Janoub Stadium]], [[Al Wakrah]]
+|attendance = 40,875
+|referee    = [[Victor Gomes]] ([[South African Football Association|South Africa]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235470
+}}<section end=D2 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _fra22h
+ |pattern_b  = _fra22H
+ |pattern_ra = _fra22h
+ |pattern_sh = _fra22h
+ |pattern_so = 
+ |leftarm    = 221F4E
+ |body       = 221F4E
+ |rightarm   = 221F4E
+ |shorts     = FFFFFF
+ |socks      = E00006
+ |title      = France
+}}
+|{{Football kit
+ |pattern_la = _aus22h
+ |pattern_b  = _aus22H
+ |pattern_ra = _aus22h
+ |pattern_sh = _aus22h
+ |pattern_so =
+ |leftarm    = FFBB00
+ |body       = FFBB00
+ |rightarm   = FFBB00
+ |shorts     = 00A79F
+ |socks      = FFFFFF
+ |title      = Australia
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Hugo Lloris]] ([[Captain (association football)|c]])
+|-
+|RB ||'''2''' ||[[Benjamin Pavard]] || || {{suboff|89}}
+|-
+|CB ||'''18'''||[[Dayot Upamecano]]
+|-
+|CB ||'''24'''||[[Ibrahima Konaté]]
+|-
+|LB ||'''21'''||[[Lucas Hernandez]] || || {{suboff|13}}
+|-
+|CM ||'''14'''||[[Adrien Rabiot]]
+|-
+|CM ||'''8''' ||[[Aurélien Tchouaméni]] || || {{suboff|77}}
+|-
+|RW ||'''11'''||[[Ousmane Dembélé]] || || {{suboff|77}}
+|-
+|AM ||'''7''' ||[[Antoine Griezmann]]
+|-
+|LW ||'''10'''||[[Kylian Mbappé]]
+|-
+|CF ||'''9''' ||[[Olivier Giroud]] || || {{suboff|89}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|DF ||'''22'''||[[Théo Hernandez]] || || {{subon|13}}
+|-
+|MF ||'''13'''||[[Youssouf Fofana (footballer, born 1999)|Youssouf Fofana]] || || {{subon|77}}
+|-
+|FW ||'''20'''||[[Kingsley Coman]] || || {{subon|77}}
+|-
+|DF ||'''5''' ||[[Jules Koundé]] || || {{subon|89}}
+|-
+|FW ||'''26'''||[[Marcus Thuram]] || || {{subon|89}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Didier Deschamps]]
+|}
+|valign="top"|[[File:FRA-AUS 2022-11-22.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Mathew Ryan]] ([[Captain (association football)|c]])
+|-
+|RB ||'''3''' ||[[Nathaniel Atkinson]] || || {{suboff|85}}
+|-
+|CB ||'''19'''||[[Harry Souttar]]
+|-
+|CB ||'''4''' ||[[Kye Rowles]]
+|-
+|LB ||'''16'''||[[Aziz Behich]]
+|-
+|DM ||'''13'''||[[Aaron Mooy]] || {{yel|90+5}}
+|-
+|RM ||'''23'''||[[Craig Goodwin]] || || {{suboff|73}}
+|-
+|CM ||'''14'''||[[Riley McGree]] || || {{suboff|73}}
+|-
+|CM ||'''22'''||[[Jackson Irvine]] || {{yel|80}} || {{suboff|85}}
+|-
+|LM ||'''7''' ||[[Mathew Leckie]]
+|-
+|CF ||'''15'''||[[Mitchell Duke]] || {{yel|55}} || {{suboff|56}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|FW ||'''25'''||[[Jason Cummings]] || || {{subon|56}}
+|-
+|FW ||'''11'''||[[Awer Mabil]] || || {{subon|73}}
+|-
+|FW ||'''21'''||[[Garang Kuol]] || || {{subon|73}}
+|-
+|MF ||'''26'''||[[Keanu Baccus]] || || {{subon|85}}
+|-
+|DF ||'''2''' ||[[Miloš Degenek]] || || {{subon|85}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Graham Arnold]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Kylian Mbappé]] (France)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/world-cup-qatar-2022-france-australia-group-d-match-review |title=Giroud equals Henry as Les Bleus battle back |publisher=[[FIFA]] |date=22 November 2022 |access-date=22 November 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Zakhele Siwela ([[South African Football Association|South Africa]])
+<br />Souru Phatsoane ([[Lesotho Football Association|Lesotho]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[Salima Mukansanga]] ([[Rwanda Football Federation|Rwanda]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Kathryn Nesbitt ([[United States Soccer Federation|United States]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Drew Fischer]] ([[Canadian Soccer Association|Canada]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Assistant video assistant referees]]:'''
+<br />Adil Zourak ([[Royal Moroccan Football Federation|Morocco]])
+<br />Kyle Atkins ([[United States Soccer Federation|United States]])
+<br />[[Marco Fritz]] ([[German Football Association|Germany]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Corey Parker ([[United States Soccer Federation|United States]])
+|}
+
+===Tunisia vs Australia===
+The teams had previously faced each other twice, most recently in [[2005 FIFA Confederations Cup Group A#Australia v Tunisia|Tunisia's 2–0 win]] at the [[2005 FIFA Confederations Cup]].
+
+Australia beat Tunisia 1–0 as a result of a [[Mitchell Duke]] header in the 23rd minute to secure their first win in a World Cup match since they [[2010 FIFA World Cup Group D#Australia vs Serbia|defeated Serbia 2–1]] in [[2010 FIFA World Cup|2010]]. This was also Australia's first clean sheet since they [[1974 FIFA World Cup Group 1#Australia vs Chile|drew 0–0 with Chile]] in [[1974 FIFA World Cup|1974]].<ref>{{Cite web |title=Duke heads Socceroos to first World Cup win since 2010 |url=https://www.sbs.com.au/sport/fifa-world-cup-2022/article/duke-heads-socceroos-to-first-world-cup-win-since-2010/hvwxsbw85 |access-date=2022-12-01 |website=SBS Sport |language=en}}</ref>
+
+<section begin=D3 />{{Football box
+|date       = {{Start date|2022|11|26|df=y}}
+|time       = 13:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|TUN}}
+|score      = {{score link|2022 FIFA World Cup Group D#Tunisia vs Australia|0–1}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|AUS}}
+|goals1     =
+|goals2     =
+*[[Mitchell Duke|Duke]] {{goal|23}}
+|stadium    = [[Al Janoub Stadium]], [[Al Wakrah]]
+|attendance = 41,823
+|referee    = [[Daniel Siebert (referee)|Daniel Siebert]] ([[German Football Association|Germany]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235469
+}}<section end=D3 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _tun22A
+ |pattern_b  = _tun22away
+ |pattern_ra = _tun22A
+ |pattern_sh = _monaco2223h
+ |pattern_so = _redtop
+ |leftarm    = FFFFFF
+ |body       = FFFFFF
+ |rightarm   = FFFFFF
+ |shorts     = FFFFFF
+ |socks      = FFFFFF
+ |title      = Tunisia
+}}
+|{{Football kit
+ |pattern_la = _aus22a
+ |pattern_b  = _aus22A
+ |pattern_ra = _aus22a
+ |pattern_sh = _aus22a
+ |pattern_so =
+ |leftarm    = 222B59
+ |body       = 222B59
+ |rightarm   = 222B59
+ |shorts     = 222B59
+ |socks      = 222B59
+ |title      = Australia
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''16'''||[[Aymen Dahmen]]
+|-
+|CB ||'''6''' ||[[Dylan Bronn]] || || {{suboff|73}}
+|-
+|CB ||'''4''' ||[[Yassine Meriah]]
+|-
+|CB ||'''3''' ||[[Montassar Talbi]]
+|-
+|RM ||'''20'''||[[Mohamed Dräger]] || || {{suboff|46}}
+|-
+|CM ||'''17'''||[[Ellyes Skhiri]]
+|-
+|CM ||'''14'''||[[Aïssa Laïdouni]] || {{yel|26}} || {{suboff|67}}
+|-
+|LM ||'''24'''||[[Ali Abdi (footballer)|Ali Abdi]] || {{yel|64}}
+|-
+|AM ||'''23'''||[[Naïm Sliti]]
+|-
+|AM ||'''7''' ||[[Youssef Msakni]] ([[Captain (association football)|c]])
+|-
+|CF ||'''9''' ||[[Issam Jebali]] || || {{suboff|73}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|MF ||'''13'''||[[Ferjani Sassi]] || {{yel|90+3}} || {{subon|46}}
+|-
+|FW ||'''10'''||[[Wahbi Khazri]] || || {{subon|67}}
+|-
+|DF ||'''21'''||[[Wajdi Kechrida]] || || {{subon|73}}
+|-
+|FW ||'''11'''||[[Taha Yassine Khenissi]] || || {{subon|73}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Jalel Kadri]]
+|}
+|valign="top"|[[File:TUN-AUS 2022-11-26.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Mathew Ryan]] ([[Captain (association football)|c]])
+|-
+|RB ||'''5''' ||[[Fran Karačić]] || || {{suboff|75}}
+|-
+|CB ||'''19'''||[[Harry Souttar]]
+|-
+|CB ||'''4''' ||[[Kye Rowles]]
+|-
+|LB ||'''16'''||[[Aziz Behich]]
+|-
+|DM ||'''13'''||[[Aaron Mooy]]
+|-
+|CM ||'''22'''||[[Jackson Irvine]]
+|-
+|CM ||'''14'''||[[Riley McGree]] || || {{suboff|64}}
+|-
+|RF ||'''7''' ||[[Mathew Leckie]] || || {{suboff|85}}
+|-
+|CF ||'''15'''||[[Mitchell Duke]] || || {{suboff|64}}
+|-
+|LF ||'''23'''||[[Craig Goodwin]] || || {{suboff|85}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|FW ||'''9''' ||[[Jamie Maclaren]] || || {{subon|64}}
+|-
+|MF ||'''10'''||[[Ajdin Hrustic]] || || {{subon|64}}
+|-
+|DF ||'''2''' ||[[Miloš Degenek]] || || {{subon|75}}
+|-
+|FW ||'''11'''||[[Awer Mabil]] || || {{subon|85}}
+|-
+|MF ||'''26'''||[[Keanu Baccus]] || || {{subon|85}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Graham Arnold]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Mitchell Duke]] (Australia)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/tunisia-v-australia-match-report-group-d-world-cup-qatar-2022-mitchell-duke |title=Duke's delight as Aussies edge Tunisia |publisher=[[FIFA]] |date=26 November 2022 |access-date=26 November 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />[[Rafael Foltyn]] ([[German Football Association|Germany]])
+<br />[[Jan Seidel]] ([[German Football Association|Germany]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[Saíd Martínez]] ([[National Autonomous Federation of Football of Honduras|Honduras]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Karen Díaz Medina ([[Mexican Football Federation|Mexico]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Bastian Dankert]] ([[German Football Association|Germany]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Marco Fritz]] ([[German Football Association|Germany]])
+<br />Corey Parker ([[United States Soccer Federation|United States]])
+<br />[[Pol van Boekel]] ([[Royal Dutch Football Association|Netherlands]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Kathryn Nesbitt ([[United States Soccer Federation|United States]])
+|}
+
+===France vs Denmark===
+The teams had met thrice in the World Cup, all in the group stage with three different results; France [[1998 FIFA World Cup Group C#France vs Denmark|won 2–1]] in [[1998 FIFA World Cup|1998]], Denmark [[2002 FIFA World Cup Group A#Denmark vs France|won 2–0]] in [[2002 FIFA World Cup|2002]] and the teams [[2018 FIFA World Cup Group C#Denmark vs France|drew 0–0]] in [[2018 FIFA World Cup|2018]].
+
+[[Kylian Mbappé]] scored two goals either side of an [[Andreas Christensen]] equalizer to secure France a 2–1 win and qualify them for the [[2022 FIFA World Cup knockout stage|knockout stage]], thus becoming the first defending champions since [[Brazil national football team|Brazil]] in [[2006 FIFA World Cup|2006]] to advance past the first round. Among European countries, they were the first World Cup holders to qualify for the knockout stage since [[Germany national football team|Germany]] in [[1994 FIFA World Cup|1994]].<ref>{{cite news |last=Tagoe |first=Godwin Nii Armah |date=26 November 2022 |title=France break World Cup champion's curse in style after Denmark win |url=https://sportsbrief.com/football/28838-qatar-2022-france-nonsense-champion-curse-team-reach-16/ |access-date=8 January 2023 |website=SportsBrief}}</ref><ref>{{cite web |last=Evans |first=Chris |date=16 December 2022 |title=How France avoided the curse of previous World Cup winners|url=https://www.theguardian.com/football/the-set-pieces-blog/2022/dec/16/france-avoided-curse-previous-world-cup-winners |access-date=8 January 2023 |work=The Guardian }}</ref><ref>{{cite news |last=Pugmire |first=Jerome |date=26 November 2022 |title=Reigning World Cup champions France first team to clinch round of 16 berth|access-date=8 January 2023 |url=https://www.cbc.ca/sports/soccer/worldcup/france-denmark-recap-nov-26-2022-1.6665503 |publisher=CBC}}</ref><ref>{{cite web |date=28 November 2022 |title=Who could France face in the World Cup knockout stages? |url=https://www.90min.com/posts/who-could-france-face-in-the-world-cup-knockout-stages |access-date=8 January 2023 |website=90min}}</ref>
+
+<section begin=D4 />{{Football box
+|date       = {{Start date|2022|11|26|df=y}}
+|time       = 19:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|FRA}}
+|score      = {{score link|2022 FIFA World Cup Group D#France vs Denmark|2–1}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|DEN}}
+|goals1     =
+*[[Kylian Mbappé|Mbappé]] {{goal|61||86}}
+|goals2     =
+*[[Andreas Christensen|A. Christensen]] {{goal|68}}
+|stadium    = [[Stadium 974]], [[Doha]]
+|attendance = 42,860
+|referee    = [[Szymon Marciniak]] ([[Polish Football Association|Poland]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235467
+}}<section end=D4 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _fra22h
+ |pattern_b  = _fra22H
+ |pattern_ra = _fra22h
+ |pattern_sh = _fra22h
+ |pattern_so = _fra22hl
+ |leftarm    = 221F4E
+ |body       = 221F4E
+ |rightarm   = 221F4E
+ |shorts     = FFFFFF
+ |socks      = E00006
+ |title      = France
+}}
+|{{Football kit
+ |pattern_la = _den22a
+ |pattern_b  = _den22a
+ |pattern_ra = _den22a
+ |pattern_sh = _den22h
+ |pattern_so =
+ |leftarm    = FFFFFF
+ |body       = FFFFFF
+ |rightarm   = FFFFFF
+ |shorts     = ED0C17
+ |socks      = FFFFFF
+ |title      = Denmark
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Hugo Lloris]] ([[Captain (association football)|c]])
+|-
+|RB ||'''5''' ||[[Jules Koundé]] || {{yel|43}}
+|-
+|CB ||'''4''' ||[[Raphaël Varane]] || || {{suboff|75}}
+|-
+|CB ||'''18'''||[[Dayot Upamecano]]
+|-
+|LB ||'''22'''||[[Théo Hernandez]]
+|-
+|CM ||'''8''' ||[[Aurélien Tchouaméni]]
+|-
+|CM ||'''14'''||[[Adrien Rabiot]]
+|-
+|RW ||'''11'''||[[Ousmane Dembélé]] || || {{suboff|75}}
+|-
+|AM ||'''7''' ||[[Antoine Griezmann]] || || {{suboff|90+3}}
+|-
+|LW ||'''10'''||[[Kylian Mbappé]]
+|-
+|CF ||'''9''' ||[[Olivier Giroud]] || || {{suboff|63}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|FW ||'''26'''||[[Marcus Thuram]] || || {{subon|63}}
+|-
+|FW ||'''20'''||[[Kingsley Coman]] || || {{subon|75}}
+|-
+|DF ||'''24'''||[[Ibrahima Konaté]] || || {{subon|75}}
+|-
+|MF ||'''13'''||[[Youssouf Fofana (footballer, born 1999)|Youssouf Fofana]] || || {{subon|90+3}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Didier Deschamps]]
+|}
+|valign="top"|[[File:FRA-DEN 2022-11-26.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Kasper Schmeichel]] ([[Captain (association football)|c]])
+|-
+|CB ||'''2''' ||[[Joachim Andersen (footballer)|Joachim Andersen]]
+|-
+|CB ||'''6''' ||[[Andreas Christensen]] || {{yel|20}}
+|-
+|CB ||'''3''' ||[[Victor Nelsson]]
+|-
+|RM ||'''13'''||[[Rasmus Kristensen]] || || {{suboff|90+2}}
+|-
+|CM ||'''23'''||[[Pierre-Emile Højbjerg]]
+|-
+|CM ||'''10'''||[[Christian Eriksen]]
+|-
+|LM ||'''5''' ||[[Joakim Mæhle]]
+|-
+|RW ||'''25'''||[[Jesper Lindstrøm]] || || {{suboff|85}}
+|-
+|LW ||'''14'''||[[Mikkel Damsgaard]] || || {{suboff|73}}
+|-
+|CF ||'''21'''||[[Andreas Cornelius]] || {{yel|23}} || {{suboff|46}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|FW ||'''9''' ||[[Martin Braithwaite]] || || {{subon|46}}
+|-
+|FW ||'''12'''||[[Kasper Dolberg]] || || {{subon|73}}
+|-
+|MF ||'''15'''||[[Christian Nørgaard]] || || {{subon|85}}
+|-
+|DF ||'''26'''||[[Alexander Bah]] || || {{subon|90+2}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Kasper Hjulmand]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Kylian Mbappé]] (France)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/france-denmark-kylian-mbappe-brace-group-d-fifa-world-cup-qatar-2022 |title=Mbappe brace downs Denmark, sends France through |publisher=[[FIFA]] |date=27 November 2022 |access-date=27 November 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Paweł Sokolnicki ([[Polish Football Association|Poland]])
+<br />Tomasz Listkiewicz ([[Polish Football Association|Poland]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[Ma Ning (referee)|Ma Ning]] ([[Chinese Football Association|China]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Cao Yi ([[Chinese Football Association|China]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Tomasz Kwiatkowski]] ([[Polish Football Association|Poland]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Juan Martínez Munuera]] ([[Royal Spanish Football Federation|Spain]])
+<br />Taleb Al-Marri ([[Qatar Football Association|Qatar]])
+<br />[[Alejandro Hernández Hernández]] ([[Royal Spanish Football Federation|Spain]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Mohamed Al-Hammadi ([[United Arab Emirates Football Association|United Arab Emirates]])
+|}
+
+===Australia vs Denmark===
+The teams had met once in the World Cup, a [[2018 FIFA World Cup Group C#Denmark vs Australia|1–1 draw]] in [[2018 FIFA World Cup|2018]].
+
+Australia won the game 1–0 to finish second in the group.<ref>{{cite web|url=https://www.theguardian.com/football/live/2022/dec/01/socceroos-reach-world-cup-last-16-with-famous-win-over-denmark-live-reaction|title=Socceroos to face Argentina in World Cup knockouts after Australia's famous win over Denmark – live reaction|date=30 November 2022|work=Guardian|accessdate=1 December 2022}}</ref> The only goal of the match was scored by [[Mathew Leckie]] in the 60th minute with a low left-foot finish to the bottom right corner of the net.<ref>{{cite web|url=https://www.bbc.com/sport/football/63725316|title=Australia 1 Denmark 0|date=30 November 2022|work=BBC Sport|accessdate=1 December 2022}}</ref> This result meant that Australia progressed to the [[2022 FIFA World Cup knockout stage|knockout stage]] for the second time in their World Cup history, the first time since [[2006 FIFA World Cup|2006]] and the first time they did it as a member of the [[Asian Football Confederation|AFC]]. This was also the first time that Australia had won two consecutive matches, scored in every group stage game, and kept a clean sheet twice in a World Cup.<ref>{{cite web|url=https://www.theguardian.com/football/2022/dec/01/australia-socceroos-denmark-world-cup-group-d-match-report|title=Mat Leckie strike stuns Denmark and sends Australia into World Cup last 16|date=30 November 2022|work=Guardian|accessdate=1 December 2022}}</ref>
+
+<section begin=D5 />{{Football box
+|date       = {{Start date|2022|11|30|df=y}}
+|time       = 18:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|AUS}}
+|score      = {{score link|2022 FIFA World Cup Group D#Australia vs Denmark|1–0}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|DEN}}
+|goals1     =
+*[[Mathew Leckie|Leckie]] {{goal|60}}
+|goals2     =
+|stadium    = [[Al Janoub Stadium]], [[Al Wakrah]]
+|attendance = 41,232
+|referee    = [[Mustapha Ghorbal]] ([[Algerian Football Federation|Algeria]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235468
+}}<section end=D5 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _aus22h
+ |pattern_b  = _aus22H
+ |pattern_ra = _aus22h
+ |pattern_sh = _aus22h
+ |pattern_so =
+ |leftarm    = FFBB00
+ |body       = FFBB00
+ |rightarm   = FFBB00
+ |shorts     = 00A79F
+ |socks      = FFFFFF
+ |title      = Australia
+}}
+|{{Football kit
+ |pattern_la = _den22h
+ |pattern_b  = _den22home
+ |pattern_ra = _den22h
+ |pattern_sh = _den22h
+ |pattern_so =
+ |leftarm    = ED0C17
+ |body       = ED0C17
+ |rightarm   = ED0C17
+ |shorts     = ED0C17
+ |socks      = ED0C17
+ |title      = Denmark
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Mathew Ryan]] ([[Captain (association football)|c]])
+|-
+|RB ||'''2''' ||[[Miloš Degenek]] || {{yel|57}}
+|-
+|CB ||'''19'''||[[Harry Souttar]]
+|-
+|CB ||'''4''' ||[[Kye Rowles]]
+|-
+|LB ||'''16'''||[[Aziz Behich]] || {{yel|4}}
+|-
+|RM ||'''7''' ||[[Mathew Leckie]] || || {{suboff|89}}
+|-
+|CM ||'''13'''||[[Aaron Mooy]]
+|-
+|CM ||'''22'''||[[Jackson Irvine]]
+|-
+|LM ||'''23'''||[[Craig Goodwin]] || || {{suboff|46}}
+|-
+|CF ||'''14'''||[[Riley McGree]] || || {{suboff|74}}
+|-
+|CF ||'''15'''||[[Mitchell Duke]] || || {{suboff|82}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|MF ||'''26'''||[[Keanu Baccus]] || || {{subon|46}}
+|-
+|DF ||'''8''' ||[[Bailey Wright]] || || {{subon|74}}
+|-
+|FW ||'''9''' ||[[Jamie Maclaren]] || || {{subon|82}}
+|-
+|MF ||'''10'''||[[Ajdin Hrustic]] || || {{subon|89}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Graham Arnold]]
+|}
+|valign="top"|[[File:AUS-DEN 2022-11-30.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Kasper Schmeichel]]
+|-
+|RB ||'''13'''||[[Rasmus Kristensen]] || || {{suboff|46}}
+|-
+|CB ||'''2''' ||[[Joachim Andersen (footballer)|Joachim Andersen]]
+|-
+|CB ||'''6''' ||[[Andreas Christensen]]
+|-
+|LB ||'''5''' ||[[Joakim Mæhle]] || || {{suboff|69}}
+|-
+|DM ||'''23'''||[[Pierre-Emile Højbjerg]]
+|-
+|CM ||'''7''' ||[[Mathias Jensen]] || || {{suboff|59}}
+|-
+|CM ||'''10'''||[[Christian Eriksen]] ([[Captain (association football)|c]])
+|-
+|RF ||'''11'''||[[Andreas Skov Olsen]] || || {{suboff|69}}
+|-
+|CF ||'''9''' ||[[Martin Braithwaite]] || || {{suboff|59}}
+|-
+|LF ||'''25'''||[[Jesper Lindstrøm]]
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|DF ||'''26'''||[[Alexander Bah]] || || {{subon|46}}
+|-
+|FW ||'''12'''||[[Kasper Dolberg]] || || {{subon|59}}
+|-
+|MF ||'''14'''||[[Mikkel Damsgaard]] || || {{subon|59}}
+|-
+|MF ||'''24'''||[[Robert Skov]] || {{yel|75}} || {{subon|69}}
+|-
+|FW ||'''21'''||[[Andreas Cornelius]] || || {{subon|69}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Kasper Hjulmand]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Mathew Leckie]] (Australia)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/leckie-lauded-as-socceroos-toast-their-hero |title=Leckie lauded as Socceroos toast their hero |publisher=[[FIFA]] |date=30 November 2022 |access-date=30 November 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Mokrane Gourari ([[Algerian Football Federation|Algeria]])
+<br />Abdelhak Etchiali ([[Algerian Football Federation|Algeria]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[Maguette Ndiaye]] ([[Senegalese Football Federation|Senegal]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Djibril Camara ([[Senegalese Football Federation|Senegal]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Mauro Vigliano]] ([[Argentine Football Association|Argentina]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Nicolás Gallo (referee)|Nicolás Gallo]] ([[Colombian Football Federation|Colombia]])
+<br />Gabriel Chade ([[Argentine Football Association|Argentina]])
+<br />[[Adil Zourak]] ([[Royal Moroccan Football Federation|Morocco]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Ezequiel Brailovsky ([[Argentine Football Association|Argentina]])
+|}
+
+===Tunisia vs France===
+The two teams had faced each other four times, most recently in 2010 friendly, a 1–1 draw.
+
+A Tunisian goal in the 8th minute was disallowed for offside, but [[Wahbi Khazri]] put Tunisia into the lead in the 58th minute with a low shot to the bottom right corner. At that stage, Tunisia was in a position to qualify from the group. However, two minutes later [[Australia men's national soccer team|Australia]] went in front against [[Denmark national football team|Denmark]] in the other match taking place at the same time, which put Tunisia outside of the qualifying positions.<ref>{{cite web|url=https://www.theguardian.com/football/live/2022/nov/30/tunisia-v-france-world-cup-2022-live-score-updates|title=Tunisia 1 France 0: As it happened|date=30 November 2022|work=Guardian|accessdate=1 December 2022}}</ref> In added time, [[Antoine Griezmann]] seemingly scored to make it 1–1 for France with a volley, but the goal was ruled out by the [[video assistant referee|VAR]] for offside, despite the ball having come off a Tunisian player just before. Australia went on to beat Denmark, which meant that Tunisia finished third in the group and failed to reach the knockout stage for the sixth consecutive World Cup.<ref>{{cite web|url=https://www.bbc.com/sport/football/63725314|title=Tunisia 1 France 0|date=30 November 2022|work=BBC Sport|access-date=1 December 2022}}</ref>
+
+Viewers tuning in to French television for the match missed that the French team had lost the game 1–0. [[TF1]] switched to an ad after Griezmann had seemingly levelled the game late in stoppage time, causing French viewers to miss the pitchside monitor consultation that led VAR to rule that Griezmann had been offside. French football supporters awoke in shock the following morning to belatedly discover that the game had not ended in a tie at all, but in a surprise defeat for the reigning world champions. The incident brought to mind the time British broadcaster [[ITV (TV network)|ITV]] cut for an ad break and missed [[Steven Gerrard]] scoring [[2010 FIFA World Cup Group C#England vs United States|England's opening goal]] at the [[2010 FIFA World Cup]].<ref>Reid, Alex. [https://www.theguardian.com/football/2022/dec/01/france-tv-viewers-miss-world-cup-drama-over-griezmanns-disallowed-goal "France TV viewers miss World Cup drama over Griezmann’s disallowed goal"]. ''The Guardian''. 1 December 2022.</ref><ref>[https://www.mirror.co.uk/sport/football/news/world-cup-itv-blackout-steven-3355416 "ITV blackout 'down to operator hitting wrong switch': Company blames human error for HD cock-up"]. 13 June 2010.</ref>
+
+<section begin=D6 />{{Football box
+|date       = {{Start date|2022|11|30|df=y}}
+|time       = 18:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|TUN}}
+|score      = {{score link|2022 FIFA World Cup Group D#Tunisia vs France|1–0}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|FRA}}
+|goals1     =
+*[[Wahbi Khazri|Khazri]] {{goal|58}}
+|goals2     =
+|stadium    = [[Education City Stadium]], [[Al Rayyan (city)|Al Rayyan]]
+|attendance = 43,627
+|referee    = [[Matthew Conger]] ([[New Zealand Football|New Zealand]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235465
+}}<section end=D6 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _tun22A
+ |pattern_b  = _tun22away
+ |pattern_ra = _tun22A
+ |pattern_sh = _monaco2223h
+ |pattern_so = _redtop
+ |leftarm    = FFFFFF
+ |body       = FFFFFF
+ |rightarm   = FFFFFF
+ |shorts     = FFFFFF
+ |socks      = FFFFFF
+ |title      = Tunisia
+}}
+|{{Football kit
+ |pattern_la = _fra22h
+ |pattern_b  = _fra22H
+ |pattern_ra = _fra22h
+ |pattern_sh = _fra22h2
+ |pattern_so =
+ |leftarm    = 221F4E
+ |body       = 221F4E
+ |rightarm   = 221F4E
+ |shorts     = 221F4E
+ |socks      = 221F4E
+ |title      = France
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''16'''||[[Aymen Dahmen]]
+|-
+|CB ||'''4''' ||[[Yassine Meriah]]
+|-
+|CB ||'''5''' ||[[Nader Ghandri]]
+|-
+|CB ||'''3''' ||[[Montassar Talbi]]
+|-
+|RM ||'''21'''||[[Wajdi Kechrida]] || {{yel|28}}
+|-
+|CM ||'''17'''||[[Ellyes Skhiri]]
+|-
+|CM ||'''14'''||[[Aïssa Laïdouni]]
+|-
+|LM ||'''12'''||[[Ali Maâloul]]
+|-
+|RW ||'''25'''||[[Anis Ben Slimane]] || || {{suboff|83}}
+|-
+|LW ||'''15'''||[[Mohamed Ali Ben Romdhane]] || || {{suboff|74}}
+|-
+|CF ||'''10'''||[[Wahbi Khazri]] ([[Captain (association football)|c]]) || || {{suboff|60}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|FW ||'''9''' ||[[Issam Jebali]] || || {{subon|60}}
+|-
+|MF ||'''18'''||[[Ghailene Chaalali]] || || {{subon|74}}
+|-
+|DF ||'''24'''||[[Ali Abdi (footballer)|Ali Abdi]] || || {{subon|83}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Jalel Kadri]]
+|}
+|valign="top"|[[File:TUN-FRA 2022-11-30.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''16'''||[[Steve Mandanda]]
+|-
+|RB ||'''3''' ||[[Axel Disasi]]
+|-
+|CB ||'''4''' ||[[Raphaël Varane]] ([[Captain (association football)|c]]) || || {{suboff|63}}
+|-
+|CB ||'''24'''||[[Ibrahima Konaté]]
+|-
+|LB ||'''25'''||[[Eduardo Camavinga]]
+|-
+|RM ||'''13'''||[[Youssouf Fofana (footballer, born 1999)|Youssouf Fofana]] || || {{suboff|73}}
+|-
+|CM ||'''8''' ||[[Aurélien Tchouaméni]]
+|-
+|CM ||'''15'''||[[Jordan Veretout]] || || {{suboff|63}}
+|-
+|LM ||'''6''' ||[[Matteo Guendouzi]] || || {{suboff|79}}
+|-
+|CF ||'''20'''||[[Kingsley Coman]] || || {{suboff|63}}
+|-
+|CF ||'''12'''||[[Randal Kolo Muani]]
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|DF ||'''17'''||[[William Saliba]] || || {{subon|63}}
+|-
+|FW ||'''10'''||[[Kylian Mbappé]] || || {{subon|63}}
+|-
+|MF ||'''14'''||[[Adrien Rabiot]] || || {{subon|63}}
+|-
+|FW ||'''7''' ||[[Antoine Griezmann]] || || {{subon|73}}
+|-
+|FW ||'''11'''||[[Ousmane Dembélé]] || || {{subon|79}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Didier Deschamps]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Wahbi Khazri]] (Tunisia)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/world-cup-2022-tunisia-france-match-review |title=Tunisia beat France but cannot hurdle group stage barrier |publisher=[[FIFA]] |date=30 November 2022 |access-date=30 November 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Mark Rule ([[New Zealand Football|New Zealand]])
+<br />Tevita Makasini ([[Tonga Football Association|Tonga]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[Salima Mukansanga]] ([[Rwanda Football Federation|Rwanda]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Neuza Back ([[Brazilian Football Confederation|Brazil]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Abdulla Al-Marri]] ([[Qatar Football Association|Qatar]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Muhammad Taqi (referee)|Muhammad Taqi]] ([[Football Association of Singapore|Singapore]])
+<br />Taleb Al-Marri ([[Qatar Football Association|Qatar]])
+<br />[[Fernando Guerrero (referee)|Fernando Guerrero]] ([[Mexican Football Federation|Mexico]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Saud Al-Maqaleh ([[Qatar Football Association|Qatar]])
+|}
+
+==Discipline==
+Fair play points would have been used as tiebreakers if the overall and head-to-head records of teams were tied. These were calculated based on yellow and red cards received in all group matches as follows:<ref name="regulations"/>
+*first yellow card: −1 point;
+*indirect red card (second yellow card): −3 points;
+*direct red card: −4 points;
+*yellow card and direct red card: −5 points;
+
+Only one of the above deductions was applied to a player in a single match.
+
+{| class="wikitable sortable" style="text-align:center;"
+|-
+!rowspan=2|Team
+!colspan=4 style="border-left:3px solid gray"|Match 1
+!colspan=4 style="border-left:3px solid gray"|Match 2
+!colspan=4 style="border-left:3px solid gray"|Match 3
+!rowspan=2 style="border-left:3px solid gray"|Points
+|-
+!style="border-left:3px solid gray"|{{yel}}
+!{{sent off|2}}
+!{{sent off|0}}
+!{{sent off|1}}
+!style="border-left:3px solid gray"|{{yel}}
+!{{sent off|2}}
+!{{sent off|0}}
+!{{sent off|1}}
+!style="border-left:3px solid gray"|{{yel}}
+!{{sent off|2}}
+!{{sent off|0}}
+!{{sent off|1}}
+|-
+|align=left|{{#invoke:flagg|main|unpe|avar=fb|FRA}}
+|style="border-left:3px solid gray"|  ||  ||  || 
+|style="border-left:3px solid gray"| 1 ||  ||  || 
+|style="border-left:3px solid gray"|  ||  ||  || 
+!style="border-left:3px solid gray"| –1
+|-
+|align=left|{{#invoke:flagg|main|unpe|avar=fb|AUS}}
+|style="border-left:3px solid gray"| 3 ||  ||  || 
+|style="border-left:3px solid gray"|  ||  ||  || 
+|style="border-left:3px solid gray"| 2 ||  ||  || 
+!style="border-left:3px solid gray"| –5
+|-
+|align=left|{{#invoke:flagg|main|unpe|avar=fb|DEN}}
+|style="border-left:3px solid gray"| 2 ||  ||  || 
+|style="border-left:3px solid gray"| 2 ||  ||  || 
+|style="border-left:3px solid gray"| 1 ||  ||  || 
+!style="border-left:3px solid gray"| –5
+|-
+|align=left|{{#invoke:flagg|main|unpe|avar=fb|TUN}}
+|style="border-left:3px solid gray"| 1 ||  ||  || 
+|style="border-left:3px solid gray"| 3 ||  ||  ||  
+|style="border-left:3px solid gray"| 1 ||  ||  || 
+!style="border-left:3px solid gray"| –5
+|}
+
+==See also==
+*[[Australia at the FIFA World Cup]]
+*[[Denmark at the FIFA World Cup]]
+*[[France at the FIFA World Cup]]
+*[[Tunisia at the FIFA World Cup]]
+
+==References==
+{{reflist}}
+
+==External links==
+{{Commons category}}
+* {{Official website|https://www.fifa.com/tournaments/mens/worldcup/qatar2022}}
+
+{{2022 FIFA World Cup}}
+
+{{DEFAULTSORT:Group D}}
+[[Category:2022 FIFA World Cup]]
+[[Category:France at the 2022 FIFA World Cup]]
+[[Category:Australia at the 2022 FIFA World Cup]]
+[[Category:Denmark at the 2022 FIFA World Cup]]
+[[Category:Tunisia at the 2022 FIFA World Cup]]
+[[Category:FIFA World Cup group stages]]

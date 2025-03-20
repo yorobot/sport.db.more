@@ -1,0 +1,387 @@
+{{Short description|Football tournament group stage}}
+{{Use dmy dates|date=May 2018}}
+'''Group 3 of the 1930 FIFA World Cup''' began on 14 July 1930 and concluded on 21 July 1930. [[Uruguay national football team|Uruguay]] won the group, and advanced to the semi-finals. [[Romania national football team|Romania]] and [[Peru national football team|Peru]] failed to advance.
+
+[[Romania national football team|Romania]] scored early on in their first match against [[Peru national football team|Peru]]. The score stayed at 1-0 until [[Peru national football team|Peru]] found an equalizer in the 75th minute. [[Romania national football team|Romania]] scored 2 late goals to win the match 3-1. [[Peru national football team|Peru]] were eliminated 1 match later by hosts [[Uruguay national football team|Uruguay]] after 1 goal from Hector Castro was enough to win the match. [[Uruguay national football team|Uruguay]] dominated the first half of their game against [[Romania national football team|Romania]], scoring 4 goals which was enough to send them through to the knockouts.
+
+==Standings==
+<onlyinclude>{{#invoke:sports table|main|style=WDL
+|section=Standings
+
+|show_positions=y
+|winpoints=2
+|update=complete
+|team1=URU|name_URU={{fb|URU}}
+|team2=ROU|name_ROU={{fb|ROU}}
+|team3=PER|name_PER={{fb|PER}}
+|win_URU=2|draw_URU=0|loss_URU=0|gf_URU=5|ga_URU=0|status_URU=H
+|win_ROU=1|draw_ROU=0|loss_ROU=1|gf_ROU=3|ga_ROU=5
+|win_PER=0|draw_PER=0|loss_PER=2|gf_PER=1|ga_PER=4
+
+|res_col_header=Q
+|result1=Q |result2=
+|col_Q=green1 |text_Q=Advance to the [[1930 FIFA World Cup knockout stage|knockout stage]]
+
+|source=[https://www.espn.com.sg/football/table/_/league/FIFA.WORLD/season/1930 ESPN]
+}}</onlyinclude>
+
+==Matches==
+
+===Romania vs Peru===
+<onlyinclude>{{#invoke:football box|main|section=3-1
+|date = 14 July 1930
+|time = 14:50 UYT ([[UTC−03:30]])
+|team1 = {{fb-rt|ROU}}
+|score = 3–1
+|report =[https://www.fifa.com/worldcup/archive/uruguay1930/matches/match/1098 Report]
+|team2 = {{fb|PER}}
+|goals1 = [[Adalbert Deșu|Deșu]] {{goal|1}}</onlyinclude><ref name="RSSSF3">This is one of several goals for which the statistical details are disputed. The goalscorers and timings used here are those of FIFA, the official record. Some other sources, such as RSSSF, state a different scorer, timing, or both. See {{cite web |title=World Cup 1930 finals |work=[[Rec.Sport.Soccer Statistics Foundation]] (RSSSF) |url=https://www.rsssf.org/tables/30full.html | accessdate=15 August 2010 }}</ref><onlyinclude><br />[[Constantin Stanciu|Stanciu]] {{goal|79}}</onlyinclude><ref name="RSSSF3"/><onlyinclude><br />[[Miklós Kovács (footballer)|Kovács]] {{goal|89}}</onlyinclude><ref name="RSSSF3"/><onlyinclude>
+|goals2 = [[Luis de Souza|De Souza]] {{goal|75}}
+|stadium = [[Estadio Pocitos]], Montevideo
+|attendance = 2,549
+|referee = [[Alberto Warnken]] ([[Chilean Football Federation|Chile]])
+}}</onlyinclude>
+{{col-begin}}
+{{col-2}}
+{{Football kit
+| pattern_la           =_goldborder
+| pattern_b             = _collargold_laced
+| pattern_ra            = _goldborder
+| pattern_sh            = 
+| pattern_so            = 
+| leftarm               = ff0000
+| body                 = ff0000
+| rightarm              =ff0000
+| shorts               = 0000ff
+| socks                 = 000000
+ | title           = Romania
+}}
+{{col-2}}
+{{Football kit
+| pattern_la        = _redborder
+| pattern_b         = _collarred_laced
+| pattern_ra        = _redborder
+| pattern_sh        = 
+| pattern_so        = _2_white_stripes
+| leftarm           = ffffff
+| body             = ffffff
+| rightarm           = ffffff
+| shorts             =  ffffff
+| socks              =  000000
+|title            =  Peru
+}}
+{{col-end}}
+{{col-begin}}
+{{col-2}}
+{| style="font-size:90%; margin:0.2em auto;" cellspacing="0" cellpadding="0"
+|-
+!width="25"| !!width="25"|
+|-
+|GK || ||[[Ion Lăpușneanu]]
+|-
+|DF || ||[[Rudolf Bürger]]
+|-
+|DF || ||[[Adalbert Steiner]]
+|-
+|MF || ||[[Alfred Eisenbeisser]]
+|-
+|MF || ||[[Emerich Vogl]] ([[Captain (association football)|c]])
+|-
+|MF || ||[[László Raffinsky]]
+|-
+|FW || ||[[Miklós Kovács (footballer)|Nicolae Kovács]]
+|-
+|FW || ||[[Adalbert Deșu]]
+|-
+|FW || ||[[Rudolf Wetzer]]
+|-
+|FW || ||[[Constantin Stanciu]]
+|-
+|FW || ||[[Ștefan Barbu]]
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=4| [[Constantin Rădulescu (footballer, born 1896)|Constantin Rădulescu]]
+|}
+{{col-2}}
+{| style="font-size: 90%" cellspacing="0" cellpadding="0" align=center
+|-
+!width="25"| !!width="25"|
+|-
+|GK || ||[[Juan Valdivieso]]
+|-
+|DF || ||[[Mario de las Casas]]
+|-
+|DF || ||[[Alberto Soria]]
+|-
+|MF || ||[[Plácido Galindo]] ([[Captain (association football)|c]]) || {{sent off|0|70}}
+|-
+|MF || ||[[Domingo García (footballer)|Domingo García]]
+|-
+|MF || ||[[Alberto Denegri]]
+|-
+|FW || ||[[Julio Lores]]
+|-
+|FW || ||[[Alejandro Villanueva (footballer)|Alejandro Villanueva]]
+|-
+|FW || ||[[José María Lavalle]]
+|-
+|FW || ||[[Demetrio Neyra]]
+|-
+|FW || ||[[Luis de Souza]]
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=4| {{flagicon|ESP|1873}} [[Francisco Bru]]
+|}
+{{col-end}}
+{| width=100% style="font-size: 90%"
+|
+'''Linesmen:'''
+<br />[[John Langenus]] ([[Royal Belgian Football Association|Belgium]])
+<br />[[Francisco Mateucci]] ([[Uruguayan Football Association|Uruguay]])
+|}
+
+===Uruguay vs Peru===
+<onlyinclude>{{#invoke:football box|main|section=3-2
+|date = 18 July 1930
+|time = 14:30 UYT ([[UTC−03:30]])
+|team1 = {{fb-rt|URU}}
+|score = 1–0
+|report = [https://www.fifa.com/worldcup/archive/uruguay1930/matches/match/1099 Report]
+|team2 = {{fb|PER}}
+|goals1 = [[Héctor Castro|Castro]] {{goal|65}}
+|stadium = [[Estadio Centenario]], Montevideo
+|attendance = 57,735
+|referee = [[John Langenus]] ([[Royal Belgian Football Association|Belgium]])
+}}</onlyinclude>
+{{col-begin}}
+{{col-2}}
+{{Football kit
+| pattern_la           = _whiteborder
+| pattern_b             = _collarwhite_laced
+| pattern_ra            =_whiteborder
+| pattern_sh            = 
+| pattern_so            = _2_white_stripes
+| leftarm               = 99ccff
+| body                 = 99ccff
+| rightarm              = 99ccff
+| shorts               = 000000
+| socks                 = 000000
+ | title           = Uruguay
+}}
+{{col-2}}
+{{Football kit
+| pattern_la        =_redborder
+| pattern_b         = _collarred_laced
+| pattern_ra        = _redborder
+| pattern_sh        = 
+| pattern_so        = _2_white_stripes
+| leftarm           = ffffff
+| body             = ffffff
+| rightarm           = ffffff
+| shorts             =  ffffff
+| socks              =  000000
+|title            =  Peru
+}}
+{{col-end}}
+{{col-begin}}
+{{col-2}}
+{| style="font-size:90%; margin:0.2em auto;" cellspacing="0" cellpadding="0"
+|-
+!width="25"| !!width="25"|
+|-
+|GK || ||[[Enrique Ballestrero]]
+|-
+|DF || ||[[Domingo Tejera]]
+|-
+|DF || ||[[José Nasazzi]] ([[Captain (association football)|c]])
+|-
+|MF || ||[[José Leandro Andrade]]
+|-
+|MF || ||[[Lorenzo Fernández]]
+|-
+|MF || ||[[Álvaro Gestido]]
+|-
+|FW || ||[[Santos Urdinarán]]
+|-
+|FW || ||[[Héctor Castro]]
+|-
+|FW || ||[[Pedro Petrone]]
+|-
+|FW || ||[[Pedro Cea]]
+|-
+|FW || ||[[Santos Iriarte]]
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=4| [[Alberto Suppici]]
+|}
+{{col-2}}
+{| style="font-size: 90%" cellspacing="0" cellpadding="0" align=center
+|-
+!width="25"| !!width="25"|
+|-
+|GK || ||[[Jorge Pardon]]
+|-
+|DF || ||[[Mario de las Casas]]
+|-
+|DF || ||[[Antonio Maquilón]] ([[Captain (association football)|c]])
+|-
+|MF || ||[[Plácido Galindo]]
+|-
+|MF || ||[[Alberto Denegri]]
+|-
+|MF || ||[[Eduardo Astengo]]
+|-
+|FW || ||[[Julio Lores]]
+|-
+|FW || ||[[Alejandro Villanueva (footballer)|Alejandro Villanueva]]
+|-
+|FW || ||[[José María Lavalle]]
+|-
+|FW || ||[[Demetrio Neyra]]
+|-
+|FW || ||[[Luis de Souza]]
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=4| {{flagicon|ESP|1873}} [[Francisco Bru]]
+|}
+{{col-end}}
+{| width=100% style="font-size: 90%"
+|
+'''Linesmen:'''
+<br />[[Thomas Balvay]] ([[French Football Federation|France]])
+<br />[[Henri Christophe (referee)|Henri Christophe]] ([[Royal Belgian Football Association|Belgium]])
+|}
+
+===Uruguay vs Romania===
+<onlyinclude>{{#invoke:football box|main|section=3-3
+|date = 21 July 1930
+|time = 14:50 UYT ([[UTC−03:30]])
+|team1 = {{fb-rt|URU}}
+|score = 4–0
+|report = [https://www.fifa.com/worldcup/archive/uruguay1930/matches/match/1100 Report]
+|team2 = {{fb|ROU}}
+|goals1 = [[Pablo Dorado|Dorado]] {{goal|7}}<br />[[Héctor Scarone|Scarone]] {{goal|26}}</onlyinclude><ref name="RSSSF3"/><onlyinclude><br />[[Peregrino Anselmo|Anselmo]] {{goal|31}}<br />[[Pedro Cea|Cea]] {{goal|35}}</onlyinclude><ref name="RSSSF3"/><onlyinclude>
+|stadium = [[Estadio Centenario]], Montevideo
+|attendance = 70,022
+|referee = [[Gilberto de Almeida Rêgo|Almeida Rêgo]] ([[Brazilian Football Confederation|Brazil]])
+}}</onlyinclude>
+{{col-begin}}
+{{col-2}}
+{{Football kit
+| pattern_la           = _whiteborder
+| pattern_b             = _collarwhite_laced
+| pattern_ra            =_whiteborder
+| pattern_sh            = 
+| pattern_so            = _2_white_stripes
+| leftarm               = 99ccff
+| body                 = 99ccff
+| rightarm              = 99ccff
+| shorts               = 000000
+| socks                 = 000000
+ | title           = Uruguay
+}}
+{{col-2}}
+{{Football kit
+| pattern_la           =_goldborder
+| pattern_b             = _collargold_laced
+| pattern_ra            = _goldborder
+| pattern_sh            = 
+| pattern_so            = 
+| leftarm               = ff0000
+| body                 = ff0000
+| rightarm              =ff0000
+| shorts               = 0000ff
+| socks                 = 000000
+ | title           = Romania
+}}
+{{col-end}}
+{{col-begin}}
+{{col-2}}
+{| style="font-size:90%; margin:0.2em auto;" cellspacing="0" cellpadding="0"
+|-
+!width="25"| !!width="25"|
+|-
+|GK || ||[[Enrique Ballestrero]]
+|-
+|DF || ||[[Ernesto Mascheroni]]
+|-
+|DF || ||[[José Nasazzi]] ([[Captain (association football)|c]])
+|-
+|MF || ||[[José Leandro Andrade]]
+|-
+|MF || ||[[Lorenzo Fernández]]
+|-
+|MF || ||[[Álvaro Gestido]]
+|-
+|FW || ||[[Pablo Dorado]]
+|-
+|FW || ||[[Héctor Scarone]]
+|-
+|FW || ||[[Peregrino Anselmo]]
+|-
+|FW || ||[[Pedro Cea]]
+|-
+|FW || ||[[Santos Iriarte]]
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=4| [[Alberto Suppici]]
+|}
+{{col-2}}
+{| style="font-size: 90%" cellspacing="0" cellpadding="0" align=center
+|-
+!width="25"| !!width="25"|
+|-
+|GK || ||[[Ion Lăpușneanu]]
+|-
+|DF || ||[[Rudolf Bürger]]
+|-
+|DF || ||[[Iosif Czako]]
+|-
+|MF || ||[[Alfred Eisenbeisser]]
+|-
+|MF || ||[[Emerich Vogl]] ([[Captain (association football)|c]])
+|-
+|MF || ||[[Corneliu Robe]]
+|-
+|FW || ||[[Miklós Kovács (footballer)|Nicolae Kovács]]
+|-
+|FW || ||[[Adalbert Deșu]]
+|-
+|FW || ||[[Rudolf Wetzer]]
+|-
+|FW || ||[[László Raffinsky]]
+|-
+|FW || ||[[Ștefan Barbu]]
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=4| [[Constantin Rădulescu (footballer, born 1896)|Constantin Rădulescu]]
+|}
+{{col-end}}
+{| width=100% style="font-size: 90%"
+|
+'''Linesmen:'''
+<br />[[Alberto Warnken]] ([[Chilean Football Federation|Chile]])
+<br />[[Ulises Saucedo]] ([[Bolivian Football Federation|Bolivia]])
+|}
+
+==See also==
+*[[Romania at the FIFA World Cup]]
+*[[Peru at the FIFA World Cup]]
+*[[Uruguay at the FIFA World Cup]]
+
+==References==
+{{reflist}}
+
+{{1930 FIFA World Cup}}
+
+{{DEFAULTSORT:World Cup}}
+[[Category:1930 FIFA World Cup|Group 3]]
+[[Category:Romania at the 1930 FIFA World Cup|Group]]
+[[Category:Uruguay at the 1930 FIFA World Cup|Group]]
+[[Category:Peru at the 1930 FIFA World Cup|Group]]

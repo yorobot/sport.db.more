@@ -1,0 +1,1084 @@
+{{Short description|FIFA World Cup group}}
+{{Use dmy dates|date=March 2022}}
+[[File:2022 FIFA World Cup Qatar 0–2 Ecuador - (13).jpg|thumb|Ecuador beat host nation Qatar 2–0 in the tournament's opening match.]]
+Group A of the [[2022 FIFA World Cup]] took place from 20 to 29 November 2022.<ref name="match schedule">{{cite web |url=https://digitalhub.fifa.com/m/464f16f856f5ed05/original/FIFA-World-Cup-Qatar-2022-Match-Schedule.pdf |title=FIFA World Cup Qatar 2022 – Match Schedule |website=FIFA.com |publisher=Fédération Internationale de Football Association |date=11 August 2022 |access-date=11 August 2022}}</ref> The group consisted of the host nation [[Qatar national football team|Qatar]] as well as [[Ecuador national football team|Ecuador]], [[Senegal national football team|Senegal]] and the [[Netherlands national football team|Netherlands]]. The top two teams, the Netherlands and Senegal, advanced to the round of 16. Qatar became the first host nation to lose every group game in the World Cup history, becoming the worst performing host.<ref name="regulations">{{cite web |url=https://digitalhub.fifa.com/m/2744a0a5e3ded185/original/FIFA-World-Cup-Qatar-2022-Regulations_EN.pdf |title=Regulations – FIFA World Cup Qatar 2022 |website=FIFA.com |publisher=Fédération Internationale de Football Association |date=15 December 2021 |access-date=30 March 2022}}</ref><ref>{{cite web|url=https://www.rte.ie/sport/world-cup-2022/2022/1129/1338942-world-cup-2022-netherlands-v-qatar-ecuador-v-senegal/ |title=World Cup 2022: Netherlands and Senegal qualify – recap|date=29 November 2022|work=RTE Sport|accessdate=24 February 2023}}</ref>
+
+==Teams==
+{| class="wikitable sortable"
+|-
+!rowspan=2| Draw position
+!rowspan=2| Team
+!rowspan=2| Pot
+!rowspan=2| Confederation
+!rowspan=2| Method of<br />qualification
+!rowspan=2| Date of<br />qualification
+!rowspan=2 data-sort-type="number"| Finals<br />appearance
+!rowspan=2| Last<br />appearance
+!rowspan=2| Previous best<br />performance
+!colspan=2| [[FIFA Men's World Ranking|FIFA Rankings]]<ref>{{cite web |url=https://www.fifa.com/fifa-world-ranking/men |title=Men's Ranking |publisher=[[FIFA]] |access-date=21 November 2022}}</ref>
+|-
+! March 2022{{refn|group=nb|The rankings of March 2022 were used for [[2022 FIFA World Cup seeding|seeding for the final draw]].}}
+! October 2022
+|-
+| A1 || style=white-space:nowrap | {{#invoke:flagg|main|unpe|avar=fb|QAT}} || 1 || [[Asian Football Confederation|AFC]] || data-sort-value="*" | Hosts || 2 December 2010 || 1st || — || data-sort-value="1.0" | — || 51 || 50
+|-
+| A2 || style=white-space:nowrap | {{#invoke:flagg|main|unpe|avar=fb|ECU}} || 4 || [[CONMEBOL]] || [[2022 FIFA World Cup qualification (CONMEBOL)|CONMEBOL round robin]] fourth place || 24 March 2022 || 4th || [[2014 FIFA World Cup|2014]] || data-sort-value="3.1" | Round of 16 ([[2006 FIFA World Cup|2006]]) || 46 || 44
+|-
+| A3 || style=white-space:nowrap | {{#invoke:flagg|main|unpe|avar=fb|SEN}} || 3 || [[Confederation of African Football|CAF]] || [[2022 FIFA World Cup qualification – CAF third round|CAF third round]] winners || 29 March 2022 || 3rd || [[2018 FIFA World Cup|2018]] || data-sort-value="4.1" | Quarter-finals ([[2002 FIFA World Cup|2002]]) || 20 || 18
+|-
+| A4 || style=white-space:nowrap | {{#invoke:flagg|main|unpe|avar=fb|NED}} || 2 || [[UEFA]] || [[2022 FIFA World Cup qualification – UEFA Group G|UEFA Group G]] winners || 16 November 2021 || 11th || [[2014 FIFA World Cup|2014]] || data-sort-value="7.3" | Runners-up ([[1974 FIFA World Cup|1974]], [[1978 FIFA World Cup|1978]], [[2010 FIFA World Cup|2010]]) || 10 || 8
+|}
+'''Notes'''
+{{reflist|group=nb}}
+
+==Standings==
+{{2022 FIFA World Cup group tables|Group A}}
+
+In the [[2022 FIFA World Cup knockout stage#Round of 16|round of 16]]:
+* The winners of Group A, the Netherlands, advanced to play the runners-up of [[2022 FIFA World Cup Group B|Group B]], the [[United States men's national soccer team|United States]].
+* The runners-up of Group A, Senegal, advanced to play the winners of [[2022 FIFA World Cup Group B|Group B]], [[England national football team|England]].
+
+==Matches==
+All times listed are local, [[UTC+03:00#Arabia Standard Time|AST]] ([[UTC+03:00|UTC+3]]).<ref name="match schedule"/>
+
+The [[#Senegal vs Netherlands|match between Senegal and the Netherlands]] was originally scheduled to be the opening match of the tournament on 21 November 2022, 13:00, while the [[#Qatar vs Ecuador|match between Qatar and Ecuador]] would take place later that day at 19:00.<ref>{{cite web |url=https://digitalhub.fifa.com/m/6a616c6cf19bc57a/original/FWC-2022-Match-Schedule.pdf |title=FIFA World Cup Qatar 2022 – Match Schedule |website=FIFA.com |publisher=Fédération Internationale de Football Association |date=1 April 2022 |access-date=1 April 2022 |url-status=dead |archive-url=https://web.archive.org/web/20220401223139/https://digitalhub.fifa.com/m/6a616c6cf19bc57a/original/FWC-2022-Match-Schedule.pdf |archive-date=1 April 2022}}</ref> However, FIFA adjusted the match schedule on 11 August 2022, moving the Qatar–Ecuador fixture to 20 November in order for the hosts to feature in the opening match of the tournament. As a result, the Senegal–Netherlands fixture was pushed back to 19:00 on 21 November.<ref>{{cite web |url=https://www.fifa.com/tournaments/mens/worldcup/qatar2022/media-releases/qatar-v-ecuador-to-kick-off-fifa-world-cup-2022-tm-on-20-november |title=Qatar v. Ecuador to kick off FIFA World Cup 2022 on 20 November |publisher=[[FIFA]] |date=11 August 2022 |access-date=21 November 2022}}</ref>
+
+===Qatar vs Ecuador===
+The two teams had faced each other three times, most recently in 2018, a 4–3 win for Qatar in a friendly game. This was their first competitive meeting.
+
+Ecuador had a disallowed goal in the opening minutes, but eventually won the match 2–0 with a brace by [[Enner Valencia]]. Valencia opened the scoring in the 16th minute with a penalty, shooting low to the right corner after being brought down in the penalty area by Qatar goalkeeper [[Saad Al-Sheeb]]. He scored his second in the 31st minute with a downward header to the left corner of the net after a cross in from the right by [[Ángelo Preciado]].
+
+This was the third consecutive FIFA World Cup in which a player scored a brace in the opening match, after Brazil's [[Neymar]] in 2014 and Russia's [[Denis Cheryshev]] in 2018.<ref>{{cite news |title=Enner Valencia, octavo jugador en marcar doblete en partido inaugural |url=https://www.marca.com/claro-mx/futbol/mundial/2022/11/20/637a5c0ce2704eaf5e8b4599.html |access-date=20 November 2022 |work=Marca |date=20 November 2022 |language=es}}</ref> This was also the first time a [[penalty kick]] had been scored as the opening goal of a World Cup.<ref>{{cite news|url=https://www.bbc.com/sport/football/63603375|title=Hosts Qatar beaten by Ecuador in World Cup opener|work=BBC Sport|date=20 November 2022|access-date=20 November 2022}}</ref> Qatar became the 14th debutant to lose their opening fixture; additionally, they became the first host nation to lose their opening match at a World Cup.<ref>{{cite web|url=https://www.theguardian.com/football/live/2022/nov/20/qatar-v-ecuador-world-cup-2022-kicks-off-with-opening-ceremony-live|title=Qatar v Ecuador: World Cup 2022 kicks off with opening ceremony – live|date=20 November 2022|work=The Guardian}}</ref><ref>{{cite web|url=https://www.bbc.com/sport/live/football/60975645|title=World Cup: Ecuador cruise past Qatar in opener – reaction|website=BBC Sport|first=Emlyn|last=Begley|date=20 November 2022|access-date=20 November 2022}}</ref>
+
+<section begin=A1 />{{Football box
+|date       = {{Start date|2022|11|20|df=y}}
+|time       = 19:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|QAT}}
+|score      = {{score link|2022 FIFA World Cup Group A#Qatar vs Ecuador|0–2}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|ECU}}
+|goals1     =
+|goals2     =
+*[[Enner Valencia|Valencia]] {{goal|16|pen.|31}}
+|stadium    = [[Al Bayt Stadium]], [[Al Khor]]
+|attendance = 67,372
+|referee    = [[Daniele Orsato]] ([[Italian Football Federation|Italy]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400128082
+}}<section end=A1 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _qat22h
+ |pattern_b  = _qat22H
+ |pattern_ra = _qat22h
+ |pattern_sh = _qat22h
+ |pattern_so =
+ |leftarm    = A5011B
+ |body       = A5011B
+ |rightarm   = A5011B
+ |shorts     = A5011B
+ |socks      = A5011B
+ |title      = Qatar
+}}
+|{{Football kit
+ |pattern_la = _ecu22h
+ |pattern_b  = _ecu22H
+ |pattern_ra = _ecu22h
+ |pattern_sh =
+ |pattern_so =
+ |leftarm    = FFE80B
+ |body       = FFE80B
+ |rightarm   = FFE80B
+ |shorts     = FFE80B
+ |socks      = FFE80B
+ |title      = Ecuador
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Saad Al-Sheeb]] || {{yel|15}}
+|-
+|CB ||'''15'''||[[Bassam Al-Rawi]]
+|-
+|CB ||'''16'''||[[Boualem Khoukhi]]
+|-
+|CB ||'''3''' ||[[Abdelkarim Hassan]]
+|-
+|RWB||'''2''' ||[[Ró-Ró]]
+|-
+|LWB||'''14'''||[[Homam Ahmed]]
+|-
+|CM ||'''10'''||[[Hassan Al-Haydos]] ([[Captain (association football)|c]]) || || {{suboff|72}}
+|-
+|CM ||'''12'''||[[Karim Boudiaf]] || {{yel|36}}
+|-
+|CM ||'''6''' ||[[Abdulaziz Hatem]]
+|-
+|CF ||'''19'''||[[Almoez Ali]] || {{yel|22}} || {{suboff|72}}
+|-
+|CF ||'''11'''||[[Akram Afif]] || {{yel|78}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|FW ||'''9''' ||[[Mohammed Muntari]] || || {{subon|72}}
+|-
+|DF ||'''4''' ||[[Mohammed Waad]] || || {{subon|72}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|{{#invoke:flag|icon|ESP}} [[Félix Sánchez (football manager)|Félix Sánchez]]
+|}
+|valign="top"|[[File:QAT-ECU 2022-11-20.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Hernán Galíndez]]
+|-
+|RB ||'''17'''||[[Ángelo Preciado]]
+|-
+|CB ||'''2''' ||[[Félix Torres (footballer, born 1997)|Félix Torres]]
+|-
+|CB ||'''3''' ||[[Piero Hincapié]]
+|-
+|LB ||'''7''' ||[[Pervis Estupiñán]]
+|-
+|RM ||'''19'''||[[Gonzalo Plata]]
+|-
+|CM ||'''20'''||[[Jhegson Méndez]] || {{yel|56}}
+|-
+|CM ||'''23'''||[[Moisés Caicedo]] || {{yel|29}} || {{suboff|90}}
+|-
+|LM ||'''10'''||[[Romario Ibarra]] || || {{suboff|68}}
+|-
+|CF ||'''13'''||[[Enner Valencia]] ([[Captain (association football)|c]]) || || {{suboff|77}}
+|-
+|CF ||'''11'''||[[Michael Estrada]] || || {{suboff|90}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|MF ||'''16'''||[[Jeremy Sarmiento]] || || {{subon|68}}
+|-
+|MF ||'''5''' ||[[José Cifuentes]] || || {{subon|77}}
+|-
+|FW ||'''26'''||[[Kevin Rodríguez (footballer, born 2000)|Kevin Rodríguez]] || || {{subon|90}}
+|-
+|MF ||'''21'''||[[Alan Franco (footballer, born 1998)|Alan Franco]] || || {{subon|90}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|{{#invoke:flag|icon|ARG}} [[Gustavo Alfaro]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Enner Valencia]] (Ecuador)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/ecuador-beat-qatar-opening-match-fifa-world-cup-2022-enner-valencia |title=Valencia the hero as Ecuador down Qatar |publisher=[[FIFA]] |date=20 November 2022 |access-date=20 November 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Ciro Carbone ([[Italian Football Federation|Italy]])
+<br />Alessandro Giallatini ([[Italian Football Federation|Italy]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[István Kovács (referee)|István Kovács]] ([[Romanian Football Federation|Romania]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Ovidiu Artene ([[Romanian Football Federation|Romania]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Massimiliano Irrati]] ([[Italian Football Federation|Italy]])
+<br />'''[[Video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Paolo Valeri]] ([[Italian Football Federation|Italy]])
+<br />Tomasz Listkiewicz ([[Polish Football Association|Poland]])
+<br />[[Benoît Millot]] ([[French Football Federation|France]])
+<br />'''[[Video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Paweł Sokolnicki ([[Polish Football Association|Poland]])
+|}
+
+===Senegal vs Netherlands===
+The teams had never met before.
+
+After a goalless first half, [[Cody Gakpo]] put the Netherlands ahead in the 84th minute when he got to the ball first to head past the advancing goalkeeper [[Édouard Mendy]] and into the empty net after a cross from [[Frenkie de Jong]].<ref>{{cite web|url=https://www.theguardian.com/football/live/2022/nov/21/senegal-v-netherlands-world-cup-2022-live-score-updates|title=Senegal 0 Netherlands 2: As it happened|date=21 November 2022|work=Guardian|accessdate=21 November 2022}}</ref> In stoppage time, [[Davy Klaassen]] made it 2–0 when he followed up on [[Memphis Depay]]'s saved shot to slot into the net.<ref>{{cite web|url=https://www.bbc.com/sport/football/63619381|title=Senegal 0 Netherlands 2|date=21 November 2022|work=BBC Sport|accessdate=21 November 2022}}</ref>
+
+<section begin=A2 />{{Football box
+|date       = {{Start date|2022|11|21|df=y}}
+|time       = 19:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|SEN}}
+|score      = {{score link|2022 FIFA World Cup Group A#Senegal vs Netherlands|0–2}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|NED}}
+|goals1     =
+|goals2     =
+*[[Cody Gakpo|Gakpo]] {{goal|84}}
+*[[Davy Klaassen|Klaassen]] {{goal|90+9}}
+|stadium    = [[Al Thumama Stadium]], [[Doha]]
+|attendance = 41,721
+|referee    = [[Wilton Sampaio]] ([[Brazilian Football Confederation|Brazil]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235449
+}}<section end=A2 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _sen22H
+ |pattern_b  = _sen22H
+ |pattern_ra = _sen22H
+ |pattern_sh = _sen22h
+ |pattern_so = _sen22hl
+ |leftarm    = FFFFFF
+ |body       = FFFFFF
+ |rightarm   = FFFFFF
+ |shorts     = FFFFFF
+ |socks      = FFFFFF
+ |title      = Senegal
+}}
+|{{Football kit
+ |pattern_la = _ned22h
+ |pattern_b  = _ned22H
+ |pattern_ra = _ned22h
+ |pattern_sh = _ned22h
+ |pattern_so = _ned22hl
+ |leftarm    = F6A52F
+ |body       = F6A52F
+ |rightarm   = F6A52F
+ |shorts     = F6A52F
+ |socks      = F6A52F
+ |title      = <span class="nowrap">Netherlands</span> 
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''16'''||[[Édouard Mendy]]
+|-
+|RB ||'''21'''||[[Youssouf Sabaly]]
+|-
+|CB ||'''3''' ||[[Kalidou Koulibaly]] ([[Captain (association football)|c]])
+|-
+|CB ||'''4''' ||[[Pape Abou Cissé]]
+|-
+|LB ||'''22'''||[[Abdou Diallo]] || || {{suboff|62}}
+|-
+|CM ||'''8''' ||[[Cheikhou Kouyaté]] || || {{suboff|73}}
+|-
+|CM ||'''6''' ||[[Nampalys Mendy]] || {{yel|90+4}}
+|-
+|RW ||'''15'''||[[Krépin Diatta]] || || {{suboff|73}}
+|-
+|AM ||'''5''' ||[[Idrissa Gueye]] || {{yel|90+6}}
+|-
+|LW ||'''18'''||[[Ismaïla Sarr]]
+|-
+|CF ||'''9''' ||[[Boulaye Dia]] || || {{suboff|69}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|DF ||'''14'''||[[Ismail Jakobs]] || || {{subon|62}}
+|-
+|FW ||'''20'''||[[Bamba Dieng]] || || {{subon|69}}
+|-
+|MF ||'''26'''||[[Pape Gueye]] || || {{subon|73}}
+|-
+|FW ||'''7''' ||[[Nicolas Jackson]] || || {{subon|73}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Aliou Cissé]]
+|}
+|valign="top"|[[File:SEN-NED 2022-11-21.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''23'''||[[Andries Noppert]]
+|-
+|CB ||'''3''' ||[[Matthijs de Ligt]] || {{yel|56}}
+|-
+|CB ||'''4''' ||[[Virgil van Dijk]] ([[Captain (association football)|c]])
+|-
+|CB ||'''5''' ||[[Nathan Aké]]
+|-
+|RM ||'''22'''||[[Denzel Dumfries]]
+|-
+|CM ||'''11'''||[[Steven Berghuis]] || || {{suboff|79}}
+|-
+|CM ||'''21'''||[[Frenkie de Jong]]
+|-
+|LM ||'''17'''||[[Daley Blind]]
+|-
+|AM ||'''8''' ||[[Cody Gakpo]] || || {{suboff|90+4}}
+|-
+|CF ||'''18'''||[[Vincent Janssen]] || || {{suboff|62}}
+|-
+|CF ||'''7''' ||[[Steven Bergwijn]] || || {{suboff|79}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|FW ||'''10'''||[[Memphis Depay]] || || {{subon|62}}
+|-
+|MF ||'''14'''||[[Davy Klaassen]] || || {{subon|79}}
+|-
+|MF ||'''20'''||[[Teun Koopmeiners]] || || {{subon|79}}
+|-
+|MF ||'''15'''||[[Marten de Roon]] || || {{subon|90+4}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Louis van Gaal]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Cody Gakpo]] (Netherlands)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/match-report-senegal-netherlands-fifa-world-cup-qatar-2022 |title=Netherlands' late double downs Senegal |publisher=[[FIFA]] |date=21 November 2022 |access-date=21 November 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Bruno Boschilia ([[Brazilian Football Confederation|Brazil]])
+<br />Bruno Pires ([[Brazilian Football Confederation|Brazil]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[Andrés Matonte]] ([[Uruguayan Football Association|Uruguay]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Nicolás Taran ([[Uruguayan Football Association|Uruguay]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Juan Soto (referee)|Juan Soto]] ([[Venezuelan Football Federation|Venezuela]])
+<br />'''[[Video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Nicolás Gallo (referee)|Nicolás Gallo]] ([[Colombian Football Federation|Colombia]])
+<br />Diego Bonfá ([[Argentine Football Association|Argentina]])
+<br />[[Mauro Vigliano]] ([[Argentine Football Association|Argentina]])
+<br />'''[[Video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Ezequiel Brailovsky ([[Argentine Football Association|Argentina]])
+|}
+
+===Qatar vs Senegal===
+The two teams had never met before, though the match was unique for being the first time ever the [[2019 AFC Asian Cup|Asian champions]] faced the [[2021 Africa Cup of Nations|African champions]] at a FIFA World Cup.
+
+[[Boulaye Dia]] put Senegal in front in the 41st minute, with a low finish to the left corner of the net after a mistake by Qatar defender [[Boualem Khoukhi]]. Seven minutes later, [[Famara Diédhiou]] doubled Senegal's lead with a header from a corner taken by [[Ismail Jakobs]]. [[Mohammed Muntari]] pulled one back for Qatar in the 78th minute, the nation's first ever World Cup goal, with a header to the left corner after a cross from [[Ismaeel Mohammad]]. [[Bamba Dieng]] scored a third for Senegal in the 84th minute with a deflected shot to the net after a pass from [[Iliman Ndiaye]] on the right.<ref>{{cite web|url= https://www.theguardian.com/football/live/2022/nov/25/qatar-v-senegal-world-cup-2022-live-score-updates|title=Qatar 1 Senegal 3: As it happened|date=25 November 2022|work=The Guardian|access-date=23 February 2023}}</ref>
+
+Following the Netherlands' 1–1 draw with Ecuador played after this match, Qatar became the first host country to be eliminated from the group stage of the FIFA World Cup after just two games, and the second hosts after [[South Africa national soccer team|South Africa]] in [[2010 FIFA World Cup|2010]] to fail to progress to the second round. This loss also confirmed Qatar as the worst hosts by performance, as they could secure no more than three points, one short of South Africa's four.<ref>{{cite web|url= https://www.bbc.com/sport/football/63672200|title=Qatar 1 Senegal 3|date=25 November 2022|work=BBC Sport|access-date=23 February 2023}}</ref>
+
+<section begin=A3 />{{Football box
+|date       = {{Start date|2022|11|25|df=y}}
+|time       = 16:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|QAT}}
+|score      = {{score link|2022 FIFA World Cup Group A#Qatar vs Senegal|1–3}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|SEN}}
+|goals1     =
+*[[Mohammed Muntari|Muntari]] {{goal|78}}
+|goals2     =
+*[[Boulaye Dia|Dia]] {{goal|41}}
+*[[Famara Diédhiou|Diédhiou]] {{goal|48}}
+*[[Bamba Dieng|B. Dieng]] {{goal|84}}
+|stadium    = [[Al Thumama Stadium]], [[Doha]]
+|attendance = 41,797
+|referee    = [[Antonio Mateu Lahoz]] ([[Royal Spanish Football Federation|Spain]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235448
+}}<section end=A3 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _qat22h
+ |pattern_b  = _qat22H
+ |pattern_ra = _qat22h
+ |pattern_sh = _qat22h
+ |pattern_so =
+ |leftarm    = A5011B
+ |body       = A5011B
+ |rightarm   = A5011B
+ |shorts     = A5011B
+ |socks      = A5011B
+ |title      = Qatar
+}}
+|{{Football kit
+ |pattern_la = _sen22H
+ |pattern_b  = _sen22H
+ |pattern_ra = _sen22H
+ |pattern_sh = _sen22h
+ |pattern_so = _sen22hl
+ |leftarm    = FFFFFF
+ |body       = FFFFFF
+ |rightarm   = FFFFFF
+ |shorts     = FFFFFF
+ |socks      = FFFFFF
+ |title      = Senegal
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''22'''||[[Meshaal Barsham]]
+|-
+|CB ||'''2''' ||[[Ró-Ró]] || || {{suboff|83}}
+|-
+|CB ||'''16'''||[[Boualem Khoukhi]]
+|-
+|CB ||'''3''' ||[[Abdelkarim Hassan]]
+|-
+|RWB||'''17'''||[[Ismaeel Mohammad]] || {{yel|20}}
+|-
+|LWB||'''14'''||[[Homam Ahmed]] || {{yel|45+2}} || {{suboff|83}}
+|-
+|CM ||'''12'''||[[Karim Boudiaf]] || || {{suboff|69}}
+|-
+|CM ||'''10'''||[[Hassan Al-Haydos]] ([[Captain (association football)|c]]) || || {{suboff|74}}
+|-
+|CM ||'''23'''||[[Assim Madibo]] || {{yel|90+1}}
+|-
+|CF ||'''19'''||[[Almoez Ali]]
+|-
+|CF ||'''11'''||[[Akram Afif]]
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|MF ||'''6''' ||[[Abdulaziz Hatem]] || || {{subon|69}}
+|-
+|FW ||'''9''' ||[[Mohammed Muntari]] || || {{subon|74}}
+|-
+|DF ||'''4''' ||[[Mohammed Waad]] || || {{subon|83}}
+|-
+|DF ||'''5''' ||[[Tarek Salman]] || || {{subon|83}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|{{#invoke:flag|icon|ESP}} [[Félix Sánchez (football manager)|Félix Sánchez]]
+|}
+|valign="top"|[[File:QAT-SEN 2022-11-25.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''16'''||[[Édouard Mendy]]
+|-
+|RB ||'''21'''||[[Youssouf Sabaly]]
+|-
+|CB ||'''3''' ||[[Kalidou Koulibaly]] ([[Captain (association football)|c]])
+|-
+|CB ||'''22'''||[[Abdou Diallo]]
+|-
+|LB ||'''14'''||[[Ismail Jakobs]] || {{yel|52}} || {{suboff|78}}
+|-
+|RM ||'''18'''||[[Ismaïla Sarr]] || || {{suboff|74}}
+|-
+|CM ||'''6''' ||[[Nampalys Mendy]] || || {{suboff|78}}
+|-
+|CM ||'''5''' ||[[Idrissa Gueye]]
+|-
+|LM ||'''15'''||[[Krépin Diatta]] || || {{suboff|64}}
+|-
+|CF ||'''9''' ||[[Boulaye Dia]] || {{yel|30}}
+|-
+|CF ||'''19'''||[[Famara Diédhiou]] || || {{suboff|74}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|MF ||'''11'''||[[Pathé Ciss]] || {{yel|87}} || {{subon|64}}
+|-
+|FW ||'''13'''||[[Iliman Ndiaye]] || || {{subon|74}}
+|-
+|FW ||'''20'''||[[Bamba Dieng]] || || {{subon|74}}
+|-
+|DF ||'''4''' ||[[Pape Abou Cissé]] || || {{subon|78}}
+|-
+|MF ||'''17'''||[[Pape Matar Sarr]] || || {{subon|78}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Aliou Cissé]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Boulaye Dia]] (Senegal)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/qatar-senegal-fifa-world-cup-2022-dieng-muntari-dia-diedhiou |title=Senegal hit treble to beat hosts Qatar |publisher=[[FIFA]] |date=25 November 2022 |access-date=25 November 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Pau Cebrián Devís ([[Royal Spanish Football Federation|Spain]])
+<br />Roberto Díaz Pérez del Palomar ([[Royal Spanish Football Federation|Spain]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[Kevin Ortega]] ([[Peruvian Football Federation|Peru]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Djibril Camara ([[Senegalese Football Federation|Senegal]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Drew Fischer]] ([[Canadian Soccer Association|Canada]])
+<br />'''[[Video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Fernando Guerrero (referee)|Fernando Guerrero]] ([[Mexican Football Federation|Mexico]])
+<br />Nicolás Taran ([[Uruguayan Football Association|Uruguay]])
+<br />[[Adil Zourak]] ([[Royal Moroccan Football Federation|Morocco]])
+<br />'''[[Video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Bruno Pires ([[Brazilian Football Confederation|Brazil]])
+|}
+
+===Netherlands vs Ecuador===
+The two teams had faced each other twice, most recently in 2014, a 1–1 draw in a friendly.
+
+In the sixth minute of the match, [[Cody Gakpo]] cut inside and shot into the left corner of the net from just outside the penalty area to put the Netherlands in front. Just before the first half ended, Ecuadorian defender [[Pervis Estupiñán]] deflected his teammate's shot in, but the goal was called offside. Four minutes into the second half, [[Enner Valencia]] scored his third goal of the tournament to equalize for Ecuador, converting the rebound after goalkeeper [[Andries Noppert]] had saved a shot from Estupiñán. Despite Ecuador later hitting the crossbar, the game saw no further goals and ended in a 1–1 draw.<ref>{{cite web|url= https://www.bbc.com/sport/football/63672202|title=Netherlands 1 Ecuador 1|date=25 November 2022|work=BBC Sport|access-date=23 February 2023}}</ref>
+
+<section begin=A4 />{{Football box
+|date       = {{Start date|2022|11|25|df=y}}
+|time       = 19:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|NED}} 
+|score      = {{score link|2022 FIFA World Cup Group A#Netherlands vs Ecuador|1–1}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|ECU}}
+|goals1     =
+*[[Cody Gakpo|Gakpo]] {{goal|6}}
+|goals2     =
+*[[Enner Valencia|Valencia]] {{goal|49}}
+|stadium    = [[Khalifa International Stadium]], [[Al Rayyan (city)|Al Rayyan]]
+|attendance = 44,833
+|referee    = [[Mustapha Ghorbal]] ([[Algerian Football Federation|Algeria]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235452
+}}<section end=A4 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _ned22h
+ |pattern_b  = _ned22H
+ |pattern_ra = _ned22h
+ |pattern_sh = _ned22h
+ |pattern_so = _ned22hl
+ |leftarm    = F6A52F
+ |body       = F6A52F
+ |rightarm   = F6A52F
+ |shorts     = F6A52F
+ |socks      = F6A52F
+ |title      = <span class="nowrap">Netherlands</span> 
+}}
+|{{Football kit
+ |pattern_la = _ecu22a
+ |pattern_b  = _ecu22A
+ |pattern_ra = _ecu22a
+ |pattern_sh =
+ |pattern_so =
+ |leftarm    = 0D183B
+ |body       = 0D183B
+ |rightarm   = 0D183B
+ |shorts     = FFFFFF
+ |socks      = FFFFFF
+ |title      = Ecuador
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''23'''||[[Andries Noppert]]
+|-
+|CB ||'''2''' ||[[Jurriën Timber]]
+|-
+|CB ||'''4''' ||[[Virgil van Dijk]] ([[Captain (association football)|c]])
+|-
+|CB ||'''5''' ||[[Nathan Aké]]
+|-
+|RM ||'''22'''||[[Denzel Dumfries]]
+|-
+|CM ||'''20'''||[[Teun Koopmeiners]] || || {{suboff|79}}
+|-
+|CM ||'''21'''||[[Frenkie de Jong]]
+|-
+|LM ||'''17'''||[[Daley Blind]]
+|-
+|AM ||'''14'''||[[Davy Klaassen]] || || {{suboff|69}}
+|-
+|CF ||'''8''' ||[[Cody Gakpo]] || || {{suboff|79}}
+|-
+|CF ||'''7''' ||[[Steven Bergwijn]] || || {{suboff|46}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|FW ||'''10'''||[[Memphis Depay]] || || {{subon|46}}
+|-
+|MF ||'''11'''||[[Steven Berghuis]] || || {{subon|69}}
+|-
+|FW ||'''19'''||[[Wout Weghorst]] || || {{subon|79}}
+|-
+|MF ||'''15'''||[[Marten de Roon]] || || {{subon|79}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Louis van Gaal]]
+|}
+|valign="top"|[[File:NED-ECU 2022-11-25.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Hernán Galíndez]]
+|-
+|CB ||'''25'''||[[Jackson Porozo]]
+|-
+|CB ||'''2''' ||[[Félix Torres (footballer, born 1997)|Félix Torres]]
+|-
+|CB ||'''3''' ||[[Piero Hincapié]]
+|-
+|RM ||'''17'''||[[Ángelo Preciado]]
+|-
+|CM ||'''20'''||[[Jhegson Méndez]] || {{yel|57}}
+|-
+|CM ||'''23'''||[[Moisés Caicedo]]
+|-
+|LM ||'''7''' ||[[Pervis Estupiñán]]
+|-
+|AM ||'''19'''||[[Gonzalo Plata]] || || {{suboff|90}}
+|-
+|AM ||'''13'''||[[Enner Valencia]] ([[Captain (association football)|c]]) || || {{suboff|90}}
+|-
+|CF ||'''11'''||[[Michael Estrada]] || || {{suboff|74}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|MF ||'''16'''||[[Jeremy Sarmiento]] || || {{subon|74}}
+|-
+|MF ||'''10'''||[[Romario Ibarra]] || || {{subon|90}}
+|-
+|FW ||'''26'''||[[Kevin Rodríguez (footballer, born 2000)|Kevin Rodríguez]] || || {{subon|90}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|{{#invoke:flag|icon|ARG}} [[Gustavo Alfaro]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Frenkie de Jong]] (Netherlands)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/cody-gakpo-enner-valencia-netherlands-ecuador-fifa-world-cup-qatar-2022 |title=Valencia strikes again for Ecuador to claim Netherlands draw |publisher=[[FIFA]] |date=25 November 2022 |access-date=25 November 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Mokrane Gourari ([[Algerian Football Federation|Algeria]])
+<br />Abdelhak Etchiali ([[Algerian Football Federation|Algeria]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[Saíd Martínez]] ([[National Autonomous Federation of Football of Honduras|Honduras]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Helpys Raymundo Feliz ([[Dominican Football Federation|Dominican Republic]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Shaun Evans (referee)|Shaun Evans]] ([[Football Australia|Australia]])
+<br />'''[[Video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Redouane Jiyed]] ([[Royal Moroccan Football Federation|Morocco]])
+<br />Ashley Beecham ([[Football Australia|Australia]])
+<br />[[Muhammad Taqi (referee)|Muhammad Taqi]] ([[Football Association of Singapore|Singapore]])
+<br />'''[[Video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Anton Shchetinin ([[Football Australia|Australia]])
+|}
+
+===Ecuador vs Senegal===
+The two teams had faced each other twice, most recently in 2005, a 2–1 win for Senegal in a friendly.
+
+In the 44th minute, Senegal's [[Ismaïla Sarr]] was fouled in the penalty area by [[Piero Hincapié]], with Sarr scoring the resulting penalty low to the right corner. In the 67th minute, [[Moisés Caicedo]] put Ecuador level when he finished from close range after the ball had reached him from a [[Félix Torres (footballer, born 1997)|Félix Torres]] corner.<ref>{{cite web|url=https://www.theguardian.com/football/live/2022/nov/29/ecuador-v-senegal-world-cup-2022-live-score-updates |title=Ecuador 1 Senegal 2: As it happened|date=29 November 2022|work=The Guardian|access-date=24 February 2023}}</ref> With twenty minutes left in the match, captain [[Kalidou Koulibaly]] scored his first ever international goal with a volley from six yards out to put Senegal back in front.<ref>{{cite web|url= https://www.bbc.com/sport/football/63711991|title=Ecuador 1 Senegal 2|date=29 November 2022|work=BBC Sport|access-date=24 February 2023}}</ref>
+
+Ecuador's loss eliminated them in the group stage for a third time after [[2002 FIFA World Cup Group G|2002]] and [[2014 FIFA World Cup Group E|2014]], while Senegal advanced to the knockout stage for a second time and the first since [[2002 FIFA World Cup knockout stage|2002]].
+
+<section begin=A5 />{{Football box
+|date       = {{Start date|2022|11|29|df=y}}
+|time       = 18:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|ECU}}
+|score      = {{score link|2022 FIFA World Cup Group A#Ecuador vs Senegal|1–2}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|SEN}}
+|goals1     =
+*[[Moisés Caicedo|Caicedo]] {{goal|67}}
+|goals2     =
+*[[Ismaïla Sarr|I. Sarr]] {{goal|44|pen.}}
+*[[Kalidou Koulibaly|Koulibaly]] {{goal|70}}
+|stadium    = [[Khalifa International Stadium]], [[Al Rayyan (city)|Al Rayyan]]
+|attendance = 44,569
+|referee    = [[Clément Turpin]] ([[French Football Federation|France]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235451
+}}<section end=A5 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _ecu22h
+ |pattern_b  = _ecu22H
+ |pattern_ra = _ecu22h
+ |pattern_sh = 
+ |pattern_so =
+ |leftarm    = FFE80B
+ |body       = FFE80B
+ |rightarm   = FFE80B
+ |shorts     = 0D183B
+ |socks      = 0D183B
+ |title      = Ecuador
+}}
+|{{Football kit
+ |pattern_la = _sen22H
+ |pattern_b  = _sen22H
+ |pattern_ra = _sen22H
+ |pattern_sh = _sen22h
+ |pattern_so = _sen22hl
+ |leftarm    = FFFFFF
+ |body       = FFFFFF
+ |rightarm   = FFFFFF
+ |shorts     = FFFFFF
+ |socks      = FFFFFF
+ |title      = Senegal
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Hernán Galíndez]]
+|-
+|RB ||'''17'''||[[Ángelo Preciado]] || || {{suboff|85}}
+|-
+|CB ||'''2''' ||[[Félix Torres (footballer, born 1997)|Félix Torres]]
+|-
+|CB ||'''3''' ||[[Piero Hincapié]]
+|-
+|LB ||'''7''' ||[[Pervis Estupiñán]]
+|-
+|DM ||'''8''' ||[[Carlos Gruezo (footballer, born 1995)|Carlos Gruezo]] || || {{suboff|46}}
+|-
+|CM ||'''21'''||[[Alan Franco (footballer, born 1998)|Alan Franco]] || || {{suboff|46}}
+|-
+|CM ||'''23'''||[[Moisés Caicedo]]
+|-
+|RF ||'''19'''||[[Gonzalo Plata]]
+|-
+|CF ||'''11'''||[[Michael Estrada]] || || {{suboff|64}}
+|-
+|LF ||'''13'''||[[Enner Valencia]] ([[Captain (association football)|c]])
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|MF ||'''5''' ||[[José Cifuentes]] || || {{subon|46}}
+|-
+|MF ||'''16'''||[[Jeremy Sarmiento]] || || {{subon|46}}
+|-
+|FW ||'''24'''||[[Djorkaeff Reasco]] || || {{subon|64}}
+|-
+|DF ||'''25'''||[[Jackson Porozo]] || || {{subon|85}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|{{#invoke:flag|icon|ARG}} [[Gustavo Alfaro]]
+|}
+|valign="top"|[[File:ECU-SEN 2022-11-29.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''16'''||[[Édouard Mendy]]
+|-
+|RB ||'''21'''||[[Youssouf Sabaly]]
+|-
+|CB ||'''3''' ||[[Kalidou Koulibaly]] ([[Captain (association football)|c]])
+|-
+|CB ||'''22'''||[[Abdou Diallo]]
+|-
+|LB ||'''14'''||[[Ismail Jakobs]]
+|-
+|CM ||'''11'''||[[Pathé Ciss]] || || {{suboff|74}}
+|-
+|CM ||'''26'''||[[Pape Gueye]]
+|-
+|RW ||'''13'''||[[Iliman Ndiaye]] || || {{suboff|74}}
+|-
+|AM ||'''5''' ||[[Idrissa Gueye]] || {{yel|66}}
+|-
+|LW ||'''18'''||[[Ismaïla Sarr]]
+|-
+|CF ||'''9''' ||[[Boulaye Dia]] || || {{suboff|90+5}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|MF ||'''6''' ||[[Nampalys Mendy]] || || {{subon|74}}
+|-
+|FW ||'''20'''||[[Bamba Dieng]] || || {{subon|74}}
+|-
+|DF ||'''4''' ||[[Pape Abou Cissé]] || || {{subon|90+5}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Aliou Cissé]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Kalidou Koulibaly]] (Senegal)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/world-cup-qatar-2022-ecuador-v-senegal-match-review-report-highlights-press-conference-reaction-analysis-stats |title=Koulibaly the hero as Senegal progress to last 16 |publisher=[[FIFA]] |date=29 November 2022 |access-date=29 November 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Nicolas Danos ([[French Football Federation|France]])
+<br />Cyril Gringore ([[French Football Federation|France]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[István Kovács (referee)|István Kovács]] ([[Romanian Football Federation|Romania]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Ovidiu Artene ([[Romanian Football Federation|Romania]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Jérôme Brisard]] ([[French Football Federation|France]])
+<br />'''[[Video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Benoît Millot]] ([[French Football Federation|France]])
+<br />Ciro Carbone ([[Italian Football Federation|Italy]])
+<br />[[Drew Fischer]] ([[Canadian Soccer Association|Canada]])
+<br />'''[[Video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Alessandro Giallatini ([[Italian Football Federation|Italy]])
+|}
+
+===Netherlands vs Qatar===
+The two teams had never met before.
+
+[[Cody Gakpo]] scored his third goal of the tournament to put the Netherlands in front in the 26th minute, cutting in from the left to score with a right-foot finish from just inside the penalty area. [[Frenkie de Jong]] made it 2–0 four minutes into the second half when he followed up to poke into the net from close range after goalkeeper [[Meshaal Barsham]] had saved a shot from [[Memphis Depay]].<ref>{{cite web|url= https://www.theguardian.com/football/live/2022/nov/29/netherlands-v-qatar-world-cup-2022-live-score-updates|title=Netherlands 2–0 Qatar: As it happened|date=29 November 2022|work=The Guardian|access-date=24 February 2023}}</ref>
+
+In losing to the Netherlands, Qatar became the first World Cup hosts in history to suffer three defeats and fail to earn a single point.<ref>{{cite web|url= https://www.bbc.com/sport/football/63711993|title=Netherlands 2 Qatar 0|date=29 November 2022|work=BBC Sport|access-date=23 February 2023}}</ref>
+
+<section begin=A6 />{{Football box
+|date       = {{Start date|2022|11|29|df=y}}
+|time       = 18:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|NED}}
+|score      = {{score link|2022 FIFA World Cup Group A#Netherlands vs Qatar|2–0}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|QAT}}
+|goals1     =
+*[[Cody Gakpo|Gakpo]] {{goal|26}}
+*[[Frenkie de Jong|F. de Jong]] {{goal|49}}
+|goals2     =
+|stadium    = [[Al Bayt Stadium]], [[Al Khor]]
+|attendance = 66,784
+|referee    = [[Bakary Gassama]] ([[Gambia Football Federation|Gambia]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235450
+}}<section end=A6 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _ned22h
+ |pattern_b  = _ned22H
+ |pattern_ra = _ned22h
+ |pattern_sh = _ned22h
+ |pattern_so = _ned22hl
+ |leftarm    = F6A52F
+ |body       = F6A52F
+ |rightarm   = F6A52F
+ |shorts     = F6A52F
+ |socks      = F6A52F
+ |title      = <span class="nowrap">Netherlands</span> 
+}}
+|{{Football kit
+ |pattern_la = _qat22a
+ |pattern_b  = _qat22A
+ |pattern_ra = _qat22a
+ |pattern_sh = _qat22a
+ |pattern_so =
+ |leftarm    = FFFFFF
+ |body       = FFFFFF
+ |rightarm   = FFFFFF
+ |shorts     = FFFFFF
+ |socks      = FFFFFF
+ |title      = Qatar
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''23'''||[[Andries Noppert]]
+|-
+|CB ||'''2''' ||[[Jurriën Timber]]
+|-
+|CB ||'''4''' ||[[Virgil van Dijk]] ([[Captain (association football)|c]])
+|-
+|CB ||'''5''' ||[[Nathan Aké]] || {{yel|52}}
+|-
+|RM ||'''22'''||[[Denzel Dumfries]]
+|-
+|CM ||'''15'''||[[Marten de Roon]] || || {{suboff|82}}
+|-
+|CM ||'''21'''||[[Frenkie de Jong]] || || {{suboff|86}}
+|-
+|LM ||'''17'''||[[Daley Blind]]
+|-
+|AM ||'''14'''||[[Davy Klaassen]] || || {{suboff|66}}
+|-
+|CF ||'''8''' ||[[Cody Gakpo]] || || {{suboff|82}}
+|-
+|CF ||'''10'''||[[Memphis Depay]] || || {{suboff|66}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|MF ||'''11'''||[[Steven Berghuis]] || || {{subon|66}}
+|-
+|FW ||'''18'''||[[Vincent Janssen]] || || {{subon|66}}
+|-
+|FW ||'''19'''||[[Wout Weghorst]] || || {{subon|82}}
+|-
+|MF ||'''20'''||[[Teun Koopmeiners]] || || {{subon|82}}
+|-
+|MF ||'''24'''||[[Kenneth Taylor (footballer, born 2002)|Kenneth Taylor]] || || {{subon|86}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Louis van Gaal]]
+|}
+|valign="top"|[[File:NED-QAT 2022-11-29.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''22'''||[[Meshaal Barsham]]
+|-
+|CB ||'''2''' ||[[Ró-Ró]]
+|-
+|CB ||'''16'''||[[Boualem Khoukhi]]
+|-
+|CB ||'''3''' ||[[Abdelkarim Hassan]]
+|-
+|RWB||'''17'''||[[Ismaeel Mohammad]] || || {{suboff|85}}
+|-
+|LWB||'''14'''||[[Homam Ahmed]]
+|-
+|CM ||'''10'''||[[Hassan Al-Haydos]] ([[Captain (association football)|c]]) || || {{suboff|64}}
+|-
+|CM ||'''23'''||[[Assim Madibo]] || || {{suboff|64}}
+|-
+|CM ||'''6''' ||[[Abdulaziz Hatem]] || || {{suboff|85}}
+|-
+|CF ||'''19'''||[[Almoez Ali]] || || {{suboff|64}}
+|-
+|CF ||'''11'''||[[Akram Afif]]
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|MF ||'''8''' ||[[Ali Assadalla]] || || {{subon|64}}
+|-
+|MF ||'''12'''||[[Karim Boudiaf]] || || {{subon|64}}
+|-
+|FW ||'''9''' ||[[Mohammed Muntari]] || || {{subon|64}}
+|-
+|DF ||'''13'''||[[Musab Kheder]] || || {{subon|85}}
+|-
+|FW ||'''7''' ||[[Ahmed Alaaeldin]] || || {{subon|85}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|{{#invoke:flag|icon|ESP}} [[Félix Sánchez (football manager)|Félix Sánchez]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Davy Klaassen]] (Netherlands)<ref>{{cite web |url= https://www.fifa.com/fifaplus/en/articles/netherlands-qatar-cody-gakpo-frenkie-de-jong-louis-van-gaal-fifa-world-cup|title= Netherlands cruise past Qatar to top group|publisher=[[FIFA]] |date=29 November 2022 |access-date=29 November 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Elvis Noupue ([[Cameroonian Football Federation|Cameroon]])
+<br />Mahmoud Abouelregal ([[Egyptian Football Association|Egypt]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[Ma Ning (referee)|Ma Ning]] ([[Chinese Football Association|China]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Cao Yi ([[Chinese Football Association|China]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Redouane Jiyed]] ([[Royal Moroccan Football Federation|Morocco]])
+<br />'''[[Video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Adil Zourak]] ([[Royal Moroccan Football Federation|Morocco]])
+<br />Mokrane Gourari ([[Algerian Football Federation|Algeria]])
+<br />[[Julio Bascuñán]] ([[Football Federation of Chile|Chile]])
+<br />'''[[Video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Zakhele Siwela ([[South African Football Association|South Africa]])
+|}
+
+==Discipline==
+Fair play points would have been used as tiebreakers if the overall and head-to-head records of teams were tied. These were calculated based on yellow and red cards received in all group matches as follows:<ref name="regulations"/>
+*first yellow card: −1 point;
+*indirect red card (second yellow card): −3 points;
+*direct red card: −4 points;
+*yellow card and direct red card: −5 points;
+
+Only one of the above deductions were applied to a player in a single match.
+
+{| class="wikitable sortable" style="text-align:center;"
+|-
+!rowspan=2|Team
+!colspan=4 style="border-left:3px solid gray"|Match 1
+!colspan=4 style="border-left:3px solid gray"|Match 2
+!colspan=4 style="border-left:3px solid gray"|Match 3
+!rowspan=2 style="border-left:3px solid gray"|Points
+|-
+!style="border-left:3px solid gray"|{{yel}}
+!{{sent off|2}}
+!{{sent off|0}}
+!{{sent off|1}}
+!style="border-left:3px solid gray"|{{yel}}
+!{{sent off|2}}
+!{{sent off|0}}
+!{{sent off|1}}
+!style="border-left:3px solid gray"|{{yel}}
+!{{sent off|2}}
+!{{sent off|0}}
+!{{sent off|1}}
+|-
+|align=left|{{#invoke:flagg|main|unpe|avar=fb|NED}}
+|style="border-left:3px solid gray"| 1 ||  ||  || 
+|style="border-left:3px solid gray"|  ||  ||  ||  
+|style="border-left:3px solid gray"| 1 ||  ||  || 
+!style="border-left:3px solid gray"| −2
+|-
+|align=left|{{#invoke:flagg|main|unpe|avar=fb|ECU}}
+|style="border-left:3px solid gray"| 2 ||  ||  || 
+|style="border-left:3px solid gray"| 1 ||  ||  || 
+|style="border-left:3px solid gray"|  ||  ||  || 
+!style="border-left:3px solid gray"| −3
+|-
+|align=left|{{#invoke:flagg|main|unpe|avar=fb|SEN}}
+|style="border-left:3px solid gray"| 2 ||  ||  || 
+|style="border-left:3px solid gray"| 3 ||  ||  || 
+|style="border-left:3px solid gray"| 1 ||  ||  || 
+!style="border-left:3px solid gray"| −6
+|-
+|align=left|{{#invoke:flagg|main|unpe|avar=fb|QAT}}
+|style="border-left:3px solid gray"| 4 ||  ||  || 
+|style="border-left:3px solid gray"| 3 ||  ||  || 
+|style="border-left:3px solid gray"|  ||  ||  || 
+!style="border-left:3px solid gray"| −7
+|}
+
+==See also==
+*[[Ecuador at the FIFA World Cup]]
+*[[Netherlands at the FIFA World Cup]]
+*[[Qatar at the FIFA World Cup]]
+*[[Senegal at the FIFA World Cup]]
+
+==References==
+{{reflist}}
+
+==External links==
+{{Commons category}}
+* {{Official website|https://www.fifa.com/tournaments/mens/worldcup/qatar2022}}
+
+{{2022 FIFA World Cup}}
+
+{{DEFAULTSORT:Group A}}
+[[Category:2022 FIFA World Cup]]
+[[Category:Qatar at the 2022 FIFA World Cup]]
+[[Category:Ecuador at the 2022 FIFA World Cup]]
+[[Category:Senegal at the 2022 FIFA World Cup]]
+[[Category:Netherlands at the 2022 FIFA World Cup]]
+[[Category:FIFA World Cup group stages]]

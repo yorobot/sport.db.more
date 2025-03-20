@@ -1,0 +1,596 @@
+{{Short description|Men's World Cup final, held in Qatar}}
+{{Use British English|date=December 2022}}
+{{Use dmy dates|date=December 2023}}
+{{Infobox football match
+| title = 2022 FIFA World Cup final
+| image = File:Aerial view of Lusail Stadium in 2022.png
+| caption = Lusail Stadium hosted the final.
+| event = [[2022 FIFA World Cup]]
+| team1 = [[Argentina national football team|Argentina]]
+| team1association = {{flagdeco|ARG|size=30px}}
+| team1score = 3
+| team2 = [[France national football team|France]]
+| team2association = {{flagdeco|FRA|size=30px}}
+| team2score = 3
+| details = After [[Overtime (sports)#Association football|extra time]]<br />Argentina won 4–2 on [[Penalty shoot-out (association football)|penalties]]
+| date = {{Start date|2022|12|18|df=y}}
+| stadium = [[Lusail Stadium]]
+| city = [[Lusail]]
+| man_of_the_match1a = [[Lionel Messi]] (Argentina)
+| referee = [[Szymon Marciniak]] ([[Polish Football Association|Poland]])
+| attendance = 88,966
+| weather = Partly cloudy<br />{{convert|22|°C|°F|abbr=on}}<br />64% [[humidity]]<ref>{{cite web |date=18 December 2022 |title=FIFA World Cup – Final – Argentina v France |url=https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285077/400128145 |access-date=18 December 2022 |publisher=[[FIFA]] |archive-date=18 December 2022 |archive-url=https://web.archive.org/web/20221218153321/https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285077/400128145 |url-status=live}}</ref><ref>{{cite web |url=https://www.wunderground.com/history/daily/qa/lusail/OTHH |title=Doha, Qatar Weather History |publisher=[[Weather Underground (weather service)|Weather Underground]] |date=18 December 2022 |access-date=18 December 2022 |archive-date=18 December 2022 |archive-url=https://web.archive.org/web/20221218150716/https://www.wunderground.com/history/daily/qa/lusail/OTHH |url-status=live}}</ref>
+| previous = [[2018 FIFA World Cup final|2018]]
+| next = ''[[2026 FIFA World Cup final|2026]]''
+}}
+
+{{2022 FIFA World Cup sidebar}}
+The '''2022 FIFA World Cup final''' was the final match of the [[2022 FIFA World Cup]], the 22nd edition of [[FIFA]]'s competition for [[List of men's national association football teams|men's national football teams]]. The match was played at [[Lusail Stadium]] in [[Lusail]], Qatar, on 18 December 2022, [[National Day (Qatar)|the Qatari National Day]], and was contested by [[Argentina national football team|Argentina]] and defending champions [[France national football team|France]]. With a record 1.5 billion people watching on television, the final became one of the most widely watched televised sporting events in history.<ref>{{cite web |last=FIFA |url=https://www.fifa.com/tournaments/mens/worldcup/qatar2022/news/one-month-on-5-billion-engaged-with-the-fifa-world-cup-qatar-2022-tm |title=One Month On: 5 billion engaged with the FIFA World Cup Qatar 2022 |date=18 January 2023 |access-date=22 May 2023 |archive-date=18 January 2023 |archive-url=https://web.archive.org/web/20230118183433/https://www.fifa.com/tournaments/mens/worldcup/qatar2022/news/one-month-on-5-billion-engaged-with-the-fifa-world-cup-qatar-2022-tm |url-status=live}}</ref>
+
+The tournament comprised hosts [[Qatar national football team|Qatar]] and 31 other teams who emerged victorious from [[2022 FIFA World Cup qualification|the qualification phase]], organised by the six [[List of football federations#FIFA Confederations|FIFA confederations]]. The 32 teams competed in a group stage, from which 16 teams qualified for [[2022 FIFA World Cup knockout stage|the knockout stage]]. En route to the final, Argentina finished first in [[2022 FIFA World Cup Group C|Group C]], first losing to Saudi Arabia 2–1, then defeating both [[Mexico national football team|Mexico]] and [[Poland national football team|Poland]] 2–0. They then beat [[Australia men's national soccer team|Australia]] 2–1 in the round of 16, the [[Netherlands national football team|Netherlands]] in the quarter-final through a [[penalty shoot-out (association football)|penalty shoot-out]] after it ended 2–2 in extra time, and [[Croatia national football team|Croatia]] in the semi-final 3–0. France finished first in [[2022 FIFA World Cup Group D|Group D]] with two wins and one loss (4–1 win over [[Australia men's national soccer team|Australia]], 2–1 win over [[Denmark national football team|Denmark]], and a 1–0 loss to [[Tunisia national football team|Tunisia]]), defeating Poland 3–1 in the round of 16, [[England national football team|England]] 2–1 in the quarter-final, and [[Morocco national football team|Morocco]] 2–0 in the semi-final. The final took place in front of 88,966 spectators and was [[Referee (association football)|refereed]] by [[Szymon Marciniak]].
+
+Argentina took the lead through a [[Penalty kick (association football)|penalty]] by [[Lionel Messi]] in the 23rd minute before [[Ángel Di María]] further increased their lead in the 36th minute with a low shot into the corner of the goal after a sweeping Argentina counterattack. France failed to register a shot at the goal for the vast majority of the match until a 97-second brace by [[Kylian Mbappé]] tied the game 2–2 in the 81st minute. During [[Overtime (sports)#Association football|extra time]], Messi then scored again to give Argentina a 3–2 lead. However, Mbappé scored a second penalty to tie the game 3–3 with just a few minutes remaining, becoming the second man to score a [[hat-trick (association football)|hat-trick]] in a World Cup final after [[Geoff Hurst]] in [[1966 FIFA World Cup final|1966]]. Argentina then won the ensuing penalty shoot-out 4–2 to win their third World Cup, and first since [[1986 FIFA World Cup|1986]].
+
+It was the second time that Argentina reached the World Cup final after losing their opening match (the other occasion being in [[1990 FIFA World Cup|1990]]), a feat three other teams have achieved ([[Germany national football team|West Germany]] in [[1982 FIFA World Cup|1982]], [[Italy national football team|Italy]] in [[1994 FIFA World Cup|1994]], and [[Spain national football team|Spain]] in [[2010 FIFA World Cup|2010]]); it was only the second time in history that a team went on to win the tournament after losing their opening match (following Spain in 2010). France became the first team in history to score three goals in a World Cup final and lose. Messi was named the [[Player of the match|man of the match]] and won the [[FIFA World Cup awards#Golden Ball|Golden Ball]] as FIFA's best player of the tournament. 
+
+The match was ranked by the football media  and fans alike as one of the greatest [[List of FIFA World Cup finals|World Cup finals]], and one of the greatest football matches in the history of the sport.<ref>{{cite web |last1=Cormack |first1=James |last2=Gallagher |first2=Jack |date=20 December 2022 |title=The best World Cup finals ever |url=https://www.90min.com/posts/the-best-world-cup-finals-ever |access-date=26 January 2023 |archive-date=23 February 2023 |archive-url=https://web.archive.org/web/20230223101502/https://www.90min.com/posts/the-best-world-cup-finals-ever |url-status=live}}</ref><ref>{{cite web |last1=Sanders |first1=Emma |title=World Cup 2022: Was Argentina's win over France the best ever final? |url=https://www.bbc.com/sport/football/64019067 |website=BBC Sport |access-date=25 May 2024 |date=18 December 2022}}</ref>
+
+==Background==
+[[Argentina national football team|Argentina]] had won the World Cup twice before, in [[1978 FIFA World Cup|1978]] and [[1986 FIFA World Cup|1986]].<ref>{{cite web |last=Lucas |first=Katherine |url=https://inews.co.uk/sport/football/argentina-won-world-cup-how-many-times-history-explained-messi-maradona-2028282 |title=How many times have Argentina won the World Cup? Their history explained as Messi bids to emulate Maradona |date=18 December 2022 |access-date=24 December 2022 |work=[[i (newspaper)|i]] |archive-date=24 December 2022 |archive-url=https://web.archive.org/web/20221224153512/https://inews.co.uk/sport/football/argentina-won-world-cup-how-many-times-history-explained-messi-maradona-2028282 |url-status=live}}</ref> They had also finished as losing finalists three times, in [[1930 FIFA World Cup final|1930]], [[1990 FIFA World Cup final|1990]] and [[2014 FIFA World Cup final|2014]]. After the 2014 final loss, they went on to lose two consecutive [[Copa América]] finals to [[Chile national football team|Chile]], in [[2015 Copa América Final|2015]] and [[Copa América Centenario Final|2016]]. After a string of disappointing performances in the 2018 FIFA World Cup, where they lost to eventual champions France in the [[2018 FIFA World Cup knockout stage#France vs Argentina|first knockout round]], and the [[2019 Copa América]],<ref>{{cite web |last=Brewin |first=John |date=3 July 2019 |title=Brazil 2–0 Argentina: Copa América semi-final – as it happened |url=http://www.theguardian.com/football/live/2019/jul/02/brazil-v-argentina-copa-america-live |website=[[The Guardian]] |access-date=14 December 2022 |archive-date=3 July 2019 |archive-url=https://web.archive.org/web/20190703015657/https://www.theguardian.com/football/live/2019/jul/02/brazil-v-argentina-copa-america-live |url-status=live}}</ref> where they finished [[2019 Copa América knockout stage#Third place play-off|third]], newly appointed coach [[Lionel Scaloni]] led Argentina to their first international title since [[1993 Copa América|1993]] by defeating title holders Brazil 1–0 in the [[2021 Copa América final]] and handing captain [[Lionel Messi]] his first senior international title.<ref>{{cite web |date=11 July 2021 |title=Argentina stun Brazil in Copa América final to end 28-year trophy drought |url=http://www.theguardian.com/football/2021/jul/10/argentina-brazil-copa-america-final-lionel-messi |website=[[The Guardian]] |access-date=14 December 2022 |archive-date=11 July 2021 |archive-url=https://web.archive.org/web/20210711023558/https://www.theguardian.com/football/2021/jul/10/argentina-brazil-copa-america-final-lionel-messi |url-status=live}}</ref><ref>{{cite web |date=11 July 2021 |title=Argentina beat Brazil 1–0 to win Copa America, 1st major title in 28 yrs |url=https://www.reuters.com/lifestyle/sports/argentina-beat-brazil-1-0-win-copa-america-2021-07-11/ |work=[[Reuters]] |access-date=14 December 2022 |archive-date=11 July 2021 |archive-url=https://web.archive.org/web/20210711020747/https://www.reuters.com/lifestyle/sports/argentina-beat-brazil-1-0-win-copa-america-2021-07-11/ |url-status=live}}</ref> After winning the [[2022 Finalissima]], beating [[UEFA Euro 2020 final|European champions]] Italy 3–0,<ref>{{cite web |date=1 June 2022 |title=Messi echoes Maradona in masterclass as Argentina sends epic World Cup statement |url=https://www.foxsports.com.au/football/world-cup/finalissima-2022-argentina-beat-italy-after-lionel-messi-masterclass-qatar-2022-world-cup-news-scores-results-video-highlights/news-story/fe85ebdd179a2c7e10c7d9abbf8c91a3 |work=[[Fox Sports]] |access-date=14 December 2022 |archive-date=1 June 2022 |archive-url=https://web.archive.org/web/20220601215821/https://www.foxsports.com.au/football/world-cup/finalissima-2022-argentina-beat-italy-after-lionel-messi-masterclass-qatar-2022-world-cup-news-scores-results-video-highlights/news-story/fe85ebdd179a2c7e10c7d9abbf8c91a3 |url-status=live}}</ref> Argentina entered Qatar as one of the favourites to win.<ref>{{cite web |last=Walker-Roberts |first=James |date=22 November 2022 |title=Argentina are favourites for World Cup 2022 win in Qatar with 'happy' Lionel Messi, says Joe Cole |url=https://www.eurosport.com/football/world-cup/2022/argentina-are-favourites-for-world-cup-2022-win-in-qatar-with-happy-lionel-messi-says-joe-cole_sto9238695/story.shtml |access-date=20 December 2022 |website=[[Eurosport]] |archive-date=22 November 2022 |archive-url=https://web.archive.org/web/20221122101649/https://www.eurosport.com/football/world-cup/2022/argentina-are-favourites-for-world-cup-2022-win-in-qatar-with-happy-lionel-messi-says-joe-cole_sto9238695/story.shtml |url-status=live}}</ref><ref>{{cite web |date=14 December 2022 |title=World Cup 2022 betting odds: which team are favourites to win? |url=https://www.reuters.com/lifestyle/sports/world-cup-2022-betting-odds-which-team-are-favourites-win-2022-11-15/ |access-date=20 December 2022 |work=[[Reuters]] |archive-date=22 March 2023 |archive-url=https://web.archive.org/web/20230322132619/https://www.reuters.com/lifestyle/sports/world-cup-2022-betting-odds-which-team-are-favourites-win-2022-11-15/ |url-status=live}}</ref>
+
+[[France national football team|France]] were the defending champions from the [[2018 FIFA World Cup|2018 World Cup]], which made this the first time since the [[2002 FIFA World Cup final|2002 final]] in which a team had consecutive appearances at the finals, and the first since [[1998 FIFA World Cup Final|1998]] in which the title holders qualified for the subsequent final – both feats achieved by [[Brazil national football team|Brazil]]. France had claimed two World Cups, in [[1998 FIFA World Cup|1998]] and 2018. The French also reached the [[2006 FIFA World Cup Final|2006 final]], but fell to [[Italy national football team|Italy]] on [[Penalty shoot-out (association football)|penalties]]. Under the management of [[Didier Deschamps]], who won the 1998 tournament as a player, the French failed to conquer the [[2014 FIFA World Cup|2014 World Cup]] and [[UEFA Euro 2016|UEFA Euros 2016]] and [[UEFA Euro 2020|2020]], but successfully clinched the 2018 World Cup title.<ref>{{cite news |title=France 0–1 Germany |work=[[BBC Sport]] |url=https://www.bbc.com/sport/football/28051800 |access-date=15 December 2022 |archive-date=1 March 2023 |archive-url=https://web.archive.org/web/20230301131942/https://www.bbc.com/sport/football/28051800 |url-status=live}}</ref><ref>{{cite news |last=Borden |first=Sam |date=10 July 2016 |title=At Euro 2016 Final, Portugal Loses Ronaldo but Defeats France |work=[[The New York Times]] |url=https://www.nytimes.com/2016/07/11/sports/soccer/euro-2016-portugal-loses-ronaldo-but-defeats-france-in-extra-time.html |access-date=15 December 2022 |issn=0362-4331 |archive-date=1 March 2023 |archive-url=https://web.archive.org/web/20230301131942/https://www.nytimes.com/2016/07/11/sports/soccer/euro-2016-portugal-loses-ronaldo-but-defeats-france-in-extra-time.html |url-status=live}}</ref> Due to their status as the world champions, France also entered Qatar as one of the favourites to win.<ref>{{cite web |last=Collings |first=Simon |date=18 November 2022 |title=Rating the World Cup favourites: Brazil, Argentina and France |url=https://www.standard.co.uk/sport/football/rating-world-cup-2022-favourites-brazil-argentina-france-b1040897.html |access-date=20 December 2022 |website=[[Evening Standard]] |archive-date=1 March 2023 |archive-url=https://web.archive.org/web/20230301131926/https://www.standard.co.uk/sport/football/rating-world-cup-2022-favourites-brazil-argentina-france-b1040897.html |url-status=live}}</ref> France aimed to emulate the achievement of Italy in [[1934 FIFA World Cup|1934]] and [[1938 FIFA World Cup|1938]] and Brazil in [[1958 FIFA World Cup|1958]] and [[1962 FIFA World Cup|1962]] as the third country to successfully defend the World Cup title. Deschamps was seeking to become the second manager to win two men's [[FIFA World Cup]] titles, after [[Vittorio Pozzo]] with Italy in 1934 and 1938.<ref>{{cite web |title=Who is Vittorio Pozzo French World Cup coach Didier Deschamps is trying to emulate |url=https://www.fifa.com/fifaplus/en/articles/who-is-vittorio-pozzo-french-world-cup-coach-didier-deschamps-is-trying-to-emulate |access-date=14 December 2022 |publisher=[[FIFA]] |archive-date=14 December 2022 |archive-url=https://web.archive.org/web/20221214212236/https://www.fifa.com/fifaplus/en/articles/who-is-vittorio-pozzo-french-world-cup-coach-didier-deschamps-is-trying-to-emulate |url-status=live}}</ref> Having won the 1998 tournament as a player, Deschamps was also seeking to become the third person to win three FIFA World Cup titles, after Brazilian legends [[Pelé]] (all as a player) and [[Mário Zagallo]] (two as a player, one as a manager).<ref>{{cite magazine |last=West |first=Jenna |date=15 July 2018 |title=Didier Deschamps Becomes Third to Win World Cup as Player and Manager |magazine=[[Sports Illustrated]] |url=https://www.si.com/soccer/2018/07/15/world-cup-wins-manager-player-zagallo-beckenbauer-deschamps |access-date=16 July 2018 |archive-date=20 May 2019 |archive-url=https://web.archive.org/web/20190520130631/https://www.si.com/soccer/2018/07/15/world-cup-wins-manager-player-zagallo-beckenbauer-deschamps |url-status=live}}</ref><ref>{{cite web |last=Brown |first=Oliver |url=https://www.telegraph.co.uk/world-cup/2022/12/17/thanks-didier-deschamps-france-cusp-history/ |title=France's future is intoxicating – which is frightening for everyone else |date=17 December 2022 |access-date=24 December 2022 |work=[[The Daily Telegraph]] |url-access=subscription |archive-date=24 December 2022 |archive-url=https://web.archive.org/web/20221224153511/https://www.telegraph.co.uk/world-cup/2022/12/17/thanks-didier-deschamps-france-cusp-history/ |url-status=live}}</ref>
+[[File:Argentina vs France 2018 World Cup 28.jpg|thumb|Argentina v France match in the round of 16 of the [[2018 FIFA World Cup]] in Russia]]
+The two nations met in the knockout stage for the second straight World Cup. In 2018 in Russia at the [[Kazan Arena]] in the round of 16, France won the encounter 4–3 in what ''[[The Independent]]'' called "one of the greatest World Cup games of all time".<ref>{{cite web |last=Liew |first=Jonathan |date=30 June 2018 |title=Why France vs Argentina was one of the greatest World Cup games of all time |url=https://www.independent.co.uk/sport/football/world-cup/world-cup-2018-france-vs-argentina-great-games-of-all-time-kylian-mbappe-lionel-messi-a8425386.html |url-status=live |archive-url=https://web.archive.org/web/20180710090326/https://www.independent.co.uk/sport/football/world-cup/world-cup-2018-france-vs-argentina-great-games-of-all-time-kylian-mbappe-lionel-messi-a8425386.html |archive-date=10 July 2018 |website=[[The Independent]]}}</ref> [[Antoine Griezmann]] opened the scoring with a penalty before [[Ángel Di María]] and [[Gabriel Mercado]] put Argentina in front, with France then scoring the next three goals courtesy of [[Benjamin Pavard]]'s volley outside of the box – which was later voted as the goal of the tournament<ref>{{cite web |title=Pavard's stunner voted Hyundai Goal of the Tournament |url=https://www.fifa.com/tournaments/mens/worldcup/2018russia/news/pavard-s-stunner-voted-hyundai-goal-of-the-tournament |access-date=20 December 2022 |publisher=[[FIFA]] |archive-date=9 December 2022 |archive-url=https://web.archive.org/web/20221209155716/https://www.fifa.com/tournaments/mens/worldcup/2018russia/news/pavard-s-stunner-voted-hyundai-goal-of-the-tournament |url-status=live}}</ref> – and then [[Kylian Mbappé]] twice.<ref>{{cite web |title=France v Argentina Live Commentary & Result, 30/06/18, World Cup |url=https://www.goal.com/en-in/match/france-v-argentina/66pdxwjvvzjy3f5r6fqcy7d9l |access-date=20 December 2022 |website=[[Goal (website)|Goal]] |archive-date=1 March 2023 |archive-url=https://web.archive.org/web/20230301131940/https://www.goal.com/en-in/match/france-v-argentina/66pdxwjvvzjy3f5r6fqcy7d9l |url-status=live}}</ref> [[Sergio Agüero]] reduced the deficit to one in stoppage time, but Argentina was unable to equalise and send the match to [[Extra time (association football)|extra time]].<ref>{{cite web |title=2018 FIFA World Cup Russia: France – Argentina |url=https://www.fifa.com/tournaments/mens/worldcup/2018russia/match-center/origin1904-p.cxm.fifa.com/tournaments/mens/worldcup/2018russia/match-center/300331537 |access-date=20 December 2022 |publisher=[[FIFA]]}}{{Dead link|date=July 2023 |bot=InternetArchiveBot |fix-attempted=yes }}</ref>
+
+The match ball for the [[2022 FIFA World Cup knockout stage#Semi-finals|2022 FIFA World Cup semi-finals]], [[2022 FIFA World Cup knockout stage#Third place play-off|third place match]] and final was announced on 11 December 2022. It was a variation of the [[Adidas Al Rihla|Adidas ''Al Rihla'']] used in the rest of the tournament named the [[Adidas Al Rihla#Final matches – Al Hilm|Adidas ''Al-Hilm'']], meaning "The Dream" in [[Arabic]], a reference to every nation's dream of lifting the FIFA World Cup.<ref>{{cite web |date=11 December 2022 |title=adidas reveals the FIFA World Cup official Finals match ball |url=https://www.fifa.com/tournaments/mens/worldcup/qatar2022/media-releases/introducing-al-hilm-the-official-match-ball-of-the-fifa-world-cup-qatar-2022-finals |access-date=11 December 2022 |publisher=[[FIFA]] |archive-date=11 December 2022 |archive-url=https://web.archive.org/web/20221211100903/https://www.fifa.com/tournaments/mens/worldcup/qatar2022/media-releases/introducing-al-hilm-the-official-match-ball-of-the-fifa-world-cup-qatar-2022-finals |url-status=live}}</ref> Whilst the technical aspects of the ball are the same, the colour is different from the ''Al-Rihla'' balls used in the group stages and preceding knockout games, with a ''Gold Metallic'', maroon, ''Collegiate Burgundy'', and red design, a reference to the [[Flag of Qatar|national colours]] of host nation [[Qatar]] and the golden colours shared by the final's venue [[Lusail Stadium]] and the [[FIFA World Cup Trophy]]. It is the fifth special ball for FIFA World Cup final matches, after the [[Adidas Teamgeist#World Cup match balls|+Teamgeist Berlin]],<ref name="ball">{{cite web |date=18 April 2006 |title=Golden 'Teamgeist Berlin' ball for the FIFA World Cup Final |url=https://www.fifa.com/worldcup/news/golden-teamgeist-berlin-ball-for-the-fifa-world-cup-final-19615 |url-status=dead |archive-url=https://web.archive.org/web/20190517103240/https://www.fifa.com/worldcup/news/golden-teamgeist-berlin-ball-for-the-fifa-world-cup-final-19615 |archive-date=17 May 2019 |publisher=[[FIFA]]}}</ref> [[Adidas Jabulani#Colouring|Jo'bulani]],<ref name="jobulani">{{cite web |last=FIFA.com |date=20 April 2010 |title=Glittering golden ball for Final |url=https://www.fifa.com/worldcup/news/newsid=1196426/index.html |url-status=dead |archive-url=https://web.archive.org/web/20100430035902/http://www.fifa.com/worldcup/news/newsid=1196426/index.html |archive-date=30 April 2010 |access-date=17 June 2016 |publisher=[[FIFA]]}}</ref> [[Adidas Brazuca#Final match – Brazuca Final Rio|Brazuca Final Rio]],<ref>{{cite web |date=29 May 2014 |title=adidas Brazuca Final Rio unveiled |url=https://www.fifa.com/worldcup/news/y=2014/m=5/news=adidas-brazuca-final-rio-unveiled-2345973.html |url-status=dead |archive-url=https://web.archive.org/web/20140529124830/http://www.fifa.com//worldcup/news/y=2014/m=5/news=adidas-brazuca-final-rio-unveiled-2345973.html |archive-date=29 May 2014 |access-date=14 July 2014 |publisher=[[FIFA]]}}</ref> and [[Adidas Telstar 18#Telstar Mechta|Telstar Mechta]].<ref>{{cite news |date=26 June 2018 |title=adidas Football Reveals Official Match Ball for the Knockout Stage of the 2018 FIFA World Cup Russia |publisher=[[FIFA]] |url=https://www.fifa.com/worldcup/news/adidas-football-reveals-official-match-ball-for-the-knockout-stage-of-the-2018-f |access-date=26 June 2018 |archive-date=22 June 2021 |archive-url=https://web.archive.org/web/20210622215257/https://www.fifa.com/worldcup/news/adidas-football-reveals-official-match-ball-for-the-knockout-stage-of-the-2018-f |url-status=live}}</ref>
+
+==Venue==
+The final was played at Lusail Stadium in [[Lusail]], Qatar, located about {{convert|15|km|mi}} north of the city centre of [[Doha]].<ref>{{cite web |title=Lusail Stadium |url=https://www.qatar2022.qa/en/stadiums/lusail-stadium |access-date=30 March 2022 |publisher=Supreme Committee for Delivery & Legacy |archive-date=4 May 2022 |archive-url=https://web.archive.org/web/20220504115109/https://www.qatar2022.qa/en/stadiums/lusail-stadium |url-status=live}}</ref> The stadium was intended to host the final as part of [[Qatar 2022 FIFA World Cup bid|Qatar's World Cup bid]],<ref>{{cite press release |title=Lusail Iconic Stadium for Qatar 2022 is revealed at Leaders in Football conference in London |date=6 October 2010 |publisher=[[Foster and Partners]] |url=https://www.fosterandpartners.com/news/archive/2010/10/lusail-iconic-stadium-for-qatar-2022-is-revealed-at-leaders-in-football-conference-in-london/ |access-date=30 March 2022 |archive-date=19 November 2022 |archive-url=https://web.archive.org/web/20221119230730/https://www.fosterandpartners.com/news/archive/2010/10/lusail-iconic-stadium-for-qatar-2022-is-revealed-at-leaders-in-football-conference-in-london/ |url-status=live }}</ref> and was confirmed as the final venue on 15 July 2020.<ref>{{cite news |date=15 July 2020 |title=FIFA World Cup match schedule confirmed: hosts Qatar to kick off 2022 tournament at Al Bayt Stadium |publisher=[[FIFA]] |url=https://www.fifa.com/tournaments/mens/worldcup/qatar2022/news/fifa-world-cuptm-match-schedule-confirmed-hosts-qatar-to-kick-off-2022-tournamen |access-date=30 March 2022 |archive-date=4 February 2022 |archive-url=https://web.archive.org/web/20220204095159/https://www.fifa.com/tournaments/mens/worldcup/qatar2022/news/fifa-world-cuptm-match-schedule-confirmed-hosts-qatar-to-kick-off-2022-tournamen |url-status=live}}</ref> The stadium was allocated to also host nine previous World Cup matches, with six in the group stage and three other knockout fixtures.<ref name="match schedule">{{cite web |date=11 August 2022 |title=FIFA World Cup Qatar 2022 – Match Schedule |url=https://digitalhub.fifa.com/m/464f16f856f5ed05/original/FIFA-World-Cup-Qatar-2022-Match-Schedule.pdf |access-date=11 August 2022 |publisher=[[FIFA]] |archive-date=11 August 2022 |archive-url=https://web.archive.org/web/20220811224009/https://digitalhub.fifa.com/m/464f16f856f5ed05/original/FIFA-World-Cup-Qatar-2022-Match-Schedule.pdf |url-status=live}}</ref>
+
+Lusail Stadium, owned by the [[Qatar Football Association]], was built as part of Qatar's winning bid for the World Cup. The stadium was designed by British firm [[Foster and Partners]] and [[Populous (company)|Populous]],<ref>{{cite web |date=7 March 2019 |title=Lusail Iconic Stadium – FIFA World Cup Qatar |url=https://www.e-architect.com/qatar/lusail-iconic-stadium |access-date=20 January 2022 |website=e-architect |archive-date=19 November 2022 |archive-url=https://web.archive.org/web/20221119230723/https://www.e-architect.com/qatar/lusail-iconic-stadium |url-status=live}}</ref> supported by [[MANICA Architecture]].<ref>{{cite web |url=https://www.worldconstructionnetwork.com/projects/lusail-iconicstadium/ |title=Lusail Iconic Stadium |work=World Construction Network |date=1 February 2011 |access-date=24 December 2022 |archive-date=24 December 2022 |archive-url=https://web.archive.org/web/20221224185109/https://www.worldconstructionnetwork.com/projects/lusail-iconicstadium/ |url-status=live}}</ref> The stadium uses solar power to be cooled and is claimed to have a carbon zero footprint.<ref>{{cite web |date=27 October 2010 |title=Qatar's Lusail Iconic Stadium for Solar World Cup Stadium |url=http://www.architecture-view.com/2010/10/27/qatar%E2%80%99s-lusail-iconic-stadium-for-solar-world-cup-stadium/ |archive-url=https://web.archive.org/web/20160616084740/http://www.architecture-view.com/2010/10/27/qatar%E2%80%99s-lusail-iconic-stadium-for-solar-world-cup-stadium/ |archive-date=16 June 2016 |access-date=24 February 2022 |publisher=architecture-view.com}}</ref> Construction began in April 2017,<ref>{{cite web |date=12 April 2017 |title=Work starts on Qatar World Cup final stadium at Lusail |url=https://www.thepeninsulaqatar.com/article/12/04/2017/Work-starts-on-Qatar-World-Cup-final-stadium-at-Lusail |access-date=24 February 2022 |work=[[The Peninsula (newspaper)|The Peninsula]] |archive-date=26 August 2019 |archive-url=https://web.archive.org/web/20190826095652/https://www.thepeninsulaqatar.com/article/12/04/2017/Work-starts-on-Qatar-World-Cup-final-stadium-at-Lusail |url-status=live}}</ref> and was planned to finish in 2020. Completion of the stadium was postponed, with construction ultimately finished in November 2021.<ref>{{cite news |last=Parkes |first=James |date=23 November 2021 |title=Foster + Partners-designed Lusail Stadium among eight completed Qatar World Cup venues |work=[[Dezeen]] |url=https://www.dezeen.com/2021/11/23/qatar-2022-world-cup-stadiums-roundup/ |access-date=30 March 2022 |archive-date=19 November 2022 |archive-url=https://web.archive.org/web/20221119230713/https://www.dezeen.com/2021/11/23/qatar-2022-world-cup-stadiums-roundup/ |url-status=live}}</ref> The stadium hosted its first match, the Lusail Super Cup, on 9 September 2022,<ref>{{cite web |title=Photos: Lusail Super Cup tests stadium hosting World Cup final |url=https://www.aljazeera.com/gallery/2022/9/10/photos-lusail-super-cup-tests-stadium-hosting-world-cup-final |access-date=16 September 2022 |work=[[Al Jazeera Media Network|Al Jazeera]] |archive-date=17 November 2022 |archive-url=https://web.archive.org/web/20221117075956/https://www.aljazeera.com/gallery/2022/9/10/photos-lusail-super-cup-tests-stadium-hosting-world-cup-final |url-status=live}}</ref> later than expected.<ref>{{cite news |last=Sobura |first=Tomasz |date=2 February 2022 |title=New stadium: The date bowl still awaiting its first game |work=StadiumDB.com |url=http://stadiumdb.com/news/2022/02/new_stadium_the_date_bowl_still_awaiting_its_first_game |access-date=30 March 2022 |archive-date=22 September 2022 |archive-url=https://web.archive.org/web/20220922130153/http://stadiumdb.com/news/2022/02/new_stadium_the_date_bowl_still_awaiting_its_first_game |url-status=live}}</ref>
+
+==Route to the final==
+
+===Argentina===
+{| class="wikitable plainrowheaders" style="text-align:center;margin-left:1em;float:right;clear:right;min-width:226px"
+|+ Argentina's route to the final
+|-
+!scope="col"|
+!scope="col"| Opponent
+!scope="col"| Result
+|- style="border-top:2px solid black"
+!scope="row" style="text-align:center"|{{abbr|1|First group match}}
+| align="left"|{{#invoke:flagg|main|unpe|avar=fb|KSA}}
+| [[2022 FIFA World Cup Group C#Argentina vs Saudi Arabia|1–2]]
+|-
+!scope="row" style="text-align:center"|{{abbr|2|Second group match}}
+| align="left"|{{#invoke:flagg|main|unpe|avar=fb|MEX}}
+| [[2022 FIFA World Cup Group C#Argentina vs Mexico|2–0]]
+|-
+!scope="row" style="text-align:center"|{{abbr|3|Third group match}}
+| align="left"|{{#invoke:flagg|main|unpe|avar=fb|POL}}
+| [[2022 FIFA World Cup Group C#Poland vs Argentina|2–0]]
+|- style="border-top:2px solid black"
+!scope="row" style="text-align:center"|{{abbr|R16|Round of 16}}
+| align="left"|{{#invoke:flagg|main|unpe|avar=fb|AUS}}
+| [[2022 FIFA World Cup knockout stage#Argentina vs Australia|2–1]]
+|-
+!scope="row" style="text-align:center"|{{abbr|QF|Quarter-final}}
+| align="left"|{{#invoke:flagg|main|unpe|avar=fb|NED}}
+| {{longitem|[[2022 FIFA World Cup knockout stage#Netherlands vs Argentina|2–2]] {{aet}}<br />{{pso|4–3}}}}
+|-
+!scope="row" style="text-align:center"|{{abbr|SF|Semi-Final}}
+| align="left"|{{#invoke:flagg|main|unpe|avar=fb|CRO}}
+| [[2022 FIFA World Cup knockout stage#Argentina vs Croatia|3–0]]
+|}
+
+Drawn in [[2022 FIFA World Cup Group C|group C]] and coming off a three-year, 36-game-long unbeaten streak,<ref>{{cite web |last=Cons |first=Roddy |date=18 November 2022 |title=When could Argentina break the world record unbeaten streak at the 2022 World Cup? |url=https://en.as.com/soccer/when-could-argentina-break-the-world-record-unbeaten-streak-at-the-2022-world-cup-n/ |website=[[Diario AS]] |access-date=15 December 2022 |archive-date=15 December 2022 |archive-url=https://web.archive.org/web/20221215224458/https://en.as.com/soccer/when-could-argentina-break-the-world-record-unbeaten-streak-at-the-2022-world-cup-n/ |url-status=live}}</ref> Argentina were defeated in their opening game 2–1 by [[Saudi Arabia national football team|Saudi Arabia]].<ref>{{cite news |date=9 December 2022 |title=Qatar's World Cup has seen the biggest upsets in recent history |newspaper=[[The Economist]] |url=https://www.economist.com/graphic-detail/2022/12/09/qatars-world-cup-has-seen-the-biggest-upsets-in-recent-history |access-date=19 December 2022 |archive-date=9 December 2022 |archive-url=https://web.archive.org/web/20221209163945/https://www.economist.com/graphic-detail/2022/12/09/qatars-world-cup-has-seen-the-biggest-upsets-in-recent-history |url-status=live}}</ref><ref>{{cite web |last=Smith |first=Rory |date=22 November 2022 |title=Saudi Arabia Leaves Another Scar on Argentina's Soul |url=https://www.nytimes.com/2022/11/22/sports/soccer/saudi-arabia-argentina-messi-loss-world-cup.html |website=[[The New York Times]] |access-date=15 December 2022 |archive-date=22 November 2022 |archive-url=https://web.archive.org/web/20221122140615/https://www.nytimes.com/2022/11/22/sports/soccer/saudi-arabia-argentina-messi-loss-world-cup.html/ |url-status=live}}</ref> Lionel Messi's opener from the penalty spot was followed by several disallowed Argentina goals which were ruled offside.<ref>{{cite web |last=King |first=Kieran |date=22 November 2022 |title=Argentina stunned as they have three goals ruled out in Saudi Arabia World Cup defeat |url=https://www.mirror.co.uk/sport/football/news/argentina-worldcup-messi-offside-var-28553763 |website=[[Daily Mirror]] |access-date=18 December 2022 |archive-date=18 December 2022 |archive-url=https://web.archive.org/web/20221218122730/https://www.mirror.co.uk/sport/football/news/argentina-worldcup-messi-offside-var-28553763 |url-status=live}}</ref> Immediately after half-time, Saudi Arabia stunned Argentina with two goals from [[Saleh Al-Shehri]] and [[Salem Al-Dawsari]] in a span of five minutes before shutting out any further attempts by the South Americans in a disciplined defensive performance.<ref>{{cite web |title=Saudi shock: Argentina stunned in historic World Cup upset |url=https://www.1news.co.nz/2022/11/23/saudi-shock-argentina-stunned-in-historic-world-cup-upset/ |access-date=15 December 2022 |website=[[1News]] |archive-date=1 March 2023 |archive-url=https://web.archive.org/web/20230301131935/https://www.1news.co.nz/2022/11/23/saudi-shock-argentina-stunned-in-historic-world-cup-upset/ |url-status=live}}</ref> However, the Argentines bounced back from the shock loss to overcome [[Mexico national football team|Mexico]] 2–0 after a long-range effort by Messi who then assisted [[Enzo Fernández]] for the second, reigniting their World Cup hopes.<ref>{{cite web |date=26 November 2022 |title=Argentina 2–0 Mexico: Lionel Messi and Enzo Fernandez stunners keep La Albiceleste alive with crucial victory |url=https://www.eurosport.com/football/world-cup/2022/fifa-world-cup-2022-in-qatar-live-argentina-v-mexico-updates_sto9242731/story.shtml |access-date=15 December 2022 |website=[[Eurosport]] |archive-date=26 November 2022 |archive-url=https://web.archive.org/web/20221126213434/https://www.eurosport.com/football/world-cup/2022/fifa-world-cup-2022-in-qatar-live-argentina-v-mexico-updates_sto9242731/story.shtml |url-status=live}}</ref> Boosted by the win, Argentina then beat Poland with the same scoreline with goals from [[Alexis Mac Allister]] and [[Julián Álvarez]] despite a first-half penalty miss from Messi, taking first place in Group C and condemning both Mexico and Saudi Arabia to World Cup elimination.<ref>{{cite web |title=Argentina coast past Poland 2–0 to top World Cup Group C |url=https://www.aljazeera.com/sports/2022/11/30/argentina-coast-past-poland-2-0-to-top-world-cup-group-c |access-date=15 December 2022 |publisher=[[Al Jazeera Media Network|Al Jazeera]] |archive-date=30 November 2022 |archive-url=https://web.archive.org/web/20221130214602/https://www.aljazeera.com/sports/2022/11/30/argentina-coast-past-poland-2-0-to-top-world-cup-group-c |url-status=live}}</ref>
+
+In the round of 16, the Argentines found themselves matched against [[2022 FIFA World Cup Group D|group D]] runners-up [[Australia men's national soccer team|Australia]]; Messi's first-ever knockout-stage goal was followed by an astute goal by Álvarez, who intercepted Australian goalkeeper [[Mathew Ryan]] to finish into an empty net as Argentina overcame Australia 2–1, despite an own goal from Fernández creating a frantic finish which required a late save from point-blank range by [[Emiliano Martínez]].<ref>{{cite news |last1=Waugh |first1=Chris |last2=Dominski |first2=Michael |date=4 December 2022 |title=Reaction to Argentina's win over Australia |work=[[The Athletic]] |url=https://theathletic.com/live-blogs/argentina-vs-australia-world-cup-2022-live-score-updates-result/sxDrFZ6iM2Cz/ |access-date=15 December 2022 |archive-date=1 March 2023 |archive-url=https://web.archive.org/web/20230301131937/https://theathletic.com/live-blogs/argentina-vs-australia-world-cup-2022-live-score-updates-result/sxDrFZ6iM2Cz/ |url-status=live}}</ref> Continuing a [[Argentina-Netherlands football rivalry|rivalry]], they proceed to square off against the [[Netherlands national football team|Netherlands]] in the quarter-finals. In a [[Battle of Lusail|controversial match]] noted for its dramatic nature, chaotic atmosphere, and fury between both teams,<ref>{{cite web |url=https://theathletic.com/3987289/2022/12/10/argentina-netherlands-world-cup/ |title=How Argentina vs Netherlands descended into chaos – taunts, tantrums and tears |website=The Athletic | access-date= 24 January 2023 | archive-date= 18 December 2022 | archive-url= https://web.archive.org/web/20221218220130/https://theathletic.com/3987289/2022/12/10/argentina-netherlands-world-cup/ | url-status= live}}</ref><ref>{{cite web |url=https://www.nytimes.com/live/2022/12/09/sports/argentina-netherlands-world-cup-score |title=Argentina survives the Netherlands' comeback to keep Messi's World Cup alive |website=The New York Times |date=9 December 2022|access-date=21 April 2023|archive-date=20 December 2022|archive-url=https://web.archive.org/web/20221220085359/https://www.nytimes.com/live/2022/12/09/sports/argentina-netherlands-world-cup-score|url-status=live}}</ref> it saw Argentina lead by two goals coming from [[Nahuel Molina]] and a penalty from Messi, but succumbed to two late goals by [[Wout Weghorst]] as regulation time ended 2–2 after 90 minutes; neither could find the breakthrough in extra time and penalties were used to decide the winner. Emiliano Martínez saved the first two Dutch penalties from [[Virgil van Dijk]] and [[Steven Berghuis]], while only Fernández missed for Argentina as [[Lautaro Martínez]] scored the decisive last kick of the game, a result reminiscent of their 2014 most recent, also [[2014 FIFA World Cup knockout stage#Netherlands vs Argentina|knockout stage]] meeting and sending them through the semi-finals, as they meet 2018 runners up [[Croatia national football team|Croatia]].<ref>{{cite web |last=Fisher |first=Ben |date=9 December 2022 |title=Argentina edge Netherlands in shootout to win World Cup quarter-final thriller |url=https://www.theguardian.com/football/2022/dec/09/netherlands-argentina-world-cup-quarter-final-match-report |access-date=15 December 2022 |work=[[The Guardian]] |archive-date=20 December 2022 |archive-url=https://web.archive.org/web/20221220053732/https://www.theguardian.com/football/2022/dec/09/netherlands-argentina-world-cup-quarter-final-match-report |url-status=live}}</ref><ref>{{cite web |url=https://www.telegraph.co.uk/football/2022/12/09/netherlands-vs-argentina-live-world-cup-2022-score-result-messi/ |title=Emiliano Martinez the penalty hero as Messi's Argentina edge past Netherlands in grudge match |website=The Telegraph |first=Jason |last=Burt |date=18 December 2022|access-date=21 April 2023|archive-date=18 December 2022|archive-url=https://web.archive.org/web/20221218220541/https://www.telegraph.co.uk/football/2022/12/09/netherlands-vs-argentina-live-world-cup-2022-score-result-messi/|url-status=live}}</ref> In a rematch of the [[2018 FIFA World Cup Group D#Argentina vs Croatia|2018 encounter]] when Croatia had won 3–0, Argentina decisively beat Croatia by the same scoreline. Lionel Messi scored a first-half penalty before Álvarez scored a solo effort five minutes later. Messi then assisted Álvarez for his double in the second half, as Argentina booked their place in the final for the second time in eight years.<ref>{{cite web |title=Argentina Sweeps Past Croatia 3–0 to Reach World Cup Final |url=https://www.voanews.com/a/argentina-sweeps-past-croatia-3-0-to-reach-world-cup-final-/6875048.html |access-date=15 December 2022 |website=[[Voice of America]] |archive-date=1 March 2023 |archive-url=https://web.archive.org/web/20230301131935/https://www.voanews.com/a/argentina-sweeps-past-croatia-3-0-to-reach-world-cup-final-/6875048.html |url-status=live}}</ref>
+
+===France===
+{| class="wikitable plainrowheaders" style="text-align:center;margin-left:1em;float:right;clear:right;min-width:226px"
+|+ France's route to the final
+|-
+!scope="col"|
+!scope="col"| Opponent
+!scope="col"| Result
+|- style="border-top:2px solid black"
+!scope="row" style="text-align:center"|{{abbr|1|First group match}}
+| align="left"|{{#invoke:flagg|main|unpe|avar=fb|AUS}}
+| [[2022 FIFA World Cup Group D#France vs Australia|4–1]]
+|-
+!scope="row" style="text-align:center"|{{abbr|2|Second group match}}
+| align="left"|{{#invoke:flagg|main|unpe|avar=fb|DEN}}
+| [[2022 FIFA World Cup Group D#France vs Denmark|2–1]]
+|-
+!scope="row" style="text-align:center"|{{abbr|3|Third group match}}
+| align="left"|{{#invoke:flagg|main|unpe|avar=fb|TUN}}
+| [[2022 FIFA World Cup Group D#Tunisia vs France|0–1]]
+|- style="border-top:2px solid black"
+!scope="row" style="text-align:center"|{{abbr|R16|Round of 16}}
+| align="left"|{{#invoke:flagg|main|unpe|avar=fb|POL}}
+| [[2022 FIFA World Cup knockout stage#France vs Poland|3–1]]
+|-
+!scope="row" style="text-align:center"|{{abbr|QF|Quarter-final}}
+| align="left"|{{#invoke:flagg|main|unpe|avar=fb|ENG}}
+| [[2022 FIFA World Cup knockout stage#England vs France|2–1]]
+|-
+!scope="row" style="text-align:center"|{{abbr|SF|Semi-final}}
+| align="left"|{{#invoke:flagg|main|unpe|avar=fb|MAR}}
+| [[2022 FIFA World Cup knockout stage#France vs Morocco|2–0]]
+|}
+
+France started their World Cup campaign as the defending world champions, having won the most recent tournament in Russia, and was drawn in group D. Their first meeting was against [[Asian Football Confederation|AFC]] representative Australia. The French suffered a shock deficit after nine minutes due to a goal by [[Craig Goodwin]], but were able to stage a comeback with a double from [[Olivier Giroud]] together with goals from [[Adrien Rabiot]] and Kylian Mbappé to win 4–1.<ref>{{cite web |date=22 November 2022 |title=France 4–1 Australia: Olivier Giroud strikes twice to equal Les Bleus goal-scoring record in come-from-behind win |url=https://www.eurosport.co.uk/football/world-cup/2022/fifa-world-cup-2022-in-qatar-live-france-v-australia-updates_sto9237911/story.shtml |access-date=15 December 2022 |website=[[Eurosport]] |archive-date=22 November 2022 |archive-url=https://web.archive.org/web/20221122210944/https://www.eurosport.co.uk/football/world-cup/2022/fifa-world-cup-2022-in-qatar-live-france-v-australia-updates_sto9237911/story.shtml |url-status=live}}</ref> Empowered by the win, France overcame a highly organised and threatening [[Denmark national football team|Denmark]] side with Mbappé striking twice in the second half, despite conceding an equaliser from [[Andreas Christensen]]. France won 2–1 and became the first team to progress to the knockout stage of the World Cup in Qatar and the first European world champions to do so since [[1994 FIFA World Cup|1994]].<ref>{{cite news |title=France 2–1 Denmark: Kylian Mbappe lights up World Cup with double |work=[[Sky Sports]] |url=https://www.skysports.com/football/news/12098/12755142/france-2-1-denmark-kylian-mbappe-lights-up-world-cup-with-double |access-date=15 December 2022 |archive-date=27 November 2022 |archive-url=https://web.archive.org/web/20221127232811/https://www.skysports.com/football/news/12098/12755142/france-2-1-denmark-kylian-mbappe-lights-up-world-cup-with-double |url-status=live}}</ref> With progression assured, France rotated most of their team, resting their key players for the final game against a desperate [[Tunisia national football team|Tunisia]]; France resultantly lost 1–0 courtesy of a goal by French-born [[Wahbi Khazri]] before having an equaliser by Antoine Griezmann disallowed. France maintained top of the group due to a superior goal difference over Australia.<ref>{{cite news |last=Das |first=Andrew |date=30 November 2022 |title=In a Wild Finish, Tunisia Goes Out With a Win Against France |work=[[The New York Times]] |url=https://www.nytimes.com/live/2022/11/30/sports/france-tunisia-world-cup-scores |access-date=15 December 2022 |issn=0362-4331 |archive-date=20 January 2023 |archive-url=https://web.archive.org/web/20230120055243/https://www.nytimes.com/live/2022/11/30/sports/france-tunisia-world-cup-scores |url-status=live}}</ref>
+
+In the round of 16, France overcame group C runners-up [[Poland national football team|Poland]] 3–1 with goals from Giroud and Mbappé, despite conceding a late penalty from [[Robert Lewandowski]].<ref>{{cite web |date=4 December 2022 |title=France aren't playing well and they don't even need to, for the moment |url=https://www.marca.com/en/world-cup/2022/12/04/638cd84346163fa4b98b456d.html |access-date=15 December 2022 |website=[[Marca (newspaper)|Marca]] |location=Spain |archive-date=1 March 2023 |archive-url=https://web.archive.org/web/20230301131935/https://www.marca.com/en/world-cup/2022/12/04/638cd84346163fa4b98b456d.html |url-status=live}}</ref> The quarter-finals saw France battling old rivals [[England national football team|England]] in a tense match, with France defeating England 2–1 with goals from [[Aurélien Tchouaméni]] and Giroud; England found an equaliser for 1–1 courtesy of a penalty by [[Harry Kane]] but a second penalty to equalise the game was missed by Kane, granting France a place in the semi-finals.<ref>{{cite web |date=10 December 2022 |title=France beat England 2–1 after a nail-biting match at the World Cup |url=https://www.euronews.com/2022/12/10/france-beat-england-2-1-after-a-nail-biting-match-at-the-2022-world-cup |access-date=15 December 2022 |website=[[Euronews]] |archive-date=11 December 2022 |archive-url=https://web.archive.org/web/20221211055315/https://www.euronews.com/2022/12/10/france-beat-england-2-1-after-a-nail-biting-match-at-the-2022-world-cup |url-status=live}}</ref> France then faced the biggest underdog of the tournament, [[Morocco national football team|Morocco]], who had beaten both [[Iberian Peninsula|Iberian]] representatives [[Spain national football team|Spain]] and [[Portugal national football team|Portugal]] in the process; the French were able to end the history-making run by the African nation with two goals from [[Théo Hernandez]] and [[Randal Kolo Muani]]. France reached their second consecutive World Cup final for the first time in their history.<ref>{{cite news |title=France end Morocco dream to set up Argentina final |work=[[BBC Sport]] |url=https://www.bbc.com/sport/football/63882918 |access-date=15 December 2022 |archive-date=1 March 2023 |archive-url=https://web.archive.org/web/20230301131937/https://www.bbc.com/sport/football/63882918 |url-status=live}}</ref>
+
+==Pre-match==
+[[File:SzymonMarciniakReferee.jpg|thumb|left|upright|[[Szymon Marciniak]] officiated the final.]]
+
+Polish referee [[Szymon Marciniak]] was named as the referee of the final on 15 December 2022, with fellow Poles Paweł Sokolnicki and Tomasz Listkiewicz appointed as assistant referees.<ref name="officials1">{{cite web |date=14 December 2022 |title=Poland's Szymon Marciniak to referee FIFA World Cup final |url=https://www.fifa.com/technical/refereeing/news/szymon-marciniak-from-poland-to-referee-fifa-world-cup-final |access-date=14 December 2022 |publisher=[[FIFA]] |archive-date=16 December 2022 |archive-url=https://web.archive.org/web/20221216125623/https://www.fifa.com/technical/refereeing/news/szymon-marciniak-from-poland-to-referee-fifa-world-cup-final |url-status=live}}</ref><ref name="officials2">{{cite web |title=Szymon Marciniak poprowadzi finał Mistrzostw Świata! |url=https://pzpn.pl/federacja/aktualnosci/2022-12-15/szymon-marciniak-poprowadzi-final-mistrzostw-swiata |access-date=15 December 2022 |publisher=[[Polish Football Association]] |language=pl |archive-date=15 December 2022 |archive-url=https://web.archive.org/web/20221215174017/https://pzpn.pl/federacja/aktualnosci/2022-12-15/szymon-marciniak-poprowadzi-final-mistrzostw-swiata |url-status=live}}</ref> Marciniak became a [[FIFA referee]] in 2011<ref>{{cite web |title=FIFA 2022 Refereeing International Lists |url=https://digitalhub.fifa.com/m/7662513a8b75c7cc/original/2022-FIFA-Refereeing-International-Lists.pdf |access-date=15 December 2022 |publisher=[[FIFA]] |archive-date=28 February 2023 |archive-url=https://web.archive.org/web/20230228004959/https://digitalhub.fifa.com/m/7662513a8b75c7cc/original/2022-FIFA-Refereeing-International-Lists.pdf |url-status=live}}</ref> and had previously served as a referee at the UEFA Euro 2016 and 2018 FIFA World Cup, as well as during the [[2018 UEFA Super Cup]].<ref name="officials2" /> Earlier in the tournament, Marciniak officiated the France–Denmark group stage game, as well as the Argentina–Australia match in the round of 16. It was the first time that a Polish referee led the team of officials at a World Cup final, and the second time that a Polish referee was included among the officials during such a match, after [[Michał Listkiewicz]] (father of Marciniak's assistant Tomasz) served as a linesman during the 1990 FIFA World Cup final.<ref name="officials2" />
+
+{{multiple image
+| align =
+| total_width = 300
+| image1 = Lalii en 2017.png
+| image2 = Farrah El-Dibany cropped.jpg
+| footer = Prior to the match, [[Lali Espósito]] (left) and [[Farrah Eldibany]] sang the Argentine and French national anthems, respectively.
+}}
+[[Ismail Elfath]] and Kathryn Nesbitt of the United States were appointed as fourth official and reserve assistant referee, respectively,<ref name="SA">{{cite web |last=Woitalla |first=Mike |date=16 December 2022 |title=American refs in Qatar: Two U.S. officials assigned to final; two on standby |url=https://www.socceramerica.com/publications/article/94708/american-refs-in-qatar-two-us-officials-assigne.html |access-date=18 December 2022 |website=[[Soccer America]] |archive-date=17 December 2022 |archive-url=https://web.archive.org/web/20221217213830/https://www.socceramerica.com/publications/article/94708/american-refs-in-qatar-two-us-officials-assigne.html |url-status=live}}</ref> while another Pole, Tomasz Kwiatkowski, led the video assistant referee team.<ref name="officials1" /> Venezuelan [[Juan Soto (referee)|Juan Soto]] served as assistant video assistant referee, American Kyle Atkins was the offside video assistant referee, and the role of support video assistant referee was assigned to Mexican [[Fernando Guerrero (referee)|Fernando Guerrero]].<ref name="officials1" /> German [[Bastian Dankert]] and American Corey Parker served as stand-by video assistant referee and stand-by assistant video assistant referee, respectively.<ref>{{cite web |date=15 December 2022 |title=Rostocker Schiedsrichter Dankert beim WM-Finale im Einsatz |trans-title=Rostock referee Dankert in action at the World Cup final |url=https://www.ndr.de/nachrichten/mecklenburg-vorpommern/Rostocker-Schiedsrichter-Dankert-beim-WM-Finale-im-Einsatz,kurzmeldungmv8854.html |access-date=18 December 2022 |website=[[Norddeutscher Rundfunk]] |archive-date=18 December 2022 |archive-url=https://web.archive.org/web/20221218135043/https://www.ndr.de/nachrichten/mecklenburg-vorpommern/Rostocker-Schiedsrichter-Dankert-beim-WM-Finale-im-Einsatz,kurzmeldungmv8854.html |url-status=live}}</ref><ref name="SA" />
+
+Several heads of state were in attendance, among them Qatari Emir [[Tamim bin Hamad Al Thani]], Turkish president [[Recep Tayyip Erdoğan]], and French president [[Emmanuel Macron]]. Various members of the [[FIFA]] Council and FIFA president [[Gianni Infantino]] were also in attendance.<ref>{{cite news |last1=Turner |first1=Giles |last2=Helier |first2=David |date=15 December 2022 |title=Qatar's $300 Billion World Cup Is Headed for an Epic Comedown |work=[[Bloomberg News]] |url=https://www.bloomberg.com/news/articles/2022-12-15/qatar-heads-for-epic-comedown-after-argentina-v-france-world-cup-final |access-date=15 December 2022 |archive-date=28 April 2023 |archive-url=https://web.archive.org/web/20230428230139/https://www.bloomberg.com/news/articles/2022-12-15/qatar-heads-for-epic-comedown-after-argentina-v-france-world-cup-final |url-status=live}}</ref> Argentine head of state [[Alberto Fernández]] did not attend after having reportedly refused to travel to Qatar due to potential political backlash.<ref>{{cite news |date=18 December 2022 |title=Argentine president to watch final match from home |work=[[The Hindu]] |agency=[[Agence France-Presse]] |url=https://www.thehindu.com/sport/football/fifa-world-cup-2022-argentine-president-to-watch-final-match-from-home/article66277377.ece |access-date=18 December 2022 |archive-date=18 December 2022 |archive-url=https://web.archive.org/web/20221218054908/https://www.thehindu.com/sport/football/fifa-world-cup-2022-argentine-president-to-watch-final-match-from-home/article66277377.ece |url-status=live}}</ref><ref>{{cite web |date=15 December 2022 |title=President wishes France's Macron the best – except for in Sunday's World Cup final |url=https://www.batimes.com.ar/news/argentina/fernandez-wishes-macron-the-best-except-for-the-final-on-sunday.phtml |access-date=19 December 2022 |website=[[Buenos Aires Times]] |archive-date=18 December 2022 |archive-url=https://web.archive.org/web/20221218192859/https://www.batimes.com.ar/news/argentina/fernandez-wishes-macron-the-best-except-for-the-final-on-sunday.phtml |url-status=live}}</ref> However, [[Claudio Tapia]], the president of the [[Argentine Football Association]] was present in the final.<ref>{{cite news |title=Chiqui Tapia: "¡Somos campeones del mundo! ¡Lo logramos!" |url=https://www.telam.com.ar/notas/202212/614655-tapia-afa-mundial-campeon-qatar-fifa.html |agency=[[Télam]] |date=18 December 2022 |language=es |access-date=23 April 2023 |archive-date=23 April 2023 |archive-url=https://web.archive.org/web/20230423101424/https://www.telam.com.ar/notas/202212/614655-tapia-afa-mundial-campeon-qatar-fifa.html |url-status=live}}</ref>
+
+The tournament's closing ceremony was held prior to the start of the match; it featured a collaboration between Puerto Rican singer [[Ozuna]] and French singer [[Gims]]. Also performing were [[Nora Fatehi]], [[Balqees (singer)|Balqees]], [[Rahma Riad]] and [[Manal (singer)|Manal]].<ref>{{cite web |date=20 December 2022 |title=Qatar holds spectacular World Cup closing ceremony ahead of final |url=https://www.aljazeera.com/gallery/2022/12/18/photos-qatar-world-cup-2022-closing-ceremony |access-date=21 December 2022 |publisher=[[Al Jazeera Media Network|Al Jazeera]] |archive-date=21 December 2022 |archive-url=https://web.archive.org/web/20221221044937/https://www.aljazeera.com/gallery/2022/12/18/photos-qatar-world-cup-2022-closing-ceremony |url-status=live}}</ref>
+
+The winners trophy was unveiled by World Cup winning captain [[Iker Casillas]] and Indian actress [[Deepika Padukone]].<ref>{{Cite web |date=18 December 2022 |title=Deepika Padukone, former Spanish goalkeeper Iker Casillas unveil the FIFA World Cup trophy at the stadium. Watch |url=https://www.hindustantimes.com/entertainment/bollywood/deepika-padukone-unveils-fifa-world-cup-2022-trophy-with-iker-casillas-101671376155243.html |access-date=26 December 2022 |website=Hindustan Times |archive-date=26 December 2022 |archive-url=https://web.archive.org/web/20221226070420/https://www.hindustantimes.com/entertainment/bollywood/deepika-padukone-unveils-fifa-world-cup-2022-trophy-with-iker-casillas-101671376155243.html |url-status=live}}</ref>
+
+Argentine singer [[Lali Espósito]] sang the "[[Argentine National Anthem]]"<ref>{{cite web |date=18 December 2022 |title=Lali Espósito emocionó a todos con la interpretación del himno argentino en la final del Mundial |url=https://www.lanacion.com.ar/deportes/canchallena/mundial-qatar-2022-lali-esposito-cantara-el-himno-nacional-argentino-para-la-seleccion-en-la-final-nid18122022/ |access-date=19 December 2022 |website=[[La Nación]] |language=es |archive-date=18 December 2022 |archive-url=https://web.archive.org/web/20221218174949/https://www.lanacion.com.ar/deportes/canchallena/mundial-qatar-2022-lali-esposito-cantara-el-himno-nacional-argentino-para-la-seleccion-en-la-final-nid18122022/ |url-status=live}}</ref> and Egyptian mezzo-soprano [[Farrah Eldibany]] sang the French national anthem, "[[La Marseillaise]]", before the match.<ref>{{cite web |last=Makary |first=Marina |url=https://egyptianstreets.com/2022/12/18/egyptian-artists-wegz-and-farrah-el-dibany-perform-at-world-cup-closing/ |title=Egyptian Artists Wegz and Farrah El Dibany Perform at World Cup Closing |work=[[Egyptian Streets]] |date=18 December 2022 |access-date=24 December 2022 |archive-date=22 December 2022 |archive-url=https://web.archive.org/web/20221222060513/https://egyptianstreets.com/2022/12/18/egyptian-artists-wegz-and-farrah-el-dibany-perform-at-world-cup-closing/ |url-status=live}}</ref>
+
+==Match==
+===Summary===
+{{multiple image
+ | align = right
+ | direction = horizontal
+ | total_width = 300
+ | image1 = Lionel-Messi-Argentina-2022-FIFA-World-Cup.jpg
+ | image2 = 2022 FIFA World Cup France 4–1 Australia - (7) (cropped).jpg
+ | footer = Argentina captain and forward [[Lionel Messi]] (left) was named [[Player of the match#Association football|man of the match]]. France forward [[Kylian Mbappé]] (right) became the second player in history to score a [[Hat-trick#Association football|hat-trick]] in a World Cup final.
+}}
+
+====First half====
+France kicked off the match at 18:00 [[Arabia Standard Time|local time]] (15:00 [[UTC+00:00|UTC]]) in front of a crowd of 88,966.<ref>{{cite news |last=Goff |first=Steven |author-link=Steven Goff |date=18 December 2022 |title=Lionel Messi earns World Cup glory as Argentina tops France in a chaotic, captivating final |newspaper=[[The Washington Post]] |url=https://www.washingtonpost.com/sports/2022/12/18/argentina-lionel-messi-world-cup-win/ |access-date=18 December 2022 |archive-date=18 December 2022 |archive-url=https://web.archive.org/web/20221218211815/https://www.washingtonpost.com/sports/2022/12/18/argentina-lionel-messi-world-cup-win/ |url-status=live}}</ref> Argentina were awarded a penalty in the 23rd minute when Ángel Di María was fouled in the penalty area by [[Ousmane Dembélé]] as Di María cut in from the left. Lionel Messi scored the penalty with a low shot to the right corner. In the 36th minute, Di Maria finished a sweeping Argentina counter-attack to make it 2–0, shooting with his left foot over the goalkeeper to the right corner of the net after a pass from Alexis Mac Allister from the right.<ref>{{cite web |last=Murray |first=Scott |date=18 December 2022 |title=2022 World Cup final: Argentina 3–3 France (aet, 4–2 on pens) – as it happened |url=https://www.theguardian.com/football/live/2022/dec/18/argentina-france-world-cup-2022-final-live?page=with:block-639f3b018f0834f3c057bd19&filterKeyEvents=false |url-status=live |archive-url=https://web.archive.org/web/20221218223853/https://www.theguardian.com/football/live/2022/dec/18/argentina-france-world-cup-2022-final-live?page=with:block-639f3b018f0834f3c057bd19 |archive-date=18 December 2022 |access-date=18 December 2022 |website=[[The Guardian]]}}</ref> France made two early substitutions near the end of the first half and went into half-time trailing 0–2.<ref name="NBCNews">{{cite web |last1=Madani |first1=Doha |last2=Li |first2=David K. |last3=Burman |first3=Max |date=18 December 2022 |title=Argentina wins World Cup on penalty kicks over France |url=https://www.nbcnews.com/news/world/live-blog/world-cup-final-live-updates-rcna62130 |url-status=live |archive-url=https://web.archive.org/web/20221218180650/https://www.nbcnews.com/news/world/live-blog/world-cup-final-live-updates-rcna62130 |archive-date=18 December 2022 |access-date=18 December 2022 |publisher=[[NBC News]]}}</ref>
+
+====Second half====
+Argentina were on course for the win, controlling possession, and defensively shutting down France, who failed to make an attempt on goal until the 80th minute, at which point France was awarded a penalty after Randal Kolo Muani was brought down in the penalty area by [[Nicolás Otamendi]]. Kylian Mbappé scored the penalty low to the left corner, despite Emiliano Martínez getting a hand on the ball, making the game 2–1. 97 seconds later, [[Kingsley Coman]] tackled Messi right as the game restarted, starting a rapid counter-attack which finished with Mbappé first-time volleying a lofted pass from [[Marcus Thuram]] with his right foot as he was falling to the ground to the bottom-right corner of the net to make the game 2–2; Martínez again attempted to parry the ball but couldn't keep it out. Five minutes after Mbappé's equalizer, Thuram went down in the penalty box after slightly tripping on Enzo Fernández's leg, only to be booked for [[Diving (association football)|diving]]. Both teams came close to finishing the game near the end of added time as Adrien Rabiot fired a quick shot inside the box, forcing a fumbling save from Emiliano Martínez; then three minutes later Messi had a hard shot parried over the bar by [[Hugo Lloris]]. With the score tied at the end of regulation time, the match went to extra time.<ref name="Argentina 3 France 3 4–2 on pens">{{cite web |date=18 December 2022 |title=Argentina 3 France 3 (4–2 on pens) |url=https://www.bbc.com/sport/football/63932622 |access-date=20 December 2022 |website=[[BBC Sport]] |archive-date=4 March 2023 |archive-url=https://web.archive.org/web/20230304213809/https://www.bbc.com/sport/football/63932622 |url-status=live}}</ref>
+
+====Extra time====
+[[File:Emiliano Martínez vs Colombia, 1-2-2022.jpg|thumb|upright=.9|Argentina goalkeeper [[Emiliano Martínez]] made two key saves during the last minute of [[Overtime (sports)#Association football|extra time]] and the decisive [[Penalty shoot-out (association football)|penalty shoot-out]].]]
+After first half of extra time finished goalless, notably highlighted by two [[Glossary of association football terms#O|one-on-one]] opportunities missed by Lautaro Martínez,<ref name="Argentina 3 France 3 4–2 on pens"/> Messi scored again for Argentina in the second period of extra time when he finished from close range after Lloris had parried a shot from Lautaro Martínez on the right, in what seemed to be the winning goal. However, France was awarded a second penalty in the 118th minute after a shot by Mbappé hit the arm of [[Gonzalo Montiel]].<ref name="Argentina 3 France 3 4–2 on pens"/> Mbappé scored his third goal with his penalty kick to the left, sending Martínez the wrong way and becoming the second player to score a [[hat-trick]] in a men's World Cup final after [[Geoff Hurst]] for England in [[1966 FIFA World Cup final|1966]].<ref name="NBCNews" /> In the 123rd minute, with 15 seconds of the extra time to spare, a loose ball fell to an unmarked Kolo Muani at the edge of the box, who shot low to the right of the goal; however, Emiliano Martínez blocked the shot with his left shin. Argentina counter-attacked immediately, ending with Lautaro Martínez heading wide of the goal from 10 yards.<ref name="NBCNews" /> France produced one last attack when Mbappé dribbled in the penalty box, passing three Argentina defenders, only for [[Paulo Dybala]] to make a timely clearance off the field.<ref>{{Cite news |last=Murray |first=Scott |date=18 December 2022 |title=2022 World Cup final: Argentina 3–3 France (aet, 4–2 on pens) – as it happened |work=The Guardian |url=https://www.theguardian.com/football/live/2022/dec/18/argentina-france-world-cup-2022-final-live |access-date=3 April 2023 |issn=0261-3077 |archive-date=4 February 2023 |archive-url=https://web.archive.org/web/20230204082148/https://www.theguardian.com/football/live/2022/dec/18/argentina-france-world-cup-2022-final-live |url-status=live}}</ref> The referee then blew the final whistle of extra time and the match went to a penalty shoot-out.
+
+====Penalty shoot-out====
+This was the third time the World Cup final would be decided on penalties. Mbappé and Messi successfully converted the first two attempts to begin the penalty shootout at 1–1. Argentina goalkeeper Martínez would continue to use the psychological tactics and means of [[gamesmanship#Association football|gamesmanship]] that he utilized during the [[Battle of Lusail#Penalty shoot-out|penalty shoot-outs]] in the quarter-final against the Netherlands. After delaying Kingsley Coman's attempt by arguing with the referee, Martínez then saved Coman's shot, which was down low to Martínez's right.<ref name=Mukhopadhyay2023>{{cite web |last=Mukhopadhyay |first=Sounak |url=https://www.livemint.com/news/world/what-emi-martinez-said-when-he-was-told-penalty-rules-would-change-after-his-mind-games-in-wc-final-11677137126455.html |title=What Emi Martinez said when he was told penalty rules would change after his mind-games in WC final |work=[[Mint (newspaper)|Mint]] |date=23 February 2023 |accessdate=19 December 2023|archive-date=26 September 2023|archive-url=https://web.archive.org/web/20230926132231/https://www.livemint.com/news/world/what-emi-martinez-said-when-he-was-told-penalty-rules-would-change-after-his-mind-games-in-wc-final-11677137126455.html|url-status=live}}</ref> Dybala sent a shot into the net up the middle to give Argentina a 2–1 lead. Before Aurélien Tchouaméni's shot, Martínez picked up the ball and then threw it to the edge of the box. Tchouaméni then sent his shot wide of the goal to the left.<ref name=Mukhopadhyay2023/> [[Leandro Paredes]] then scored to put France on the brink of defeat at 3–1. Kolo Muani kept France alive by scoring his chance and reducing France's deficit to 3–2; Martínez attempted to use his psychological tactics on Kolo Muani but was instead shown a yellow card.<ref>{{cite web |last=Mukhopadhyay |first=Sounak |url=https://www.livemint.com/sports/football-news/psychologist-explains-how-argentina-s-emi-martinez-played-mind-games-during-penalty-shoot-out-against-france-11671590080675.html |title=Psychologist explains how Argentina's Emi Martinez played mind games during penalty shoot-out against France |work=[[Mint (newspaper)|Mint]] |date=21 December 2022 |accessdate=27 December 2023|archive-date=20 December 2023|archive-url=https://web.archive.org/web/20231220074229/https://www.livemint.com/sports/football-news/psychologist-explains-how-argentina-s-emi-martinez-played-mind-games-during-penalty-shoot-out-against-france-11671590080675.html |url-status=live}}</ref> Montiel was then given a chance to make up for his late handball by clinching the championship for Argentina. Montiel scored low to the left, securing the 4–2 penalty shoot-out victory for Argentina and giving them their third World Cup trophy and first since 1986.<ref>{{cite web |last=Doyle |first=Terrence |date=19 December 2022 |title=Argentina And France Lived Up to the World Cup Final's Hype – And Then Transcended It |url=https://fivethirtyeight.com/features/argentina-and-france-lived-up-to-the-world-cup-finals-hype-and-then-transcended-it/ |access-date=20 December 2022 |website=[[FiveThirtyEight]] |archive-date=14 March 2023 |archive-url=https://web.archive.org/web/20230314204224/https://fivethirtyeight.com/features/argentina-and-france-lived-up-to-the-world-cup-finals-hype-and-then-transcended-it/ |url-status=live}}</ref>
+
+===Details===
+<section begin=Final />{{Football box
+|date         = {{Start date|2022|12|18|df=y}}
+|time         = 18:00 <noinclude>[[Arabia Standard Time|AST]]</noinclude>
+|team1        = {{#invoke:flagg|main|unpre|avar=fb|ARG}}
+|score        = {{score link|2022 FIFA World Cup knockout stage#Final|3–3|2022 FIFA World Cup final}}
+|aet          = yes
+|team2        = {{#invoke:flagg|main|unpe|avar=fb|FRA}}
+|goals1       =
+* [[Lionel Messi|Messi]] {{goal|23|pen.|108}}
+* [[Ángel Di María|Di María]] {{goal|36}}
+|goals2       =
+* [[Kylian Mbappé|Mbappé]] {{goal|80|pen.|81||118|pen.}}
+|stadium      = [[Lusail Stadium]], [[Lusail]]
+|attendance   = 88,966
+|referee      = [[Szymon Marciniak]] ([[Polish Football Association|Poland]])
+|penalties1   =
+* [[Lionel Messi|Messi]] {{pengoal}}
+* [[Paulo Dybala|Dybala]] {{pengoal}}
+* [[Leandro Paredes|Paredes]] {{pengoal}}
+* [[Gonzalo Montiel|Montiel]] {{pengoal}}
+|penaltyscore = 4–2
+|penalties2   =
+* {{pengoal}} [[Kylian Mbappé|Mbappé]]
+* {{penmiss}} [[Kingsley Coman|Coman]]
+* {{penmiss}} [[Aurélien Tchouaméni|Tchouaméni]]
+* {{pengoal}} [[Randal Kolo Muani|Kolo Muani]]
+|report       = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285077/400128145
+}}<section end=Final />
+<section begin=Line-ups />
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _arg22h
+ |pattern_b  = _arg22H
+ |pattern_ra = _arg22h
+ |pattern_sh = _arg22h2
+ |pattern_so = _arg22h
+ |leftarm    = FFFFFF
+ |body       = FFFFFF
+ |rightarm   = FFFFFF
+ |shorts     = FFFFFF
+ |socks      = FFFFFF
+ |title      = Argentina
+}}
+|{{Football kit
+ |pattern_la = _fra22h
+ |pattern_b  = _fra22H
+ |pattern_ra = _fra22h
+ |pattern_sh = _fra22h2
+ |pattern_so = _fra22h2
+ |leftarm    = 221F4E
+ |body       = 221F4E
+ |rightarm   = 221F4E
+ |shorts     = 221F4E
+ |socks      = 221F4E
+ |title      = France
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''23'''||[[Emiliano Martínez]] || {{yel|120+5}} (pso)
+|-
+|RB ||'''26'''||[[Nahuel Molina]] || || {{suboff|91}}
+|-
+|CB ||'''13'''||[[Cristian Romero (footballer, born 1998)|Cristian Romero]]
+|-
+|CB ||'''19'''||[[Nicolás Otamendi]]
+|-
+|LB ||'''3''' ||[[Nicolás Tagliafico]] || || {{suboff|120+1}}
+|-
+|CM ||'''20'''||[[Alexis Mac Allister]] || || {{suboff|116}}
+|-
+|DM ||'''24'''||[[Enzo Fernández]] || {{yel|45+7}}
+|-
+|CM ||'''7''' ||[[Rodrigo De Paul]] || || {{suboff|102}}
+|-
+|RW ||'''10'''||[[Lionel Messi]] ([[Captain (association football)|c]])
+|-
+|ST ||'''9''' ||[[Julián Álvarez]]|| || {{suboff|102}}
+|-
+|LW ||'''11'''||[[Ángel Di María]] || || {{suboff|64}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|MF ||'''8''' ||[[Marcos Acuña]] || {{yel|90+8}} || {{subon|64}}
+|-
+|DF ||'''4''' ||[[Gonzalo Montiel]] || {{yel|116}} || {{subon|91}}
+|-
+|MF ||'''5''' ||[[Leandro Paredes]] || {{yel|114}} || {{subon|102}}
+|-
+|FW ||'''22'''||[[Lautaro Martínez]] || || {{subon|102}}
+|-
+|DF ||'''6''' ||[[Germán Pezzella]] || || {{subon|116}}
+|-
+|FW ||'''21'''||[[Paulo Dybala]] || || {{subon|120+1}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Lionel Scaloni]]
+|}
+|valign="top"|[[File:ARG-FRA 2022-12-18.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Hugo Lloris]] ([[Captain (association football)|c]])
+|-
+|RB ||'''5''' ||[[Jules Koundé]] || || {{suboff|120+1}}
+|-
+|CB ||'''4''' ||[[Raphaël Varane]] || || {{suboff|113}}
+|-
+|CB ||'''18'''||[[Dayot Upamecano]]
+|-
+|LB ||'''22'''||[[Théo Hernandez]] || || {{suboff|71}}
+|-
+|CM ||'''8''' ||[[Aurélien Tchouaméni]]
+|-
+|CM ||'''14'''||[[Adrien Rabiot]] || {{yel|55}} || {{suboff|96}}{{refn|group=note|name=RabiotFofana|Rabiot suffered a knock to the head in the 94th minute. Therefore, his substitution for Fofana fell under FIFA's "concussion protocol", which allows a player at risk of a concussion to be substituted without taking account either the substitution window nor the amount of players already substituted.<ref>{{cite web |last1=Álvarez |first1=Fernando |title=Why could France make seven subs in the World Cup final against Argentina? |url=https://www.marca.com/en/world-cup/2022/12/19/63a098df22601d37768b45c1.html |website=Marca |publisher=Marca.com |access-date=24 October 2024 |date=19 December 2022}}</ref><ref>{{cite web |last1=Campanale |first1=Susy |title=Rabiot makes history with World Cup Final substitution |url=https://football-italia.net/rabiot-makes-history-with-world-cup-final-substitution/ |website=Football Italia |access-date=24 October 2024 |date=18 December 2022}}</ref>}}
+|-
+|RW ||'''11'''||[[Ousmane Dembélé]] || || {{suboff|41}}
+|-
+|AM ||'''7''' ||[[Antoine Griezmann]] || || {{suboff|71}}
+|-
+|LW ||'''10'''||[[Kylian Mbappé]]
+|-
+|ST ||'''9''' ||[[Olivier Giroud]] || {{yel|90+5}} || {{suboff|41}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|FW ||'''12'''||[[Randal Kolo Muani]] || || {{subon|41}}
+|-
+|FW ||'''26'''||[[Marcus Thuram]] || {{yel|87}} || {{subon|41}}
+|-
+|FW ||'''20'''||[[Kingsley Coman]] || || {{subon|71}}
+|-
+|MF ||'''25'''||[[Eduardo Camavinga]] || || {{subon|71}}
+|-
+|MF ||'''13'''||[[Youssouf Fofana (French footballer)|Youssouf Fofana]] || || {{subon|96}}{{refn|group=note|name=RabiotFofana}}
+|-
+|DF ||'''24'''||[[Ibrahima Konaté]] || || {{subon|113}}
+|-
+|DF ||'''3''' ||[[Axel Disasi]] || || {{subon|120+1}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Didier Deschamps]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />Lionel Messi (Argentina)<ref name="MOTM">{{cite web |date=18 December 2022 |title=Argentina and Messi spot on for World Cup glory |url=https://www.fifa.com/fifaplus/en/articles/france-argentina-lionel-messi-kylian-mbappe-fifa-world-cup-qatar-2022 |access-date=18 December 2022 |publisher=[[FIFA]] |archive-date=1 March 2023 |archive-url=https://web.archive.org/web/20230301131935/https://www.fifa.com/fifaplus/en/articles/france-argentina-lionel-messi-kylian-mbappe-fifa-world-cup-qatar-2022 |url-status=live}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Paweł Sokolnicki ([[Polish Football Association|Poland]])
+<br />Tomasz Listkiewicz (Poland)
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />Ismail Elfath ([[United States Soccer Federation|United States]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Kathryn Nesbitt (United States)
+<br />'''[[Video assistant referee]]:'''
+<br />Tomasz Kwiatkowski (Poland)
+<includeonly>|}</includeonly><section end=Line-ups />
+|style="width:60%; vertical-align:top;"|
+'''Match rules'''<ref name="regulations">{{cite web |date=15 December 2021 |title=Regulations – FIFA World Cup Qatar 2022 |url=https://digitalhub.fifa.com/m/2744a0a5e3ded185/original/FIFA-World-Cup-Qatar-2022-Regulations_EN.pdf |access-date=30 March 2022 |publisher=[[FIFA]] |archive-date=18 December 2022 |archive-url=https://web.archive.org/web/20221218155613/https://digitalhub.fifa.com/m/2744a0a5e3ded185/original/FIFA-World-Cup-Qatar-2022-Regulations_EN.pdf |url-status=live}}</ref>
+* 90 minutes
+* 30 minutes of [[Overtime (sports)#Association football|extra time]] if necessary
+* [[Penalty shoot-out (association football)|Penalty shoot-out]] if scores still level
+* Maximum of fifteen named substitutes
+* Maximum of five substitutions, with a sixth allowed in extra time{{refn|group=note|Each team was given only three opportunities to make substitutions, with a fourth opportunity in extra time, excluding substitutions made at half-time, before the start of extra time and at half-time in extra time.}}
+* Maximum of one [[Concussion substitute (association football)|concussion substitution]]
+|}
+
+===Statistics===
+{| class="wikitable plainrowheaders" style="text-align:center; display:inline-table;"
+|+First half<ref name="Sofascore">{{cite web |date=18 December 2022 |title=World Cup: Argentina vs France |url=https://www.sofascore.com/argentina-france/GObsuWb |access-date=18 December 2022 |publisher=Sofascore |archive-date=15 December 2022 |archive-url=https://web.archive.org/web/20221215235837/https://www.sofascore.com/argentina-france/GObsuWb |url-status=live}}</ref><ref name="AS">{{cite web |title=Argentina vs France: live info and stats – FIFA World Cup 2022 |url=https://en.as.com/resultados/futbol/mundial/2022/directo/final_a_1_399719/estadisticas/ |access-date=18 December 2022 |website=[[Diario AS]] |archive-date=21 December 2022 |archive-url=https://web.archive.org/web/20221221005158/https://en.as.com/resultados/futbol/mundial/2022/directo/final_a_1_399719/estadisticas/ |url-status=live}}</ref>
+|-
+! scope="col" style="width:100px" | Statistic
+! scope="col" style="width:70px" | Argentina
+! scope="col" style="width:70px" | France
+|-
+!scope=row|Goals scored
+|2
+|0
+|-
+!scope=row|Total shots
+|6
+|0
+|-
+!scope=row|Shots on target
+|3
+|0
+|-
+!scope=row|Saves
+|0
+|1
+|-
+!scope=row|Ball possession
+|59%
+|41%
+|-
+!scope=row|Corner kicks
+|2
+|0
+|-
+!scope=row|Fouls committed
+|10
+|11
+|-
+!scope=row|Offsides
+|3
+|0
+|-
+!scope=row|Yellow cards
+|1
+|0
+|-
+!scope=row|Red cards
+|0
+|0
+|}
+
+{| class="wikitable plainrowheaders" style="text-align:center; display:inline-table;"
+|+Second half<ref name="Sofascore" /><ref name="AS" />
+|-
+! scope="col" style="width:100px" | Statistic
+! scope="col" style="width:70px" | Argentina
+! scope="col" style="width:70px" | France
+|-
+!scope=row|Goals scored
+|0
+|2
+|-
+!scope=row|Total shots
+|6
+|6
+|-
+!scope=row|Shots on target
+|4
+|3
+|-
+!scope=row|Saves
+|1
+|4
+|-
+!scope=row|Ball possession
+|45%
+|55%
+|-
+!scope=row|Corner kicks
+|2
+|3
+|-
+!scope=row|Fouls committed
+|9
+|5
+|-
+!scope=row|Offsides
+|0
+|2
+|-
+!scope=row|Yellow cards
+|1
+|3
+|-
+!scope=row|Red cards
+|0
+|0
+|}
+{| class="wikitable plainrowheaders" style="text-align:center; display:inline-table;"
+|+Extra time<ref name="Sofascore" /><ref name="AS" />
+|-
+! scope="col" style="width:100px" | Statistic
+! scope="col" style="width:70px" | Argentina
+! scope="col" style="width:70px" | France
+|-
+!scope=row|Goals scored
+|1
+|1
+|-
+!scope=row|Total shots
+|8
+|4
+|-
+!scope=row|Shots on target
+|3
+|2
+|-
+!scope=row|Saves
+|1
+|2
+|-
+!scope=row|Ball possession
+|62%
+|38%
+|-
+!scope=row|Corner kicks
+|2
+|2
+|-
+!scope=row|Fouls committed
+|6
+|3
+|-
+!scope=row|Offsides
+|1
+|2
+|-
+!scope=row|Yellow cards
+|3
+|0
+|-
+!scope=row|Red cards
+|0
+|0
+|}
+{| class="wikitable plainrowheaders" style="text-align:center; display:inline-table;"
+|+Overall<ref name="Sofascore" /><ref name="AS" />
+|-
+! scope="col" style="width:100px" | Statistic
+! scope="col" style="width:70px" | Argentina
+! scope="col" style="width:70px" | France
+|-
+!scope=row|Goals scored
+|3
+|3
+|-
+!scope=row|Total shots
+|20
+|10
+|-
+!scope=row|Shots on target
+|10
+|5
+|-
+!scope=row|Saves
+|2
+|7
+|-
+!scope=row|Ball possession
+|54%
+|46%
+|-
+!scope=row|Corner kicks
+|6
+|5
+|-
+!scope=row|Fouls committed
+|26{{refn|[[Emiliano Martínez]] did not foul a French player, but received a yellow card foul due to [[unsporting behaviour]], which counts as a team foul.|group=note}}
+|19
+|-
+!scope=row|Offsides
+|4
+|4
+|-
+!scope=row|Yellow cards
+|5
+|3
+|-
+!scope=row|Red cards
+|0
+|0
+|}
+
+==Post-match and legacy==
+{{Multiple image
+| direction = vertical
+| width = 250
+| image1 = Fiesta en el Obelisco.jpg
+| image2 = Festejos en el Obelisco de Buenos Aires por la obtención de la Copa del Mundo de Fútbol 2022.jpg
+| footer = Celebrations near the [[Obelisco de Buenos Aires|Obelisco]] (top) and all along [[Avenida 9 de Julio]] (bottom), in the Argentine capital [[Buenos Aires]], after the World Cup coronation.
+}}
+
+Pundits, commentators, and audiences praised the intensity, stressful atmosphere, and thrilling back-and-forth nature of the match, highlighting the number of goals scored, and with many media outlets spotlighting it as a duel between [[Paris Saint-Germain F.C.|Paris Saint-Germain]] teammates Messi and Mbappé.<ref>{{cite web |url=https://www.theringer.com/world-cup/2022/12/18/23515703/argentina-france-world-cup-final-lionel-messi-kylian-mbappe |title=We Are All Witnesses |work=The Ringer |first=Brian |last=Phillips |date=18 December 2022|access-date=21 April 2023|archive-date=2 January 2023|archive-url=https://web.archive.org/web/20230102073441/https://www.theringer.com/world-cup/2022/12/18/23515703/argentina-france-world-cup-final-lionel-messi-kylian-mbappe|url-status=live}}</ref><ref>{{cite web |url=https://www.cnn.com/2022/12/18/football/lionel-messi-kylian-mbappe-greatest-world-cup-final-spt-intl/index.html |title=Lionel Messi cements his place among the greats after winning an epic duel against Kylian Mbappé |website=[[CNN]] |first=Matias |last=Grez |date=19 December 2022 | access-date=12 July 2023 | archive-date=6 January 2023 | archive-url=https://web.archive.org/web/20230106133632/https://www.cnn.com/2022/12/18/football/lionel-messi-kylian-mbappe-greatest-world-cup-final-spt-intl/index.html | url-status=live}}</ref><ref>{{cite news |url=https://www.bbc.co.uk/sport/football/64019067 |title=World Cup 2022: Was Argentina's win over France the best ever final? |work=BBC Sport |first=Emma |last=Sanders |date=18 December 2022|access-date=12 July 2023|archive-date=5 January 2023|archive-url=https://web.archive.org/web/20230105200928/https://www.bbc.co.uk/sport/football/64019067|url-status=live}}</ref><ref>{{cite web |url=https://theathletic.com/4015186/2022/12/19/lionel-messi-kylian-mbappe-world-cup-final-shearer-column/ |title=Lionel Messi and Kylian Mbappe: Thank you for that beautiful madness |work=The Athletic |first=Alan |last=Shearer |date=19 December 2022|access-date=21 April 2023|archive-date=31 December 2022|archive-url=https://web.archive.org/web/20221231064513/https://theathletic.com/4015186/2022/12/19/lionel-messi-kylian-mbappe-world-cup-final-shearer-column/|url-status=live}}</ref> The match has since been hailed as one of the most exciting [[List of FIFA World Cup finals|World Cup finals]], and among the greatest football matches ever.<ref>{{cite web |work=Fox Sports |url=https://www.foxsports.com/stories/soccer/was-argentina-france-the-best-world-cup-final-ever-ranking-the-5-best |title=Was Argentina vs. France the best World Cup Final ever? RANKING THE 5 BEST |date=19 December 2022 |access-date=25 December 2022 |archive-date=19 December 2022 |archive-url=https://web.archive.org/web/20221219172010/https://www.foxsports.com/stories/soccer/was-argentina-france-the-best-world-cup-final-ever-ranking-the-5-best |url-status=live}}</ref><ref>{{cite news |url=https://www.telegraph.co.uk/world-cup/2022/12/18/11-reasons-greatest-world-cup-final/ |title=The 11 reasons this was the greatest World Cup final |newspaper=The Telegraph |date=18 December 2022 |last1=Gibbs |first1=Thom | access-date=2 January 2023 | archive-date=2 January 2023 | archive-url=https://web.archive.org/web/20230102073447/https://www.telegraph.co.uk/world-cup/2022/12/18/11-reasons-greatest-world-cup-final/ | url-status=live}}</ref><ref>{{cite web |url=https://www.independent.co.uk/sport/football/world-cup/argentina-vs-france-messi-mbappe-penalty-b2247755.html |title=Argentina vs France: How the chaos of the greatest ever World Cup final unfolded |newspaper=The Independent |first=Jamie |last=Braidwood |date=19 December 2022 | access-date= 21 April 2023 | archive-date= 22 March 2023 | archive-url= https://web.archive.org/web/20230322221641/https://www.independent.co.uk/sport/football/world-cup/argentina-vs-france-messi-mbappe-penalty-b2247755.html | url-status= live}}</ref><ref>{{cite web |url=https://www.sportingnews.com/us/soccer/news/argentina-world-cup-final-win-greatest-game-fifa-history/atma3vqry7vbjmuyvl4ibquo |title=Explaining why Argentina World Cup final win vs France was the greatest game in FIFA men's history |work=The Sporting News |first=Mike |last=DeCourcy |date=19 December 2022|access-date=21 April 2023|archive-date=9 January 2023|archive-url=https://web.archive.org/web/20230109090643/https://www.sportingnews.com/us/soccer/news/argentina-world-cup-final-win-greatest-game-fifa-history/atma3vqry7vbjmuyvl4ibquo|url-status=live}}</ref>
+
+With the victory, Argentina won their third FIFA World Cup title to surpass France and [[Uruguay national football team|Uruguay]], their titles ranking behind only Brazil's five and the four of Italy and [[Germany national football team|Germany]]. They became the first South American and first non-European side to win the World Cup since Brazil in 2002,<ref name="RSSSF">{{cite web |date=1 December 2022 |title=World Cup 1930–2022 |website=[[RSSSF]] |url=https://www.rsssf.org/tablesw/worldcup.html |access-date=18 December 2022 |archive-date=13 December 2022 |archive-url=https://web.archive.org/web/20221213025041/https://www.rsssf.org/tablesw/worldcup.html |url-status=live}}</ref> and the first reigning champions of the Copa América to win the World Cup.<ref>{{cite web |date=7 October 2021 |title=Copa América |website=[[RSSSF]] |url=https://www.rsssf.org/tabless/sachamp.html |access-date=18 December 2022 |archive-date=6 December 2022 |archive-url=https://web.archive.org/web/20221206164923/https://www.rsssf.org/tabless/sachamp.html |url-status=live}}</ref> Having won on penalties against the Netherlands in the quarter-finals, Argentina became the first team to have won on that method twice en route to the title.<ref>{{cite web |url=https://digitalhub.fifa.com/m/587cb8e67646ba42/original/knfuogw4prnsdacl3ozx-pdf.pdf |title=Milestones & Superlatives: Statistical Kit for the FIFA World Cup |publisher=[[FIFA]] |date=6 April 2018 |access-date=24 December 2022 |archive-date=21 October 2022 |archive-url=https://web.archive.org/web/20221021153129/https://digitalhub.fifa.com/m/587cb8e67646ba42/original/knfuogw4prnsdacl3ozx-pdf.pdf |url-status=live}}</ref> It was the tenth World Cup title for a South American side, and the eighth South American victory in eleven finals facing European opposition. France became the third defending champions to lose in the following final, after Argentina in 1990 and Brazil in 1998.<ref>{{cite web |url=https://theanalyst.com/eu/2022/12/world-cup-2022-the-facts-fifa-qatar/ |title=World Cup 2022 Facts: The Best of the Best |date=21 December 2022 |access-date=24 December 2022 |work=The Analyst |quote=Each of the last three reigning champions to reach the World Cup final failed to win that final, with France joining Argentina in 1990 and Brazil in 1998 in doing so. |archive-date=24 December 2022 |archive-url=https://web.archive.org/web/20221224153512/https://theanalyst.com/eu/2022/12/world-cup-2022-the-facts-fifa-qatar/ |url-status=live}}</ref> The match was the third FIFA World Cup final to be decided by a penalty shoot-out, after [[1994 FIFA World Cup final|1994]] and [[2006 FIFA World Cup final|2006]], the latter of which France lost to Italy.<ref>{{cite web |last=Hayward |first=Ben |url=https://www.fourfourtwo.com/news/how-many-world-cup-finals-have-gone-to-extra-time-and-penalties |title=How many World Cup finals have gone to extra time and penalties? |date=18 December 2022 |access-date=24 December 2022 |work=[[FourFourTwo]] |quote=Of the previous seven, only two have gone to penalties: Brazil's win over Italy in 1994 and the Azzurri's triumph against France in 2006. |archive-date=24 December 2022 |archive-url=https://web.archive.org/web/20221224153512/https://www.fourfourtwo.com/news/how-many-world-cup-finals-have-gone-to-extra-time-and-penalties |url-status=live}}</ref> This meant that France had not won on penalties in all competitions since the [[1998 FIFA World Cup knockout stage#Italy vs France|1998 World Cup quarter-final]] against Italy. The six goals in the final brought the total number of goals in the tournament to a record 172, surpassing the 171 goals scored in 1998 and 2014.<ref>{{cite news |agency=Associated Press |url=https://www.washingtonpost.com/sports/soccer/world-cup-in-qatar-sets-scoring-record-with-172-goals/2022/12/18/9330d584-7f0a-11ed-8738-ed7217de2775_story.html |title=World Cup in Qatar sets scoring record with 172 goals |date=18 December 2022 |access-date=24 December 2022 |newspaper=[[The Washington Post]] |url-access=subscription |archive-date=24 December 2022 |archive-url=https://web.archive.org/web/20221224153511/https://www.washingtonpost.com/sports/soccer/world-cup-in-qatar-sets-scoring-record-with-172-goals/2022/12/18/9330d584-7f0a-11ed-8738-ed7217de2775_story.html |url-status=live}}</ref>
+
+FIFA president Gianni Infantino was present on the pitch stage during the awards ceremony to hand out the medals and present the trophy to the Argentine captain Lionel Messi. He was joined by Qatari Emir Tamim bin Hamad Al Thani, French president Emmanuel Macron, Argentine Football Association president Claudio Tapia, [[French Football Federation]] president [[Noël Le Graët]], [[CONMEBOL]] president [[Alejandro Domínguez (football executive)|Alejandro Domínguez]] and [[UEFA]] president [[Aleksander Čeferin]].<ref>{{cite web |last=Hangst |first=Matthias |date=18 December 2022 |title=Argentina v France: Final – FIFA World Cup Qatar 2022 |url=https://www.gettyimages.com/detail/news-photo/emiliano-martinez-of-argentina-is-embraced-by-gianni-news-photo/1450126822 |access-date=18 December 2022 |work=[[Getty Images]] |archive-date=19 December 2022 |archive-url=https://web.archive.org/web/20221219161811/https://www.gettyimages.com/detail/news-photo/emiliano-martinez-of-argentina-is-embraced-by-gianni-news-photo/1450126822 |url-status=live}}</ref> [[Sergio Batista]] and [[Nery Pumpido]], World Cup winners with Argentina in 1986, brought the trophy onto the pitch for the ceremony.<ref>{{cite web |date=18 December 2022 |title=Argentina wins World Cup, presentation ceremony highlights: Messi wins Golden Ball, Martinez gets Golden Glove, Mbappe takes Golden Boot |url=https://sportstar.thehindu.com/football/fifa-world-cup/news/argentina-wins-world-cup-presentation-ceremony-live-messi-mbappe-martinez-penalty-shootout/article66277725.ece |access-date=18 December 2022 |website=[[Sportstar]] |archive-date=20 December 2022 |archive-url=https://web.archive.org/web/20221220081817/https://sportstar.thehindu.com/football/fifa-world-cup/news/argentina-wins-world-cup-presentation-ceremony-live-messi-mbappe-martinez-penalty-shootout/article66277725.ece |url-status=live}}</ref> Before being presented with the trophy by the Emir and Infantino, Messi was given a [[Bisht (clothing)|bisht]] to wear by the Emir prior to the trophy celebration. The trophy presentation had scenery unlike previous tournaments, with [[confetti]] replaced by [[pyrotechnics]] and lights with a backdrop of some orchestral cinematic music.<ref>{{cite news |date=18 December 2022 |title=Lionel Messi made to wear traditional Arab bisht for World Cup trophy lift |work=[[The Daily Telegraph]] |url=https://www.telegraph.co.uk/world-cup/2022/12/18/lionel-messi-made-wear-traditional-arab-bisht-lifts-world-cup/ |access-date=18 December 2022 |archive-date=20 December 2022 |archive-url=https://web.archive.org/web/20221220010154/https://www.telegraph.co.uk/world-cup/2022/12/18/lionel-messi-made-wear-traditional-arab-bisht-lifts-world-cup/ |url-status=live}}</ref>
+
+Messi was named as the [[player of the match]]<ref name="MOTM" /> and won his second [[FIFA World Cup awards#Golden Ball|Golden Ball]] award after 2014 as the best player of the tournament, becoming the first (and so far only) player to receive the award twice.<ref name="awards">{{cite web |date=18 December 2022 |title=Messi makes Golden Ball history |url=https://www.fifa.com/fifaplus/en/articles/lionel-messi-argentina-wins-golden-ball-award-best-player-fifa-world-cup-qatar-2022 |access-date=18 December 2022 |publisher=[[FIFA]] |archive-date=18 December 2022 |archive-url=https://web.archive.org/web/20221218191308/https://www.fifa.com/fifaplus/en/articles/lionel-messi-argentina-wins-golden-ball-award-best-player-fifa-world-cup-qatar-2022 |url-status=live}}</ref> He also won the [[FIFA World Cup awards#Golden Boot|Silver Boot]] award with the second-most goals at the tournament, seven.<ref name="top goalscorers">{{cite news |last=Mackey |first=Ed |date=18 December 2022 |title=World Cup 2022 top goalscorers: Mbappe pips Messi to Golden Boot in unbelievable final |work=[[The Athletic]] |url=https://theathletic.com/3982841/2022/12/18/world-cup-goal-leaderboard-scorers/ |access-date=18 December 2022 |archive-date=18 December 2022 |archive-url=https://web.archive.org/web/20221218191511/https://theathletic.com/3982841/2022/12/18/world-cup-goal-leaderboard-scorers/ |url-status=live}}</ref> Messi's appearance in the final, his 26th World Cup game, meant he surpassed [[Lothar Matthäus]] as the player with the [[List of players who have appeared in the most FIFA World Cups|most appearances in the World Cup]].<ref>{{cite web |date=18 December 2022 |title=The World Cup records Messi owns and is chasing |url=https://www.fifa.com/fifaplus/en/articles/lionel-messi-fifa-world-cup-records-milestones-argentina-appearances-assists-goals |access-date=18 December 2022 |publisher=[[FIFA]] |archive-date=18 December 2022 |archive-url=https://web.archive.org/web/20221218233256/https://www.fifa.com/fifaplus/en/articles/lionel-messi-fifa-world-cup-records-milestones-argentina-appearances-assists-goals |url-status=live}}</ref> With his goals, Messi became the second player to score in the round of 16, quarter-finals, semi-finals and final of a World Cup tournament, after Hungary's [[György Sárosi]] in 1938, and the only player to score in all of those knockout rounds as well as the group stage.<ref>{{cite web |date=18 December 2022 |title=Messi – 2nd player to score in last-16, quarters, semis and final of WC |url=https://www.besoccer.com/new/messi-2nd-player-to-score-in-last-16-quarters-semis-and-final-of-wc-1213401 |access-date=18 December 2022 |website=BeSoccer |archive-date=18 December 2022 |archive-url=https://web.archive.org/web/20221218195858/https://www.besoccer.com/new/messi-2nd-player-to-score-in-last-16-quarters-semis-and-final-of-wc-1213401 |url-status=live}}</ref> Having scored once in the previous final, Mbappé's hat-trick made him the [[List of FIFA World Cup final goalscorers|highest-scoring player in the final of the World Cup]] with four goals, surpassing the three of Hurst, Pelé, [[Vavá]] and [[Zinedine Zidane]].<ref>{{cite web |last=Andrews |first=Connor |date=18 December 2022 |title=Kylian Mbappe becomes first player to score World Cup final hat-trick since Geoff Hurst as he twice brings France back level with Argentina and overtakes Pele and Zinedine Zidane |url=https://talksport.com/football/1280755/kylian-mbappe-world-cup-final-hat-trick-geoff-hurst/ |access-date=18 December 2022 |website=[[Talksport]] |archive-date=18 December 2022 |archive-url=https://web.archive.org/web/20221218193054/https://talksport.com/football/1280755/kylian-mbappe-world-cup-final-hat-trick-geoff-hurst/ |url-status=live}}</ref> In addition, with his three goals, he surpassed Messi to win the [[FIFA World Cup awards|Golden Boot]] award as the top scorer of the tournament with eight goals,<ref name="top goalscorers" /> the most in a World Cup since Brazil's [[Ronaldo (Brazilian footballer)|Ronaldo]] in 2002, and also was awarded the Silver Ball as the second-best player of the World Cup.<ref>{{cite web |date=18 December 2022 |title=World Cup Golden Ball: Full winners list & how best player award is decided |url=https://www.goal.com/en-us/news/world-cup-golden-ball-full-winners-list-how-award-decided/bltf1da74d328214aba |access-date=18 December 2022 |website=[[Goal (website)|Goal]] |archive-date=18 December 2022 |archive-url=https://web.archive.org/web/20221218193056/https://www.goal.com/en-us/news/world-cup-golden-ball-full-winners-list-how-award-decided/bltf1da74d328214aba |url-status=live}}</ref> Argentina's Emiliano Martínez won the [[FIFA World Cup awards#Golden Glove|Golden Glove]] award as the best goalkeeper of the tournament, while his teammate Enzo Fernández won the [[FIFA World Cup awards#FIFA Young Player Award|Young Player Award]] as the best player at the World Cup who is at most 21 (born on or after 1 January 2001).<ref name="awards" />
+
+In Argentina, celebrations erupted across the country, most notably in the capital [[Buenos Aires]] and in [[Rosario]], Messi's hometown.<ref>{{cite web |last=Samuel |first=Liliana |title=Rosario celebrates its native sons, Messi and Di María |url=https://batimes.com.ar/news/sports/rosario-celebrates-its-native-sons-lionel-messi-and-angel-di-maria.phtml |access-date=19 December 2022 |work=[[Buenos Aires Times]] |agency=[[Agence France-Presse]] |archive-date=19 December 2022 |archive-url=https://web.archive.org/web/20221219230441/https://batimes.com.ar/news/sports/rosario-celebrates-its-native-sons-lionel-messi-and-angel-di-maria.phtml |url-status=live}}</ref> On 20 December, the celebration in the streets of Buenos Aires after the arrival of the players of Argentina gathered a crowd estimated by local media at over four million people, forcing the team to be airlifted by helicopter out of their bus.<ref>{{cite news |date=20 December 2022 |title=Argentina's World Cup heroes airlifted in helicopters as street party overflows |work=[[Reuters]] |url=https://www.reuters.com/lifestyle/sports/argentinas-world-cup-winners-arrive-home-heros-welcome-2022-12-20/ |access-date=20 December 2022 |archive-date=20 December 2022 |archive-url=https://web.archive.org/web/20221220142549/https://www.reuters.com/lifestyle/sports/argentinas-world-cup-winners-arrive-home-heros-welcome-2022-12-20/ |url-status=live}}</ref> On 22 December, the French Football Federation confirmed to have lodged a formal complaint against the Argentine goalkeeper Emiliano Martínez for unsporting behaviour which included incidents such as a sarcastic prayer for silence for French forward Kylian Mbappé in the Argentine locker room after the match, as well as being seen holding and laughing at a toy with a facial cut of Mbappé's face stuck to it during the Argentine victory parade.<ref>{{cite web |last=O'Brien |first=Josh |title=Emi Martinez subject of formal complaint from France FA after World Cup taunts |url=https://www.mirror.co.uk/sport/football/news/martinez-french-fa-complaint-mbappe-28800762 |date=22 December 2022 |access-date=23 December 2022 |work=[[Daily Mirror]] |archive-date=22 December 2022 |archive-url=https://web.archive.org/web/20221222225032/https://www.mirror.co.uk/sport/football/news/martinez-french-fa-complaint-mbappe-28800762 |url-status=live}}</ref><ref>{{cite web |title=Martinez holds Mbappe baby doll during World Cup parade as Argentina keeper continues to taunt France striker |url=https://www.goal.com/en-in/news/martinez-mbappe-doll-world-cup-parade-argentina-keeper-taunt-france-striker/blta64e38cf71a36755 |access-date=23 December 2022 |website=[[Goal (website)|Goal]] |archive-date=23 December 2022 |archive-url=https://web.archive.org/web/20221223162340/https://www.goal.com/en-in/news/martinez-mbappe-doll-world-cup-parade-argentina-keeper-taunt-france-striker/blta64e38cf71a36755 |url-status=live}}</ref> In France, [[sports riot|riots]] erupted across the country in cities including Paris, [[Lyon]] and [[Nice]];<ref>{{cite web |title=Riots erupt in France as over 115 arrests recorded after Les Bleus suffer defeat to Argentina in FIFA World Cup final |url=https://www.sportskeeda.com/football/news-riots-erupt-france-115-arrests-recorded-les-bleus-suffer-defeat-argentina-fifa-world-cup-final |access-date=24 December 2022 |date=19 December 2022 |website=Sportskeeda |first=Apratim |last=Banerjee |archive-date=24 December 2022 |archive-url=https://web.archive.org/web/20221224023750/https://www.sportskeeda.com/football/news-riots-erupt-france-115-arrests-recorded-les-bleus-suffer-defeat-argentina-fifa-world-cup-final |url-status=live}}</ref> these were very similar to those after [[2018 FIFA World Cup final|their victory in 2018]], as well as after victories against [[2022 FIFA World Cup knockout stage#England vs France|England]] and [[2022 FIFA World Cup knockout stage#France vs Morocco|Morocco]] earlier in the tournament. Some French players like Kingsley Coman, Randal Kolo Muani and Aurélien Tchouaméni were racially abused online due to their performances by their own fans.<ref>{{cite web |title=World Cup 2022: France's Kingsley Coman and Aurelien Tchouameni racially abused |url=https://www.bbc.com/sport/football/64031272 |access-date=24 December 2022 |date=19 December 2022 |website=[[BBC Sport]] |archive-date=21 December 2022 |archive-url=https://web.archive.org/web/20221221172911/https://www.bbc.com/sport/football/64031272 |url-status=live}}</ref> Within 48 hours of Messi posting, the [[Instagram]] post with the World Cup trophy had surpassed [[List of most-liked Instagram posts|75 million likes]], and in doing so, it became the most-liked social media post ever across all social media platforms surpassing the previous most-liked Instagram post, the [[Instagram egg|world record egg]].<ref>{{Cite web |last=Corbella |first=Enrique |date=21 December 2022 |title=Messi beats the record of likes in the history of all social media: Beats TikToker Bella Poarch |url=https://www.marca.com/en/world-cup/2022/12/21/63a2e057e2704eee1b8b4585.html |access-date=21 December 2022 |website=[[Marca (newspaper)|Marca]] |archive-date=21 December 2022 |archive-url=https://web.archive.org/web/20221221171536/https://www.marca.com/en/world-cup/2022/12/21/63a2e057e2704eee1b8b4585.html |url-status=live}}</ref><ref>{{Cite web |last=Navlakha |first=Meera |date=21 December 2022 |title=Lionel Messi's Instagram post is the most liked thing on social media – ever |url=https://mashable.com/article/lionel-messi-instagram-record-egg |access-date=21 December 2022 |website=[[Mashable]] |archive-date=21 December 2022 |archive-url=https://web.archive.org/web/20221221231027/https://mashable.com/article/lionel-messi-instagram-record-egg |url-status=live}}</ref>
+
+==See also==
+* [[Argentina at the FIFA World Cup]]
+* [[France at the FIFA World Cup]]
+
+==Notes==
+{{reflist|group=note}}
+
+==References==
+{{Reflist}}
+
+==External links==
+{{Commons category|2022 FIFA World Cup}}
+* {{Official website}}
+* [https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022 2022 FIFA World Cup]
+
+{{2022 FIFA World Cup}}
+{{FIFA World Cup}}
+{{Argentina national football team matches}}
+{{France national football team matches}}
+
+{{DEFAULTSORT:Fifa World Cup Final 2022}}
+[[Category:2022 FIFA World Cup|Final]]
+[[Category:FIFA World Cup finals|2022]]
+[[Category:2022–23 in Qatari football]]
+[[Category:Sport in Lusail]]
+[[Category:Argentina national football team matches]]
+[[Category:Argentina at the 2022 FIFA World Cup]]
+[[Category:Argentina–France sports relations|2022]]
+[[Category:France national football team matches]]
+[[Category:France at the 2022 FIFA World Cup]]
+[[Category:December 2022 sports events in Qatar|FIFA World Cup Final]]
+[[Category:Lionel Messi]]

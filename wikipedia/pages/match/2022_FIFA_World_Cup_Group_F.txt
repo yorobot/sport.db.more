@@ -1,0 +1,1095 @@
+{{Short description|None}}
+{{Use dmy dates|date=March 2022}}
+[[File:Leander Dendoncker David Hoilett WC2022.jpg|thumb|Belgium vs Canada]]
+Matches in Group F of the [[2022 FIFA World Cup]] took place from 23 November to 1 December 2022.<ref name="match schedule">{{cite web |url=https://digitalhub.fifa.com/m/464f16f856f5ed05/original/FIFA-World-Cup-Qatar-2022-Match-Schedule.pdf |title=FIFA World Cup Qatar 2022 – Match Schedule |website=FIFA.com |publisher=Fédération Internationale de Football Association |date=11 August 2022 |access-date=11 August 2022}}</ref> The group consisted of [[Belgium national football team|Belgium]], [[Canada men's national soccer team|Canada]], [[Morocco national football team|Morocco]] and [[Croatia national football team|Croatia]].<ref name="regulations">{{cite web |url=https://digitalhub.fifa.com/m/2744a0a5e3ded185/original/FIFA-World-Cup-Qatar-2022-Regulations_EN.pdf |title=Regulations – FIFA World Cup Qatar 2022 |website=FIFA.com |publisher=Fédération Internationale de Football Association |date=15 December 2021 |access-date=30 March 2022}}</ref> The top two teams, Morocco and Croatia, advanced to the [[2022 FIFA World Cup knockout stage#Round of 16|round of 16]], and later played against each other again in the [[2022 FIFA World Cup knockout stage#Third place play-off|third-place play-off game]], with Croatia winning 2–1.<ref>{{cite web |title=World Cup: Croatia beat Morocco to seal third-place finish |url=https://www.bbc.co.uk/sport/live/football/61047897 |website=BBC Sport |access-date=17 December 2022 |date=16 December 2022}}</ref><ref>{{Cite web |title=The route to the World Cup final at Qatar 2022 |url=https://www.fifa.com/fifaplus/en/articles/knockout-phase-possible-opponents-road-to-the-final-fifa-world-cup-qatar-2022 |access-date=11 December 2022 |website=FIFA }}</ref> Morocco advanced to the knockout stage for the first time since [[1986 FIFA World Cup|1986]]. By winning the group, they became the first African team to do so since [[Nigeria national football team|Nigeria]] in [[1998 FIFA World Cup Group D|1998]]. Belgium failed to advance out of the group round for the first time, also since [[1998 FIFA World Cup Group E|1998]].<ref>{{Cite web |title=No. 2 Belgium fail to reach knockout stage at 2022 World Cup |url=https://www.sportsnet.ca/soccer/no-2-belgium-fail-to-reach-knockout-stage-at-2022-world-cup/ |access-date=3 December 2022|date=1 December 2022|website=Sportsnet.ca |agency=Associated Press}}</ref>
+
+==Teams==
+{| class="wikitable sortable"
+|-
+!rowspan=2| Draw position
+!rowspan=2| Team
+!rowspan=2| Pot
+!rowspan=2| Confederation
+!rowspan=2| Method of<br />qualification
+!rowspan=2| Date of<br />qualification
+!rowspan=2 data-sort-type="number"| Finals<br />appearance
+!rowspan=2| Last<br />appearance
+!rowspan=2| Previous best<br />performance
+!colspan=2| [[FIFA Men's World Ranking|FIFA Rankings]]<ref>{{cite web |url=https://www.fifa.com/fifa-world-ranking/men |title=Men's Ranking |publisher=[[FIFA]] |access-date=21 November 2022}}</ref>
+|-
+! March 2022{{refn|group=nb|The rankings of March 2022 were used for [[2022 FIFA World Cup seeding|seeding for the final draw]].}}
+! October 2022
+|-
+| F1 || style=white-space:nowrap | {{#invoke:flagg|main|unpe|avar=fb|BEL}} || 1 || [[UEFA]] || [[2022 FIFA World Cup qualification – UEFA Group E|UEFA Group E]] winners || 13 November 2021 || 14th || [[2018 FIFA World Cup|2018]] || data-sort-value="6.1" | Third place ([[2018 FIFA World Cup|2018]]) || 2 || 2
+|-
+| F2 || style=white-space:nowrap | {{#invoke:flagg|main|unpe|avar=fb|CAN}} || 4 || [[CONCACAF]] || [[2022 FIFA World Cup qualification – CONCACAF third round|CONCACAF third round]] winners || 27 March 2022 || 2nd || [[1986 FIFA World Cup|1986]] || data-sort-value="2.1" | Group stage ([[1986 FIFA World Cup|1986]]) || 38 || 41
+|-
+| F3 || style=white-space:nowrap | {{#invoke:flagg|main|unpe|avar=fb|MAR}} || 3 || [[Confederation of African Football|CAF]] || [[2022 FIFA World Cup qualification – CAF third round|CAF third round]] winners || 29 March 2022 || 6th || [[2018 FIFA World Cup|2018]] || data-sort-value="3.1" | Round of 16 ([[1986 FIFA World Cup|1986]]) || 24 || 22
+|-
+| F4 || style=white-space:nowrap | {{#invoke:flagg|main|unpe|avar=fb|CRO}} || 2 || [[UEFA]] || [[2022 FIFA World Cup qualification – UEFA Group H|UEFA Group H]] winners || 14 November 2021 || 6th || [[2018 FIFA World Cup|2018]] || data-sort-value="7.1" | Runners-up ([[2018 FIFA World Cup|2018]]) || 16 || 12
+|}
+'''Notes'''
+{{reflist|group=nb}}
+
+==Standings==
+{{2022 FIFA World Cup group tables|Group F}}
+
+In the [[2022 FIFA World Cup knockout stage#Round of 16|round of 16]]:
+* The winners of Group F, Morocco, advanced to play the runners-up of [[2022 FIFA World Cup Group E|Group E]], [[Spain national football team|Spain]].
+* The runners-up of Group F, Croatia, advanced to play the winners of [[2022 FIFA World Cup Group E|Group E]], [[Japan national football team|Japan]].
+
+==Matches==
+All times listed are local, [[Arabia Standard Time|AST]] ([[UTC+03:00|UTC+3]]).<ref name="match schedule"/>
+
+===Morocco vs Croatia===
+The teams had previously faced each other once, in a 1996 friendly match that ended in a 2–2 draw.
+
+Although Croatia dominated possession, the match was one of few chances, and ended in a scoreless draw.<ref>{{cite web|url=https://www.bbc.com/sport/football/63644790|title=Morocco 0 Croatia 0|work=BBC Sport|date=23 November 2022|access-date=23 November 2022}}</ref>
+
+The two sides would go on to face off again in the [[2022 FIFA World Cup knockout stage#Third place play-off|third place match]], making this the second straight World Cup where the third place match was contested by two teams drawn in the same group (after [[Belgium national football team|Belgium]] and [[England national football team|England]] did so in [[2018 FIFA World Cup|2018]]).
+
+<section begin=F1 />{{Football box
+|date       = {{Start date|2022|11|23|df=y}}
+|time       = 13:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|MAR}}
+|score      = {{score link|2022 FIFA World Cup Group F#Morocco vs Croatia|0–0}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|CRO}}
+|goals1     =
+|goals2     =
+|stadium    = [[Al Bayt Stadium]], [[Al Khor]]
+|attendance = 59,407
+|referee    = [[Fernando Rapallini]] ([[Argentine Football Association|Argentina]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235481
+}}<section end=F1 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _mar22H
+ |pattern_b  = _mar22H
+ |pattern_ra = _mar22H
+ |pattern_sh = _mar22h
+ |pattern_so = _mar22hl
+ |leftarm    = FF0000
+ |body       = FF0000
+ |rightarm   = FF0000
+ |shorts     = 009150
+ |socks      = FF0000
+ |title      = Morocco
+}}
+|{{Football kit
+ |pattern_la = _cro22h
+ |pattern_b  = _cro22H
+ |pattern_ra = _cro22h
+ |pattern_sh =
+ |pattern_so = _cro22hl
+ |leftarm    = FFFFFF
+ |body       = FFFFFF
+ |rightarm   = FFFFFF
+ |shorts     = FFFFFF
+ |socks      = FFFFFF
+ |title      = Croatia
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Yassine Bounou]]
+|-
+|RB ||'''2''' ||[[Achraf Hakimi]]
+|-
+|CB ||'''5''' ||[[Nayef Aguerd]]
+|-
+|CB ||'''6''' ||[[Romain Saïss]] ([[Captain (association football)|c]])
+|-
+|LB ||'''3''' ||[[Noussair Mazraoui]] || || {{suboff|60}}
+|-
+|DM ||'''4''' ||[[Sofyan Amrabat]] || {{yel|78}}
+|-
+|CM ||'''8''' ||[[Azzedine Ounahi]] || || {{suboff|81}}
+|-
+|CM ||'''15'''||[[Selim Amallah]]
+|-
+|RF ||'''7''' ||[[Hakim Ziyech]]
+|-
+|CF ||'''19'''||[[Youssef En-Nesyri]] || || {{suboff|81}}
+|-
+|LF ||'''17'''||[[Sofiane Boufal]] || || {{suboff|65}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|DF ||'''25'''||[[Yahia Attiyat Allah]] || || {{subon|60}}
+|-
+|FW ||'''16'''||[[Abde Ezzalzouli]] || || {{subon|65}}
+|-
+|FW ||'''9''' ||[[Abderrazak Hamdallah]] || || {{subon|81}}
+|-
+|FW ||'''11'''||[[Abdelhamid Sabiri]] || || {{subon|81}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Walid Regragui]]
+|}
+|valign="top"|[[File:MAR-CRO 2022-11-23.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Dominik Livaković]]
+|-
+|RB ||'''22'''||[[Josip Juranović]]
+|-
+|CB ||'''6''' ||[[Dejan Lovren]]
+|-
+|CB ||'''20'''||[[Joško Gvardiol]]
+|-
+|LB ||'''19'''||[[Borna Sosa]]
+|-
+|DM ||'''11'''||[[Marcelo Brozović]]
+|-
+|CM ||'''10'''||[[Luka Modrić]] ([[Captain (association football)|c]])
+|-
+|CM ||'''8''' ||[[Mateo Kovačić]] || || {{suboff|79}}
+|-
+|RF ||'''13'''||[[Nikola Vlašić]] || || {{suboff|46}}
+|-
+|CF ||'''9''' ||[[Andrej Kramarić]] || || {{suboff|71}}
+|-
+|LF ||'''4''' ||[[Ivan Perišić]] || || {{suboff|90}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|MF ||'''15'''||[[Mario Pašalić]] || || {{subon|46}}
+|-
+|FW ||'''14'''||[[Marko Livaja]] || || {{subon|71}}
+|-
+|MF ||'''7''' ||[[Lovro Majer]] || || {{subon|79}}
+|-
+|FW ||'''18'''||[[Mislav Oršić]] || || {{subon|90}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Zlatko Dalić]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Luka Modrić]] (Croatia)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/morocco-croatia-world-cup-2022-group-f-match-report |title=Deadlock at Al Bayt as Morocco hold Croatia |publisher=[[FIFA]] |date=23 November 2022 |access-date=23 November 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Juan Pablo Belatti ([[Argentine Football Association|Argentina]])
+<br />Diego Bonfá ([[Argentine Football Association|Argentina]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[Kevin Ortega]] ([[Peruvian Football Federation|Peru]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Karen Díaz Medina ([[Mexican Football Federation|Mexico]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Julio Bascuñán]] ([[Football Federation of Chile|Chile]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Leodán González]] ([[Uruguayan Football Association|Uruguay]])
+<br />Nicolás Taran ([[Uruguayan Football Association|Uruguay]])
+<br />[[Paolo Valeri]] ([[Italian Football Federation|Italy]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Martín Soppi ([[Uruguayan Football Association|Uruguay]])
+|}
+
+===Belgium vs Canada===
+The teams had faced each other once prior, a 1989 friendly won 2–0 by Belgium. This match made Canada's head coach, Englishman [[John Herdman]], the first manager to coach a team at both the men's and [[FIFA Women's World Cup|women's]] FIFA World Cup.<ref>{{cite tweet|user=DAZN_CA|number=1508208317373505538|title=John Herdman becomes the first manager to lead both women's and men's national teams of a nation to World Cup qualification|author-link=DAZN|date=27 March 2022|access-date=8 April 2022}}</ref>
+
+Despite dominating much of proceedings and having 19 attempts on goal, including an early penalty kick taken by [[Alphonso Davies]] that was saved by [[Thibaut Courtois]], Canada could not find a way to score, and the sole goal of the match came near the end of the first half from Belgium's [[Michy Batshuayi]], when he converted following a long-range pass upfield from defender [[Toby Alderweireld]].<ref>{{cite web|url=https://www.theguardian.com/football/2022/nov/23/belgium-canada-world-cup-group-f-match-report|title=Belgium run ragged by Canada but Michy Batshuayi strikes to grab victory|date=23 November 2022|publisher=The Guardian|access-date=28 November 2022}}</ref>
+
+<section begin=F2 />{{Football box
+|date       = {{Start date|2022|11|23|df=y}}
+|time       = 22:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|BEL}}
+|score      = {{score link|2022 FIFA World Cup Group F#Belgium vs Canada|1–0}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|CAN}}
+|goals1     =
+*[[Michy Batshuayi|Batshuayi]] {{goal|44}}
+|goals2     =
+|stadium    = [[Ahmad bin Ali Stadium]], [[Al Rayyan (city)|Al Rayyan]]
+|attendance = 40,432
+|referee    = [[Janny Sikazwe]] ([[Football Association of Zambia|Zambia]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235477
+}}<section end=F2 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _bel22h
+ |pattern_b  = _bel22H
+ |pattern_ra = _bel22h
+ |pattern_sh = _bel22h
+ |pattern_so = _bel22hl
+ |leftarm    = 000000
+ |body       = FF0000
+ |rightarm   = 000000
+ |shorts     = 000000
+ |socks      = 000000
+ |title      = Belgium
+}}
+|{{Football kit
+ |pattern_la = _norrkoping21h
+ |pattern_b  = _can22A
+ |pattern_ra = _norrkoping21h
+ |pattern_sh =
+ |pattern_so =
+ |leftarm    = FFFFFF
+ |body       = FFFFFF
+ |rightarm   = FFFFFF
+ |shorts     = FFFFFF
+ |socks      = FFFFFF
+ |title      = Canada
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Thibaut Courtois]]
+|-
+|CB ||'''19'''||[[Leander Dendoncker]]
+|-
+|CB ||'''2''' ||[[Toby Alderweireld]]
+|-
+|CB ||'''5''' ||[[Jan Vertonghen]]
+|-
+|RM ||'''21'''||[[Timothy Castagne]]
+|-
+|CM ||'''8''' ||[[Youri Tielemans]] || || {{suboff|46}}
+|-
+|CM ||'''6''' ||[[Axel Witsel]]
+|-
+|LM ||'''11'''||[[Yannick Carrasco]] || {{yel|9}} || {{suboff|46}}
+|-
+|AM ||'''7''' ||[[Kevin De Bruyne]]
+|-
+|AM ||'''10'''||[[Eden Hazard]] ([[Captain (association football)|c]]) || || {{suboff|62}}
+|-
+|CF ||'''23'''||[[Michy Batshuayi]] || || {{suboff|78}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|MF ||'''18'''||[[Amadou Onana]] || {{yel|56}} || {{subon|46}}
+|-
+|MF ||'''15'''||[[Thomas Meunier]] || {{yel|54}} || {{subon|46}}
+|-
+|FW ||'''17'''||[[Leandro Trossard]] || || {{subon|62}}
+|-
+|FW ||'''24'''||[[Loïs Openda]] || || {{subon|78}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|{{#invoke:flag|icon|ESP}} [[Roberto Martínez]]
+|}
+|valign="top"|[[File:BEL-CAN 2022-11-23.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''18'''||[[Milan Borjan]]
+|-
+|CB ||'''2''' ||[[Alistair Johnston]] || {{yel|83}}
+|-
+|CB ||'''5''' ||[[Steven Vitória]]
+|-
+|CB ||'''4''' ||[[Kamal Miller]]
+|-
+|RM ||'''22'''||[[Richie Laryea]] || || {{suboff|74}}
+|-
+|CM ||'''13'''||[[Atiba Hutchinson]] ([[Captain (association football)|c]]) || || {{suboff|58}}
+|-
+|CM ||'''7''' ||[[Stephen Eustáquio]] || || {{suboff|81}}
+|-
+|LM ||'''19'''||[[Alphonso Davies]] || {{yel|81}}
+|-
+|AM ||'''11'''||[[Tajon Buchanan]] || || {{suboff|81}}
+|-
+|AM ||'''10'''||[[Junior Hoilett]] || || {{suboff|58}}
+|-
+|CF ||'''20'''||[[Jonathan David]]
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|FW ||'''17'''||[[Cyle Larin]] || || {{subon|58}}
+|-
+|MF ||'''15'''||[[Ismaël Koné (soccer, born 2002)|Ismaël Koné]] || || {{subon|58}}
+|-
+|DF ||'''3''' ||[[Sam Adekugbe]] || || {{subon|74}}
+|-
+|MF ||'''23'''||[[Liam Millar]] || || {{subon|81}}
+|-
+|MF ||'''21'''||[[Jonathan Osorio]] || || {{subon|81}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|{{#invoke:flag|icon|ENG}} [[John Herdman]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Kevin De Bruyne]] (Belgium)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/belgium-canada-world-cup-qatar-2022-group-f-davies-batshuayi-courtois |title=Belgium edge courageous Canadians |publisher=[[FIFA]] |date=23 November 2022 |access-date=23 November 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Jerson dos Santos ([[Angolan Football Federation|Angola]])
+<br />Arsénio Marrengula ([[Mozambican Football Federation|Mozambique]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[Yoshimi Yamashita]] ([[Japan Football Association|Japan]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Neuza Back ([[Brazilian Football Confederation|Brazil]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Juan Soto (referee)|Juan Soto]] ([[Venezuelan Football Federation|Venezuela]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Nicolás Gallo (referee)|Nicolás Gallo]] ([[Colombian Football Federation|Colombia]])
+<br />Mokrane Gourari ([[Algerian Football Federation|Algeria]])
+<br />[[Massimiliano Irrati]] ([[Italian Football Federation|Italy]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Abdelhak Etchiali ([[Algerian Football Federation|Algeria]])
+|}
+
+===Belgium vs Morocco===
+The teams had met in three previous matches, including Belgium's [[1994 FIFA World Cup Group F#Belgium vs Morocco|1–0 group stage victory]] at the [[1994 FIFA World Cup]].
+
+[[Romain Saïss]] put Morocco in front in the 73rd minute, when he glanced the ball in at close range after a free kick whipped in from the left by [[Abdelhamid Sabiri]] deceived Belgian goalkeeper [[Thibaut Courtois]] at the near post.<ref>{{cite web|url=https://www.skysports.com/football/news/12098/12755148/world-cup-2022-belgium-0-2-morocco-romain-saiss-and-zakaria-aboukhlal-power-morocco-to-shock-victory|title=World Cup 2022 – Belgium 0–2 Morocco: Romain Saiss and Zakaria Aboukhlal power Morocco to shock victory|date=27 November 2022|work=Sky Sports|access-date=1 December 2022}}</ref> [[Zakaria Aboukhlal]] made it 2–0 in added time when he finished high into the right corner of the net after a cut-back from [[Hakim Ziyech]] on the right.<ref>{{cite web|url=https://www.theguardian.com/football/live/2022/nov/27/belgium-v-morocco-world-cup-2022-live|title=Belgium 0 Morocco 2:As it happened|date=27 November 2022|work=The Guardian|access-date=1 December 2022}}</ref>
+
+The match was only Morocco's third victory in World Cup history. The result sparked riots back in Belgium (home to a large [[Moroccans in Belgium|ethnic Moroccan community]]), with resident fires and fireworks being set off.<ref>{{cite web |title=Twelve detained after Belgium-Morocco World Cup riots in Brussels |work=Euractiv |date= 28 November 2022|access-date=28 November 2022 |url= https://www.euractiv.com/section/politics/news/belgium-morocco-world-cup-match-triggers-riots-in-brussels-dozen-people-detained/}}</ref><ref>{{cite web|url=https://www.the42.ie/brussels-riots-belgium-morocco-world-cup-5931703-Nov2022/|title=Riots erupt in Brussels after Morocco stun Belgium at World Cup|date=27 November 2022|work=The 42|access-date=1 December 2022}}</ref>
+
+<section begin=F3 />{{Football box
+|date       = {{Start date|2022|11|27|df=y}}
+|time       = 16:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|BEL}}
+|score      = {{score link|2022 FIFA World Cup Group F#Belgium vs Morocco|0–2}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|MAR}}
+|goals1     =
+|goals2     =
+*[[Romain Saïss|Saïss]] {{goal|73}}
+*[[Zakaria Aboukhlal|Aboukhlal]] {{goal|90+2}}
+|stadium    = [[Al Thumama Stadium]], [[Doha]]
+|attendance = 43,738
+|referee    = [[César Arturo Ramos]] ([[Mexican Football Federation|Mexico]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235480
+}}<section end=F3 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _bel22h
+ |pattern_b  = _bel22H
+ |pattern_ra = _bel22h
+ |pattern_sh = _bel22h
+ |pattern_so = _bel22hl
+ |leftarm    = 000000
+ |body       = FF0000
+ |rightarm   = 000000
+ |shorts     = 000000
+ |socks      = 000000
+ |title      = Belgium
+}}
+|{{Football kit
+ |pattern_la = _mar22a
+ |pattern_b  = _mar22A
+ |pattern_ra = _mar22a
+ |pattern_sh = _mar22a
+ |pattern_so = _mar22al
+ |leftarm    = FFFFFF
+ |body       = FFFFFF
+ |rightarm   = FFFFFF
+ |shorts     = FFFFFF
+ |socks      = FFFFFF
+ |title      = Morocco
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Thibaut Courtois]]
+|-
+|RB ||'''15'''||[[Thomas Meunier]] || || {{suboff|81}}
+|-
+|CB ||'''2''' ||[[Toby Alderweireld]]
+|-
+|CB ||'''5''' ||[[Jan Vertonghen]]
+|-
+|LB ||'''21'''||[[Timothy Castagne]]
+|-
+|CM ||'''18'''||[[Amadou Onana]] || {{yel|29}} || {{suboff|60}}
+|-
+|CM ||'''6''' ||[[Axel Witsel]]
+|-
+|RW ||'''7''' ||[[Kevin De Bruyne]]
+|-
+|AM ||'''10'''||[[Eden Hazard]] ([[Captain (association football)|c]]) || || {{suboff|60}}
+|-
+|LW ||'''16'''||[[Thorgan Hazard]] || || {{suboff|75}}
+|-
+|CF ||'''23'''||[[Michy Batshuayi]] || || {{suboff|75}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|MF ||'''8''' ||[[Youri Tielemans]] || || {{subon|60}}
+|-
+|FW ||'''14'''||[[Dries Mertens]] || || {{subon|60}}
+|-
+|FW ||'''22'''||[[Charles De Ketelaere]] || || {{subon|75}}
+|-
+|FW ||'''17'''||[[Leandro Trossard]] || || {{subon|75}}
+|-
+|FW ||'''9''' ||[[Romelu Lukaku]] || || {{subon|81}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|{{#invoke:flag|icon|ESP}} [[Roberto Martínez]]
+|}
+|valign="top"|[[File:BEL-MAR 2022-11-27.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''12'''||[[Munir Mohamedi]]
+|-
+|RB ||'''2''' ||[[Achraf Hakimi]] || || {{suboff|68}}
+|-
+|CB ||'''5''' ||[[Nayef Aguerd]]
+|-
+|CB ||'''6''' ||[[Romain Saïss]] ([[Captain (association football)|c]])
+|-
+|LB ||'''3''' ||[[Noussair Mazraoui]]
+|-
+|DM ||'''4''' ||[[Sofyan Amrabat]]
+|-
+|CM ||'''8''' ||[[Azzedine Ounahi]] || || {{suboff|78}}
+|-
+|CM ||'''15'''||[[Selim Amallah]] || || {{suboff|68}}
+|-
+|RF ||'''7''' ||[[Hakim Ziyech]]
+|-
+|CF ||'''19'''||[[Youssef En-Nesyri]] || || {{suboff|73}}
+|-
+|LF ||'''17'''||[[Sofiane Boufal]] || || {{suboff|73}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|FW ||'''11'''||[[Abdelhamid Sabiri]] || {{yel|90+5}} || {{subon|68}}
+|-
+|DF ||'''25'''||[[Yahia Attiyat Allah]] || || {{subon|68}}
+|-
+|MF ||'''14'''||[[Zakaria Aboukhlal]] || || {{subon|73}}
+|-
+|FW ||'''9''' ||[[Abderrazak Hamdallah]] || || {{subon|73}}
+|-
+|DF ||'''18'''||[[Jawad El Yamiq]] || || {{subon|78}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Walid Regragui]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Hakim Ziyech]] (Morocco)<ref>{{cite web |url=https://play.fifa.com/budweiserpotm/ |title=Budweiser Player of the Match |publisher=[[FIFA]] |date=27 November 2022 |access-date=27 November 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Alberto Morín ([[Mexican Football Federation|Mexico]])
+<br />Miguel Hernández ([[Mexican Football Federation|Mexico]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[Yoshimi Yamashita]] ([[Japan Football Association|Japan]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Neuza Back ([[Brazilian Football Confederation|Brazil]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Fernando Guerrero (referee)|Fernando Guerrero]] ([[Mexican Football Federation|Mexico]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Nicolás Gallo (referee)|Nicolás Gallo]] ([[Colombian Football Federation|Colombia]])
+<br />Kathryn Nesbitt ([[United States Soccer Federation|United States]])
+<br />[[Armando Villarreal]] ([[United States Soccer Federation|United States]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Kyle Atkins ([[United States Soccer Federation|United States]])
+|}
+
+===Croatia vs Canada===
+{{see also|2022 FIFA World Cup controversies#Croatian incidents}}
+The teams had never met before.
+
+[[Alphonso Davies]] scored Canada's first-ever World Cup goal in the second minute, with his header off a cross from [[Tajon Buchanan]] on the right giving Canada the lead.<ref>{{cite web|url=https://www.theguardian.com/football/live/2022/nov/27/croatia-v-canada-world-cup-2022-live|title=Croatia 4 Canada 1:As it happened|date=27 November 2022|work=The Guardian|access-date=1 December 2022}}</ref> His effort was the fastest goal in the tournament at 68 seconds.<ref>{{cite web|title=Alphonso Davies and the fastest World Cup goals|work=FIFA |date= |access-date=11 April 2023 |url=https://www.fifa.com/fifaplus/en/articles/fastest-ever-goals-world-cup-qatar-2022-alphonso-davies-sukur-masek}}</ref> [[Andrej Kramarić]] and [[Marko Livaja]] would strike back before half-time for Croatia to put them into 2–1 lead. Kramarić would score again in the second period before [[Lovro Majer]] took advantage of a miscontrolled ball by [[Kamal Miller]] in the dying moments of the match to complete a 4–1 Croatian victory that sealed Canada's elimination from the tournament. It was also Canada's largest ever defeat in a World Cup match.<ref>{{cite web |title=Croatia vs Canada live updates |last=Athletic |first=The |work=The Athletic |date= |access-date=28 November 2022 |url= https://theathletic.com/live-blogs/croatia-canada-score-world-cup-2022/9qm7q0NsLr14/}}</ref>
+
+The match was marred by xenophobic [[Anti-Serb sentiment|anti-Serb]] chants made by a group Croatian fans against Canadian goalkeeper [[Milan Borjan]], an ethnic [[Serbs of Croatia|Croatian Serb]] who fled Croatia during the [[Croatian War of Independence]], along with their display of a modified [[John Deere]] banner making a reference to [[Operation Storm]], a military operation that ended the war and abolished the [[Log Revolution|separatist]] [[proto-state]] [[Republic of Serbian Krajina]], which resulted in a [[Operation Storm#Refugee crisis|mass exodus]] and [[Operation Storm#War crimes|war crimes]] against number of Krajina's Serb civilians.<ref>{{cite news |title=Croatian fans target Borjan's refugee history during FIFA World Cup match against Canada |url=https://dailyhive.com/vancouver/borjan-targeted-croatian-fans-world-cup |work=Daily Hive |date=28 November 2022 |access-date=28 November 2022}}</ref>
+
+<section begin=F4 />{{Football box
+|date       = {{Start date|2022|11|27|df=y}}
+|time       = 19:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|CRO}}
+|score      = {{score link|2022 FIFA World Cup Group F#Croatia vs Canada|4–1}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|CAN}}
+|goals1     =
+*[[Andrej Kramarić|Kramarić]] {{goal|36||70}}
+*[[Marko Livaja|Livaja]] {{goal|44}}
+*[[Lovro Majer|Majer]] {{goal|90+4}}
+|goals2     =
+*[[Alphonso Davies|Davies]] {{goal|2}}
+|stadium    = [[Khalifa International Stadium]], [[Al Rayyan (city)|Al Rayyan]]
+|attendance = 44,374
+|referee    = [[Andrés Matonte]] ([[Uruguayan Football Association|Uruguay]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235482
+}}<section end=F4 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _cro22h
+ |pattern_b  = _cro22H
+ |pattern_ra = _cro22h
+ |pattern_sh =
+ |pattern_so = _cro22hl
+ |leftarm    = FFFFFF
+ |body       = FFFFFF
+ |rightarm   = FFFFFF
+ |shorts     = FFFFFF
+ |socks      = FFFFFF
+ |title      = Croatia
+}}
+|{{Football kit
+ |pattern_la =
+ |pattern_b  = _can22T
+ |pattern_ra =
+ |pattern_sh =
+ |pattern_so = _sevilla1819h
+ |leftarm    = 000000
+ |body       = 000000
+ |rightarm   = 000000
+ |shorts     = 000000
+ |socks      = 000000
+ |title      = Canada
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Dominik Livaković]]
+|-
+|RB ||'''22'''||[[Josip Juranović]]
+|-
+|CB ||'''6''' ||[[Dejan Lovren]] || {{yel|56}}
+|-
+|CB ||'''20'''||[[Joško Gvardiol]]
+|-
+|LB ||'''19'''||[[Borna Sosa]]
+|-
+|DM ||'''11'''||[[Marcelo Brozović]]
+|-
+|CM ||'''10'''||[[Luka Modrić]] ([[Captain (association football)|c]]) || {{yel|85}} || {{suboff|86}}
+|-
+|CM ||'''8''' ||[[Mateo Kovačić]] || || {{suboff|86}}
+|-
+|RF ||'''14'''||[[Marko Livaja]] || || {{suboff|60}}
+|-
+|CF ||'''9''' ||[[Andrej Kramarić]] || || {{suboff|72}}
+|-
+|LF ||'''4''' ||[[Ivan Perišić]] || || {{suboff|86}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|FW ||'''16'''||[[Bruno Petković]] || || {{subon|60}}
+|-
+|MF ||'''13'''||[[Nikola Vlašić]] || || {{subon|72}}
+|-
+|FW ||'''18'''||[[Mislav Oršić]] || || {{subon|86}}
+|-
+|MF ||'''7''' ||[[Lovro Majer]] || || {{subon|86}}
+|-
+|MF ||'''15'''||[[Mario Pašalić]] || || {{subon|86}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Zlatko Dalić]]
+|}
+|valign="top"|[[File:CRO-CAN 2022-11-27.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''18'''||[[Milan Borjan]]
+|-
+|CB ||'''2''' ||[[Alistair Johnston]]
+|-
+|CB ||'''5''' ||[[Steven Vitória]]
+|-
+|CB ||'''4''' ||[[Kamal Miller]] || {{yel|85}}
+|-
+|RM ||'''22'''||[[Richie Laryea]] || || {{suboff|62}}
+|-
+|CM ||'''13'''||[[Atiba Hutchinson]] ([[Captain (association football)|c]]) || || {{suboff|72}}
+|-
+|CM ||'''7''' ||[[Stephen Eustáquio]] || || {{suboff|46}}
+|-
+|LM ||'''19'''||[[Alphonso Davies]]
+|-
+|RF ||'''11'''||[[Tajon Buchanan]] || {{yel|52}}
+|-
+|CF ||'''17'''||[[Cyle Larin]] || || {{suboff|46}}
+|-
+|LF ||'''20'''||[[Jonathan David]] || || {{suboff|72}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|MF ||'''21'''||[[Jonathan Osorio]] || || {{subon|46}}
+|-
+|MF ||'''15'''||[[Ismaël Koné (soccer, born 2002)|Ismaël Koné]] || || {{subon|46}}
+|-
+|MF ||'''10'''||[[Junior Hoilett]] || || {{subon|62}}
+|-
+|FW ||'''9''' ||[[Lucas Cavallini]] || || {{subon|72}}
+|-
+|DF ||'''3''' ||[[Sam Adekugbe]] || || {{subon|72}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|{{#invoke:flag|icon|ENG}} [[John Herdman]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Andrej Kramarić]] (Croatia)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/croatia-canada-luka-modric-alphonso-davies-andrej-kramaric-marko-livaja-fifa-world-cup-qatar-2022 |title=Davies breaks Canada duck but Croatia claim victory |publisher=[[FIFA]] |date=27 November 2022 |access-date=27 November 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Nicolás Taran ([[Uruguayan Football Association|Uruguay]])
+<br />Martín Soppi ([[Uruguayan Football Association|Uruguay]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[Kevin Ortega]] ([[Peruvian Football Federation|Peru]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Jesús Sánchez ([[Peruvian Football Federation|Peru]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Mauro Vigliano]] ([[Argentine Football Association|Argentina]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Leodán González]] ([[Uruguayan Football Association|Uruguay]])
+<br />Gabriel Chade ([[Argentine Football Association|Argentina]])
+<br />[[Julio Bascuñán]] ([[Football Federation of Chile|Chile]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Diego Bonfá ([[Argentine Football Association|Argentina]])
+|}
+
+===Croatia vs Belgium===
+The teams had previously faced each other eight times, most recently in 2021, a 1–0 win for Belgium in a friendly.
+
+The first half finished goalless, with the most noticeable incident coming when Croatia was awarded a penalty following a foul by [[Yannick Carrasco]] on [[Andrej Kramarić]], before being cancelled due to the [[Video assistant referee|VAR]] deeming [[Dejan Lovren]] marginally offside in the buildup to the call. Belgium, needing a victory to avoid elimination unless Canada defeated Morocco by four goals in the concurrent match played, would bring on record goalscorer [[Romelu Lukaku]] for the second period, marking his return to action following a spell out due to injury. Lukaku missed several notable chances to score, including a strike that hit the inside of the post, as Belgium was unable to capitalize on their opportunities and succumbed to a 0–0 draw, eliminating them after Morocco defeated Canada 2–1.<ref>{{cite news|url=https://www.skysports.com/football/news/11095/12757081/world-cup-2022-croatia-0-0-belgium-romelu-lukaku-misses-big-chances-as-roberto-martinezs-golden-generation-knocked-out-and-croatia-reach-last-16|title=Croatia 0-0 Belgium: Romelu Lukaku misses big chances as Roberto Martinez's 'golden generation' knocked out and Croatia reach last 16|publisher=Sky Sports|date=2 December 2022|access-date=2 December 2022}}</ref>
+
+<section begin=F5 />{{Football box
+|date       = {{Start date|2022|12|1|df=y}}
+|time       = 18:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|CRO}}
+|score      = {{score link|2022 FIFA World Cup Group F#Croatia vs Belgium|0–0}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|BEL}}
+|goals1     =
+|goals2     =
+|stadium    = [[Ahmad bin Ali Stadium]], [[Al Rayyan (city)|Al Rayyan]]
+|attendance = 43,984
+|referee    = [[Anthony Taylor (referee)|Anthony Taylor]] ([[The Football Association|England]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235478
+}}<section end=F5 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _cro22h
+ |pattern_b  = _cro22H
+ |pattern_ra = _cro22h
+ |pattern_sh =
+ |pattern_so = _cro22hl
+ |leftarm    = FFFFFF
+ |body       = FFFFFF
+ |rightarm   = FFFFFF
+ |shorts     = FFFFFF
+ |socks      = FFFFFF
+ |title      = Croatia
+}}
+|{{Football kit
+ |pattern_la = _bel22h
+ |pattern_b  = _bel22H
+ |pattern_ra = _bel22h
+ |pattern_sh = _bel22h
+ |pattern_so = _bel22hl
+ |leftarm    = 000000
+ |body       = FF0000
+ |rightarm   = 000000
+ |shorts     = 000000
+ |socks      = 000000
+ |title      = Belgium
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Dominik Livaković]]
+|-
+|RB ||'''22'''||[[Josip Juranović]]
+|-
+|CB ||'''6''' ||[[Dejan Lovren]]
+|-
+|CB ||'''20'''||[[Joško Gvardiol]]
+|-
+|LB ||'''19'''||[[Borna Sosa]]
+|-
+|DM ||'''11'''||[[Marcelo Brozović]]
+|-
+|CM ||'''10'''||[[Luka Modrić]] ([[Captain (association football)|c]])
+|-
+|CM ||'''8''' ||[[Mateo Kovačić]] || || {{suboff|90+2}}
+|-
+|RF ||'''9''' ||[[Andrej Kramarić]] || || {{suboff|64}}
+|-
+|CF ||'''14'''||[[Marko Livaja]] || || {{suboff|64}}
+|-
+|LF ||'''4''' ||[[Ivan Perišić]]
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|FW ||'''16'''||[[Bruno Petković]] || || {{subon|64}}
+|-
+|MF ||'''15'''||[[Mario Pašalić]] || || {{subon|64}}
+|-
+|MF ||'''7''' ||[[Lovro Majer]] || || {{subon|90+2}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Zlatko Dalić]]
+|}
+|valign="top"|[[File:CRO-BEL 2022-12-01.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Thibaut Courtois]]
+|-
+|RB ||'''15'''||[[Thomas Meunier]] || || {{suboff|87}}
+|-
+|CB ||'''2''' ||[[Toby Alderweireld]]
+|-
+|CB ||'''5''' ||[[Jan Vertonghen]]
+|-
+|LB ||'''21'''||[[Timothy Castagne]]
+|-
+|CM ||'''19'''||[[Leander Dendoncker]] || {{yel|67}} || {{suboff|72}}
+|-
+|CM ||'''6''' ||[[Axel Witsel]]
+|-
+|RW ||'''7''' ||[[Kevin De Bruyne]] ([[Captain (association football)|c]])
+|-
+|AM ||'''14'''||[[Dries Mertens]] || || {{suboff|46}}
+|-
+|LW ||'''11'''||[[Yannick Carrasco]] || || {{suboff|72}}
+|-
+|CF ||'''17'''||[[Leandro Trossard]] || || {{suboff|59}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|FW ||'''9''' ||[[Romelu Lukaku]] || || {{subon|46}}
+|-
+|MF ||'''16'''||[[Thorgan Hazard]] || || {{subon|59}}
+|-
+|FW ||'''25'''||[[Jérémy Doku]] || || {{subon|72}}
+|-
+|MF ||'''8''' ||[[Youri Tielemans]] || || {{subon|72}}
+|-
+|FW ||'''10'''||[[Eden Hazard]] || || {{subon|87}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|{{#invoke:flag|icon|ESP}} [[Roberto Martínez]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Luka Modrić]] (Croatia)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/belgium-croatia-kevin-de-bruyne-luka-modric-romelu-lukaku-roberto-martinez-zlatko-dalic-fifa-world-cup-qatar-2022 |title=Belgium out after Croatia stalemate |publisher=[[FIFA]] |date=1 December 2022 |access-date=1 December 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Gary Beswick ([[The Football Association|England]])
+<br />Adam Nunn ([[The Football Association|England]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[István Kovács (referee)|István Kovács]] ([[Romanian Football Federation|Romania]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Mihai Artene ([[Romanian Football Federation|Romania]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Marco Fritz]] ([[German Football Association|Germany]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Tomasz Kwiatkowski]] ([[Polish Football Association|Poland]])
+<br />[[Rafael Foltyn]] ([[German Football Association|Germany]])
+<br />[[Benoit Millot]] ([[French Football Federation|France]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />[[Jan Seidel]] ([[German Football Association|Germany]])
+|}
+
+===Canada vs Morocco===
+The teams had previously faced each other three times, most recently in 2016, a friendly won 4–0 by Morocco.
+
+Morocco took an early lead through [[Hakim Ziyech]] after a misplaced pass by Canada goalkeeper [[Milan Borjan]] allowed him to score with a chip over the goalkeeper from outside the penalty area. They doubled their advantage in the 23rd minute with a goal from [[Youssef En-Nesyri]] when he ran on to a pass to score with a low finish to the right corner of the net from the right. In the final few minutes of the first half, Canada pulled a goal back when [[Nayef Aguerd]] diverted a low cross in from [[Sam Adekugbe]] on the left into his own net, marking the first own goal of the tournament as well as the first conceded by Morocco. Although Canada captain [[Atiba Hutchinson]]'s header from a corner would strike the bar and the goal line in the second half, Morocco held on to win the match 2–1.<ref>{{cite news|url=https://www.bbc.com/sport/football/63739247|title=Canada 1 Morocco 2|website=BBC Sport|date=1 December 2022|access-date=1 December 2022}}</ref>
+
+Morocco thus finished top of Group F with seven points, reaching the knockout stage for a second time and a first since [[1986 FIFA World Cup|1986]]. Canada, meanwhile, joined hosts [[Qatar national football team|Qatar]] as the only teams to exit the tournament without a single point, and remained winless in their World Cup history, adding on to the three defeats they suffered in [[Canada at the FIFA World Cup#1986 FIFA World Cup|1986]].
+
+<section begin=F6 />{{Football box
+|date       = {{Start date|2022|12|1|df=y}}
+|time       = 18:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|CAN}}
+|score      = {{score link|2022 FIFA World Cup Group F#Canada vs Morocco|1–2}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|MAR}}
+|goals1     =
+*[[Nayef Aguerd|Aguerd]] {{goal|40|o.g.}}
+|goals2     =
+*[[Hakim Ziyech|Ziyech]] {{goal|4}}
+*[[Youssef En-Nesyri|En-Nesyri]] {{goal|23}}
+|stadium    = [[Al Thumama Stadium]], [[Doha]]
+|attendance = 43,102
+|referee    = [[Raphael Claus]] ([[Brazilian Football Confederation|Brazil]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235479
+}}<section end=F6 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _nikestrike3ur
+ |pattern_b  = _can22H
+ |pattern_ra = _nikestrike3ur
+ |pattern_sh =
+ |pattern_so =
+ |leftarm    = FF0000
+ |body       = FF0000
+ |rightarm   = FF0000
+ |shorts     = FF0000
+ |socks      = FF0000
+ |title      = Canada
+}}
+|{{Football kit
+ |pattern_la = _mar22a
+ |pattern_b  = _mar22A
+ |pattern_ra = _mar22a
+ |pattern_sh = _mar22a
+ |pattern_so = _mar22al
+ |leftarm    = FFFFFF
+ |body       = FFFFFF
+ |rightarm   = FFFFFF
+ |shorts     = FFFFFF
+ |socks      = FFFFFF
+ |title      = Morocco
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''18'''||[[Milan Borjan]] ([[Captain (association football)|c]])
+|-
+|RB ||'''2''' ||[[Alistair Johnston]]
+|-
+|CB ||'''5''' ||[[Steven Vitória]] || {{yel|84}}
+|-
+|CB ||'''4''' ||[[Kamal Miller]]
+|-
+|LB ||'''3''' ||[[Sam Adekugbe]] || {{yel|45+2}} || {{suboff|60}}
+|-
+|RM ||'''19'''||[[Alphonso Davies]]
+|-
+|CM ||'''21'''||[[Jonathan Osorio]] || {{yel|26}} || {{suboff|65}}
+|-
+|CM ||'''14'''||[[Mark-Anthony Kaye]] || || {{suboff|60}}
+|-
+|LM ||'''11'''||[[Tajon Buchanan]]
+|-
+|SS||'''10'''||[[Junior Hoilett]] || {{yel|7}} || {{suboff|76}}
+|-
+|CF ||'''17'''||[[Cyle Larin]] || || {{suboff|60}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|FW ||'''20'''||[[Jonathan David]] || || {{subon|60}}
+|-
+|MF ||'''13'''||[[Atiba Hutchinson]] || || {{subon|60}}
+|-
+|MF ||'''15'''||[[Ismaël Koné (soccer, born 2002)|Ismaël Koné]] || || {{subon|60}}
+|-
+|DF ||'''22'''||[[Richie Laryea]] || || {{subon|65}}
+|-
+|MF ||'''24'''||[[David Wotherspoon (footballer, born 1990)|David Wotherspoon]] || || {{subon|76}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|{{#invoke:flag|icon|ENG}} [[John Herdman]]
+|}
+|valign="top"|[[File:CAN-MAR 2022-12-01.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Yassine Bounou]]
+|-
+|RB ||'''2''' ||[[Achraf Hakimi]] || || {{suboff|85}}
+|-
+|CB ||'''5''' ||[[Nayef Aguerd]]
+|-
+|CB ||'''6''' ||[[Romain Saïss]] ([[Captain (association football)|c]])
+|-
+|LB ||'''3''' ||[[Noussair Mazraoui]]
+|-
+|DM ||'''4''' ||[[Sofyan Amrabat]]
+|-
+|CM ||'''8''' ||[[Azzedine Ounahi]] || || {{suboff|76}}
+|-
+|CM ||'''11'''||[[Abdelhamid Sabiri]] || || {{suboff|65}}
+|-
+|RF ||'''7''' ||[[Hakim Ziyech]] || || {{suboff|76}}
+|-
+|CF ||'''19'''||[[Youssef En-Nesyri]]
+|-
+|LF ||'''17'''||[[Sofiane Boufal]] || || {{suboff|65}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|MF ||'''14'''||[[Zakaria Aboukhlal]] || || {{subon|65}}
+|-
+|MF ||'''15'''||[[Selim Amallah]] || || {{subon|65}}
+|-
+|FW ||'''9''' ||[[Abderrazak Hamdallah]] || || {{subon|76}}
+|-
+|DF ||'''18'''||[[Jawad El Yamiq]] || || {{subon|76}}
+|-
+|MF ||'''26'''||[[Yahya Jabrane]] || || {{subon|85}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Walid Regragui]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Achraf Hakimi]] (Morocco)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/canada-morocco-review-group-f-fifa-world-cup-qatar-2022 |title=Morocco edge Canada to win Group F |publisher=[[FIFA]] |date=1 December 2022 |access-date=1 December 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Rodrigo Figueiredo ([[Brazilian Football Confederation|Brazil]])
+<br />Danilo Simon Manis ([[Brazilian Football Confederation|Brazil]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[Yoshimi Yamashita]] ([[Japan Football Association|Japan]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Michael Orué ([[Peruvian Football Federation|Peru]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Julio Bascuñán]] ([[Football Federation of Chile|Chile]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Juan Martínez Munuera]] ([[Royal Spanish Football Federation|Spain]])
+<br />Roberto Díaz Pérez del Palomar ([[Royal Spanish Football Federation|Spain]])
+<br />[[Leodan Gonzalez]] ([[Uruguayan Football Association|Uruguay]]) 
+<br />'''[[Video assistant referee#Assistant video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Pau Cebrián Devís ([[Royal Spanish Football Federation|Spain]])
+|}
+
+==Discipline==
+Fair play points would have been used as tiebreakers if teams' overall and head-to-head records were tied. These were calculated based on yellow and red cards received in all group matches as follows:<ref name=" regulations"/>
+*first yellow card: −1 point;
+*indirect red card (second yellow card): −3 points;
+*direct red card: −4 points;
+*yellow card and direct red card: −5 points;
+
+Only one of the above deductions was applied to a player in a single match.
+
+{| class="wikitable sortable" style="text-align:center;"
+|-
+!rowspan=2|Team
+!colspan=4 style="border-left:3px solid gray"|Match 1
+!colspan=4 style="border-left:3px solid gray"|Match 2
+!colspan=4 style="border-left:3px solid gray"|Match 3
+!rowspan=2 style="border-left:3px solid gray"|Points
+|-
+!style="border-left:3px solid gray"|{{yel}}
+!{{sent off|2}}
+!{{sent off|0}}
+!{{sent off|1}}
+!style="border-left:3px solid gray"|{{yel}}
+!{{sent off|2}}
+!{{sent off|0}}
+!{{sent off|1}}
+!style="border-left:3px solid gray"|{{yel}}
+!{{sent off|2}}
+!{{sent off|0}}
+!{{sent off|1}}
+|-
+|align=left|{{#invoke:flagg|main|unpe|avar=fb|CRO}}
+|style="border-left:3px solid gray"|  ||  ||  || 
+|style="border-left:3px solid gray"| 2 ||  ||  ||  
+|style="border-left:3px solid gray"|  ||  ||  || 
+!style="border-left:3px solid gray"| −2
+|-
+|align=left|{{#invoke:flagg|main|unpe|avar=fb|MAR}}
+|style="border-left:3px solid gray"| 1 ||  ||  || 
+|style="border-left:3px solid gray"| 1 ||  ||  || 
+|style="border-left:3px solid gray"|  ||  ||  || 
+!style="border-left:3px solid gray"| −2
+|-
+|align=left|{{#invoke:flagg|main|unpe|avar=fb|BEL}}
+|style="border-left:3px solid gray"| 3 ||  ||  || 
+|style="border-left:3px solid gray"| 1 ||  ||  || 
+|style="border-left:3px solid gray"| 1 ||  ||  || 
+!style="border-left:3px solid gray"| −5
+|-
+|align=left|{{#invoke:flagg|main|unpe|avar=fb|CAN}}
+|style="border-left:3px solid gray"| 2 ||  ||  || 
+|style="border-left:3px solid gray"| 2 ||  ||  || 
+|style="border-left:3px solid gray"| 4 ||  ||  || 
+!style="border-left:3px solid gray"| −8
+|}
+
+==See also==
+*[[Belgium at the FIFA World Cup]]
+*[[Canada at the FIFA World Cup]]
+*[[Croatia at the FIFA World Cup]]
+*[[Morocco at the FIFA World Cup]]
+
+==References==
+{{reflist}}
+
+==External links==
+{{Commons category}}
+* {{Official website|https://www.fifa.com/tournaments/mens/worldcup/qatar2022}}
+
+{{2022 FIFA World Cup}}
+
+{{DEFAULTSORT:Group F}}
+[[Category:2022 FIFA World Cup]]
+[[Category:Belgium at the 2022 FIFA World Cup]]
+[[Category:Canada at the 2022 FIFA World Cup]]
+[[Category:Morocco at the 2022 FIFA World Cup]]
+[[Category:Croatia at the 2022 FIFA World Cup]]
+[[Category:FIFA World Cup group stages]]

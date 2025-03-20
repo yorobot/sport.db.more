@@ -1,0 +1,1096 @@
+{{Short description|none}}
+[[File:2022 FIFA World Cup Match 24, Argentina v Mexico - 04.jpg | thumb|right | Argentina playing against Mexico]]
+{{Use dmy dates|date=March 2022}}
+Group C of the [[2022 FIFA World Cup]] took place from 22 to 30 November 2022.<ref name="match schedule">{{cite web |url=https://digitalhub.fifa.com/m/464f16f856f5ed05/original/FIFA-World-Cup-Qatar-2022-Match-Schedule.pdf |title=FIFA World Cup Qatar 2022 – Match Schedule |website=FIFA.com |publisher=Fédération Internationale de Football Association |date=11 August 2022 |access-date=11 August 2022}}</ref> The group consisted of eventual champions [[Argentina national football team|Argentina]], [[Saudi Arabia national football team|Saudi Arabia]], [[Mexico national football team|Mexico]] and [[Poland national football team|Poland]]. The top two teams, Argentina and Poland, advanced to the [[2022 FIFA World Cup knockout stage#Round of 16|round of 16]]. This marked the first time that Mexico did not advance past the first round since [[1978 FIFA World Cup Group 2|1978]].<ref name="regulations">{{cite web |url=https://digitalhub.fifa.com/m/2744a0a5e3ded185/original/FIFA-World-Cup-Qatar-2022-Regulations_EN.pdf |title=Regulations – FIFA World Cup Qatar 2022 |website=FIFA.com |publisher=Fédération Internationale de Football Association |date=15 December 2021 |access-date=30 March 2022}}</ref>
+
+==Teams==
+The teams were decided by the [[2022 FIFA World Cup seeding|World Cup draw]] that took place on 1 April 2022.<ref name=draw>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/qatar-2022-all-qualified-teams-groups-dates-match-schedule-tickets-more |publisher=FIFA |title=Qatar 2022 all qualified teams, groups and match schedule}}</ref> The group was set to receive one team from each pot, which sorted all World Cup teams by position on the [[FIFA Men's World Ranking|FIFA World Rankings]].<ref name=draw/>
+{| class="wikitable sortable"
+|-
+|+FIFA World Cup Group C draw<ref>{{Cite web|url=https://www.sportingnews.com/us/soccer/news/world-cup-2022-group-b-draw-teams-schedule-fixtures-times/acptybvjxmt2t8vvxqaiojan|title=World Cup 2022 Group B: Match schedule, fixtures, times and dates for England, USA, Iran, Wales in Qatar|website=www.sportingnews.com}}</ref>
+!rowspan=2| Draw position
+!rowspan=2| Team
+!rowspan=2| Pot
+!rowspan=2| Confederation
+!rowspan=2| Method of<br />qualification
+!rowspan=2| Date of<br />qualification
+!rowspan=2 data-sort-type="number"| Finals<br />appearance
+!rowspan=2| Last<br />appearance
+!rowspan=2| Previous best<br />performance
+!colspan=2| [[FIFA Men's World Ranking|FIFA Rankings]]<ref>{{cite web |url=https://www.fifa.com/fifa-world-ranking/men |title=Men's Ranking |publisher=[[FIFA]] |access-date=21 November 2022}}</ref>
+|-
+! March 2022{{refn|group=nb|The rankings of March 2022 were used for [[2022 FIFA World Cup seeding|seeding for the final draw]].}}
+! October 2022
+|-
+| C1 || style=white-space:nowrap | {{#invoke:flagg|main|unpe|avar=fb|ARG}} || 1 || [[CONMEBOL]] || [[2022 FIFA World Cup qualification (CONMEBOL)|CONMEBOL round robin]] runners-up || 16 November 2021 || 18th || [[2018 FIFA World Cup|2018]] || data-sort-value="8.2" | '''Winners''' ([[1978 FIFA World Cup|1978]], [[1986 FIFA World Cup|1986]]) || 4 || 3
+|-
+| C2 || style=white-space:nowrap | {{#invoke:flagg|main|unpe|avar=fb|KSA}} || 4 || [[Asian Football Confederation|AFC]] || [[2022 FIFA World Cup qualification – AFC third round#Group B|AFC third round Group B]] winners || 24 March 2022 || 6th || [[2018 FIFA World Cup|2018]] || data-sort-value="3.1" | Round of 16 ([[1994 FIFA World Cup|1994]]) || 49 || 51
+|-
+| C3 || style=white-space:nowrap | {{#invoke:flagg|main|unpe|avar=fb|MEX}} || 2 || [[CONCACAF]] || [[2022 FIFA World Cup qualification – CONCACAF third round|CONCACAF third round]] runners-up || 30 March 2022 || 17th || [[2018 FIFA World Cup|2018]] || data-sort-value="4.2" | Quarter-finals ([[1970 FIFA World Cup|1970]], [[1986 FIFA World Cup|1986]]) || 9 || 13
+|-
+| C4 || style=white-space:nowrap | {{#invoke:flagg|main|unpe|avar=fb|POL}} || 3 || [[UEFA]] || [[2022 FIFA World Cup qualification – UEFA second round#Path B|UEFA second round Path B]] winners || 29 March 2022 || 9th || [[2018 FIFA World Cup|2018]] || data-sort-value="6.2" | Third place ([[1974 FIFA World Cup|1974]], [[1982 FIFA World Cup|1982]]) || 26 || 26
+|}
+'''Notes'''
+{{reflist|group=nb}}
+
+==Standings==
+{{2022 FIFA World Cup group tables|Group C}}
+
+In the [[2022 FIFA World Cup knockout stage#Round of 16|round of 16]]:
+* The winners of Group C, Argentina, advanced to play the runners-up of [[2022 FIFA World Cup Group D|Group D]], [[Australia men's national soccer team|Australia]].
+* The runners-up of Group C, Poland, advanced to play the winners of [[2022 FIFA World Cup Group D|Group D]], [[France national football team|France]].
+
+==Matches==
+All times listed are local, [[Arabia Standard Time|AST]] ([[UTC+03:00|UTC+3]]).<ref name="match schedule"/>
+
+===Argentina vs Saudi Arabia===
+The teams had faced each other four times prior to the tournament, most recently in 2012, a 0–0 draw in a friendly.
+
+Argentina took the lead in the 10th minute with a penalty from [[Lionel Messi]], awarded for a foul on [[Leandro Paredes]], which he rolled into the left corner. Argentina would have three further first-half goals ruled out for marginal offsides, once from Messi and twice from [[Lautaro Martínez]]. In the second half, Saudi Arabia would quickly find an equalizer, with [[Saleh Al-Shehri]] converting a low shot into the net's right corner in the 48th minute.<ref>{{cite web|url=https://www.bbc.com/sport/football/63631779|title= Argentina 1 Saudi Arabia 2|date=22 November 2022|work=BBC Sport|access-date=23 November 2022}}</ref> Saudi Arabia then took the lead five minutes later when [[Salem Al-Dawsari]] curled the ball into the right corner of the net from just inside the penalty area. Following nearly fourteen minutes of stoppage time caused by a delay in the match due to Saudi defender [[Yasser Al-Shahrani]] colliding with his own goalkeeper [[Mohammed Al-Owais]], Saudi Arabia managed to see out the victory.<ref>{{cite web|url=https://www.theguardian.com/football/2022/nov/22/argentina-saudi-arabia-world-cup-group-c-match-report|title=Saudi Arabia stun Argentina as Salem al-Dawsari winner crowns comeback|date=22 November 2022|work=The Guardian|access-date=23 November 2022}}</ref>
+
+Saudi Arabia's victory ended Argentina's 36-match unbeaten streak, dating back to 2019.<ref>{{cite news|url=https://www.nytimes.com/live/2022/11/22/sports/argentina-saudi-arabia-score-world-cup|title=How Saudi Arabia Pulled Off a Huge Upset, Humbling Argentina, 2–1|first=Rory|last=Smith|publisher=The New York Times|date=22 November 2022}}</ref> According to [[Gracenote]], the win was the "most surprising" in World Cup history, with many calling it one of the biggest World Cup upsets of all time.<ref>{{cite web|url=https://edition.cnn.com/2022/11/22/football/saudi-arabia-argentina-world-cup-upsets-spt-intl/index.html|title=Saudi Arabia's victory over Argentina is the greatest upset in World Cup history, says data company|date=22 November 2022|publisher=CNN|access-date=23 November 2022}}</ref> This was also the first World Cup since [[1990 FIFA World Cup|1990]] in which Argentina [[1990 FIFA World Cup Group B#Argentina vs Cameroon|lost their opening match]]. Following their eventual victory in the [[2022 FIFA World Cup final|final]], Argentina became just the second side to win the tournament despite losing their first game; [[Spain national football team|Spain]] did the same in [[2010 FIFA World Cup|2010]] after [[2010 FIFA World Cup Group H#Spain vs Switzerland|losing their opener against Switzerland]].<ref>{{cite web|url=https://en.as.com/soccer/have-any-nations-in-t-he-past-lost-their-opening-world-cup-match-but-gone-on-to-become-champions-n/|title=Have any nations in the past lost their opening World Cup match, but gone on to become champions?|publisher=AS|date=22 November 2022|access-date=20 December 2022}}</ref>
+<section begin=C1 />{{Football box
+|date       = {{Start date|2022|11|22|df=y}}
+|time       = 13:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|ARG}}
+|score      = {{score link|2022 FIFA World Cup Group C#Argentina vs Saudi Arabia|1–2}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|KSA}}
+|goals1     =
+*[[Lionel Messi|Messi]] {{goal|10|pen.}}
+|goals2     =
+*[[Saleh Al-Shehri|Al-Shehri]] {{goal|48}}
+*[[Salem Al-Dawsari|S. Al-Dawsari]] {{goal|53}}
+|stadium    = [[Lusail Stadium]], [[Lusail]]
+|attendance = 88,012
+|referee    = [[Slavko Vinčić]] ([[Football Association of Slovenia|Slovenia]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235461
+}}<section end=C1 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _arg22h
+ |pattern_b  = _arg22H
+ |pattern_ra = _arg22h
+ |pattern_sh = _arg22h
+ |pattern_so = _arg22h2
+ |leftarm    = FFFFFF
+ |body       = FFFFFF
+ |rightarm   = FFFFFF
+ |shorts     = 000000
+ |socks      = 000000
+ |title      = Argentina
+}}
+|{{Football kit
+ |pattern_la = _ksa22a
+ |pattern_b  = _ksa22A
+ |pattern_ra = _ksa22a
+ |pattern_sh =
+ |pattern_so = _ksa22h
+ |leftarm    = 015A55
+ |body       = 015A55
+ |rightarm   = 015A55
+ |shorts     = FFFFFF
+ |socks      = FFFFFF
+ |title      = <span class="nowrap">Saudi Arabia</span>
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''23'''||[[Emiliano Martínez]]
+|-
+|RB ||'''26'''||[[Nahuel Molina]]
+|-
+|CB ||'''13'''||[[Cristian Romero (footballer, born 1998)|Cristian Romero]] || || {{suboff|59}}
+|-
+|CB ||'''19'''||[[Nicolás Otamendi]]
+|-
+|LB ||'''3''' ||[[Nicolás Tagliafico]] || || {{suboff|71}}
+|-
+|CM ||'''7''' ||[[Rodrigo De Paul]]
+|-
+|CM ||'''5''' ||[[Leandro Paredes]] || || {{suboff|59}}
+|-
+|RW ||'''11'''||[[Ángel Di María]]
+|-
+|LW ||'''17'''||[[Papu Gómez]] || || {{suboff|59}}
+|-
+|CF ||'''10'''||[[Lionel Messi]] ([[Captain (association football)|c]])
+|-
+|CF ||'''22'''||[[Lautaro Martínez]]
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|DF ||'''25'''||[[Lisandro Martínez]] || || {{subon|59}}
+|-
+|FW ||'''9''' ||[[Julián Álvarez (footballer)|Julián Álvarez]] || || {{subon|59}}
+|-
+|MF ||'''24'''||[[Enzo Fernández]] || || {{subon|59}}
+|-
+|MF ||'''8''' ||[[Marcos Acuña]] || || {{subon|71}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Lionel Scaloni]]
+|}
+|valign="top"|[[File:ARG-KSA 2022-11-22.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''21'''||[[Mohammed Al-Owais]] || {{yel|90+2}}
+|-
+|RB ||'''12'''||[[Saud Abdulhamid]] || {{yel|82}}
+|-
+|CB ||'''17'''||[[Hassan Al-Tambakti]]
+|-
+|CB ||'''5''' ||[[Ali Al-Bulaihi]] || {{yel|75}}
+|-
+|LB ||'''13'''||[[Yasser Al-Shahrani]] || || {{suboff|90+9}}
+|-
+|DM ||'''8''' ||[[Abdulellah Al-Malki]] || {{yel|67}}
+|-
+|RM ||'''9''' ||[[Firas Al-Buraikan]] || || {{suboff|89}}
+|-
+|CM ||'''7''' ||[[Salman Al-Faraj]] ([[Captain (association football)|c]]) || || {{suboff|45+4}}
+|-
+|CM ||'''23'''||[[Mohamed Kanno]]
+|-
+|LM ||'''10'''||[[Salem Al-Dawsari]] || {{yel|79}}
+|-
+|CF ||'''11'''||[[Saleh Al-Shehri]] || || {{suboff|78}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|MF ||'''18'''||[[Nawaf Al-Abed]] || {{yel|88}} || {{subon|45+4}} || {{suboff|89}}
+|-
+|DF ||'''2''' ||[[Sultan Al-Ghannam]] || || {{subon|78}}
+|-
+|DF ||'''4''' ||[[Abdulelah Al-Amri]] || || || {{subon|89}}
+|-
+|FW ||'''25'''||[[Haitham Asiri]] || || {{subon|89}}
+|-
+|DF ||'''6''' ||[[Mohammed Al-Breik]] || || {{subon|90+9}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|{{#invoke:flag|icon|FRA}} [[Hervé Renard]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Mohammed Al-Owais]] (Saudi Arabia)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/world-cup-qatar-2022-argentina-v-saudi-arabia-match-report-review-first-game-group-e-result |title=Saudis stun Argentina in historic upset |publisher=[[FIFA]] |access-date=22 November 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Tomaž Klančnik ([[Football Association of Slovenia|Slovenia]])
+<br />Andraž Kovačič ([[Football Association of Slovenia|Slovenia]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[Maguette Ndiaye]] ([[Senegalese Football Federation|Senegal]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />El Hadj Malick Samba ([[Senegalese Football Federation|Senegal]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Pol van Boekel]] ([[Royal Dutch Football Association|Netherlands]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Bastian Dankert]] ([[German Football Association|Germany]])
+<br />Abdelhak Etchiali ([[Algerian Football Federation|Algeria]])
+<br />[[Ricardo de Burgos Bengoetxea]] ([[Royal Spanish Football Federation|Spain]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Nicolas Danos ([[French Football Federation|France]])
+|}
+
+===Mexico vs Poland===
+The teams had met eight times previously, including once in the World Cup, a [[1978 FIFA World Cup Group 2#Poland vs Mexico|3–1 first group stage victory]] for Poland in [[1978 FIFA World Cup|1978]], and most recently in 2017, a 1–0 win for Mexico in a friendly.<ref>{{cite web | url=https://www.11v11.com/teams/poland/tab/opposingTeams/opposition/Mexico/ | title=Poland national football team: Record v Mexico }}</ref>
+
+The only shot on target of the first half was from Mexico's [[Jorge Sánchez (footballer, born 1997)|Jorge Sánchez]], which was punched away by goalkeeper [[Wojciech Szczęsny]].<ref>{{cite web|url=https://www.bbc.com/sport/football/63631782|title=Lewandowski misses penalty as Mexico hold Poland|work=BBC Sport|date=22 November 2022}}</ref> In the 54th minute, Poland captain [[Robert Lewandowski]] was awarded a penalty after the [[video assistant referee]] judged that [[Héctor Moreno]] had fouled him inside the penalty area.<ref>{{cite web |date=22 November 2022 |title=Mexico 0–0 Poland: World Cup 2022 – as it happened |url=https://www.theguardian.com/football/live/2022/nov/22/mexico-v-poland-world-cup-2022-live-score-updates |access-date=29 November 2022 |work=The Guardian}}</ref> [[Guillermo Ochoa]] saved the penalty taken by Lewandowski, diving to his left, and the game stayed goalless.<ref>{{cite web |last=Child |first=Elizabeth Melimopoulos,Rohan Sharma,David |title=Mexico vs Poland 0–0: World Cup 2022 – as it happened |url=https://www.aljazeera.com/sports/liveblog/2022/11/22/live-mexico-vs-poland-world-cup-2022 |access-date=29 November 2022 |website=Al Jazeera.com}}</ref><ref>{{cite web |date=21 November 2022 |title=Lewandowski, duas vezes ganhador do prêmio The Best, busca 1º gol em Copas |url=https://www1.folha.uol.com.br/esporte/2022/11/lewandowski-duas-vezes-ganhador-do-premio-the-best-busca-1o-gol-em-copas.shtml |access-date=29 November 2022 |website=Folha de S.Paulo |language=pt}}</ref> At the other end of the field, Mexico had a chance to win the game as a ball into the penalty area from [[Edson Álvarez]] went towards [[Henry Martín]] who attempted to head the ball beyond Szczęsny; however, the Poland goalkeeper managed to beat the ball away.<ref name=MexPol/>
+
+Poland failed to win their opening match in a World Cup for the eighth time, having won just one of their nine opening tournament games, though for the first time since [[1986 FIFA World Cup|1986]], they did not lose the opener.<ref name=MexPol>{{cite web| url=https://www.espn.co.uk/football/match/_/gameId/633793 |title=Mexico vs. Poland – Football Match Summary – November 22, 2022 |website=ESPN}}</ref>
+<section begin=C2 />{{Football box
+|date       = {{Start date|2022|11|22|df=y}}
+|time       = 19:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|MEX}}
+|score      = {{score link|2022 FIFA World Cup Group C#Mexico vs Poland|0–0}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|POL}}
+|goals1     =
+|goals2     =
+|stadium    = [[Stadium 974]], [[Doha]]
+|attendance = 39,369
+|referee    = [[Chris Beath]] ([[Football Australia|Australia]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235463
+}}<section end=C2 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _mex22h
+ |pattern_b  = _mex22H
+ |pattern_ra = _mex22h
+ |pattern_sh = _mex22h
+ |pattern_so = _mex22h
+ |leftarm    = 009F50
+ |body       = 009F50
+ |rightarm   = 009F50
+ |shorts     = FFFFFF
+ |socks      = FF0000
+ |title      = Mexico
+}}
+|{{Football kit
+ |pattern_la = _pol22h
+ |pattern_b  = _pol22H
+ |pattern_ra = _pol22h
+ |pattern_sh = _pol22h
+ |pattern_so =
+ |leftarm    = FFFFFF
+ |body       = FFFFFF
+ |rightarm   = FFFFFF
+ |shorts     = F40018
+ |socks      = FFFFFF
+ |title      = Poland
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''13'''||[[Guillermo Ochoa]] ([[Captain (association football)|c]])
+|-
+|RB ||'''19'''||[[Jorge Sánchez (footballer, born 1997)|Jorge Sánchez]] || {{yel|29}}
+|-
+|CB ||'''3''' ||[[César Montes]]
+|-
+|CB ||'''15'''||[[Héctor Moreno]] || {{yel|56}}
+|-
+|LB ||'''23'''||[[Jesús Gallardo]]
+|-
+|DM ||'''4''' ||[[Edson Álvarez]]
+|-
+|CM ||'''16'''||[[Héctor Herrera]] || || {{suboff|71}}
+|-
+|CM ||'''24'''||[[Luis Chávez (footballer)|Luis Chávez]]
+|-
+|RF ||'''22'''||[[Hirving Lozano]]
+|-
+|CF ||'''20'''||[[Henry Martín]] || || {{suboff|71}}
+|-
+|LF ||'''10'''||[[Alexis Vega (footballer, born 1997)|Alexis Vega]] || || {{suboff|84}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|MF ||'''8''' ||[[Carlos Alberto Rodríguez|Carlos Rodríguez]] || || {{subon|71}}
+|-
+|FW ||'''9''' ||[[Raúl Jiménez]] || || {{subon|71}}
+|-
+|FW ||'''21'''||[[Uriel Antuna]] || || {{subon|84}}
+|-
+|colspan=3|'''Other disciplinary actions:'''
+|-
+|{{abbr|TS|Technical staff member (assistant manager)}} ||'''—''' ||{{#invoke:flag|icon|ARG}} [[Jorge Theiler]] || {{yel|61}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|{{#invoke:flag|icon|ARG}} [[Gerardo Martino]]
+|}
+|valign="top"|[[File:MEX-POL 2022-11-22.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Wojciech Szczęsny]]
+|-
+|CB ||'''18'''||[[Bartosz Bereszyński]]
+|-
+|CB ||'''15'''||[[Kamil Glik]]
+|-
+|CB ||'''14'''||[[Jakub Kiwior]]
+|-
+|DM ||'''10'''||[[Grzegorz Krychowiak]]
+|-
+|CM ||'''13'''||[[Jakub Kamiński]]
+|-
+|CM ||'''19'''||[[Sebastian Szymański]] || || {{suboff|71}}
+|-
+|RW ||'''2''' ||[[Matty Cash]]
+|-
+|LW ||'''21'''||[[Nicola Zalewski]] || || {{suboff|46}}
+|-
+|CF ||'''20'''||[[Piotr Zieliński]] || || {{suboff|87}}
+|-
+|CF ||'''9''' ||[[Robert Lewandowski]] ([[Captain (association football)|c]])
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|MF ||'''6''' ||[[Krystian Bielik]] || || {{subon|46}}
+|-
+|MF ||'''24'''||[[Przemysław Frankowski]] || {{yel|76}} || {{subon|71}}
+|-
+|FW ||'''7''' ||[[Arkadiusz Milik]] || || {{subon|87}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Czesław Michniewicz]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Guillermo Ochoa]] (Mexico)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/mexico-poland-robert-lewandowski-guillermo-ochoa-report-fifa-world-cup-qatar-2022 |title=Ochoa thwarts Lewandowski in Mexico-Poland stalemate |publisher=[[FIFA]] |date=22 November 2022 |access-date=22 November 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Anton Shchetinin ([[Football Australia|Australia]])
+<br />Ashley Beecham ([[Football Australia|Australia]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[Stéphanie Frappart]] ([[French Football Federation|France]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Neuza Back ([[Brazilian Football Confederation|Brazil]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Shaun Evans (referee)|Shaun Evans]] ([[Football Australia|Australia]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Nicolás Gallo (referee)|Nicolás Gallo]] ([[Colombian Football Federation|Colombia]])
+<br />Martín Soppi ([[Uruguayan Football Association|Uruguay]])
+<br />[[Juan Soto (referee)|Juan Soto]] ([[Venezuelan Football Federation|Venezuela]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Djibril Camara ([[Senegalese Football Federation|Senegal]])
+|}
+
+===Poland vs Saudi Arabia===
+The teams had previously faced each other four times, most recently in 2006, a 2–1 win for Poland in a friendly match.<ref>{{cite web | url=https://www.11v11.com/teams/poland/tab/opposingTeams/opposition/Saudi%20Arabia/ | title=Poland national football team: Record v Saudi%20Arabia |website=11v11 }}</ref>
+
+[[Piotr Zieliński]] scored the opening goal for Poland in the 39th minute when he shot high to the net from six yards out after the ball was passed from the right. At the end of the first half, [[Saleh Al-Shehri]] was fouled in the box and awarded a penalty kick. However, [[Salem Al-Dawsari]]'s attempt was saved by Polish goalkeeper [[Wojciech Szczęsny]] diving low to his right. In the second half, an error by [[Abdulellah Al-Malki]] led to [[Robert Lewandowski]] winning the ball and scoring his first World Cup goal in the 82nd minute shooting low to the net, as Poland would win the match 2–0.<ref>{{cite web|url=https://www.bbc.com/sport/football/63685897|title=Poland 2 Saudi Arabia 0|date=26 November 2022|work=BBC Sport|access-date=29 November 2022}}</ref>
+
+The result meant that Poland went unbeaten in their opening two World Cup games for the first time since 1986.<ref>{{cite web|url=https://theathletic.com/live-blogs/poland-saudi-arabia-score-2022-world-cup/3DcQrJniQ0nS/|title= World Cup result: How Poland beat Saudi Arabia 2–0 to move to the top of Group C
+|date=26 November 2022|work=The Athletic|access-date=26 November 2022}}</ref>
+<section begin="C3" />{{Football box
+|date       = {{Start date|2022|11|26|df=y}}
+|time       = 16:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|POL}}
+|score      = {{score link|2022 FIFA World Cup Group C#Poland vs Saudi Arabia|2–0}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|KSA}}
+|goals1     =
+*[[Piotr Zieliński|Zieliński]] {{goal|39}}
+*[[Robert Lewandowski|Lewandowski]] {{goal|82}}
+|goals2     =
+|stadium    = [[Education City Stadium]], [[Al Rayyan (city)|Al Rayyan]]
+|attendance = 44,259
+|referee    = [[Wilton Sampaio]] ([[Brazilian Football Confederation|Brazil]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235459
+}}<section end=C3 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _pol22h
+ |pattern_b  = _pol22H
+ |pattern_ra = _pol22h
+ |pattern_sh = _pol22h
+ |pattern_so =
+ |leftarm    = FFFFFF
+ |body       = FFFFFF
+ |rightarm   = FFFFFF
+ |shorts     = F40018
+ |socks      = FFFFFF
+ |title      = Poland
+}}
+|{{Football kit
+ |pattern_la = _ksa22a
+ |pattern_b  = _ksa22A
+ |pattern_ra = _ksa22a
+ |pattern_sh = _ksa22a
+ |pattern_so = _ksa22a
+ |leftarm    = 015A55
+ |body       = 015A55
+ |rightarm   = 015A55
+ |shorts     = 015A55
+ |socks      = 015A55
+ |title      = <span class="nowrap">Saudi Arabia</span>
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Wojciech Szczęsny]]
+|-
+|CB ||'''18'''||[[Bartosz Bereszyński]]
+|-
+|CB ||'''15'''||[[Kamil Glik]]
+|-
+|CB ||'''14'''||[[Jakub Kiwior]] || {{yel|15}}
+|-
+|RM ||'''2''' ||[[Matty Cash]] || {{yel|16}}
+|-
+|CM ||'''6''' ||[[Krystian Bielik]]
+|-
+|CM ||'''10'''||[[Grzegorz Krychowiak]]
+|-
+|LM ||'''24'''||[[Przemysław Frankowski]]
+|-
+|AM ||'''20'''||[[Piotr Zieliński]] || || {{suboff|63}}
+|-
+|CF ||'''7''' ||[[Arkadiusz Milik]] || {{yel|19}} || {{suboff|71}}
+|-
+|CF ||'''9''' ||[[Robert Lewandowski]] ([[Captain (association football)|c]])
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|MF ||'''13'''||[[Jakub Kamiński]] || || {{subon|63}}
+|-
+|FW ||'''23'''||[[Krzysztof Piątek]] || || {{subon|71}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Czesław Michniewicz]]
+|}
+|valign="top"|[[File:POL-KSA 2022-11-26.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''21'''||[[Mohammed Al-Owais]]
+|-
+|RB ||'''12'''||[[Saud Abdulhamid]]
+|-
+|CB ||'''4''' ||[[Abdulelah Al-Amri]] || {{yel|45+4}}
+|-
+|CB ||'''5''' ||[[Ali Al-Bulaihi]]
+|-
+|LB ||'''6''' ||[[Mohammed Al-Breik]] || || {{suboff|65}}
+|-
+|DM ||'''8''' ||[[Abdulellah Al-Malki]] || {{yel|20}} || {{suboff|85}}
+|-
+|CM ||'''16'''||[[Sami Al-Najei]] || || {{suboff|46}}
+|-
+|CM ||'''23'''||[[Mohamed Kanno]]
+|-
+|RW ||'''9''' ||[[Firas Al-Buraikan]]
+|-
+|LW ||'''10'''||[[Salem Al-Dawsari]] ([[Captain (association football)|c]])
+|-
+|CF ||'''11'''||[[Saleh Al-Shehri]] || || {{suboff|85}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|MF ||'''18'''||[[Nawaf Al-Abed]] || || {{subon|46}} || {{suboff|90+5}}
+|-
+|DF ||'''2''' ||[[Sultan Al-Ghannam]] || || {{subon|65}}
+|-
+|FW ||'''20'''||[[Abdulrahman Al-Aboud]] || || {{subon|85}}
+|-
+|MF ||'''24'''||[[Nasser Al-Dawsari]] || || {{subon|85}} 
+|-
+|FW ||'''19'''||[[Hattan Bahebri]] || || || {{subon|90+5}}
+|-
+|colspan=3|'''Other disciplinary actions:'''
+|-
+|{{abbr|TS|Technical staff member (assistant manager)}} ||'''—''' ||{{#invoke:flag|icon|FRA}} [[Laurent Bonadéi]] || {{yel|27}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|{{#invoke:flag|icon|FRA}} [[Hervé Renard]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Robert Lewandowski]] (Poland)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/poland-saudi-arabia-robert-lewandowski-wojciech-szczesny-herve-renard-fifa-world-cup-qatar-2022 |title=Lewandowski off the mark in Poland victory |publisher=[[FIFA]] |date=26 November 2022 |access-date=26 November 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Bruno Boschilia ([[Brazilian Football Confederation|Brazil]])
+<br />Bruno Pires ([[Brazilian Football Confederation|Brazil]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[Kevin Ortega]] ([[Peruvian Football Federation|Peru]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Michael Orué ([[Peruvian Football Federation|Peru]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Drew Fischer]] ([[Canadian Soccer Association|Canada]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Armando Villarreal]] ([[United States Soccer Federation|United States]])
+<br />Nicolás Taran ([[Uruguayan Football Association|Uruguay]])
+<br />[[Leodán González]] ([[Uruguayan Football Association|Uruguay]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Martín Soppi ([[Uruguayan Football Association|Uruguay]])
+|}
+
+===Argentina vs Mexico===
+{{see also|Argentina–Mexico football rivalry}}
+The teams had faced each other at the FIFA World Cup on three previous occasions, with Argentina winning all three matches: a [[1930 FIFA World Cup Group 1#Argentina vs Mexico|6–3 group stage victory]] in [[1930 FIFA World Cup|1930]], a [[2006 FIFA World Cup knockout stage#Argentina vs Mexico|2–1 round of 16 win]] in [[2006 FIFA World Cup|2006]], and another round of 16 victory by a [[2010 FIFA World Cup knockout stage#Argentina vs Mexico|3–1 scoreline]] in [[2010 FIFA World Cup|2010]].<ref>{{cite web | url=https://www.11v11.com/teams/argentina/tab/opposingTeams/opposition/Mexico/ | title=Argentina national football team: record v Mexico }}</ref>
+
+After a goalless first half,<ref>{{cite web|url=https://www.aljazeera.com/sports/liveblog/2022/11/26/live-argentina-vs-mexico-world-cup|title=Argentina 2 Mexico 0: As it happened|date=26 November 2022|publisher=Al Jazeera|access-date=29 November 2022}}</ref> [[Lionel Messi]] put Argentina in the lead in the 64th minute with a shot from outside the penalty area.<ref>{{cite web|url=https://www.theguardian.com/football/live/2022/nov/26/argentina-v-mexico-world-cup-2022-live-score-updates|title=Argentina 2 Mexico 0: As it happened|date=26 November 2022|work=The Guardian|access-date=29 November 2022}}</ref> [[Enzo Fernández]] made it 2–0 and secured the win in the 87th minute with a curled finish in the top right corner of the net. Messi's assist for Fernández's goal made him the first player to record assists at five different World Cups.<ref>{{cite web|url=https://www.bbc.com/sport/football/63685898|title=Argentina 2 Mexico 0|date=26 November 2022|work=BBC Sport|access-date=29 November 2022}}</ref> The match's reported attendance of 88,966 was the highest for a World Cup fixture since the 94,194 spectators at the [[Rose Bowl (stadium)|Rose Bowl]] for the [[1994 FIFA World Cup final|1994 final]].<ref>{{cite web|url=https://www.espn.com/soccer/report/_/gameId/633807|title=Lionel Messi, Enzo Fernandez keep Argentina's World Cup hopes alive with win over Mexico|website=ESPN|date=26 November 2022|access-date=29 November 2022}}</ref>
+
+<section begin=C4 />{{Football box
+|date       = {{Start date|2022|11|26|df=y}}
+|time       = 22:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|ARG}}
+|score      = {{score link|2022 FIFA World Cup Group C#Argentina vs Mexico|2–0}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|MEX}}
+|goals1     =
+*[[Lionel Messi|Messi]] {{goal|64}}
+*[[Enzo Fernández|Fernández]] {{goal|87}}
+|goals2     =
+|stadium    = [[Lusail Stadium]], [[Lusail]]
+|attendance = 88,966
+|referee    = [[Daniele Orsato]] ([[Italian Football Federation|Italy]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235462
+}}<section end=C4 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _arg22h
+ |pattern_b  = _arg22H
+ |pattern_ra = _arg22h
+ |pattern_sh = _arg22h
+ |pattern_so = _arg22h
+ |leftarm    = FFFFFF
+ |body       = FFFFFF
+ |rightarm   = FFFFFF
+ |shorts     = 000000
+ |socks      = FFFFFF
+ |title      = Argentina
+}}
+|{{Football kit
+ |pattern_la = _mex22h
+ |pattern_b  = _mex22H
+ |pattern_ra = _mex22h
+ |pattern_sh = _mex22h
+ |pattern_so = _mex22h
+ |leftarm    = 009F50
+ |body       = 009F50
+ |rightarm   = 009F50
+ |shorts     = FFFFFF
+ |socks      = FF0000
+ |title      = Mexico
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''23'''||[[Emiliano Martínez]]
+|-
+|RB ||'''4''' ||[[Gonzalo Montiel]] || {{yel|43}} || {{suboff|63}}
+|-
+|CB ||'''19'''||[[Nicolás Otamendi]]
+|-
+|CB ||'''25'''||[[Lisandro Martínez]]
+|-
+|LB ||'''8''' ||[[Marcos Acuña]]
+|-
+|CM ||'''7''' ||[[Rodrigo De Paul]]
+|-
+|CM ||'''18'''||[[Guido Rodríguez]] || || {{suboff|57}}
+|-
+|RW ||'''11'''||[[Ángel Di María]] || || {{suboff|69}}
+|-
+|LW ||'''20'''||[[Alexis Mac Allister]] || || {{suboff|69}}
+|-
+|CF ||'''10'''||[[Lionel Messi]] ([[Captain (association football)|c]])
+|-
+|CF ||'''22'''||[[Lautaro Martínez]] || || {{suboff|63}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|MF ||'''24'''||[[Enzo Fernández]] || || {{subon|57}}
+|-
+|FW ||'''9''' ||[[Julián Álvarez]] || || {{subon|63}}
+|-
+|DF ||'''26'''||[[Nahuel Molina]] || || {{subon|63}}
+|-
+|MF ||'''14'''||[[Exequiel Palacios]] || || {{subon|69}}
+|-
+|DF ||'''13'''||[[Cristian Romero (footballer, born 1998)|Cristian Romero]] || || {{subon|69}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Lionel Scaloni]]
+|}
+|valign="top"|[[File:ARG-MEX 2022-11-26.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''13'''||[[Guillermo Ochoa]]
+|-
+|CB ||'''2''' ||[[Néstor Araujo]] || {{yel|22}}
+|-
+|CB ||'''3''' ||[[César Montes]]
+|-
+|CB ||'''15'''||[[Héctor Moreno]]
+|-
+|RWB||'''26'''||[[Kevin Álvarez (footballer, born 1999)|Kevin Álvarez]] || || {{suboff|66}}
+|-
+|LWB||'''23'''||[[Jesús Gallardo]]
+|-
+|CM ||'''24'''||[[Luis Chávez (footballer)|Luis Chávez]]
+|-
+|CM ||'''16'''||[[Héctor Herrera]] || {{yel|66}}
+|-
+|CM ||'''18'''||[[Andrés Guardado]] ([[Captain (association football)|c]]) || || {{suboff|42}}
+|-
+|CF ||'''22'''||[[Hirving Lozano]] || || {{suboff|73}}
+|-
+|CF ||'''10'''||[[Alexis Vega (footballer, born 1997)|Alexis Vega]] || || {{suboff|66}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|MF ||'''14'''||[[Érick Gutiérrez]] || {{yel|50}} || {{subon|42}}
+|-
+|FW ||'''9''' ||[[Raúl Jiménez]] || || {{subon|66}}
+|-
+|FW ||'''21'''||[[Uriel Antuna]] || || {{subon|66}}
+|-
+|FW ||'''25'''||[[Roberto Alvarado]] || {{yel|89}} || {{subon|73}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|{{#invoke:flag|icon|ARG}} [[Gerardo Martino]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Lionel Messi]] (Argentina)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/argentina-mexico-lionel-messi-fifa-world-cup-qatar-2022 |title=Messi inspires Argentina to crucial Mexico victory |publisher=[[FIFA]] |date=27 November 2022 |access-date=27 November 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Ciro Carbone ([[Italian Football Federation|Italy]])
+<br />Alessandro Giallatini ([[Italian Football Federation|Italy]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[István Kovács (referee)|István Kovács]] ([[Romanian Football Federation|Romania]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Ovidiu Artene ([[Romanian Football Federation|Romania]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Massimiliano Irrati]] ([[Italian Football Federation|Italy]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Paolo Valeri]] ([[Italian Football Federation|Italy]])
+<br />Roberto Díaz Pérez del Palomar ([[Royal Spanish Football Federation|Spain]])
+<br />[[Jérôme Brisard]] ([[French Football Federation|France]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Jerson dos Santos ([[Angolan Football Federation|Angola]])
+|}
+
+===Poland vs Argentina===
+The teams had met eleven previous times, including twice in the World Cup; Poland's [[1974 FIFA World Cup Group 4#Poland vs Argentina|3–2 first group stage victory]] in [[1974 FIFA World Cup|1974]] and Argentina's [[1978 FIFA World Cup Group B#Argentina vs Poland|2–0 second group stage win]] in [[1978 FIFA World Cup|1978]].<ref>https://www.11v11.com/teams/argentina/tab/opposingTeams/opposition/Poland/</ref>
+
+Argentina were awarded a first-half penalty when Polish goalkeeper [[Wojciech Szczęsny]] was adjudged to have made illegal contact with [[Lionel Messi]] while attempting to punch the ball away. However, Szczęsny would then keep out Messi's subsequent spot kick, saving a penalty for the second match in a row. Szczęsny would nevertheless concede for the first time in the tournament after Argentina scored twice in the second half; the first goal came from [[Alexis Mac Allister]] with a low shot to the left corner immediately following the restart, and the second from [[Julián Álvarez]] with a shot to the top right of the net, as the Argentines won 2–0 and topped the group with six points, reaching the knockout stage for the thirteenth time in their last fourteen World Cup appearances.<ref>{{cite web|url=https://www.theguardian.com/football/live/2022/nov/30/poland-v-argentina-world-cup-2022-live|title=Poland 0 Argentina 2:As it happened|date=30 November 2022|work=The Guardian|access-date=1 December 2022}}</ref>
+
+Szczęsny became just the third goalkeeper to save multiple penalties at a single World Cup (excluding shoot-outs), following compatriot [[Jan Tomaszewski]] in [[1974 FIFA World Cup|1974]] and [[Brad Friedel]] in [[2002 FIFA World Cup|2002]]. Despite defeat, Poland would still join Argentina in the last 16 thanks to a superior goal difference to Mexico, ending their 36-year knockout stage drought.<ref>{{cite web |title=Argentina top group as Poland through on goal difference |work=BBC Sport |url=https://www.bbc.com/sport/football/63725317 |date=30 November 2022 |access-date=1 December 2022}}</ref><ref>{{cite news |title=Poland 0-2 Argentina: Julian Alvarez and Alexis Mac Allister seal win as both sides advance |work=Sky Sports |url=https://www.skysports.com/football/news/11095/12757067/world-cup-2022-poland-0-2-argentina-julian-alvarez-and-alexis-mac-allister-seal-win-as-both-sides-advance |date=1 December 2022 |access-date=1 December 2022}}</ref>
+<section begin=C5 />{{Football box
+|date       = {{Start date|2022|11|30|df=y}}
+|time       = 22:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|POL}}
+|score      = {{score link|2022 FIFA World Cup Group C#Poland vs Argentina|0–2}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|ARG}}
+|goals1     =
+|goals2     =
+*[[Alexis Mac Allister|Mac Allister]] {{goal|46}}
+*[[Julián Álvarez|Álvarez]] {{goal|67}}
+|stadium    = [[Stadium 974]], [[Doha]]
+|attendance = 44,089
+|referee    = [[Danny Makkelie]] ([[Royal Dutch Football Association|Netherlands]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235464
+}}<section end=C5 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _pol22h
+ |pattern_b  = _pol22H
+ |pattern_ra = _pol22h
+ |pattern_sh = _pol22h
+ |pattern_so =
+ |leftarm    = FFFFFF
+ |body       = FFFFFF
+ |rightarm   = FFFFFF
+ |shorts     = F40018
+ |socks      = FFFFFF
+ |title      = Poland
+}}
+|{{Football kit
+ |pattern_la = _arg22a
+ |pattern_b  = _arg22A
+ |pattern_ra = _arg22a
+ |pattern_sh = _arg22a
+ |pattern_so = _arg22a
+ |leftarm    = 1D1F76
+ |body       = 1D1F76
+ |rightarm   = 1D1F76
+ |shorts     = 1D1F76
+ |socks      = 1D1F76
+ |title      = Argentina
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Wojciech Szczęsny]]
+|-
+|RB ||'''2''' ||[[Matty Cash]]
+|-
+|CB ||'''15'''||[[Kamil Glik]]
+|-
+|CB ||'''14'''||[[Jakub Kiwior]]
+|-
+|LB ||'''18'''||[[Bartosz Bereszyński]] || || {{suboff|72}}
+|-
+|RM ||'''20'''||[[Piotr Zieliński]]
+|-
+|CM ||'''6''' ||[[Krystian Bielik]] || || {{suboff|62}}
+|-
+|CM ||'''10'''||[[Grzegorz Krychowiak]] || {{yel|78}} || {{suboff|83}}
+|-
+|LM ||'''24'''||[[Przemysław Frankowski]] || || {{suboff|46}}
+|-
+|CF ||'''9''' ||[[Robert Lewandowski]] ([[Captain (association football)|c]])
+|-
+|CF ||'''16'''||[[Karol Świderski]] || || {{suboff|46}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|MF ||'''26'''||[[Michał Skóraś]] || || {{subon|46}}
+|-
+|MF ||'''13'''||[[Jakub Kamiński]] || || {{subon|46}}
+|-
+|MF ||'''8'''||[[Damian Szymański]] || || {{subon|62}}
+|-
+|DF ||'''3''' ||[[Artur Jędrzejczyk]] || || {{subon|72}}
+|-
+|FW ||'''23'''||[[Krzysztof Piątek]] || || {{subon|83}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Czesław Michniewicz]]
+|}
+|valign="top"|[[File:POL-ARG 2022-11-30.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''23'''||[[Emiliano Martínez]]
+|-
+|RB ||'''26'''||[[Nahuel Molina]]
+|-
+|CB ||'''13'''||[[Cristian Romero (footballer, born 1998)|Cristian Romero]]
+|-
+|CB ||'''19'''||[[Nicolás Otamendi]]
+|-
+|LB ||'''8''' ||[[Marcos Acuña]] || {{yel|49}} || {{suboff|59}}
+|-
+|DM ||'''24'''||[[Enzo Fernández]] || || {{suboff|79}}
+|-
+|CM ||'''7''' ||[[Rodrigo De Paul]]
+|-
+|CM ||'''20'''||[[Alexis Mac Allister]] || || {{suboff|83}}
+|-
+|RF ||'''11'''||[[Ángel Di María]] || || {{suboff|59}}
+|-
+|CF||'''10'''||[[Lionel Messi]] ([[Captain (association football)|c]])
+|-
+|LF ||'''9''' ||[[Julián Álvarez]] || || {{suboff|79}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|MF ||'''5''' ||[[Leandro Paredes]] || || {{subon|59}}
+|-
+|DF ||'''3''' ||[[Nicolás Tagliafico]] || || {{subon|59}}
+|-
+|DF ||'''6''' ||[[Germán Pezzella]] || || {{subon|79}}
+|-
+|FW ||'''22'''||[[Lautaro Martínez]] || || {{subon|79}}
+|-
+|MF ||'''16'''||[[Thiago Almada]] || || {{subon|83}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Lionel Scaloni]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br /> [[Alexis Mac Allister]] (Argentina)<ref>{{cite news |title=Mac Allister: The Argentina star who flew in under the radar |url=https://www.fifa.com/fifaplus/en/articles/alexis-mac-allister-argentina-lionel-messi-lionel-scaloni-poland-fifa-world-cup-qatar-2022 |website=FIFA.com |publisher=Fédération Internationale de Football Association |accessdate=23 December 2022 }}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Hessel Steegstra ([[Royal Dutch Football Association|Netherlands]])
+<br />Jan de Vries ([[Royal Dutch Football Association|Netherlands]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[Saíd Martínez]] ([[National Autonomous Federation of Football of Honduras|Honduras]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Helpys Raymundo Feliz ([[Dominican Football Federation|Dominican Republic]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Pol van Boekel]] ([[Royal Dutch Football Association|Netherlands]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Bastian Dankert]] ([[German Football Association|Germany]])
+<br />Kathryn Nesbitt ([[United States Soccer Federation|United States]])
+<br />[[Juan Soto (referee)|Juan Soto]] ([[Venezuelan Football Federation|Venezuela]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Anton Shchetinin ([[Football Australia|Australia]])
+|}
+
+===Saudi Arabia vs Mexico===
+The teams had met five previous times, most recently in 1999, a 5–1 win for Mexico at the [[1999 FIFA Confederations Cup|FIFA Confederations Cup]].<ref>{{cite web | url=https://www.11v11.com/teams/saudi-arabia/tab/opposingTeams/opposition/Mexico/ | title=Saudi Arabia national football team: record v Mexico }}</ref>
+
+After a goalless first half, Mexico struck twice in the second half, first with a volley from a corner by [[Henry Martín]] in the 47th minute, and then with a thunderous free kick by [[Luis Chávez (footballer)|Luis Chávez]] in the 52nd minute. However, Mexico failed to find a third goal, which they needed to overtake Poland on goal difference; Mexico had received more [[penalty card|yellow cards]] than Poland and would have been eliminated on this basis if the teams finished level on points, goal difference, and goals scored. [[Salem Al-Dawsari]], however, would score for Saudi Arabia in the fifth minute of added time with a goal after a one-two, confirming both teams' elimination as Mexico claimed the 2–1 win.<ref name=SauMex>{{cite news |title=World Cup 2022 – Saudi Arabia 1–2 Mexico: Salem Al-Dawsari ends Mexican hopes with late goal |url=https://www.skysports.com/football/news/11095/12757068/world-cup-2022-saudi-arabia-1-2-mexico-salem-al-dawsari-ends-mexican-hopes-with-late-goal |access-date=1 December 2022 |publisher=Sky Sports}}</ref>
+
+This was the first time Mexico failed to advance to the knockout stage at a FIFA World Cup since [[1978 FIFA World Cup|1978]]; meanwhile, Saudi Arabia's knockout stage drought extended to 32 years, having failed to progress past the group stage since the country's tournament debut in [[1994 FIFA World Cup|1994]], standing as the second longest knockout stage drought after that of [[North Korea national football team|North Korea]].<ref name=SauMex/>
+
+<section begin=C6 />{{Football box
+|date       = {{Start date|2022|11|30|df=y}}
+|time       = 22:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|KSA}}
+|score      = {{score link|2022 FIFA World Cup Group C#Saudi Arabia vs Mexico|1–2}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|MEX}}
+|goals1     =
+*[[Salem Al-Dawsari|S. Al-Dawsari]] {{goal|90+5}}
+|goals2     =
+*[[Henry Martín|Martín]] {{goal|47}}
+*[[Luis Chávez (footballer)|Chávez]] {{goal|52}}
+|stadium    = [[Lusail Stadium]], [[Lusail]]
+|attendance = 84,985
+|referee    = [[Michael Oliver (referee)|Michael Oliver]] ([[The Football Association|England]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235460
+}}<section end=C6 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _ksa22h
+ |pattern_b  = _ksa22H
+ |pattern_ra = _ksa22h
+ |pattern_sh =
+ |pattern_so = _ksa22h
+ |leftarm    = FFFFFF
+ |body       = FFFFFF
+ |rightarm   = FFFFFF
+ |shorts     = FFFFFF
+ |socks      = FFFFFF
+ |title      = <span class="nowrap">Saudi Arabia</span>
+}}
+|{{Football kit
+ |pattern_la = _mex22h
+ |pattern_b  = _mex22H
+ |pattern_ra = _mex22h
+ |pattern_sh = _mex22h2
+ |pattern_so = _mex22h
+ |leftarm    = 009F50
+ |body       = 009F50
+ |rightarm   = 009F50
+ |shorts     = 009F50
+ |socks      = FF0000
+ |title      =  Mexico
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''21'''||[[Mohammed Al-Owais]]
+|-
+|CB ||'''17'''||[[Hassan Al-Tambakti]] || {{yel|52}}
+|-
+|CB ||'''4''' ||[[Abdulelah Al-Amri]] || {{yel|90+1}}
+|-
+|CB ||'''5''' ||[[Ali Al-Bulaihi]] || || {{suboff|37}}
+|-
+|RM ||'''2''' ||[[Sultan Al-Ghannam]] || || {{suboff|88}}
+|-
+|CM ||'''15'''||[[Ali Al-Hassan]] || {{yel|34}} || {{suboff|46}}
+|-
+|CM ||'''23'''||[[Mohamed Kanno]]
+|-
+|LM ||'''12'''||[[Saud Abdulhamid]]
+|-
+|RF ||'''9''' ||[[Firas Al-Buraikan]]
+|-
+|CF ||'''11'''||[[Saleh Al-Shehri]] || {{yel|28}} || {{suboff|62}}
+|-
+|LF ||'''10'''||[[Salem Al-Dawsari]] ([[Captain (association football)|c]])
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|MF ||'''26'''||[[Riyadh Sharahili]] || || {{subon|37}}
+|-
+|DF ||'''3''' ||[[Abdullah Madu]] || {{yel|81}} || {{subon|46}}
+|-
+|FW ||'''20'''||[[Abdulrahman Al-Aboud]] || || {{subon|62}}
+|-
+|FW ||'''19'''||[[Hattan Bahebri]] || {{yel|90+7}} || {{subon|88}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|{{#invoke:flag|icon|FRA}} [[Hervé Renard]]
+|}
+|valign="top"|[[File:KSA-MEX 2022-11-30.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''13'''||[[Guillermo Ochoa]] ([[Captain (association football)|c]])
+|-
+|RB ||'''19'''||[[Jorge Sánchez (footballer, born 1997)|Jorge Sánchez]] || || {{suboff|86}}
+|-
+|CB ||'''3''' ||[[César Montes]]
+|-
+|CB ||'''15'''||[[Héctor Moreno]]
+|-
+|LB ||'''23'''||[[Jesús Gallardo]]
+|-
+|CM ||'''4''' ||[[Edson Álvarez]] || {{yel|16}} || {{suboff|86}}
+|-
+|CM ||'''24'''||[[Luis Chávez (footballer)|Luis Chávez]]
+|-
+|RW ||'''22'''||[[Hirving Lozano]]
+|-
+|AM ||'''17'''||[[Orbelín Pineda]] || || {{suboff|77}}
+|-
+|LW ||'''10'''||[[Alexis Vega (footballer, born 1997)|Alexis Vega]] || || {{suboff|46}}
+|-
+|CF ||'''20'''||[[Henry Martín]] || || {{suboff|77}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|FW ||'''21'''||[[Uriel Antuna]] || || {{subon|46}}
+|-
+|FW ||'''9''' ||[[Raúl Jiménez]] || || {{subon|77}}
+|-
+|MF ||'''8''' ||[[Carlos Alberto Rodríguez|Carlos Rodríguez]] || || {{subon|77}}
+|-
+|DF ||'''26'''||[[Kevin Álvarez (footballer, born 1999)|Kevin Álvarez]] || || {{subon|86}}
+|-
+|FW ||'''11'''||[[Rogelio Funes Mori]] || || {{subon|86}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|{{#invoke:flag|icon|ARG}} [[Gerardo Martino]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Luis Chávez (footballer)|Luis Chávez]] (Mexico)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/world-cup-2022-saudi-arabia-mexico-match-review |title=Mexico fall just short after dramatic second half |publisher=[[FIFA]] |date=30 November 2022 |access-date=30 November 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Stuart Burt ([[The Football Association|England]])
+<br />Simon Bennett ([[The Football Association|England]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[István Kovács (referee)|István Kovács]] ([[Romanian Football Federation|Romania]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Vasile Marinescu ([[Romanian Football Federation|Romania]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Massimiliano Irrati]] ([[Italian Football Federation|Italy]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Paolo Valeri]] ([[Italian Football Federation|Italy]])
+<br />Alessandro Giallatini ([[Italian Football Federation|Italy]])
+<br />[[Alejandro Hernández Hernández]] ([[Royal Spanish Football Federation|Spain]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Ciro Carbone ([[Italian Football Federation|Italy]])
+|}
+
+==Discipline==
+Fair play points would have been used as tiebreakers if the overall and head-to-head records of teams were tied. These were calculated based on yellow and red cards received in all group matches as follows:<ref name="regulations"/>
+*first yellow card: −1 point;
+*indirect red card (second yellow card): −3 points;
+*direct red card: −4 points;
+*yellow card and direct red card: −5 points;
+
+Only one of the above deductions was applied to a player in a single match.
+
+{| class="wikitable sortable" style="text-align:center;"
+|-
+!rowspan=2|Team
+!colspan=4 style="border-left:3px solid gray"|Match 1
+!colspan=4 style="border-left:3px solid gray"|Match 2
+!colspan=4 style="border-left:3px solid gray"|Match 3
+!rowspan=2 style="border-left:3px solid gray"|Points
+|-
+!style="border-left:3px solid gray"|{{yel}}
+!{{sent off|2}}
+!{{sent off|0}}
+!{{sent off|1}}
+!style="border-left:3px solid gray"|{{yel}}
+!{{sent off|2}}
+!{{sent off|0}}
+!{{sent off|1}}
+!style="border-left:3px solid gray"|{{yel}}
+!{{sent off|2}}
+!{{sent off|0}}
+!{{sent off|1}}
+|-
+|align=left|{{#invoke:flagg|main|unpe|avar=fb|ARG}}
+|style="border-left:3px solid gray"|  ||  ||  || 
+|style="border-left:3px solid gray"| 1 ||  ||  || 
+|style="border-left:3px solid gray"| 1 ||  ||  || 
+!style="border-left:3px solid gray"| −2
+|-
+|align=left|{{#invoke:flagg|main|unpe|avar=fb|POL}}
+|style="border-left:3px solid gray"| 1 ||  ||  || 
+|style="border-left:3px solid gray"| 3 ||  ||  ||  
+|style="border-left:3px solid gray"| 1 ||  ||  || 
+!style="border-left:3px solid gray"| −5
+|-
+|align=left|{{#invoke:flagg|main|unpe|avar=fb|MEX}}
+|style="border-left:3px solid gray"| 2 ||  ||  || 
+|style="border-left:3px solid gray"| 4 ||  ||  || 
+|style="border-left:3px solid gray"| 1 ||  ||  || 
+!style="border-left:3px solid gray"| −7
+|-
+|align=left|{{#invoke:flagg|main|unpe|avar=fb|KSA}}
+|style="border-left:3px solid gray"| 6 ||  ||  || 
+|style="border-left:3px solid gray"| 2 ||  ||  || 
+|style="border-left:3px solid gray"| 6 ||  ||  || 
+!style="border-left:3px solid gray"| −14
+|}
+
+==See also==
+*[[Argentina at the FIFA World Cup]]
+*[[Mexico at the FIFA World Cup]]
+*[[Poland at the FIFA World Cup]]
+*[[Saudi Arabia at the FIFA World Cup]]
+
+==References==
+{{reflist}}
+
+==External links==
+{{Commons category}}
+* {{Official website|https://www.fifa.com/tournaments/mens/worldcup/qatar2022}}
+
+{{2022 FIFA World Cup}}
+
+{{DEFAULTSORT:Group C}}
+[[Category:2022 FIFA World Cup]]
+[[Category:Argentina at the 2022 FIFA World Cup]]
+[[Category:Saudi Arabia at the 2022 FIFA World Cup]]
+[[Category:Mexico at the 2022 FIFA World Cup]]
+[[Category:Poland at the 2022 FIFA World Cup]]
+[[Category:FIFA World Cup group stages]]

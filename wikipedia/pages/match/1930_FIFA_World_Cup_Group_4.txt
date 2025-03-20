@@ -1,0 +1,388 @@
+{{Short description|Football tournament group stage}}
+{{Use dmy dates|date=May 2018}}
+'''Group 4 of the 1930 FIFA World Cup''' began on 13 July 1930 and concluded on 20 July 1930. [[United States men's national soccer team|United States]] won the group, and advanced to the semi-finals. [[Paraguay national football team|Paraguay]] and [[Belgium national football team|Belgium]] failed to advance.
+
+The [[United States men's national soccer team|United States]] started out by defeating [[Belgium national football team|Belgium]] 3-0 in the joint-opening World Cup match. They then beat [[Paraguay national football team|Paraguay]] by the same score with the first ever World Cup hat-trick. The final match decided second place in which [[Paraguay national football team|Paraguay]] won 1-0.
+
+==Standings==
+<onlyinclude>{{#invoke:sports table|main|style=WDL
+|section=Standings
+
+|show_positions=y
+|winpoints=2
+|update=complete
+|team1=USA|name_USA={{fb|USA|1912}}
+|team2=PAR|name_PAR={{fb|PAR|1842}}
+|team3=BEL|name_BEL={{fb|BEL}}
+|win_USA=2|draw_USA=0|loss_USA=0|gf_USA=6|ga_USA=0
+|win_PAR=1|draw_PAR=0|loss_PAR=1|gf_PAR=1|ga_PAR=3
+|win_BEL=0|draw_BEL=0|loss_BEL=2|gf_BEL=0|ga_BEL=4
+
+|res_col_header=Q
+|result1=Q |result2=
+|col_Q=green1 |text_Q=Advance to the [[1930 FIFA World Cup knockout stage|knockout stage]]
+
+|source=[https://www.espn.com.sg/football/table/_/league/FIFA.WORLD/season/1930 ESPN]
+}}</onlyinclude>
+
+==Matches==
+
+===United States vs Belgium===
+<onlyinclude>{{#invoke:football box|main|section=4-1
+|date = 13 July 1930
+|time = 15:00 UYT ([[UTC−03:30]])
+|team1 = {{fb-rt|USA|1912}}
+|score = 3–0
+|report = [https://www.fifa.com/worldcup/archive/uruguay1930/matches/match/1090 Report]
+|team2 = {{fb|BEL}}
+|goals1 = [[Bart McGhee|McGhee]] {{goal|23}}</onlyinclude><ref name="RSSSF4">This is one of several goals for which the statistical details are disputed. The goalscorers and timings used here are those of FIFA, the official record. Some other sources, such as RSSSF, state a different scorer, timing, or both. See {{cite web |title=World Cup 1930 finals |work=[[Rec.Sport.Soccer Statistics Foundation]] (RSSSF) |url=https://www.rsssf.org/tables/30full.html | accessdate=15 August 2010 }}</ref><onlyinclude><br />[[Tom Florie|Florie]] {{goal|45}}</onlyinclude><ref name="RSSSF4"/><onlyinclude><br />[[Bert Patenaude|Patenaude]] {{goal|69}}</onlyinclude><ref name="RSSSF4"/><onlyinclude>
+|stadium = [[Estadio Gran Parque Central|Estadio Parque Central]], Montevideo
+|attendance = 18,346
+|referee = [[José Macías (football referee)|José Macías]] ([[Argentine Football Association|Argentina]])
+}}</onlyinclude>
+{{col-begin}}
+{{col-2}}
+{{Football kit
+| pattern_la = 
+| pattern_b  = 
+| pattern_ra = 
+| pattern_sh = 
+| pattern_so = _hoops_blue_red
+| leftarm    = ffffff
+| body       = ffffff
+| rightarm   = ffffff
+| shorts     = ffffff
+| socks      = ffffff
+| title      = United States
+}}
+{{col-2}}
+{{Football kit
+| pattern_la = _goldborder
+| pattern_b  = _collargold_laced
+| pattern_ra = _goldborder
+| pattern_sh = 
+| pattern_so = _redtop_2whitestripes
+| leftarm    = ff0000
+| body       = ff0000
+| rightarm   = ff0000
+| shorts     = 000000
+| socks      = 000000
+| title      = Belgium
+}}
+{{col-end}}
+{{col-begin}}
+{{col-2}}
+{| style="font-size:90%; margin:0.2em auto;" cellspacing="0" cellpadding="0"
+|-
+!width="25"|
+|-
+|GK ||[[Jimmy Douglas (American soccer)|Jimmy Douglas]]
+|-
+|DF ||[[Alexander Wood (soccer)|Alexander Wood]]
+|-
+|DF ||[[George Moorhouse]]
+|-
+|HB ||[[Jimmy Gallagher]]
+|-
+|HB ||[[Raphael Tracey]]
+|-
+|HB ||[[Andy Auld]]
+|-
+|FW ||[[Jim Brown (soccer, born 1908)|Jim Brown]]
+|-
+|FW ||[[Billy Gonsalves]]
+|-
+|FW ||[[Bert Patenaude]]
+|-
+|FW ||[[Tom Florie]] ([[Captain (association football)|c]])
+|-
+|FW ||[[Bart McGhee]]
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=4| [[Robert Millar (soccer)|Robert Millar]]
+|}
+{{col-2}}
+{| style="font-size: 90%" cellspacing="0" cellpadding="0" align=center
+|-
+!width="25"|
+|-
+|GK ||[[Arnold Badjou]]
+|-
+|DF ||[[Theodore Nouwens]]
+|-
+|DF ||[[Nic Hoydonckx]]
+|-
+|HB ||[[Pierre Braine]] ([[Captain (association football)|c]])
+|-
+|HB ||[[August Hellemans]]
+|-
+|HB ||[[Jean De Clercq]]
+|-
+|FW ||[[Louis Versyp]]
+|-
+|FW ||[[Bernard Voorhoof]]
+|-
+|FW ||[[Ferdinand Adams]]
+|-
+|FW ||[[Jacques Moeschal (footballer)|Jacques Moeschal]]
+|-
+|FW ||[[Jan Diddens]]
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=4|[[Hector Goetinck]]
+|}
+{{col-end}}
+{| width=100% style="font-size: 90%"
+|
+'''Linesmen:'''
+<br />[[Francisco Mateucci]] ([[Uruguayan Football Association|Uruguay]])
+<br />[[Alberto Warnken]] ([[Chilean Football Federation|Chile]])
+|}
+
+===United States vs Paraguay===
+<onlyinclude>{{#invoke:football box|main|section=4-2
+|date = 17 July 1930
+|time = 14:45 UYT ([[UTC−03:30]])
+|team1 = {{fb-rt|USA|1912}}
+|score = 3–0
+|report = [https://www.fifa.com/worldcup/archive/uruguay1930/matches/match/1097 Report]
+|team2 = {{fb|PAR|1842}}
+|goals1 = [[Bert Patenaude|Patenaude]] {{goal|10||15||50}}</onlyinclude><ref>FIFA initially credited the goal in the 15th minute to [[Tom Florie]], but changed it to Patenaude in 2006. During previous years, it was also listed as an own goal by [[Aurelio González (footballer)|Aurelio González]] ([https://www.rsssf.org/tables/30full.html RSSSF]).</ref><onlyinclude>
+|stadium = [[Estadio Gran Parque Central|Estadio Parque Central]], Montevideo
+|attendance = 18,306
+|referee = [[José Macías (football referee)|José Macías]] ([[Argentine Football Association|Argentina]])
+}}</onlyinclude>
+{{col-begin}}
+{{col-2}}
+{{Football kit
+| pattern_la = 
+| pattern_b  = 
+| pattern_ra = 
+| pattern_sh = 
+| pattern_so = _hoops_blue_red
+| leftarm    = ffffff
+| body       = ffffff
+| rightarm   = ffffff
+| shorts     = ffffff
+| socks      = ffffff
+| title      = United States
+}}
+{{col-2}}
+{{Football kit
+| pattern_la = _aljazira1415t
+| pattern_b  = _whitestripes3
+| pattern_ra = _aljazira1415t
+| pattern_sh = 
+| pattern_so = _2_white_stripes
+| leftarm    = ffffff
+| body       = ff0000
+| rightarm   = ffffff
+| shorts     = 0000ff
+| socks      = 000000
+| title      = Paraguay
+}}
+{{col-end}}
+
+{{col-begin}}
+{{col-2}}
+{| style="font-size:90%; margin:0.2em auto;" cellspacing="0" cellpadding="0"
+|-
+!width="25"|
+|-
+|GK ||[[Jimmy Douglas (American soccer)|Jimmy Douglas]]
+|-
+|DF ||[[Alexander Wood (soccer)|Alexander Wood]]
+|-
+|DF ||[[George Moorhouse]]
+|-
+|HB ||[[Jimmy Gallagher]]
+|-
+|HB ||[[Raphael Tracey]]
+|-
+|HB ||[[Andy Auld]]
+|-
+|FW ||[[Jim Brown (soccer, born 1908)|Jim Brown]]
+|-
+|FW ||[[Billy Gonsalves]]
+|-
+|FW ||[[Bert Patenaude]]
+|-
+|FW ||[[Tom Florie]] ([[Captain (association football)|c]])
+|-
+|FW ||[[Bart McGhee]]
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=4|[[Robert Millar (soccer)|Robert Millar]]
+|}
+{{col-2}}
+{| style="font-size: 90%" cellspacing="0" cellpadding="0" align=center
+|-
+!width="25"|
+|-
+|GK ||[[Modesto Denis]]
+|-
+|DF ||[[José Miracca]]
+|-
+|DF ||[[Quiterio Olmedo]]
+|-
+|HB ||[[Romildo Etcheverry]]
+|-
+|HB ||[[Eusebio Díaz]]
+|-
+|HB ||[[Francisco Aguirre (Paraguayan footballer)|Francisco Aguirre]]
+|-
+|FW ||[[Lino Nessi]]
+|-
+|FW ||[[Diógenes Domínguez]]
+|-
+|FW ||[[Aurelio González (footballer)|Aurelio González]]
+|-
+|FW ||[[Delfín Benítez Cáceres]]
+|-
+|FW ||[[Luis Vargas Peña]] ([[Captain (association football)|c]])
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=4|{{flagicon|ARG|alt}} [[José Durand Laguna]]
+|}
+{{col-end}}
+{| width=100% style="font-size: 90%"
+|
+'''Linesmen:'''
+<br />[[Martin Aphesteguy]] ([[Uruguayan Football Association|Uruguay]])
+<br />[[Anibal Tejada]] ([[Uruguayan Football Association|Uruguay]])
+|}
+
+===Paraguay vs Belgium===
+<onlyinclude>{{#invoke:football box|main|section=4-3
+|date = 20 July 1930
+|time = 15:00 UYT ([[UTC−03:30]])
+|team1 = {{fb-rt|PAR|1842}}
+|score = 1–0
+|report = [https://www.fifa.com/worldcup/archive/uruguay1930/matches/match/1089 Report]
+|team2 = {{fb|BEL}}
+|goals1 = [[Luis Vargas Peña|Vargas Peña]] {{goal|40}}</onlyinclude><ref name="RSSSF4"/><onlyinclude>
+|stadium = [[Estadio Centenario]], Montevideo
+|attendance = 12,000
+|referee = [[Ricardo Vallarino]] ([[Uruguayan Football Association|Uruguay]])
+}}</onlyinclude>
+{{col-begin}}
+{{col-2}}
+{{Football kit
+| pattern_la = _aljazira1415t
+| pattern_b  = _whitestripes3
+| pattern_ra = _aljazira1415t
+| pattern_sh = 
+| pattern_so = _2_white_stripes
+| leftarm    = ffffff
+| body       = ff0000
+| rightarm   = ffffff
+| shorts     = 0000ff
+| socks      = 000000
+| title      = Paraguay
+}}
+{{col-2}}
+{{Football kit
+| pattern_la = _goldborder
+| pattern_b  = _collargold_laced
+| pattern_ra = _goldborder
+| pattern_sh = 
+| pattern_so = _redtop_2whitestripes
+| leftarm    = ff0000
+| body       = ff0000
+| rightarm   = ff0000
+| shorts     = 000000
+| socks      = 000000
+| title      = Belgium
+}}
+{{col-end}}
+
+{{col-begin}}
+{{col-2}}
+{| style="font-size:90%; margin:0.2em auto;" cellspacing="0" cellpadding="0"
+|-
+!width="25"|
+|-
+|GK ||[[Pedro Benítez (goalkeeper)|Pedro Benítez]]
+|-
+|DF ||[[Salvador Flores (footballer)|Salvador Flores]]
+|-
+|DF ||[[Quiterio Olmedo]]
+|-
+|HB ||[[Santiago Benítez]]
+|-
+|HB ||[[Eusebio Díaz]]
+|-
+|HB ||[[Tranquilino Garcete]]
+|-
+|FW ||[[Aurelio González (footballer)|Aurelio González]]
+|-
+|FW ||[[Delfín Benítez Cáceres]]
+|-
+|FW ||[[Gerardo Romero]]
+|-
+|FW ||[[Lino Nessi]]
+|-
+|FW ||[[Luis Vargas Peña]] ([[Captain (association football)|c]])
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=4|{{flagicon|ARG|alt}} [[José Durand Laguna]]
+|}
+{{col-2}}
+{| style="font-size: 90%" cellspacing="0" cellpadding="0" align=center
+|-
+!width="25"|
+|-
+|GK ||[[Arnold Badjou]]
+|-
+|DF ||[[Henri De Deken]]
+|-
+|DF ||[[Nic Hoydonckx]]
+|-
+|DF ||[[Theodore Nouwens]]
+|-
+|HB ||[[Pierre Braine]] ([[Captain (association football)|c]])
+|-
+|HB ||[[August Hellemans]]
+|-
+|FW ||[[Ferdinand Adams]]
+|-
+|FW ||[[Gérard Delbeke]]
+|-
+|FW ||[[Jan Diddens]]
+|-
+|FW ||[[Jacques Moeschal (footballer)|Jacques Moeschal]]
+|-
+|FW ||[[Louis Versyp]]
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=4| [[Hector Goetinck]]
+|}
+{{col-end}}
+{| width=100% style="font-size: 90%"
+|
+'''Linesmen:'''
+<br />[[José Macías (football referee)|José Macías]] ([[Argentine Football Association|Argentina]])
+<br />[[Domingo Lombardi]] ([[Uruguayan Football Association|Uruguay]])
+|}
+
+==See also==
+*[[Belgium at the FIFA World Cup]]
+*[[Paraguay at the FIFA World Cup]]
+*[[United States at the FIFA World Cup]]
+
+==References==
+{{reflist}}
+
+{{1930 FIFA World Cup}}
+
+{{DEFAULTSORT:World Cup}}
+[[Category:1930 FIFA World Cup|Group 4]]
+[[Category:Belgium at the 1930 FIFA World Cup|Group]]
+[[Category:United States at the 1930 FIFA World Cup|Group]]
+[[Category:Paraguay at the 1930 FIFA World Cup|Group]]

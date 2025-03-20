@@ -1,0 +1,387 @@
+{{Short description|Football tournament group stage}}
+{{Use dmy dates|date=May 2018}}
+'''Group 2 of the 1930 FIFA World Cup''' began on 14 July 1930 and concluded on 20 July 1930. [[Yugoslavia national football team|Yugoslavia]] won the group, and advanced to the semi-finals. [[Brazil national football team|Brazil]] and [[Bolivia national football team|Bolivia]] failed to advance.
+
+During the first match, [[Yugoslavia national football team|Yugoslavia]] unexpectedly beat group favorites, [[Brazil national football team|Brazil]] by A score of 2-1, they then proceeded to dominate their next match against [[Bolivia national football team|Bolivia]] netting 4 goals. [[Brazil national football team|Brazil]] also beat [[Bolivia national football team|Bolivia]] with an A score of 4-0.
+
+==Standings==
+<onlyinclude>{{#invoke:sports table|main|style=WDL
+|section=Standings
+
+|show_positions=y
+|winpoints=2
+|update=complete
+|team1=YUG|name_YUG={{fb|Kingdom of Yugoslavia}}
+|team2=BRA|name_BRA={{fb|BRA|1889}}
+|team3=BOL|name_BOL={{fb|BOL|civil}}
+|win_YUG=2|draw_YUG=0|loss_YUG=0|gf_YUG=6|ga_YUG=1
+|win_BRA=1|draw_BRA=0|loss_BRA=1|gf_BRA=5|ga_BRA=2
+|win_BOL=0|draw_BOL=0|loss_BOL=2|gf_BOL=0|ga_BOL=8
+
+|res_col_header=Q
+|result1=Q
+|col_Q=green1 |text_Q=Advance to the [[1930 FIFA World Cup knockout stage|knockout stage]]
+
+|source=[https://www.espn.com.sg/football/table/_/league/FIFA.WORLD/season/1930 ESPN]
+}}</onlyinclude>
+
+==Matches==
+
+===Yugoslavia vs Brazil===
+<onlyinclude>{{#invoke:football box|main|section=2-1
+|date = 14 July 1930
+|time = 12:45 UYT ([[UTC−03:30]])
+|team1 = {{fb-rt|Kingdom of Yugoslavia}}
+|score = 2–1
+|report = [https://www.fifa.com/worldcup/archive/uruguay1930/matches/match/1093 Report]
+|team2 = {{fb|BRA|1889}}
+|goals1 =[[Aleksandar Tirnanić|Tirnanić]] {{goal|21}}<br />[[Ivan Bek|Bek]] {{goal|30}}
+|goals2 = [[Preguinho]] {{goal|62}}
+|stadium = [[Estadio Gran Parque Central|Estadio Parque Central]], Montevideo
+|attendance = 24,059
+|referee = [[Aníbal Tejada]] ([[Uruguayan Football Association|Uruguay]])
+}}</onlyinclude>
+{{col-begin}}
+{{col-2}}
+{{Football kit
+| pattern_la           = 
+| pattern_b             = _old_laced
+| pattern_ra            = 
+| pattern_sh            = 
+| pattern_so            = _blackhalf
+| leftarm               = 0099ff
+| body                 =  0099ff
+| rightarm              = 0099ff
+| shorts               = ffffff
+| socks                 = ffffff
+ | title           = Yugoslavia
+}}
+{{col-2}}
+{{Football kit
+| pattern_la        = 
+| pattern_b         = _collarblue_laced
+| pattern_ra        = 
+| pattern_sh        = 
+| pattern_so        = _brasil1930
+| leftarm           = ffffff
+| body             = ffffff
+| rightarm           = ffffff
+| shorts             = 0000FF
+| socks              = 000000
+|title            =  Brazil
+}}
+{{col-end}}
+{{col-begin}}
+{{col-2}}
+{| style="font-size:90%; margin:0.2em auto;" cellspacing="0" cellpadding="0"
+|-
+!width="25"| !!width="25"|
+|-
+|GK || ||[[Milovan Jakšić]]
+|-
+|DF || ||[[Milutin Ivković]] ([[Captain (association football)|c]])
+|-
+|DF || ||[[Dragoslav Mihajlović]]
+|-
+|MF || ||[[Milorad Arsenijević]]
+|-
+|MF || ||[[Ljubiša Stefanović]]
+|-
+|MF || ||[[Momčilo Đokić]]
+|-
+|FW || ||[[Aleksandar Tirnanić]]
+|-
+|FW || ||[[Blagoje Marjanović]]
+|-
+|FW || ||[[Ivan Bek]]
+|-
+|FW || ||[[Đorđe Vujadinović]]
+|-
+|FW || ||[[Branislav Sekulić]]
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=4| [[Boško Simonović]]
+|}
+{{col-2}}
+{| style="font-size: 90%" cellspacing="0" cellpadding="0" align=center
+|-
+!width="25"| !!width="25"|
+|-
+|GK || ||[[Joel de Oliveira Monteiro|Joel]]
+|-
+|DF || ||[[Alfredo Brilhante da Costa|Brilhante]]
+|-
+|DF || ||[[Luiz Gervazoni|Itália]]
+|-
+|MF || ||[[Hermógenes Fonseca|Hermógenes]]
+|-
+|MF || ||[[Fausto dos Santos|Fausto]]
+|-
+|MF || ||[[Fernando Giudicelli|Fernando]]
+|-
+|FW || ||[[Policarpo Ribeiro de Oliveira|Poly]]
+|-
+|FW || ||[[Nilo Murtinho Braga|Nilo]]
+|-
+|FW || ||[[Abraham Patusca da Silveira|Araken]]
+|-
+|FW || ||[[Preguinho]] ([[Captain (association football)|c]])
+|-
+|FW || ||[[Teóphilo Bettencourt Pereira|Teóphilo]]
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=4| [[Píndaro de Carvalho Rodrigues]]
+|}
+{{col-end}}
+{| width=100% style="font-size: 90%"
+|
+'''Linesmen:'''
+<br />[[Ricardo Vallarino]] ([[Uruguayan Football Association|Uruguay]])
+<br />[[Thomas Balvay]] ([[French Football Federation|France]])
+|}
+
+===Yugoslavia vs Bolivia===
+<onlyinclude>{{#invoke:football box|main|section=2-2
+|date = 17 July 1930
+|time = 12:45 UYT ([[UTC−03:30]])
+|team1 = {{fb-rt|Kingdom of Yugoslavia}}
+|score = 4–0
+|report = [https://www.fifa.com/worldcup/archive/uruguay1930/matches/match/1092 Report]
+|team2 = {{fb|BOL|civil}}
+|goals1 = [[Ivan Bek|Bek]] {{goal|60||67}}<br />[[Blagoje Marjanović|Marjanović]] {{goal|65}}<br />[[Đorđe Vujadinović|Vujadinović]] {{goal|85}}</onlyinclude><ref name="RSSSF2">This is one of several goals for which the statistical details are disputed. The goalscorers and timings used here are those of FIFA, the official record. Some other sources, such as RSSSF, state a different scorer, timing, or both. See {{cite web |title=World Cup 1930 finals |work=[[Rec.Sport.Soccer Statistics Foundation]] (RSSSF) |url=https://www.rsssf.org/tables/30full.html | accessdate=15 August 2010 }}</ref><onlyinclude>
+|stadium = [[Estadio Gran Parque Central|Estadio Parque Central]], Montevideo
+|attendance = 18,306
+|referee = [[Francisco Mateucci]] ([[Uruguayan Football Association|Uruguay]])
+}}</onlyinclude>
+{{col-begin}}
+{{col-2}}
+{{Football kit
+| pattern_la           = 
+| pattern_b             = _old_laced
+| pattern_ra            = 
+| pattern_sh            = 
+| pattern_so            = _blackhalf
+| leftarm               = 0099ff
+| body                 =  0099ff
+| rightarm              = 0099ff
+| shorts               = ffffff
+| socks                 = ffffff
+ | title           = Yugoslavia
+}}
+{{col-2}}
+{{Football kit
+| pattern_la        = 
+| pattern_b         = _old_laced
+| pattern_ra        = 
+| pattern_sh        = 
+| pattern_so        = _2_white_stripes
+| leftarm           = ffffff
+| body             = ffffff
+| rightarm           = ffffff
+| shorts             = 000000
+| socks              = 000000
+|title            =  Bolivia
+}}
+{{col-end}}
+{{col-begin}}
+{{col-2}}
+{| style="font-size:90%; margin:0.2em auto;" cellspacing="0" cellpadding="0"
+|-
+!width="25"| !!width="25"|
+|-
+|GK || ||[[Milovan Jakšić]]
+|-
+|DF || ||[[Milutin Ivković]] ([[Captain (association football)|c]])
+|-
+|DF || ||[[Dragoslav Mihajlović]]
+|-
+|MF || ||[[Milorad Arsenijević]]
+|-
+|MF || ||[[Ljubiša Stefanović]]
+|-
+|MF ||||[[Momčilo Đokić]]
+|-
+|FW || ||[[Aleksandar Tirnanić]]
+|-
+|FW || ||[[Blagoje Marjanović]]
+|-
+|FW || ||[[Ivan Bek]]
+|-
+|FW || ||[[Đorđe Vujadinović]]
+|-
+|FW || ||[[Dragutin Najdanović]]
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=4| [[Boško Simonović]]
+|}
+{{col-2}}
+{| style="font-size: 90%" cellspacing="0" cellpadding="0" align=center
+|-
+!width="25"| !!width="25"|
+|-
+|GK ||||[[Jesús Bermúdez]]
+|-
+|DF || ||[[Segundo Durandal]]
+|-
+|DF || ||[[Casiano Chavarría]]
+|-
+|MF || ||[[Juan Argote]]
+|-
+|MF || ||[[Diógenes Lara]]
+|-
+|MF || ||[[Jorge Valderrama]]
+|-
+|FW ||||[[Gumersindo Gómez]]
+|-
+|FW || ||[[José Bustamante (footballer born 1907)|José Bustamante]]
+|-
+|FW || ||[[Rafael Méndez (footballer)|Rafael Méndez]] ([[Captain (association football)|c]])
+|-
+|FW || ||[[Mario Alborta]]
+|-
+|FW || ||[[René Fernández]]
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=4| [[Ulises Saucedo]]
+|}
+{{col-end}}
+{| width=100% style="font-size: 90%"
+|
+'''Linesmen:'''
+<br />[[Domingo Lombardi]] ([[Uruguayan Football Association|Uruguay]])
+<br />[[Alberto Warnken]] ([[Chilean Football Federation|Chile]])
+|}
+
+===Brazil vs Bolivia===
+<onlyinclude>{{#invoke:football box|main|section=2-3
+|date = 20 July 1930
+|time = 13:00 UYT ([[UTC−03:30]])
+|team1 = {{fb-rt|BRA|1889}}
+|score = 4–0
+|report = [https://www.fifa.com/worldcup/archive/uruguay1930/matches/match/1091 Report]
+|team2 = {{fb|BOL|civil}}
+|goals1 = [[Moderato Wisintainer|Moderato]] {{goal|37||73}}<br />[[Preguinho]] {{goal|57||83}}
+|stadium = [[Estadio Centenario]], Montevideo
+|attendance = 25,466
+|referee = [[Thomas Balvay]] ([[French Football Federation|France]])
+}}</onlyinclude>
+{{col-begin}}
+{{col-2}}
+{{Football kit
+| pattern_la        = 
+| pattern_b         = _collarblue_laced
+| pattern_ra        = 
+| pattern_sh        = 
+| pattern_so        = _brasil1930
+| leftarm           = ffffff
+| body             = ffffff
+| rightarm           = ffffff
+| shorts             = 0000ff
+| socks              = 000000
+|title            =  Brazil
+}}
+{{col-2}}
+{{Football kit
+| pattern_la        = 
+| pattern_b         = _old_laced
+| pattern_ra        = 
+| pattern_sh        = 
+| pattern_so        = _2_white_stripes
+| leftarm           = 99ccff
+| body             = 99ccff
+| rightarm           = 99ccff
+| shorts             = 000000
+| socks              = 000000
+|title            =  Bolivia
+}}
+{{col-end}}
+{{col-begin}}
+{{col-2}}
+{| style="font-size:90%; margin:0.2em auto;" cellspacing="0" cellpadding="0"
+|-
+!width="25"| !!width="25"|
+|-
+|GK || ||[[Osvaldo Velloso de Barros|Velloso]]
+|-
+|DF || ||[[José Luiz de Oliveira|Zé Luiz]]
+|-
+|DF || ||[[Luiz Gervazoni|Itália]]
+|-
+|MF || ||[[Hermógenes Fonseca|Hermógenes]]
+|-
+|MF || ||[[Fausto dos Santos|Fausto]]
+|-
+|MF || ||[[Fernando Giudicelli|Fernando]]
+|-
+|FW || ||[[Benedicto de Moraes Menezes|Benedicto]]
+|-
+|FW || ||[[Russinho (footballer, born 1902)|Russinho]]
+|-
+|FW ||||[[Carvalho Leite]]
+|-
+|FW || ||[[Preguinho]] ([[Captain (association football)|c]])
+|-
+|FW || ||[[Moderato Wisintainer|Moderato]]
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=4| [[Píndaro de Carvalho Rodrigues]]
+|}
+{{col-2}}
+{| style="font-size: 90%" cellspacing="0" cellpadding="0" align=center
+|-
+!width="25"| !!width="25"|
+|-
+|GK ||  ||[[Jesús Bermúdez]]
+|-
+|DF || ||[[Segundo Durandal]]
+|-
+|DF ||||[[Casiano Chavarría]]
+|-
+|MF || ||[[Renato Sáinz]]
+|-
+|MF || ||[[Diógenes Lara]]
+|-
+|MF || ||[[Jorge Valderrama]]
+|-
+|FW || ||[[Eduardo Reyes Ortiz]]
+|-
+|FW || ||[[José Bustamante (footballer born 1907)|José Bustamante]]
+|-
+|FW || ||[[Rafael Méndez (footballer)|Rafael Méndez]] ([[Captain (association football)|c]])
+|-
+|FW || ||[[Mario Alborta]]
+|-
+|FW || ||[[René Fernández]]
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=4| [[Ulises Saucedo]]
+|}
+{{col-end}}
+{| width=100% style="font-size: 90%"
+|
+'''Linesmen:'''
+<br />[[Francisco Mateucci]] ([[Uruguayan Football Association|Uruguay]])
+<br />[[Gaspar Vallejo]] ([[Mexican Football Federation|Mexico]])
+|}
+
+==See also==
+*[[Bolivia at the FIFA World Cup]]
+*[[Brazil at the FIFA World Cup]]
+*[[Yugoslavia at the FIFA World Cup]]
+
+==References==
+{{reflist}}
+
+{{1930 FIFA World Cup}}
+
+{{DEFAULTSORT:World Cup}}
+[[Category:1930 FIFA World Cup|Group 2]]
+[[Category:Yugoslavia at the 1930 FIFA World Cup|Group]]
+[[Category:Brazil at the 1930 FIFA World Cup|Group]]
+[[Category:Bolivia at the 1930 FIFA World Cup|Group]]

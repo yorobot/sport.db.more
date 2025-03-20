@@ -1,0 +1,1113 @@
+{{Short description|None}}
+[[File:Brazil vs Serbia.jpg | thumb|220x124px | right |Warm-up prior to the Brazil–Serbia match]]
+{{Use dmy dates|date=March 2022}}
+Matches in Group G of the [[2022 FIFA World Cup]] took place from 24 November to 2 December 2022.<ref name="match schedule">{{cite web |url=https://digitalhub.fifa.com/m/464f16f856f5ed05/original/FIFA-World-Cup-Qatar-2022-Match-Schedule.pdf |title=FIFA World Cup Qatar 2022 – Match Schedule |website=FIFA.com |publisher=Fédération Internationale de Football Association |date=11 August 2022 |access-date=11 August 2022}}</ref> The group consisted of [[Brazil national football team|Brazil]], [[Serbia national football team|Serbia]], [[Switzerland national football team|Switzerland]] and [[Cameroon national football team|Cameroon]]. The top two teams, Brazil and Switzerland, advanced to the [[2022 FIFA World Cup knockout stage#Round of 16|round of 16]].<ref name="regulations">{{cite web |url=https://digitalhub.fifa.com/m/2744a0a5e3ded185/original/FIFA-World-Cup-Qatar-2022-Regulations_EN.pdf |title=Regulations – FIFA World Cup Qatar 2022 |website=FIFA.com |publisher=Fédération Internationale de Football Association |date=15 December 2021 |access-date=30 March 2022}}</ref> This was unprecedented in World Cup history as Brazil won the group despite scoring fewer goals than each of their opponents. Brazil, Serbia and Switzerland also played in [[2018 FIFA World Cup Group E|Group E]] at the [[2018 FIFA World Cup|previous FIFA World Cup]].<ref>{{Cite news |last=Kelner |first=Martha |date=2017-12-01 |title=England draw Belgium, Panama and Tunisia in 2018 World Cup group |url=https://www.theguardian.com/football/2017/dec/01/england-draw-belgium-panama-tunisia-2018-world-cup-draw-russia |access-date=2024-06-27 |work=The Guardian |language=en-GB |issn=0261-3077}}</ref>
+
+==Teams==
+{| class="wikitable sortable"
+|-
+!rowspan=2| Draw position
+!rowspan=2| Team
+!rowspan=2| Pot
+!rowspan=2| Confederation
+!rowspan=2| Method of<br />qualification
+!rowspan=2| Date of<br />qualification
+!rowspan=2 data-sort-type="number"| Finals<br />appearance
+!rowspan=2| Last<br />appearance
+!rowspan=2| Previous best<br />performance
+!colspan=2| [[FIFA Men's World Ranking|FIFA Rankings]]<ref>{{cite web |url=https://www.fifa.com/fifa-world-ranking/men |title=Men's Ranking |publisher=[[FIFA]] |access-date=21 November 2022}}</ref>
+|-
+! March 2022{{refn|group=nb|The rankings of March 2022 were used for [[2022 FIFA World Cup seeding|seeding for the final draw]].}}
+! October 2022
+|-
+| G1 || style=white-space:nowrap | {{#invoke:flagg|main|unpe|avar=fb|BRA}} || 1 || [[CONMEBOL]] || [[2022 FIFA World Cup qualification (CONMEBOL)|CONMEBOL round robin]] winners || 11 November 2021 || 22nd || [[2018 FIFA World Cup|2018]] || data-sort-value="8.5" | '''Winners''' ([[1958 FIFA World Cup|1958]], [[1962 FIFA World Cup|1962]], [[1970 FIFA World Cup|1970]], [[1994 FIFA World Cup|1994]], [[2002 FIFA World Cup|2002]]) || 1 || 1
+|-
+| G2 || style=white-space:nowrap | {{#invoke:flagg|main|unpe|avar=fb|SRB}} || 3 || [[UEFA]] || [[2022 FIFA World Cup qualification – UEFA Group A|UEFA Group A]] winners || 14 November 2021 || 13th{{refn|group=nb|This is the third appearance of Serbia at the FIFA World Cup. However, FIFA considers Serbia as the successor team of [[Yugoslavia national football team|Yugoslavia]], who qualified on eight occasions, and [[Serbia and Montenegro national football team|Serbia and Montenegro]], who qualified on two occasions.}} || [[2018 FIFA World Cup|2018]] || data-sort-value="5.2" | Fourth place ([[1930 FIFA World Cup|1930]], [[1962 FIFA World Cup|1962]]){{refn|group=nb|Serbia's best result is the group stage in [[2010 FIFA World Cup|2010]] and [[2018 FIFA World Cup|2018]]. However, FIFA considers Serbia as the successor team of [[Yugoslavia national football team|Yugoslavia]].}} || 25 || 21
+|-
+| G3 || style=white-space:nowrap | {{#invoke:flagg|main|unpe|avar=fb|SUI}} || 2 || [[UEFA]] || [[2022 FIFA World Cup qualification – UEFA Group C|UEFA Group C]] winners || 15 November 2021 || 12th || [[2018 FIFA World Cup|2018]] || data-sort-value="4.3" | Quarter-finals ([[1934 FIFA World Cup|1934]], [[1938 FIFA World Cup|1938]], [[1954 FIFA World Cup|1954]]) || 14 || 15
+|-
+| G4 || style=white-space:nowrap | {{#invoke:flagg|main|unpe|avar=fb|CMR}} || 4 || [[Confederation of African Football|CAF]] || [[2022 FIFA World Cup qualification – CAF third round|CAF third round]] winners || 29 March 2022 || 8th || [[2014 FIFA World Cup|2014]] || data-sort-value="4.1" | Quarter-finals ([[1990 FIFA World Cup|1990]]) || 37 || 43
+|}
+'''Notes'''
+{{reflist|group=nb}}
+
+==Standings==
+{{2022 FIFA World Cup group tables|Group G}}
+
+In the [[2022 FIFA World Cup knockout stage#Round of 16|round of 16]]:
+* The winners of Group G, Brazil, advanced to play the runners-up of [[2022 FIFA World Cup Group H|Group H]], South Korea.
+* The runners-up of Group G, Switzerland, advanced to play the winners of [[2022 FIFA World Cup Group H|Group H]], Portugal.
+
+==Matches==
+All times listed are local, [[Arabia Standard Time|AST]] ([[UTC+03:00|UTC+3]]).<ref name="match schedule"/>
+
+===Switzerland vs Cameroon===
+The teams had never met before.
+
+After a goalless first half, [[Breel Embolo]] scored the only goal of the match three minutes into the second period, finishing from six yards out after a cross from [[Xherdan Shaqiri]] on the right.<ref>{{cite web|url=https://www.theguardian.com/football/live/2022/nov/24/switzerland-v-cameroon-world-cup-2022-live|title=Switzerland 1 Cameroon 0: As it happened|date=24 November 2022|work=The Guardian|accessdate=25 November 2022}}</ref> Embolo did not celebrate the goal in respect to being born in Cameroon; he moved to Switzerland when he was six years old.<ref>{{cite web|url=https://www.bbc.com/sport/football/63657470|title= Switzerland 1 Cameroon 0|date=24 November 2022|work=BBC Sport|access-date=25 November 2022}}</ref>
+ 
+<section begin=G1 />{{Football box
+|date       = {{Start date|2022|11|24|df=y}}
+|time       = 13:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|SUI}}
+|score      = {{score link|2022 FIFA World Cup Group G#Switzerland vs Cameroon|1–0}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|CMR}}
+|goals1     =
+*[[Breel Embolo|Embolo]] {{goal|48}}
+|goals2     =
+|stadium    = [[Al Janoub Stadium]], [[Al Wakrah]]
+|attendance = 39,089
+|referee    = [[Facundo Tello]] ([[Argentine Football Association|Argentina]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235488
+}}<section end=G1 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _sui22H
+ |pattern_b  = _sui22H
+ |pattern_ra = _sui22H
+ |pattern_sh = _sui22h
+ |pattern_so = _sui22hl
+ |leftarm    = FF0000
+ |body       = FF0000
+ |rightarm   = FF0000
+ |shorts     = FF0000
+ |socks      = FF0000
+ |title      = Switzerland
+}}
+|{{Football kit
+ |pattern_la = _cmr2223h
+ |pattern_b  = _cmr2223H
+ |pattern_ra = _cmr2223h
+ |pattern_sh = _cmr2223a
+ |pattern_so =
+ |leftarm    = 008020
+ |body       = 008020
+ |rightarm   = 008020
+ |shorts     = 008020
+ |socks      = FFDF00
+ |title      = Cameroon
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Yann Sommer]]
+|-
+|RB ||'''3''' ||[[Silvan Widmer]]
+|-
+|CB ||'''5''' ||[[Manuel Akanji]] || {{yel|83}}
+|-
+|CB ||'''4''' ||[[Nico Elvedi]] || {{yel|64}}
+|-
+|LB ||'''13'''||[[Ricardo Rodriguez (footballer)|Ricardo Rodriguez]] || || {{suboff|90}}
+|-
+|CM ||'''8''' ||[[Remo Freuler]]
+|-
+|CM ||'''10'''||[[Granit Xhaka]] ([[Captain (association football)|c]])
+|-
+|RW ||'''23'''||[[Xherdan Shaqiri]] || || {{suboff|72}}
+|-
+|AM ||'''15'''||[[Djibril Sow]] || || {{suboff|72}}
+|-
+|LW ||'''17'''||[[Ruben Vargas]] || || {{suboff|81}}
+|-
+|CF ||'''7''' ||[[Breel Embolo]] || || {{suboff|72}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|MF ||'''20'''||[[Fabian Frei]] || || {{subon|72}}
+|-
+|FW ||'''19'''||[[Noah Okafor]] || || {{subon|72}}
+|-
+|FW ||'''9''' ||[[Haris Seferovic]] || || {{subon|72}}
+|-
+|MF ||'''25'''||[[Fabian Rieder]] || || {{subon|81}}
+|-
+|DF ||'''18'''||[[Eray Cömert]] || || {{subon|90}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Murat Yakin]]
+|}
+|valign="top"|[[File:SUI-CMR 2022-11-24.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''23'''||[[André Onana]]
+|-
+|RB ||'''19'''||[[Collins Fai]] || {{yel|36}}
+|-
+|CB ||'''21'''||[[Jean-Charles Castelletto]]
+|-
+|CB ||'''3''' ||[[Nicolas Nkoulou]]
+|-
+|LB ||'''25'''||[[Nouhou Tolo]]
+|-
+|DM ||'''14'''||[[Samuel Gouet]]
+|-
+|CM ||'''8''' ||[[André-Frank Zambo Anguissa]]
+|-
+|CM ||'''18'''||[[Martin Hongla]] || || {{suboff|68}}
+|-
+|RF ||'''20'''||[[Bryan Mbeumo]] || || {{suboff|81}}
+|-
+|CF ||'''13'''||[[Eric Maxim Choupo-Moting]] ([[Captain (association football)|c]]) || || {{suboff|74}}
+|-
+|LF ||'''12'''||[[Karl Toko Ekambi]] || || {{suboff|74}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|MF ||'''5''' ||[[Gaël Ondoua]] || || {{subon|68}}
+|-
+|FW ||'''10'''||[[Vincent Aboubakar]] || || {{subon|74}}
+|-
+|MF ||'''7''' ||[[Georges-Kévin Nkoudou]] || || {{subon|74}}
+|-
+|FW ||'''6''' ||[[Moumi Ngamaleu]] || || {{subon|81}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Rigobert Song]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Yann Sommer]] (Switzerland)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/switzerland-cameroon-world-cup-qatar-2022-group-g |title=Embolo punishes birth country in Swiss triumph |publisher=[[FIFA]] |date=24 November 2022 |access-date=24 November 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Ezequiel Brailovsky ([[Argentine Football Association|Argentina]])
+<br />Gabriel Chade ([[Argentine Football Association|Argentina]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[Saíd Martínez]] ([[National Autonomous Federation of Football of Honduras|Honduras]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Walter López ([[National Autonomous Federation of Football of Honduras|Honduras]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Mauro Vigliano]] ([[Argentine Football Association|Argentina]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Fernando Guerrero (referee)|Fernando Guerrero]] ([[Mexican Football Federation|Mexico]])
+<br />Pau Cebrián Devís ([[Royal Spanish Football Federation|Spain]])
+<br />[[Ricardo de Burgos Bengoetxea]] ([[Royal Spanish Football Federation|Spain]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Nicolás Taran ([[Uruguayan Football Association|Uruguay]])
+|}
+
+===Brazil vs Serbia===
+The teams had met once in the World Cup, in Brazil's [[2018 FIFA World Cup Group E#Serbia vs Brazil|2–0 group stage victory]] in [[2018 FIFA World Cup|2018]]. With Serbia playing as [[Yugoslavia national football team|Yugoslavia]], the sides had met 18 times, including four encounters in FIFA World Cup group stages: in [[1930 FIFA World Cup Group 2#Yugoslavia vs Brazil|1930]], [[1950 FIFA World Cup Group 1#Brazil vs Yugoslavia|1950]], [[1954 FIFA World Cup Group 1#Brazil vs Yugoslavia|1954]] and [[1974 FIFA World Cup Group 2#Brazil vs Yugoslavia|1974]], with one victory for each and two draws.
+
+After a goalless first half, [[Richarlison]] opened the scoring for Brazil in the 62nd minute, when he followed up to finish after Serbian goalkeeper [[Vanja Milinković-Savić]] saved [[Vinícius Júnior]]'s low shot from the left, with [[Neymar]] initially creating the chance.<ref>{{cite web|url=https://www.bbc.com/sport/football/63657471|title=Brazil 2 Serbia 0|date=24 November 2022|work=BBC Sport|access-date=25 November 2022}}</ref> Richarlison then made it 2–0 eleven minutes later when he controlled the ball from Vinícius Júnior before finishing to the left of the net with an over-the-shoulder acrobatic right-footed kick. [[Casemiro]] hit the woodwork and [[Fred (footballer, born 1993)|Fred]] also had a shot saved with Brazil running out comfortable 2–0 winners.<ref>{{cite web|url=https://www.theguardian.com/football/2022/nov/24/brazil-serbia-world-cup-group-g-match-report|title=Richarlison's stunning double sinks Serbia to get Brazil up and running|date=24 November 2022|work=The Guardian|access-date=25 November 2022}}</ref>
+ 
+<section begin=G2 />{{Football box
+|date       = {{Start date|2022|11|24|df=y}}
+|time       = 22:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|BRA}}
+|score      = {{score link|2022 FIFA World Cup Group G#Brazil vs Serbia|2–0}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|SRB}}
+|goals1     =
+*[[Richarlison]] {{goal|62||73}}
+|goals2     =
+|stadium    = [[Lusail Stadium]], [[Lusail]]
+|attendance = 88,103
+|referee    = [[Alireza Faghani]] ([[Football Federation Islamic Republic of Iran|Iran]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235484
+}}<section end=G2 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _bra22h
+ |pattern_b  = _bra22H
+ |pattern_ra = _bra22h
+ |pattern_sh = _bra22h
+ |pattern_so = _bra22hl
+ |leftarm    = FFFF00
+ |body       = FFFF00
+ |rightarm   = FFFF00
+ |shorts     = 1018E7
+ |socks      = FFFFFF
+ |title      = Brazil
+}}
+|{{Football kit
+ |pattern_la = _srb22h
+ |pattern_b  = _srb22H
+ |pattern_ra = _srb22h
+ |pattern_sh = _srb22h
+ |pattern_so = _srb22hl
+ |leftarm    = DF001C
+ |body       = DF001C
+ |rightarm   = DF001C
+ |shorts     = DF001C
+ |socks      = DF001C
+ |title      = Serbia
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Alisson]]
+|-
+|RB ||'''2''' ||[[Danilo (footballer, born July 1991)|Danilo]]
+|-
+|CB ||'''4''' ||[[Marquinhos]]
+|-
+|CB ||'''3''' ||[[Thiago Silva]] ([[Captain (association football)|c]])
+|-
+|LB ||'''6''' ||[[Alex Sandro]]
+|-
+|CM ||'''5''' ||[[Casemiro]]
+|-
+|CM ||'''7''' ||[[Lucas Paquetá]] || || {{suboff|75}}
+|-
+|RW ||'''11'''||[[Raphinha]] || || {{suboff|87}}
+|-
+|AM ||'''10'''||[[Neymar]] || || {{suboff|79}}
+|-
+|LW ||'''20'''||[[Vinícius Júnior]] || || {{suboff|75}}
+|-
+|CF ||'''9''' ||[[Richarlison]] || || {{suboff|79}}
+|-
+|colspan=3|'''Substitutions'''
+|-
+|MF ||'''8''' ||[[Fred (footballer, born 1993)|Fred]] || ||{{subon|75}}
+|-
+|FW ||'''21'''||[[Rodrygo]] || || {{subon|75}}
+|-
+|FW ||'''18'''||[[Gabriel Jesus]] || || {{subon|79}}
+|-
+|FW ||'''19'''||[[Antony (footballer, born 2000)|Antony]] || || {{subon|79}}
+|-
+|FW ||'''26'''||[[Gabriel Martinelli]] || || {{subon|87}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Tite (football manager)|Tite]]
+|}
+|valign="top"|[[File:BRA-SRB 2022-11-24.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''23'''||[[Vanja Milinković-Savić]]
+|-
+|CB ||'''5''' ||[[Miloš Veljković]]
+|-
+|CB ||'''4''' ||[[Nikola Milenković]]
+|-
+|CB ||'''2''' ||[[Strahinja Pavlović]] || {{yel|7}}
+|-
+|DM ||'''8''' ||[[Nemanja Gudelj]] || {{yel|49}} || {{suboff|57}}
+|-
+|CM ||'''16'''||[[Saša Lukić]] || {{yel|64}} || {{suboff|66}}
+|-
+|CM ||'''20'''||[[Sergej Milinković-Savić]]
+|-
+|RW ||'''14'''||[[Andrija Živković]] || || {{suboff|57}}
+|-
+|AM ||'''10'''||[[Dušan Tadić]] ([[Captain (association football)|c]])
+|-
+|LW ||'''25'''||[[Filip Mladenović]] || || {{suboff|66}}
+|-
+|CF ||'''9''' ||[[Aleksandar Mitrović]] || || {{suboff|83}}
+|-
+|colspan=3|'''Substitutions'''
+|-
+|MF ||'''24'''||[[Ivan Ilić (footballer, born 2001)|Ivan Ilić]] || ||{{subon|57}}
+|-
+|MF ||'''7''' ||[[Nemanja Radonjić]] || || {{subon|57}}
+|-
+|MF ||'''22'''||[[Darko Lazović]] || || {{subon|66}}
+|-
+|FW ||'''18'''||[[Dušan Vlahović]] || || {{subon|66}}
+|-
+|MF ||'''6''' ||[[Nemanja Maksimović]] || || {{subon|83}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Dragan Stojković]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Richarlison]] (Brazil)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/world-cup-qatar-2022-brazil-serbia-match-review-group-g|title=Richarlison at the double as Brazil begin with a bang |publisher=[[FIFA]] |date=24 November 2022 |access-date=24 November 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />[[Mohammadreza Mansouri]] ([[Football Federation Islamic Republic of Iran|Iran]])
+<br />Mohammadreza Abolfazli ([[Football Federation Islamic Republic of Iran|Iran]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[Maguette Ndiaye]] ([[Senegalese Football Federation|Senegal]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />El Hadj Malick Samba ([[Senegalese Football Federation|Senegal]])
+<br />'''[[Video assistant referee]]:'''
+<br />Taleb Al-Marri ([[Qatar Football Association|Qatar]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Muhammad Taqi (referee)|Muhammad Taqi]] ([[Football Association of Singapore|Singapore]])
+<br />Anton Shchetinin ([[Football Australia|Australia]])
+<br />[[Pol van Boekel]] ([[Royal Dutch Football Association|Netherlands]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Ashley Beecham ([[Football Australia|Australia]])
+|}
+
+===Cameroon vs Serbia===
+The teams had faced each other once, a 2010 friendly won 4–3 by Serbia.
+
+[[Jean-Charles Castelletto]] put Cameroon into the lead in the 29th minute, when he finished from close range off of a corner. In first-half stoppage time, [[Strahinja Pavlović]] equalized with a header, before [[Sergej Milinković-Savić]] brought Serbia ahead just two minutes later with a low finish into the corner of the net.<ref>{{cite web|url=https://www.rte.ie/sport/world-cup-2022/2022/1128/1338695-world-cup-2022-cameroon-v-serbia-updates/|title=World Cup 2022: Cameroon 3–3 Serbia recap|date=28 November 2022|work=RTE Sport|access-date=29 November 2022}}</ref> Eight minutes into the second half, [[Aleksandar Mitrović]] put Serbia 3–1 up with a low finish after a passing move. [[Vincent Aboubakar]] scooped the ball over goalkeeper [[Vanja Milinković-Savić]] to score Cameroon's second goal in the 63rd minute, awarded by the [[Video assistant referee|VAR]] after initially being deemed offside, before [[Eric Maxim Choupo-Moting]] completed the comeback three minutes later with a low shot after a pass from the right by Aboubakar. The match finished in an entertaining 3–3 draw.<ref>{{cite web |url=https://www.theguardian.com/football/2022/nov/28/cameroon-serbia-world-cup-group-g-match-report |title=Choupo-Moting thwarts Serbia to cap Cameroon's wild World Cup comeback |publisher=The Guardian |date=28 November 2022 }}</ref>
+
+This was Cameroon's first point in a World Cup match since [[2002 FIFA World Cup|2002]], ending an eight-game losing streak.<ref>{{cite news |last1=Gastelum |first1=Andrew |title=Serbia, Cameroon Tie 3–3 in Game of the Tournament |url=https://www.si.com/soccer/2022/11/28/cameroon-serbia-world-cup-2022-video-highlights-recap |access-date=20 May 2023 |work=Sports Illustrated |date=28 November 2022}}</ref>
+
+<section begin=G3 />{{Football box
+|date       = {{Start date|2022|11|28|df=y}}
+|time       = 13:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|CMR}}
+|score      = {{score link|2022 FIFA World Cup Group G#Cameroon vs Serbia|3–3}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|SRB}}
+|goals1     =
+*[[Jean-Charles Castelletto|Castelletto]] {{goal|29}}
+*[[Vincent Aboubakar|Aboubakar]] {{goal|63}}
+*[[Eric Maxim Choupo-Moting|Choupo-Moting]] {{goal|66}}
+|goals2     =
+*[[Strahinja Pavlović|Pavlović]] {{goal|45+1}}
+*[[Sergej Milinković-Savić|S. Milinković-Savić]] {{goal|45+3}}
+*[[Aleksandar Mitrović|A. Mitrović]] {{goal|53}}
+|stadium    = [[Al Janoub Stadium]], [[Al Wakrah]]
+|attendance = 39,789
+|referee    = [[Mohammed Abdulla Hassan Mohamed]] ([[United Arab Emirates Football Association|United Arab Emirates]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235487
+}}<section end=G3 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _cmr2223h
+ |pattern_b  = _cmr2223H
+ |pattern_ra = _cmr2223h
+ |pattern_sh = _cmr2223h
+ |pattern_so =
+ |leftarm    = 008020
+ |body       = 008020
+ |rightarm   = 008020
+ |shorts     = FF0000
+ |socks      = FFDF00
+ |title      = Cameroon
+}}
+|{{Football kit
+ |pattern_la = _srb22a
+ |pattern_b  = _srb22A
+ |pattern_ra = _srb22a
+ |pattern_sh = _srb22a
+ |pattern_so = _srb22al
+ |leftarm    = FFFFFF
+ |body       = FFFFFF
+ |rightarm   = FFFFFF
+ |shorts     = FFFFFF
+ |socks      = FFFFFF
+ |title      = Serbia
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''16'''||[[Devis Epassy]]
+|-
+|RB ||'''19'''||[[Collins Fai]]
+|-
+|CB ||'''21'''||[[Jean-Charles Castelletto]]
+|-
+|CB ||'''3''' ||[[Nicolas Nkoulou]] || {{yel|24}}
+|-
+|LB ||'''25'''||[[Nouhou Tolo]]
+|-
+|DM ||'''18'''||[[Martin Hongla]] || || {{suboff|55}}
+|-
+|CM ||'''8''' ||[[André-Frank Zambo Anguissa]] || || {{suboff|81}}
+|-
+|CM ||'''15'''||[[Pierre Kunde]] || || {{suboff|67}}
+|-
+|RF ||'''20'''||[[Bryan Mbeumo]] || || {{suboff|81}}
+|-
+|CF ||'''13'''||[[Eric Maxim Choupo-Moting]] ([[Captain (association football)|c]])
+|-
+|LF ||'''12'''||[[Karl Toko Ekambi]] || || {{suboff|67}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|FW ||'''10'''||[[Vincent Aboubakar]] || || {{subon|55}}
+|-
+|FW ||'''11'''||[[Christian Bassogog]] || {{yel|30}} || {{subon|67}}
+|-
+|MF ||'''5''' ||[[Gaël Ondoua]] || || {{subon|67}}
+|-
+|MF ||'''14'''||[[Samuel Gouet]] || || {{subon|81}}
+|-
+|MF ||'''7''' ||[[Georges-Kévin Nkoudou]] || || {{subon|81}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Rigobert Song]]
+|}
+|valign="top"|[[File:CMR-SRB 2022-11-28.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''23'''||[[Vanja Milinković-Savić]]
+|-
+|CB ||'''4''' ||[[Nikola Milenković]] || {{yel|90+3}}
+|-
+|CB ||'''5''' ||[[Miloš Veljković]] || || {{suboff|78}}
+|-
+|CB ||'''2''' ||[[Strahinja Pavlović]] || || {{suboff|55}}
+|-
+|RM ||'''14'''||[[Andrija Živković]] || || {{suboff|78}}
+|-
+|CM ||'''6''' ||[[Nemanja Maksimović]]
+|-
+|CM ||'''16'''||[[Saša Lukić]]
+|-
+|LM ||'''17'''||[[Filip Kostić]] || || {{suboff|90+2}}
+|-
+|AM||'''10'''||[[Dušan Tadić]] ([[Captain (association football)|c]])
+|-
+|AM ||'''20'''||[[Sergej Milinković-Savić]] || || {{suboff|78}}
+|-
+|CF ||'''9''' ||[[Aleksandar Mitrović]]
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|DF ||'''13'''||[[Stefan Mitrović (footballer, born 1990)|Stefan Mitrović]] || || {{subon|55}}
+|-
+|DF ||'''15'''||[[Srđan Babić]] || || {{subon|78}}
+|-
+|MF ||'''7''' ||[[Nemanja Radonjić]] || || {{subon|78}}
+|-
+|MF ||'''26'''||[[Marko Grujić]] || || {{subon|78}}
+|-
+|MF ||'''21'''||[[Filip Đuričić]] || || {{subon|90+2}}
+|-
+|colspan=3|'''Other disciplinary actions:'''
+|-
+|FW ||'''11'''||[[Luka Jović]] || {{yel|45+4}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Dragan Stojković]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Vincent Aboubakar]] (Cameroon)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/world-cup-qatar-2022-cameroon-v-serbia-match-review-report-highlights-press-conference-reaction-analysis-stats |title=Goals galore in Cameroon–Serbia epic |publisher=[[FIFA]] |date=28 November 2022 |access-date=28 November 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Mohamed Al-Hammadi ([[United Arab Emirates Football Association|United Arab Emirates]])
+<br />Hasan Al-Mahri ([[United Arab Emirates Football Association|United Arab Emirates]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[Ma Ning (referee)|Ma Ning]] ([[Chinese Football Association|China]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Shi Xiang ([[Chinese Football Association|China]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Nicolás Gallo (referee)|Nicolás Gallo]] ([[Colombian Football Federation|Colombia]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Juan Soto (referee)|Juan Soto]] ([[Venezuelan Football Federation|Venezuela]])
+<br />Ezequiel Brailovsky ([[Argentine Football Association|Argentina]])
+<br />[[Leodán González]] ([[Uruguayan Football Association|Uruguay]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Gabriel Chade ([[Argentine Football Association|Argentina]])
+|}
+
+===Brazil vs Switzerland===
+The teams had met nine times prior, including two draws coming in World Cup group stage matches: [[1950 FIFA World Cup Group 1#Brazil vs Switzerland|2–2]] in [[1950 FIFA World Cup|1950]] and [[2018 FIFA World Cup Group E#Brazil vs Switzerland|1–1]] in [[2018 FIFA World Cup|2018]].
+
+Brazil started the game without the injured [[Neymar]], who was ruled out for the remainder of the group stage after spraining his ankle in the previous match.<ref>{{cite web|url=https://www.theguardian.com/football/2022/nov/28/brazil-switzerland-world-cup-group-g-match-report|title=Casemiro stunner ends Switzerland resistance to fire Brazil into last 16|date=28 November 2022|work=The Guardian|access-date=29 November 2022}}</ref> The only goal of the game was scored by Brazilian midfielder [[Casemiro]] in the 83rd minute, when his deflected right-footed shot from inside the penalty area struck the top corner of the net.
+
+The win secured Brazil's passage to the knockout stage, and was their first victory in three attempts against Switzerland at the FIFA World Cup.<ref>{{cite web|url=https://www.bbc.com/sport/football/63698283|title=Brazil 1 Switzerland 0|date=28 November 2022|work=BBC Sport|access-date=29 November 2022}}</ref>
+
+<section begin=G4 />{{Football box
+|date       = {{Start date|2022|11|28|df=y}}
+|time       = 19:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|BRA}}
+|score      = {{score link|2022 FIFA World Cup Group G#Brazil vs Switzerland|1–0}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|SUI}}
+|goals1     =
+*[[Casemiro]] {{goal|83}}
+|goals2     =
+|stadium    = [[Stadium 974]], [[Doha]]
+|attendance = 43,649
+|referee    = [[Iván Barton]] ([[Salvadoran Football Federation|El Salvador]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235485
+}}<section end=G4 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _bra22h
+ |pattern_b  = _bra22H
+ |pattern_ra = _bra22h
+ |pattern_sh = _bra22h
+ |pattern_so = _bra22hl
+ |leftarm    = FFFF00
+ |body       = FFFF00
+ |rightarm   = FFFF00
+ |shorts     = 1018E7
+ |socks      = FFFFFF
+ |title      = Brazil
+}}
+|{{Football kit
+ |pattern_la = _sui22H
+ |pattern_b  = _sui22H
+ |pattern_ra = _sui22H
+ |pattern_sh = _sui22h
+ |pattern_so = _sui22hl
+ |leftarm    = FF0000
+ |body       = FF0000
+ |rightarm   = FF0000
+ |shorts     = FF0000
+ |socks      = FF0000
+ |title      = <span class="nowrap">Switzerland</span> 
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Alisson]]
+|-
+|RB ||'''14'''||[[Éder Militão]]
+|-
+|CB ||'''4''' ||[[Marquinhos]]
+|-
+|CB ||'''3''' ||[[Thiago Silva]] ([[Captain (association football)|c]])
+|-
+|LB ||'''6''' ||[[Alex Sandro]] || || {{suboff|86}}
+|-
+|DM ||'''5''' ||[[Casemiro]]
+|-
+|CM ||'''8''' ||[[Fred (footballer, born 1993)|Fred]] || {{yel|52}} || {{suboff|58}}
+|-
+|CM ||'''7''' ||[[Lucas Paquetá]] || || {{suboff|46}}
+|-
+|RF ||'''11'''||[[Raphinha]] || || {{suboff|73}}
+|-
+|CF ||'''9''' ||[[Richarlison]] || || {{suboff|73}}
+|-
+|LF ||'''20'''||[[Vinícius Júnior]]
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|FW ||'''21'''||[[Rodrygo]] || || {{subon|46}}
+|-
+|MF ||'''17'''||[[Bruno Guimarães]] || || {{subon|58}}
+|-
+|FW ||'''18'''||[[Gabriel Jesus]] || || {{subon|73}}
+|-
+|FW ||'''19'''||[[Antony (footballer, born 2000)|Antony]] || || {{subon|73}}
+|-
+|DF ||'''16'''||[[Alex Telles]] || || {{subon|86}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Tite (football manager)|Tite]]
+|}
+|valign="top"|[[File:BRA-SUI 2022-11-28.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''1''' ||[[Yann Sommer]]
+|-
+|RB ||'''3''' ||[[Silvan Widmer]] || || {{suboff|86}}
+|-
+|CB ||'''5''' ||[[Manuel Akanji]]
+|-
+|CB ||'''4''' ||[[Nico Elvedi]]
+|-
+|LB ||'''13'''||[[Ricardo Rodriguez (footballer)|Ricardo Rodriguez]]
+|-
+|CM ||'''8''' ||[[Remo Freuler]]
+|-
+|CM ||'''10'''||[[Granit Xhaka]] ([[Captain (association football)|c]])
+|-
+|RW ||'''25'''||[[Fabian Rieder]] || {{yel|50}} || {{suboff|58}}
+|-
+|AM ||'''15'''||[[Djibril Sow]] || || {{suboff|76}}
+|-
+|LW ||'''17'''||[[Ruben Vargas]] || || {{suboff|58}}
+|-
+|CF ||'''7''' ||[[Breel Embolo]] || || {{suboff|76}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|DF ||'''2''' ||[[Edimilson Fernandes]] || || {{subon|58}}
+|-
+|DF ||'''11'''||[[Renato Steffen]] || || {{subon|58}}
+|-
+|MF ||'''14'''||[[Michel Aebischer]] || || {{subon|76}}
+|-
+|FW ||'''9''' ||[[Haris Seferovic]] || || {{subon|76}}
+|-
+|MF ||'''20'''||[[Fabian Frei]] || || {{subon|86}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Murat Yakin]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Casemiro]] (Brazil)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/vinicius-junior-casemiro-brazil-switzerland-fifa-world-cup-qatar-2022 |title=Casemiro strikes late to send Brazil through |publisher=[[FIFA]] |date=28 November 2022 |access-date=28 November 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />David Morán ([[Salvadoran Football Federation|El Salvador]])
+<br />Zachari Zeegelaar ([[Surinamese Football Association|Suriname]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[Saíd Martínez]] ([[National Autonomous Federation of Football of Honduras|Honduras]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Walter López ([[National Autonomous Federation of Football of Honduras|Honduras]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Drew Fischer]] ([[Canadian Soccer Association|Canada]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Armando Villarreal]] ([[United States Soccer Federation|United States]])
+<br />Kathryn Nesbitt ([[United States Soccer Federation|United States]])
+<br />[[Fernando Guerrero (referee)|Fernando Guerrero]] ([[Mexican Football Federation|Mexico]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Mahmoud Abouelregal ([[Egyptian Football Association|Egypt]])
+|}
+
+===Serbia vs Switzerland===
+{{see also|List of 2022 FIFA World Cup controversies#Serbian incidents}}
+The teams had met once before, in Switzerland's [[2018 FIFA World Cup Group E#Serbia vs Switzerland|2–1 group stage victory]] at the [[2018 FIFA World Cup]]. With Serbia playing as [[Yugoslavia national football team|Yugoslavia]], the two teams had met 13 times, including in the [[1950 FIFA World Cup]] group stage, a [[1950 FIFA World Cup Group 1#Yugoslavia vs Switzerland|3–0]] victory for Yugoslavia.
+
+In an open and entertaining match, [[Andrija Živković]] struck the post early on for Serbia, before [[Xherdan Shaqiri]] opened the scoring for Switzerland via a deflection, becoming the first Swiss player to score at three different World Cups.<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/world-cup-qatar-2022-shaqiri-switzerland-fassnacht-kobel-xhaka |title=Shaqiri stepping up once more for Swiss |publisher=[[FIFA]] |date=3 December 2022 |access-date=3 December 2022}}</ref> [[Aleksandar Mitrović]] equalized just six minutes later with a header off of a [[Dušan Tadić]] cross, before a poor clearance by Swiss midfielder [[Remo Freuler]] allowed [[Dušan Vlahović]] to put Serbia in front. The first half would end 2–2 after [[Breel Embolo]] brought Switzerland level off of a [[Silvan Widmer]] cross.
+
+Serbia, who needed a victory to have a chance of reaching the knockout stage, then went behind again early into the second half, after Freuler finished off a Swiss team goal with a volley. The game became ill-tempered, similar to the sides' previous encounter in 2018, and saw both sets of players scuffle multiple times, primarily triggered after provocation towards the Serbian bench by Swiss captain [[Granit Xhaka]], an ethnic [[Albanians in Switzerland|Albanian]].<ref>{{cite web |url=https://www.theguardian.com/football/blog/2022/dec/02/serbia-suffer-and-give-granit-xhaka-last-word-in-game-of-gesture-politics-switzerland-world-cup |title=Game of cojones: Serbia suffer and give Granit Xhaka the last word |publisher=The Guardian |date=2 December 2022 |access-date=2 December 2022}}</ref> The eleven yellow cards distributed during the contest was the most shown in a World Cup match since the twelve given in the [[2010 FIFA World Cup final|2010 final]]. Switzerland ultimately retained their lead and won the match 3–2.<ref>{{cite news |url=https://www.skysports.com/football/news/11095/12757083/world-cup-2022-serbia-2-3-switzerland-remo-freuler-scores-winner-to-send-swiss-through-after-epic-four-goal-first-half |title=Serbia 2-3 Switzerland: Remo Freuler scores winner to send Swiss through after epic four-goal first-half |publisher=Sky Sports |date=3 December 2022 |access-date=3 December 2022}}</ref>
+
+Their two group stage victories saw Switzerland progress to the knockout stage as runners-up for a third successive World Cup, while Serbia finished bottom and were eliminated in the first round for their fourth tournament in a row.
+
+<section begin=G5 />{{Football box
+|date       = {{Start date|2022|12|2|df=y}}
+|time       = 22:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|SRB}}
+|score      = {{score link|2022 FIFA World Cup Group G#Serbia vs Switzerland|2–3}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|SUI}}
+|goals1     =
+*[[Aleksandar Mitrović|A. Mitrović]] {{goal|26}}
+*[[Dušan Vlahović|Vlahović]] {{goal|35}}
+|goals2     =
+*[[Xherdan Shaqiri|Shaqiri]] {{goal|20}}
+*[[Breel Embolo|Embolo]] {{goal|44}}
+*[[Remo Freuler|Freuler]] {{goal|48}}
+|stadium    = [[Stadium 974]], [[Doha]]
+|attendance = 41,378
+|referee    = [[Fernando Rapallini]] ([[Argentine Football Association|Argentina]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235486
+}}<section end=G5 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _srb22h
+ |pattern_b  = _srb22H
+ |pattern_ra = _srb22h
+ |pattern_sh = _srb22h
+ |pattern_so = _srb22hl
+ |leftarm    = DF001C
+ |body       = DF001C
+ |rightarm   = DF001C
+ |shorts     = DF001C
+ |socks      = DF001C
+ |title      = Serbia
+}}
+|{{Football kit
+ |pattern_la = _sui22a
+ |pattern_b  = _sui22A
+ |pattern_ra = _sui22a
+ |pattern_sh = _sui22a1
+ |pattern_so = _sui22a1
+ |leftarm    = FFFFFF
+ |body       = FFFFFF
+ |rightarm   = FFFFFF
+ |shorts     = E0E0E0
+ |socks      = E0E0E0
+ |title      = <span class="nowrap">Switzerland</span> 
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''23'''||[[Vanja Milinković-Savić]]
+|-
+|CB ||'''4''' ||[[Nikola Milenković]] || {{yel|90+5}}
+|-
+|CB ||'''5''' ||[[Miloš Veljković]] || || {{suboff|55}}
+|-
+|CB ||'''2''' ||[[Strahinja Pavlović]] || {{yel|56}}
+|-
+|RM ||'''14'''||[[Andrija Živković]] || || {{suboff|78}}
+|-
+|CM ||'''20'''||[[Sergej Milinković-Savić]] || {{yel|47}} || {{suboff|68}}
+|-
+|CM ||'''16'''||[[Saša Lukić]] || {{yel|90+10}}
+|-
+|LM ||'''17'''||[[Filip Kostić]]
+|-
+|AM ||'''10'''||[[Dušan Tadić]] ([[Captain (association football)|c]]) || || {{suboff|78}}
+|-
+|CF ||'''9''' ||[[Aleksandar Mitrović]] || {{yel|82}}
+|-
+|CF ||'''18'''||[[Dušan Vlahović]] || || {{suboff|55}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|DF ||'''8''' ||[[Nemanja Gudelj]] || {{yel|81}} || {{subon|55}}
+|-
+|FW ||'''11'''||[[Luka Jović]] || || {{subon|55}}
+|-
+|MF ||'''6''' ||[[Nemanja Maksimović]] || || {{subon|68}}
+|-
+|MF ||'''21'''||[[Filip Đuričić]] || || {{subon|78}}
+|-
+|MF ||'''7''' ||[[Nemanja Radonjić]] || || {{subon|78}}
+|-
+|colspan=3|'''Other disciplinary actions:'''
+|-
+|GK ||'''12'''||[[Predrag Rajković]] || {{yel|66}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Dragan Stojković]]
+|}
+|valign="top"|[[File:SRB-SUI 2022-12-02.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''21'''||[[Gregor Kobel]]
+|-
+|RB ||'''3''' ||[[Silvan Widmer]] || {{yel|15}}
+|-
+|CB ||'''5''' ||[[Manuel Akanji]]
+|-
+|CB ||'''22'''||[[Fabian Schär]] || {{yel|90+9}}
+|-
+|LB ||'''13'''||[[Ricardo Rodriguez (footballer)|Ricardo Rodriguez]]
+|-
+|CM ||'''8''' ||[[Remo Freuler]]
+|-
+|CM ||'''10'''||[[Granit Xhaka]] ([[Captain (association football)|c]]) || {{yel|90+5}}
+|-
+|RW ||'''23'''||[[Xherdan Shaqiri]] || || {{suboff|69}}
+|-
+|AM ||'''15'''||[[Djibril Sow]] || || {{suboff|69}}
+|-
+|LW ||'''17'''||[[Ruben Vargas]] || {{yel|34}} || {{suboff|83}}
+|-
+|CF ||'''7''' ||[[Breel Embolo]] || || {{suboff|90+6}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|DF ||'''2''' ||[[Edimilson Fernandes]] || || {{subon|69}}
+|-
+|MF ||'''6''' ||[[Denis Zakaria]] || || {{subon|69}}
+|-
+|MF ||'''16'''||[[Christian Fassnacht]] || || {{subon|83}}
+|-
+|FW ||'''19'''||[[Noah Okafor]] || || {{subon|90+6}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Murat Yakin]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Granit Xhaka]] (Switzerland)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/serbia-switzerland-fifa-world-cup-qatar-2022 |title=Switzerland win five-goal thriller to seal last-16 spot |publisher=[[FIFA]] |date=2 December 2022 |access-date=2 December 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Juan Pablo Belatti ([[Argentine Football Association|Argentina]])
+<br />Diego Bonfá ([[Argentine Football Association|Argentina]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[Kevin Ortega]] ([[Peruvian Football Federation|Peru]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Jesús Sánchez ([[Peruvian Football Federation|Peru]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Mauro Vigliano]] ([[Argentine Football Association|Argentina]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Julio Bascunan]] ([[Football Federation of Chile|Chile]])
+<br />Nicolás Taran ([[Uruguayan Football Association|Uruguay]])
+<br />[[Leodan Gonzalez]] ([[Uruguayan Football Association|Uruguay]]) 
+<br />'''[[Video assistant referee#Assistant video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Martín Soppi ([[Uruguayan Football Association|Uruguay]])
+|}
+
+===Cameroon vs Brazil===
+The teams had previously met six times, including in two World Cup group stage games, both won by Brazil: [[1994 FIFA World Cup Group B#Brazil vs Cameroon|a 3–0 victory]] in [[1994 FIFA World Cup|1994]] and [[2014 FIFA World Cup Group A#Cameroon vs Brazil|a 4–1 win]] in [[2014 FIFA World Cup|2014]].
+
+Brazil, already assured a place in the knockout stage, made ten changes to their previous starting lineup. Despite the Brazilians having the majority of the game's chances, Cameroon would take the lead in second-half stoppage time, after [[Vincent Aboubakar]] ran into the penalty area to head the cross from [[Jerome Ngom Mbekeli]] on the right into the net's bottom corner from six yards out.<ref>{{cite web|url= https://www.theguardian.com/football/2022/dec/02/cameroon-brazil-world-cup-group-g-match-report|title=Aboubakar stuns Brazil with Cameroon winner but is sent off for celebration|date=2 December 2022|work=The Guardian|access-date=10 March 2023}}</ref>
+Aboubakar celebrated the goal by removing his shirt, receiving a second yellow card and thus being sent off.<ref>{{cite web|url= https://www.bbc.com/sport/football/63752145|title=Cameroon 1 Brazil 0|date=2 December 2022|work=BBC Sport|access-date=10 March 2023}}</ref>
+
+The match marked Brazil's first defeat in the group stage of a World Cup since losing to [[Norway national football team|Norway]] in [[1998 FIFA World Cup Group A#Brazil vs Norway|1998]]. Despite their loss, Brazil clinched top spot in Group G on goal difference as they progressed to the knockout stage. Although they were still eliminated, Cameroon became the first African team to defeat Brazil at a World Cup, with this victory also being their first at the tournament since beating [[Saudi Arabia national football team|Saudi Arabia]] in [[2002 FIFA World Cup Group E#Cameroon vs Saudi Arabia|2002]]. This result also meant that no team finished the group stage of the World Cup with a perfect winning record for the first time since [[1994 FIFA World Cup|1994]].
+
+<section begin=G6 />{{Football box
+|date       = {{Start date|2022|12|2|df=y}}
+|time       = 22:00
+|team1      = {{#invoke:flagg|main|unpre|avar=fb|CMR}}
+|score      = {{score link|2022 FIFA World Cup Group G#Cameroon vs Brazil|1–0}}
+|team2      = {{#invoke:flagg|main|unpe|avar=fb|BRA}}
+|goals1     =
+*[[Vincent Aboubakar|Aboubakar]] {{goal|90+2}}
+|goals2     =
+|stadium    = [[Lusail Stadium]], [[Lusail]]
+|attendance = 85,986
+|referee    = [[Ismail Elfath]] ([[United States Soccer Federation|United States]])
+|report     = https://www.fifa.com/fifaplus/en/match-centre/match/17/255711/285063/400235483
+}}<section end=G6 />
+
+{| width=92%
+|-
+|{{Football kit
+ |pattern_la = _cmr2223h
+ |pattern_b  = _cmr2223H
+ |pattern_ra = _cmr2223h
+ |pattern_sh = _cmr2223h
+ |pattern_so =
+ |leftarm    = 008020
+ |body       = 008020
+ |rightarm   = 008020
+ |shorts     = FF0000
+ |socks      = FFDF00
+ |title      = Cameroon
+}}
+|{{Football kit
+ |pattern_la = _bra22a
+ |pattern_b  = _BRA22A
+ |pattern_ra = _bra22a
+ |pattern_sh = _bra22a
+ |pattern_so = _bra22al
+ |leftarm    = 1018E7
+ |body       = 1018E7
+ |rightarm   = 1018E7
+ |shorts     = FFFFFF
+ |socks      = 1018E7
+ |title      = Brazil
+}}
+|}
+
+{| width="100%"
+|valign="top" width="40%"|
+{| style="font-size:90%" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''16'''||[[Devis Epassy]]
+|-
+|RB ||'''19'''||[[Collins Fai]] || {{yel|32}}
+|-
+|CB ||'''4''' ||[[Christopher Wooh]]
+|-
+|CB ||'''24'''||[[Enzo Ebosse]]
+|-
+|LB ||'''25'''||[[Nouhou Tolo]] || {{yel|6}}
+|-
+|CM ||'''8''' ||[[André-Frank Zambo Anguissa]]
+|-
+|CM ||'''15'''||[[Pierre Kunde]] || {{yel|28}} || {{suboff|68}}
+|-
+|RW ||'''20'''||[[Bryan Mbeumo]] || || {{suboff|64}}
+|-
+|AM ||'''13'''||[[Eric Maxim Choupo-Moting]]
+|-
+|LW ||'''6''' ||[[Moumi Ngamaleu]] || || {{suboff|86}}
+|-
+|CF ||'''10'''||[[Vincent Aboubakar]] ([[Captain (association football)|c]]) || {{sent off|2|81|90+3}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|FW ||'''12'''||[[Karl Toko Ekambi]] || || {{subon|64}}
+|-
+|MF ||'''22'''||[[Olivier Ntcham]] || || {{subon|68}}
+|-
+|DF ||'''2''' ||[[Jerome Ngom Mbekeli]] || || {{subon|86}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Rigobert Song]]
+|}
+|valign="top"|[[File:CMR-BRA 2022-12-02.svg|300px]]
+|valign="top" width="50%"|
+{| style="font-size:90%; margin:auto" cellspacing="0" cellpadding="0"
+|-
+!width=25| !!width=25|
+|-
+|GK ||'''23'''||[[Ederson (footballer, born 1993)|Ederson]]
+|-
+|RB ||'''13'''||[[Dani Alves]] ([[Captain (association football)|c]])
+|-
+|CB ||'''14'''||[[Éder Militão]] || {{yel|7}}
+|-
+|CB ||'''24'''||[[Gleison Bremer|Bremer]]
+|-
+|LB ||'''16'''||[[Alex Telles]] || || {{suboff|54}}
+|-
+|CM ||'''15'''||[[Fabinho (footballer, born 1993)|Fabinho]]
+|-
+|CM ||'''8''' ||[[Fred (footballer, born 1993)|Fred]] || || {{suboff|54}}
+|-
+|RW ||'''19'''||[[Antony (footballer, born 2000)|Antony]] || || {{suboff|79}}
+|-
+|AM ||'''21'''||[[Rodrygo]] || || {{suboff|54}}
+|-
+|LW ||'''26'''||[[Gabriel Martinelli]]
+|-
+|CF ||'''18'''||[[Gabriel Jesus]] || || {{suboff|64}}
+|-
+|colspan=3|'''Substitutions:'''
+|-
+|DF ||'''4''' ||[[Marquinhos]] || || {{subon|54}}
+|-
+|MF ||'''22'''||[[Éverton Ribeiro]] || || {{subon|54}}
+|-
+|MF ||'''17'''||[[Bruno Guimarães]] || {{yel|85}} || {{subon|54}}
+|-
+|FW ||'''25'''||[[Pedro (footballer, born 1997)|Pedro]] || || {{subon|64}}
+|-
+|FW ||'''11'''||[[Raphinha]] || || {{subon|79}}
+|-
+|colspan=3|'''Manager:'''
+|-
+|colspan=3|[[Tite (football manager)|Tite]]
+|}
+|}
+
+{| style="width:100%; font-size:90%;"
+|
+'''Man of the Match:'''
+<br />[[Devis Epassy]] (Cameroon)<ref>{{cite web |url=https://www.fifa.com/fifaplus/en/articles/world-cup-qatar-2022-cameroon-v-brazil-match-report-review-highlights-analysis-stats-group-g |title=Brazil bruised but through after Cameroon defeat |publisher=[[FIFA]] |date=2 December 2022 |access-date=2 December 2022}}</ref>
+
+'''[[Assistant referee (association football)|Assistant referees]]:'''
+<br />Kyle Atkins ([[United States Soccer Federation|United States]])
+<br />Corey Parker ([[United States Soccer Federation|United States]])
+<br />'''[[Assistant referee (association football)#Fourth official|Fourth official]]:'''
+<br />[[Ma Ning (referee)|Ma Ning]] ([[Chinese Football Association|China]])
+<br />'''[[Assistant referee (association football)#Reserve assistant referee|Reserve assistant referee]]:'''
+<br />Shi Xiang ([[Chinese Football Association|China]])
+<br />'''[[Video assistant referee]]:'''
+<br />[[Alejandro Hernández Hernández|Alejandro Hernández]] ([[Royal Spanish Football Federation|Spain]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Assistant video assistant referees]]:'''
+<br />[[Juan Martínez Munuera|Juan Martinez]] ([[Royal Spanish Football Federation|Spain]])
+<br />Pau Cebrián Devís ([[Royal Spanish Football Federation|Spain]])
+<br />[[Ricardo de Burgos Bengoetxea]] ([[Royal Spanish Football Federation|Spain]])
+<br />'''[[Video assistant referee#Assistant video assistant referee|Stand-by assistant video assistant referee]]:'''
+<br />Roberto Díaz Pérez del Palomar ([[Royal Spanish Football Federation|Spain]])
+|}
+
+==Discipline==
+Fair play points would have been used as tiebreakers if the overall and head-to-head records of teams were tied. These were calculated based on yellow and red cards received in all group matches as follows:<ref name="regulations"/>
+*first yellow card: −1 point;
+*indirect red card (second yellow card): −3 points;
+*direct red card: −4 points;
+*yellow card and direct red card: −5 points;
+
+Only one of the above deductions was applied to a player in a single match.
+
+{| class="wikitable sortable" style="text-align:center;"
+|-
+!rowspan=2|Team
+!colspan=4 style="border-left:3px solid gray"|Match 1
+!colspan=4 style="border-left:3px solid gray"|Match 2
+!colspan=4 style="border-left:3px solid gray"|Match 3
+!rowspan=2 style="border-left:3px solid gray"|Points
+|-
+!style="border-left:3px solid gray"|{{yel}}
+!{{sent off|2}}
+!{{sent off|0}}
+!{{sent off|1}}
+!style="border-left:3px solid gray"|{{yel}}
+!{{sent off|2}}
+!{{sent off|0}}
+!{{sent off|1}}
+!style="border-left:3px solid gray"|{{yel}}
+!{{sent off|2}}
+!{{sent off|0}}
+!{{sent off|1}}
+|-
+|align=left|{{#invoke:flagg|main|unpe|avar=fb|BRA}}
+|style="border-left:3px solid gray"|  ||  ||  || 
+|style="border-left:3px solid gray"| 1 ||  ||  || 
+|style="border-left:3px solid gray"| 2 || ||  || 
+!style="border-left:3px solid gray"| −3
+|-
+|align=left|{{#invoke:flagg|main|unpe|avar=fb|SUI}}
+|style="border-left:3px solid gray"| 2 ||  ||  || 
+|style="border-left:3px solid gray"| 1 ||  ||  || 
+|style="border-left:3px solid gray"| 4 ||  ||  || 
+!style="border-left:3px solid gray"| −7
+|-
+|align=left|{{#invoke:flagg|main|unpe|avar=fb|CMR}}
+|style="border-left:3px solid gray"| 1 ||  ||  || 
+|style="border-left:3px solid gray"| 2 ||  ||  ||  
+|style="border-left:3px solid gray"| 3 || 1 ||  || 
+!style="border-left:3px solid gray"| −9
+|-
+|align=left|{{#invoke:flagg|main|unpe|avar=fb|SRB}}
+|style="border-left:3px solid gray"| 3 ||  ||  || 
+|style="border-left:3px solid gray"| 2 ||  ||  || 
+|style="border-left:3px solid gray"| 7 ||  ||  || 
+!style="border-left:3px solid gray"| –12
+|}
+
+==See also==
+*[[Brazil at the FIFA World Cup]]
+*[[Cameroon at the FIFA World Cup]]
+*[[Serbia at the FIFA World Cup]]
+*[[Switzerland at the FIFA World Cup]]
+
+==References==
+{{reflist}}
+
+==External links==
+{{Commons category}}
+* {{Official website|https://www.fifa.com/tournaments/mens/worldcup/qatar2022}}
+
+{{2022 FIFA World Cup}}
+
+{{DEFAULTSORT:Group G}}
+[[Category:2022 FIFA World Cup]]
+[[Category:Brazil at the 2022 FIFA World Cup]]
+[[Category:Serbia at the 2022 FIFA World Cup]]
+[[Category:Switzerland at the 2022 FIFA World Cup]]
+[[Category:Cameroon at the 2022 FIFA World Cup]]
+[[Category:FIFA World Cup group stages]]
