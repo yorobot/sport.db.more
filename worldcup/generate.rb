@@ -405,6 +405,10 @@ worldcup.data.each do |code, hash|
 #            'WC-1950', 'WC-1954', 'WC-1958', 'WC-1962', 'WC-1966'
 #           ].include?(code)
 
+   ## get year from  WC-1930
+   year = code[3..-1].to_i(10)
+
+
    matches = hash.values ## note  - matches stored as hash w/ key
  
 
@@ -417,7 +421,7 @@ worldcup.data.each do |code, hash|
    end
 
    buf = String.new
-   buf << "= #{code}\n\n"
+   buf << "= World Cup #{year}\n\n"
    buf << "  \# Matches  #{matches.size}\n"
    buf << "  \# Teams    #{stats['teams'].keys.size}\n"
    buf << "\n"
@@ -429,7 +433,9 @@ worldcup.data.each do |code, hash|
      buf << _build_match( rec )
    end
 
-   outpath = "./o/#{code.downcase}.txt"
+   outdir = './o'
+   # outdir = '/sports/openfootball/worldcup.more/worldcup'
+   outpath = "#{outdir}/#{year}_worldcup.txt"
    write_text( outpath, buf )
 end
 
