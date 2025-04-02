@@ -190,34 +190,20 @@ end
 ## note - only use "generic" uniform league codes for now!!
 
 
+autofiller = ->(league_query) {
+                   seasons = find_league_seasons!( league_query ) || []
+                   seasons[ 0 ]  ## assume first is latest season
+               }
+
+
+
 datasets = if opts[:file]
-              read_leagueset( opts[:file] )
+              read_leagueset( opts[:file], autofill: autofiller )
            else
-              parse_leagueset_args( args )
+              parse_leagueset_args( args, autofill: autofiller )
            end
 
 
-## step 0 - validate and fill-up seasons etc.
-datasets.each do |league_key, seasons|
-  ##  todo - find a better name
-  ##  use internal_league_code or such - why? why not?
-  ###  convenience helpers - lets you use eng.1, euro, etc.
-  ## check if mapping for league_code
-  metal_league_code = find_league!( league_key )
-
-  ## note - default to latest season of league
-  ##              might be 2024/25 or 2024 or
-  #                 for world cup 2022 or such
-  if seasons.empty?
-     season = case league_key
-               when  'world'          then Season('2022')
-               when  'euro'           then Season('2024')
-               when  'br.1', 'copa.l' then Season('2024')
-               else                        Season('2024/25')
-               end
-    seasons << season
-  end
-end
 
 ## step 1 - download
 datasets.each do |league_key, seasons|

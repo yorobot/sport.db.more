@@ -67,6 +67,7 @@ def self.convert( league:, season: )
 
   season = Season( season )   ## cast (ensure) season class (NOT string, integer, etc.)
 
+  ### note - find_league returns the metal_league_code 
   league_code = find_league!( league )
 
   matches_url = Metal.competition_matches_url( league_code, season.start_year )
@@ -76,7 +77,14 @@ def self.convert( league:, season: )
   data_teams     = Webcache.read_json( teams_url )
 
 
-  ## note - for internation club tournaments
+  ###
+  ## todo/fix - use find_by!  - add upstream!!!
+  league_info = LeagueCodes.find_by( code: league, season: season )
+  ## check for time zone
+  tz  = league_info['tz']
+  pp tz
+
+  ## note - for international club tournaments
   ##         auto-add (fifa) country code e.g.
   ##      Liverpool FC  => Liverpool FC (ENG)
   ##
@@ -85,10 +93,6 @@ def self.convert( league:, season: )
                   'copa.l'].include?(league.downcase) ? true : false
 
 
-  ## check for time zone
-  tz  = find_zone!( league: league,
-                    season: season )
-  pp tz
 
   ## build a (reverse) team lookup by name
   puts "#{data_teams['teams'].size} teams"

@@ -24,7 +24,7 @@ fr.1,     FL1,    2024/25 2023/24 2022/23 2021/22 2020/21
 it.1,      SA,    2024/25 2023/24 2022/23 2021/22 2020/21
     # SA  - Serie A, Italy          15 seasons | 2019-08-24 - 2020-08-02 / matchday 27
 
-br.1,       BSA,     2024 2023 2022 2021 2020
+br.1,       BSA,     2025 2024 2023 2022 2021 2020
 
 
 ########
@@ -34,7 +34,7 @@ uefa.cl,    CL,    2024/25 2023/24 2022/23 2021/22 2020/21
     ##  was europe.cl / cl
     ## todo/check: use champs and NOT cl - why? why not?
 
-copa.l,     CLI,    2024 2023 2022 2021
+copa.l,     CLI,    2025 2024 2023 2022 2021
    ## Copa Libertadores
 
 

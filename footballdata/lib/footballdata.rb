@@ -1,5 +1,5 @@
 ## 3rd party (our own)
-require 'football/timezones'  # note - pulls in season/formats, cocos & tzinfo
+require 'leagues'          # note - pulls in season/formats, cocos & tzinfo
 require 'webget'           ## incl. webget, webcache, webclient, etc.
 require 'fifa'
 
