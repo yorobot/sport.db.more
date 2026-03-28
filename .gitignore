@@ -1,6 +1,9 @@
 #######
 ## ignore dotenv (.env)
 .env
+.env.yml
+.env.yaml
+
 
 ####
 #  ignore logs and output
