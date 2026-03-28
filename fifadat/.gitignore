@@ -1,0 +1,16 @@
+#####################
+##  ignore cached datasets
+
+worldcup/
+
+####
+#m  temp directories incl. more/
+##
+
+tmp/
+tmp2/
+more/
+
+
+
+
