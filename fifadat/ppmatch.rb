@@ -1,14 +1,8 @@
-require_relative 'fifa'
-require_relative 'fifa_helper'
-require_relative 'fifa_stadiums'
-require_relative 'fifa_teams'
-require_relative 'fifa_players'
+require_relative 'helper'
 
 
 
 ## pretty print matches
-
-
 
 
 
@@ -282,7 +276,7 @@ cup['Results'].each_with_index do |m, i|
   
 
    ### get match (live) details
-   live = read_json( "./matches/#{season}/#{localDateTime.strftime('%Y-%m-%d')}_#{team1[:abbrev]}-#{team2[:abbrev]}__#{idMatch}.json" )
+   live = read_json( "./worldcup/matches/#{season}/#{localDateTime.strftime('%Y-%m-%d')}_#{team1[:abbrev]}-#{team2[:abbrev]}__#{idMatch}.json" )
 
    players = Players.new
    players.add( live['HomeTeam']['Players'] )
@@ -346,7 +340,7 @@ cup['Results'].each_with_index do |m, i|
 
    if resultType == 2   ## aet, win on pens
       ### get timeline with penalty shoot-out details
-      timeline = read_json( "./timelines/#{season}/#{localDateTime.strftime('%Y-%m-%d')}_#{team1[:abbrev]}-#{team2[:abbrev]}__#{idMatch}.json" )
+      timeline = read_json( "./worldcup/timelines/#{season}/#{localDateTime.strftime('%Y-%m-%d')}_#{team1[:abbrev]}-#{team2[:abbrev]}__#{idMatch}.json" )
 
       pens = build_penalties( timeline['Event'], players: players )
       pp pens
@@ -405,25 +399,6 @@ end
 
 
 
-=begin
-args = ARGV
-
-season =  if args.size == 1
-              args[0].to_i
-          else
-             1950 # 2022 # 1930  # 2014 ## 2022  ## 2014  # 2022 # 1930 # 2022 
-          end
-
-
-cup = read_json( "./fifa/#{season}_matches.json" )
-
-## pp cup['Results']
-match_count = cup['Results'].size
-puts "  #{match_count} match(es) in season #{season}"
-
-
-puts pp_matches( cup, name: "World Cup #{season}" )
-=end
 
 
 seasons = [1930, 1934, 1938,
@@ -431,13 +406,13 @@ seasons = [1930, 1934, 1938,
            1982, 1986, 1990, 1994, 1998, 2002, 2006, 2010,
            2014, 2018, 2022]
 
-outdir = "../../openfootball/worldcup"
-## outdir = "./"
+## outdir = "../../openfootball/worldcup"
+outdir = "./"
 
 
 seasons.each do |season|
 
-  cup = read_json( "./fifa/#{season}_matches.json" )
+  cup = read_json( "./worldcup/#{season}_matches.json" )
 
    ## pp cup['Results']
    match_count = cup['Results'].size

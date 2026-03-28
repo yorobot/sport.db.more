@@ -1,8 +1,4 @@
-require_relative 'fifa'
-require_relative 'fifa_helper'
-require_relative 'fifa_teams'
-require_relative 'fifa_players'
-
+require_relative 'helper'
 
 
 season = 2022
@@ -12,7 +8,7 @@ team2 = 'FRA'
 idMatch = '400128145'
 
 ### get match (live) details
-live = read_json( "./matches/#{season}/#{date.strftime('%Y-%m-%d')}_#{team1}-#{team2}__#{idMatch}.json" )
+live = read_json( "./worldcup/matches/#{season}/#{date.strftime('%Y-%m-%d')}_#{team1}-#{team2}__#{idMatch}.json" )
 
 
 

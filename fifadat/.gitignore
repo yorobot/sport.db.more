@@ -2,6 +2,7 @@
 ##  ignore cached datasets
 
 worldcup/
+worldcup2/
 
 ####
 #m  temp directories incl. more/
@@ -9,6 +10,7 @@ worldcup/
 
 tmp/
 tmp2/
+tmp3/
 more/
 
 

@@ -151,27 +151,6 @@ cup['Results'].each_with_index do |m, i|
   #            8 =>  same as 3?  -aet with golden goal/silver goal in 1998 FRA-PAR
 
 
-
-  if resultType == 2 ## aet, win on pens
-     
-     ## download timeline
-     outpath = "./timelines/#{season}/#{localDateTime.strftime('%Y-%m-%d')}_#{team1[:abbrev]}-#{team2[:abbrev]}__#{idMatch}.json"   
-     puts outpath
-
-     sleep( 1 )
-    url = Fifa._timeline_url( idCompetition: idCompetition, 
-                              idSeason:      idSeason,
-                              idStage:       idStage, 
-                              idMatch:       idMatch )
-   
-    fetch_json( url, outpath )
-
-     next
-  else
-     next
-  end
-
-
   score = if resultType == 2   ## aet, win on pens 
              "#{m['HomeTeamScore']}-#{m['AwayTeamScore']}" +
              " a.e.t., #{m['HomeTeamPenaltyScore']}-#{m['AwayTeamPenaltyScore']} pen."
