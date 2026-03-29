@@ -1,11 +1,13 @@
 
-require_relative 'fifa'
+require_relative 'helper'
 
 
 
-## fetch_json( Fifa.search_seasons_url( name: 'European Championship'), "./tmp/search_euro_champ.json" )
+## fetch_json( Fifa::Metal.competition_url( idCompetition: 10005 ), "./tmp/comp_10005.json" )
 
+## fetch_json( Fifa.search_seasons_url( name: 'fifa world cup'), "./tmp/search_fifa_worldcup.json" )
 
+__END__
 
 season = 2034
 

@@ -1,0 +1,34 @@
+season,  id_season, id_comp,  name,  start_date, end_date 
+
+1930,  1,  17,         ## uruguay
+1934, 3,   17,     ## italy
+1938, 5,   17,     ## france
+1950, 7,   17,     ## brazil
+1954, 9,   17,     ## switzerland
+1958, 15,  17,     ## sweden
+1962, 21,  17,     ## chile
+1966, 26,  17,     ## england
+1970, 32,  17,     ## mexico
+1974, 39,  17,     ## west germany
+1978, 50,  17,     ## argentina
+1982, 59,  17,     ## spain
+1986, 68,  17,     ## mexico
+1990, 76,  17,     ## italy
+1994, 84,  17,     ## usa
+1998, 1013, 17,     ## france
+2002, 4395, 17,    ## south korea & japan
+2006, 9741, 17,    ## germany
+2010, 249715, 17,   ## south africa
+2014, 251164, 17,  ## brazil
+2018, 254645, 17,  ## russia
+2022, 255711, 17,  ## qatar
+2026, 285023, 17,   ## usa
+
+
+#######
+## upcoming
+## 2030, 289085,    ## morocco, portugal, spain 
+##                 ##  (+ argentina, paraguay, uruguay)  
+## 2034, 289087     ## saudi arabia
+ 
+

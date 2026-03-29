@@ -2,6 +2,85 @@
 
 class Fifa
 
+##
+##  read config
+##     add to (hash) table indexed by idComp
+
+  def self.root
+     ## sport.db.more/fifadat/lib
+    File.expand_path( (File.dirname(File.dirname(__FILE__))) )
+  end
+
+  def self.read_configs( *paths )
+    comps = {}
+   
+     paths.each do |path|
+        rows = read_csv( path )
+
+        rows.each do |row|
+             # note - convert ids to integer numbers
+            idComp   = (row['id_comp'] || row['IdCompetition']).to_i(10)
+            idSeason = (row['id_season'] || row['IdSeason']).to_i(10)
+  
+            seasons = comps[idComp] ||={}
+            seasons[row['season']] = {  season:         row['season'],
+                                        idSeason:       idSeason,
+                                        idCompetition:  idComp,
+                                        name:           row['name'],
+                                        start_date:     row['start_date'],
+                                        end_date:       row['end_date']  
+                                     }
+        end
+      end
+    comps
+  end
+
+
+   COMPETITIONS = read_configs( "#{root}/fifadat/config/worldcup.csv", 
+                                "#{root}/fifadat/config/clubworldcup.csv",
+                              )
+   ##  pp COMPETITIONS
+
+
+   COMPETITION_ID = {
+      'worldcup'  => 17,   
+      'clubworldcup' =>  10005, ## note - club world cup is only 2025
+      'interconticup' => 107,  ## note - interconti  incl. all "legacy" club world cup 2000, 2005-2023
+   }
+
+
+   def self._idComp_by_name!( name )
+       ## note - downcase and remove all spaces from name
+       ##  e.g. WORLD CUP => worldcup
+       q = name.downcase.gsub( ' ', '' )
+       idComp = COMPETITION_ID[ q ]
+       raise ArgumentError, "no idCompetition found for #{name}; sorry" if idComp.nil?
+       idComp
+   end
+
+
+   def self._worldcup_idSeason_by_year!( season )
+        ## note - lookup season key is a string
+        season = season.to_s
+
+       idComp = _idComp_by_name!( 'worldcup' )
+       rec = COMPETITIONS[ idComp ][ season ]
+       raise ArgumentError, "no (worldcup) idSeason found for #{season}; sorry"    if rec.nil?  
+       rec[:idSeason]
+   end
+
+   def self._idSeason_by_year!( name:, season: )
+        ## note - lookup season key is a string
+        season = season.to_s
+
+       idComp = _idComp_by_name!( name )
+       rec = COMPETITIONS[ idComp ][ season ]
+       raise ArgumentError, "no idSeason found for #{name} #{season}; sorry"    if rec.nil?  
+       rec[:idSeason]
+   end
+
+
+
    BASE_URL = 'https://api.fifa.com/api/v3'
 
 
@@ -10,6 +89,7 @@ class Fifa
      ## todo/fix - url encode name!!!
      "#{BASE_URL}/seasons/search?name=#{name}&count=500"
    end
+
 
    def self.competitions_url   ## list first 50 comps
       "#{BASE_URL}/competitions/?language=en"
@@ -23,103 +103,24 @@ class Fifa
 
 
 
-   ## world cup fifa idSeasons 
-   WORLDCUP_SEASON_ID = {
-      1930 => 1,        ## uruguay
-      1934 => 3,        ## italy
-      1938 => 5,        ## france
-      1950 => 7,        ## brazil
-      1954 => 9,        ## switzerland
-      1958 => 15,       ## sweden
-      1962 => 21,       ## chile
-      1966 => 26,       ## england
-      1970 => 32,       ## mexico
-      1974 => 39,       ## west germany
-      1978 => 50,       ## argentina
-      1982 => 59,       ## spain
-      1986 => 68,       ## mexico
-      1990 => 76,       ## italy
-      1994 => 84,       ## usa
-      1998 => 1013,     ## france
-      2002 => 4395,     ## south korea & japan
-      2006 => 9741,     ## germany
-      2010 => 249715,   ## south africa
-      2014 => 251164,   ## brazil
-      2018 => 254645,   ## russia
-      2022 => 255711,   ## qatar
-      2026 => 285023,    ## usa
-      2030 => 289085,    ## morocco, portugal, spain 
-                         ##  (+ argentina, paraguay, uruguay)  
-      2034 => 289087     ## saudi arabia
-   }
-
- ## idComp is 10005!! (not 107!)  
- ##  289175 10005 -- FIFA Club World Cup 2025
-
-=begin
-    CLUBWORLDCUP_SEASON_ID = {
-     2022 => 286466107   ## -- FIFA Club World Cup Morocco 2022
-287833 107 -- FIFA Club World Cup Saudi Arabia 2023
-
-4735 107 -- FIFA Club World Championship Toyota Cup Japan 2005
-
-285345 107 -- FIFA Club World Cup UAE 2021
-250695 107 -- FIFA Club World Cup Japan 2008
-
-259689 107 -- FIFA Club World Cup Morocco 2014
-275724 107 -- FIFA Club World Cup Japan 2015
-252901 107 -- FIFA Club World Cup UAE 2009
-
-276100 107 -- FIFA Club World Cup Japan 2016
-276136 107 -- FIFA Club World Cup UAE 2018
-283878 107 -- FIFA Club World Cup Qatar 2019
-259665 107 -- FIFA Club World Cup Morocco 2013
-249926 107 -- FIFA Club World Cup Japan 2007
-284690 107 -- FIFA Club World Cup Qatar 2020
-254476 107 -- FIFA Club World Cup UAE 2010
-258492 107 -- FIFA Club World Cup Japan 2012
-276118 107 -- FIFA Club World Cup UAE 2017
-257425 107 -- FIFA Club World Cup Japan 2011
-248388 107 -- FIFA Club World Cup Japan 2006
-
-=end
-
-
-   def self._idSeason_by_year!( season )
-       idSeason = WORLDCUP_SEASON_ID[ season ]
-       raise ArgumentError, "no (worldcup) idSeason found for #{season}; sorry"    if idSeason.nil?  
-       idSeason
-   end
-
-
-   COMPETITION_ID = {
-      'worldcup'  => 17,   
-   }
-
-   def self._idCompetition_by_name!( name )
-       idCompetition = COMPETITION_ID[ name.downcase ]
-       raise ArgumentError, "no idCompetition found for #{name}; sorry"    if idCompetition.nil?  
-       idCompetition
-   end
-
-
 
    def self.worldcup_season_url( season: )
-      Metal.season_url( idSeason: _idSeason_by_year!( season ))
+      Metal.season_url( idSeason: _worldcup_idSeason_by_year!( season ))
    end
 
    def self.worldcup_squads_url( season: )
-      Metal.squads_url( idSeason:     _idSeason_by_year!( season ),
-                        idCompetition: 17)
+      Metal.squads_url( idSeason:      _worldcup_idSeason_by_year!( season ),
+                        idCompetition: _idComp_by_name!( 'worldcup' ))
    end
  
    def self.worldcup_matches_url( season: )
-      Metal.matches_url( idSeason: _idSeason_by_year!( season ))
+      Metal.matches_url( idSeason: _worldcup_idSeason_by_year!( season ))
    end
 
    def self.worldcup_stages_url( season: )
-      Metal.stages_url( idSeason:  _idSeason_by_year!( season ))    
+      Metal.stages_url( idSeason:  _worldcup_idSeason_by_year!( season ))    
    end
+
 
 
 class Metal

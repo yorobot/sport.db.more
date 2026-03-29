@@ -1,0 +1,91 @@
+season,  id_season, id_comp,  name,  start_date, end_date 
+
+
+##   name => official name 
+##              e.g. Club World Cup or Club World Championship
+
+
+###
+##  club world cup (2000,2005-2023, 2025 every 4yrs, 32 teams) 
+##      & intercontintal cup (2024-  every 1yr, 7 teams)
+## 
+##  see https://en.wikipedia.org/wiki/FIFA_Club_World_Cup
+##     https://en.wikipedia.org/wiki/FIFA_Intercontinental_Cup
+##
+##  see  
+##    https://www.fifa.com/en/tournaments/mens/fifa-club-world-cup
+##    https://www.fifa.com/en/tournaments/mens/intercontinentalcup
+##
+## 2025 Rebrand: The new format launched in 2025 with 32 teams (
+##                  12 European, 
+##                  6 South American, 
+##                  4 each from Asia, Africa, North/Central America, and
+##                 1 from Oceania + host).
+##
+## Previous Format: Ran from 2005 to 2023 annually, featuring 7 teams 
+##                 (6 continental champions + host league winner)
+##
+## Legacy: In 2024, the annual format was replaced by the 
+##                       Intercontinental Cup.
+##
+## note - the club world cup  was not held from 2001 to 2004 
+##  It returned in 2005 as an annual competition until 2023.
+##
+## Following the 2023 edition, the tournament was restructured 
+## into a quadrennial event beginning in 2025, 
+## adopting a format similar to that of the FIFA World Cup. 
+
+
+
+   2000, 3692, 107,  Club World Championship Brazil 2000,   2000-01-05T20:45:00Z, 2000-01-14T00:00:00Z
+ 
+    2005,   4735,    107,     Club World Championship Japan 2005, 2005-12-11T10:20:00Z, 2005-12-18T00:00:00Z   ## Toyota Cup
+    2006,   248388,    107,   Club World Cup Japan 2006,  2006-12-10T10:20:00Z, 2006-12-17T00:00:00Z   
+    2007,   249926,    107,   Club World Cup Japan 2007,  2007-12-07T10:45:00Z, 2007-12-16T00:00:00Z  
+    2008,   250695,   107,   Club World Cup Japan 2008,  2008-12-11T10:45:00Z, 2008-12-21T00:00:00Z
+    2009,   252901,   107,   Club World Cup UAE 2009,    2009-12-09T16:00:00Z, 2009-12-19T00:00:00Z
+    2010,   254476,    107,   Club World Cup UAE 2010,   2010-12-08T16:00:00Z, 2010-12-18T00:00:00Z
+    2011,   257425,    107,   Club World Cup Japan 2011,  2011-12-08T10:45:00Z, 2011-12-18T00:00:00Z
+    2012,   258492,    107,   Club World Cup Japan 2012,  2012-12-06T10:45:00Z, 2012-12-16T00:00:00Z
+    2013,   259665,    107,   Club World Cup Morocco 2013,  2013-12-11T19:30:00Z, 2013-12-21T00:00:00Z    
+    2014,   259689,   107,   Club World Cup Morocco 2014, 2014-12-10T19:30:00Z, 2014-12-20T00:00:00Z
+   2015,   275724,   107,   Club World Cup Japan 2015,   2015-12-10T10:45:00Z, 2015-12-20T00:00:00Z
+    2016,   276100,    107,   Club World Cup Japan 2016,  2016-12-08T10:30:00Z, 2016-12-18T00:00:00Z
+    2017,   276118,    107,   Club World Cup UAE 2017,   2017-12-06T17:00:00Z, 2017-12-16T00:00:00Z     
+    2018,   276136,    107,   Club World Cup UAE 2018,  2018-12-12T15:30:00Z, 2018-12-22T00:00:00Z
+    2019,   283878,    107,   Club World Cup Qatar 2019, 2019-12-11T17:30:00Z, 2019-12-21T00:00:00Z 
+
+## note - next year (!!) in feb (not dec)
+    2020,   284690,    107,   Club World Cup Qatar 2020,  2021-02-01T17:30:00Z, 2021-02-11T00:00:00Z
+
+    2021,   285345,   107,   Club World Cup UAE 2021,     2022-02-03T16:30:00Z, 2022-02-12T00:00:00Z
+    
+     2022,  286466,   107,   Club World Cup Morocco 2022,       2023-02-01T19:00:00Z, 2023-02-11T00:00:00Z
+    
+     2023,  287833,   107,    Club World Cup Saudi Arabia 2023,  2023-12-12T18:00:00Z, 2023-12-22T00:00:00Z
+   
+ 
+
+#########
+## idComp is 10005!! (not 107!)  
+###   107 is really interconti cup  - incl. legacy cup world cups!!
+###   10005 is the new club world cup (every 4yrs, 32 teams)
+
+2025,  289175,  10005,   Club World Cup 2025,  2025-06-15T00:00:00Z, 2025-07-13T00:00:00Z
+
+
+
+#######
+#  Interconti Cup 2024-  (every year, 7 teams)
+#     replaces "old / legacy" yearly club world cup format
+
+  2024, 290199, 107,  Intercontinental Cup 2024, 2024-09-22T16:00:00Z, 2024-12-18T00:00:00Z
+  2025, 292073, 107,  Intercontinental Cup 2025, 2025-09-14T18:00:00Z, 2025-12-17T00:00:00Z  
+
+
+######
+## upcoming
+##  2026, 292989, 107,  Intercontinental Cup 2026, 2026-09-01T00:00:00Z, 2026-12-31T00:00:00Z
+
+     
+
