@@ -1,8 +1,4 @@
-require_relative 'fifa'
-require_relative 'fifa_helper'
-require_relative 'fifa_stadiums'
-require_relative 'fifa_teams'
-require_relative 'fifa_players'
+require_relative 'helper'
 
 
 
@@ -65,14 +61,21 @@ end
 
 
 
-def pp_matches( cup, name:, season:  )
+def pp_matches(  season:,
+                 slug:  )
+
+   cup =  read_json( "./#{slug}/#{season}_matches.json" )
+
+   ## pp cup['Results']
+   match_count = cup['Results'].size
+   puts "  #{match_count} match(es) in season #{season}"
+
+
 
    cup = sort_results( cup )
 
 
    buf = String.new
-   buf << "= #{name}\n"
-   buf <<  "\n"
 
 
 ## add stats
@@ -284,7 +287,7 @@ cup['Results'].each_with_index do |m, i|
   
 
    ### get match (live) details
-   live = read_json( "./matches/#{season}/#{localDateTime.strftime('%Y-%m-%d')}_#{team1[:abbrev]}-#{team2[:abbrev]}__#{idMatch}.json" )
+   live = read_json( "./#{slug}/matches/#{season}/#{localDateTime.strftime('%Y-%m-%d')}_#{team1[:abbrev]}-#{team2[:abbrev]}__#{idMatch}.json" )
 
    players = Players.new
    players.add( live['HomeTeam']['Players'] )
@@ -333,52 +336,3 @@ end
   buf
 end
 
-
-
-=begin
-args = ARGV
-
-season =  if args.size == 1
-              args[0].to_i
-          else
-             1950 # 2022 # 1930  # 2014 ## 2022  ## 2014  # 2022 # 1930 # 2022 
-          end
-
-
-cup = read_json( "./fifa/#{season}_matches.json" )
-
-## pp cup['Results']
-match_count = cup['Results'].size
-puts "  #{match_count} match(es) in season #{season}"
-
-
-puts pp_matches( cup, name: "World Cup #{season}" )
-=end
-
-
-seasons = [1930, 1934, 1938,
-           1950, 1954, 1958, 1962, 1966, 1970, 1974, 1978,
-           1982, 1986, 1990, 1994, 1998, 2002, 2006, 2010,
-           2014, 2018, 2022]
-
-
-## outdir = "../../openfootball/worldcup"
-outdir = "./"
-
-seasons.each do |season|
-
-  cup = read_json( "./fifa/#{season}_matches.json" )
-
-   ## pp cup['Results']
-   match_count = cup['Results'].size
-   puts "  #{match_count} match(es) in season #{season}"
-
-
-   buf =  pp_matches( cup, name: "World Cup #{season}",
-                           season: season )
-   puts buf
-   write_text( "#{outdir}/more/#{season}.txt", buf )
-end
-
-
-puts "bye"

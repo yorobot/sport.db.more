@@ -33,7 +33,19 @@ def build_stadium_rec( h )
                                             name == 'Stade de France'
                                             
 
+      if city_name == 'New York' &&
+         name == 'New York/New Jersey Stadium'
+         city_name = 'New York/New Jersey (East Rutherford)'
+         name      = 'Giants Stadium'
+      end 
 
+      if city_name == 'Los Angeles' &&
+         name == 'Rose Bowl Stadium'
+        city_name = 'Los Angeles (Pasadena)' 
+        name      = 'Rose Bowl'  
+      end
+
+      
      city_name = 'Los Angeles (Pasadena)' if city_name == 'Pasadena'
                                               name == 'Rose Bowl'
 

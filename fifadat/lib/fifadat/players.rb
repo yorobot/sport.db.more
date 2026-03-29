@@ -150,7 +150,26 @@ def build_goal( h, players: )
     ##  and offset (stoppage/injury time)    
     ##  e.g. 90'+11'
 
-    minute, offset = _parse_minute( h['Minute'] )
+     minute_str = h['Minute']
+
+     if minute_str.nil? || minute_str.empty?
+
+
+
+      ## todo/fix - find minute
+      ##   in interconti cup 2024-12-1
+        if h['Period'] == 11    ## realy penalty shoot out!!!
+                                   ## skip - why? why not?
+            minute_str =  "121'"                       
+        else
+           puts "!! minute in goal is nil or empty:"
+           pp h
+           exit 1
+        end
+      end
+
+
+    minute, offset = _parse_minute( minute_str )
 
     ## check for weird minute 0 e.g.
     ##   Germany-Austria 1934 
@@ -163,7 +182,21 @@ def build_goal( h, players: )
 
      rec[ :offset] = offset   if offset  ## add optional offset (stoppage/injury time)
 
-     rec[ :player ] = players.find!( h['IdPlayer'] ) 
+      idPlayer = h['IdPlayer']
+
+      if idPlayer.nil?
+         puts "!! no idPlayer for goal!"
+         pp h
+          ##exit 1
+          ## use 'N.N.'
+
+          rec[ :player ] = {
+                             name: 'N.N.',
+                           }
+                     
+      else
+        rec[ :player ] = players.find!( idPlayer ) 
+      end
      rec    
 end
 
@@ -357,7 +390,7 @@ class Players
 
    def find!( id_player )
        rec = @recs[ id_player ]
-       raise ArgumentError, "no player w/ id #{id_player} found; sorry"  if rec.nil?
+       raise ArgumentError, "no player w/ id >#{id_player}< found; sorry"  if rec.nil?
        rec
    end
 
