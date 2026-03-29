@@ -5,6 +5,8 @@ require_relative 'helper'
 
 ###
 #  get matches and stages per season
+##
+##  download / prepare (fill-up local) cache
 
 
 def prepare( name:, 
@@ -36,14 +38,14 @@ def prepare( name:,
 
   seasons.each do |season|
     cup = read_json( "#{outdir}/#{name}/#{season}_matches.json" )
+    cup = cup['Results']
 
-    ## pp cup['Results']
-    match_count = cup['Results'].size
+    ## pp cup
 
-    puts "  #{match_count} match(es) in season #{season}"
+    puts "  #{cup.size} match(es) in season #{season}"
 
 
-    cup['Results'].each_with_index do |m, i|
+    cup.each_with_index do |m, i|
       idCompetition = m['IdCompetition']
       idSeason      = m['IdSeason']
       idStage       = m['IdStage']
@@ -62,7 +64,7 @@ def prepare( name:,
       localDateTime  = parse_date( m['LocalDate'] )
 
     
-      puts "[#{i+1}/#{match_count}]  #{teamName1} #{teamName2}, #{stageName}, #{localDateTime}"
+      puts "[#{i+1}/#{cup.size}]  #{teamName1} #{teamName2}, #{stageName}, #{localDateTime}"
 
 
       outpath = "#{outdir}/#{name}/matches/#{season}/#{localDateTime.strftime('%Y-%m-%d')}_#{teamCode1}-#{teamCode2}__#{idMatch}.json"   

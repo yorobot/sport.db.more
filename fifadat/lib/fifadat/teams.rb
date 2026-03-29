@@ -28,7 +28,7 @@ end
 
 
 
-def build_team_rec( h )
+def build_team( h )
    name = desc( h['TeamName'] )
 
    name = norm_team( name )
@@ -36,7 +36,8 @@ def build_team_rec( h )
 
    rec = { id:      h['IdTeam'],
            name:    name,
-           abbrev:  h['Abbreviation']
+           abbrev:  h['Abbreviation'],
+           country: h['IdCountry'],
         }
 
   rec
@@ -93,11 +94,11 @@ end  # class Teams
 
 
 
-def collect_teams( cup, teams )
-  cup['Results'].each_with_index do |m, i|
+def collect_teams( data, teams )
+  data.each_with_index do |m, i|
 
-    team1 = build_team_rec( m['Home'] )
-    team2 = build_team_rec( m['Away'] )
+    team1 = build_team( m['Home'] )
+    team2 = build_team( m['Away'] )
 
     teams.add( team1 )
     teams.add( team2 )

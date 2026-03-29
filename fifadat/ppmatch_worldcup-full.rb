@@ -1,5 +1,9 @@
-
 require_relative 'helper'
+
+
+
+## pretty print matches
+
 
 
 
@@ -8,22 +12,19 @@ seasons = [1930, 1934, 1938,
            1982, 1986, 1990, 1994, 1998, 2002, 2006, 2010,
            2014, 2018, 2022]
 
-
 ## outdir = "../../openfootball/worldcup"
-outdir = "."
+outdir = "./"
 
 
 seasons.each do |season|
-
-    buf = String.new
-    buf << "= World Cup #{season}\n"
-    buf <<  "\n"
-    buf <<  pp_matches( slug: "worldcup",
-                       season: season )
+   buf = String.new
+   buf << "= World Cup #{season}\n"
+   buf << "\n"
+   buf <<  pp_matches_full( slug: 'worldcup',
+                            season: season )
+   puts buf
    
-    puts buf
-
-    write_text( "#{outdir}/more/worldcup#{season}.txt", buf )
+   write_text( "#{outdir}/more/#{season}_full.txt", buf )
 end
 
 

@@ -65,6 +65,16 @@ require_relative 'fifadat/teams'
 require_relative 'fifadat/stadiums'
 
 
+## more 
+require_relative 'fifadat/download'   ## "all-in-one" prepare (download cache) helpers etc.
+
+## pretty print 
+require_relative 'fifadat/ppgoals'
+require_relative 'fifadat/ppstats'
+require_relative 'fifadat/ppmatch'
+require_relative 'fifadat/ppmatch_full'
+
+
 
 
 

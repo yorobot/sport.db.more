@@ -44,36 +44,6 @@ end
 
 
 
- MINUTE_RE = %r{  \A
-                       (?<minute>\d{1,3}) '
-                        ( \+
-                          (?<offset>\d{1,2}) '
-                        )?
-                   \z
-                 }x 
-
-
-def _parse_minute( str )
-    m = MINUTE_RE.match( str )
-    raise ArgumentError, "unknown goal minute format in #{str.inspect}"  if m.nil?
-
-    minute = m[:minute].to_i(10)  
-    offset = m[:offset] ? m[:offset].to_i(10) : nil  
-    
-    [minute,offset]
-end
-
-def _fmt_minute( minute, offset )
-     ## pp [minute,offset]
-
-     buf = String.new
-     buf << "#{minute}"
-     buf << "+#{offset}"   if offset    
-     buf << "'"
-     buf
-end
-
-
   
   
   
@@ -226,35 +196,6 @@ def build_goals( recs, players:,  penalties: false )
 end
 
 
-def pp_goals( recs )
-   players = {}
-
-   ## "fold" multiple goals of player
-   recs.each do |rec|
-      player_name = rec[:player][:name]
-
-      goal = String.new
-      goal << _fmt_minute( rec[:minute], rec[:offset] )
-
-      ## check for goal type (og) or (p)
-      ##  1 -  "penalty"
-      ##  2 -  "regular"
-      ##  3 -  "own goal"
-  
-      goal << "(p)"   if rec[:type] == 1
-      goal << "(og)"  if rec[:type] == 3
-
-      player_rec = players[ player_name ] ||= { name: player_name, goals: [] }
-      player_rec[:goals] << goal
-   end
-
-
-   buf =  players.map do |_,player| 
-                    "#{player[:name]} #{player[:goals].join(', ')}" 
-                end.join( ', ' )
-   buf
-end
-
 
 =begin
   "Officials": 
@@ -404,9 +345,30 @@ class Players
       bookings.each do |b|
      
          card = b['Card']
-         assert( [1,2,3].include?( card ), "card 1/2/3 expected; got #{b.pretty_inspect}")
+         assert( [0,1,2,3].include?( card ), "card 0/1/2/3 expected; got #{b.pretty_inspect}")
+
+         ##
+         ## what is card 0?  ignore for now
+         ##  Palmeiras v FC Porto  0-0   - 2025-06-15T18:00:00+00:00
+         ## !! ASSERT FAILED - card 1/2/3 expected; got {"Card"=>0,
+         ## "Period"=>5,
+         ## "IdEvent"=>nil,
+         ## "EventNumber"=>nil,
+         ## "IdPlayer"=>"495048",
+         ## "IdCoach"=>nil,
+         ## "IdTeam"=>"1884426",
+         ## "Minute"=>"72'",
+         ## "Reason"=>nil}
+         next if card == 0
+
 
          idPlayer = b['IdPlayer']
+
+         ## booking (card) for coach!!!!
+         ##   skip for now
+         next   if idPlayer.nil? && b['IdCoach']
+  
+
          player = @recs[ idPlayer ]
          assert( player, "booking player not found; sorry- #{b.pretty_inspect}" )
    
@@ -432,7 +394,37 @@ class Players
           idPlayerOn  = sub['IdPlayerOn']
          
           ## note - parse & reformat minute for keep same format 
-          minute =   _fmt_minute( *_parse_minute( sub['Minute'] ))
+          minute_str = sub['Minute']
+          if minute_str.nil? || minute_str.empty?
+            if sub['Period'] == 4  ## quick fix - use 46' half-time sub??
+                minute_str = "46'"
+            elsif sub['Period'] == 8 ## quick fix - use 116' 1st half-time extra time?
+                minute_str = "116'"
+##  "SubstitutePosition"=>2,
+## "IdPlayerOff"=>"403319",
+## "IdPlayerOn"=>"436537",
+## "PlayerOffName"=>[{"Locale"=>"en-GB", "Description"=>"NASSER ALDAWSARI"}],
+## "PlayerOnName"=>[{"Locale"=>"en-GB", "Description"=>"MUSAB ALJUWAYR"}],
+## "Minute"=>"",
+## "IdTeam"=>"1943992"}
+               elsif sub['Period'] == 17  ## quick fix- what is period 17 beyond pens??
+                minute_str = "121'"
+
+ ##"Period"=>17,
+ ## "SubstitutePosition"=>2,
+ ## "IdPlayerOff"=>"473062",
+ ## "IdPlayerOn"=>"418961",
+ ## "PlayerOffName"=>[{"Locale"=>"en-GB", "Description"=>"Emiliano MARTINEZ"}],
+ ## "PlayerOnName"=>[{"Locale"=>"en-GB", "Description"=>"Anibal MORENO"}],
+ ## "Minute"=>"",
+ ## "IdTeam"=>"1884426"}
+            else
+              puts "!! minute in sub is nil or empty:"
+              pp sub
+              exit 1
+            end
+          end
+          minute =   _fmt_minute( *_parse_minute( minute_str ))
 
           player_off = @recs[ idPlayerOff ]
           player_on  = @recs[ idPlayerOn ]

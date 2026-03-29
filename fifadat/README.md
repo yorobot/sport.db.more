@@ -2,6 +2,18 @@
 
 Try some football (JSON) APIs for the worldcup & friends
 
+## Todos
+
+- [ ] check missing score in cwc 2025 !!
+```
+  18:00 UTC-4   CF Pachuca    FC Salzburg   @ TQL Stadium, Cincinnati
+                  (Bryan GONZALEZ 56';
+                   Oscar GLOUKH 42', Karim ONISIWO 76')
+
+```
+
+
+
 
 ## Unofficial FIFA
 

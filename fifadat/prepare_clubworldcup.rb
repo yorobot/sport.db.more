@@ -1,8 +1,6 @@
 
 require_relative 'helper'
 
-require_relative 'prepare'
-
 
 seasons = [2025]
 outdir  = "."

@@ -1,8 +1,6 @@
 
 require_relative 'helper'
 
-require_relative 'prepare'
-
 
 ###
 #  get matches and stages per season

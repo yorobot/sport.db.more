@@ -1,6 +1,6 @@
 
 
-def build_stadium_rec( h )
+def build_stadium( h )
      id         = h['IdStadium']
      id_country = h['IdCountry']
  ##    id_city    = h['IdCity']
@@ -133,10 +133,10 @@ end  # class Stadiums
 
 
 
-def collect_stadiums( cup, stadiums )
-  cup['Results'].each_with_index do |m, i|
+def collect_stadiums( data, stadiums )
+  data.each_with_index do |m, i|
 
-    stadium = build_stadium_rec( m['Stadium'] )
+    stadium = build_stadium( m['Stadium'] )
     
     stadiums.add( stadium )
   end
