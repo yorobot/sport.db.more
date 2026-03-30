@@ -43,8 +43,8 @@ class Fifa
 
 
    COMPETITION_ID = {
-      'worldcup'  => 17,   
-      'clubworldcup' =>  10005, ## note - club world cup is only 2025
+      'worldcup'      => 17,   
+      'clubworldcup'  => 10005, ## note - club world cup is only 2025
       'interconticup' => 107,  ## note - interconti  incl. all "legacy" club world cup 2000, 2005-2023
    }
 
@@ -58,16 +58,6 @@ class Fifa
        idComp
    end
 
-
-   def self._worldcup_idSeason_by_year!( season )
-        ## note - lookup season key is a string
-        season = season.to_s
-
-       idComp = _idComp_by_name!( 'worldcup' )
-       rec = COMPETITIONS[ idComp ][ season ]
-       raise ArgumentError, "no (worldcup) idSeason found for #{season}; sorry"    if rec.nil?  
-       rec[:idSeason]
-   end
 
    def self._idSeason_by_year!( name:, season: )
         ## note - lookup season key is a string
@@ -104,23 +94,6 @@ class Fifa
 
 
 
-   def self.worldcup_season_url( season: )
-      Metal.season_url( idSeason: _worldcup_idSeason_by_year!( season ))
-   end
-
-   def self.worldcup_squads_url( season: )
-      Metal.squads_url( idSeason:      _worldcup_idSeason_by_year!( season ),
-                        idCompetition: _idComp_by_name!( 'worldcup' ))
-   end
- 
-   def self.worldcup_matches_url( season: )
-      Metal.matches_url( idSeason: _worldcup_idSeason_by_year!( season ))
-   end
-
-   def self.worldcup_stages_url( season: )
-      Metal.stages_url( idSeason:  _worldcup_idSeason_by_year!( season ))    
-   end
-
 
 
 class Metal
@@ -154,6 +127,8 @@ class Metal
        "#{BASE_URL}/stages?idSeason=#{idSeason}" +
       "&language=en"
    end
+   
+
    
    def self.live_url( idCompetition:, idSeason:,
                                idStage:, idMatch: )

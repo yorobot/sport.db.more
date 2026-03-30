@@ -3,7 +3,8 @@
 
 def pp_matches_full( season:,
                      slug:,
-                     opt_country: false  )
+                     opt_country: false,
+                     opt_teams: false  )
 
    cup =  read_json( "./#{slug}/#{season}_matches.json" )
    cup = cup['Results']  ## only use results (match) array 
@@ -18,7 +19,7 @@ def pp_matches_full( season:,
    buf = String.new
 
    ## add stats block (dates, teams, matches, venues, etc.)
-   buf << pp_stats( cup )
+   buf << pp_stats( cup, opt_teams: opt_teams )
    buf << "\n"
 
 
@@ -188,12 +189,20 @@ cup.each_with_index do |m, i|
    lineup1 = players1.lineup
    lineup2 = players2.lineup
 
-
-   if !( team1[:name] == 'Turkey' &&
-         team2[:name] == 'South Korea')  ## 1954-06-20  - only 10 player in south koera team listed!!
-     
-     [lineup1,lineup2].each do |lineup|
-       if lineup.size != 11
+   if players1.size == 0 &&
+      players2.size == 0
+      puts "!! WARN - no players available - skipping line-ups for teams!!!!!"
+   else
+     if !((team1[:name] == 'Turkey' &&
+           team2[:name] == 'South Korea')  ||  ## 1954-06-20  - only 10 player in south koera team listed!!
+          (team1[:name] == 'Palmeiras' &&
+           team2[:name] == 'Tigres UANL')  ||     ##  2021-02-07T21:00:00+00:00 expected 11 players, got 10
+          (team1[:name] == 'Al Ahly FC' &&
+           team2[:name] == 'Palmeiras')    ##      2021-02-11T18:00:00+00:00 expected 11 players, got 10
+         )
+         
+       [lineup1,lineup2].each do |lineup|
+         if lineup.size != 11
 
          players1.dump
          puts "---"
@@ -202,26 +211,30 @@ cup.each_with_index do |m, i|
 
          pp lineup
 
-        puts " in match #{team1[:name]} v #{team2[:name]}  #{score}"
-        puts "   #{localDateTime}"
-      end
+          puts " in match #{team1[:name]} v #{team2[:name]}  #{score}"
+          puts "   #{localDateTime}"
+        end
 
-      assert( lineup.size == 11, "expected 11 players, got #{lineup.size}" )
+        assert( lineup.size == 11, "expected 11 players, got #{lineup.size}" )
+       end
      end
+
+     buf << "\n"
+     buf << "#{team1[:name]}: "+ pp_lineup( lineup1 ) + "\n"
+     buf << "#{team2[:name]}: "+ pp_lineup( lineup2 ) + "\n"
+     buf << "\n"
    end
-
-   buf << "\n"
-   buf << "#{team1[:name]}: "+ pp_lineup( lineup1 ) + "\n"
-   buf << "#{team2[:name]}: "+ pp_lineup( lineup2 ) + "\n"
-   buf << "\n"
-
 
 ###
 ##  add referees
     officials = build_officials( m['Officials'] )
-    
-    buf << "Refs: " + pp_officials( officials )
-    buf << "\n"
+
+    if officials.size == 0
+      puts "!! WARN no refs / officials found"
+    else    
+      buf << "Refs: " + pp_officials( officials )
+      buf << "\n"
+    end
 
     
     buf << "\n\n"  

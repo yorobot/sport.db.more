@@ -1,5 +1,5 @@
 
-def pp_stats( data )
+def pp_stats( data, opt_teams: false )
 
     buf = String.new
 
@@ -19,8 +19,13 @@ def pp_stats( data )
     collect_teams( data, teams )
 
     buf << "# Teams    #{teams.size}\n"
+    if opt_teams
+       teams.recs( sort: false ).each do |rec|
+          buf << "#   #{rec[:name]} (#{rec[:country]})\n"
+       end
+    end
 
-
+    
     ######
     #    matches
     #     - number of teams

@@ -62,7 +62,8 @@ class Teams
           ## assert attributes equal - why? why not?
 
           assert( new_rec[:name] == rec[:name] &&
-                  new_rec[:abbrev] == rec[:abbrev],
+                  new_rec[:abbrev] == rec[:abbrev] &&
+                  new_rec[:country] == rec[:country],
                   "team records NOT matching - #{rec.pretty_inspect} != #{new_rec.pretty_inspect}")
       end
    end

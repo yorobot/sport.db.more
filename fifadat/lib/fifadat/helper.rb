@@ -18,9 +18,10 @@ def parse_date( date_str )
 end
 
 
+
  MINUTE_RE = %r{  \A
                        (?<minute>\d{1,3}) '
-                        ( \+
+                        (  \+   
                           (?<offset>\d{1,2}) '
                         )?
                    \z
@@ -28,6 +29,10 @@ end
 
 
 def _parse_minute( str )
+
+    ## support weirdo  120'+-30'  -- remove minuts
+    str = str.gsub( '-', '' )
+  
     m = MINUTE_RE.match( str )
     raise ArgumentError, "unknown goal minute format in #{str.inspect}"  if m.nil?
 

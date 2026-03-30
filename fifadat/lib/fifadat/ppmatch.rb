@@ -11,7 +11,8 @@
 def pp_matches(  season:,
                  slug:,
                  opt_country: false,
-                 opt_stadium: true  )   
+                 opt_stadium: true,
+                 opt_teams: false  )   
 
    cup =  read_json( "./#{slug}/#{season}_matches.json" )
    cup = cup['Results']  ## only use results (match) array 
@@ -26,7 +27,7 @@ def pp_matches(  season:,
    buf = String.new
 
    ## add stats block (dates, teams, matches, venues, etc.)
-   buf << pp_stats( cup )
+   buf << pp_stats( cup, opt_teams: opt_teams )
    buf << "\n"
 
 

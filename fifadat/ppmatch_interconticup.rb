@@ -42,10 +42,6 @@ seasons = [2000,
 outdir = "."
 
 
-##
-##   fix - add country code  flag
-##            Salzburg (AUT),  Inter Miami (USA), etc.
-
 
 seasons.each do |season|
 
