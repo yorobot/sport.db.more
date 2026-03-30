@@ -1,53 +1,6 @@
 
-
-####
-ALPHA_RE = %r{ \A
-                   \p{L}
-                   [\p{L} '.-]*
-               \z
-              }ix
-
-##
-##  J. HARTING               - note: include .
-##   Jose BUSTAMANTE-NAVA    - note: include -
-##   Yannick N'Djeng         - note: include '
-##    Ismail JAKOBS  Ismail JAKOBS
-
-def is_alpha?( name )  ## use is_alpha_name? or is_unialpha? or such??
-    ALPHA_RE.match( name ) ? true : false
-end
-
-
-def norm_name( name )
-    ## \u00A0 - non-breaking space
-   name = name.gsub( /[\u00A0]/, ' ' )
-   name
-end
-
-def norm_player( name )
-   ##  check player name if include parentheses or such
-    ## GILMAR (Gilmar Dos Santos Neves) - 1958 Brazil 
-    ##  PELÉ (Edson Arantes do Nascimento)
   
-   name = norm_name( name )
-
-   ## ROMÁRIO (Romário de Souza Faria)
-  
-   name = 'GILMAR'  if name == 'GILMAR (Gilmar Dos Santos Neves)'
-   name = 'PELÉ'    if name == 'PELÉ (Edson Arantes do Nascimento)'
-  
-   name = 'ROMÁRIO'   if name == 'ROMÁRIO (Romário de Souza Faria)'
-
-   name = 'EUSEBIO'   if name == 'EUSEBIO (Eusebio da Silva Ferreira)'
-  
-   name
-end
-
-
-
-  
-  
-  
+    
 def build_penalty( h, players: )
     ## split into minute
     ##  and offset (stoppage/injury time)    
@@ -263,7 +216,9 @@ end
 
 def build_official( h )
     name = desc( h['Name'] )
-    name = norm_name( name )
+
+    ## fix - use norm_official
+    name = norm_official( name )
 
     idCountry = h['IdCountry']
     type      = h['OfficialType']
@@ -315,6 +270,9 @@ def build_player( h )
    name = norm_player( name )
 
    short_name = desc( h['ShortName'] )
+
+   ##
+   ##  todo/check - add IdCountry if available??
 
    rec = { id:      h['IdPlayer'],
            name:        name,

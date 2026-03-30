@@ -1,5 +1,5 @@
 
-require_relative 'fifa_players'
+require_relative '../helper'
 
 str = "Ismail JAKOBS  Ismail JAKOBS"
 pp is_alpha?( str  )

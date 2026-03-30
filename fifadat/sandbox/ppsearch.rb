@@ -1,18 +1,17 @@
 
-require_relative 'fifa'
-require_relative 'fifa_helper'
+require_relative '../helper'
 
 
 data = read_json( "./tmp/search_world_cup.json" )
+data = data['Results']
 
-results_count = data['Results'].size
-puts "  #{results_count} result(s)"
+puts "  #{data.size} result(s)"
 
-data['Results'].each_with_index do |h,i|
+data.each_with_index do |h,i|
 
-    idSeason = h['IdSeason']
+    idSeason      = h['IdSeason']
     idCompetition = h['IdCompetition']
-    name = desc( h['Name'] )
+    name    = desc( h['Name'] )
 
     puts  "#{idSeason} #{idCompetition} -- #{name}" 
 end

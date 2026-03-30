@@ -1,4 +1,4 @@
-require_relative 'helper'
+require_relative '../helper'
 
 
 season = 2022
@@ -32,8 +32,8 @@ lineup = players1.lineup
 pp lineup
 puts "  #{lineup.size} player(s)"
 
-puts "Argentina: " + pplineup( lineup )
-puts "France: " + pplineup( players2.lineup )
+puts "Argentina: " + pp_lineup( lineup )
+puts "France: " + pp_lineup( players2.lineup )
 
 
 puts "bye"

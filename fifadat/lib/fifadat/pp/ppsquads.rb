@@ -161,8 +161,7 @@ data.each_with_index do |h,i|
       officials.each do |official|
 
         name = desc( official['Name'])
-
-        name = norm_name( name )  ## replace non-breaking spaces
+        name = norm_official( name )  ## replace non-breaking spaces
   
         if !is_alpha?( name )
           puts "!! invalid official name:"

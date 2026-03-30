@@ -16,11 +16,11 @@ def pp_stats( data, opt_teams: false )
     #    teams
     #    - number of matches
     teams = Teams.new
-    collect_teams( data, teams )
+    teams.add( data )
 
     buf << "# Teams    #{teams.size}\n"
     if opt_teams
-       teams.recs( sort: false ).each do |rec|
+       teams.each( sort: false ) do |rec|
           buf << "#   #{rec[:name]} (#{rec[:country]})\n"
        end
     end
@@ -36,7 +36,7 @@ def pp_stats( data, opt_teams: false )
     #   venues
     #   - get all stadiums
     stadiums = Stadiums.new
-    collect_stadiums( data, stadiums )
+    stadiums.add( data )
 
     buf << "# Venues   #{stadiums.size}"
     cities = stadiums.cities
@@ -44,7 +44,7 @@ def pp_stats( data, opt_teams: false )
     buf << "\n"
 
 
-    stadiums.recs.each do |rec|
+    stadiums.each do |rec|
        buf << "#   #{rec[:name]}, #{rec[:city_name]} (#{rec[:id_country]})\n"
     end
     

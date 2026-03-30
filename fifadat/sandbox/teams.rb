@@ -1,6 +1,5 @@
-require_relative 'fifa'
-require_relative 'fifa_helper'
-require_relative 'fifa_teams'
+require_relative '../helper'
+
 
 ## collect (all) teams in teams.json
 
@@ -17,20 +16,18 @@ teams = Teams.new
 
 seasons.each do |season|
 
-  cup = read_json( "./fifa/#{season}_matches.json" )
+  cup = read_json( "./worldcup/#{season}_matches.json" )
+  cup = cup['Results']
 
-   ## pp cup['Results']
-   match_count = cup['Results'].size
-   puts "  #{match_count} match(es) in season #{season}"
+   ## pp cup
+   puts "  #{cup.size} match(es) in season #{season}"
 
-
-   collect_teams( cup, teams )
+   teams.add( cup )
 end
 
 
 teams.dump
 
-## fix/fix/fix -- stringize keys!!!
-write_json( "./tmp/teams.json", teams.recs )
+write_json_v2( "./tmp/worldcup_teams.json", teams.recs )
 
 puts "bye"

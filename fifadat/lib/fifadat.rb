@@ -2,7 +2,22 @@ require 'cocos'   ## check if incl webclient already?
 require 'webclient'
 
 
+def _deep_stringify_keys(obj)
+  case obj
+  when Hash
+    obj.transform_keys(&:to_s)
+       .transform_values { |v| _deep_stringify_keys(v) }
+  when Array
+    obj.map { |v| _deep_stringify_keys(v) }
+  else
+    obj
+  end
+end
+
 def write_json_v2( path, data )
+  ## note - always stringify keys for now 
+  ##            e.g. { name: "" } => { "name": "" }
+    data = _deep_stringify_keys( data )
 
    ## hack - use pretty_inspect for json pretty print         
     txtjson =  data.pretty_inspect 
@@ -59,6 +74,8 @@ end
 
 require_relative 'fifadat/api'  ## base
 
+require_relative 'fifadat/norm'  ## norm players, stadiums, etc.
+
 require_relative 'fifadat/helper'
 require_relative 'fifadat/players'
 require_relative 'fifadat/teams'
@@ -66,16 +83,17 @@ require_relative 'fifadat/stadiums'
 
 
 ## more 
-require_relative 'fifadat/download'   ## "all-in-one" prepare (download cache) helpers etc.
+require_relative 'fifadat/prepare'   ## "all-in-one" prepare (download cache) helpers etc.
 
 ## pretty print 
-require_relative 'fifadat/ppgoals'
-require_relative 'fifadat/ppstats'
-require_relative 'fifadat/ppmatch'
-require_relative 'fifadat/ppmatch_full'
-require_relative 'fifadat/pppenalties'
-require_relative 'fifadat/pplineup'
-require_relative 'fifadat/ppsquads'
+require_relative 'fifadat/pp/pphelper'
+require_relative 'fifadat/pp/ppgoals'
+require_relative 'fifadat/pp/ppstats'
+require_relative 'fifadat/pp/ppmatch'
+require_relative 'fifadat/pp/ppmatch_full'
+require_relative 'fifadat/pp/pppenalties'
+require_relative 'fifadat/pp/pplineup'
+require_relative 'fifadat/pp/ppsquads'
 
 
 
