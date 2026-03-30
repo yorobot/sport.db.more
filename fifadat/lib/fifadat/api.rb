@@ -77,7 +77,11 @@ class Fifa
    def self.search_seasons_url( name: )
      ## API_ROOT/seasons/search?name=FIFA%20U-20%20Women%20World%20Cup
      ## todo/fix - url encode name!!!
-     "#{BASE_URL}/seasons/search?name=#{name}&count=500"
+
+      ## note - encodes spaces as plus (+) NOT %20 
+     name_encoded = URI.encode_www_form_component( name )
+
+     "#{BASE_URL}/seasons/search?name=#{name_encoded}&count=500"
    end
 
 

@@ -1,6 +1,8 @@
 
-require_relative 'helper'
+require_relative '../helper'
 
+
+fetch_json( Fifa.search_seasons_url( name: 'FIFA World Cup'), "./tmp/search_fifa_worldcup_v2.json" )
 
 
 ## fetch_json( Fifa::Metal.competition_url( idCompetition: 10005 ), "./tmp/comp_10005.json" )

@@ -3,13 +3,14 @@
 ####
 ALPHA_RE = %r{ \A
                    \p{L}
-                   [\p{L} .-]*
+                   [\p{L} '.-]*
                \z
               }ix
 
 ##
 ##  J. HARTING               - note: include .
 ##   Jose BUSTAMANTE-NAVA    - note: include -
+##   Yannick N'Djeng         - note: include '
 ##    Ismail JAKOBS  Ismail JAKOBS
 
 def is_alpha?( name )  ## use is_alpha_name? or is_unialpha? or such??
@@ -362,6 +363,11 @@ class Players
        rec
    end
 
+
+   ###
+   ## todo/check
+   ##    add alias (or rename) starter  ??
+   ##   add new subs to  status == 2  - why? why not?
    def lineup
       recs = @recs.values.select { |rec| rec[:status] == 1 }
 
