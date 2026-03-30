@@ -73,6 +73,8 @@ require_relative 'fifadat/ppgoals'
 require_relative 'fifadat/ppstats'
 require_relative 'fifadat/ppmatch'
 require_relative 'fifadat/ppmatch_full'
+require_relative 'fifadat/pppenalties'
+require_relative 'fifadat/pplineup'
 
 
 

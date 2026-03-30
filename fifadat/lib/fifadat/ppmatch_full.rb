@@ -3,7 +3,7 @@
 
 def pp_matches_full( season:,
                      slug:,
-                     country: false  )
+                     opt_country: false  )
 
    cup =  read_json( "./#{slug}/#{season}_matches.json" )
    cup = cup['Results']  ## only use results (match) array 
@@ -33,18 +33,20 @@ cup.each_with_index do |m, i|
   idStage       = m['IdStage']
   idMatch       = m['IdMatch']
 
-  stageName   = desc( m['StageName'] )
-
+ 
   team1 = m['Home'] ? build_team( m['Home'] ) : { name: '?', 
-                                                  abbrev: '?' }
+                                                  abbrev: '?',
+                                                  country: '?' }
          
   team2 = m['Away'] ? build_team( m['Away'] ) : { name: '?', 
-                                                  abbrev: '?' }
+                                                  abbrev: '?',
+                                                  country: '?' }
          
 
 
   resultType  = m['ResultType']
-  assert( [0, 1,2,3,8].include?(resultType), "resultType 1,2,3 expected; got #{resultType}" )
+  assert( [0,1,2,3,8].include?(resultType), 
+            "resultType 0,1,2,3 expected; got #{resultType}" )
 
   # resultType 
   #            0 =>  no result / not played yet
@@ -56,38 +58,28 @@ cup.each_with_index do |m, i|
   score = _fmt_score( m ) 
   
 
-   matchNumber = m['MatchNumber']       # optional
+   stageName   = desc( m['StageName'] )
+   groupName   = desc( m['GroupName'] )  # optional
+   matchNumber = m['MatchNumber']         # optional
    matchDay    =  m['MatchDay']           # optional 
-   groupName   =  desc( m['GroupName'] )  # optional
   
- 
-   # "Date": "2026-06-12T19:00:00Z",
-   # "LocalDate": "2026-06-12T15:00:00Z",
-   
+  
     dateTime       = parse_date( m['Date'] )    ## utc   
     localDateTime  = parse_date( m['LocalDate'] )
 
-     assert( dateTime.sec == 0 &&
-            localDateTime.sec == 0, "sec 00 expected" )
+     assert( dateTime.sec == 0 && localDateTime.sec == 0, 
+              "sec 00 expected" )
   
-    
- 
-    date       = "%d/%d/%d" % [dateTime.day, dateTime.month, dateTime.year] 
-    date_local = localDateTime.strftime( '%b %-e' )
-
-    wday_local = localDateTime.strftime( '%a' )
-    time       = dateTime.strftime( '%H:%M' )
-    time_local = localDateTime.strftime( '%H:%M' ) 
-
     ## note:  returns Rational (e.g. 3/1 or 1/4 etc.) use to_f/to_i to convert
     diff_in_hours = ((localDateTime - dateTime) * 24).to_f
     diff_in_days  =  localDateTime.jd - dateTime.jd 
     ## pp [diff_in_hours, diff_in_days]
-
-    if !(dateTime.month == localDateTime.month &&
-         dateTime.day   == localDateTime.day) 
-      ## puts "   !!! daytime border - date #{dateTime} != localDate #{localDateTime}" 
-    end
+   
+ 
+    ##
+    ##  for debugging output match line (before goals, line-up, penalties, etc)
+    puts "  #{team1[:name]} v #{team2[:name]}  #{score}   - #{localDateTime}"
+ 
 
 
     stadium = build_stadium( m['Stadium'] )
@@ -113,20 +105,27 @@ cup.each_with_index do |m, i|
    
    
 
+     use_date_utc = false    # true 
 
-     use_date_utc = false # true 
-
+##
+## e.g. sample with DAY SHIFT!!! 
+##          Sat Jan 6 22:00 -300 (01:00 UTC, +1d)
+ 
    if use_date_utc
-         ###  use  20:30 +200 (18:30 UTC)
-     buf << "#{wday_local} #{date_local} #{time_local} %+d00" % diff_in_hours
-     if time != time_local
-       buf << " (#{time} UTC" 
+    ##  Fri Jan 7 20:30 +200 (18:30 UTC)
+     buf << localDateTime.strftime( '%a %b %-e %H:%M' )
+     buf << " %+d00" % diff_in_hours
+
+     if localDateTime.hour    != dateTime.hour &&
+        localDateTime.minutes != dateTime.minutes
+       buf << " (#{dateTime.strftime( '%H:%M')} UTC" 
        buf << ", %+dd" % -diff_in_days   if diff_in_days != 0   
        buf << ")"
      end
    else 
-        ## use   20:30 UTC+1  or 20:30 UTC-3
-     buf << "#{wday_local} #{date_local} #{time_local} UTC%+d" % diff_in_hours
+        ## use Fir Jan 7 20:30 UTC+1  or 20:30 UTC-3
+     buf << localDateTime.strftime( '%a %b %-e %H:%M' )
+     buf << " UTC%+d" % diff_in_hours
    end
 
    
@@ -134,7 +133,13 @@ cup.each_with_index do |m, i|
    buf << ", Att: #{attendance}"   if attendance
    buf << "\n"
     
-   buf <<  "  #{team1[:name]} v #{team2[:name]}  #{score}"
+   if opt_country
+     buf <<  "  #{team1[:name]} (#{team1[:country]}) v #{team2[:name]} (#{team2[:country]})"
+     buf <<  "  #{score}"  
+   else
+     buf <<  "  #{team1[:name]} v #{team2[:name]}  #{score}"
+   end   
+    
    buf << "\n"
   
   
@@ -149,10 +154,25 @@ cup.each_with_index do |m, i|
     buf <<  pp_goals( live, players: players, 
                             indent:  4 )
  
-    ##
-    ##  add team line-ups
-    puts "  #{team1[:name]} v #{team2[:name]}  #{score}   - #{localDateTime}"
     
+   ##########
+   ##   add penalty kicks / penalties
+
+   if resultType == 2   ## aet, win on pens
+      ### get timeline with penalty shoot-out details
+      timeline = read_json( "./#{slug}/timelines/#{season}/#{localDateTime.strftime('%Y-%m-%d')}_#{team1[:abbrev]}-#{team2[:abbrev]}__#{idMatch}.json" )
+
+      pens = build_penalties( timeline['Event'], players: players )
+      ## pp pens
+
+      buf << "\n"
+      buf << "Penalties: #{pp_penalties( pens, indent: 11 )}\n" 
+   end
+
+
+
+
+
 
    players1 = Players.new
    players1.add( live['HomeTeam']['Players'] )
@@ -163,24 +183,6 @@ cup.each_with_index do |m, i|
    players2.add( live['AwayTeam']['Players'] )
    players2.add_subs( live['AwayTeam']['Substitutions'])
    players2.add_bookings( live['AwayTeam']['Bookings'])
-
-
-
-
-
-   ##########
-   ##   add penalty kicks / penalties
-
-   if resultType == 2   ## aet, win on pens
-      ### get timeline with penalty shoot-out details
-      timeline = read_json( "./#{slug}/timelines/#{season}/#{localDateTime.strftime('%Y-%m-%d')}_#{team1[:abbrev]}-#{team2[:abbrev]}__#{idMatch}.json" )
-
-      pens = build_penalties( timeline['Event'], players: players )
-      pp pens
-
-      buf << "\n"
-      buf << "Penalties: #{pppenalties( pens, indent: 11 )}\n" 
-   end
 
 
    lineup1 = players1.lineup
@@ -209,8 +211,8 @@ cup.each_with_index do |m, i|
    end
 
    buf << "\n"
-   buf << "#{team1[:name]}: "+ pplineup( lineup1 ) + "\n"
-   buf << "#{team2[:name]}: "+ pplineup( lineup2 ) + "\n"
+   buf << "#{team1[:name]}: "+ pp_lineup( lineup1 ) + "\n"
+   buf << "#{team2[:name]}: "+ pp_lineup( lineup2 ) + "\n"
    buf << "\n"
 
 
@@ -218,7 +220,7 @@ cup.each_with_index do |m, i|
 ##  add referees
     officials = build_officials( m['Officials'] )
     
-    buf << "Refs: " + ppofficials( officials )
+    buf << "Refs: " + pp_officials( officials )
     buf << "\n"
 
     

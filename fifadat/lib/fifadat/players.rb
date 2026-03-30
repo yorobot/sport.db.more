@@ -269,17 +269,6 @@ def build_officials( recs )  ## use referees?
 end
 
 
-def ppofficials( recs )
-   recs.map do |rec| 
-                ppofficial( rec )
-            end.join( ', ' )
-end
-
-def ppofficial( h )
-   "#{h[:name]} (#{h[:idCountry]})"
-end
-
-
 
 
 def build_player( h )
@@ -478,84 +467,4 @@ end  # class Players
 
 
 
-def _ppplayer( player )
-   buf = String.new
-   buf << "#{player[:name]}"
-   buf << " [c]"  if player[:captain]
 
-   ## check for y/r/yr cards
-   buf << " [Y #{player[:y][:minute]}]"      if player[:y]
-   buf << " [Y/R #{player[:yr][:minute]}]"   if player[:yr]
-   buf << " [R #{player[:r][:minute]}]"      if player[:r]
-
-    ## check for sub (recursive)
-    sub = player[:sub] 
-    if sub
-       buf << " (#{sub[:minute]} #{_ppplayer( sub[:player_ref])})"
-    end
-
-   buf
-end
-
-
-def pplineup( players, indent: 6 )
-    lines = []
-    line = String.new
-
-    players.each_with_index do |player,i|
-        if line.length > 68   ## start a new line
-            lines << line.rstrip
-            line = String.new
-        end
-        line  << _ppplayer( player ) 
-           
-        next_player = players[i+1]
-        if next_player
-           if next_player[:pos] != player[:pos]
-               line << " - "  ## separate gk/def/mid/forw 
-           else 
-               line  << ", "
-           end    
-        end
-    end
-
-    lines << line.rstrip
-    lines
-
-    lines.join( "\n#{' '*indent}" )
-end
-
-
-
-def _pppen( pen1, pen2 )
-   buf = String.new
-   
-   if pen1[:type] == 0 || pen1[:type] == 41   ## scored 
-     buf << "#{pen1[:pen][0]}-#{pen1[:pen][1]} #{pen1[:player][:name]}"
-   else
-     buf << "    #{pen1[:player][:name]} (missed)"
-   end  
-
-   if pen2
-      buf << ", "
-      if pen2[:type] == 0 || pen2[:type] == 41   ## scored 
-        buf << "#{pen2[:pen][0]}-#{pen2[:pen][1]} #{pen2[:player][:name]}"
-      else
-       buf << "    #{pen2[:player][:name]} (missed)"
-      end
-   end  
-
-   buf
-end
-
-
-def pppenalties( pens, indent:  )
-      lines = []
-      line = String.new
-      
-      pens.each_slice(2) do |pen1, pen2|
-           lines << _pppen( pen1, pen2 )
-      end
-
-      lines.join( ",\n#{' '*indent}" )
-end

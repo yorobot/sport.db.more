@@ -3,6 +3,30 @@ require_relative 'helper'
 
 
 
+args = ARGV
+opts = {
+    full: false,
+}
+
+parser = OptionParser.new do |parser|
+parser.banner = "Usage: #{$PROGRAM_NAME} [options] NAMES"
+
+   parser.on( "--full",
+               "turn on full mode incl. line-up, pens, & more (default: #{opts[:full]})" ) do |full|
+     opts[:full] = true
+   end
+end
+parser.parse!( args )
+
+
+puts "OPTS:"
+p opts
+puts "ARGV:"
+p args
+
+
+
+
 seasons = [2025]
 
 
@@ -12,16 +36,34 @@ outdir = "."
 
 seasons.each do |season|
 
-    buf = String.new
-    buf << "= Club World Cup #{season}\n"
-    buf <<  "\n"
-    buf <<  pp_matches( slug: "clubworldcup",
+    page = String.new
+    page << "= Club World Cup #{season}\n"
+    page <<  "\n"
+    
+    buf = if opts[:full]
+              pp_matches_full( slug: "clubworldcup",
                        season: season,
-                       country: true )
+                       opt_country: true )
+  
+          else
+               pp_matches( slug: "clubworldcup",
+                           season: season,
+                           opt_country: true,
+                           opt_stadium: false )
+          end
    
-    puts buf
+    page << buf
+    
+    puts page
 
-    write_text( "#{outdir}/more/clubworldcup#{season}.txt", buf )
+    outpath = if opts[:full]
+                 "#{outdir}/more/clubworldcup#{season}-full.txt"
+              else
+                 "#{outdir}/more/clubworldcup#{season}.txt"
+              end
+
+    write_text( outpath, page )
+    puts "  written to >#{outpath}<"
 end
 
 

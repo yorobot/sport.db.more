@@ -4,12 +4,14 @@
 
 
 ##
-## todo - add stadium: false|true - print only city (NOT long stadium+city)
+## opt_country: true|false   -- add country code for clubs
+## opt_stadium: false|true   -- print only city (NOT long stadium+city)
 
 
 def pp_matches(  season:,
                  slug:,
-                 country: false  )   ## country: true|false  (add country code for clubs)
+                 opt_country: false,
+                 opt_stadium: true  )   
 
    cup =  read_json( "./#{slug}/#{season}_matches.json" )
    cup = cup['Results']  ## only use results (match) array 
@@ -39,8 +41,7 @@ cup.each_with_index do |m, i|
   idStage       = m['IdStage']
   idMatch       = m['IdMatch']
 
-  stageName   = desc( m['StageName'] )
-
+ 
   team1 = m['Home'] ? build_team( m['Home'] ) : { name: '?', 
                                                       abbrev: '?',
                                                       country: '?' }
@@ -50,14 +51,12 @@ cup.each_with_index do |m, i|
                                                       country: '?' }
          
 
-  # "Date":      "2026-06-12T19:00:00Z"
-  # "LocalDate": "2026-06-12T15:00:00Z"
    
     dateTime       = parse_date( m['Date'] )    ## utc   
     localDateTime  = parse_date( m['LocalDate'] )
 
-     assert( dateTime.sec == 0 &&
-            localDateTime.sec == 0, "sec 00 expected" )
+     assert( dateTime.sec == 0 && localDateTime.sec == 0, 
+                "sec 00 expected" )
   
     ## note:  returns Rational (e.g. 3/1 or 1/4 etc.) use to_f/to_i to convert
     diff_in_hours = ((localDateTime - dateTime) * 24).to_f
@@ -70,24 +69,18 @@ cup.each_with_index do |m, i|
 
   score = _fmt_score( m )
   
-
+   stageName   = desc( m['StageName'] )
+   groupName   = desc( m['GroupName'] )  # optional
    matchNumber = m['MatchNumber']       # optional
    matchDay  =  m['MatchDay']           # optional 
-   groupName =  desc( m['GroupName'] )  # optional
   
-  ### todo/check MatchNumber  ## optional  (see 2022!!)
-
-  
+   
    stadium = build_stadium( m['Stadium'] )
 
     attendance = m['Attendance']
     
 
 
-##
-## e.g. sample with DAY SHIFT!!! 
-##          Sat 14/6/2014 22:00 -300 (01:00 UTC, +1d)
- 
 
    if lastStageName.nil? || lastStageName != stageName
   
@@ -113,7 +106,8 @@ cup.each_with_index do |m, i|
    
    
 
-
+ ##
+ ##  move to ppdebug (or ppdump??) !! 
  #  buf = String.new
  #  buf << "             #{stageName}"
  #  buf <<  ", #{groupName}"  if groupName
@@ -133,7 +127,7 @@ cup.each_with_index do |m, i|
      ## use   20:30 UTC+1  or 20:30 UTC-3
      buf <<  "  #{localDateTime.strftime( '%H:%M' )} UTC%+d" % diff_in_hours
 
-     if country
+     if opt_country
         buf <<  "   #{team1[:name]} (#{team1[:country]})"
         buf <<  "  #{score}  "
         buf <<  "#{team2[:name]} (#{team2[:country]})   "
@@ -141,11 +135,15 @@ cup.each_with_index do |m, i|
         buf <<  "   #{team1[:name]}  #{score}  #{team2[:name]}   "
      end
 
-     buf << "@ #{stadium[:name]}, #{stadium[:city_name]}"
-     buf << "\n"
+     if opt_stadium
+       buf << "@ #{stadium[:name]}, #{stadium[:city_name]}"
+     else
+       buf << "@ #{stadium[:city_name]}"
+     end
+      
+      buf << "\n"
 
 
-    ## puts "  last_date #{last_date}  localDateTime #{localDateTime}"
    last_date = localDateTime
   
    ### get match (live) details
