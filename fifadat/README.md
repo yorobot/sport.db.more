@@ -1,10 +1,25 @@
-# (JSON) APIs (JSON)
+# Unofficial FIFA (JSON) APIs
 
-Try some football (JSON) APIs for the worldcup & friends
 
 ## Todos
 
+- [ ] try to decipher period values
+         3  - 1st half    (1'-45' or 45'+7')  -- 0' possible!!    
+         5  - 2nd half    (46'-90' or 90'+5')
+         7  - extra time  (91'-105' or 105'+1')
+         9  - 2nd half extra time (106'-120' or 120'+1')
+         11 - penalty shoot-out  (121'-)
+
+
+         0  - ??    91'
+         4  - ??     45'+1'
+         8  - ??   105' or 106'
+      
+
+- [ ] add year on first date for club world cup in 2020, 2021, year+1 !!!
+
 - [ ] check missing score in cwc 2025 !!
+
 ```
   18:00 UTC-4   CF Pachuca    FC Salzburg   @ TQL Stadium, Cincinnati
                   (Bryan GONZALEZ 56';
@@ -13,7 +28,7 @@ Try some football (JSON) APIs for the worldcup & friends
 ```
 
 
-## Unofficial FIFA
+## Samples
 
 <https://api.fifa.com/api/v3/calendar/matches?count=100&idSeason=255711>
 
