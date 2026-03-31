@@ -74,6 +74,26 @@ class Fifa
    BASE_URL = 'https://api.fifa.com/api/v3'
 
 
+
+   def self.search_matches_url( from:, to:, count: 500 )
+##
+##  https://api.fifa.com/api/v3/calendar/matches?from=2026-03-24T00%3A00%3A00Z
+##                                                  &to=2026-03-31T23%3A59%3A59Z
+##                                                  &language=en
+##                                                  &count=100
+
+        from_encoded = URI.encode_www_form_component( from ) 
+        to_encoded =  URI.encode_www_form_component( to )
+
+        "#{BASE_URL}/calendar/matches?"+
+          "from=#{from_encoded}"+
+          "&to=#{to_encoded}"+
+          "&language=en"+
+          "&count=#{count}"
+   end                        
+          
+
+
    def self.search_seasons_url( name: )
      ## API_ROOT/seasons/search?name=FIFA%20U-20%20Women%20World%20Cup
      ## todo/fix - url encode name!!!

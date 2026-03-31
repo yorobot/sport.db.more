@@ -41,7 +41,7 @@ def fetch_json( url, path=nil, headers: nil )
 
   if res.status.ok?
     data = res.json
-    pp data
+    ## pp data
     puts "OK - fetching #{url}"
 
     write_json_v2( path, data )    if path
@@ -60,12 +60,14 @@ def fetch_json_if( url, outpath )
    
    if File.exist?( outpath )
      puts "CACHE HIT - #{outpath}"
-     return
+     return nil
    end 
 
-   fetch_json( url, outpath )
+   data = fetch_json( url, outpath )
    puts "  sleeping #{delay_in_secs} sec(s)..."
    sleep( delay_in_secs )
+
+   data
 end
 
 

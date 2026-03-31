@@ -2,6 +2,18 @@
 require_relative '../helper'
 
 
+##
+##  https://api.fifa.com/api/v3/calendar/matches?from=2026-03-24T00%3A00%3A00Z
+                                                  &to=2026-03-31T23%3A59%3A59Z
+                                                  &language=en
+                                                  &count=100
+                                                  &continuationhash=4207690029
+##
+
+
+
+__END__
+
 fetch_json( Fifa.search_seasons_url( name: 'FIFA World Cup'), "./tmp/search_fifa_worldcup_v2.json" )
 
 
