@@ -1,0 +1,335 @@
+IdOwner,Gender,TeamType,CompetitionType,AgeType,IdCompetition,IdConfederation,IdMemberAssociation,Name
+AFC,1,0,2,0,7eh9ynr7f0lcp7yv2rm8i3rba,AFC,ALG,Super Cup
+AFC,1,0,2,7,6g8hw3acenrw828la7gwx4mvs,AFC,AUS,New South Wales NPL
+AFC,1,0,2,7,61fzfjogstjuukzcehighq7mu,AFC,AUS,Queensland NPL
+AFC,1,0,2,7,2000000086,AFC,AUS,A-League Men
+AFC,1,0,2,7,2rdrisk4vlglfjxwu0precyqd,AFC,AUS,Australia Cup
+AFC,1,0,2,7,2mdmx668tyhy4u4z9zszwjv5v,AFC,AUS,Victoria NPL
+AFC,1,0,2,7,2000000129,AFC,BAN,Premier League
+AFC,1,0,2,7,82wo38rqeizxlfjjhfjy4rx7u,AFC,BHR,Premier League
+AFC,1,0,2,7,2b4keg6zj11jyirv5i2y6finp,AFC,CHN,Super Cup
+AFC,1,0,2,0,6yz7es2us0y25l8bunboj5mvo,AFC,CHN,Play-offs 1/2
+AFC,1,0,2,7,8r98daokeuzsamu5fmjtblqx5,AFC,CHN,China League One
+AFC,1,0,2,7,5pq4dbinkmt8ujoepyqzih7iw,AFC,CHN,FA Cup
+AFC,1,0,2,7,2000000087,AFC,CHN,Chinese Super League
+AFC,1,0,1,7,2000001033,AFC,FRG,AFC Champions League Elite
+AFC,1,0,1,7,2000001043,AFC,FRG,AFC Champions League Two
+AFC,1,0,2,7,di7752smia5ba7js20dqcxxuo,AFC,HKG,FA Cup
+AFC,1,0,2,7,2000000097,AFC,HKG,Premier League
+AFC,1,0,2,7,117yqo02rs8dykkxpm274w3bd,AFC,IDN,Super League
+AFC,1,0,2,7,2000000169,AFC,IND,I-League
+AFC,1,0,2,7,400171208,AFC,IND,Indian Super League
+AFC,1,0,2,7,2000000098,AFC,IRN,Persian Gulf Pro League
+AFC,1,0,2,7,duuc1qczfnawwncru1ly6o66,AFC,IRQ,Iraqi League
+AFC,1,0,2,7,1d2x62ioikj25ukwz7xmoh6,AFC,ISR,Super Cup
+AFC,1,0,2,7,cj30195079sdep2imeyt7y47p,AFC,ISR,Toto Cup Ligat Al
+AFC,1,0,2,7,bbajzna018c79opa1kl5kmkqo,AFC,JPN,J-League Cup
+AFC,1,0,2,7,5z8v4mj6cjs9ex6hdrpourjzh,AFC,JPN,J2 League
+AFC,1,0,2,7,96h5txhw7v03w2dgd8a0sjixp,AFC,JPN,Super Cup
+AFC,1,0,2,0,8427fbzwxa5w5jlnuretcunhm,AFC,JPN,Play-offs 1/2
+AFC,1,0,2,7,b1rveez5u792gess9w3e7v5le,AFC,JPN,J3 League
+AFC,1,0,2,7,2000000085,AFC,JPN,J1 League
+AFC,1,0,2,7,eve4cbr6ybatmp2qdh0nu7lx9,AFC,KGZ,Premier League
+AFC,1,0,2,7,2vuixhagqz7k43f2fswmopit7,AFC,KOR,Play-offs 1/2
+AFC,1,0,2,7,b73zounsynk9d3u1p9nvpu7i2,AFC,KOR,K League 2
+AFC,1,0,2,7,2000000088,AFC,KOR,K League 1
+AFC,1,0,2,7,2000000091,AFC,KSA,Saudi League
+AFC,1,0,2,7,f29s2t0c7fvvyx6mn8e5j8h4u,AFC,KSA,Super Cup
+AFC,1,0,2,7,326jpj7749ojwqhu3ap27zl77,AFC,KSA,King's Cup
+AFC,1,0,2,7,3j81qr7yc4gdnakfwnxf95ovh,AFC,KUW,Premier League
+AFC,1,0,2,7,4codzxzkhly139crzy3hrd7j5,AFC,LVA,Play-offs 1/2
+AFC,1,0,2,7,eg6s9f1jj7jr6stmbosn0g6c8,AFC,MAS,Super League
+AFC,1,0,2,7,1hyd16alue6dhe9mcm1hb4wzo,AFC,MLT,Super Cup
+AFC,1,0,2,7,czd7xcy0rmhpdqu8l4ftxxew7,AFC,QAT,Qatar Cup
+AFC,1,0,2,7,6c8i3dxxtqhhxw6eacylplt73,AFC,QAT,QSL Cup
+AFC,1,0,2,7,2000000102,AFC,QAT,Stars League
+AFC,1,0,2,7,87p8k6unrouoedfe29qgnkshd,AFC,QAT,Emir Cup
+AFC,1,0,2,0,4cncpv71xa67d355um3piryi,AFC,QAT,Play-offs 1/2
+AFC,1,0,2,7,1t8203y0qbd0iea09h4ejxxey,AFC,SGP,Community Shield
+AFC,1,0,2,0,2xv6qkye2rsnwram454x8i8f1,AFC,SGP,Cup
+AFC,1,0,2,7,2000000089,AFC,SGP,Premier League
+AFC,1,0,2,7,6g4vcneo8yvvf0f9cy38o3hy2,AFC,SYR,Premier League
+AFC,1,0,2,7,iu1vi94p4p28oozl1h9bvplr,AFC,THA,Thai League 1
+AFC,1,0,2,7,4gv4fxg1q7qxdubycjhbiqsl7,AFC,TJK,Vysshaya Liga
+AFC,1,0,2,7,bcpgmjs508joni6hpme87qz2b,AFC,TPE,Taiwan Football Premier League
+AFC,1,0,2,7,f39uq10c8xhg5e6rwwcf6lhgc,AFC,UAE,Pro League
+AFC,1,0,2,7,89v3ukjpui1gashsz3i1vphfa,AFC,UAE,League Cup
+AFC,1,0,2,7,2cs3cpc991ltoqbe6biqogl96,AFC,UAE,Super Cup
+AFC,1,0,2,7,1snn4i06dn6n11mrfc894snzm,AFC,UZB,Super League
+AFC,1,0,2,7,2000000092,AFC,VIE,V.League 1
+AFC,1,0,2,7,95g0izyjt28uzgh4nyt727gmr,AFC,VIE,Super Cup
+"AFC,CONMEBOL,CONCACAF,CAF,OFC,UEFA",1,0,1,7,5uh7tuee6iiy51lzj1g6urp3o,AFC|CONMEBOL|CONCACAF|CAF|OFC|UEFA,FRG,Hybrid Friendlies
+CAF,1,0,2,7,2000000060,CAF,ALG,Ligue 1
+CAF,1,0,2,7,6c76ua2pykvzepkmpprq4i8kf,CAF,ANG,Girabola
+CAF,1,0,2,7,3faz4auaxirmsh26ztmidb001,CAF,BOT,Premier League
+CAF,1,0,2,7,5veigtl6wbuw0zod1a6rcgwl1,CAF,CGO,Ligue 1
+CAF,1,0,2,7,a55ij9w4hi8dmp55fi3dp0xzz,CAF,CIV,Ligue 1
+CAF,1,0,2,7,18izk5zx4t85y7sbpjk3rlr4n,CAF,CMR,Elite One
+CAF,1,0,2,7,7pl8j3qzfufcquaf8kvduau2r,CAF,COD,Ligue 1
+CAF,1,0,2,7,2000000054,CAF,EGY,Premier League
+CAF,1,0,2,7,eouu80nhnzhj89311896c5j9x,CAF,EGY,Super Cup
+CAF,1,0,2,7,4jg7he1n3rb5dniq6hf49xorq,CAF,GHA,Premier League
+CAF,1,0,2,7,34txpgicm59r0bd60berrxhed,CAF,GUI,Ligue 1
+CAF,1,0,2,7,1eruend45vd20g9hbrpiggs5u,CAF,MAR,Botola Pro
+CAF,1,0,2,7,zk2f8f4dzjpxb47gdwsvpga8,CAF,MOZ,Moçambola
+CAF,1,0,2,7,bd105ypde78dpxxxmsyc8ggaf,CAF,MTN,Premier League
+CAF,1,0,2,0,3gp6ls97f1m51ohtkua36lj81,CAF,MWI,Super League
+CAF,1,0,2,7,ac42gi3penartj88fe9l6plpk,CAF,NGA,NPFL
+CAF,1,0,2,7,8rpwq647aw0j9v1f2wns2kfkb,CAF,RSA,Play-offs 1/2
+CAF,1,0,2,7,bowzlakqovi6ldlo84e3ttad7,CAF,RSA,Cup
+CAF,1,0,2,7,yv73ms6v1995b5wny16jcfi3,CAF,RSA,PSL
+CAF,1,0,2,7,bhwsuw1secub5f0er2hk9wlqy,CAF,RSA,8 Cup
+CAF,1,0,2,7,2c01jrik7ggtta321pstz8tm4,CAF,SDN,Sudani Premier League
+CAF,1,0,2,7,9u9j3f1oplv8p7wevlko5r8by,CAF,SEN,Ligue 1
+CAF,1,0,2,7,9z5643nd06afqu01ea2wt8y4g,CAF,TAN,Ligi kuu Bara
+CAF,1,0,2,7,f4jc2cc5nq7flaoptpi5ua4k4,CAF,TUN,Ligue 1
+CAF,1,0,2,7,4azsryi40zahspm5h6d0f0pgl,CAF,ZIM,Premier Soccer League
+CONCACAF,1,0,2,7,2000001024,CONCACAF,CAN,Canadian Championship
+CONCACAF,1,0,2,7,6lkj3o21cr4g7bql6tb3fk222,CONCACAF,CAN,Canadian Premier League
+CONCACAF,1,0,2,7,2000000106,CONCACAF,CRC,Primera División
+CONCACAF,1,0,2,7,7y9padnraod8jwtxl0dmr9o9g,CONCACAF,CRC,Supercopa
+CONCACAF,1,0,2,7,2wfvjdhzl6v3s1pf2s96qvdjx,CONCACAF,DOM,Liga Mayor
+CONCACAF,1,0,1,7,7e40n755cyscgjpgf4jnjkoa,CONCACAF,FRG,Campeones Cup
+CONCACAF,1,0,1,7,2000001034,CONCACAF,FRG,Concacaf Champions Cup
+CONCACAF,1,0,2,7,drd2vgqycguydjnxqyweby50p,CONCACAF,FRG,MLS All-Star
+CONCACAF,1,0,1,7,400171605,CONCACAF,FRG,Concacaf League
+CONCACAF,1,0,2,7,2000000113,CONCACAF,GUA,Liga Nacional
+CONCACAF,1,0,2,7,2000000119,CONCACAF,HON,Liga Nacional
+CONCACAF,1,0,2,7,6lrwyoy74oz0t5udrnmuyql6a,CONCACAF,JAM,Premier League
+CONCACAF,1,0,2,7,e1kxdivp5g4cpldgpwvnzl1vv,CONCACAF,MEX,Liga de Expansión MX
+CONCACAF,1,0,2,7,2000000104,CONCACAF,MEX,Liga MX
+CONCACAF,1,0,2,7,cjm9ktxwixs7q14un70lllgq1,CONCACAF,MEX,Campeón de Campeones
+CONCACAF,1,0,2,7,2ni5x4ta0fv1zxee9l10rp1bz,CONCACAF,PAN,LPF
+CONCACAF,1,0,2,7,ein4fkggto3pdh5msp8huafiq,CONCACAF,SLV,Primera Division
+CONCACAF,1,0,2,7,c1d9p6b2e9zr5tqlzx3ktjplg,CONCACAF,USA,USL Championship
+CONCACAF,1,0,2,7,jznihqxle06xych9ygwiwnsa,CONCACAF,USA,USL League One
+CONCACAF,1,0,2,7,2000000103,CONCACAF,USA,MLS
+CONCACAF,1,0,2,7,2bmwykmdlcc2u1c40ytoc39vy,CONCACAF,USA,US Open Cup
+CONMEBOL,1,0,2,7,a08z7wsz0uqx90wsj33g65fcd,CONMEBOL,ARG,Torneo Federal A
+CONMEBOL,1,0,2,7,1eimd27tu748g3q46i0qapem3,CONMEBOL,ARG,Super Copa
+CONMEBOL,1,0,2,7,66nxwll8fur0rtp9q7wqaki1l,CONMEBOL,ARG,Prim B Metro
+CONMEBOL,1,0,2,7,a81lq2nnsh2h11qr4z5cpieei,CONMEBOL,ARG,Trofeo de Campeones
+CONMEBOL,1,0,2,7,2000000128,CONMEBOL,ARG,Liga Profesional Argentina
+CONMEBOL,1,0,2,7,2000000081,CONMEBOL,BOL,Primera División
+CONMEBOL,1,0,2,0,8cq9dnpulnrvuhibe7j934wbc,CONMEBOL,BOL,Play-offs 1/2
+CONMEBOL,1,0,2,7,cr9dbk5nlt7b5uer4ft9h5k5p,CONMEBOL,BRA,Potiguar 1
+CONMEBOL,1,0,2,7,cfesxhzb83yl8b779uv3revz1,CONMEBOL,BRA,Serie C
+CONMEBOL,1,0,2,7,craznzmzk01hn9gjbj3g3mjah,CONMEBOL,BRA,Mineiro 1
+CONMEBOL,1,0,2,7,7ibiv9bl773m0f4elcive3fnm,CONMEBOL,BRA,Paulista A3
+CONMEBOL,1,0,2,7,96wka26zwnscv6cu44ckclp7d,CONMEBOL,BRA,Paulista A2
+CONMEBOL,1,0,2,7,3gjh0wh5rfu4yrnu6gilln9wl,CONMEBOL,BRA,Paranaense 1
+CONMEBOL,1,0,2,7,73w1cmn2hulv1zybihv7mua26,CONMEBOL,BRA,Maranhense 1
+CONMEBOL,1,0,2,7,bv2uk1yawdco66ife2wxrzazm,CONMEBOL,BRA,Gaúcho 1
+CONMEBOL,1,0,2,7,u7lq7crm0r53b0xfmzz5rw5d,CONMEBOL,BRA,Alagoano 1
+CONMEBOL,1,0,2,7,4sdxtqddcbnckfbb59m1xdalj,CONMEBOL,BRA,Baiano 1
+CONMEBOL,1,0,2,7,dwteofckcdxa41bxw5rzalt23,CONMEBOL,BRA,Cearense 1
+CONMEBOL,1,0,2,7,9nbpdi9q3ywcm4q0j5u0ekwcq,CONMEBOL,BRA,Serie D
+CONMEBOL,1,0,2,7,8cb4lvjv76e5sd9o2fn2q2nnd,CONMEBOL,BRA,Piauiense
+CONMEBOL,1,0,2,7,5zr0b05eyx25km7z1k03ca9jx,CONMEBOL,BRA,Serie B
+CONMEBOL,1,0,2,7,bbv6g4u3j4twckxxek668ty7e,CONMEBOL,BRA,Supercopa do Brasil
+CONMEBOL,1,0,2,7,47e4kf7on49r1j8tbl4lasp9p,CONMEBOL,BRA,Paraibano 1
+CONMEBOL,1,0,2,7,ba7pvv7f834y4gxsvkjakhp90,CONMEBOL,BRA,Alagoano Play-offs
+CONMEBOL,1,0,2,7,b0dgf9ig6lyl992efpblsg3o5,CONMEBOL,BRA,Carioca Série A
+CONMEBOL,1,0,2,7,aql5z4osw5wmun0emnakfpwji,CONMEBOL,BRA,Copa Paulista
+CONMEBOL,1,0,2,0,e2pjpdkcpmc62hbfaitv4aqcn,CONMEBOL,BRA,Copa Verde
+CONMEBOL,1,0,2,7,4aaa66sz94tnqiw08bqxsqwoc,CONMEBOL,BRA,Copa do Nordeste
+CONMEBOL,1,0,2,7,628367fyl0ykxeruftmoa99zp,CONMEBOL,BRA,Play-offs 1/2
+CONMEBOL,1,0,2,7,eo8sb5ohs5xw2s96ihfhbvgvy,CONMEBOL,BRA,Paulista A1
+CONMEBOL,1,0,2,7,2000000078,CONMEBOL,BRA,Serie A
+CONMEBOL,1,0,2,7,960sty6j8g82423zpmtu7eaee,CONMEBOL,BRA,Goiano 1
+CONMEBOL,1,0,2,7,4fujcptop9waua3f96go6c93a,CONMEBOL,BRA,Catarinense 1
+CONMEBOL,1,0,2,7,515zp8193llecturbp2mgpv81,CONMEBOL,BRA,Pernambucano 1
+CONMEBOL,1,0,2,7,4j8uz20iox42s82zs2d6zlswf,CONMEBOL,BRA,Sergipano 1
+CONMEBOL,1,0,2,7,2000000069,CONMEBOL,CHI,Primera División
+CONMEBOL,1,0,2,7,bly7ema5au6j40i0grhl0pnub,CONMEBOL,CHI,Primera B
+CONMEBOL,1,0,2,0,d0ps8c3pki0bd31w0634gfkwb,CONMEBOL,CHI,Play-offs 1/2
+CONMEBOL,1,0,2,7,15zkv6hogbst636ufjhajxcy,CONMEBOL,CHI,Super Cup
+CONMEBOL,1,0,2,7,byhmntnl1b4lxw0zz21im3zkd,CONMEBOL,COL,Copa Colombia
+CONMEBOL,1,0,2,7,9rmivkq3pf7cozc49amr4kl56,CONMEBOL,COL,Superliga
+CONMEBOL,1,0,2,7,2000000080,CONMEBOL,COL,Primera A
+CONMEBOL,1,0,2,7,by5nibd18nkt40t0j8a0j5yzx,CONMEBOL,COL,Primera B
+CONMEBOL,1,0,2,7,2000000079,CONMEBOL,ECU,Liga Pro
+CONMEBOL,1,0,1,7,2000001035,CONMEBOL,FRG,CONMEBOL Libertadores
+CONMEBOL,1,0,1,7,7xq2oxd5qkygl6o5xymxwhoxe,CONMEBOL,FRG,CONMEBOL Recopa
+CONMEBOL,1,0,1,7,3zjp0jdxzb9yr1yjcyba67h7t,CONMEBOL,FRG,Florida Cup
+CONMEBOL,1,0,1,7,2000001042,CONMEBOL,FRG,CONMEBOL Sudamericana
+CONMEBOL,1,0,2,0,63796jpcmrcpui2ow33li9syx,CONMEBOL,FRG,Torneos de Verano
+CONMEBOL,1,0,2,7,2000000071,CONMEBOL,PAR,Division Profesional
+CONMEBOL,1,0,2,7,2000000076,CONMEBOL,PER,Liga 1
+CONMEBOL,1,0,2,7,e0oz461icp8c5qvuy2nf3juy2,CONMEBOL,URU,Super Copa
+CONMEBOL,1,0,2,7,2000000084,CONMEBOL,URU,Liga AUF
+CONMEBOL,1,0,2,7,2000000073,CONMEBOL,VEN,Primera División
+FIFA,1,0,3,7,107,,,FIFA Intercontinental Cup™
+FIFA,1,0,3,7,10005,,,FIFA Club World Cup™
+FIFA,1,0,1,7,2y0bs9z3jy1tvxkbgey8ac9p0,,FRG,FIFA Club World Cup Play-In
+OFC,1,0,2,7,bzlcw1r7cdm47j42dc28qf9wl,OFC,COK,Round Cup
+OFC,1,0,1,7,4y9msam43q5ddjdrhsvd7fo85,OFC,FRG,OFC Champions League
+OFC,1,0,2,7,1kmct9gg4dtk0lc59honmosu7,OFC,PNG,National Soccer League
+UEFA,1,0,2,7,cf3z9dkzd4xoxaucec1icg034,UEFA,,Play-offs 1/2
+UEFA,1,0,2,7,62tmn0smwchfftjkafaj5ts5x,UEFA,ALB,Play-offs 1/2
+UEFA,1,0,2,0,9iqaslqco4yf8c1cmnqorope5,UEFA,ALB,Super Cup
+UEFA,1,0,2,7,2000000125,UEFA,ALB,Superliga
+UEFA,1,0,2,7,ejunkmfhjz9weugd2bqrkgobb,UEFA,AND,1a Divisió
+UEFA,1,0,2,7,2000000006,UEFA,ARM,Premier League
+UEFA,1,0,2,0,dbj7lzxnyhc6xuj3kwfz2bnq2,UEFA,ARM,Super Cup
+UEFA,1,0,2,7,1ncmha8yglhyyhg6gtaujymqf,UEFA,AUT,Cup
+UEFA,1,0,2,7,2000000005,UEFA,AUT,Bundesliga
+UEFA,1,0,2,7,3428tckxcirwwh3o3jgc1m8ji,UEFA,AZE,Premyer Liqa
+UEFA,1,0,2,7,2000000009,UEFA,BEL,First Division A
+UEFA,1,0,2,7,af79lqrc0ntom74zq13ccjslo,UEFA,BEL,Challenger Pro League
+UEFA,1,0,2,7,229149nh9etuw45zn3a0bw8io,UEFA,BEL,Play-offs 1/2
+UEFA,1,0,2,7,6lk3uq6zu69qes9ghcc7rkjdx,UEFA,BEL,Super Cup
+UEFA,1,0,2,7,4yngyfinzd6bb1k7anqtqs0wt,UEFA,BIH,Premijer Liga
+UEFA,1,0,2,7,6ucojvton81459kqegawtrsm,UEFA,BLR,Play-offs 1/2
+UEFA,1,0,2,7,b9k9nbj6i8qla5lnlzde2pzq6,UEFA,BLR,Super Cup
+UEFA,1,0,2,7,2000000008,UEFA,BLR,Premier League
+UEFA,1,0,2,7,7l1tyhp1w6mtiywvh1f6p74tu,UEFA,BUL,Super Cup
+UEFA,1,0,2,7,2000000010,UEFA,BUL,First League
+UEFA,1,0,2,0,8mqc9daowcuecbxr7o36v5z5e,UEFA,CRO,Super Cup
+UEFA,1,0,2,7,2000000012,UEFA,CRO,HNL
+UEFA,1,0,2,7,2000000013,UEFA,CYP,1. Division
+UEFA,1,0,2,7,bmeevknoj3lw78c7zw4uz3o3t,UEFA,CYP,Super Cup
+UEFA,1,0,2,7,4cg2hw87i4c9zu8b403jx92lm,UEFA,CZE,Play-offs 1/2
+UEFA,1,0,2,7,ddyrh5latwfhesgfh4w401n92,UEFA,CZE,FNL
+UEFA,1,0,2,7,2000000020,UEFA,CZE,Czech Liga
+UEFA,1,0,2,7,6ifaeunfdelecgticvxanikzu,UEFA,DEN,1. Division
+UEFA,1,0,2,7,2000000014,UEFA,DEN,Superliga
+UEFA,1,0,2,7,7ntvbsyq31jnzoqoa8850b9b8,UEFA,ENG,Championship
+UEFA,1,0,2,7,3frp1zxrqulrlrnk503n6l4l,UEFA,ENG,League One
+UEFA,1,0,2,7,2hj3286pqov1g1g59k2t2qcgm,UEFA,ENG,FA Cup
+UEFA,1,0,2,7,f47f3717z2vtpxfxrpdd4jl1x,UEFA,ENG,EFL Trophy
+UEFA,1,0,2,7,bgen5kjer2ytfp7lo9949t72g,UEFA,ENG,League Two
+UEFA,1,0,2,7,dqr4zpn4l9x9br1c5qv1fb6v9,UEFA,ENG,Community Shield
+UEFA,1,0,2,7,725gd73msyt08xm76v7gkxj7u,UEFA,ENG,League Cup
+UEFA,1,0,2,7,2000000000,UEFA,ENG,Premier League
+UEFA,1,0,2,7,b5udgm9vakjqz8dcmy5b2g0xt,UEFA,ENG,National League
+UEFA,1,0,2,7,2000000037,UEFA,ESP,Primera División
+UEFA,1,0,2,7,sd8z02fe455z2fjvlxvxh0zo,UEFA,ESP,Super Cup
+UEFA,1,0,2,7,3is4bkgf3loxv9qfg3hm8zfqb,UEFA,ESP,Segunda División
+UEFA,1,0,2,7,2000000004,UEFA,EST,Premium liiga
+UEFA,1,0,2,7,2civbra1kjnc1wdamseb5ie5g,UEFA,EST,Play-offs 1/2
+UEFA,1,0,2,7,euft5tzrepnov52ohe2kstyku,UEFA,EST,Super Cup
+UEFA,1,0,2,7,8235nr4mnzum9sda1aweie6z9,UEFA,FIN,Play-offs 1/2
+UEFA,1,0,2,7,2000000016,UEFA,FIN,Veikkausliiga
+UEFA,1,0,2,7,1n990e5dpi9xwruwf6uslknkq,UEFA,FIN,League Cup
+UEFA,1,0,2,7,6hlw7rhrpe9garwmfoxu4lebc,UEFA,FIN,Suomen Cup
+UEFA,1,0,2,7,6ihotpaocgiovlxw18e9r9prx,UEFA,FIN,Ykkösliiga
+UEFA,1,0,2,7,2000000018,UEFA,FRA,Ligue 1
+UEFA,1,0,2,7,1qd0wvt30rlswa4g6nu4na660,UEFA,FRA,National 1
+UEFA,1,0,2,7,5x72znp2e24y6hzqz6cdetxih,UEFA,FRA,Play-offs 1/2
+UEFA,1,0,2,7,omyihforrpqj84kx7ts42cq1,UEFA,FRA,Play-offs 2/3
+UEFA,1,0,2,7,1nsu863daf68kns4l7ou69orf,UEFA,FRA,Trophée des Champions
+UEFA,1,0,2,7,4w7x0s5gfs5abasphlha5de8k,UEFA,FRA,Ligue 2
+UEFA,1,0,1,0,7mxwwunvot2pi69pj1yr1kh8i,UEFA,FRG,UEFA Youth League
+UEFA,1,0,2,7,f4ln0dro1uzg9ic5txjkcjill,UEFA,FRG,Trofeo Joan Gamper
+UEFA,1,0,1,7,c7b8o53flg36wbuevfzy3lb10,UEFA,FRG,UEFA Conference League
+UEFA,1,0,1,7,2000001041,UEFA,FRG,UEFA Europa League
+UEFA,1,0,1,7,bfbepcvvs13v9didqrb12rh05,UEFA,FRG,Emirates Cup
+UEFA,1,0,1,7,a0f4gtru0oyxmpvty4thc5qkc,UEFA,FRG,UEFA Super Cup
+UEFA,1,0,1,7,2000001032,UEFA,FRG,UEFA Champions League
+UEFA,1,0,2,7,dr2xk7muj8aqcjdz2b3li1c0k,UEFA,FRO,Meistaradeildin
+UEFA,1,0,2,7,477yyajzheg2z8u7uick0e13e,UEFA,GEO,Erovnuli Liga
+UEFA,1,0,2,7,dkarmrybx9vx10rg7cywumth0,UEFA,GER,3. Liga
+UEFA,1,0,2,7,486rhdgz7yc0sygziht7hje65,UEFA,GER,DFB Pokal
+UEFA,1,0,2,7,722fdbecxzcq9788l6jqclzlw,UEFA,GER,2. Bundesliga
+UEFA,1,0,2,7,f30sl3386izcj2rnkjzp4mgvl,UEFA,GER,Play-offs 1/2
+UEFA,1,0,2,7,dhi4nwc0kpdrm6mjc5tphl8pp,UEFA,GER,Play-offs 4/5
+UEFA,1,0,2,7,2000000019,UEFA,GER,Bundesliga
+UEFA,1,0,2,7,3iwftmprsznl6yribr11a8l9m,UEFA,GER,Regionalliga
+UEFA,1,0,2,7,9ipdpjgxpq12m0uyct27lc7t2,UEFA,GER,Play-offs 2/3
+UEFA,1,0,2,7,bt104r4nsjznxitfaqpc8j09s,UEFA,GER,Super Cup
+UEFA,1,0,2,7,dzu6b07r25e3pk2uahxi5mzsz,UEFA,GIB,Premier Division
+UEFA,1,0,2,7,4k8p8nmee0yjb7j7177474sx6,UEFA,GRE,Super League 2
+UEFA,1,0,2,7,2000000044,UEFA,GRE,Super League 1
+UEFA,1,0,2,7,2000000023,UEFA,HUN,NB I
+UEFA,1,0,2,7,a0mlzqqal2eeoppy4jchnwg5c,UEFA,IRL,FAI President's Cup
+UEFA,1,0,2,7,7cwemnr3vi40znjq451zxkus6,UEFA,IRL,First Division
+UEFA,1,0,2,7,9oqeqyj7swpnl86ytafjwavvo,UEFA,IRL,FAI Cup
+UEFA,1,0,2,7,2000000015,UEFA,IRL,Premier Division
+UEFA,1,0,2,7,alyww1fy7f3ubwrto0iwnj18z,UEFA,IRL,Play-offs 1/2
+UEFA,1,0,2,0,bv89xh2w1vrjcwh1fiybtgdpm,UEFA,IRN,Super Cup
+UEFA,1,0,2,7,2000000038,UEFA,ISL,Besta deild
+UEFA,1,0,2,7,716ugk91yrgkz6hbqqdcqbg36,UEFA,ISL,Super Cup
+UEFA,1,0,2,7,2000000137,UEFA,ISR,Ligat Ha'al
+UEFA,1,0,2,7,8ey0ww2zsosdmwr8ehsorh6t7,UEFA,ITA,Serie B
+UEFA,1,0,2,7,2000000026,UEFA,ITA,Serie A
+UEFA,1,0,2,7,6694fff47wqxl10lrd9tb91f8,UEFA,ITA,Coppa Italia
+UEFA,1,0,2,7,3oga7yqhqdo6suxiz5zpm7g69,UEFA,ITA,Super Cup
+UEFA,1,0,2,7,1zp1du9n4rj36p1ss9zbxtqfb,UEFA,ITA,Serie C
+UEFA,1,0,2,7,9ikchyu9fb8bvx0s673jofj6s,UEFA,KAZ,Premier League
+UEFA,1,0,2,7,c96hc4nzd56fhygmv4ynv96mt,UEFA,LTU,Play-offs 1/2
+UEFA,1,0,2,7,2000000027,UEFA,LTU,Toplyga
+UEFA,1,0,2,7,48pg4xminsjxun5x4yp5ng8v,UEFA,LUX,National Division
+UEFA,1,0,2,7,2000000047,UEFA,LVA,Virsliga
+UEFA,1,0,2,7,1j4ehtrbry9depwt6oghaq3lu,UEFA,MDA,Super Liga
+UEFA,1,0,2,7,dl5v19e4466jn4fuufhlae7jm,UEFA,MKD,First League
+UEFA,1,0,2,7,5taraea6mqjjldg9zxswo825y,UEFA,MLT,Premier League
+UEFA,1,0,2,7,77yifp2y2tvn80ndo3f0laav8,UEFA,MNE,First League
+UEFA,1,0,2,7,1gwajyt0pk2jm5fx5mu36v114,UEFA,NED,Eerste Divisie
+UEFA,1,0,2,7,5dpyyhknzky6554b9s09xh0ep,UEFA,NED,Play-offs 3/4
+UEFA,1,0,2,7,4887fa8m7jkxymlmo4sj1mhhi,UEFA,NED,Play-offs 1/2
+UEFA,1,0,2,7,2000000022,UEFA,NED,Eredivisie
+UEFA,1,0,2,7,a9z1becy13xwjmcu8d6mhm66s,UEFA,NED,Super Cup
+UEFA,1,0,2,7,913mb508il6jzwtlj28fl892h,UEFA,NED,Tweede Divisie
+UEFA,1,0,2,0,64jfc0ld7oly3qu1cemwgs4jt,UEFA,NIR,Play-offs 1/2
+UEFA,1,0,2,7,34nh4p1dzty1pkeitvyvfhvit,UEFA,NIR,Charity Shield
+UEFA,1,0,2,7,2000000003,UEFA,NIR,Premiership
+UEFA,1,0,2,7,2000000034,UEFA,NOR,Eliteserien
+UEFA,1,0,2,7,8klgts549lozw1xci2vy6m3mp,UEFA,NOR,Play-offs 1/2
+UEFA,1,0,2,7,7r1f93t6ddrsa5n8v1nq6qlzm,UEFA,NOR,1. Division
+UEFA,1,0,2,7,b3c53rz9e204lq5bu2olwxpbe,UEFA,NOR,Play-offs 2/3
+UEFA,1,0,2,7,8dn0w8zh7nbn2i904603eigwf,UEFA,POL,I Liga
+UEFA,1,0,2,7,8a4sxcwj3wep6wxhajqyj13v9,UEFA,POL,Super Cup
+UEFA,1,0,2,7,2000000030,UEFA,POL,Ekstraklasa
+UEFA,1,0,2,7,2000000033,UEFA,POR,Primeira Liga
+UEFA,1,0,2,7,7yjkhaxjvwlyqls9uwby0cs4a,UEFA,POR,Super Cup
+UEFA,1,0,2,7,bqvy41un7sf86rbse9tv810x7,UEFA,POR,Taça da Liga
+UEFA,1,0,2,7,8sdpk4aerruf515yh76ezo7vi,UEFA,POR,Segunda Liga
+UEFA,1,0,2,7,dldsaygi1n1ya5qtjqm56xhih,UEFA,POR,Play-offs 2/3
+UEFA,1,0,2,7,2000000142,UEFA,ROU,Liga I
+UEFA,1,0,2,7,eterh6k7fau0ur6ossa0kzsvd,UEFA,ROU,Play-offs 1/2
+UEFA,1,0,2,7,bdktqcyr65oik166zwn4vx229,UEFA,ROU,Supercupa
+UEFA,1,0,2,7,bpo885893xeevnzypvifeaqru,UEFA,RUS,First League
+UEFA,1,0,2,7,66zod8zakjpchbuqrfewpbx24,UEFA,RUS,Play-offs 1/2
+UEFA,1,0,2,7,erpufio3qaujd9gkszcqvb0bf,UEFA,RUS,Cup
+UEFA,1,0,2,7,dsu8wp82nd0p6r8flt7rb1b8b,UEFA,RUS,Super Cup
+UEFA,1,0,2,7,2000000024,UEFA,RUS,Premier League
+UEFA,1,0,2,7,78wr14vb8weh21lmonvzytrzd,UEFA,SCO,Play-offs 4/5
+UEFA,1,0,2,7,2000000001,UEFA,SCO,Premiership
+UEFA,1,0,2,7,9oq3zc50vzv4w4rgsz7nw2fpt,UEFA,SCO,Play-offs 1/2
+UEFA,1,0,2,7,6sxm2iln2w45ux498pty9miw8,UEFA,SCO,League One
+UEFA,1,0,2,7,69fnnbjelvacb6h8dxm70yce4,UEFA,SCO,Play-offs 3/4
+UEFA,1,0,2,7,6321dlqv4ziuwqte4xpohijtw,UEFA,SCO,League Two
+UEFA,1,0,2,7,8t2o4huu2e48ij23dxnl9w5qx,UEFA,SCO,Championship
+UEFA,1,0,2,7,eog6knrkfei68si736fpquyzc,UEFA,SCO,League Cup
+UEFA,1,0,2,7,5f6f74fe4o3aa2qnqc255ckvd,UEFA,SCO,Play-offs 2/3
+UEFA,1,0,2,7,19q13y6ruzo0o84ipblcuouzs,UEFA,SCO,Challenge Cup
+UEFA,1,0,2,7,2c63lkabcjzoiqavj24madt2d,UEFA,SMR,Campionato
+UEFA,1,0,2,7,d38ytjbrodv0llqx7lfxhc4zs,UEFA,SRB,Play-offs 1/2
+UEFA,1,0,2,7,2000000052,UEFA,SRB,Super Liga
+UEFA,1,0,2,7,8v97rcbthsxmzqk4ufxws9mug,UEFA,SUI,Challenge League
+UEFA,1,0,2,7,8872tjohi4vpok4s2mtphxj9x,UEFA,SUI,Play-offs 1/2
+UEFA,1,0,2,7,2000000041,UEFA,SUI,Super League
+UEFA,1,0,2,7,2000000039,UEFA,SVK,1. liga
+UEFA,1,0,2,7,a7jvnthhjvliqu9e3m509tmy2,UEFA,SVK,Play-offs 1/2
+UEFA,1,0,2,7,ggsjtgoapnah61wu939ni8js,UEFA,SVK,Cup
+UEFA,1,0,2,7,co2klxuwfa086llqf04sjxjuw,UEFA,SVN,Play-offs 1/2
+UEFA,1,0,2,7,7nmz249q89qg5ezcvzlheljji,UEFA,SVN,1. SNL
+UEFA,1,0,2,7,bcmwd3qmoh3io14jfuh37hz1v,UEFA,SWE,Play-offs 2/3
+UEFA,1,0,2,7,9chuiarcjofld1dkj9kysehmb,UEFA,SWE,Superettan
+UEFA,1,0,2,7,ac112osli9fvox1epcg4ld3t6,UEFA,SWE,Ettan
+UEFA,1,0,2,7,2000000029,UEFA,SWE,Allsvenskan
+UEFA,1,0,2,7,akca5agk2pyhc2juhp3jjmhre,UEFA,SWE,Play-offs 3/4
+UEFA,1,0,2,7,d9eaigzyfnfiraqc3ius757tl,UEFA,SWE,Svenska Cupen
+UEFA,1,0,2,7,80ijwyc7a6bhd6gdp4zoo2tag,UEFA,SWE,Play-offs 1/2
+UEFA,1,0,2,7,7af85xa75vozt2l4hzi6ryts7,UEFA,TUR,Cup
+UEFA,1,0,2,7,482ofyysbdbeoxauk19yg7tdt,UEFA,TUR,Süper Lig
+UEFA,1,0,2,7,76zmom26b12lbgotigwc9yijg,UEFA,TUR,Super Cup
+UEFA,1,0,2,7,2o9svokc5s7diish3ycrzk7jm,UEFA,TUR,1. Lig
+UEFA,1,0,2,7,2nttcoriwf5co73vmz1vr8frm,UEFA,TUR,2. Lig
+UEFA,1,0,2,7,3c0k1qx6uulr123zti9vm74lp,UEFA,UKR,Play-offs 2/3
+UEFA,1,0,2,7,bob82k7bgt0ad2i9c9xndbq7e,UEFA,UKR,Play-offs 1/2
+UEFA,1,0,2,7,c5551zb2twbvyv8sh55bnht09,UEFA,UKR,Persha Liga
+UEFA,1,0,2,7,2kuyfkulm5lsgjxynrgh3vz70,UEFA,UKR,Cup
+UEFA,1,0,2,7,6wubmo7di3kdpflluf6s8c7vs,UEFA,UKR,Premier League
+UEFA,1,0,2,7,c76z5d6j7dpi1e79tm8fpm39z,UEFA,WAL,Premier League

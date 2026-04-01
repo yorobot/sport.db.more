@@ -1,0 +1,20 @@
+IdOwner,Gender,TeamType,CompetitionType,AgeType,IdCompetition,IdConfederation,IdMemberAssociation,Name
+AFC,1,1,1,7,emy1ibc8fu2l0fukh4vlu5xl5,AFC,CUW,Asian Cup Qualification
+AFC,1,1,1,7,6yeu4m8ey7hcaa5wuf6oe81iw,AFC,FRG,Gulf Cup of Nations
+AFC,1,1,1,7,8dxsd8xnjm9n1ogo37yomgl3p,AFC,FRG,ASEAN Championship
+AFC,1,1,1,0,44uk0qy9nasrbiliiapc8be8l,AFC,FRG,Kirin Cup
+AFC,1,1,1,7,400132628,AFC,FRG,AFC Asian Cup
+"AFC,CONMEBOL,CONCACAF,CAF,OFC,UEFA",1,1,1,7,cesdwwnxbc5fmajgroc0hqzy2,AFC|CONMEBOL|CONCACAF|CAF|OFC|UEFA,FRG,Friendlies
+CAF,1,1,1,7,400132623,CAF,FRG,CAF Africa Cup of Nations
+CONCACAF,1,1,1,7,cu0rmpyff5692eo06ltddjo8a,CONCACAF,FRG,Concacaf Nations League
+CONCACAF,1,1,1,7,400132627,CONCACAF,FRG,Concacaf Gold Cup
+CONMEBOL,1,1,1,7,400125862,CONMEBOL,FRG,CONMEBOL Copa America
+FIFA,1,1,3,7,520,,,FIFA World Cup™ Qualifiers
+FIFA,1,1,3,7,10017,,,FIFA Series™
+FIFA,1,1,3,7,10013,,,FIFA Arab Cup™ 
+FIFA,1,1,3,7,2,,,Blue Stars/FIFA Youth Cup™
+FIFA,1,1,3,7,17,,,FIFA World Cup™
+FIFA,1,1,3,7,10012,,,FIFA Asian Nations Cup
+UEFA,1,1,1,7,504,UEFA,FRG,UEFA Nations League
+UEFA,1,1,1,7,gfskxsdituog2kqp9yiu7bzi,UEFA,FRG,UEFA European Championship Qualifiers
+UEFA,1,1,1,7,8tddm56zbasf57jkkay4kbf11,UEFA,FRG,UEFA European Championship
