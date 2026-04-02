@@ -39,6 +39,10 @@ FIFA World Cup 2026
 
 <https://api.fifa.com/api/v3/stages?idSeason=285023&language=en>
 
+More
+
+<https://api.fifa.com/api/v3/seasons/25rqzyxotfthkjyf01es2wxzo>
+
 
 
  match data via fifa api

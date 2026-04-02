@@ -1,20 +1,23 @@
 IdOwner,Gender,TeamType,CompetitionType,AgeType,IdCompetition,IdConfederation,IdMemberAssociation,Name
 AFC,2,1,1,0,bsva6qm6swdsccegosfgw5ze2,AFC,FRG,FFA Cup of Nations
 AFC,2,1,1,7,3s9mhguj7zxslsjg2ly7ziaj9,AFC,FRG,Women's Asian Games
+"AFC,CONMEBOL,CONCACAF,CAF,OFC,UEFA",2,1,1,7,9hmvr28v6vm97v5c2ii3eqzxm,AFC|CONMEBOL|CONCACAF|CAF|OFC|UEFA,CUW,U15 National Team Friendlies Women
+"AFC,CONMEBOL,CONCACAF,CAF,OFC,UEFA",2,1,1,0,3fkbtt7rq8739az4mt4rczfqi,AFC|CONMEBOL|CONCACAF|CAF|OFC|UEFA,FRG,Torneio Internacional Feminino de Seleções
 "AFC,CONMEBOL,CONCACAF,CAF,OFC,UEFA",2,1,1,7,dvtl8sf1262pd2aqgu641qa7u,AFC|CONMEBOL|CONCACAF|CAF|OFC|UEFA,FRG,Friendlies Women
+"AFC,CONMEBOL,CONCACAF,CAF,OFC,UEFA",2,1,1,0,6xwnyh3lohlo7dpk5i8q43dd6,AFC|CONMEBOL|CONCACAF|CAF|OFC|UEFA,FRG,U21 National Team Friendlies Women
 CONCACAF,2,1,1,7,7crkyhmptp2txd0rf0jjh5ng,CONCACAF,FRG,CA Women's Games
 CONCACAF,2,1,1,7,dzdh9f7vyvzpq3nmvl22dyx2h,CONCACAF,FRG,SheBelieves Cup
 CONMEBOL,2,1,1,7,684j2qxgv2iq57opbj2hz5s5x,CONMEBOL,FRG,CONMEBOL Copa America Femenina
-FIFA,2,1,3,7,3,,,Blue Stars/FIFA Women's Youth Cup™
-FIFA,2,1,3,7,103,,,FIFA Women's World Cup™
 FIFA,2,1,3,7,509,,,Women's Olympic Football Tournament™
 FIFA,2,1,3,7,521,,,FIFA Women's World Cup Qualifier
+FIFA,2,1,3,7,103,,,FIFA Women's World Cup™
+FIFA,2,1,3,7,3,,,Blue Stars/FIFA Women's Youth Cup™
 FIFA,2,1,3,7,10011,,,FIFA Women's Series
-UEFA,2,1,1,0,4xdkuqi2ezk74kxebuig6tzc3,UEFA,FRG,Cyprus Women's Cup
 UEFA,2,1,1,7,8x3sbh85gc8qir50utw39jl04,UEFA,FRG,UEFA Women's Championship Qualification
+UEFA,2,1,1,0,4xdkuqi2ezk74kxebuig6tzc3,UEFA,FRG,Cyprus Women's Cup
 UEFA,2,1,1,7,acrl41bztapfkmtdaqxagu99m,UEFA,FRG,Baltic Women's Cup
-UEFA,2,1,1,7,43029a6fvhou87zehkd5u8fyt,UEFA,FRG,UEFA Women's Championship
+UEFA,2,1,1,7,16mfkt95bh7o8gmvtnzs526i2,UEFA,FRG,Pinatar Cup
 UEFA,2,1,1,0,cslv7hwxd1z23vsj50i88ziwa,UEFA,FRG,Tournoi de France
 UEFA,2,1,1,0,cw4jj3xlpar6frvabn1y70b1p,UEFA,FRG,Algarve Cup
-UEFA,2,1,1,7,16mfkt95bh7o8gmvtnzs526i2,UEFA,FRG,Pinatar Cup
 UEFA,2,1,1,0,4zwjlzdszduqmxzusysvzymms,UEFA,FRG,UEFA Women's Nations League
+UEFA,2,1,1,7,43029a6fvhou87zehkd5u8fyt,UEFA,FRG,UEFA Women's Championship

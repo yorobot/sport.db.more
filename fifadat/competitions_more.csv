@@ -1,49 +1,50 @@
 IdOwner,Gender,TeamType,CompetitionType,AgeType,IdCompetition,IdConfederation,IdMemberAssociation,Name
-AFC,1,1,1,14,8c93rclta164ypkno054nkfyt,AFC,FRG,Asian Games
-AFC,1,1,1,5,dlf90uty1axvtr1vn2aaw9vqh,AFC,FRG,AFC U23 Asian Cup
 AFC,1,1,1,4,a8zfs5watabzd386mqas8rn6c,AFC,FRG,AFC U20 Asian Cup
-AFC,2,1,1,4,e72eouiobe3w4nnd6u846cz1m,AFC,FRG,AFC U20 Women's Asian Cup
+AFC,1,1,1,5,dlf90uty1axvtr1vn2aaw9vqh,AFC,FRG,AFC U23 Asian Cup
+AFC,1,1,1,14,8c93rclta164ypkno054nkfyt,AFC,FRG,Asian Games
 AFC,2,1,1,1,9r3py108z10zvv71n50p9ymay,AFC,FRG,AFC U17 Women's Asian Cup
-"AFC,CONMEBOL,CONCACAF,CAF,OFC,UEFA",1,1,1,2,19y52cjt9hnne14tc70uqk6p5,AFC|CONMEBOL|CONCACAF|CAF|OFC|UEFA,FRG,U18 National Team Friendlies
+AFC,2,1,1,4,e72eouiobe3w4nnd6u846cz1m,AFC,FRG,AFC U20 Women's Asian Cup
 "AFC,CONMEBOL,CONCACAF,CAF,OFC,UEFA",1,1,1,14,13u4i35b7pyovhcvwsasx3c2x,AFC|CONMEBOL|CONCACAF|CAF|OFC|UEFA,FRG,U23 National Team Friendlies
 "AFC,CONMEBOL,CONCACAF,CAF,OFC,UEFA",1,1,1,1,237u1b9ewygupsv9031iajqw9,AFC|CONMEBOL|CONCACAF|CAF|OFC|UEFA,FRG,U17 National Team Friendlies
-"AFC,CONMEBOL,CONCACAF,CAF,OFC,UEFA",1,1,1,10,5vs2rb7djto9rhqt34a4pdkkq,AFC|CONMEBOL|CONCACAF|CAF|OFC|UEFA,FRG,U15 National Team Friendlies
 "AFC,CONMEBOL,CONCACAF,CAF,OFC,UEFA",1,1,1,12,etta63x1t7tnkn4jheisjwk4p,AFC|CONMEBOL|CONCACAF|CAF|OFC|UEFA,FRG,U21 National Team Friendlies
-"AFC,CONMEBOL,CONCACAF,CAF,OFC,UEFA",1,1,1,11,49jf11dykz3tma6k1uqz9hjah,AFC|CONMEBOL|CONCACAF|CAF|OFC|UEFA,FRG,U16 National Team Friendlies
-"AFC,CONMEBOL,CONCACAF,CAF,OFC,UEFA",1,1,1,4,byaqhzbd3qtx4qho6hxs772sp,AFC|CONMEBOL|CONCACAF|CAF|OFC|UEFA,FRG,U20 National Team Friendlies
 "AFC,CONMEBOL,CONCACAF,CAF,OFC,UEFA",1,1,1,3,diyn3s6fyn7w6j58hq7kkzmjt,AFC|CONMEBOL|CONCACAF|CAF|OFC|UEFA,FRG,U19 National Team Friendlies
+"AFC,CONMEBOL,CONCACAF,CAF,OFC,UEFA",1,1,1,10,5vs2rb7djto9rhqt34a4pdkkq,AFC|CONMEBOL|CONCACAF|CAF|OFC|UEFA,FRG,U15 National Team Friendlies
+"AFC,CONMEBOL,CONCACAF,CAF,OFC,UEFA",1,1,1,4,byaqhzbd3qtx4qho6hxs772sp,AFC|CONMEBOL|CONCACAF|CAF|OFC|UEFA,FRG,U20 National Team Friendlies
+"AFC,CONMEBOL,CONCACAF,CAF,OFC,UEFA",1,1,1,2,19y52cjt9hnne14tc70uqk6p5,AFC|CONMEBOL|CONCACAF|CAF|OFC|UEFA,FRG,U18 National Team Friendlies
+"AFC,CONMEBOL,CONCACAF,CAF,OFC,UEFA",1,1,1,11,49jf11dykz3tma6k1uqz9hjah,AFC|CONMEBOL|CONCACAF|CAF|OFC|UEFA,FRG,U16 National Team Friendlies
+"AFC,CONMEBOL,CONCACAF,CAF,OFC,UEFA",2,1,1,2,cdceks43sorqrsrgepqh7d7je,AFC|CONMEBOL|CONCACAF|CAF|OFC|UEFA,CUW,U18 National Team Friendlies Women
 "AFC,CONMEBOL,CONCACAF,CAF,OFC,UEFA",2,1,1,3,b46omlhvfqkvxhosckxik1ysq,AFC|CONMEBOL|CONCACAF|CAF|OFC|UEFA,FRG,U19 National Team Friendlies Women
-"AFC,CONMEBOL,CONCACAF,CAF,OFC,UEFA",2,1,1,1,q9mjhy8ar2qk3nqot1kgn0iy,AFC|CONMEBOL|CONCACAF|CAF|OFC|UEFA,FRG,U17 National Team Friendlies Women
-"AFC,CONMEBOL,CONCACAF,CAF,OFC,UEFA",2,1,1,4,2p6omyb0qefgistotszkpf8mi,AFC|CONMEBOL|CONCACAF|CAF|OFC|UEFA,FRG,U20 National Team Friendlies Women
 "AFC,CONMEBOL,CONCACAF,CAF,OFC,UEFA",2,1,1,11,dbf6fhze8eoiqf7pr288f2tt6,AFC|CONMEBOL|CONCACAF|CAF|OFC|UEFA,FRG,U16 National Team Friendlies Women
+"AFC,CONMEBOL,CONCACAF,CAF,OFC,UEFA",2,1,1,4,2p6omyb0qefgistotszkpf8mi,AFC|CONMEBOL|CONCACAF|CAF|OFC|UEFA,FRG,U20 National Team Friendlies Women
 "AFC,CONMEBOL,CONCACAF,CAF,OFC,UEFA",2,1,1,4,bisyqc7eeb7qby0rg4tbeuru2,AFC|CONMEBOL|CONCACAF|CAF|OFC|UEFA,FRG,Sud Ladies Cup
 "AFC,CONMEBOL,CONCACAF,CAF,OFC,UEFA",2,1,1,14,5re3kj0knnps2cmzhszpolgfe,AFC|CONMEBOL|CONCACAF|CAF|OFC|UEFA,FRG,U23 National Team Friendlies Women
-CAF,1,1,1,1,aenz5625kw4280usgjnbo8mqz,CAF,FRG,CAF U17 Cup of Nations
+"AFC,CONMEBOL,CONCACAF,CAF,OFC,UEFA",2,1,1,1,q9mjhy8ar2qk3nqot1kgn0iy,AFC|CONMEBOL|CONCACAF|CAF|OFC|UEFA,FRG,U17 National Team Friendlies Women
 CAF,1,1,1,4,7dauoeun2gnkofl7f4y510s4f,CAF,FRG,Africa U20 Cup of Nations
+CAF,1,1,1,1,aenz5625kw4280usgjnbo8mqz,CAF,FRG,CAF U17 Cup of Nations
 CONCACAF,1,1,1,4,adb905mfscuw4txwpwtwe6pjp,CONCACAF,FRG,Concacaf U20
-CONCACAF,1,0,2,1,3u5ywibw4vs1iyhyraee6yind,CONCACAF,USA,MLS Generation Cup U17
 CONCACAF,1,0,2,10,44rm9ar319p1qm5oapejvgtuc,CONCACAF,USA,MLS Generation Cup U15
+CONCACAF,1,0,2,1,3u5ywibw4vs1iyhyraee6yind,CONCACAF,USA,MLS Generation Cup U17
 CONMEBOL,1,1,1,4,1lxer8rysniom522w3vvz45em,CONMEBOL,FRG,CONMEBOL U20
 CONMEBOL,1,1,1,14,e490ws4ml2b7lrxo13u1fnp7u,CONMEBOL,FRG,CONMEBOL Pre-Olympic Tournament
 CONMEBOL,1,1,1,1,4p3rgwsiivlxi6nhets4yusme,CONMEBOL,FRG,CONMEBOL U17
-FIFA,1,1,3,11,10009,,,FIFA Youth Series 2025™
-FIFA,1,1,3,1,102,,,FIFA U-17 World Cup™
 FIFA,1,1,3,4,104,,,FIFA U-20 World Cup™
+FIFA,1,1,3,1,102,,,FIFA U-17 World Cup™
 FIFA,1,1,3,5,512,,,Men's Olympic Football Tournament™
+FIFA,1,1,3,11,10009,,,FIFA Youth Series 2025™
 FIFA,1,1,1,5,c79dsv7f7n6zrwn7wzwtvgo2x,,FRG,Olympics Intercontinental Play-offs
 FIFA,2,1,3,4,108,,,FIFA U-20 Women's World Cup™
 FIFA,2,1,3,1,516,,,FIFA U-17 Women's World Cup™
 OFC,1,0,2,3,7k4t5z7iiueq1l5pu1bymud71,OFC,TAH,Ligue 1
 UEFA,1,1,1,1,eggdqwtvyxgn4cgwp3r7s6ur4,UEFA,FRG,UEFA U17 Championship
-UEFA,1,1,1,1,e8uxp9qj2i2kn5c6vhiz5kju2,UEFA,FRG,UEFA U17 Championship Qualification
 UEFA,1,1,1,12,b537iyp3c44psskitxwjxpng8,UEFA,FRG,Tournoi Maurice Revello
 UEFA,1,1,1,12,ili150pwfuf39f7yfdch9lhw,UEFA,FRG,UEFA U21 Championship Qualification
+UEFA,1,1,1,1,e8uxp9qj2i2kn5c6vhiz5kju2,UEFA,FRG,UEFA U17 Championship Qualification
 UEFA,1,1,1,3,4davonpqws4a4ejl1awu98zdg,UEFA,FRG,UEFA U19 Championship Qualification
 UEFA,1,1,1,3,8u5w0g8jimye1cu5albkcb3qs,UEFA,FRG,UEFA U19 Championship
 UEFA,1,1,1,12,a3egqgf45jqft6y0uoyvw3mbj,UEFA,FRG,UEFA U21 Championship
 UEFA,1,0,2,2,cg28ptxz0vcakkngej14h244q,UEFA,ENG,U18 Premier League Cup
-UEFA,1,0,2,2,7dfd12g9pk1y688q8km7tyspy,UEFA,ENG,U18 Premier League
 UEFA,1,0,2,12,a0zpsx4vvgvn2kpxzg1bcciui,UEFA,ENG,Premier League 2 Division Two
+UEFA,1,0,2,2,7dfd12g9pk1y688q8km7tyspy,UEFA,ENG,U18 Premier League
 UEFA,1,0,2,12,75434tz9rc14xkkvudex742ui,UEFA,ENG,Premier League 2
 UEFA,1,0,1,12,3e5w6a8srquduurxr1hnm00k5,UEFA,FRG,Premier League International Cup
 UEFA,2,1,1,3,9mr92dlx7ryaxhi07sgt90ish,UEFA,FRG,UEFA U19 Championship Women

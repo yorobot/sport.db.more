@@ -15,7 +15,7 @@ end
 
 
 
-start_date = Date.new( 2022, 1, 1 )
+start_date = Date.new( 2019, 1, 1 )
 date = start_date
 
 total_stats = Hash.new(0)

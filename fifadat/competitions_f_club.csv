@@ -1,22 +1,24 @@
 IdOwner,Gender,TeamType,CompetitionType,AgeType,IdCompetition,IdConfederation,IdMemberAssociation,Name
 AFC,2,0,2,7,9p3nnxhdjahfn8qswpzy8oyc3,AFC,AUS,A-League Women
-"AFC,CONMEBOL,CONCACAF,CAF,OFC,UEFA",2,0,1,7,2firkz36ojahoc6lrbevgpgzu,AFC|CONMEBOL|CONCACAF|CAF|OFC|UEFA,FRG,Hybrid Friendlies Women
 "AFC,CONMEBOL,CONCACAF,CAF,OFC,UEFA",2,0,1,0,ethi4xj3u6mzx1mpi7xq4ubmy,AFC|CONMEBOL|CONCACAF|CAF|OFC|UEFA,FRG,Women's International Champions Cup
-CONCACAF,2,0,2,7,85qdzpr6i56z8tjex9d5mu5pm,CONCACAF,USA,NWSL Challenge Cup
+"AFC,CONMEBOL,CONCACAF,CAF,OFC,UEFA",2,0,1,7,2firkz36ojahoc6lrbevgpgzu,AFC|CONMEBOL|CONCACAF|CAF|OFC|UEFA,FRG,Hybrid Friendlies Women
 CONCACAF,2,0,2,7,djkvh1luqdkdixpoe653lzixg,CONCACAF,USA,NWSL
+CONCACAF,2,0,2,7,85qdzpr6i56z8tjex9d5mu5pm,CONCACAF,USA,NWSL Challenge Cup
+CONCACAF,2,0,2,7,1wdo4oew5cbtr9q26h44gndw4,CONCACAF,USA,NWSL Fall Series
 CONMEBOL,2,0,2,7,42o80ym7olnzmkodx1xei75d5,CONMEBOL,COL,Liga Femenina
 FIFA,2,0,3,7,10010,,,FIFA Women’s Champions Cup™
 UEFA,2,0,2,7,auz7gkeiln0z436qfrijl4ve7,UEFA,ENG,WSL 2
+UEFA,2,0,2,7,701uy8ragiklarbrq7wbummms,UEFA,ENG,Women’s FA Community Shield
 UEFA,2,0,2,7,6vq8j5p3av14nr3iuyi4okhjt,UEFA,ENG,Women's Super League
-UEFA,2,0,2,7,5k620c7y6dlbmcm88dt3eb7t,UEFA,ESP,Primera División Femenina
 UEFA,2,0,2,7,728d7roi3talthtga7cecn97u,UEFA,ESP,Supercopa Femenina
 UEFA,2,0,2,7,2kfd1pg7ymajwbxlfy1j2dhio,UEFA,ESP,Copa de la Reina
+UEFA,2,0,2,7,5k620c7y6dlbmcm88dt3eb7t,UEFA,ESP,Primera División Femenina
 UEFA,2,0,2,7,2aso72utuctat2ecs6nahjss6,UEFA,FRA,Première Ligue
 UEFA,2,0,2,7,2rcs02pi3h1wm44ty9rxrg67e,UEFA,FRA,Trophée des Championnes Féminin
 UEFA,2,0,1,7,55hcphd1ccc6eai1ms77460on,UEFA,FRG,UEFA Women's Champions League
 UEFA,2,0,2,7,2z7257m7hj58zuxcjrsg4erzc,UEFA,GER,Frauen Bundesliga
-UEFA,2,0,2,7,81txfenlgw75nq3u2nfdkj92o,UEFA,ITA,Serie A Women
 UEFA,2,0,2,7,38e64wtpxoir5xol8o2rp8ij3,UEFA,ITA,Super Cup Women
+UEFA,2,0,2,7,81txfenlgw75nq3u2nfdkj92o,UEFA,ITA,Serie A Women
 UEFA,2,0,2,7,agpweohvn9tugnyl6ry4rhivp,UEFA,NED,Eredivisie Women
 UEFA,2,0,2,7,g07gz8hviwcx96ztpnsgn8er,UEFA,NOR,Toppserien
 UEFA,2,0,2,7,eaqf2pt52a5n32sejstche0x,UEFA,NOR,Women's Play-offs 1/2

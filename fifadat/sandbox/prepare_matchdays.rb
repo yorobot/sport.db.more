@@ -4,7 +4,9 @@ require_relative '../helper'
 ###
 ## fetch matches by day
 
-year = 1930
+start_time = Time.now
+
+year = 2021
 date = Date.new( year, 1, 1 )
 
 
@@ -67,6 +69,14 @@ loop do
 
    break      if date >= Date.new( year+1, 1, 1 )
 end
+
+
+
+end_time = Time.now
+diff_in_secs = end_time - start_time
+
+puts "diff_time:"
+puts "   done in %d:%d min(s)" % [diff_in_secs/60, diff_in_secs%60]
 
 
 puts "bye"
