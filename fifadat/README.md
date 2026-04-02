@@ -3,6 +3,8 @@
 
 ## Todos
 
+- [ ] try (local) git for cached json datasets
+
 - [ ] try to decipher period values
          3  - 1st half    (1'-45' or 45'+7')  -- 0' possible!!    
          5  - 2nd half    (46'-90' or 90'+5')
