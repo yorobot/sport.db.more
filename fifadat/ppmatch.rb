@@ -54,8 +54,10 @@ require_relative 'config'
 
 args = ARGV
 opts = {
-    full: false,
+    full: false,     ## incl. line-ups, penalties, referees, etc.
+    minimal: false,  ## no dates, no venues, no goals, no half-time score, etc.
 }
+
 
 parser = OptionParser.new do |parser|
 parser.banner = "Usage: #{$PROGRAM_NAME} [options] NAME"
@@ -64,6 +66,12 @@ parser.banner = "Usage: #{$PROGRAM_NAME} [options] NAME"
                "turn on full mode incl. line-up, pens, & more (default: #{opts[:full]})" ) do |full|
      opts[:full] = true
    end
+
+   parser.on( "--min",
+               "turn on min(imal) mode (default: #{opts[:min]})" ) do |min|
+     opts[:min] = true
+   end
+
 end
 parser.parse!( args )
 
@@ -113,7 +121,9 @@ seasons.each do |season|
     buf = if opts[:full]
               pp_matches_full( slug: slug, season: season,
                                 **config[:opts_full] )
-  
+          elsif opts[:min]
+              pp_matches_min( slug: slug, season: season,
+                                 **config[:opts] )
           else
                pp_matches( slug: slug, season: season,
                              **config[:opts] )
@@ -125,6 +135,8 @@ seasons.each do |season|
 
     outpath = if opts[:full]
                  "#{outdir}/more/#{season}_#{outname}-full.txt"
+              elsif opts[:min]
+                 "#{outdir}/min/#{season}.txt"
               else
                  "#{outdir}/more/#{season}_#{outname}.txt"
               end

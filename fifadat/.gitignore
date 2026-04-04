@@ -13,7 +13,7 @@ competitions/
 seasons/
 
 ####
-#m  temp directories incl. more/
+#m  temp directories incl. more/ & min/
 ##
 
 tmp/
@@ -21,6 +21,9 @@ tmp2/
 tmp3/
 tmp4/
 more/
+min/
+
+
 
 
 

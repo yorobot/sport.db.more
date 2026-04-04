@@ -75,7 +75,14 @@ cup.each_with_index do |m, i|
     diff_in_hours = ((localDateTime - dateTime) * 24).to_f
     diff_in_days  =  localDateTime.jd - dateTime.jd 
     ## pp [diff_in_hours, diff_in_days]
-   
+  
+    
+   stageName, groupName = norm_stage( stageName, groupName,
+                             team1: team1,
+                             team2: team2,
+                             date: localDateTime.strftime( '%Y-%m-%d') )
+
+
  
     ##
     ##  for debugging output match line (before goals, line-up, penalties, etc)

@@ -1,5 +1,6 @@
 
-def pp_stats( data, opt_teams: false )
+def pp_stats( data, opt_teams: false,
+                    opt_stadiums: true )
 
     buf = String.new
 
@@ -35,21 +36,24 @@ def pp_stats( data, opt_teams: false )
     #####
     #   venues
     #   - get all stadiums
-    stadiums = Stadiums.new
-    stadiums.add( data )
 
-    buf << "# Venues   #{stadiums.size}"
-    cities = stadiums.cities
-    buf << (cities.size == 1 ? " (in 1 city)" : " (in #{cities.size} cities)")
-    buf << "\n"
+    if opt_stadiums
+      stadiums = Stadiums.new
+      stadiums.add( data )
+
+      buf << "# Venues   #{stadiums.size}"
+      cities = stadiums.cities
+      buf << (cities.size == 1 ? " (in 1 city)" : " (in #{cities.size} cities)")
+      buf << "\n"
 
 
-    stadiums.each do |rec|
-       buf << "#   #{rec[:name]}, #{rec[:city_name]} (#{rec[:id_country]})\n"
+      stadiums.each do |rec|
+        buf << "#   #{rec[:name]}, #{rec[:city_name]} (#{rec[:id_country]})\n"
+      end
     end
+
     
     buf
 end
-
 
 

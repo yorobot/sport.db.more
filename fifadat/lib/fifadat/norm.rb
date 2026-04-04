@@ -141,3 +141,64 @@ end
 
 
 
+def norm_stage( stageName, groupName,
+                     team1:,
+                     team2:,
+                     date:  )
+  ##########
+  ## worldcup 1934   - mark replays!!!
+    stageName = 'Quarter-final, Replay'  if date == '1934-06-01' &&
+                                            stageName == 'Quarter-final' &&
+                                            team1[:name] == 'Italy' &&
+                                            team2[:name] == 'Spain'
+                                            
+  ########## 
+  ## worldcup 1938   - mark replays!!!
+    stageName = '1st Round, Replays'  if date == '1938-06-09' &&
+                                            stageName == '1st Round' &&
+                                            team1[:name] == 'Cuba' &&
+                                            team2[:name] == 'Romania'
+                                            
+    stageName = '1st Round, Replays'  if date == '1938-06-09' && 
+                                            stageName == '1st Round' &&
+                                            team1[:name] == 'Switzerland' &&
+                                            team2[:name] == 'Germany'
+                                            
+   stageName = 'Quarter-final, Replay' if date == '1938-06-14' && 
+                                            stageName == 'Quarter-final' &&
+                                            team1[:name] == 'Brazil' &&
+                                            team2[:name] == 'Czechoslovakia'
+                                            
+   ############
+   ## worldcup 1954     - mark group play-offs (deciders)!!!
+   groupName = 'Group 2, Play-off'     if date == '1954-06-23' && 
+                                           groupName == 'Group 2'  &&
+                                            team1[:name] == 'West Germany' &&
+                                            team2[:name] == 'Turkey' 
+                                            
+   groupName = 'Group 4, Play-off'     if date == '1954-06-23' && 
+                                            groupName == 'Group 4'  &&
+                                            team1[:name] == 'Switzerland' &&
+                                            team2[:name] == 'Italy'
+                                            
+   ##############
+   ## worldcup 1958     - mark group play-offs (deciders)!!!
+   groupName = 'Group 1, Play-off'     if date == '1958-06-17' && 
+                                           groupName == 'Group 1'  &&
+                                            team1[:name] == 'Northern Ireland' &&
+                                            team2[:name] == 'Czechoslovakia'
+                                            
+   groupName = 'Group 3, Play-off'     if date == '1958-06-17' && 
+                                            groupName == 'Group 3'  &&
+                                            team1[:name] == 'Wales' &&
+                                            team2[:name] == 'Hungary'                                          
+ 
+   groupName = 'Group 4, Play-off'     if date == '1958-06-17' && 
+                                            groupName == 'Group 4'  &&
+                                            team1[:name] == 'Soviet Union' &&
+                                            team2[:name] == 'England'                                             
+
+    [stageName, groupName]                                        
+end
+
+

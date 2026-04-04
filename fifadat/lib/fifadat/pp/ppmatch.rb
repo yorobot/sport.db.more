@@ -64,6 +64,13 @@ cup.each_with_index do |m, i|
     diff_in_days  =  localDateTime.jd - dateTime.jd 
     ## pp [diff_in_hours, diff_in_days]
                                                        
+   stageName, groupName = norm_stage( stageName, groupName,
+                             team1: team1,
+                             team2: team2,
+                             date: localDateTime.strftime( '%Y-%m-%d') )
+
+
+
 
   resultType  = m['ResultType']
   assert( [0, 1,2,3,8].include?(resultType), "resultType 1,2,3 expected; got #{resultType}" )
@@ -76,6 +83,8 @@ cup.each_with_index do |m, i|
    matchDay  =  m['MatchDay']           # optional 
   
    
+ 
+
    stadium = build_stadium( m['Stadium'] )
 
     attendance = m['Attendance']
