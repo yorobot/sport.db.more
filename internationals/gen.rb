@@ -19,7 +19,7 @@ require_relative 'gen/build_tour'
 
 ## build index for shootouts
 recs = read_csv( "#{repo_dir}/shootouts.csv ")
-puts "  #{recs.size} record(s)"
+puts "  #{recs.size} shootout record(s)"
 pp recs[0]
 
 shootouts = {}    ## index by date/home_team/away_team
@@ -30,7 +30,7 @@ end
 
 
 recs = read_csv( "#{repo_dir}/goalscorers.csv ")
-puts "  #{recs.size} record(s)"
+puts "  #{recs.size} goalscorer record(s)"
 pp recs[0]
 
 goals = {}
@@ -42,9 +42,19 @@ end
 
 
 
+##
+##  read our own list of top-level/major tournaments
+recs = read_csv( "./tournaments.csv" )
+puts "  #{recs.size} tournament record(s)"
+
+## lookup by names
+top_tournaments = recs.map { |rec| rec['name'] }
+
+
+
 
 recs = read_csv( "#{repo_dir}/results.csv" )
-puts "  #{recs.size} record(s)"
+puts "  #{recs.size} result record(s)"
 pp recs[0]
 
 recs_by_year = {}   ## and tournament
@@ -79,7 +89,13 @@ recs_by_year.each do |year, tournaments|
                           shootouts:  shootouts,
                           goals:      goals )
 
-       path = "#{root_dir}/#{slug}/#{year}_#{slug}.txt"
+       ##
+       ##  add/file "minor" tournaments under "more"
+       path =  if top_tournaments.include?( tournament )
+                   "#{root_dir}/#{slug}/#{year}_#{slug}.txt"
+               else
+                   "#{root_dir}/more/#{slug}/#{year}_#{slug}.txt"
+               end
        write_text( path, buf )
     end  # each tournament
 end   # each year

@@ -1,0 +1,48 @@
+###
+#  major tournaments (list top-level)
+
+
+name,                 region,   confed,  freq,
+
+FIFA World Cup,       World,    fifa,    every 4,
+FIFA World Cup qualification,
+
+
+
+UEFA Euro,                       Europe,   uefa,     every 4
+UEFA Euro qualification,
+UEFA Nations League,             Europe, uefa,  ??
+
+Copa América,                   South America,  conmebol,  every 4
+Copa América qualification,
+
+Gold Cup,                 North/Central America & Caribbean, concacaf, every 2
+Gold Cup qualification,
+CONCACAF Nations League,  North/Central America & Caribbean, concacaf,  ??
+CONCACAF Nations League qualification,
+
+
+African Cup of Nations,           Africa,  caf,      every 2
+Africa Cup of Nations qualification,
+African Cup of Nations qualification,
+
+
+AFC Asian Cup,                    Asia,    afc,      every 4
+AFC Asian Cup qualification,
+
+Oceania Nations Cup,               Oceania,  ofc,    ???
+Oceania Nations Cup qualification,
+
+###
+## add friendlies
+Friendly,       World, fifa|uefa|...,
+
+
+
+###
+## add alt_names or such
+##    UEFA European Championship (Euro)
+##    CAF Africa Cup of Nations (AFCON)
+##   Africa Cup of Nations    - note: Africa vs African
+##    CONCACAF Gold Cup
+##   OFC Nations Cup
