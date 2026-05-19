@@ -9,15 +9,11 @@ root_dir = "/sports/openfootball/internationals"
 repo_dir = "/sports/more/international_results"
 
 
-def slugify( str )
-   str = unaccent( str )   
-   ## replace space with underscore
-   str = str.gsub( ' ', '_' )
-   str = str.downcase
-   ## remove all BUT a-z, 0-9, _-
-   str = str.gsub( /[^a-z0-9_-]/, '' )
-   str 
-end
+
+require_relative 'gen/base'
+require_relative 'gen/build_goals'
+require_relative 'gen/build_stats'
+require_relative 'gen/build_tour'
 
 
 
@@ -55,8 +51,8 @@ recs_by_year = {}   ## and tournament
 
 
 recs.each do |rec|
-   date = Date.strptime( rec['date'], '%Y-%m-%d')  
- 
+   date = Date.strptime( rec['date'], '%Y-%m-%d')
+
    ## tournament plus year
    title = "#{} #{date.year}"
 
@@ -67,187 +63,22 @@ recs.each do |rec|
 end
 
 
-##
-## todo - add "xx" to names - why? why not?
-##   todo/check - allow/support "Didi" or such for name - why?
-SCORER_FIX = {
-  %q{Eduardo "Volkswagen" Hernández}     => "Eduardo Hernández", ## fix!!!
-  %q{Delio "Maravilla" Gamboa}           => "Delio Gamboa",      ## fix!!!
-  %q{Alex "Didí" Valverde}               => "Alex Valverde",     ## fix!!!
-
-  "Carlos Castillo, honduran footballer" => "Carlos Castillo", 
-  "John Kerr, Jr."                       => "John Kerr Jr.", 
-  "it:Lee Ki-Bum"                        => "Lee Ki-Bum", 
-}
-
-
-def _build_goal( rec )
-
- 
-    if  rec['minute'].nil? || rec['minute'].empty?
-        puts "!! WARN - (goals) minute empty:"
-        pp rec
-        ## use '??'
-        rec['minute'] = '??'
-        ## raise ArgumentError, "minute empty"
-    end
-
-    scorer = rec['scorer']
-
-    if scorer.nil? || scorer.empty?
-        puts "!! WARN - (goals) scorer empty:"
-        pp rec
-        scorer = 'N.N.'    ## note - use N.N. NOT ?? for n/a
-        ## raise ArgumentError, "scorer empty"
-    end
-
-    ###
-    ## auto-fix scorer
-    scorer = SCORER_FIX[scorer] || scorer
-
-
-    buf = String.new
-    buf << scorer
-    buf << " #{rec['minute']}'"
-    buf << " (o.g.)"   if rec['own_goal'] == 'TRUE'
-    buf << " (pen.)"   if rec['penalty'] == 'TRUE'
-    buf
-end
-
-def build_goals( recs )
-  ## split into goals1 and goals2
-    #  date,home_team,away_team,team,scorer,minute,own_goal,penalty
-
-    goals1 = []
-    goals2 = []
-    recs.each do |rec|
-        if rec['home_team'] == rec['team']
-            goals1 << rec
-        elsif rec['away_team'] == rec['team']
-            goals2 << rec
-        else
-            pp rec
-            raise ArgumentError, "unknown team for match"
-        end
-    end
-
-
-    buf = String.new
-    if goals1.size == 0
-        buf << "     -; "
-        buf << goals2.map {|rec| _build_goal(rec) }.join(' ')
-        buf << "\n"
-    else    ## split over two lines - why? why not?
-        buf << "     "
-        buf << goals1.map {|rec| _build_goal(rec) }.join(' ')
-        if goals2.size == 0
-            buf << "\n"
-        else
-          buf << ";\n"
-          buf << "     "
-          buf << goals2.map {|rec| _build_goal(rec) }.join(' ')
-          buf << "\n"
-        end
-    end
-    
-    buf
-end
-
-
-def calc_stats( matches )
-  stats = {  'date' =>  { 'start_date' => nil,
-                          'end_date'   => nil, },
-             'teams' => Hash.new(0),
-              }
-
-  matches.each do |rec|
-      date = Date.strptime( rec['date'], '%Y-%m-%d' )
-          
-       stats['date']['start_date'] ||= date
-       stats['date']['end_date']   ||= date
-
-       stats['date']['start_date'] = date  if date < stats['date']['start_date']
-       stats['date']['end_date']   = date  if date > stats['date']['end_date']
-      
-
-     [rec['home_team'], rec['away_team']].each do |team|
-        stats['teams'][ team ] += 1   
-     end
-  end
-
-  stats
-end
-
-
 
 
 
 recs_by_year.each do |year, tournaments|
     tournaments.each do |tournament, matches|
 
-       buf = String.new
-       buf << "= #{tournament} #{year}\n"
+       slug = slugify( tournament )
 
-       ## add stats if more than one match 
-       if matches.size > 1
-         stats = calc_stats( matches )
+       puts "==> #{year} #{tournament} (#{slug})..."
 
-         buf << "\n"
-         buf << "# Date       "
-         start_date = stats['date']['start_date']
-         end_date   = stats['date']['end_date']
-         if start_date.year != end_date.year
-           buf << "#{start_date.strftime('%a %b/%-d %Y')} - #{end_date.strftime('%a %b/%-d %Y')}"
-         else
-           buf << "#{start_date.strftime('%a %b/%-d')} - #{end_date.strftime('%a %b/%-d %Y')}"
-         end
-         buf << " (#{end_date.jd-start_date.jd}d)"   ## add days
-         buf << "\n"
-       
-         buf << "# Teams      #{stats['teams'].size}\n"
-         buf << "# Matches    #{matches.size}\n"
-       end
+       buf =  build_tour( tournament: tournament,
+                          year:       year,
+                          matches:    matches,
+                          shootouts:  shootouts,
+                          goals:      goals )
 
-       buf << "\n"
-
-       last_date = nil
-       matches.each do |rec|
-         match = "#{rec['home_team']} - #{rec['away_team']}"
-         score = "#{rec['home_score']}-#{rec['away_score']}"
-     
-### fix city
-##     Name starting with ' - what to do?
-#         @ 'Atele, Tonga
-          city = rec['city']
-          city = "Atele"   if city == "‘Atele"
-
-         geo   = "#{city}, #{rec['country']}"
-         # if neutral  add (*) to geo
-         #  geo   += " (*)"  if rec['neutral'] == 'TRUE'     
-     
-         date = Date.strptime( rec['date'], '%Y-%m-%d')  
-         buf <<  "[#{date.strftime('%a %b %-d')}]\n"   if date != last_date
-         buf << "  #{match}  #{score}   @ #{geo}"
-
-         ## check for win on penalities
-         key = "#{rec['date']}/#{rec['home_team']}/#{rec['away_team']}"
-         shootout = shootouts[key]
-         if shootout
-            buf << "   [#{shootout['winner']} wins on penalties]"
-         end
-         buf << "\n"
-
-
-         goal_recs = goals[key]
-         if goal_recs
-            buf << build_goals( goal_recs )
-         end
-
-         last_date = date
-       end
-       buf << "\n"
-
-       slug = slugify( tournament)
        path = "#{root_dir}/#{slug}/#{year}_#{slug}.txt"
        write_text( path, buf )
     end  # each tournament
@@ -256,4 +87,3 @@ end   # each year
 
 
 puts "bye"
-
