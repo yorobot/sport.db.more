@@ -42,8 +42,8 @@ def _build_goal( rec )
     buf = String.new
     buf << scorer
     buf << " #{rec['minute']}'"
-    buf << " (o.g.)"   if rec['own_goal'] == 'TRUE'
-    buf << " (pen.)"   if rec['penalty'] == 'TRUE'
+    buf << '(og)'   if rec['own_goal'] == 'TRUE'
+    buf << '(p)'    if rec['penalty']  == 'TRUE'
     buf
 end
 
@@ -65,21 +65,25 @@ def build_goals( recs )
     end
 
 
+    ###
+    ## todo/fix
+    ##   fold/collapse minutes for player!!!
+
     buf = String.new
     if goals1.size == 0
-        buf << "     -; "
+        buf << "     ("
         buf << goals2.map {|rec| _build_goal(rec) }.join(' ')
-        buf << "\n"
+        buf << ")\n"
     else    ## split over two lines - why? why not?
-        buf << "     "
+        buf << "     ("
         buf << goals1.map {|rec| _build_goal(rec) }.join(' ')
         if goals2.size == 0
-            buf << "\n"
+            buf << ")\n"
         else
           buf << ";\n"
-          buf << "     "
+          buf << "      "
           buf << goals2.map {|rec| _build_goal(rec) }.join(' ')
-          buf << "\n"
+          buf << ")\n"
         end
     end
 
