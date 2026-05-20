@@ -15,6 +15,7 @@ require_relative 'gen/build_goals'
 require_relative 'gen/build_stats'
 require_relative 'gen/build_tour'
 
+require_relative 'gen/lookup_name'
 
 
 ## build index for shootouts
@@ -39,6 +40,19 @@ recs.each do |rec|
     by_match = goals[key] ||= []
     by_match <<  rec
 end
+
+
+recs = read_csv( "#{repo_dir}/stages.csv ")
+puts "  #{recs.size} stages record(s)"
+pp recs[0]
+
+stages = {}
+recs.each do |rec|
+    key = "#{rec['date']}/#{rec['home_team']}/#{rec['away_team']}"
+    stages[key] = rec
+end
+
+
 
 
 
@@ -74,6 +88,9 @@ end
 
 
 
+name_history = NameHistoryLookup.read( './former_names.csv' )
+
+
 
 
 recs_by_year.each do |year, tournaments|
@@ -83,11 +100,30 @@ recs_by_year.each do |year, tournaments|
 
        puts "==> #{year} #{tournament} (#{slug})..."
 
+##
+## check for historic names
+   matches = matches.map do |match|
+       ## home_team,away_team
+       date = Date.strptime( match['date'], '%Y-%m-%d' )
+       home_team =  match['home_team']
+       away_team =  match['away_team']
+
+       home_team = name_history.historic_name_by_date( home_team, date: date )
+       away_team = name_history.historic_name_by_date( away_team, date: date )
+
+       match['home_team'] = home_team
+       match['away_team'] = away_team
+
+       match
+   end
+
+
        buf =  build_tour( tournament: tournament,
                           year:       year,
                           matches:    matches,
                           shootouts:  shootouts,
-                          goals:      goals )
+                          goals:      goals,
+                          stages:     stages )
 
        ##
        ##  add/file "minor" tournaments under "more"

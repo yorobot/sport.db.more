@@ -6,7 +6,9 @@ def build_tour( tournament:,
                 year:,
                 matches:,
                 goals:,
-                shootouts: )
+                shootouts:,
+                stages: )
+
 
        buf = String.new
        buf << "= #{tournament} #{year}\n"
@@ -35,8 +37,23 @@ def build_tour( tournament:,
        buf << "\n"
 
 
+       last_stage = nil
        last_date = nil
        matches.each do |rec|
+
+         ##################
+         ## check for stage (record
+         key = "#{rec['date']}/#{rec['home_team']}/#{rec['away_team']}"
+         stage_rec = stages[key]
+         stage = if stage_rec
+                    stage_rec['stage']
+                 else
+                   nil
+                 end
+
+         ## note - reset last_date if new stage (stage introduces "new scope")
+         last_date = nil   if stage && stage != last_stage
+
 
          ## e.g.   England            v Scotland
          ##
@@ -68,14 +85,23 @@ def build_tour( tournament:,
          # if neutral  add (*) to geo
          #  geo   += " (*)"  if rec['neutral'] == 'TRUE'
 
+
+         buf << "▪ #{stage}\n"    if stage && stage != last_stage
+
+         ## add unknown marker if switching from stage to non-stage (nil) section!!!
+         buf << "▪ ??\n"     if stage.nil? && last_stage != nil
+
+         last_stage = stage
+
+
          date = Date.strptime( rec['date'], '%Y-%m-%d')
          buf <<  "#{date.strftime('%a %b %-d')}\n"   if date != last_date
          buf << "  #{match}  #{score}   @ #{geo}"
 
 
 
+         ############
          ## check for win on penalities
-         key = "#{rec['date']}/#{rec['home_team']}/#{rec['away_team']}"
          shootout = shootouts[key]
          if shootout
             buf << "   [#{shootout['winner']} wins on penalties]"
