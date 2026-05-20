@@ -7,7 +7,7 @@ def calc_stats( matches )
               }
 
   matches.each do |rec|
-      date = Date.strptime( rec['date'], '%Y-%m-%d' )
+      date = rec['date']
 
        stats['date']['start_date'] ||= date
        stats['date']['end_date']   ||= date

@@ -14,38 +14,53 @@ SCORER_FIX = {
 }
 
 
-def _build_goal( rec )
 
 
-    if  rec['minute'].nil? || rec['minute'].empty?
+def _pp_goals( recs )
+   players = {}
+
+   ## "fold" multiple goals of player
+   recs.each do |rec|
+
+      scorer = rec['scorer']
+
+      if scorer.nil? || scorer.empty?
+         puts "!! WARN - (goals) scorer empty:"
+         pp rec
+         scorer = 'N.N.'    ## note - use N.N. NOT ?? for n/a
+         ## raise ArgumentError, "scorer empty"
+      end
+
+      ###
+      ## auto-fix scorer
+      scorer = SCORER_FIX[scorer] || scorer
+
+
+      if  rec['minute'].nil? || rec['minute'].empty?
         puts "!! WARN - (goals) minute empty:"
         pp rec
         ## use '??'
         rec['minute'] = '??'
         ## raise ArgumentError, "minute empty"
-    end
+      end
 
-    scorer = rec['scorer']
+      goal = String.new
+      goal << "#{rec['minute']}'"
+      goal << '(og)'   if rec['own_goal'] == 'TRUE'
+      goal << '(p)'    if rec['penalty']  == 'TRUE'
 
-    if scorer.nil? || scorer.empty?
-        puts "!! WARN - (goals) scorer empty:"
-        pp rec
-        scorer = 'N.N.'    ## note - use N.N. NOT ?? for n/a
-        ## raise ArgumentError, "scorer empty"
-    end
-
-    ###
-    ## auto-fix scorer
-    scorer = SCORER_FIX[scorer] || scorer
+      player_rec = players[ scorer ] ||= { name: scorer, goals: [] }
+      player_rec[:goals] << goal
+   end
 
 
-    buf = String.new
-    buf << scorer
-    buf << " #{rec['minute']}'"
-    buf << '(og)'   if rec['own_goal'] == 'TRUE'
-    buf << '(p)'    if rec['penalty']  == 'TRUE'
-    buf
+   buf =  players.map do |_,player|
+                    "#{player[:name]} #{player[:goals].join(',')}"
+                end.join( ' ' )
+   buf
 end
+
+
 
 def build_goals( recs )
   ## split into goals1 and goals2
@@ -72,17 +87,17 @@ def build_goals( recs )
     buf = String.new
     if goals1.size == 0
         buf << "     ("
-        buf << goals2.map {|rec| _build_goal(rec) }.join(' ')
+        buf << _pp_goals( goals2 )
         buf << ")\n"
     else    ## split over two lines - why? why not?
         buf << "     ("
-        buf << goals1.map {|rec| _build_goal(rec) }.join(' ')
+        buf << _pp_goals( goals1 )
         if goals2.size == 0
-            buf << ")\n"
+          buf << ")\n"
         else
           buf << ";\n"
           buf << "      "
-          buf << goals2.map {|rec| _build_goal(rec) }.join(' ')
+          buf << _pp_goals( goals2 )
           buf << ")\n"
         end
     end
