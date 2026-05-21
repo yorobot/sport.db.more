@@ -1,31 +1,7 @@
-require 'cocos'
-require 'alphabets'
-
-
-root_dir = "/sports/openfootball/internationals"
-# root_dir = "./o"
-
-
-repo_dir = "/sports/more/international_results"
-
-
-
-require_relative 'gen/base'
-require_relative 'gen/build_goals'
-require_relative 'gen/build_stats'
-require_relative 'gen/build_tour'
-
-require_relative 'gen/lookup_name'
-
-
-
-
 
 ##
 ## find a better name -  Matchbook? or such - why? why not?
 class Archive
-
-
 
 
 def initialize( history: nil )
@@ -190,54 +166,3 @@ end
 
 
 end  # class Archive
-
-
-
-ar = Archive.new(
-         history: read_csv( './former_names.csv' ))
-
-ar.add_matches( read_csv( "#{repo_dir}/results.csv" ))
-ar.add_shootouts( read_csv( "#{repo_dir}/shootouts.csv" ))
-ar.add_goalscorers( read_csv( "#{repo_dir}/goalscorers.csv" ))
-ar.add_stages( read_csv( "#{repo_dir}/stages.csv" ))
-
-
-
-
-##
-##  read our own list of top-level/major tournaments
-recs = read_csv( "./tournaments.csv" )
-puts "  #{recs.size} tournament record(s)"
-
-## lookup by names
-top_tournaments = recs.map { |rec| rec['name'] }
-
-
-
-
-
-ar.matches_by_year.each do |year, tournaments|
-    tournaments.each do |tournament, matches|
-
-       slug = slugify( tournament )
-
-       puts "==> #{year} #{tournament} (#{slug})..."
-
-       buf =  build_tour( tournament: tournament,
-                          year:       year,
-                          matches:    matches )
-
-       ##
-       ##  add/file "minor" tournaments under "more"
-       path =  if top_tournaments.include?( tournament )
-                   "#{root_dir}/#{slug}/#{year}_#{slug}.txt"
-               else
-                   "#{root_dir}/more/#{slug}/#{year}_#{slug}.txt"
-               end
-       write_text( path, buf )
-    end  # each tournament
-end   # each year
-
-
-
-puts "bye"

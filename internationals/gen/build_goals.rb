@@ -80,11 +80,8 @@ def build_goals( recs )
     end
 
 
-    ###
-    ## todo/fix
-    ##   fold/collapse minutes for player!!!
-
     buf = String.new
+
     if goals1.size == 0
         buf << "     ("
         buf << _pp_goals( goals2 )

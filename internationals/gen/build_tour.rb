@@ -2,44 +2,32 @@
 ## build tournament (schedule/match results)
 
 
-def build_tour( tournament:,
-                year:,
-                matches: )
+
+def build_tour( matches:,
+                title: )
 
 
        buf = String.new
-       buf << "= #{tournament} #{year}\n"
-
-
-       ## add stats if more than one match
-       if matches.size > 1
-         stats = calc_stats( matches )
-
-         buf << "\n"
-         buf << "# Date       "
-         start_date = stats['date']['start_date']
-         end_date   = stats['date']['end_date']
-         if start_date.year != end_date.year
-           buf << "#{start_date.strftime('%a %b %-d %Y')} - #{end_date.strftime('%a %b %-d %Y')}"
-         else
-           buf << "#{start_date.strftime('%a %b %-d')} - #{end_date.strftime('%a %b %-d %Y')}"
-         end
-         buf << " (#{end_date.jd-start_date.jd}d)"   ## add days
-         buf << "\n"
-
-         buf << "# Teams      #{stats['teams'].size}\n"
-         buf << "# Matches    #{matches.size}\n"
-       end
-
+       buf << "= #{title}\n"
        buf << "\n"
+
+       ## add stats (block) if more than one match
+       ##   e.g.    date:
+       ##           teams:
+       ##           matches:   etc.
+       if matches.size > 1
+         buf << build_stats( matches )
+         buf << "\n"
+       end
 
 
        last_stage = nil
        last_date = nil
+
        matches.each do |rec|
 
          ##################
-         ## check for (nested) stage (record)
+         ##  (i) check for (optional) stage (nested record)
          stage_rec = rec['stage']
          stage = if stage_rec
                     stage_rec['stage']
@@ -47,9 +35,36 @@ def build_tour( tournament:,
                    nil
                  end
 
-         ## note - reset last_date if new stage (stage introduces "new scope")
-         last_date = nil   if stage && stage != last_stage
 
+         if stage && stage != last_stage
+           buf << "\n▪ #{stage}\n"
+           ## note - reset last_date if new stage (stage introduces "new scope")
+           last_date = nil
+         elsif stage.nil? && last_stage != nil
+           ## note - add unknown marker
+           ##    if switching from stage to non-stage (nil) section!!!
+           ##     helps with debugging missing stages for matches
+           buf << "\n▪ ??\n"
+         end
+
+         last_stage = stage
+
+         ###############
+         ##  (ii) add date header
+         date = rec['date']
+         buf <<  "#{date.strftime('%a %b %-d')}\n"   if date != last_date
+
+         last_date = date
+
+
+
+         ## note - score might by empty (upcoming worldcup!!)
+         score =  if (rec['home_score'].nil? || rec['home_score'].empty?) &&
+                     (rec['away_score'].nil? || rec['away_score'].empty?)
+                      ' v '
+                  else
+                     "#{rec['home_score']}-#{rec['away_score']}"
+                  end
 
          ## e.g.   England            v Scotland
          ##
@@ -59,48 +74,30 @@ def build_tour( tournament:,
          ##   Trinidad and Tobago
 
          match =  String.new
-         match +=  '%-20s' % rec['home_team']
-         match +=  ' v '
-         match +=  '%-20s' % rec['away_team']
+         match +=  '%-22s' % rec['home_team']
+         match +=  ' ' + score + ' '
+         match +=  '%-22s' % rec['away_team']
 
-         ## note - score might by empty (upcoming worldcup!!)
-         score =  if (rec['home_score'].nil? || rec['home_score'].empty?) &&
-                     (rec['away_score'].nil? || rec['away_score'].empty?)
-                      '   '
-                  else
-                     "#{rec['home_score']}-#{rec['away_score']}"
-                  end
 
-### fix city
-##     Name starting with ' - what to do?
-#         @ 'Atele, Tonga
-          city = rec['city']
-          city = "Atele"   if city == "‘Atele"
+
+    ### fix city
+    ##     Name starting with ' - what to do?  should be possible change back later!!
+    #         @ 'Atele, Tonga
+         city = rec['city']
+         city = "Atele"   if city == "‘Atele"
 
          geo   = "#{city}, #{rec['country']}"
          # if neutral  add (*) to geo
          #  geo   += " (*)"  if rec['neutral'] == 'TRUE'
 
-
-         buf << "\n▪ #{stage}\n"    if stage && stage != last_stage
-
-         ## add unknown marker if switching from stage to non-stage (nil) section!!!
-         buf << "\n▪ ??\n"     if stage.nil? && last_stage != nil
-
-         last_stage = stage
-
-
-         date = rec['date']
-         buf <<  "#{date.strftime('%a %b %-d')}\n"   if date != last_date
-         buf << "  #{match}  #{score}   @ #{geo}"
-
-
+         buf << "  #{match}   @ #{geo}"
 
          ## check for (nested) shootout - win on penalities
          shootout_rec = rec['shootout']
          if shootout_rec
             buf << "   [#{shootout_rec['winner']} wins on penalties]"
          end
+
          buf << "\n"
 
 
@@ -109,7 +106,6 @@ def build_tour( tournament:,
             buf << build_goals( goal_recs )
          end
 
-         last_date = date
        end
        buf << "\n"
 
