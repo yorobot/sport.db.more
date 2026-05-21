@@ -35,11 +35,26 @@ top_tournaments = recs.map { |rec| rec['name'] }
 buf = String.new
 buf << "# Tournament Index by Year\n\n"
 
+
+ar.matches_by_year.each_with_index do |(year, tournaments),i|
+     buf << " · \n"  if i != 0
+
+     ## get matches of all tournaments in year
+     count = tournaments.reduce(0) { |cnt, (_,matches)| cnt += matches.size }
+
+     tooltip = "#{count} #{count == 1 ? 'match' : 'matches'}"
+
+     buf << %Q{[#{year}](##{year} "#{tooltip}")}
+end
+buf << "\n\n"
+
+
+
 ar.matches_by_year.each do |year, tournaments|
-   buf << "## #{year}"
+   buf << "## #{year}\n"
    ## get matches of all tournaments in year
    count = tournaments.reduce(0) { |cnt, (_,matches)| cnt += matches.size }
-   buf << " (#{count})\n"
+   buf << "#{count} match(es) <br>\n"
 
    ## sort by tournament name
    ##   plus Friendly always goes first
