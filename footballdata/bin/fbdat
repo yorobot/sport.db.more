@@ -200,6 +200,11 @@ autofiller = ->(league_query) {
 datasets = if opts[:file]
               read_leagueset( opts[:file], autofill: autofiller )
            else
+
+               ### todo or fix/fix/fix - change to build_leagueset
+               ##                       and reserve parse_leagueset( txt ) for
+               ##                                  read_leagueset with inline text
+
               parse_leagueset_args( args, autofill: autofiller )
            end
 
@@ -257,4 +262,3 @@ Footballdata.main( ARGV )
 
 
 puts "bye"
-

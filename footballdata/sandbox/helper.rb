@@ -1,4 +1,4 @@
-$LOAD_PATH.unshift( '../../../rubycocos/webclient/webget/lib' )
+$LOAD_PATH.unshift( '/sports/rubycocos/webclient/webget/lib' )
 $LOAD_PATH.unshift( './lib' )
 require 'footballdata'
 
@@ -13,4 +13,3 @@ Webcache.root = '/sports/cache'  ### c:\sports\cache
 ##     10 API calls per minute max.
 ##  note - default sleep (delay in secs) is 3 sec(s)
 Webget.config.sleep  = 10
-

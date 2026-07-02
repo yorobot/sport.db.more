@@ -155,7 +155,7 @@ That's it for now.
 ## License
 
 The `footballdata` scripts are dedicated to the public domain.
-Use it as you please with no restrictions whatsoever.
+Use as you please with no restrictions whatsoever.
 
 
 ## Questions? Comments?

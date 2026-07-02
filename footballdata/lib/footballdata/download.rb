@@ -66,8 +66,10 @@ class Metal
   end
 
 
+  ## note - starting in 2026 requires https !!! (plain http will not work)
+  ##     resutls in -- 301 Moved Permanently
 
-  BASE_URL = 'http://api.football-data.org/v4'
+  BASE_URL = 'https://api.football-data.org/v4'
 
 
   def self.competitions_url
@@ -128,4 +130,3 @@ class Metal
   end
 end  # class Metal
 end # module Footballdata
-

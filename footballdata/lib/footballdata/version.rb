@@ -1,8 +1,8 @@
 
 module FootballdataApi
-  MAJOR = 0    ## todo: namespace inside version or something - why? why not??
-  MINOR = 5
-  PATCH = 1
+  MAJOR = 2026    ## todo: namespace inside version or something - why? why not??
+  MINOR = 7
+  PATCH = 2
   VERSION = [MAJOR,MINOR,PATCH].join('.')
 
   def self.version
@@ -17,4 +17,3 @@ module FootballdataApi
     File.expand_path( File.dirname(File.dirname(File.dirname(__FILE__))) )
   end
 end   # module FootballdataApi
-
