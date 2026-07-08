@@ -3,6 +3,9 @@
 
 worldcup/
 worldcup2/
+worldcup_v0/
+
+
 clubworldcup/
 interconticup/
 
@@ -11,6 +14,11 @@ matchday/
 upcoming/
 competitions/
 seasons/
+
+####
+## leagues
+at/
+
 
 ####
 #m  temp directories incl. more/ & min/
@@ -22,9 +30,3 @@ tmp3/
 tmp4/
 more/
 min/
-
-
-
-
-
-

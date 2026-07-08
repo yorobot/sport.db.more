@@ -1,9 +1,9 @@
 
-  
-    
+
+
 def build_penalty( h, players: )
     ## split into minute
-    ##  and offset (stoppage/injury time)    
+    ##  and offset (stoppage/injury time)
     ##  e.g. 90'+11'
 
     minute_str = h['MatchMinute']
@@ -28,29 +28,29 @@ def build_penalty( h, players: )
      ## 51 - penalty missed
      ##    JULIO CESAR (Brazil) hits the post from the spot!
      ## 60 - penalty missed
-     ##    COMAN (France) sees his penalty saved by the goalkeeper. 
+     ##    COMAN (France) sees his penalty saved by the goalkeeper.
      ##    Maxime BOSSIS (France) misses from the penalty spot! and many more
      ## 65 - penalty missed
      ##      TCHOUAMENI (France) misses from the penalty spot!
-  
-  
-     assert( [0,41,46,51,60,65].include?(type), 
+
+
+     assert( [0,41,46,51,60,65].include?(type),
              "event type 0/41/46/51/60/65 expected; got #{type}")
 
 
     rec = { type:      type,
-            pen: [h['HomePenaltyGoals'], 
+            pen: [h['HomePenaltyGoals'],
                   h['AwayPenaltyGoals']],
             minute:    minute,
-            # timestamp:  h['Timestamp'], 
+            # timestamp:  h['Timestamp'],
             # period:     h['Period'],   ## note - use 11 (for pen kicks!!!)
           }
     rec[ :offset] = offset   if offset  ## add optional offset (stoppage/injury time)
- 
+
 
      idPlayer = h['IdPlayer'] || h['IdSubPlayer']
 
-=begin   
+=begin
   -- try IdSubPlayer - why? why not?
     ## what is SubPlayer/SubTeam in event??
 !! no idPlayer for penaltyl!
@@ -69,12 +69,12 @@ def build_penalty( h, players: )
           rec[ :player ] = {
                              name: 'N.N.',
                            }
-                     
+
       else
-        rec[ :player ] = players.find!( idPlayer ) 
+        rec[ :player ] = players.find!( idPlayer )
       end
-   
-     rec    
+
+     rec
 end
 
 def build_penalties( recs, players: )
@@ -84,7 +84,7 @@ def build_penalties( recs, players: )
      ##       weirdo format - followed by 0 - goald or 60 - penalty missed!
      ## 2 -   yellow card
      ## 3 -   red card
-     ## 7 -   start time (The penalty shoot-out is about to begin) 
+     ## 7 -   start time (The penalty shoot-out is about to begin)
      ## 8 -   end time
 
      recs = recs.select do |h|
@@ -92,7 +92,7 @@ def build_penalties( recs, players: )
                                 assert( [0,2,3,6,7,8,41,46,51,60,65].include?( h['Type'] ),
                                    "expected event type 2/3/7/8/41/46/51/60/65 for pens; got #{h.pretty_inspect}"
                                  )
-                                [0,41,46,51,60,65].include?( h['Type'] ) ? true : 
+                                [0,41,46,51,60,65].include?( h['Type'] ) ? true :
                                                                    false
                               else
                                  false
@@ -109,7 +109,7 @@ end
 def build_goal( h, players: )
 
     ## split into minute
-    ##  and offset (stoppage/injury time)    
+    ##  and offset (stoppage/injury time)
     ##  e.g. 90'+11'
 
      minute_str = h['Minute']
@@ -122,7 +122,7 @@ def build_goal( h, players: )
       ##   in interconti cup 2024-12-1
         if h['Period'] == 11    ## realy penalty shoot out!!!
                                    ## skip - why? why not?
-            minute_str =  "121'"                       
+            minute_str =  "121'"
         else
            puts "!! minute in goal is nil or empty:"
            pp h
@@ -134,12 +134,12 @@ def build_goal( h, players: )
     minute, offset = _parse_minute( minute_str )
 
     ## check for weird minute 0 e.g.
-    ##   Germany-Austria 1934 
-    minute = 1  if h['Minute'] == "0'" 
+    ##   Germany-Austria 1934
+    minute = 1  if h['Minute'] == "0'"
 
-  
+
     rec = { type:      h['Type'],
-            minute:    minute, 
+            minute:    minute,
           }
 
      rec[ :offset] = offset   if offset  ## add optional offset (stoppage/injury time)
@@ -155,11 +155,11 @@ def build_goal( h, players: )
           rec[ :player ] = {
                              name: 'N.N.',
                            }
-                     
+
       else
-        rec[ :player ] = players.find!( idPlayer ) 
+        rec[ :player ] = players.find!( idPlayer )
       end
-     rec    
+     rec
 end
 
 
@@ -177,7 +177,7 @@ def build_goals( recs, players:,  penalties: false )
 
     recs = recs.sort do |l,r|
                  res = l[:minute] <=> r[:minute]
-                 res = (l[:offset]||0) <=> (r[:offset]||0)  if res == 0 && 
+                 res = (l[:offset]||0) <=> (r[:offset]||0)  if res == 0 &&
                                                               (l[:minute] == 45 ||
                                                                l[:minute] == 90 ||
                                                                l[:minute] == 105 ||  ## check - if possible stoppage in 1st half extra-time??
@@ -190,7 +190,7 @@ end
 
 
 =begin
-  "Officials": 
+  "Officials":
      [{"IdCountry": "URU",
        "OfficialId": "61038",
        "NameShort": [{"Locale": "en-GB", "Description": "Domingo LOMBARDI"}],
@@ -202,16 +202,16 @@ end
        "NameShort": [{"Locale": "en-GB", "Description": "Henry CRISTOPHE"}],
        "Name": [{"Locale": "en-GB", "Description": "Henry CRISTOPHE"}],
        "OfficialType": 2,
-       "TypeLocalized": 
+       "TypeLocalized":
         [{"Locale": "en-GB", "Description": "Assistant Referee 1"}]},
       {"IdCountry": "BRA",
        "OfficialId": "61289",
        "NameShort": [{"Locale": "en-GB", "Description": "Gilberto REGO"}],
        "Name": [{"Locale": "en-GB", "Description": "Gilberto REGO"}],
        "OfficialType": 3,
-       "TypeLocalized": 
+       "TypeLocalized":
         [{"Locale": "en-GB", "Description": "Assistant Referee 2"}]}],
-  
+
 =end
 
 def build_official( h )
@@ -240,7 +240,7 @@ def build_official( h )
 
 def build_officials( recs )  ## use referees?
     recs = recs.map  { |h| build_official( h ) }
-   
+
     ## skip fourth official (4) for now
     recs = recs.select { |h|  [1,2,3].include?( h[:type] ) }
 
@@ -249,16 +249,16 @@ def build_officials( recs )  ## use referees?
     ##  2 - assistant referee 1
     ##  3 - assistant referee 2
     ##  4 - fourth official
-    ##  5 - video assistant referee (var)  
+    ##  5 - video assistant referee (var)
     ##  6 - reserve referee
     ##  7 - offside var
     ##  8 - assistant var
     ##  9 - support var
     ## 10 - reserve assistant referee
-    
 
-    recs = recs.sort { |l,r|  l[:type] <=> r[:type] }  
-   
+
+    recs = recs.sort { |l,r|  l[:type] <=> r[:type] }
+
     recs
 end
 
@@ -334,7 +334,7 @@ class Players
 
    def add_bookings( bookings )  ##  yellow/red cards
       bookings.each do |b|
-     
+
          card = b['Card']
          assert( [0,1,2,3].include?( card ), "card 0/1/2/3 expected; got #{b.pretty_inspect}")
 
@@ -355,15 +355,15 @@ class Players
 
          idPlayer = b['IdPlayer']
 
-         ## booking (card) for coach!!!!
+         ## booking (card) for coach or stuff!!!!
          ##   skip for now
-         next   if idPlayer.nil? && b['IdCoach']
-  
+         next   if idPlayer.nil? && (b['IdCoach'] || b['IdStaff'])
+
 
          player = @recs[ idPlayer ]
          assert( player, "booking player not found; sorry- #{b.pretty_inspect}" )
-   
-           ## note - parse & reformat minute for keep same format 
+
+           ## note - parse & reformat minute for keep same format
           minute =   _fmt_minute( *_parse_minute( b['Minute'] ))
 
           if card == 1      ## yellow
@@ -383,8 +383,8 @@ class Players
 
           idPlayerOff = sub['IdPlayerOff']
           idPlayerOn  = sub['IdPlayerOn']
-         
-          ## note - parse & reformat minute for keep same format 
+
+          ## note - parse & reformat minute for keep same format
           minute_str = sub['Minute']
           if minute_str.nil? || minute_str.empty?
             if sub['Period'] == 4  ## quick fix - use 46' half-time sub??
@@ -419,7 +419,7 @@ class Players
 
           player_off = @recs[ idPlayerOff ]
           player_on  = @recs[ idPlayerOn ]
-          
+
 ##
 ##   note - skip special case for now
 ##              with NO PLAYER ON (e.g. idPlayerOn is nil!!)
@@ -442,18 +442,18 @@ class Players
              pp @recs.values
              exit 1
           end
-       
-          assert( player_off && player_on, 
+
+          assert( player_off && player_on,
                   "subs player_off or player_on not found; sorry" )
-          
-          player_off[ :sub ] = { minute: minute, 
+
+          player_off[ :sub ] = { minute: minute,
                                  player_ref: player_on }
           ## id:     player_on[:id],
-          ##         name:   player_on[:name] 
+          ##         name:   player_on[:name]
 
         end
    end
- 
+
 
 
    def dump
@@ -464,9 +464,3 @@ class Players
    def size() @recs.size; end
 
 end  # class Players
-
-
-
-
-
-

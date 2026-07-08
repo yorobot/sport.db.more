@@ -13,22 +13,26 @@ class Fifa
 
   def self.read_configs( *paths )
     comps = {}
-   
+
      paths.each do |path|
         rows = read_csv( path )
 
         rows.each do |row|
              # note - convert ids to integer numbers
             idComp   = (row['id_comp'] || row['IdCompetition']).to_i(10)
-            idSeason = (row['id_season'] || row['IdSeason']).to_i(10)
-  
+
+            ## note - do NOT conver to integer!!!
+            ## e.g. a5rfzm8qpy3ca8d8wxlkkdslw
+            ##   keep as string
+            idSeason = row['id_season'] || row['IdSeason']
+
             seasons = comps[idComp] ||={}
             seasons[row['season']] = {  season:         row['season'],
                                         idSeason:       idSeason,
                                         idCompetition:  idComp,
                                         name:           row['name'],
                                         start_date:     row['start_date'],
-                                        end_date:       row['end_date']  
+                                        end_date:       row['end_date']
                                      }
         end
       end
@@ -36,16 +40,20 @@ class Fifa
   end
 
 
-   COMPETITIONS = read_configs( "#{root}/fifadat/config/worldcup.csv", 
+   COMPETITIONS = read_configs( "#{root}/fifadat/config/worldcup.csv",
                                 "#{root}/fifadat/config/clubworldcup.csv",
+                                "#{root}/fifadat/config/leagues.csv",
                               )
    ##  pp COMPETITIONS
 
 
    COMPETITION_ID = {
-      'worldcup'      => 17,   
+      'worldcup'      => 17,
       'clubworldcup'  => 10005, ## note - club world cup is only 2025
-      'interconticup' => 107,  ## note - interconti  incl. all "legacy" club world cup 2000, 2005-2023
+      'interconticup' => 107,   ## note - interconti  incl. all "legacy" club world cup 2000, 2005-2023
+
+
+      'at'  => 2000000005,  ## austrian bundesliga (at.1)
    }
 
 
@@ -65,7 +73,7 @@ class Fifa
 
        idComp = _idComp_by_name!( name )
        rec = COMPETITIONS[ idComp ][ season ]
-       raise ArgumentError, "no idSeason found for #{name} #{season}; sorry"    if rec.nil?  
+       raise ArgumentError, "no idSeason found for #{name} #{season}; sorry"    if rec.nil?
        rec[:idSeason]
    end
 
@@ -82,7 +90,7 @@ class Fifa
 ##                                                  &language=en
 ##                                                  &count=100
 
-        from_encoded = URI.encode_www_form_component( from ) 
+        from_encoded = URI.encode_www_form_component( from )
         to_encoded =  URI.encode_www_form_component( to )
 
         "#{BASE_URL}/calendar/matches?"+
@@ -90,15 +98,15 @@ class Fifa
           "&to=#{to_encoded}"+
           "&language=en"+
           "&count=#{count}"
-   end                        
-          
+   end
+
 
 
    def self.search_seasons_url( name: )
      ## API_ROOT/seasons/search?name=FIFA%20U-20%20Women%20World%20Cup
      ## todo/fix - url encode name!!!
 
-      ## note - encodes spaces as plus (+) NOT %20 
+      ## note - encodes spaces as plus (+) NOT %20
      name_encoded = URI.encode_www_form_component( name )
 
      "#{BASE_URL}/seasons/search?name=#{name_encoded}&count=500"
@@ -147,18 +155,18 @@ class Metal
 
    def self.stages_url( idSeason: )
        ## note - may add  &idCompetition=17
-      
+
        "#{BASE_URL}/stages?idSeason=#{idSeason}" +
       "&language=en"
    end
-   
 
-   
+
+
    def self.live_url( idCompetition:, idSeason:,
                                idStage:, idMatch: )
       "#{BASE_URL}/live/football/#{idCompetition}/#{idSeason}/#{idStage}/#{idMatch}?language=en"
    end
-   
+
    def self.timeline_url( idCompetition:, idSeason:,
                                idStage:, idMatch: )
       #API_ROOT/timelines/108/278491/278493/300424860?language=en-GB
@@ -166,5 +174,3 @@ class Metal
    end
 end  ## class Metal
 end # class Fifa
-  
-

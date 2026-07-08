@@ -3,7 +3,7 @@
 def build_team( h )
    name = desc( h['TeamName'] )
    name = norm_team( name )
-   
+
    rec = { id:      h['IdTeam'],
            name:    name,
            abbrev:  h['Abbreviation'],
@@ -23,6 +23,9 @@ class Teams
 
    def add( matches )  ## use/rename to add_matches - why? why not?
       matches.each do |m|
+        ## note - skip if teams not yet know
+        next if m['Home'].nil? && m['Away'].nil?
+
         team1 = build_team( m['Home'] )
         team2 = build_team( m['Away'] )
 
@@ -58,12 +61,12 @@ class Teams
                 res = l[:name] <=> r[:name]  if res == 0
                 res
              end
-      end  
+      end
       recs
    end
    def each( sort: true, &blk ) recs( sort: sort ).each( &blk ); end
- 
- 
+
+
    def dump
       recs = recs( sort: true )
       pp recs
@@ -73,7 +76,3 @@ class Teams
    def size() @recs.size; end
 
 end  # class Teams
-
-
-
-

@@ -2,10 +2,25 @@ require_relative 'helper'
 require_relative 'config'
 
 
+args = ARGV
+opts = {
+    season: nil,
+}
 
 
 
-args = ARGV  
+parser = OptionParser.new do |parser|
+parser.banner = "Usage: #{$PROGRAM_NAME} [options] NAME"
+   parser.on( "--season=NUM", Integer,
+               "season (default: #{opts[:season]})" ) do |num|
+     opts[:season] = num
+   end
+end
+parser.parse!( args )
+
+
+puts "OPTS:"
+pp opts
 puts "ARGV:"
 pp args
 
@@ -13,7 +28,7 @@ if args.size == 0
   puts " NAME argument required; use:"
   pp CONFIGS.keys
   exit 1
-end  
+end
 
 
 ##
@@ -25,7 +40,7 @@ puts "CONFIG:"
 pp config
 
 slug    = config[:slug]   ## change to source - why? why not?
-seasons = config[:seasons]
+seasons = opts[:season] ?  [opts[:season]] : config[:seasons]
 
 
 ## outdir = "../../openfootball/clubworldcup"
@@ -67,4 +82,3 @@ end
 
 
 puts "bye"
-

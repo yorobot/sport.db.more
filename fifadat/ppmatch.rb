@@ -29,7 +29,7 @@ require_relative 'config'
 ##     resort possible (use IdTeam or such) in build recs??
 ## Sat Dec 14 20:00 UTC+3 @ Stadium 974, Doha, Att: 38841
 ##   CF Pachuca (MEX) v Al Ahly FC (EGY)  0-0 a.e.t., 6-5 pen.
-## 
+##
 ## Penalties:     Salomon RONDON (missed), 0-1 MOHAMED AFSHA,
 ##                BORJA (missed), 0-2 Rami RABIA,
 ##            1-2 Gustavo CABRAL, 1-3 MARAWAN ATTIA,
@@ -54,9 +54,14 @@ require_relative 'config'
 
 args = ARGV
 opts = {
-    full: false,     ## incl. line-ups, penalties, referees, etc.
+    full:    false,  ## incl. line-ups, penalties, referees, etc.
     minimal: false,  ## no dates, no venues, no goals, no half-time score, etc.
+    season: nil,
 }
+
+
+
+
 
 
 parser = OptionParser.new do |parser|
@@ -72,6 +77,10 @@ parser.banner = "Usage: #{$PROGRAM_NAME} [options] NAME"
      opts[:min] = true
    end
 
+   parser.on( "--season=NUM", Integer,
+               "season (default: #{opts[:season]})" ) do |num|
+     opts[:season] = num
+   end
 end
 parser.parse!( args )
 
@@ -85,7 +94,7 @@ if args.size == 0
   puts " NAME argument required; use:"
   pp CONFIGS.keys
   exit 1
-end  
+end
 
 
 ##
@@ -97,7 +106,7 @@ puts "CONFIG:"
 pp config
 
 slug    = config[:slug]   ## change to source - why? why not?
-seasons = config[:seasons]
+seasons = opts[:season] ?  [opts[:season]] : config[:seasons]
 
 
 ## outdir = "../../openfootball/clubworldcup"
@@ -117,7 +126,7 @@ seasons.each do |season|
     page = String.new
     page << "= #{name} #{season}\n"
     page <<  "\n"
-    
+
     buf = if opts[:full]
               pp_matches_full( slug: slug, season: season,
                                 **config[:opts_full] )
@@ -128,9 +137,9 @@ seasons.each do |season|
                pp_matches( slug: slug, season: season,
                              **config[:opts] )
           end
-   
+
     page << buf
-    
+
     puts page
 
     outpath = if opts[:full]
