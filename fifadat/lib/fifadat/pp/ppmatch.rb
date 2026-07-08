@@ -73,7 +73,7 @@ cup.each_with_index do |m, i|
 
 
   resultType  = m['ResultType']
-  assert( [0, 1,2,3,8].include?(resultType), "resultType 1,2,3 expected; got #{resultType}" )
+  assert( [0, 1,2,3,4,8].include?(resultType), "resultType 1,2,3,4 expected; got #{resultType}" )
 
   score = _fmt_score( m )
 

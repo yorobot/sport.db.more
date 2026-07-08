@@ -77,9 +77,9 @@ parser.banner = "Usage: #{$PROGRAM_NAME} [options] NAME"
      opts[:min] = true
    end
 
-   parser.on( "--season=NUM", Integer,
-               "season (default: #{opts[:season]})" ) do |num|
-     opts[:season] = num
+   parser.on( "--season=SEASON",
+               "season (default: #{opts[:season]})" ) do |season|
+     opts[:season] = season
    end
 end
 parser.parse!( args )

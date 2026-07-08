@@ -179,6 +179,11 @@ $ ruby ppsquads.rb worldcup --season=2026
               3 => aet (120 mins)
               8 =>  same as 3?  -aet with golden goal/silver goal in 1998 FRA-PAR
 
+              4 =>    aggregate  leg 1/2 ?? e.g.
+                    "AggregateHomeTeamScore": 2,
+                    "AggregateAwayTeamScore": 4,
+
+
  TeamType
             0 => club
             1 => nati(onal) team

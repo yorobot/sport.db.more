@@ -53,7 +53,8 @@ class Fifa
       'interconticup' => 107,   ## note - interconti  incl. all "legacy" club world cup 2000, 2005-2023
 
 
-      'at'  => 2000000005,  ## austrian bundesliga (at.1)
+      'at'  => 2000000005,  ## austria | bundesliga (at.1)
+      'eng' => 2000000000,  ## england | premier league (eng.1)
    }
 
 

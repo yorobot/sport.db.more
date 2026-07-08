@@ -267,6 +267,26 @@ end
 
 def build_player( h )
    name       = desc( h['PlayerName'] )
+
+   if name.nil?
+     ## "PlayerName"=>[],
+     ## "ShortName"=>[{"Locale"=>"en-gb", "Description"=>"S. Lainer"}],
+
+     ## hack:
+     ##  use shortname
+      name = desc( h['ShortName'] )
+   end
+
+   if name.nil?
+      ## puts "name is nil:"
+      ## pp h
+      ## exit 1
+      ##  report/log error/warn
+      ##
+      ## quick fix use N.N. for now
+      name = 'N.N.'
+   end
+
    name = norm_player( name )
 
    short_name = desc( h['ShortName'] )
