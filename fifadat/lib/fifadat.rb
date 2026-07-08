@@ -15,13 +15,13 @@ def _deep_stringify_keys(obj)
 end
 
 def write_json_v2( path, data )
-  ## note - always stringify keys for now 
+  ## note - always stringify keys for now
   ##            e.g. { name: "" } => { "name": "" }
     data = _deep_stringify_keys( data )
 
-   ## hack - use pretty_inspect for json pretty print         
-    txtjson =  data.pretty_inspect 
- 
+   ## hack - use pretty_inspect for json pretty print
+    txtjson =  data.pretty_inspect
+
     txtjson = txtjson.gsub( '=>', ': ' )
     txtjson = txtjson.gsub( /\bnil\b/, 'null' )
 
@@ -57,11 +57,11 @@ end
 
 def fetch_json_if( url, outpath )
    delay_in_secs = 1   ## 1 sec
-   
+
    if File.exist?( outpath )
      puts "CACHE HIT - #{outpath}"
      return nil
-   end 
+   end
 
    data = fetch_json( url, outpath )
    puts "  sleeping #{delay_in_secs} sec(s)..."
@@ -80,14 +80,15 @@ require_relative 'fifadat/norm'  ## norm players, stadiums, etc.
 
 require_relative 'fifadat/helper'
 require_relative 'fifadat/players'
+require_relative 'fifadat/stages'
 require_relative 'fifadat/teams'
 require_relative 'fifadat/stadiums'
 
 
-## more 
+## more
 require_relative 'fifadat/prepare'   ## "all-in-one" prepare (download cache) helpers etc.
 
-## pretty print 
+## pretty print
 require_relative 'fifadat/pp/pphelper'
 require_relative 'fifadat/pp/ppgoals'
 require_relative 'fifadat/pp/ppstats'
@@ -98,7 +99,3 @@ require_relative 'fifadat/pp/pppenalties'
 require_relative 'fifadat/pp/pplineup'
 require_relative 'fifadat/pp/ppsquads'
 require_relative 'fifadat/pp/ppdebug'
-
-
-
-

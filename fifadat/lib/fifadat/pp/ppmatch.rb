@@ -21,6 +21,13 @@ def pp_matches(  season:,
    puts "  #{cup.size} match(es) in season #{season}"
 
 
+   ## read in stages for sorting
+   ##   incl.  SequenceOrder, StageLevel (optional)
+   ## stages = Stages.new
+   ## stages.add( read_json( "./#{slug}/misc/#{season}_stages.json" )['Results'] )
+
+
+
    cup = sort_matches( cup )
 
 
@@ -31,6 +38,7 @@ def pp_matches(  season:,
    buf << "\n"
 
 
+lastRoundName  = nil
 lastStageName  = nil
 lastGroupName  = nil
 
@@ -79,9 +87,14 @@ cup.each_with_index do |m, i|
 
    stageName   = desc( m['StageName'] )
    groupName   = desc( m['GroupName'] )  # optional
-   matchNumber = m['MatchNumber']       # optional
-   matchDay  =  m['MatchDay']           # optional
+   matchNumber = m['MatchNumber']        # optional
 
+   matchDay    = m['MatchDay']           # optional
+
+   ####
+   ## note - make roundName  = stageName + matchDay (optional)
+   roundName  = stageName
+   roundName += " - #{matchDay}"   if matchDay
 
 
 
@@ -92,13 +105,13 @@ cup.each_with_index do |m, i|
 
 
 
-   if lastStageName.nil? || lastStageName != stageName
+   if lastRoundName.nil? || lastRoundName != roundName
 
          buf << "\n"
 
-         buf << "▪ #{stageName}\n"
+         buf << "▪ #{roundName}\n"
 
-        lastStageName = stageName
+        lastRoundName = roundName
         lastGroupName = nil
        last_date = nil
    end
