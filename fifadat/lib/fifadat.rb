@@ -99,3 +99,5 @@ require_relative 'fifadat/pp/pppenalties'
 require_relative 'fifadat/pp/pplineup'
 require_relative 'fifadat/pp/ppsquads'
 require_relative 'fifadat/pp/ppdebug'
+
+require_relative 'fifadat/pp/ppconvert'

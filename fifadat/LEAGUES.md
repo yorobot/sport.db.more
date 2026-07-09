@@ -6,7 +6,11 @@ try at (austria)
 $ ruby ppdebug.rb at
 $ ruby ppmatch.rb at --season=2025-26
 $ ruby ppmatch.rb at --season=2025-26 --full
+
+$ ruby ppconv.rb at --season=2025-26
 ```
+
+
 
 ```
 stats:{

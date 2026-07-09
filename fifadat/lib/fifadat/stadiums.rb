@@ -30,7 +30,8 @@ def build_stadium( h )
  ##          id_city:    id_city,
            name:      name,
            city_name: city_name,
-           id_country: id_country,
+           street:     h['Street'],
+           id_country: id_country,   ### fix - change to country - why? why not?
         }
 
   rec
@@ -50,6 +51,10 @@ class Stadiums
        _add( stadium )
      end
    end
+
+   alias_method :add_matches, :add
+
+
 
    def _add( new_rec )
       rec =  @recs[ new_rec[:id] ]
@@ -84,6 +89,9 @@ class Stadiums
       recs
    end
    def each( sort: true, &blk ) recs( sort: sort ).each( &blk ); end
+
+
+   def as_json()  @recs.values;   end
 
 
    def dump

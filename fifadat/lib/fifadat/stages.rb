@@ -25,13 +25,23 @@ def build_stage( h )
    rec = { id:          h['IdStage'],   ## convert to number - why? why not?
            name:        name,
            seq:         seq,
-           level:       level
+           level:       level,
+           count:       0,
         }
   rec
 end
 
 
 class Stages
+
+   def self.read( path )
+       data = read_json( path )
+       obj = new
+       obj.add( data['Results'] )
+       obj
+   end
+
+
    def initialize
       @recs = {}
    end
@@ -51,11 +61,23 @@ class Stages
    end
 
 
+   ## add match stats
+   def add_matches( matches )
+        matches.each do |m|
+          name = desc( m['StageName'] )
+          rec  = find!( name )
+          rec[:count] += 1
+        end
+   end
+
+
    def find!( name )
        rec = @recs[ name ]
        raise ArgumentError, "no stage w/ name >#{name}< found; sorry"  if rec.nil?
        rec
    end
+
+   def as_json()   @recs.values;   end
 
 
    def dump

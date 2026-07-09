@@ -21,6 +21,11 @@ at/
 eng/
 
 
+###
+##  conversion cache
+cache.json/
+
+
 ####
 #m  temp directories incl. more/ & min/
 ##

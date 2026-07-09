@@ -33,6 +33,8 @@ class Teams
         _add( team2 )
       end
    end
+   alias_method :add_matches, :add
+
 
 
    def _add( new_rec )
@@ -65,6 +67,9 @@ class Teams
       recs
    end
    def each( sort: true, &blk ) recs( sort: sort ).each( &blk ); end
+
+
+   def as_json()   @recs.values; end
 
 
    def dump
