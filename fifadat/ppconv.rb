@@ -1,6 +1,8 @@
 
-require_relative 'helper'
+
+require_relative './lib/fifadat-conv'
 require_relative 'config'
+
 
 
 args = ARGV
