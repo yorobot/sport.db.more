@@ -14,11 +14,17 @@ def pp_matches(  season:,
                  opt_stadium: true,
                  opt_teams: false  )
 
-   cup =  read_json( "./#{slug}/#{season}_matches.json" )
-   cup = cup['Results']  ## only use results (match) array
+   cup =  read_json( "./cache.json/#{season}_#{slug}.json" )
+   matches = cup['matches']  ## only use results (match) array
 
    ## pp cup
-   puts "  #{cup.size} match(es) in season #{season}"
+   puts "  #{matches.size} match(es) in season #{season}"
+
+
+   teams = Teams.new
+   teams.add( cup['teams'] )
+   puts "  #{teams.size} team(s) in season #{season}"
+
 
 
    ## read in stages for sorting
@@ -28,14 +34,14 @@ def pp_matches(  season:,
 
 
 
-   cup = sort_matches( cup )
+   ## cup = sort_matches( cup )
 
 
    buf = String.new
 
    ## add stats block (dates, teams, matches, venues, etc.)
-   buf << pp_stats( cup, opt_teams: opt_teams )
-   buf << "\n"
+   ## buf << pp_stats( cup, opt_teams: opt_teams )
+   ## buf << "\n"
 
 
 lastRoundName  = nil
@@ -44,25 +50,21 @@ lastGroupName  = nil
 
 last_date      = nil
 
-cup.each_with_index do |m, i|
+
+matches.each_with_index do |m, i|
   idCompetition = m['IdCompetition']
   idSeason      = m['IdSeason']
   idStage       = m['IdStage']
   idMatch       = m['IdMatch']
 
 
-  team1 = m['Home'] ? build_team( m['Home'] ) : { name: '?',
-                                                      abbrev: '?',
-                                                      country: '?' }
-
-  team2 = m['Away'] ? build_team( m['Away'] ) : { name: '?',
-                                                      abbrev: '?',
-                                                      country: '?' }
+  team1 = teams.find!( m['team1'] )
+  team2 = teams.find!( m['team2'] )
 
 
 
-    dateTime       = parse_date( m['Date'] )    ## utc
-    localDateTime  = parse_date( m['LocalDate'] )
+    dateTime       = parse_date_utc( m['date_utc'] )    ## utc
+    localDateTime  = parse_date_local( m['date_local'] )
 
      assert( dateTime.sec == 0 && localDateTime.sec == 0,
                 "sec 00 expected" )
@@ -72,35 +74,36 @@ cup.each_with_index do |m, i|
     diff_in_days  =  localDateTime.jd - dateTime.jd
     ## pp [diff_in_hours, diff_in_days]
 
-   stageName, groupName = norm_stage( stageName, groupName,
-                             team1: team1,
-                             team2: team2,
-                             date: localDateTime.strftime( '%Y-%m-%d') )
+
+#   stageName, groupName = norm_stage( stageName, groupName,
+#                             team1: team1,
+#                             team2: team2,
+#                             date: localDateTime.strftime( '%Y-%m-%d') )
 
 
 
 
-  resultType  = m['ResultType']
-  assert( [0, 1,2,3,4,8].include?(resultType), "resultType 1,2,3,4 expected; got #{resultType}" )
+  ## resultType  = m['ResultType']
+  ##  assert( [0, 1,2,3,4,8].include?(resultType), "resultType 1,2,3,4 expected; got #{resultType}" )
 
-  score = _fmt_score( m )
+  score =  _fmt_score( m )
 
-   stageName   = desc( m['StageName'] )
-   groupName   = desc( m['GroupName'] )  # optional
-   matchNumber = m['MatchNumber']        # optional
+   stageName   = m['stage']
+   groupName   = m['group']     # optional
+   matchNumber = m['number']    # optional
 
-   matchDay    = m['MatchDay']           # optional
+   matchday    = m['matchday']  # optional
 
    ####
    ## note - make roundName  = stageName + matchDay (optional)
    roundName  = stageName
-   roundName += " - #{matchDay}"   if matchDay
+   roundName += " - #{matchday}"   if matchday
 
 
 
-   stadium = build_stadium( m['Stadium'] )
+   stadium = build_stadium( m['stadium'] )
 
-    attendance = m['Attendance']
+    attendance = m['attendance']
 
 
 
@@ -159,9 +162,9 @@ cup.each_with_index do |m, i|
      end
 
      if opt_stadium
-       buf << "@ #{stadium[:name]}, #{stadium[:city_name]}"
+       buf << "@ #{stadium[:name]}, #{stadium[:city]}"
      else
-       buf << "@ #{stadium[:city_name]}"
+       buf << "@ #{stadium[:city]}"
      end
 
       buf << "\n"
@@ -172,11 +175,11 @@ cup.each_with_index do |m, i|
 
     ## skip adding goals if teams not yet known!!
     ##  fix-fix-fix -- add more checks (e.g. ResultType = ??, MatchStatus = ??) !!!
-    next  if m['Home'].nil? & m['Away'].nil?
+    next  if m['team1']=='?' && m['team2']=='?'
 
-
+=begin
    ### get match (live) details
-   live = read_json( "./#{slug}/matches/#{season}/#{localDateTime.strftime('%Y-%m-%d')}_#{team1[:abbrev]}-#{team2[:abbrev]}__#{idMatch}.json" )
+   live = read_json( "./#{slug}/matches/#{season}/#{localDateTime.strftime('%Y-%m-%d')}_#{team1[:code]}-#{team2[:code]}.json" )
 
    players = Players.new
    players.add( live['HomeTeam']['Players'] )
@@ -185,6 +188,7 @@ cup.each_with_index do |m, i|
 
     buf <<  pp_goals( live, players: players,
                             indent:  17  )
+=end
   end
 
   buf

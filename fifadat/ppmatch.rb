@@ -1,5 +1,5 @@
 
-require_relative 'helper'
+require_relative './lib/fbtxt-pp'
 require_relative 'config'
 
 

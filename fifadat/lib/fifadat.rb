@@ -88,16 +88,4 @@ require_relative 'fifadat/stadiums'
 ## more
 require_relative 'fifadat/prepare'   ## "all-in-one" prepare (download cache) helpers etc.
 
-## pretty print
-require_relative 'fifadat/pp/pphelper'
-require_relative 'fifadat/pp/ppgoals'
-require_relative 'fifadat/pp/ppstats'
-require_relative 'fifadat/pp/ppmatch'
-require_relative 'fifadat/pp/ppmatch_full'
-require_relative 'fifadat/pp/ppmatch_min'
-require_relative 'fifadat/pp/pppenalties'
-require_relative 'fifadat/pp/pplineup'
-require_relative 'fifadat/pp/ppsquads'
 require_relative 'fifadat/pp/ppdebug'
-
-require_relative 'fifadat/pp/ppconvert'

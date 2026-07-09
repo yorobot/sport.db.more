@@ -1,12 +1,11 @@
 
 
 def build_stadium( h )
-     id         = h['IdStadium']
-     id_country = h['IdCountry']
- ##    id_city    = h['IdCity']
+     id = nil      ## h['IdStadium']
 
-     name      = desc( h['Name'] )
-     city_name = desc( h['CityName'] )
+     name      =  h['name']
+     city      =  h['city']
+     country  =   h['country']
 
 
      if name.nil?
@@ -15,23 +14,22 @@ def build_stadium( h )
        exit 1
      end
 
-     name, city_name = norm_stadium( name, city_name: city_name )
+    ##  name, city_name = norm_stadium( name, city_name: city_name )
 
      if id.nil?
         ## auto-generate id
         ##  use slug of name plus id_city
         ## add city name
-        id  =       name.downcase.gsub( /[^a-z]/, '' )
-        id += "_" + city_name.downcase.gsub( /[^a-z]/, '' )
+        id  =       name.downcase.gsub( /[^a-z0-9]/, '' )
+        id += "_" + city.downcase.gsub( /[^a-z]/, '' )
      end
 
 
    rec = { id:         id,
- ##          id_city:    id_city,
            name:      name,
-           city_name: city_name,
-           street:     h['Street'],
-           id_country: id_country,   ### fix - change to country - why? why not?
+           city:      city,
+           ## street:     h['Street'],
+           country:     country,
         }
 
   rec
@@ -47,7 +45,7 @@ class Stadiums
 
    def add( matches )  ## rename to add_matches - why? why not?
      matches.each_with_index do |m|
-       stadium = build_stadium( m['Stadium'] )
+       stadium = build_stadium( m['stadium'] )
        _add( stadium )
      end
    end
@@ -63,15 +61,15 @@ class Stadiums
           rec[:count] = 1   ## add counter - why? why not?
           @recs[ new_rec[:id]] = new_rec
 
-          city_rec = @by_city[ new_rec[:city_name]] ||= []
+          city_rec = @by_city[ new_rec[:city]] ||= []
           city_rec << new_rec
       else
           rec[:count] += 1
 
           ## assert attributes equal - why? why not?
          assert( new_rec[:name]        == rec[:name] &&
-                  new_rec[:city_name]  == rec[:city_name] &&
-                  new_rec[:id_country] == rec[:id_country],
+                  new_rec[:city]  == rec[:city] &&
+                  new_rec[:country] == rec[:country],
                   "stadium records NOT matching - #{rec.pretty_inspect} != #{new_rec.pretty_inspect}")
       end
    end
@@ -81,17 +79,14 @@ class Stadiums
       recs = @recs.values
       if sort
         recs = recs.sort do |l,r|
-                res = l[:id_country] <=> r[:id_country]
-                res = l[:city_name]  <=> r[:city_name]  if res == 0
+                res = l[:country] <=> r[:country]
+                res = l[:city]  <=> r[:city]  if res == 0
                 res
              end
       end
       recs
    end
    def each( sort: true, &blk ) recs( sort: sort ).each( &blk ); end
-
-
-   def as_json()  @recs.values;   end
 
 
    def dump
