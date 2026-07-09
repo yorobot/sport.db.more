@@ -214,6 +214,13 @@ end
 
 =end
 
+
+  TYPE_OFFICIAL = {
+    1 => 'Referee',
+    2 => 'Assistant referee 1',
+    3 => 'Assistant referee 2',
+  }
+
 def build_official( h )
     name = desc( h['Name'] )
 
@@ -230,7 +237,7 @@ def build_official( h )
     rec = {
             id: h['OfficialId'],
             name:      name,
-            idCountry: idCountry,
+            country:   idCountry,
             type:      type
           }
 
@@ -259,10 +266,18 @@ def build_officials( recs )  ## use referees?
 
     recs = recs.sort { |l,r|  l[:type] <=> r[:type] }
 
+    ## change type to literal string
+    recs = recs.map { |h| h[:type]=TYPE_OFFICIAL[h[:type]]; h }
+
     recs
 end
 
 
+
+def build_players( recs )
+    recs = recs.map  { |h| build_player( h ) }
+    recs
+end
 
 
 def build_player( h )
@@ -351,6 +366,14 @@ class Players
 
       recs
    end
+
+   ## all players with red or red-yellow card (sent off)
+   def sentoff
+      recs = @recs.values.select { |rec| rec[:r] || rec[:yr] }
+      recs
+   end
+
+
 
    def add_bookings( bookings )  ##  yellow/red cards
       bookings.each do |b|

@@ -63,4 +63,10 @@ season = opts[:season] ? opts[:season] : seasons[0]
     puts "  written to >#{outpath}<"
 
 
+    ##  convert match reports one-by-one
+    outdir = "#{outdir}/cache.json/#{season}_#{outname}"
+    pp_convert_reports( slug: slug, season: season,
+                               outdir: outdir )
+
+
 puts "bye"

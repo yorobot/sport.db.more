@@ -22,12 +22,15 @@ def build_stage( h )
    seq        = h['SequenceOrder']
    level      = h['StageLevel']      ## note - is optional
 
-   rec = { id:          h['IdStage'],   ## convert to number - why? why not?
-           name:        name,
+   rec = {
+        ##  id:          h['IdStage'],   ## convert to number - why? why not?
            seq:         seq,
-           level:       level,
+           name:        name,
            count:       0,
         }
+
+  rec[:level] = level   if level
+
   rec
 end
 
@@ -77,7 +80,13 @@ class Stages
        rec
    end
 
-   def as_json()   @recs.values;   end
+   def as_json()
+        ## note - sort by seq
+
+        @recs.values.sort do |l,r|
+             l[:seq] <=> r[:seq]
+         end
+   end
 
 
    def dump
