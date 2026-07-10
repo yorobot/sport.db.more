@@ -49,7 +49,6 @@ def pp_matches(  season:,
 
 
 last_round   = nil
-last_stage   = nil
 last_group   = nil
 
 last_date      = nil
@@ -149,6 +148,12 @@ matches.each_with_index do |m, i|
      ## use   20:30 UTC+1  or 20:30 UTC-3
      buf <<  "  #{localDateTime.strftime( '%H:%M' )} UTC%+d" % diff_in_hours
 
+
+     ##
+     ##
+     ## note - if score empty (e.g. '') use  A v B
+     score = ' v '  if score.empty?
+
      if opt_country
         buf <<  "   #{team1[:name]} (#{team1[:country]})"
         buf <<  "  #{score}  "
@@ -173,14 +178,6 @@ matches.each_with_index do |m, i|
     ##  fix-fix-fix -- add more checks (e.g. ResultType = ??, MatchStatus = ??) !!!
     next  if m['team1']=='?' && m['team2']=='?'
 
-=begin
-   ### get match (live) details
-   live = read_json( "./#{slug}/matches/#{season}/#{localDateTime.strftime('%Y-%m-%d')}_#{team1[:code]}-#{team2[:code]}.json" )
-
-   players = Players.new
-   players.add( live['HomeTeam']['Players'] )
-   players.add( live['AwayTeam']['Players'] )
-=end
 
     buf <<  pp_goals( m, indent:  17  )
   end

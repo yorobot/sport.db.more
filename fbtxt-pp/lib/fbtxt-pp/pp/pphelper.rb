@@ -8,7 +8,7 @@ def _fmt_score( m )
 
 
   if score.nil?
-         " v "
+          ''
   elsif score.is_a?(Hash)
 
   #            0 =>  no result / not played yet
@@ -19,7 +19,7 @@ def _fmt_score( m )
 
 
     if score.empty?
-              " v "
+              ''
     elsif score.key?( 'et' ) && score.key?( 'p' ) &&  !score.key?('ft')
              "#{score['et'][0]}-#{score['et'][1]} a.e.t., " +
              "#{score['p'][0]}-#{score['p'][1]} pen."

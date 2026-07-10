@@ -11,90 +11,92 @@
 def pp_matches_min(  season:,
                  slug:,
                  opt_country: false,
-                 opt_stadium: true,
+                 opt_stadium: false,
                  opt_teams: false  )
 
-   cup =  read_json( "./#{slug}/#{season}_matches.json" )
-   cup = cup['Results']  ## only use results (match) array
+   data =  read_json( "#{CACHE_DIR}/#{season}/#{slug}.json" )
+   matches = data['matches']
 
-   ## pp cup
-   puts "  #{cup.size} match(es) in season #{season}"
+   puts "  #{matches.size} match(es) in season #{season}"
 
 
-   cup = sort_matches( cup )
+   matches = sort_matches( matches )
+
+
+   teams = Teams.new
+   teams.add( data['teams'] )
+   puts "  #{teams.size} team(s) in season #{season}"
+
+   stadiums = Stadiums.new
+   stadiums.add( data['stadiums'] )
+   puts "  #{stadiums.size} stadium(s) in season #{season}"
 
 
    buf = String.new
 
    ## add stats block (dates, teams, matches, venues, etc.)
-   buf << pp_stats( cup, opt_teams: opt_teams,
-                         opt_stadiums: false )
+   buf << pp_stats( matches, teams: teams, stadiums: stadiums,
+                          opt_teams: opt_teams,
+                          opt_stadium: opt_stadium )
    buf << "\n"
 
 
 
-lastStageName  = nil
-lastGroupName  = nil
+ last_round  = nil
+ last_group  = nil
 
-cup.each_with_index do |m, i|
-  idCompetition = m['IdCompetition']
-  idSeason      = m['IdSeason']
-  idStage       = m['IdStage']
-  idMatch       = m['IdMatch']
+matches.each_with_index do |m, i|
+
+   ## note - always lookup full team records (use match inline only as refs)
+  team1 = teams.find_by!( name: m['team1'] )
+  team2 = teams.find_by!( name: m['team2'] )
 
 
-  team1 = m['Home'] ? build_team( m['Home'] ) : { name: '?',
-                                                      abbrev: '?',
-                                                      country: '?' }
-
-  team2 = m['Away'] ? build_team( m['Away'] ) : { name: '?',
-                                                      abbrev: '?',
-                                                      country: '?' }
-
-   dateTime       = parse_date( m['Date'] )    ## utc
-   localDateTime  = parse_date( m['LocalDate'] )
+   dateTime       = parse_date_utc( m['date_utc'] )    ## utc
+   localDateTime  = parse_date_local( m['date_local'] )
 
      assert( dateTime.sec == 0 && localDateTime.sec == 0,
                 "sec 00 expected" )
 
+    score = _fmt_score( m )
 
-  resultType  = m['ResultType']
-  assert( [0,1,2,3,4,8].include?(resultType), "resultType 1,2,3,4 expected; got #{resultType}" )
+   stage     = m['stage']
+   group     = m['group']       # optional
+   num       = m['num']         # optional
+   matchday  =  m['matchday']   # optional
 
-  score = _fmt_score( m )
-
-   stageName   = desc( m['StageName'] )
-   groupName   = desc( m['GroupName'] )  # optional
-   matchNumber = m['MatchNumber']       # optional
-   matchDay  =  m['MatchDay']           # optional
-
-
-  stageName, groupName = norm_stage( stageName, groupName,
-                             team1: team1,
-                             team2: team2,
-                             date: localDateTime.strftime( '%Y-%m-%d') )
+     ####
+   ## note - make roundName  = stageName + matchDay (optional)
+   round  = stage
+   round += " - #{matchday}"   if matchday
 
 
+#  stageName, groupName = norm_stage( stageName, groupName,
+#                             team1: team1,
+#                             team2: team2,
+#                             date: localDateTime.strftime( '%Y-%m-%d') )
 
 
-   if lastStageName.nil? || lastStageName != stageName
+
+
+   if last_round.nil? || last_round != round
 
          buf << "\n"
 
-         buf << "▪ #{stageName}\n"
+         buf << "▪ #{round}\n"
 
-        lastStageName = stageName
-        lastGroupName = nil
+        last_round = round
+        last_group = nil
    end
 
-   if groupName && (lastGroupName.nil? || lastGroupName != groupName)
+   if group && (last_group.nil? || last_group != group)
 
       ## note - skip extra newline on first group
-      buf << "\n"    if lastGroupName
+      buf << "\n"    if last_group
 
-      buf << "▪▪ #{groupName}\n"
+      buf << "▪▪ #{group}\n"
 
-      lastGroupName = groupName
+      last_group = group
    end
 
 

@@ -1,5 +1,10 @@
 # TODOS
 
+- [ ] add  timezone opt to pp_match!!!
+- [ ] opt_city  - flag (like opt_stadium)
+
+
+
 ```
 ##
 ##  upstream fix names

@@ -6,67 +6,65 @@ def pp_matches_full( season:,
                      opt_country: false,
                      opt_teams: false  )
 
-   cup =  read_json( "./#{slug}/#{season}_matches.json" )
-   cup = cup['Results']  ## only use results (match) array
+   data =  read_json( "#{CACHE_DIR}/#{season}/#{slug}.json" )
 
-   ## pp cup
-   puts "  #{cup.size} match(es) in season #{season}"
+   matches = data['matches']
+   puts "  #{matches.size} match(es) in season #{season}"
 
 
-   cup = sort_matches( cup )
+   matches = sort_matches( matches )
+
+
+
+   teams = Teams.new
+   teams.add( data['teams'] )
+   puts "  #{teams.size} team(s) in season #{season}"
+
+   stadiums = Stadiums.new
+   stadiums.add( data['stadiums'] )
+   puts "  #{stadiums.size} stadium(s) in season #{season}"
 
 
    buf = String.new
 
    ## add stats block (dates, teams, matches, venues, etc.)
-   buf << pp_stats( cup, opt_teams: opt_teams )
+   buf << pp_stats( matches, teams: teams, stadiums: stadiums,
+                          opt_teams: opt_teams,
+                          opt_stadium: true )
    buf << "\n"
 
 
 
-lastStageName  = nil
-lastGroupName  = nil
+  last_round  = nil
+  last_group  = nil
 
 
-cup.each_with_index do |m, i|
-  idCompetition = m['IdCompetition']
-  idSeason      = m['IdSeason']
-  idStage       = m['IdStage']
-  idMatch       = m['IdMatch']
+matches.each_with_index do |m, i|
 
+  ## note - always lookup full team records (use match inline only as refs)
+  team1 = teams.find_by!( name: m['team1'] )
+  team2 = teams.find_by!( name: m['team2'] )
 
-  team1 = m['Home'] ? build_team( m['Home'] ) : { name: '?',
-                                                  abbrev: '?',
-                                                  country: '?' }
-
-  team2 = m['Away'] ? build_team( m['Away'] ) : { name: '?',
-                                                  abbrev: '?',
-                                                  country: '?' }
-
-
-
-  resultType  = m['ResultType']
-  assert( [0,1,2,3,4,8].include?(resultType),
-            "resultType 0,1,2,3,4 expected; got #{resultType}" )
-
-  # resultType
-  #            0 =>  no result / not played yet
-  #            1 => regular (90 mins)
-  #            2 => aet (120 mins), win on pens
-  #            3 => aet (120 mins)
-  #            8 =>  same as 3?  -aet with golden goal/silver goal in 1998 FRA-PAR
 
   score = _fmt_score( m )
 
 
-   stageName   = desc( m['StageName'] )
-   groupName   = desc( m['GroupName'] )  # optional
-   matchNumber = m['MatchNumber']         # optional
-   matchDay    =  m['MatchDay']           # optional
+   stage    =  m['stage']
+   group    =  m['group']   # optional
+   num      =  m['num']         # optional
+   matchday =  m['matchday']           # optional
+
+   ####
+   ## note - make roundName  = stageName + matchDay (optional)
+   round  = stage
+   round += " - #{matchday}"   if matchday
 
 
-    dateTime       = parse_date( m['Date'] )    ## utc
-    localDateTime  = parse_date( m['LocalDate'] )
+
+
+
+    dateTime       = parse_date_utc( m['date_utc'] )    ## utc
+    localDateTime  = parse_date_local( m['date_local'] )
 
      assert( dateTime.sec == 0 && localDateTime.sec == 0,
               "sec 00 expected" )
@@ -77,10 +75,10 @@ cup.each_with_index do |m, i|
     ## pp [diff_in_hours, diff_in_days]
 
 
-   stageName, groupName = norm_stage( stageName, groupName,
-                             team1: team1,
-                             team2: team2,
-                             date: localDateTime.strftime( '%Y-%m-%d') )
+#   stageName, groupName = norm_stage( stageName, groupName,
+#                             team1: team1,
+#                             team2: team2,
+#                             date: localDateTime.strftime( '%Y-%m-%d') )
 
 
 
@@ -89,28 +87,27 @@ cup.each_with_index do |m, i|
     puts "  #{team1[:name]} v #{team2[:name]}  #{score}   - #{localDateTime}"
 
 
+    ## note - always lookup full stadium record (use match inline only as ref)
+    stadium  =  stadiums.find!( m['stadium'] )
 
-    stadium = build_stadium( m['Stadium'] )
-
-    attendance = m['Attendance']
+    attendance = m['attendance']
 
 
 
-   if lastStageName.nil? || lastStageName != stageName
+   if last_round.nil? || last_round != round
 
-         buf << "▪ #{stageName}\n"
+         buf << "▪ #{round}\n"
 
-        lastStageName = stageName
-        lastGroupName = nil
+        last_round = round
+        last_group = nil
    end
 
-   if groupName && (lastGroupName.nil? || lastGroupName != groupName)
+   if group && (last_group.nil? || last_group != group)
 
-      buf << "▪▪ #{groupName}\n"
+      buf << "▪▪ #{group}\n"
 
-      lastGroupName = groupName
+      last_group = group
    end
-
 
 
      use_date_utc = false    # true
@@ -137,7 +134,7 @@ cup.each_with_index do |m, i|
    end
 
 
-   buf << " @ #{stadium[:name]}, #{stadium[:city_name]}"
+   buf << " @ #{stadium[:name]}, #{stadium[:city]}"
    buf << ", Att: #{attendance}"   if attendance
    buf << "\n"
 
@@ -154,19 +151,20 @@ cup.each_with_index do |m, i|
 
    ## skip adding goals if teams not yet known!!
    ##  fix-fix-fix -- add more checks (e.g. ResultType = ??, MatchStatus = ??) !!!
-   next  if m['Home'].nil? & m['Away'].nil?
+   next  if m['team1'] == '?' && m['team2'] == '?'
+
+
+   buf <<  pp_goals( m,  indent:  4 )
 
 
    ### get match (live) details
-   live = read_json( "./#{slug}/matches/#{season}/#{localDateTime.strftime('%Y-%m-%d')}_#{team1[:abbrev]}-#{team2[:abbrev]}__#{idMatch}.json" )
+   live = read_json( "#{CACHE_DIR}/#{season}/#{slug}/#{localDateTime.strftime('%Y-%m-%d')}_#{team1[:code]}-#{team2[:code]}.json" )
+
+=begin
 
    players = Players.new
    players.add( live['HomeTeam']['Players'] )
    players.add( live['AwayTeam']['Players'] )
-
-
-    buf <<  pp_goals( live, players: players,
-                            indent:  4 )
 
 
    ##########
@@ -249,7 +247,7 @@ cup.each_with_index do |m, i|
       buf << "Refs: " + pp_officials( officials )
       buf << "\n"
     end
-
+=end
 
     buf << "\n\n"
 end
