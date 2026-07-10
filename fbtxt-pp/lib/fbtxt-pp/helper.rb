@@ -104,20 +104,18 @@ def sort_matches( data  )
 
   data =  data.sort do |l,r|
 
-   lhs_stageName =  desc( l['StageName'] )
-   rhs_stageName =  desc( r['StageName'] )
+   lhs_stage =  l['stage']
+   rhs_stage =  r['stage']
 
    ## lhs_stage = stages.find!( lhs_stageName )
    ## rhs_stage = stages.find!( rhs_stageName )
 
+   lhs_group  = l['group']   # optional
+   rhs_group  = r['group']   # optional
 
 
-   lhs_groupName  = desc( l['GroupName'] )  # optional
-   rhs_groupName  = desc( r['GroupName'] )  # optional
-
-
-   if lhs_groupName && rhs_groupName && (lhs_stageName == rhs_stageName)
-       res = lhs_groupName <=> rhs_groupName
+   if lhs_group && rhs_group && (lhs_stage == rhs_stage)
+       res = lhs_group <=> rhs_group
        ## same group; sort by old index (or) date??
        res = l['sort'] <=> r['sort']   if res == 0
        res

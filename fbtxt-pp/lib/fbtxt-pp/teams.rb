@@ -41,18 +41,18 @@ class Teams
         next if m['team1'].nil? && m['team2'].nil?
 
         [m['team1'],m['team2']].each do |name|
-            team = find!( name )
+            team = find_by!( name: name )
             team[:count] += 1
         end
       end
    end
 
 
-   def find!( name )
+   def find_by!( name: )
       if name == '?'    ## return dummy
-        rec = { name: '?',
-                code: '?',
-                country: '?', }
+        rec = { name: 'N.N',
+                code: 'UNK',
+                country: 'UNK', }
       else
         id = name.downcase.gsub( /[^a-z0-9]/, '' )
         rec =  @recs[ id ]
@@ -75,7 +75,7 @@ class Teams
    end
 
 
-
+=begin
    def recs( sort: true  )
       recs = @recs.values
       if sort
@@ -87,14 +87,12 @@ class Teams
       end
       recs
    end
-   def each( sort: true, &blk ) recs( sort: sort ).each( &blk ); end
+=end
 
 
-   def dump
-      recs = recs( sort: true )
-      pp recs
-      puts "  #{recs.size} team(s)"
-   end
+   def each( &blk ) @recs.values.each( &blk ); end
+
+
 
    def size() @recs.size; end
 

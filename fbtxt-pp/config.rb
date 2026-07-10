@@ -16,7 +16,8 @@ CONFIGS = {
                     2014, 2018, 2022],
         ## default pp opts
         opts:        { opt_country: false,
-                       opt_stadium: false,
+                       opt_stadium: true,
+                       opt_teams:   false,
                      },
         opts_full:   { opt_country: false,
                      },
@@ -96,7 +97,7 @@ CONFIGS = {
         seasons:   ['2025-26'],
         ## default pp opts
         opts:        { opt_country: false,
-                       opt_stadium: false,
+                       opt_stadium: true,
                      },
         opts_full:   { opt_country: false,
                      },
@@ -109,7 +110,7 @@ CONFIGS = {
         seasons:   ['2025-26'],
         ## default pp opts
         opts:        { opt_country: false,
-                       opt_stadium: false,
+                       opt_stadium: true,
                      },
         opts_full:   { opt_country: false,
                      },

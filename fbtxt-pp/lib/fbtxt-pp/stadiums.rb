@@ -5,8 +5,8 @@ def build_stadium( h )
 
      name      =  h['name']
      city      =  h['city']
-     country  =   h['country']
-
+     country   =  h['country']
+     street    =  h['street']
 
      if name.nil?
        puts "stadium without name:"
@@ -28,9 +28,11 @@ def build_stadium( h )
    rec = { id:         id,
            name:      name,
            city:      city,
-           ## street:     h['Street'],
            country:     country,
+           count:       0,
         }
+
+    rec[:street] = street    if street
 
   rec
 end
@@ -39,18 +41,23 @@ end
 
 class Stadiums
    def initialize
-      @recs = {}
+      @recs    = {}
       @by_city = {}    ## track by cities
    end
 
-   def add( matches )  ## rename to add_matches - why? why not?
-     matches.each_with_index do |m|
-       stadium = build_stadium( m['stadium'] )
-       _add( stadium )
-     end
+
+   def add( recs )
+      recs.each do |rec|
+        _add( build_stadium(  rec ) )
+      end
    end
 
-   alias_method :add_matches, :add
+
+   def add_matches( matches )  ## rename to add_matches - why? why not?
+      ## fix/fix/fix
+      ## todo be done - lookup & update (match count
+   end
+
 
 
 
@@ -58,42 +65,46 @@ class Stadiums
       rec =  @recs[ new_rec[:id] ]
       if rec.nil?
           rec = new_rec
-          rec[:count] = 1   ## add counter - why? why not?
           @recs[ new_rec[:id]] = new_rec
 
           city_rec = @by_city[ new_rec[:city]] ||= []
           city_rec << new_rec
       else
-          rec[:count] += 1
-
-          ## assert attributes equal - why? why not?
-         assert( new_rec[:name]        == rec[:name] &&
-                  new_rec[:city]  == rec[:city] &&
-                  new_rec[:country] == rec[:country],
-                  "stadium records NOT matching - #{rec.pretty_inspect} != #{new_rec.pretty_inspect}")
+         raise ArgumentError,
+            "duplicate stadium records  #{rec.pretty_inspect} == #{new_rec.pretty_inspect}"
       end
    end
 
 
-   def recs( sort: true )
-      recs = @recs.values
-      if sort
-        recs = recs.sort do |l,r|
-                res = l[:country] <=> r[:country]
-                res = l[:city]  <=> r[:city]  if res == 0
-                res
+   def find!( h )
+       ## quick & dirty verion
+        name = h['name']
+        city = h['city']
+
+        id  =       name.downcase.gsub( /[^a-z0-9]/, '' )
+        id += "_" + city.downcase.gsub( /[^a-z]/, '' )
+
+        rec =  @recs[ id ]
+        raise ArgumentError, "no stadium found for #{h.inspect} using id >#{id}<"  if rec.nil?
+        rec
+   end
+
+
+
+   def each( sort: true, &blk )
+      recs = if sort
+                @recs.values.sort do |l,r|
+                   res = l[:country] <=> r[:country]
+                   res = l[:city]  <=> r[:city]  if res == 0
+                   res
+                end
+             else
+                 @recs.values
              end
-      end
-      recs
-   end
-   def each( sort: true, &blk ) recs( sort: sort ).each( &blk ); end
 
-
-   def dump
-      recs = recs( sort: true )
-      pp recs
-      puts "  #{recs.size} stadiums(s)"
+      recs.each( &blk )
    end
+
 
    def size() @recs.size; end
 

@@ -14,17 +14,10 @@ def pp_matches(  season:,
                  opt_stadium: true,
                  opt_teams: false  )
 
-   cup =  read_json( "#{CACHE_DIR}/#{season}/#{slug}.json" )
-   matches = cup['matches']  ## only use results (match) array
+    data  =  read_json( "#{CACHE_DIR}/#{season}/#{slug}.json" )
+   matches = data['matches']  ## only use results (match) array
 
-   ## pp cup
    puts "  #{matches.size} match(es) in season #{season}"
-
-
-   teams = Teams.new
-   teams.add( cup['teams'] )
-   puts "  #{teams.size} team(s) in season #{season}"
-
 
 
    ## read in stages for sorting
@@ -32,35 +25,41 @@ def pp_matches(  season:,
    ## stages = Stages.new
    ## stages.add( read_json( "./#{slug}/misc/#{season}_stages.json" )['Results'] )
 
+   matches = sort_matches( matches )
 
 
-   ## cup = sort_matches( cup )
+
+   teams = Teams.new
+   teams.add( data['teams'] )
+   puts "  #{teams.size} team(s) in season #{season}"
+
+   stadiums = Stadiums.new
+   stadiums.add( data['stadiums'] )
+   puts "  #{stadiums.size} stadium(s) in season #{season}"
+
 
 
    buf = String.new
 
    ## add stats block (dates, teams, matches, venues, etc.)
-   ## buf << pp_stats( cup, opt_teams: opt_teams )
-   ## buf << "\n"
+   buf << pp_stats( matches, teams: teams, stadiums: stadiums,
+                              opt_teams: opt_teams,
+                              opt_stadium: opt_stadium )
+   buf << "\n"
 
 
-lastRoundName  = nil
-lastStageName  = nil
-lastGroupName  = nil
+last_round   = nil
+last_stage   = nil
+last_group   = nil
 
 last_date      = nil
 
 
 matches.each_with_index do |m, i|
-  idCompetition = m['IdCompetition']
-  idSeason      = m['IdSeason']
-  idStage       = m['IdStage']
-  idMatch       = m['IdMatch']
 
-
-  team1 = teams.find!( m['team1'] )
-  team2 = teams.find!( m['team2'] )
-
+   ## note - always lookup full team records (use match inline only as refs)
+  team1 = teams.find_by!( name: m['team1'] )
+  team2 = teams.find_by!( name: m['team2'] )
 
 
     dateTime       = parse_date_utc( m['date_utc'] )    ## utc
@@ -80,53 +79,50 @@ matches.each_with_index do |m, i|
 #                             team2: team2,
 #                             date: localDateTime.strftime( '%Y-%m-%d') )
 
-
-
-
+## move to convert !!!
   ## resultType  = m['ResultType']
   ##  assert( [0, 1,2,3,4,8].include?(resultType), "resultType 1,2,3,4 expected; got #{resultType}" )
 
-  score =  _fmt_score( m )
+    score =  _fmt_score( m )
 
-   stageName   = m['stage']
-   groupName   = m['group']     # optional
-   matchNumber = m['number']    # optional
+   stage   = m['stage']
+   group   = m['group']     # optional
+   num     = m['number']    # optional
 
    matchday    = m['matchday']  # optional
 
    ####
    ## note - make roundName  = stageName + matchDay (optional)
-   roundName  = stageName
-   roundName += " - #{matchday}"   if matchday
+   round  = stage
+   round += " - #{matchday}"   if matchday
 
 
-
-   stadium = build_stadium( m['stadium'] )
+   ## note - always lookup full stadium record (use match inline only as ref)
+   stadium  =  stadiums.find!( m['stadium'] )
 
     attendance = m['attendance']
 
 
 
 
-   if lastRoundName.nil? || lastRoundName != roundName
+   if last_round.nil? || last_round != round
 
          buf << "\n"
 
-         buf << "▪ #{roundName}\n"
+         buf << "▪ #{round}\n"
 
-        lastRoundName = roundName
-        lastGroupName = nil
-       last_date = nil
+        last_round = round
+        last_group = nil
+        last_date = nil
    end
 
-   if groupName && (lastGroupName.nil? || lastGroupName != groupName)
-
+   if group && (last_group.nil? || last_group != group)
       ## note - skip extra newline on first group
-      buf << "\n"    if lastGroupName
+      buf << "\n"    if last_group
 
-      buf << "▪▪ #{groupName}\n"
+      buf << "▪▪ #{group}\n"
 
-      lastGroupName = groupName
+      last_group = group
       last_date = nil
    end
 
@@ -184,11 +180,9 @@ matches.each_with_index do |m, i|
    players = Players.new
    players.add( live['HomeTeam']['Players'] )
    players.add( live['AwayTeam']['Players'] )
-
-
-    buf <<  pp_goals( live, players: players,
-                            indent:  17  )
 =end
+
+    buf <<  pp_goals( m, indent:  17  )
   end
 
   buf

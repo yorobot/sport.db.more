@@ -9,6 +9,7 @@ CACHE_DIR = '/sports/cache.api.fifa'
 require_relative 'fbtxt-pp/helper'
 require_relative 'fbtxt-pp/teams'
 require_relative 'fbtxt-pp/stadiums'
+require_relative 'fbtxt-pp/goals'
 
 
 ## pretty print
