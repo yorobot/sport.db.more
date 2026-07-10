@@ -145,7 +145,7 @@ seasons.each do |season|
     outpath = if opts[:full]
                  "#{outdir}/more/#{season}_#{outname}-full.txt"
               elsif opts[:min]
-                 "#{outdir}/min/#{season}.txt"
+                 "#{outdir}/min/#{season}_#{outname}.txt"
               else
                  "#{outdir}/more/#{season}_#{outname}.txt"
               end

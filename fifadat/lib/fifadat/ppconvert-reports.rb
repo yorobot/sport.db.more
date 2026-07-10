@@ -151,9 +151,12 @@ def pp_convert_reports( slug:, season:, outdir: )
    players2 = Players.new
    players2.add( live['AwayTeam']['Players'] )
 
+
+   rec[:formation1] = live['HomeTeam']['Tactics']   ## e.g. "Tactics": "3-1-4-2"
    rec[:lineup1] = players1.lineup   ## starter XI
    rec[:bench1]  = players1.bench    ## substitutes
 
+   rec[:formation2] = live['AwayTeam']['Tactics']
    rec[:lineup2] = players2.lineup
    rec[:bench2]  = players2.bench
 

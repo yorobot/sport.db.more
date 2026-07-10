@@ -1,5 +1,5 @@
 
-require_relative 'helper'
+require_relative './lib/fifadat'
 require_relative 'config'
 
 
@@ -9,9 +9,9 @@ opts = { season: nil }
 parser = OptionParser.new do |parser|
 parser.banner = "Usage: #{$PROGRAM_NAME} [options] NAME"
    ## add options here
-   parser.on( "--season=NUM", Integer,
-               "season (default: #{opts[:season] ? opts[:season] : '1st'})" ) do |num|
-     opts[:season] = num
+   parser.on( "--season=SEASON",
+               "season (default: #{opts[:season] ? opts[:season] : '1st'})" ) do |season|
+     opts[:season] = season
    end
 
 end
@@ -27,7 +27,7 @@ if args.size == 0
   puts " NAME argument required; use:"
   pp CONFIGS.keys
   exit 1
-end  
+end
 
 
 ##
@@ -57,15 +57,15 @@ season = opts[:season] ? opts[:season] : seasons[0]
     page = String.new
     page << "= #{name} #{season}\n"
     page <<  "\n"
-    
+
     buf = pp_debug( slug: slug, season: season )
-  
+
     page << buf
-    
+
     puts page
 
     outpath =  "#{outdir}/tmp/#{season}_#{outname}-debug.txt"
-             
+
     write_text( outpath, page )
     puts "  written to >#{outpath}<"
 
@@ -85,22 +85,22 @@ wc 2026:
  "TeamType"=>{1=>126},
  "AgeType"=>{7=>126},
  "FootballType"=>{0=>126}}
- 
+
 
 add asserts for MatchStatus && TeamType
 ##     use a  opt_club flag - why? why not?
-##         or better use a first_teamtype 
+##         or better use a first_teamtype
 ##              and make sure all other match - cannot mix'n'match!!!
 
-- [ ] use   MatchStatus 0 for complete? 
-         && MatchStatus 1 for future? 
+- [ ] use   MatchStatus 0 for complete?
+         && MatchStatus 1 for future?
 
-- [ ] use    TeamType  0 for club 
-          && TeamType  1 for national_team   
+- [ ] use    TeamType  0 for club
+          && TeamType  1 for national_team
 
 - resulttype  0 - to be done
-              1 - 90min, 
-              2 - aet, win on pens, 
+              1 - 90min,
+              2 - aet, win on pens,
               3 - aet
 
 

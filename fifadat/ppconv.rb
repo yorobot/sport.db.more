@@ -1,6 +1,6 @@
 
 
-require_relative './lib/fifadat-conv'
+require_relative './lib/fifadat'
 require_relative 'config'
 
 
@@ -43,7 +43,11 @@ pp config
 slug    = config[:slug]   ## change to source - why? why not?
 seasons = config[:seasons]
 
-outdir  = '.'
+
+## note - use (shared) absolute path for now!!
+outdir  = '/sports/cache.api.fifa'
+
+
 ##  select 1st or selected season - works only on single season!!
 season = opts[:season] ? opts[:season] : seasons[0]
 
@@ -59,14 +63,14 @@ season = opts[:season] ? opts[:season] : seasons[0]
 
     data = pp_convert( slug: slug, season: season )
 
-    outpath =  "#{outdir}/cache.json/#{season}_#{outname}.json"
+    outpath =  "#{outdir}/#{season}/#{outname}.json"
 
     write_json( outpath, data )
     puts "  written to >#{outpath}<"
 
 
-    ##  convert match reports one-by-one
-    outdir = "#{outdir}/cache.json/#{season}_#{outname}"
+    ##  convert all match reports one-by-one
+    outdir = "#{outdir}/#{season}/#{outname}"
     pp_convert_reports( slug: slug, season: season,
                                outdir: outdir )
 

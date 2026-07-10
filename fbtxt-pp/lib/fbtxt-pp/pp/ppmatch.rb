@@ -14,7 +14,7 @@ def pp_matches(  season:,
                  opt_stadium: true,
                  opt_teams: false  )
 
-   cup =  read_json( "./cache.json/#{season}_#{slug}.json" )
+   cup =  read_json( "#{CACHE_DIR}/#{season}/#{slug}.json" )
    matches = cup['matches']  ## only use results (match) array
 
    ## pp cup

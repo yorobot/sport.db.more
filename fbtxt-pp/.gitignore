@@ -1,0 +1,40 @@
+#####################
+##  ignore cached datasets
+
+worldcup/
+worldcup2/
+worldcup_v0/
+
+
+clubworldcup/
+interconticup/
+
+
+matchday/
+upcoming/
+competitions/
+seasons/
+
+####
+## leagues
+at/
+eng/
+
+
+###
+##  conversion cache
+cache.json/
+
+
+
+####
+#m  temp directories incl. more/ & min/
+##
+
+tmp/
+tmp2/
+tmp3/
+tmp4/
+
+more/
+min/

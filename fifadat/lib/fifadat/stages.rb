@@ -80,18 +80,12 @@ class Stages
        rec
    end
 
-   def as_json()
+   def as_json
         ## note - sort by seq
 
         @recs.values.sort do |l,r|
              l[:seq] <=> r[:seq]
          end
-   end
-
-
-   def dump
-      pp @recs.values
-      puts "  #{@recs.size} stage(s)"
    end
 
    def size() @recs.size; end

@@ -76,16 +76,26 @@ end
 
 require_relative 'fifadat/api'  ## base
 
-require_relative 'fifadat/norm'  ## norm players, stadiums, etc.
-
+## more
 require_relative 'fifadat/helper'
-require_relative 'fifadat/players'
+require_relative 'fifadat/norm'
+
+require_relative 'fifadat/prepare'   ## "all-in-one" prepare (download cache) helpers etc.
+
+
 require_relative 'fifadat/stages'
 require_relative 'fifadat/teams'
 require_relative 'fifadat/stadiums'
+require_relative 'fifadat/players'
+
+require_relative 'fifadat/officials'   ## aka referees
+require_relative 'fifadat/goals'
+require_relative 'fifadat/substitutions'
 
 
-## more
-require_relative 'fifadat/prepare'   ## "all-in-one" prepare (download cache) helpers etc.
 
-require_relative 'fifadat/pp/ppdebug'
+require_relative 'fifadat/ppconvert'
+require_relative 'fifadat/ppconvert-reports'
+
+require_relative 'fifadat/pphelper'
+require_relative 'fifadat/ppdebug'

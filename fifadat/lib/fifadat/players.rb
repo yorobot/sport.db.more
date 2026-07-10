@@ -1,284 +1,21 @@
 
 
 
-def build_penalty( h, players: )
-    ## split into minute
-    ##  and offset (stoppage/injury time)
-    ##  e.g. 90'+11'
-
-    minute_str = h['MatchMinute']
-
-    if minute_str.nil? || minute_str.empty?
-       ## puts "!! minute in penaltiy is nil or empty:"
-       ## pp h
-       ## exit 1
-       minute_str = "121'"  ## quick hack - use 121' - allow nil in future!!
-                            ##  minute not really used (check for period is 11)
-    end
-
-    minute, offset = _parse_minute( minute_str )
-
-     type = h['Type']
-
-     ##########
-     ##  0 - goal   (when penalty awared used before)
-     ## 41 - penalty goal
-     ## 46 - penalty missed
-     ##   Dragan STOJKOVIC (Yugoslavia) rattles the crossbar from the spot!
-     ## 51 - penalty missed
-     ##    JULIO CESAR (Brazil) hits the post from the spot!
-     ## 60 - penalty missed
-     ##    COMAN (France) sees his penalty saved by the goalkeeper.
-     ##    Maxime BOSSIS (France) misses from the penalty spot! and many more
-     ## 65 - penalty missed
-     ##      TCHOUAMENI (France) misses from the penalty spot!
-
-
-     assert( [0,41,46,51,60,65].include?(type),
-             "event type 0/41/46/51/60/65 expected; got #{type}")
-
-
-    rec = { type:      type,
-            pen: [h['HomePenaltyGoals'],
-                  h['AwayPenaltyGoals']],
-            minute:    minute,
-            # timestamp:  h['Timestamp'],
-            # period:     h['Period'],   ## note - use 11 (for pen kicks!!!)
-          }
-    rec[ :offset] = offset   if offset  ## add optional offset (stoppage/injury time)
-
-
-     idPlayer = h['IdPlayer'] || h['IdSubPlayer']
-
-=begin
-  -- try IdSubPlayer - why? why not?
-    ## what is SubPlayer/SubTeam in event??
-!! no idPlayer for penaltyl!
-{"EventId"=>"17807200001266",
- "IdTeam"=>"1884426",
- "IdSubPlayer"=>"408948",
- "IdSubTeam"=>"1897032",
-=end
-
-      if idPlayer.nil?
-         puts "!! no idPlayer for penaltyl!"
-         pp h
-          ##exit 1
-          ## use 'N.N.'
-
-          rec[ :player ] = {
-                             name: 'N.N.',
-                           }
-
-      else
-        rec[ :player ] = players.find!( idPlayer )
-      end
-
-     rec
-end
-
-def build_penalties( recs, players: )
-     ################
-     ## type:
-     ##  6 -  penalty awarded
-     ##       weirdo format - followed by 0 - goald or 60 - penalty missed!
-     ## 2 -   yellow card
-     ## 3 -   red card
-     ## 7 -   start time (The penalty shoot-out is about to begin)
-     ## 8 -   end time
-
-     recs = recs.select do |h|
-                              if h['Period'] == 11   ## penalty shoot-out
-                                assert( [0,2,3,6,7,8,41,46,51,60,65].include?( h['Type'] ),
-                                   "expected event type 2/3/7/8/41/46/51/60/65 for pens; got #{h.pretty_inspect}"
-                                 )
-                                [0,41,46,51,60,65].include?( h['Type'] ) ? true :
-                                                                   false
-                              else
-                                 false
-                              end
-                        end
-
-
-    recs = recs.map { |h| build_penalty( h, players: players ) }
-    recs
-end
-
-
-
-def build_goal( h, players: )
-
-    ## split into minute
-    ##  and offset (stoppage/injury time)
-    ##  e.g. 90'+11'
-
-     minute_str = h['Minute']
-
-     if minute_str.nil? || minute_str.empty?
-
-
-
-      ## todo/fix - find minute
-      ##   in interconti cup 2024-12-1
-        if h['Period'] == 11    ## realy penalty shoot out!!!
-                                   ## skip - why? why not?
-            minute_str =  "121'"
-        else
-           puts "!! minute in goal is nil or empty:"
-           pp h
-           exit 1
-        end
-      end
-
-
-    minute, offset = _parse_minute( minute_str )
-
-    ## check for weird minute 0 e.g.
-    ##   Germany-Austria 1934
-    minute = 1  if h['Minute'] == "0'"
-
-
-    rec = { type:      h['Type'],
-            minute:    minute,
-          }
-
-     rec[ :offset] = offset   if offset  ## add optional offset (stoppage/injury time)
-
-      idPlayer = h['IdPlayer']
-
-      if idPlayer.nil?
-         puts "!! no idPlayer for goal!"
-         pp h
-          ##exit 1
-          ## use 'N.N.'
-
-          rec[ :player ] = {
-                             name: 'N.N.',
-                           }
-
-      else
-        rec[ :player ] = players.find!( idPlayer )
-      end
-     rec
-end
-
-
-def build_goals( recs, players:,  penalties: false )
-    recs = recs.map  { |h| build_goal( h, players: players ) }
-
-    ## note - filter out penalties (from shoot-out)!!
-    ##    min > 120  (e.g. 121, etc.)
-    if penalties == false
-       recs = recs.select { |rec| rec[:minute] <= 120 }
-    end
-
-    ## sort by minutes
-    ##  may not be sorted
-
-    recs = recs.sort do |l,r|
-                 res = l[:minute] <=> r[:minute]
-                 res = (l[:offset]||0) <=> (r[:offset]||0)  if res == 0 &&
-                                                              (l[:minute] == 45 ||
-                                                               l[:minute] == 90 ||
-                                                               l[:minute] == 105 ||  ## check - if possible stoppage in 1st half extra-time??
-                                                               l[:minute] == 120)
-                 res
-           end
-    recs
-end
-
-
-
-=begin
-  "Officials":
-     [{"IdCountry": "URU",
-       "OfficialId": "61038",
-       "NameShort": [{"Locale": "en-GB", "Description": "Domingo LOMBARDI"}],
-       "Name": [{"Locale": "en-GB", "Description": "Domingo LOMBARDI"}],
-       "OfficialType": 1,
-       "TypeLocalized": [{"Locale": "en-GB", "Description": "Referee"}]},
-      {"IdCountry": "BEL",
-       "OfficialId": "60664",
-       "NameShort": [{"Locale": "en-GB", "Description": "Henry CRISTOPHE"}],
-       "Name": [{"Locale": "en-GB", "Description": "Henry CRISTOPHE"}],
-       "OfficialType": 2,
-       "TypeLocalized":
-        [{"Locale": "en-GB", "Description": "Assistant Referee 1"}]},
-      {"IdCountry": "BRA",
-       "OfficialId": "61289",
-       "NameShort": [{"Locale": "en-GB", "Description": "Gilberto REGO"}],
-       "Name": [{"Locale": "en-GB", "Description": "Gilberto REGO"}],
-       "OfficialType": 3,
-       "TypeLocalized":
-        [{"Locale": "en-GB", "Description": "Assistant Referee 2"}]}],
-
-=end
-
-
-  TYPE_OFFICIAL = {
-    1 => 'Referee',
-    2 => 'Assistant referee 1',
-    3 => 'Assistant referee 2',
-  }
-
-def build_official( h )
-    name = desc( h['Name'] )
-
-    ## fix - use norm_official
-    name = norm_official( name )
-
-    idCountry = h['IdCountry']
-    type      = h['OfficialType']
-
-
-    assert( is_alpha?( name), "official name alpha expected; got #{name.inspect}" )
-    assert( [1,2,3,4,5,6,7,8,9,10].include?( type ), "official type 1/2/3/4/5/6/7/8/9/10 expected; got #{type}" )
-
-    rec = {
-            id: h['OfficialId'],
-            name:      name,
-            country:   idCountry,
-            type:      type
-          }
-
-    rec
-   end
-
-
-def build_officials( recs )  ## use referees?
-    recs = recs.map  { |h| build_official( h ) }
-
-    ## skip fourth official (4) for now
-    recs = recs.select { |h|  [1,2,3].include?( h[:type] ) }
-
-    ## sort by type 1/2/3
-    ##  1 - referee
-    ##  2 - assistant referee 1
-    ##  3 - assistant referee 2
-    ##  4 - fourth official
-    ##  5 - video assistant referee (var)
-    ##  6 - reserve referee
-    ##  7 - offside var
-    ##  8 - assistant var
-    ##  9 - support var
-    ## 10 - reserve assistant referee
-
-
-    recs = recs.sort { |l,r|  l[:type] <=> r[:type] }
-
-    ## change type to literal string
-    recs = recs.map { |h| h[:type]=TYPE_OFFICIAL[h[:type]]; h }
-
-    recs
-end
-
-
-
 def build_players( recs )
     recs = recs.map  { |h| build_player( h ) }
     recs
 end
 
+
+# TYPE_PLAYER_POS = {
+#   0 => 'GK',
+#   1 => 'DF',
+#   2 => 'MF',
+#   3 => 'FW',
+#   4 => '??',
+#   5 => '??',
+#   6 => '??'
+# }
 
 def build_player( h )
    name       = desc( h['PlayerName'] )
@@ -302,19 +39,61 @@ def build_player( h )
       name = 'N.N.'
    end
 
-   name = norm_player( name )
+   ## name = norm_player( name )
+
 
    short_name = desc( h['ShortName'] )
 
    ##
    ##  todo/check - add IdCountry if available??
 
+
+   status = h['Status']
+   assert( [1,2].include?( status ), "player status 1,2 expected; got #{h.inspect}")
+
+   ## what is pos 6 ??
+   ## e.g.
+   ##   !! ASSERT FAILED
+   ## {"IdPlayer"=>"419456", "IdTeam"=>"32759", "ShirtNumber"=>4, "Status"=>1,
+   ## "PlayerName"=>[{"Locale"=>"en-GB", "Description"=>"Ismaila COULIBALY"}],
+   ##  "ShortName"=>[{"Locale"=>"en-GB", "Description"=>"Ismaila COULIBALY"}],
+   ## "Position"=>6, "PlayerPicture"=>nil,
+   ## "FieldStatus"=>2, "LineupX"=>nil, "LineupY"=>nil}
+   ##
+   ## what is pos 5 ??
+   ##  e.g.
+   ## {"IdPlayer"=>"7czui1ih46j3zitzysxvjqjv8", "IdTeam"=>"2000019848", "ShirtNumber"=>33,
+   ##  "Status"=>1,
+   ## "PlayerName"=>[{"Locale"=>"en-gb", "Description"=>"Maximilian Hennig"}],
+   ## "ShortName"=>[{"Locale"=>"en-gb", "Description"=>"M. Hennig"}],
+   ## "Position"=>5, "PlayerPicture"=>nil, "FieldStatus"=>2, "LineupX"=>nil, "LineupY"=>nil}
+   ##
+   ## what is pos 4 ??
+   ##  {"IdPlayer"=>"254150", "IdTeam"=>"2000017585", "ShirtNumber"=>15,
+   ## "Status"=>2, "SpecialStatus"=>nil, "Captain"=>false,
+   ## "PlayerName"=>[{"Locale"=>"en-GB", "Description"=>"Nemanja RNIC"}],
+   ## "ShortName"=>[{"Locale"=>"en-gb", "Description"=>"N. Rnić"}],
+   ## "Position"=>4, "PlayerPicture"=>nil, "FieldStatus"=>1, "LineupX"=>nil, "LineupY"=>nil}
+
+
+   pos = h['Position']
+   assert( [0,1,2,3,4,5,6].include?( pos ), "player pos 0,1,2,3,4,5,6 expected; got #{h.inspect}" )
+
+   ##    0 - is always goal keeper
+   ##   check meaning of 1 to 6
+   ##     on website !!!
+   ##       pos is NOT (simply) matching tactics/formation (index number)!!
+
    rec = { id:      h['IdPlayer'],
            name:        name,
            short_name:  short_name,
-           status:     h['Status'],
-           pos:        h['Position'],
+           status:      status,
+           pos:         pos,
         }
+
+    ## check for shirtNumber too
+    num = h['ShirtNumber']
+    rec[:num]     = num  if num
 
     rec[:captain]  = true   if h['Captain']
 
@@ -364,13 +143,50 @@ class Players
    def lineup
       recs = @recs.values.select { |rec| rec[:status] == 1 }
 
+      recs = recs.map {|rec| rec.except( :id, :status, :count ) }
       recs
    end
+
+   def bench
+      recs = @recs.values.select { |rec| rec[:status] == 2 }
+
+      recs = recs.map {|rec| rec.except( :id, :status, :count ) }
+      recs
+   end
+
+
 
    ## all players with red or red-yellow card (sent off)
    def sentoff
       recs = @recs.values.select { |rec| rec[:r] || rec[:yr] }
-      recs
+
+=begin
+       "id": "395516",
+          "name": "Cesar MONTES",
+          "short_name": "Cesar MONTES",
+          "status": 1,
+          "pos": 1,
+          "captain": true,
+          "count": 1,
+          "r": {
+            "minute": "90+2'"
+=end
+
+  ## todo/check - add a flag for yellow-red card (e.g. yr=true) - why? why not?
+
+        recs = recs.map do |rec|
+                   minute = if rec[:r]
+                              rec[:r][:minute]
+                             elsif rec[:yr]
+                               rec[:yr][:minute]
+                             else
+                               raise ArgumentError, "r or yr card expected; got #{rec.inspect}"
+                             end
+                  { name:   rec[:name],
+                    minute: minute }
+               end
+
+         recs
    end
 
 

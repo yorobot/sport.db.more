@@ -63,19 +63,6 @@ end
 
 
 
-def desc( data )   ## get description
-    return nil if data.nil? || (data.is_a?(Array) && data.empty?)
-
-    row = data[0]   ## assume first entry is en-GB
-    locale = row['Locale']
-    assert( locale == 'en-GB' || locale == 'en-gb',
-              "locale en-GB expected in data[0] - got #{data}")
-
-    row['Description']
-end
-
-
-
 
 ###
 ## helper matches

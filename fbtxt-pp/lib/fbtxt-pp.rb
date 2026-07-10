@@ -1,6 +1,11 @@
 require 'cocos'
 
 
+## todo/fix - use a module with method for config!!!
+CACHE_DIR = '/sports/cache.api.fifa'
+
+
+
 require_relative 'fbtxt-pp/helper'
 require_relative 'fbtxt-pp/teams'
 require_relative 'fbtxt-pp/stadiums'
