@@ -26,8 +26,10 @@ STAGES = {
 
   'LEAGUE_STAGE'            => ['League'],
   'GROUP_STAGE'             => ['Group'],
-  'PLAYOFFS'                => ['Playoffs'],
+  'PLAYOFFS'                => ['Playoffs'],   ## used in champs
+  'PLAY_OFFS'               => ['Playoffs'],   ## used in copa liber.
 
+  'LAST_32'                 => ['Finals',     'Round of 32'],
   'ROUND_OF_16'             => ['Finals',     'Round of 16'],
   'LAST_16'                 => ['Finals',     'Round of 16'],  ## use Last 16 - why? why not?
   'QUARTER_FINALS'          => ['Finals',     'Quarterfinals'],
@@ -67,7 +69,7 @@ def self.convert( league:, season: )
 
   season = Season( season )   ## cast (ensure) season class (NOT string, integer, etc.)
 
-  ### note - find_league returns the metal_league_code 
+  ### note - find_league returns the metal_league_code
   league_code = find_league!( league )
 
   matches_url = Metal.competition_matches_url( league_code, season.start_year )
@@ -132,12 +134,6 @@ matches.each do |m|
   team1 = m['homeTeam']['name'] || 'N.N.'
   team2 = m['awayTeam']['name'] || 'N.N.'
 
-   ## auto-fix copa.l 2024
-   ##  !! ERROR: unsupported match status >IN_PLAY< - sorry:
-   if m['status'] == 'IN_PLAY' &&
-      team1 == 'Club Aurora' && team2 == 'FBC Melgar'
-        m['status'] = 'FINISHED'
-   end
 
 
 
@@ -185,6 +181,7 @@ matches.each do |m|
   matchday_num = m['matchday']
   matchday_num = nil   if matchday_num == 0   ## change 0 to nil (empty) too
 
+
   if stage_round.nil?  ## e.g. Regular, League, Group, Playoffs
      ## keep/assume matchday number is matchday .e.g
      ##   matchday 1, 2 etc.
@@ -205,6 +202,7 @@ matches.each do |m|
       team1 = mods[ team1 ]      if mods[ team1 ]
       team2 = mods[ team2 ]      if mods[ team2 ]
     end
+
 
   ####
   #   auto-add (fifa) country code if int'l club tournament
@@ -513,5 +511,3 @@ def self.vacuum( rows, headers: MAX_HEADERS, fixed_headers: MIN_HEADERS )
   [rows, headers]
 end
 end #  module Footballdata
-
-

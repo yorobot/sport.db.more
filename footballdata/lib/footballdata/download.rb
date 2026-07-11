@@ -53,6 +53,7 @@ class Metal
 
     request_headers = request_headers.merge( headers )   unless headers.empty?
 
+    ## pp request_headers
 
     ## note: add format: 'json' for pretty printing json (before) save in cache
     response = Webget.call( url, headers: request_headers )
@@ -117,9 +118,11 @@ class Metal
    get( "#{BASE_URL}/teams/#{id}" )
  end
 
- def self.match( id )
-   get( "#{BASE_URL}/matches/#{id}" )
+
+ def self.match( id, headers: {} )
+   get( "#{BASE_URL}/matches/#{id}", headers: headers )
  end
+
 
  def self.person( id )
   get( "#{BASE_URL}/persons/#{id}" )

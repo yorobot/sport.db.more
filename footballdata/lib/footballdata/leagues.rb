@@ -1,3 +1,10 @@
+
+##
+##  todo/fix cleanup
+##    use a "generic" record for lookup
+##
+
+
 module Footballdata
 
   def self.find_league!( league )
@@ -48,4 +55,3 @@ module Footballdata
      seasons
   end
 end   #  module Footballdata
-

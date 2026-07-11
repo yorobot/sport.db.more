@@ -1,6 +1,15 @@
 
 module Footballdata
 
+##
+## note - "weirdo" rule
+##   fullTime is only "classic" fulltime if REGULAR
+##
+##  otherwise fullTime is aggregate of extraTime AND penalties!!
+##
+##
+
+
 def self.convert_score( score )
   ## duration: REGULAR  · PENALTY_SHOOTOUT  · EXTRA_TIME
   ft, ht, et, pen = ["","","",""]
@@ -41,4 +50,54 @@ def self.convert_score( score )
 
   [ft,ht,et,pen]
 end
+
+
+
+def self.convert_score_to_hash( score )
+  ## duration: REGULAR  · PENALTY_SHOOTOUT  · EXTRA_TIME
+
+  if score['duration'] == 'REGULAR'
+    { ft: [score['fullTime']['home'],
+           score['fullTime']['away']],
+      ht: [score['halfTime']['home'],
+           score['halfTime']['away']]
+    }
+  elsif score['duration'] == 'EXTRA_TIME'
+    { et: [score['regularTime']['home']+score['extraTime']['home'],
+           score['regularTime']['away']+score['extraTime']['away']],
+      ft: [score['regularTime']['home'],
+           score['regularTime']['away']],
+      ht: [score['halfTime']['home'],
+           score['halfTime']['away']]
+    }
+
+  elsif score['duration'] == 'PENALTY_SHOOTOUT'
+    if score['extraTime']
+      ## quick & dirty hack - calc et via regulartime+extratime
+      { pen: [score['penalties']['home'],
+              score['penalties']['away']],
+        et:  [score['regularTime']['home']+score['extraTime']['home'],
+              score['regularTime']['away']+score['extraTime']['away']],
+        ft:  [score['regularTime']['home'],
+              score['regularTime']['away']],
+        ht:  [score['halfTime']['home'],
+              score['halfTime']['away']]
+      }
+    else  ### south american-style (no extra time)
+        ## quick & dirty hacke - calc ft via fullTime-penalties
+       { pen: [score['penalties']['home'],
+               score['penalties']['away']],
+         ft:  [score['fullTime']['home']-score['penalties']['home'],
+               score['fullTime']['away']-score['penalties']['away']],
+         ht:  [score['halfTime']['home'],
+               score['halfTime']['away']]
+       }
+    end
+  else
+    raise ArgumentError, "!! unknown score duration - #{score.inspect}"
+  end
+end
+
+
+
 end  # module Footballdata

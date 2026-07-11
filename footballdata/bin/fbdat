@@ -249,6 +249,7 @@ if opts[:convert]
    datasets.each do |league_key, seasons|
       seasons.each do |season|
          convert( league: league_key, season: season )
+         convert_json( league: league_key, season: season )
       end
    end
 end

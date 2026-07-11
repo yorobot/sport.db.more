@@ -36,8 +36,13 @@ require_relative 'footballdata/download'
 require_relative 'footballdata/prettyprint'
 
 require_relative 'footballdata/mods'
-require_relative 'footballdata/convert'
+require_relative 'footballdata/convert_csv'
+require_relative 'footballdata/convert_json'
+require_relative 'footballdata/convert_json-stages'
+require_relative 'footballdata/convert_json-teams'
 require_relative 'footballdata/convert-score'
+
+
 require_relative 'footballdata/teams'
 
 
