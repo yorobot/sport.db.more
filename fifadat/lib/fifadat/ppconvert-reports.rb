@@ -1,7 +1,7 @@
 
-def pp_convert_reports( slug:, season:, outdir: )
+def pp_convert_reports( slug:, season:, indir:, outdir: )
 
-   matches =  read_json( "./#{slug}/#{season}_matches.json" )
+   matches =  read_json_v2( "#{indir}/#{slug}/#{season}_matches.json" )
    matches = matches['Results']  ## only use results (match) array
 
    ## pp matches
@@ -18,8 +18,8 @@ def pp_convert_reports( slug:, season:, outdir: )
       team2_code = m['Away']['Abbreviation']
       idMatch    = m['IdMatch']
 
-      live_path = "./#{slug}/matches/#{season}/#{date_str}_#{team1_code}-#{team2_code}__#{idMatch}.json"
-      live = read_json( live_path )
+      live_path = "#{indir}/#{slug}/matches/#{season}/#{date_str}_#{team1_code}-#{team2_code}__#{idMatch}.json"
+      live = read_json_v2( live_path )
 
 
       rec = {}
@@ -85,7 +85,7 @@ def pp_convert_reports( slug:, season:, outdir: )
 
   resultType  = live['ResultType']
 
-  assert( [0, 1,2,3,4,8].include?(resultType), "resultType 1,2,3,4 expected; got #{resultType}" )
+  assert( [0, 1,2,3,4,8,12].include?(resultType), "resultType 1,2,3,4,8,12 expected; got #{resultType}" )
 
 
   # resultType
@@ -110,6 +110,8 @@ def pp_convert_reports( slug:, season:, outdir: )
                   resultType == 4  ||
                   live['IdMatch'] == '400019191'  ##  fix for pachuca vs salzburg !!!
              { ft: [live['HomeTeam']['Score'],live['AwayTeam']['Score']] }
+           elsif  resultType == 12
+               nil
            elsif  resultType == 0
               ##  pachuca vs salzburg in cwc 2025??
                ##  double check if score present

@@ -114,4 +114,14 @@ CONFIGS = {
         opts_full:   { opt_country: false,
                      },
     },
+
+
+
+  'copa.l': {
+        slug:      'copa.l',
+        name:      'CONMEBOL Libertadores',
+        outname:   'copa.l',
+        seasons:   ['2026'],
+    },
+
 }

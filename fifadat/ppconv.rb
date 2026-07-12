@@ -47,6 +47,8 @@ seasons = config[:seasons]
 ## note - use (shared) absolute path for now!!
 outdir  = '/sports/cache.api.fifa'
 
+indir   = '/sports/cache.api.fifadat'
+
 
 ##  select 1st or selected season - works only on single season!!
 season = opts[:season] ? opts[:season] : seasons[0]
@@ -61,7 +63,7 @@ season = opts[:season] ? opts[:season] : seasons[0]
 
 
 
-    data = pp_convert( slug: slug, season: season )
+    data = pp_convert( slug: slug, season: season, indir: indir )
 
     outpath =  "#{outdir}/#{season}/#{outname}.json"
 
@@ -72,6 +74,7 @@ season = opts[:season] ? opts[:season] : seasons[0]
     ##  convert all match reports one-by-one
     outdir = "#{outdir}/#{season}/#{outname}"
     pp_convert_reports( slug: slug, season: season,
+                               indir: indir,
                                outdir: outdir )
 
 

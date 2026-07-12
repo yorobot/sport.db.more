@@ -9,7 +9,8 @@ matches:
 =end
 
 
-def pp_convert( slug:, season: )
+def pp_convert( slug:, season:,
+                indir: '.' )
   data = {}
 
     ## add slug & seasons (add name to be done!!)
@@ -17,7 +18,7 @@ def pp_convert( slug:, season: )
     data[:season] = season
 
 
-   matches =  read_json( "./#{slug}/#{season}_matches.json" )
+   matches =  read_json_v2( "#{indir}/#{slug}/#{season}_matches.json" )
    matches = matches['Results']  ## only use results (match) array
 
    ## pp matches
@@ -26,7 +27,7 @@ def pp_convert( slug:, season: )
 
   ## read in stages
   ##   incl.  SequenceOrder, StageLevel (optional)
-  stages = Stages.read( "./#{slug}/misc/#{season}_stages.json" )
+  stages = Stages.read( "#{indir}/#{slug}/misc/#{season}_stages.json" )
 
 
   stages.add_matches( matches )
@@ -124,9 +125,16 @@ def pp_convert( slug:, season: )
  ## m = (full) match hash incl.  IdMatch, etc.
   ##  returns string e.g.  4-4  or 4-3 a.e.t etc
 
+##
+## "MatchStatus"=>9,  cancelled!!!!
+##
+##  "ResultType"=>12,
+##  21:30  CD Independiente Medellín (COL) v CR Flamengo (BRA)        [cancelled]
+##
+
   resultType  = m['ResultType']
 
-  assert( [0, 1,2,3,4,8].include?(resultType), "resultType 1,2,3,4 expected; got #{resultType}" )
+  assert( [0, 1,2,3,4,8,12].include?(resultType), "resultType 1,2,3,4,8,12 expected; got #{resultType} in: #{m.pretty_inspect}" )
 
 
   # resultType
@@ -151,6 +159,9 @@ def pp_convert( slug:, season: )
                   resultType == 4  ||
                   m['IdMatch'] == '400019191'  ##  fix for pachuca vs salzburg !!!
              { ft: [m['HomeTeamScore'],m['AwayTeamScore']] }
+           elsif  resultType == 12
+               ## fix/fix/fix - check for score too
+                nil
            elsif  resultType == 0
               ##  pachuca vs salzburg in cwc 2025??
                ##  double check if score present
@@ -185,8 +196,8 @@ if m['Home'] && m['Away']
    team2_code = m['Away']['Abbreviation']
    idMatch    = m['IdMatch']
 
-   live_path = "./#{slug}/matches/#{season}/#{date_str}_#{team1_code}-#{team2_code}__#{idMatch}.json"
-   live = read_json( live_path )
+   live_path = "#{indir}/#{slug}/matches/#{season}/#{date_str}_#{team1_code}-#{team2_code}__#{idMatch}.json"
+   live = read_json_v2( live_path )
 
 
    players = Players.new

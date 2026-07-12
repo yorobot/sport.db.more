@@ -2,6 +2,21 @@ require 'cocos'   ## check if incl webclient already?
 require 'webclient'
 
 
+def read_json_v2( path )
+  txt = read_text( path )
+
+  ## \u00A0 - non-breaking space
+  txt = txt.gsub( /[\u00A0]/, ' ' )
+
+  ## check for non-breaking space
+  ## fix-fix-fix add unicode normalize!!
+
+
+  parse_json( txt )
+end
+
+
+
 def _deep_stringify_keys(obj)
   case obj
   when Hash

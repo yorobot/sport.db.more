@@ -38,7 +38,7 @@ end
 class Stages
 
    def self.read( path )
-       data = read_json( path )
+       data = read_json_v2( path )
        obj = new
        obj.add( data['Results'] )
        obj

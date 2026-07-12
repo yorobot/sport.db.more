@@ -17,3 +17,29 @@ season,  id_season, id_comp,  name,  start_date, end_date
 2023-24, 1jt5mxgn4q5r6mknmlqv5qjh0,  2000000000,    Premier League
 2024-25,  9n12waklv005j8r32sfjj2eqc, 2000000000,    Premier League
 2025-26,  51r6ph2woavlbbpk8f29nynf8, 2000000000,    Premier League
+
+
+## uefa champs
+## UEFA,1,0,1,7,2000001032,UEFA,FRG,UEFA Champions League
+## UEFA,1,0,1,7,2000001041,UEFA,FRG,UEFA Europa League
+## UEFA,1,0,1,7,c7b8o53flg36wbuevfzy3lb10,UEFA,FRG,UEFA Conference League
+
+
+## copa liber
+2021,   a52zexp0f3e4h3adpymsb1gr8,  2000001035, CONMEBOL Libertadores
+2022,   400218683,                  2000001035, CONMEBOL Libertadores
+2023,   dbsk2r2snitn1gtnz9t292hhw,  2000001035, CONMEBOL Libertadores
+2024,   ecldra4qmr0i4bs5cyfbiz2ms,  2000001035, CONMEBOL Libertadores
+2025,   168tc8nsaknvru654r6qwupsk,  2000001035, CONMEBOL Libertadores
+2026,   dk8bg66qizwked9etonwaaln8,  2000001035, CONMEBOL Libertadores
+
+## CONMEBOL,1,0,1,7,2000001042,CONMEBOL,FRG,CONMEBOL Sudamericana
+
+## mexico
+## CONCACAF,1,0,2,7,2000000104,CONCACAF,MEX,Liga MX
+
+## arg
+## CONMEBOL,1,0,2,7,2000000128,CONMEBOL,ARG,Liga Profesional Argentina
+
+## bra
+## CONMEBOL,1,0,2,7,2000000078,CONMEBOL,BRA,Serie A

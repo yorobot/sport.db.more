@@ -47,14 +47,17 @@ class Fifa
    ##  pp COMPETITIONS
 
 
+####
+### fix - change id to string!!  not all ids are numbers!!!
+
    COMPETITION_ID = {
       'worldcup'      => 17,
       'clubworldcup'  => 10005, ## note - club world cup is only 2025
       'interconticup' => 107,   ## note - interconti  incl. all "legacy" club world cup 2000, 2005-2023
 
-
-      'at'  => 2000000005,  ## austria | bundesliga (at.1)
-      'eng' => 2000000000,  ## england | premier league (eng.1)
+      'at'      => 2000000005,  ## austria | bundesliga (at.1)
+      'eng'     => 2000000000,  ## england | premier league (eng.1)
+      'copa.l'  => 2000001035,
    }
 
 
