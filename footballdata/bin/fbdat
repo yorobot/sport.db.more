@@ -36,7 +36,9 @@ opts = {
    cached:  false,
    convert: true,
    file:    nil,
+   json:    nil,
 }
+
 
 parser = OptionParser.new do |parser|
   parser.banner = "Usage: #{$PROGRAM_NAME} [options] [args]"
@@ -49,6 +51,11 @@ parser = OptionParser.new do |parser|
   parser.on( "--[no-]convert",
                "turn on/off conversion to .csv in #{Footballdata.config.convert.out_dir} - default is (#{opts[:convert]})" ) do |convert|
     opts[:convert] = convert
+  end
+
+  parser.on( "--json",
+               "turn on conversion to .json in #{Footballdata.config.convert.out_dir}" ) do |json|
+    opts[:json] = true
   end
 
   parser.on( "--print", "--pp",
@@ -205,6 +212,10 @@ datasets = if opts[:file]
                ##                       and reserve parse_leagueset( txt ) for
                ##                                  read_leagueset with inline text
 
+               ##
+               ## fix/fix/fix - rename to upstream to
+               ##    build_leagueset( args, ...)  !!!
+
               parse_leagueset_args( args, autofill: autofiller )
            end
 
@@ -248,8 +259,13 @@ if opts[:convert]
    puts "==> converting to .csv"
    datasets.each do |league_key, seasons|
       seasons.each do |season|
-         convert( league: league_key, season: season )
-         convert_json( league: league_key, season: season )
+       ### quick hack  - for json only conversion
+         if opts[:json]
+           convert_json( league: league_key, season: season )
+         else
+           convert_csv( league: league_key, season: season )
+           convert_json( league: league_key, season: season )
+         end
       end
    end
 end

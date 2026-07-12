@@ -1,50 +1,75 @@
 
 module Footballdata
 
-
-####
-## beautify stages constant names
+#######
+##  map round-like to higher-level stages
+##      fix - map by league codes
+##              or * (all)
 STAGES = {
-  'REGULAR_SEASON'          => 'Regular Season',
+  'REGULAR_SEASON'          => ['Regular'],
 
-  'QUALIFICATION'           => 'Qualification',
-  'PRELIMINARY_ROUND'       => 'Preliminary Round',
-  'PRELIMINARY_SEMI_FINALS' => 'Preliminary Semifinals',
-  'PRELIMINARY_FINAL'       => 'Preliminary Final',
-  '1ST_QUALIFYING_ROUND'    => '1st Qualifying Round',
-  '2ND_QUALIFYING_ROUND'    => '2nd Qualifying Round',
-  '3RD_QUALIFYING_ROUND'    => '3rd Qualifying Round',
-  'QUALIFICATION_ROUND_1'   => 'Qualification Round 1',
-  'QUALIFICATION_ROUND_2'   => 'Qualification Round 2',
-  'QUALIFICATION_ROUND_3'   => 'Qualification Round 3',
-  'ROUND_1'                 => 'Round 1',
-  'ROUND_2'                 => 'Round 2',
-  'ROUND_3'                 => 'Round 3',
-  'PLAY_OFF_ROUND'          => 'Playoff Round',
-  'PLAYOFF_ROUND_1'         => 'Playoff Round 1',
+  'QUALIFICATION'           => ['Qualifying'],
+  'PRELIMINARY_ROUND'       => ['Qualifying', 'Preliminary Round' ],
+  'PRELIMINARY_SEMI_FINALS' => ['Qualifying', 'Preliminary Semifinals' ],
+  'PRELIMINARY_FINAL'       => ['Qualifying', 'Preliminary Final' ],
+  '1ST_QUALIFYING_ROUND'    => ['Qualifying', 'Round 1' ],
+  '2ND_QUALIFYING_ROUND'    => ['Qualifying', 'Round 2' ],
+  '3RD_QUALIFYING_ROUND'    => ['Qualifying', 'Round 3' ],
+  'QUALIFICATION_ROUND_1'   => ['Qualifying', 'Round 1' ],
+  'QUALIFICATION_ROUND_2'   => ['Qualifying', 'Round 2' ],
+  'QUALIFICATION_ROUND_3'   => ['Qualifying', 'Round 3' ],
+  'ROUND_1'                 => ['Qualifying', 'Round 1'],    ##  use Qual. Round 1 - why? why not?
+  'ROUND_2'                 => ['Qualifying', 'Round 2'],
+  'ROUND_3'                 => ['Qualifying', 'Round 3'],
+  'PLAY_OFF_ROUND'          => ['Qualifying', 'Playoff Round'],
+  'PLAYOFF_ROUND_1'         => ['Qualifying', 'Playoff Round 1'],
 
-  'LEAGUE_STAGE'            => 'League',      ## add Stage - why? why not?
-  'GROUP_STAGE'             => 'Group',
-  'PLAYOFFS'                => 'Playoffs',     ## -- used in champs
-  'PLAY_OFFS'               => 'Playoffs',     ## -- used in copa liber.
+  'LEAGUE_STAGE'            => ['League'],
+  'GROUP_STAGE'             => ['Group'],
+  'PLAYOFFS'                => ['Playoffs'],   ## used in champs
+  'PLAY_OFFS'               => ['Playoffs'],   ## used in copa liber.
 
-  'LAST_32'                 => 'Round of 32',
-  'ROUND_OF_16'             => 'Round of 16',
-  'LAST_16'                 => 'Round of 16',  ## use Last 16 - why? why not?
-  'QUARTER_FINALS'          => 'Quarterfinals',
-  'SEMI_FINALS'             => 'Semifinals',
-  'THIRD_PLACE'             => 'Third place',
-  'FINAL'                   => 'Final',
+  'LAST_32'                 => ['Finals',     'Round of 32'],
+  'ROUND_OF_16'             => ['Finals',     'Round of 16'],
+  'LAST_16'                 => ['Finals',     'Round of 16'],  ## use Last 16 - why? why not?
+  'QUARTER_FINALS'          => ['Finals',     'Quarterfinals'],
+  'SEMI_FINALS'             => ['Finals',     'Semifinals'],
+  'THIRD_PLACE'             => ['Finals',     'Third place play-off'],
+  'FINAL'                   => ['Finals',     'Final'],
 }
 
 
 
-def self.convert_csv( league:, season: )
+
+
+def self.find_team_country_code( name, teams: )
+  ## add (fifa) country code e.g.
+  ##      Liverpool FC => Liverpool FC (ENG)
+  ##  or  Liverpool FC => Liverpool FC (URU)
+  rec = teams[ name ]
+  if rec.nil?
+    puts "!! ERROR - no team record found in teams.json for #{name}"
+    pp teams.keys
+    exit 1
+  end
+
+  country_name = rec['area']['name']
+  country  = Fifa.world.find_by_name( country_name )
+  if country.nil?
+    puts "!! ERROR - no country record found for #{country_name}"
+    exit 1
+  end
+
+  country.code
+end
+
+
+
+def self.convert( league:, season: )
 
   season = Season( season )   ## cast (ensure) season class (NOT string, integer, etc.)
 
   ### note - find_league returns the metal_league_code
-  ##            e.g.  eng.1 =>  PL
   league_code = find_league!( league )
 
   matches_url = Metal.competition_matches_url( league_code, season.start_year )
@@ -52,17 +77,6 @@ def self.convert_csv( league:, season: )
 
   data           = Webcache.read_json( matches_url )
   data_teams     = Webcache.read_json( teams_url )
-
-
-  ## build a team lookup by name (& short_name)
-
-  teams = Teams.new
-  teams.add( data_teams['teams'] )
-  puts "#{teams.size} team(s)"
-
-  ## add/update match counts
-  teams.add_matches( data['matches'] )
-
 
 
   ###
@@ -81,102 +95,131 @@ def self.convert_csv( league:, season: )
                   'copa.l'].include?(league.downcase) ? true : false
 
 
-  mods = MODS[ league.downcase ] || {}
+
+  ## build a (reverse) team lookup by name
+  puts "#{data_teams['teams'].size} teams"
+
+  teams_by_name = data_teams['teams'].reduce( {} ) do |h,rec|
+     h[ rec['name'] ] = rec
+     h
+  end
+
+  ## pp teams_by_name.keys
 
 
 
-  recs = []
+mods = MODS[ league.downcase ] || {}
 
-  # stat  =  Stat.new
+
+recs = []
+
+teams = Hash.new( 0 )
+
+
+# stat  =  Stat.new
+
   ## track stage, match status et
   stats = { 'status'    => Hash.new(0),
             'stage'     => Hash.new(0),
            }
 
 
+
+
 matches = data[ 'matches']
 matches.each do |m|
   # stat.update( m )
 
-  # use ? or N.N. or ? for nil  - why? why not?
-  team1_name = m['homeTeam']['name']
-  team2_name = m['awayTeam']['name']
-
-  team1 = team1_name ? teams.find_by!(name: team1_name ) : { name: 'N.N.' }
-  team2 = team2_name ? teams.find_by!(name: team2_name ) : { name: 'N.N.' }
+  ## use ? or N.N. or ? for nil  - why? why not?
+  team1 = m['homeTeam']['name'] || 'N.N.'
+  team2 = m['awayTeam']['name'] || 'N.N.'
 
 
-  ## use "normed" team names
-  team1_name = team1[:name]
-  team2_name = team2[:name]
 
-  ### mods - rename club names
-  unless mods.nil? || mods.empty?
-      team1_name = mods[ team1_name ]      if mods[ team1_name ]
-      team2_name = mods[ team2_name ]      if mods[ team2_name ]
+
+  score = m['score']
+
+  group = m['group']
+  ## GROUP_A
+  ##  shorten group to A|B|C etc.
+  if group && group =~ /^(GROUP_|Group )/
+        group =  group.sub( /^(GROUP_|Group )/, '' )
+  else
+      if group.nil?
+          group = ''
+      else
+          puts "!! WARN - group defined with NON GROUP!? >#{group}< reset to empty"
+          puts "            and matchday to >#{m['matchday']}<"
+          ## reset group to empty
+          group = ''
+      end
   end
+
+
+  stage_key = m['stage']
+  stats['stage'][ stage_key ] += 1   ## track stage counts
+
+
+  stage, stage_round =  if group.empty?
+                          ## map stage to stage + round
+                          STAGES[ stage_key ]
+                        else
+                          ## if group defined ignore stage
+                          ##   hard-core always to group for now
+                           if stage_key != 'GROUP_STAGE'
+                              puts "!! WARN - group defined BUT stage set to >#{stage_key}<"
+                              puts "            and matchday to >#{m['matchday']}<"
+                           end
+                          ['Group', nil]
+                        end
+
+  if stage.nil?
+      puts "!! ERROR - no stage mapping found for stage >#{stage_key}<"
+      exit 1
+  end
+
+  matchday_num = m['matchday']
+  matchday_num = nil   if matchday_num == 0   ## change 0 to nil (empty) too
+
+
+  if stage_round.nil?  ## e.g. Regular, League, Group, Playoffs
+     ## keep/assume matchday number is matchday .e.g
+     ##   matchday 1, 2 etc.
+     matchday = matchday_num.to_s
+  else
+    ## note - if matchday/round defined, use it
+    ##        note - ignore possible leg in matchday for now
+    matchday =  stage_round
+  end
+
+
+  teams[ team1 ] += 1
+  teams[ team2 ] += 1
+
+
+    ### mods - rename club names
+    unless mods.nil? || mods.empty?
+      team1 = mods[ team1 ]      if mods[ team1 ]
+      team2 = mods[ team2 ]      if mods[ team2 ]
+    end
+
 
   ####
   #   auto-add (fifa) country code if int'l club tournament
   if clubs_intl
-    if team1_name != 'N.N.'  ## note - ignore no team/placeholder (e.g. N.N)
-      team1_name = "#{team1_name} (#{team1[:country][:code]})"
+    ## note - use "original" name (not moded) for lookup
+    team1_org = m['homeTeam']['name']
+    team2_org = m['awayTeam']['name']
+    if team1_org   ## note - ignore no team/placeholder (e.g. N.N)
+      country_code = find_team_country_code( team1_org, teams: teams_by_name )
+      team1 = "#{team1} (#{country_code})"
     end
-    if team2_name != 'N.N.'  ## note - ignore no team/placeholder (e.g. N.N)
-      team2_name = "#{team2_name} (#{team2[:country][:code]})"
+    if team2_org   ## note - ignore no team/placeholder (e.g. N.N)
+      country_code = find_team_country_code( team2_org, teams: teams_by_name )
+      team2 = "#{team2} (#{country_code})"
     end
   end
 
-
-
-
-
-  group     = m['group']
-  stage_key = m['stage']
-  stats['stage'][ stage_key ] += 1   ## track stage counts
-  ## add group stats?
-
-
-  ## GROUP_A
-  ##  shorten group to A|B|C etc.
-  if group
-    ## assert group only used with GROUP_STAGE
-   if stage_key != 'GROUP_STAGE'
-      raise ArgumentError,
-      "group defined BUT stage set to >#{stage_key}< (expected GROUP_STAGE)" +
-      "and matchday to >#{m['matchday']}<"
-    end
-
-    if group =~ /^(GROUP_|Group )/
-         group =  group.sub( /^(GROUP_|Group )/, '' )
-     else
-          raise ArgumentError,
-             "group defined with NON GROUP!? >#{group}< reset to empty"+
-             "            and matchday to >#{m['matchday']}<"
-     end
-  else  ## assume group.nil?
-      group = ''
-  end
-
-
-
-  ## map stage to stage + round
-  ##   note - if no mapping defined; use (fallback to) upcase version
-  stage = STAGES[ stage_key ]
-
-  if stage.nil?
-      puts "!! WARN - no stage mapping found for stage >#{stage_key}<"
-      stage = stage_key
-  end
-
-
-
-  matchday = m['matchday']
-  matchday = nil     if matchday == 0   ## change 0 to nil (empty) too
-
-
-
-    score = m['score']
 
 
     comments = ''
@@ -211,8 +254,9 @@ matches.each do |m|
       ht = ''
       comments = 'postponed'
     else
-      raise ArgumentError,
-        "unsupported match status >#{m['status']}< - sorry:"
+      puts "!! ERROR: unsupported match status >#{m['status']}< - sorry:"
+      pp m
+      exit 1
     end
 
 
@@ -251,14 +295,14 @@ matches.each do |m|
 
     recs << [stage,
              group,
-             matchday.to_s,  ## not convert nil or Integer to str e.g. "", "1"
+             matchday,
              date,
              time,
              timezone,
-             team1_name,
+             team1,
              ft,
              ht,
-             team2_name,
+             team2,
              et,
              pen,
              comments,
@@ -287,7 +331,7 @@ dates = "#{start_date.strftime('%b %-d')} - #{end_date.strftime('%b %-d')}"
 
 buf = ''
 buf << "#{season.key} (#{dates}) - "
-buf << "#{teams.size} teams, "
+buf << "#{teams.keys.size} teams, "
 buf << "#{recs.size} matches"
 # buf << "#{stat[:regular_season][:goals]} goals"
 buf << "\n"
@@ -374,17 +418,27 @@ recs, headers = vacuum( recs )
                              headers: headers )
 
 
-teams.each do |rec|
-  print "  #{rec[:count]}x  "
-  print rec[:name]
-  print " | #{rec[:short_name]} "   if rec[:name] != rec[:short_name]
-  print " › #{rec[:country][:name]} (#{rec[:country][:code]})"
-  print "  - #{rec[:address]}"
+teams.each do |name, count|
+  rec = teams_by_name[ name ]
+  print "  #{count}x  "
+  print name
+  if rec
+    print " | #{rec['shortName']} "   if name != rec['shortName']
+    print " › #{rec['area']['name']}"
+    print "  - #{rec['address']}"
+  else
+    if name == 'N.N.'
+      ## ignore missing record
+    else
+      puts "!! ERROR  - no team record found in teams.json for #{name}"
+      exit 1
+    end
+  end
   print "\n"
 end
 
 ## pp stat
-end   # method convert_csv
+end   # method convert
 
 
 
@@ -414,9 +468,6 @@ MIN_HEADERS = [   ## always keep even if all empty
 ]
 
 
-
-###
-###  move upstream to cocos!! (re)use vacuum_csv !!!!
 
 def self.vacuum( rows, headers: MAX_HEADERS, fixed_headers: MIN_HEADERS )
   ## check for unused columns and strip/remove

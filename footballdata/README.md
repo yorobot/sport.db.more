@@ -84,10 +84,10 @@ require 'footballdata'
  'pt.1',
  'uefa.cl',
 ].each do |league|
-  Footballdata.convert( league: league, season: '2020/21' )
+  Footballdata.convert_csv( league: league, season: '2020/21' )
 end
 
-Footballdata.convert( league: 'br.1', season: '2020' )
+Footballdata.convert_csv( league: 'br.1', season: '2020' )
 ```
 
 Note: By default all datasets get written into the `./o`

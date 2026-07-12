@@ -2,6 +2,18 @@
 
 
 
+- [ ]  add missing world 2026 timezone upstream!!!
+
+```
+==> world
+48 team(s)
+!! ERROR: no timezone found for world 2026
+```
+
+
+
+
+
 double check for more (*) awared, cancelled, and such!!!
 
 
@@ -176,4 +188,3 @@ eng.2  - championship includes playoff e.g.
 !!! unexpected stage:
 -- skipping PLAYOFFS
 ```
-

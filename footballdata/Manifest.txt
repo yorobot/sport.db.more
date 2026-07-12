@@ -6,9 +6,9 @@ bin/fbdat
 config/leagues_tier1.csv
 lib/footballdata.rb
 lib/footballdata/convert-score.rb
+lib/footballdata/convert-stages.rb
+lib/footballdata/convert-teams.rb
 lib/footballdata/convert_csv.rb
-lib/footballdata/convert_json-stages.rb
-lib/footballdata/convert_json-teams.rb
 lib/footballdata/convert_json.rb
 lib/footballdata/download.rb
 lib/footballdata/leagues.rb

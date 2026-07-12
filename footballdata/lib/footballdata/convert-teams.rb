@@ -1,4 +1,19 @@
 
+
+##
+##  fix/fix/fix - use only name for lookup
+##    short name may incl. duplicates in same tournament e.g.
+##  duplicate team (short) name -
+## {"area"=>{"id"=>2049, "name"=>"Colombia", "code"=>"COL",
+##   "id"=>7119, "name"=>"CD Independiente Medellín",
+##               "shortName"=>"Independiente",
+##   -- and some other Independiente !!!
+##    e.g  CS Independiente Rivadavia
+##         CAR Independiente del Valle
+##
+##  will crash on copa liberatores!!
+##    e.g. fbdat copa.l --cache
+
 =begin
 
 note - for address "null null null",
@@ -43,8 +58,20 @@ note - for address "null null null",
 =end
 
 
-
 def build_team( h )
+
+  ##
+  ## note:  convert country code to "standard" fifa code
+  ##        use official fifa country code
+   country_name = h['area']['name']
+
+   country = Fifa.world.find_by_name( country_name )
+   if country.nil?
+     raise ArgumentError, "[fifa world] no country record found for #{country_name} for: #{h.inspect}"
+   end
+
+   country_code =  country.code
+
 
       rec = { id:         h['id'],
               name:       h['name'],
@@ -57,8 +84,9 @@ def build_team( h )
               ##
               ##  or use country { code:, name }
               ## change to cc (country code) - why? why not?
-              country:   {  code: h['area']['code'],
-                            name: h['area']['name'] },
+              country:   {   name: country_name,
+                             code: country_code,
+                             code_bak: h['area']['code'] },
 
               count:      0,   ## track - match counts
         }
@@ -68,6 +96,7 @@ end
 
 
 class Teams
+
    def initialize
       @recs    = []
       @by_name = {}
@@ -79,9 +108,20 @@ class Teams
             rec = build_team( h )
             @recs << rec
 
-            ## todo/fix - make sure team name is uniq!!!!
-            @by_name[rec[:name]]       = rec
-            @by_name[rec[:short_name]] = rec
+            ## note - assert/make sure team name is uniq
+            if @by_name.has_key?(rec[:name])
+              raise ArgumentError, "duplicate team name - #{h.inspect}"
+            else
+              @by_name[rec[:name]] = rec
+            end
+
+            if rec[:name] != rec[:short_name]
+              if @by_name.has_key?(rec[:short_name])
+                 raise ArgumentError, "duplicate team (short) name - #{h.inspect}"
+              else
+                @by_name[rec[:short_name]] = rec
+              end
+            end
        end
    end
 
@@ -89,7 +129,10 @@ class Teams
 
    def find_by!( name: )
         rec = @by_name[ name ]
-        raise ArgumentError, "team >#{name}< not found; sorry"   if rec.nil?
+        if rec.nil?
+          raise ArgumentError, "team >#{name}< not found; sorry"
+        end
+
         rec
    end
 
@@ -109,6 +152,9 @@ class Teams
         end
       end
    end
+
+   def each( &blk) @recs.each( &blk); end
+
 
 
    def as_json( id: false )

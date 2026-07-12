@@ -154,33 +154,7 @@ def self.convert_json( league:, season: )
   ## note: change season_key from 2019/20 to 2019-20  (for path/directory!!!!)
   puts "  writing to >#{path}<"
   write_json( path, data )
-end   # method convert
+end   # method convert_json
 
 
 end #  module Footballdata
-
-
-
-__END__
-
-## note: get season from first match
-##   assert - all other matches include the same season
-## e.g.
-# "season": {
-#  "id": 154,
-#  "startDate": "2018-08-03",
-#  "endDate": "2019-05-05",
-#  "currentMatchday": 46
-# }
-
-start_date = Date.strptime( matches[0]['season']['startDate'], '%Y-%m-%d' )
-end_date   = Date.strptime( matches[0]['season']['endDate'],   '%Y-%m-%d' )
-
-dates = "#{start_date.strftime('%b %-d')} - #{end_date.strftime('%b %-d')}"
-
-buf = ''
-buf << "#{season.key} (#{dates}) - "
-buf << "#{teams.keys.size} teams, "
-buf << "#{recs.size} matches"
-# buf << "#{stat[:regular_season][:goals]} goals"
-buf << "\n"
