@@ -1,4 +1,40 @@
 
+
+ MINUTE_RE = %r{  \A
+                       (?<minute>\d{1,3}) '
+                        (  \+
+                          (?<offset>\d{1,2}) '
+                        )?
+                   \z
+                 }x
+
+
+def _parse_minute( str )
+
+    ## support weirdo  120'+-30'  -- remove minuts
+    str = str.gsub( '-', '' )
+
+    m = MINUTE_RE.match( str )
+    raise ArgumentError, "unknown goal minute format in #{str.inspect}"  if m.nil?
+
+    minute = m[:minute].to_i(10)
+    offset = m[:offset] ? m[:offset].to_i(10) : nil
+
+    [minute,offset]
+end
+
+def _fmt_minute( minute, offset )
+     ## pp [minute,offset]
+
+     buf = String.new
+     buf << "#{minute}"
+     buf << "+#{offset}"   if offset
+     buf << "'"
+     buf
+end
+
+
+
 def _fmt_score( m )
 
   ## m = (full) match hash incl.  IdMatch, etc.

@@ -1,6 +1,5 @@
 
 require_relative './lib/fifadat'
-require_relative 'config'
 
 
 args = ARGV
@@ -33,38 +32,24 @@ end
 ##
 ## note - all args other than first ignored for now; issue warn - why? why not?
 
-key = args[0].downcase.to_sym
-config = CONFIGS[ key ]
-puts "CONFIG:"
-pp config
-
-slug    = config[:slug]   ## change to source - why? why not?
-seasons = config[:seasons]
+slug  = args[0].downcase.to_sym
+season =  Season.parse(opts[:season])
 
 outdir  = '.'
-##  select 1st or selected season - works only on single season!!
-season = opts[:season] ? opts[:season] : seasons[0]
-
-
-
-    name =  config[:name].is_a?(Proc) ? config[:name].call( season )
-                                      : config[:name]
-
-    outname = config[:outname].is_a?(Proc) ? config[:outname].call( season )
-                                           : config[:outname]
 
 
     page = String.new
-    page << "= #{name} #{season}\n"
+    page << "= #{slug} #{season}\n"
     page <<  "\n"
 
-    buf = pp_debug( slug: slug, season: season )
+    buf = pp_debug( slug: slug, season: season,
+                    indir: '/sports/cache.fifadat' )
 
     page << buf
 
     puts page
 
-    outpath =  "#{outdir}/tmp/#{season}_#{outname}-debug.txt"
+    outpath =  "#{outdir}/tmp/#{season.to_path}_#{slug}-debug.txt"
 
     write_text( outpath, page )
     puts "  written to >#{outpath}<"

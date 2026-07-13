@@ -1,0 +1,20 @@
+
+code, id_comp, name
+
+worldcup,         17,
+clubworldcup,     10005,      ## note - club world cup is only 2025
+interconticup,    107,        ## note - interconti  incl. all "legacy" club world cup 2000 + 2005-2023
+
+at,               2000000005,     ## austria | bundesliga (at.1)
+eng,              2000000000,     ## england | premier league (eng.1)
+
+copa.l,           2000001035,     ## CONMEBOL Libertadores
+copa.s,           2000001042,     ## CONMEBOL Sudamericana
+
+uefa.cl,        2000001032,       ##  UEFA Champions League
+uefa.europa,    2000001041,       ##  UEFA Europa League
+uefa.con,       c7b8o53flg36wbuevfzy3lb10,   ##  UEFA Conference League
+
+mx,             2000000104,        ## MEX - Liga MX
+ar,             2000000128,        ## ARG - Liga Profesional Argentina
+br,             2000000078,        ## BRA - Serie A

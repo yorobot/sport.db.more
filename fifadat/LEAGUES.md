@@ -5,7 +5,7 @@ how to add a new league
 
 - [ ] add to fifadat/config/leagues.csv
 - [ ] add to fifadat/api.rb  - COMPETITION_ID
-- [ ] for ppconver - add to config.rb
+- [ ] for ppconv - add to config.rb
 
 
 ```

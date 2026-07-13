@@ -1,35 +1,37 @@
 
-def pp_debug(  season:, slug: )
+def pp_debug(  season:, slug:,
+               indir: )
 
+   season = Season(season)
 
    stats = {
             ## match stats
               'MatchStatus' => Hash.new(0),
-              'ResultType' => Hash.new(0),
-              'Leg'        => Hash.new(0),
+              'ResultType'  => Hash.new(0),
+              'Leg'         => Hash.new(0),
               'IsHomeMatch' => Hash.new(0),
-              'MatchDay' => Hash.new(0),
+              'MatchDay'    => Hash.new(0),
               'MatchNumber' => Hash.new(0),
-              'Attendance' => Hash.new(0),
-              'Weather' => Hash.new(0),
+              'Attendance'  => Hash.new(0),
+              'Weather'     => Hash.new(0),
 
             ## team stats
-              'TeamType'   => Hash.new(0),
-              'AgeType'    =>  Hash.new(0),
+              'TeamType'     => Hash.new(0),
+              'AgeType'      =>  Hash.new(0),
               'FootballType' => Hash.new(0),
             }
 
 
-   cup =  read_json( "./#{slug}/#{season}_matches.json" )
-   cup = cup['Results']  ## only use results (match) array
+   data =  read_json( "#{indir}/#{slug}/#{season.to_path}_matches.json" )
+   matches = data['Results']  ## only use results (match) array
 
-   ## pp cup
-   puts "  #{cup.size} match(es) in season #{season}"
+   ## pp data
+   puts "  #{matches.size} match(es) in season #{season}"
 
 
    buf = String.new
 
-cup.each_with_index do |m, i|
+matches.each_with_index do |m, i|
   idCompetition = m['IdCompetition']
   idSeason      = m['IdSeason']
   idStage       = m['IdStage']
@@ -37,11 +39,12 @@ cup.each_with_index do |m, i|
 
    stageName   = desc( m['StageName'] )
    groupName   = desc( m['GroupName'] )  # optional
-   matchNumber = m['MatchNumber']       # optional
    matchDay    = m['MatchDay']           # optional
 
+   matchNumber = m['MatchNumber']        # optional
 
-   buf << "==> [#{i+1}/#{cup.size}]"
+
+   buf << "==> [#{i+1}/#{matches.size}]"
    buf << "  #{m['MatchStatus']}  "
    buf << "  #{stageName}"
    buf <<  ", #{groupName}"  if groupName
@@ -50,15 +53,15 @@ cup.each_with_index do |m, i|
 
 
 
-   ## use "raw" data (NOT build_team) - why? why not?
+  team1 = m['Home'] ? { name:    desc( m['Home']['TeamName'] ),
+                        abbrev:  m['Home']['Abbreviation'],
+                        country: m['Home']['IdCountry'],
+                      } : { name: '?', abbrev: '?', country: '?' }
 
-  team1 = m['Home'] ? build_team( m['Home'] ) : { name: '?',
-                                                      abbrev: '?',
-                                                      country: '?' }
-
-  team2 = m['Away'] ? build_team( m['Away'] ) : { name: '?',
-                                                      abbrev: '?',
-                                                      country: '?' }
+  team2 = m['Away'] ? { name:    desc( m['Away']['TeamName'] ),
+                        abbrev:  m['Away']['Abbreviation'],
+                        country: m['Away']['IdCountry'],
+                      }  : { name: '?', abbrev: '?', country: '?' }
 
 
   buf <<  "   #{team1[:name]} | #{team1[:abbrev]} (#{team1[:country]})"
@@ -70,10 +73,9 @@ cup.each_with_index do |m, i|
 
    buf << "\n"
 
+
    ##
    ## check usage
-
-
    stats[ 'MatchStatus' ][m['MatchStatus']] +=1
    stats[ 'ResultType'][m['ResultType']] +=1
 

@@ -1,8 +1,3 @@
-
-require_relative 'helper'
-
-
-
 ###
 #  get matches and stages per season
 ##
@@ -17,44 +12,46 @@ def prepare( name:,
  ### rename name to slug or such
  ##   e.g.   worldcup, clubworldcup, interconticup or such expected!!!
 
-  idComp   = Fifa._idComp_by_name!( name )
+  idComp   = Fifa._idComp_by!( name: name )
 
   seasons.each do |season|
-    idSeason = Fifa._idSeason_by_year!( name: name, season: season )
+
+     season = Season(season)
+
+    idSeason = Fifa._idSeason_by!( name: name, season: season )
 
     fetch_json_if( Fifa::Metal.matches_url( idSeason: idSeason ),
-                "#{outdir}/#{name}/#{season}_matches.json" )
+                "#{outdir}/#{name}/#{season.to_path}_matches.json" )
 
     fetch_json_if( Fifa::Metal.stages_url( idSeason: idSeason ),
-               "#{outdir}/#{name}/misc/#{season}_stages.json" )
+               "#{outdir}/#{name}/misc/#{season.to_path}_stages.json" )
 
     fetch_json_if( Fifa::Metal.squads_url( idCompetition: idComp,
                                          idSeason:      idSeason ),
-               "#{outdir}/#{name}/misc/#{season}_squads.json" )
+               "#{outdir}/#{name}/misc/#{season.to_path}_squads.json" )
   end
+
 
 
   ## download match reports (via live/football)
 
   seasons.each do |season|
-    cup = read_json( "#{outdir}/#{name}/#{season}_matches.json" )
-    cup = cup['Results']
+     season = Season(season)
 
-    ## pp cup
-
-    puts "  #{cup.size} match(es) in season #{season}"
+     data = read_json( "#{outdir}/#{name}/#{season.to_path}_matches.json" )
+     matches = data['Results']
 
 
-    cup.each_with_index do |m, i|
+    puts "  #{matches.size} match(es) in season #{season}"
+
+
+    matches.each_with_index do |m, i|
       idCompetition = m['IdCompetition']
       idSeason      = m['IdSeason']
       idStage       = m['IdStage']
       idMatch       = m['IdMatch']
 
       stageName   = desc( m['StageName'] )
-
-      dateTime       = parse_date( m['Date'] )    ## utc
-      localDateTime  = parse_date( m['LocalDate'] )
 
 
       ## note - skip if teams not yet know
@@ -67,9 +64,13 @@ def prepare( name:,
       ##       ResultType  = 0  -- not played yet
 
       if m['Home'].nil? && m['Away'].nil?
-         puts "[#{i+1}/#{cup.size}]  ??  ??, #{stageName}, #{localDateTime}  (SKIPPED - TO BE DONE)"
+         puts "[#{i+1}/#{matches.size}]  ??  ??, #{stageName}  (SKIPPED - TO BE DONE)"
          next
       end
+
+
+      dateTime       = parse_date( m['Date'] )    ## utc
+      localDateTime  = parse_date( m['LocalDate'] )
 
 
 
@@ -80,10 +81,10 @@ def prepare( name:,
       teamCode2   = m['Away']['Abbreviation']
 
 
-      puts "[#{i+1}/#{cup.size}]  #{teamName1} #{teamName2}, #{stageName}, #{localDateTime}"
+      puts "[#{i+1}/#{matches.size}]  #{teamName1} #{teamName2}, #{stageName}, #{localDateTime}"
 
 
-      outpath = "#{outdir}/#{name}/matches/#{season}/#{localDateTime.strftime('%Y-%m-%d')}_#{teamCode1}-#{teamCode2}__#{idMatch}.json"
+      outpath = "#{outdir}/#{name}/matches/#{season.to_path}/#{localDateTime.strftime('%Y-%m-%d')}_#{teamCode1}-#{teamCode2}__#{idMatch}.json"
 
       url = Fifa::Metal.live_url( idCompetition: idCompetition,
                                   idSeason:      idSeason,
@@ -92,13 +93,14 @@ def prepare( name:,
 
       fetch_json_if( url, outpath )
 
+
       ###
       ##   add timeline (only)  if score incl. penalty shoot-out
       resultType = m['ResultType']
       if resultType == 2 ## aet, win on pens
 
         ## download timeline
-        outpath = "#{outdir}/#{name}/timelines/#{season}/#{localDateTime.strftime('%Y-%m-%d')}_#{teamCode1}-#{teamCode2}__#{idMatch}.json"
+        outpath = "#{outdir}/#{name}/timelines/#{season.to_path}/#{localDateTime.strftime('%Y-%m-%d')}_#{teamCode1}-#{teamCode2}__#{idMatch}.json"
 
         url = Fifa::Metal.timeline_url( idCompetition: idCompetition,
                                 idSeason:      idSeason,

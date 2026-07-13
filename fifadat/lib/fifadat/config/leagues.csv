@@ -2,21 +2,21 @@ season,  id_season, id_comp,  name,  start_date, end_date
 
 
 ## austrian (at) bundesliga
-2020-21, 400137040,  2000000005, Bundesliga
-2021-22, 400183346,  2000000005, Bundesliga
-2022-23, 400250052,  2000000005, Bundesliga
-2023-24,  a5rfzm8qpy3ca8d8wxlkkdslw, 2000000005, Bundesliga
-2024-25,  b9rvjv0m4kb2zz0aym72ltzis, 2000000005, Bundesliga
-2025-26,  4jr49qim3gv5bjx3wjkf6n0us, 2000000005, Bundesliga
+2020/21, 400137040,  2000000005, Bundesliga
+2021/22, 400183346,  2000000005, Bundesliga
+2022/23, 400250052,  2000000005, Bundesliga
+2023/24,  a5rfzm8qpy3ca8d8wxlkkdslw, 2000000005, Bundesliga
+2024/25,  b9rvjv0m4kb2zz0aym72ltzis, 2000000005, Bundesliga
+2025/26,  4jr49qim3gv5bjx3wjkf6n0us, 2000000005, Bundesliga
 
 
 ## england (eng) premier league
-2020-21,  400137020,  2000000000,    Premier League
-2021-22,  400189074,  2000000000,    Premier League
-2022-23, 80foo89mm28qjvyhjzlpwj28k,  2000000000,    Premier League
-2023-24, 1jt5mxgn4q5r6mknmlqv5qjh0,  2000000000,    Premier League
-2024-25,  9n12waklv005j8r32sfjj2eqc, 2000000000,    Premier League
-2025-26,  51r6ph2woavlbbpk8f29nynf8, 2000000000,    Premier League
+2020/21,  400137020,  2000000000,    Premier League
+2021/22,  400189074,  2000000000,    Premier League
+2022/23, 80foo89mm28qjvyhjzlpwj28k,  2000000000,    Premier League
+2023/24, 1jt5mxgn4q5r6mknmlqv5qjh0,  2000000000,    Premier League
+2024/25,  9n12waklv005j8r32sfjj2eqc, 2000000000,    Premier League
+2025/26,  51r6ph2woavlbbpk8f29nynf8, 2000000000,    Premier League
 
 
 ## uefa champs
@@ -36,7 +36,13 @@ season,  id_season, id_comp,  name,  start_date, end_date
 ## CONMEBOL,1,0,1,7,2000001042,CONMEBOL,FRG,CONMEBOL Sudamericana
 
 ## mexico
-## CONCACAF,1,0,2,7,2000000104,CONCACAF,MEX,Liga MX
+2021/22, 400213935,                  2000000104,  Liga MX
+2022/23, ei37yy9qltzgkbd3c15hq1d04,  2000000104,
+2023/24, cgr8k7g0pwtlbzca75gxq1g5w,  2000000104,
+2024/25, dlxyh3nrdtg02p9ohd5gn6bdg,  2000000104,
+2025/26, aegyls91smdw9kipjgbsu8tn8,  2000000104,
+
+
 
 ## arg
 ## CONMEBOL,1,0,2,7,2000000128,CONMEBOL,ARG,Liga Profesional Argentina

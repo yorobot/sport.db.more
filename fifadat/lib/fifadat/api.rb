@@ -2,89 +2,7 @@
 
 class Fifa
 
-##
-##  read config
-##     add to (hash) table indexed by idComp
-
-  def self.root
-     ## sport.db.more/fifadat/lib
-    File.expand_path( (File.dirname(File.dirname(__FILE__))) )
-  end
-
-  def self.read_configs( *paths )
-    comps = {}
-
-     paths.each do |path|
-        rows = read_csv( path )
-
-        rows.each do |row|
-             # note - convert ids to integer numbers
-            idComp   = (row['id_comp'] || row['IdCompetition']).to_i(10)
-
-            ## note - do NOT conver to integer!!!
-            ## e.g. a5rfzm8qpy3ca8d8wxlkkdslw
-            ##   keep as string
-            idSeason = row['id_season'] || row['IdSeason']
-
-            seasons = comps[idComp] ||={}
-            seasons[row['season']] = {  season:         row['season'],
-                                        idSeason:       idSeason,
-                                        idCompetition:  idComp,
-                                        name:           row['name'],
-                                        start_date:     row['start_date'],
-                                        end_date:       row['end_date']
-                                     }
-        end
-      end
-    comps
-  end
-
-
-   COMPETITIONS = read_configs( "#{root}/fifadat/config/worldcup.csv",
-                                "#{root}/fifadat/config/clubworldcup.csv",
-                                "#{root}/fifadat/config/leagues.csv",
-                              )
-   ##  pp COMPETITIONS
-
-
-####
-### fix - change id to string!!  not all ids are numbers!!!
-
-   COMPETITION_ID = {
-      'worldcup'      => 17,
-      'clubworldcup'  => 10005, ## note - club world cup is only 2025
-      'interconticup' => 107,   ## note - interconti  incl. all "legacy" club world cup 2000, 2005-2023
-
-      'at'      => 2000000005,  ## austria | bundesliga (at.1)
-      'eng'     => 2000000000,  ## england | premier league (eng.1)
-      'copa.l'  => 2000001035,
-   }
-
-
-   def self._idComp_by_name!( name )
-       ## note - downcase and remove all spaces from name
-       ##  e.g. WORLD CUP => worldcup
-       q = name.downcase.gsub( ' ', '' )
-       idComp = COMPETITION_ID[ q ]
-       raise ArgumentError, "no idCompetition found for #{name}; sorry" if idComp.nil?
-       idComp
-   end
-
-
-   def self._idSeason_by_year!( name:, season: )
-        ## note - lookup season key is a string
-        season = season.to_s
-
-       idComp = _idComp_by_name!( name )
-       rec = COMPETITIONS[ idComp ][ season ]
-       raise ArgumentError, "no idSeason found for #{name} #{season}; sorry"    if rec.nil?
-       rec[:idSeason]
-   end
-
-
-
    BASE_URL = 'https://api.fifa.com/api/v3'
-
 
 
    def self.search_matches_url( from:, to:, count: 500 )
@@ -123,7 +41,7 @@ class Fifa
 
 
    def self.competition_url( name: )   ## note - singular !! (not plural)
-      idCompetition = _idCompetition_by_name!( name.downcase )
+      idCompetition = _idCompetition_by!( name: name.downcase )
       Metal.competition_url( idCompetition: idCompetition )
    end
 
