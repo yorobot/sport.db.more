@@ -11,6 +11,9 @@ matches:
 
 def pp_convert( slug:, season:,
                 indir: '.' )
+
+    season = Season(season)
+
   data = {}
 
     ## add slug & seasons (add name to be done!!)
@@ -18,7 +21,7 @@ def pp_convert( slug:, season:,
     data[:season] = season
 
 
-   matches =  read_json_v2( "#{indir}/#{slug}/#{season}_matches.json" )
+   matches =  read_json_v2( "#{indir}/#{slug}/#{season.to_path}_matches.json" )
    matches = matches['Results']  ## only use results (match) array
 
    ## pp matches
@@ -27,7 +30,7 @@ def pp_convert( slug:, season:,
 
   ## read in stages
   ##   incl.  SequenceOrder, StageLevel (optional)
-  stages = Stages.read( "#{indir}/#{slug}/misc/#{season}_stages.json" )
+  stages = Stages.read( "#{indir}/#{slug}/misc/#{season.to_path}_stages.json" )
 
 
   stages.add_matches( matches )
@@ -196,7 +199,7 @@ if m['Home'] && m['Away']
    team2_code = m['Away']['Abbreviation']
    idMatch    = m['IdMatch']
 
-   live_path = "#{indir}/#{slug}/matches/#{season}/#{date_str}_#{team1_code}-#{team2_code}__#{idMatch}.json"
+   live_path = "#{indir}/#{slug}/matches/#{season.to_path}/#{date_str}_#{team1_code}-#{team2_code}__#{idMatch}.json"
    live = read_json_v2( live_path )
 
 
