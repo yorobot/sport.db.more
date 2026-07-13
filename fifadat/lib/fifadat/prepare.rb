@@ -5,18 +5,16 @@
 
 
 def prepare( name:,
-             seasons:,
+             season:,
              outdir: '.' )
 
  ###
  ### rename name to slug or such
  ##   e.g.   worldcup, clubworldcup, interconticup or such expected!!!
 
-  idComp   = Fifa._idComp_by!( name: name )
+    season = Season(season)
 
-  seasons.each do |season|
-
-     season = Season(season)
+    idComp   = Fifa._idComp_by!( name: name )
 
     idSeason = Fifa._idSeason_by!( name: name, season: season )
 
@@ -29,14 +27,17 @@ def prepare( name:,
     fetch_json_if( Fifa::Metal.squads_url( idCompetition: idComp,
                                          idSeason:      idSeason ),
                "#{outdir}/#{name}/misc/#{season.to_path}_squads.json" )
-  end
+
+end
 
 
+
+def prepare_reports( name:,
+                     season:,
+                     outdir: '.' )
 
   ## download match reports (via live/football)
-
-  seasons.each do |season|
-     season = Season(season)
+    season = Season(season)
 
      data = read_json( "#{outdir}/#{name}/#{season.to_path}_matches.json" )
      matches = data['Results']
@@ -73,10 +74,11 @@ def prepare( name:,
       localDateTime  = parse_date( m['LocalDate'] )
 
 
-
+      ## pp m['Home']
       teamName1   = desc( m['Home']['TeamName'] )
       teamCode1   = m['Home']['Abbreviation']
 
+      ## pp m['Away']
       teamName2   = desc( m['Away']['TeamName'] )
       teamCode2   = m['Away']['Abbreviation']
 
@@ -108,7 +110,6 @@ def prepare( name:,
                                 idMatch:       idMatch )
 
        fetch_json_if( url, outpath )
-      end
     end
   end
 end

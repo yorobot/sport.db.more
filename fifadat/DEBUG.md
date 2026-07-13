@@ -1,67 +1,7 @@
-
-require_relative './lib/fifadat'
-
-
-args = ARGV
-opts = { season: nil }
-
-parser = OptionParser.new do |parser|
-parser.banner = "Usage: #{$PROGRAM_NAME} [options] NAME"
-   ## add options here
-   parser.on( "--season=SEASON",
-               "season (default: #{opts[:season] ? opts[:season] : '1st'})" ) do |season|
-     opts[:season] = season
-   end
-
-end
-parser.parse!( args )
+# Debug Notes
 
 
-puts "OPTS:"
-pp opts
-puts "ARGV:"
-pp args
-
-if args.size == 0
-  puts " NAME argument required; use:"
-  pp CONFIGS.keys
-  exit 1
-end
-
-
-##
-## note - all args other than first ignored for now; issue warn - why? why not?
-
-slug  = args[0].downcase.to_sym
-season =  Season.parse(opts[:season])
-
-outdir  = '.'
-
-
-    page = String.new
-    page << "= #{slug} #{season}\n"
-    page <<  "\n"
-
-    buf = pp_debug( slug: slug, season: season,
-                    indir: '/sports/cache.fifadat' )
-
-    page << buf
-
-    puts page
-
-    outpath =  "#{outdir}/tmp/#{season.to_path}_#{slug}-debug.txt"
-
-    write_text( outpath, page )
-    puts "  written to >#{outpath}<"
-
-
-
-puts "bye"
-
-
-__END__
-
-
+```
 wc 2026:
 "MatchStatus"=>{1=>104},
  "ResultType"=>{0=>104},
@@ -124,3 +64,21 @@ cwc 2025:
  "TeamType"=>{0=>126},
  "AgeType"=>{7=>126},
  "FootballType"=>{0=>126}}
+
+
+
+ ---
+
+- [ ] add support for __END__ to csv parser!!!
+
+__END__
+
+## pp  Fifa._idSeason_by_year!( name: 'at', season: '2025-26' )
+pp  Fifa._idSeason_by_year!( name: 'at', season: '2020-21' )
+
+[]
+[{"league"=>"at", "seasons"=>"2020/21"},
+ {"league"=>"__END__", "seasons"=>nil},
+ {"league"=>"pp  Fifa._idSeason_by_year!( name: 'at'", "seasons"=>"season: '2020-21' )"}]
+
+ ```
