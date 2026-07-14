@@ -95,6 +95,7 @@ require_relative 'fifadat/api-config'  ## base
 require_relative 'fifadat/api'  ## base
 require_relative 'fifadat/helper'
 require_relative 'fifadat/prepare'   ## "all-in-one" prepare (download cache) helpers etc.
+require_relative 'fifadat/ppdebug'
 
 
 #####
@@ -114,4 +115,4 @@ require_relative 'fifadat/pp/ppconvert'
 require_relative 'fifadat/pp/ppconvert-reports'
 
 require_relative 'fifadat/pp/pphelper'
-require_relative 'fifadat/pp/ppdebug'
+require_relative 'fifadat/pp/pphelper-score'

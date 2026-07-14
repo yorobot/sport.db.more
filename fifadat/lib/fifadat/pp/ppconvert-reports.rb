@@ -14,6 +14,8 @@ def convert_reports( slug:, season:,
 
       next   if m['Home'].nil? && m['Away'].nil?
 
+
+
       localDateTime  = parse_date( m['LocalDate'] )
 
       ### get match (live) details
@@ -82,53 +84,12 @@ def convert_reports( slug:, season:,
        rec[:team1] = team1[:name]
        rec[:team2] = team2[:name]
 
-#####
-#  handle score
- ## m = (full) match hash incl.  IdMatch, etc.
-  ##  returns string e.g.  4-4  or 4-3 a.e.t etc
 
   resultType  = live['ResultType']
 
-  assert( [0, 1,2,3,4,8,12].include?(resultType), "resultType 1,2,3,4,8,12 expected; got #{resultType}" )
+  score = _parse_score( live )
+  rec[:score] = score    if !score.empty?
 
-
-  # resultType
-  #            0 =>  no result / not played yet
-  #            1 => regular (90 mins)
-  #            2 => aet (120 mins), win on pens
-  #            3 => aet (120 mins)
-  #            8 =>  same as 3?  -aet with golden goal/silver goal in 1998 FRA-PAR
-
-
-  #
-  #  check for  two-leg plays
-  ##           resultType 4 & 8 ???
-  ##          add flag  - aggregate true|flase or such
-
-  score = if resultType == 2   ## aet, win on pens
-             { et: [live['HomeTeam']['Score'],live['AwayTeam']['Score']],
-               p:  [live['HomeTeamPenaltyScore'],live['AwayTeamPenaltyScore']] }
-           elsif resultType == 3 || resultType == 8  ## aet
-             { et: [live['HomeTeam']['Score'], live['AwayTeam']['Score']] }
-           elsif  resultType == 1  ||  ## assume 1 - regular (90 mins+stoppage/injury time)
-                  resultType == 4  ||
-                  live['IdMatch'] == '400019191'  ##  fix for pachuca vs salzburg !!!
-             { ft: [live['HomeTeam']['Score'],live['AwayTeam']['Score']] }
-           elsif  resultType == 12
-               nil
-           elsif  resultType == 0
-              ##  pachuca vs salzburg in cwc 2025??
-               ##  double check if score present
-               raise ArgumentError,
-                  " resultType == 0 but score present idMatch #{live['IdMatch']} #{live['HomeTeam']['Score']}-#{live['AwayTeam']['Score']}"  if live['HomeTeam']['Score'] &&
-                                                                                                                                       live['AwayTeam']['Score']
-              nil
-           else
-              raise ArgumentError, "unknown/unexpected result type #{resultType}"
-           end
-
-
-        rec[:score] = score     if score
 
         stadium  = build_stadium( live['Stadium'] )
 

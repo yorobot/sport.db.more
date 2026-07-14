@@ -1,13 +1,5 @@
 
 
-=begin
-  -- collect--
-stages:
-teams:
-stadiums:
-matches:
-=end
-
 
 def convert( slug:, season:,
                 indir: '.',
@@ -15,7 +7,7 @@ def convert( slug:, season:,
 
     season = Season(season)
 
-  data = {}
+    data = {}
 
     ## add slug & seasons (add name to be done!!)
     data[:slug]   = slug
@@ -59,15 +51,9 @@ def convert( slug:, season:,
        ##  rec[:id]  = m['IdMatch']
 
 
-       ### add status
-       ##    1 -  complete ??
-       ##    0 -  future   ???
-       ##    abd.
-       ##    cancelled
-       ##    etc.
 
-       ## 0 =>   complete (OK)
-       ## 1 =>   not yet played
+       ## 0 =>   FINISHED/complete (OK)
+       ## 1 =>   SCHEDULED/not yet played
        status = m['MatchStatus']
        timed  = m['TimeDefined']
 
@@ -129,56 +115,11 @@ def convert( slug:, season:,
  ## m = (full) match hash incl.  IdMatch, etc.
   ##  returns string e.g.  4-4  or 4-3 a.e.t etc
 
-##
-## "MatchStatus"=>9,  cancelled!!!!
-##
-##  "ResultType"=>12,
-##  21:30  CD Independiente Medellín (COL) v CR Flamengo (BRA)        [cancelled]
-##
 
   resultType  = m['ResultType']
 
-  assert( [0, 1,2,3,4,8,12].include?(resultType), "resultType 1,2,3,4,8,12 expected; got #{resultType} in: #{m.pretty_inspect}" )
-
-
-  # resultType
-  #            0 =>  no result / not played yet
-  #            1 => regular (90 mins)
-  #            2 => aet (120 mins), win on pens
-  #            3 => aet (120 mins)
-  #            8 =>  same as 3?  -aet with golden goal/silver goal in 1998 FRA-PAR
-
-
-  #
-  #  check for  two-leg plays
-  ##           resultType 4 & 8 ???
-  ##          add flag  - aggregate true|flase or such
-
-  score = if resultType == 2   ## aet, win on pens
-             { et: [m['HomeTeamScore'],m['AwayTeamScore']],
-               p:  [m['HomeTeamPenaltyScore'],m['AwayTeamPenaltyScore']] }
-           elsif resultType == 3 || resultType == 8  ## aet
-             { et: [m['HomeTeamScore'], m['AwayTeamScore']] }
-           elsif  resultType == 1  ||  ## assume 1 - regular (90 mins+stoppage/injury time)
-                  resultType == 4  ||
-                  m['IdMatch'] == '400019191'  ##  fix for pachuca vs salzburg !!!
-             { ft: [m['HomeTeamScore'],m['AwayTeamScore']] }
-           elsif  resultType == 12
-               ## fix/fix/fix - check for score too
-                nil
-           elsif  resultType == 0
-              ##  pachuca vs salzburg in cwc 2025??
-               ##  double check if score present
-               raise ArgumentError,
-                  " resultType == 0 but score present idMatch #{m['IdMatch']} #{m['HomeTeamScore']}-#{m['AwayTeamScore']}"  if m['HomeTeamScore'] &&
-                                                                                                                               m['AwayTeamScore']
-              nil
-           else
-              raise ArgumentError, "unknown/unexpected result type #{resultType}"
-           end
-
-
-        rec[:score] = score     if score
+  score = _parse_score( m )
+  rec[:score] = score    if !score.empty?
 
 
        rec[:home]  = true    if m['IsHome']

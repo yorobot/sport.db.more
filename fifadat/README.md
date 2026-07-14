@@ -14,7 +14,7 @@ step 1 - download / pre-fill cache with json datasets incl.
 
 ```ruby
 prepare( name:    'worldcup',
-         seasons: ['2026'],
+         seasons: '2026',
          outdir:  '.'     ## note - auto-adds name/slug e.g. ./worldcup
        )
 ```
@@ -159,62 +159,4 @@ $ ruby ppmatch.rb worldcup --season=2026
 $ ruby ppmatch.rb worldcup --season=2026 --full
 
 $ ruby ppsquads.rb worldcup --season=2026
-```
-
-
-
-
-
-### Enums / Types
-
-```
- MatchStatus
-              0 =>  complete ??
-              1 =>  future  / not played yet
-
- ResultType
-              0 =>  no result / not played yet
-              1 => regular (90 mins)
-              2 => aet (120 mins), win on pens
-              3 => aet (120 mins)
-              8 =>  same as 3?  -aet with golden goal/silver goal in 1998 FRA-PAR
-
-              4 =>    aggregate  leg 1/2 ?? e.g.
-                    "AggregateHomeTeamScore": 2,
-                    "AggregateAwayTeamScore": 4,
-
-
- TeamType
-            0 => club
-            1 => nati(onal) team
- AgeType
-    0 =>  ??
-    1 =>   U17     U-17 World Cup / U17 National Team Friendlies
-                    MLS Generation Cup U17
-    2 =>   U18     U18 National Team Friendlies
-                       U18 Premier League Cup
-    3 =>   U19     U19 Championship Qualification
-    4 =>   U20     U-20 World Cup / CONMEBOL U20
-
-    5 =>  ??        Olympic Football Tournament / Olympics Intercontinental Play-offs /
-                    AFC U23 Asian Cup
-
-   10 =>   U15     U15 National Team Friendlies
-                   MLS Generation Cup U15
-   11 =>   U16     U16 National Team Friendlies
-   12 =>   U21     U21 Championship / Tournoi Maurice Revello /
-                      U21 National Team Friendlies
-                      Premier League 2
-
-   14 =>   ?? U23     U23 National Team Friendlies /  Asian Games
-
- FootballType
-            0 => "classic"
-            1 =>  Futsal
-            2 => Beach Soccer
-  Gender
-            1 => m
-            2 => f
-
-
 ```

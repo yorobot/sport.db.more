@@ -8,6 +8,7 @@ opts = {
   cached: false,
   season: nil,
   file:   nil,
+  lint:   false,
 }
 
 
@@ -29,6 +30,13 @@ parser.banner = "Usage: #{$PROGRAM_NAME} [options] NAME"
                 "read leagues (and seasons) via .csv file") do |file|
     opts[:file] = file
   end
+
+  parser.on( "--lint",
+               "turn on lint (debug) mode - default is (#{opts[:lint]})" ) do |lint|
+    opts[:lint] = lint
+  end
+
+
 end
 parser.parse!( args )
 
@@ -67,7 +75,34 @@ end
 pp recs
 
 
+if opts[:lint]
+   recs.each do |rec|
+      slug   =  rec['league']
+      seasons = Season.parse_line( rec['seasons'] )
+      seasons.each do |season|
+        ###
+        ## add debug
+        page = String.new
+        page << "= #{slug} #{season}\n"
+        page << "#  generated on #{Time.now}\n"
+        page <<  "\n"
 
+        buf = pp_debug( slug: slug, season: season,
+                    indir: cache_dir )
+
+        page << buf
+        puts page
+
+        outpath =  "#{convert_dir}/#{season.to_path}_#{slug}-debug.txt"
+
+        ## write_text( outpath, page )
+        ## puts "  written to >#{outpath}<"
+      end
+    end
+else
+
+   ## addd
+   ## step 0) validate slugs & seasons
 
    ## step 1a) prepare
    recs.each do |rec|
@@ -131,6 +166,6 @@ pp recs
                                      outdir: convert_dir )
       end
    end
-
+end
 
 puts "bye"
