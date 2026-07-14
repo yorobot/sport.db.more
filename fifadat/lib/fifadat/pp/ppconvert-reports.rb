@@ -1,5 +1,7 @@
 
-def pp_convert_reports( slug:, season:, indir:, outdir: )
+def convert_reports( slug:, season:,
+                         indir: '.',
+                         outdir: './tmp' )
 
    season = Season(season)
 
@@ -185,7 +187,7 @@ def pp_convert_reports( slug:, season:, indir:, outdir: )
     end
 
 
-      outpath = "#{outdir}/#{date_str}_#{team1_code}-#{team2_code}.json"
+      outpath = "#{outdir}/#{season.to_path}/#{slug}/#{date_str}_#{team1_code}-#{team2_code}.json"
       write_json( outpath, rec )
    end
 end

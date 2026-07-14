@@ -45,18 +45,59 @@ convert_dir  = '/sports/cache.api.fifa'
 
 
 if opts[:file]
-
    recs = read_csv( opts[:file] )
-   pp recs
+else
+
+  ## otherwise
+  ##   build rec(ord)s from scratch (from command-line args)
+  if args.size == 0
+    puts " NAME argument required; use:"
+    pp Fifa::COMPETITION_ID.keys
+    exit 1
+  end
+
+  ##
+  ## note - all args other than first ignored for now; issue warn - why? why not?
+  rec = {}
+  rec['league']    =  args[0].downcase
+  rec['seasons']   =  Season.parse(opts[:season]).to_s
+  recs = [rec]
+end
+
+pp recs
+
+
+
 
    ## step 1a) prepare
    recs.each do |rec|
       slug   =  rec['league']
       seasons = Season.parse_line( rec['seasons'] )
       seasons.each do |season|
+
+        pp  Fifa._idSeason_by!( name: slug, season: season )
+
         prepare( name:    slug,
                  season:  season,
                  outdir:  cache_dir )    ## note - autoadd slug (name) e..g ./eng !!
+
+        ###
+        ## add debug
+        page = String.new
+        page << "= #{slug} #{season}\n"
+        page << "#  generated on #{Time.now}\n"
+        page <<  "\n"
+
+        buf = pp_debug( slug: slug, season: season,
+                    indir: cache_dir )
+
+        page << buf
+        puts page
+
+        outpath =  "#{convert_dir}/#{season.to_path}_#{slug}-debug.txt"
+
+        write_text( outpath, page )
+        puts "  written to >#{outpath}<"
       end
     end
 
@@ -79,88 +120,17 @@ if opts[:file]
       seasons = Season.parse_line( rec['seasons'] )
       seasons.each do |season|
 
-        data = pp_convert( slug: slug, season: season, indir: cache_dir )
+        convert( slug: slug, season: season,
+                               indir: cache_dir,
+                              outdir: convert_dir )
 
-        outpath =  "#{convert_dir}/#{season.to_path}/#{slug}.json"
-
-        write_json( outpath, data )
-        puts "  written to >#{outpath}<"
 
         ##  convert all match reports one-by-one
-        outdir = "#{convert_dir}/#{season.to_path}/#{slug}"
-        pp_convert_reports( slug: slug, season: season,
-                               indir: cache_dir,
-                               outdir: outdir )
+        convert_reports( slug: slug, season: season,
+                                     indir: cache_dir,
+                                     outdir: convert_dir )
       end
    end
-
-else
-
-
-if args.size == 0
-  puts " NAME argument required; use:"
-  pp Fifa::COMPETITION_ID.keys
-  exit 1
-end
-
-
-
-
-##
-## note - all args other than first ignored for now; issue warn - why? why not?
-
-slug   = args[0].downcase
-season =  Season.parse(opts[:season])
-
-pp  Fifa._idSeason_by!( name: slug, season: season )
-
-
-prepare( name:    slug,
-         season:  season,
-         outdir:  cache_dir )    ## note - autoadd slug (name) e..g ./eng !!
-
- ## match (reports) one-by-one
-prepare_reports( name:    slug,
-                 season:  season,
-                  outdir:  cache_dir )    ## note - autoadd slug (name) e..g ./eng !!
-
-
-###
-## add debug
-    page = String.new
-    page << "= #{slug} #{season}\n"
-    page <<  "\n"
-
-    buf = pp_debug( slug: slug, season: season,
-                    indir: cache_dir )
-
-    page << buf
-
-    puts page
-
-    outpath =  "#{convert_dir}/#{season.to_path}_#{slug}-debug.txt"
-
-    write_text( outpath, page )
-    puts "  written to >#{outpath}<"
-
-
-
-
-    data = pp_convert( slug: slug, season: season, indir: cache_dir )
-
-    outpath =  "#{convert_dir}/#{season.to_path}/#{slug}.json"
-
-    write_json( outpath, data )
-    puts "  written to >#{outpath}<"
-
-
-    ##  convert all match reports one-by-one
-    outdir = "#{convert_dir}/#{season.to_path}/#{slug}"
-    pp_convert_reports( slug: slug, season: season,
-                               indir: cache_dir,
-                               outdir: outdir )
-end
-
 
 
 puts "bye"

@@ -19,8 +19,15 @@ season,  id_season, id_comp,  name,  start_date, end_date
 2025/26,  51r6ph2woavlbbpk8f29nynf8, 2000000000,    Premier League
 
 
-## uefa champs
-## UEFA,1,0,1,7,2000001032,UEFA,FRG,UEFA Champions League
+2020/21,   4xs9rnedg5og3phf4eaxg5ylm,   2000001032,  UEFA Champions League
+2021/22,   1sc9sn2keddyalfj2z0wy77ys,   2000001032,  UEFA Champions League
+2022/23,   400243454,                   2000001032,  UEFA Champions League
+2023/24,   eaf2z13av1rs0jbwnnxfapdec,   2000001032,  UEFA Champions League
+2024/25,  bam3j6qs1v79osuz7nwgy4rh0,    2000001032,  UEFA Champions League
+2025/26,  2mr0u0l78k2gdsm79q56tb2fo,    2000001032,  UEFA Champions League
+
+
+
 ## UEFA,1,0,1,7,2000001041,UEFA,FRG,UEFA Europa League
 ## UEFA,1,0,1,7,c7b8o53flg36wbuevfzy3lb10,UEFA,FRG,UEFA Conference League
 
@@ -35,17 +42,24 @@ season,  id_season, id_comp,  name,  start_date, end_date
 
 ## CONMEBOL,1,0,1,7,2000001042,CONMEBOL,FRG,CONMEBOL Sudamericana
 
+
 ## mexico
 2021/22, 400213935,                  2000000104,  Liga MX
-2022/23, ei37yy9qltzgkbd3c15hq1d04,  2000000104,
-2023/24, cgr8k7g0pwtlbzca75gxq1g5w,  2000000104,
-2024/25, dlxyh3nrdtg02p9ohd5gn6bdg,  2000000104,
-2025/26, aegyls91smdw9kipjgbsu8tn8,  2000000104,
+2022/23, ei37yy9qltzgkbd3c15hq1d04,  2000000104,  Liga MX
+2023/24, cgr8k7g0pwtlbzca75gxq1g5w,  2000000104,  Liga MX
+2024/25, dlxyh3nrdtg02p9ohd5gn6bdg,  2000000104,  Liga MX
+2025/26, aegyls91smdw9kipjgbsu8tn8,  2000000104,  Liga MX
 
 
 
-## arg
-## CONMEBOL,1,0,2,7,2000000128,CONMEBOL,ARG,Liga Profesional Argentina
+## argentina
+2021,  400161635,                  2000000128, Liga Profesional Argentina
+2022,  400219962,                  2000000128, Liga Profesional Argentina
+2023,  5jc60w3y7cps00lavutor9zbo,  2000000128, Liga Profesional Argentina
+2024,  534vuyemq3e4biv283g33zf2s,  2000000128, Liga Profesional Argentina
+2025,  3l4bzc8syz1ea2dnv453kp89g,  2000000128, Liga Profesional Argentina
+2026,  8v84l9nq3d5t0j4gb781i3llg,  2000000128, Liga Profesional Argentina
+
 
 ## bra
 ## CONMEBOL,1,0,2,7,2000000078,CONMEBOL,BRA,Serie A

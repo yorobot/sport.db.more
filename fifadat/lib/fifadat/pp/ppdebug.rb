@@ -100,9 +100,14 @@ matches.each_with_index do |m, i|
     end
 end
 
-   buf << "\n"
-   buf << "stats:"
-   buf <<  stats.pretty_inspect
 
-   buf
+
+   ## note - move stats up-front into header
+   header = String.new
+   header << "stats:\n"
+   header <<  stats.pretty_inspect
+   header << "\n"
+
+
+   header + buf
 end

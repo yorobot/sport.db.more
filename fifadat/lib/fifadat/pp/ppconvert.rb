@@ -9,8 +9,9 @@ matches:
 =end
 
 
-def pp_convert( slug:, season:,
-                indir: '.' )
+def convert( slug:, season:,
+                indir: '.',
+                outdir: './tmp' )
 
     season = Season(season)
 
@@ -269,5 +270,10 @@ end
    end
    data[:matches] = recs
 
-  data
+
+    outpath =  "#{outdir}/#{season.to_path}/#{slug}.json"
+    write_json( outpath, data)
+    puts "  written to >#{outpath}<"
+
+    true
 end
