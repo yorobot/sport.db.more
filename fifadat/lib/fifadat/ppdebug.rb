@@ -5,7 +5,16 @@ MATCH_STATUS = {
   1 => 'SCHED',   # scheduled
   2 => 'LIVE',
   ## ???
+
+  9 => 'AWD',    # awarded !!!
 }
+
+
+##
+## Result: Al Duhail awarded a 3–0 walkover victory.
+## Reason: Auckland City FC withdrew from the tournament
+## due to strict COVID-19 pandemic quarantine and isolation measures
+##  enforced by New Zealand authorities.
 
 ##
 ## check 2  is only win on pens!!!
@@ -34,7 +43,21 @@ RESULT_TYPE = {
   ## e.g.
   ## 2nd LegFeb 25, 2026 Juventus 3–2 (AET) Galatasaray
   ##                is/was    3-0 (REG)!!!
+
+  12 => 'AWD',  ## AWARDED
 }
+
+
+##
+## note - matchStatus  for 12-AWD should also be 9-AWD!!!
+
+## resultType 12
+## The Clausura 2022 match between Querétaro and Atlas on March 5, 2022,
+##  was officially suspended in the 62nd minute
+## and later recorded as a 3–0 victory for Atlas
+##    : Atlas was leading 1–0 at the time of suspension.
+##    Forfeit Victory: Atlas was officially awarded a 3–0 walkover win.
+
 
 =begin
              0 =>  no result / not played yet
@@ -51,10 +74,10 @@ RESULT_TYPE = {
 
 
 
-def pp_debug(  season:, slug:,
-               indir: )
+def pp_debug( data )
 
-   season = Season(season)
+   errors = []
+
 
    stats = {
             ## match stats
@@ -77,12 +100,16 @@ def pp_debug(  season:, slug:,
               'FootballType' => Hash.new(0),
             }
 
-
-   data =  read_json( "#{indir}/#{slug}/#{season.to_path}_matches.json" )
    matches = data['Results']  ## only use results (match) array
 
+   ## get SeasonName from first match
+   m = matches[0]
+   competitionName = desc( m['CompetitionName'])
+   seasonName      = desc( m['SeasonName'])
+
+
    ## pp data
-   puts "  #{matches.size} match(es) in season #{season}"
+   puts "  #{matches.size} match(es) in  #{competitionName} / #{seasonName}"
 
 
    buf = String.new
@@ -161,8 +188,11 @@ matches.each_with_index do |m, i|
   if resultType == 0 && !score.empty?
        ##  pachuca vs salzburg in cwc 2025??
        ##  double check if score present
-       raise ArgumentError,
-         " resultType == 0 but score present idMatch #{m['IdMatch']} #{m['HomeTeamScore']}-#{m['AwayTeamScore']}"
+     ##  raise ArgumentError,
+     ##    " resultType == 0 but score present idMatch #{m['IdMatch']} #{m['HomeTeamScore']}-#{m['AwayTeamScore']}"
+
+     msg = " resultType == 0 but score present idMatch #{m['IdMatch']} #{score.inspect}"
+     errors << msg
   end
 
 
@@ -174,22 +204,28 @@ matches.each_with_index do |m, i|
 ##  21:30  CD Independiente Medellín (COL) v CR Flamengo (BRA)        [cancelled]
 ##
 
-  assert( [0,1,2,3,4,5,8,12].include?(resultType),
-      "resultType 1,2,3,4,5,8,12 expected; got #{resultType} in: #{m.pretty_inspect}" )
+  if ![0,1,2,3,4,5,8,12].include?(resultType)
+     msg = "resultType 1,2,3,4,5,8,12 expected; got #{resultType} in: #{m.pretty_inspect}"
+     errors << msg
+  end
 
        ### add status
-       ##    1 -  complete ??
-       ##    0 -  future   ???
+       ##    0 -  FINISHED
+       ##    1 -  SCHEDULED
        ##    abd.
        ##    cancelled
        ##    etc.
+
 
        ## 0 =>   finished/complete (OK)
        ## 1 =>   not yet played
    matchStatus = m['MatchStatus']
 
-   assert( [0,1].include?(matchStatus),
-       "matchStatus 0,1 expected; got #{matchStatus} in: #{m.pretty_inspect}" )
+   if ![0,1,9].include?(matchStatus)
+      msg =  "matchStatus 0-FIN,1-SCHED,9-AWD expected; got #{matchStatus} in: #{m.pretty_inspect}"
+      errors << msg
+   end
+
 
   # resultType
   #            0 =>  no result / not played yet
@@ -235,11 +271,11 @@ end
 
 
    ## note - move stats up-front into header
-   header = String.new
-   header << "stats:\n"
-   header <<  stats.pretty_inspect
-   header << "\n"
+   # header = String.new
+   # header << "stats:\n"
+   # header <<  stats.pretty_inspect
+   # header << "\n"
 
 
-   header + buf
+   [buf, stats, errors]
 end

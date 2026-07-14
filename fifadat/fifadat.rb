@@ -82,6 +82,11 @@ if opts[:lint]
       seasons.each do |season|
         ###
         ## add debug
+
+
+       data =  read_json( "#{indir}/#{slug}/#{season.to_path}_matches.json" )
+
+
         page = String.new
         page << "= #{slug} #{season}\n"
         page << "#  generated on #{Time.now}\n"
