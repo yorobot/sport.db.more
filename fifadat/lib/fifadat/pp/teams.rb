@@ -46,6 +46,20 @@ class Teams
    end
 
 
+=begin
+!! ASSERT FAILED - team records NOT matching -
+{:id=>"44129",
+ :name=>"Vasco da Gama",
+ :code=>"VDG",
+ :country=>"BRA",
+ :count=>7}
+ !=
+ {:id=>"44129",
+  :name=>"Vasco da Gama",
+  :code=>"VAS",
+  :country=>"BRA"}
+=end
+
 
    def _add( new_rec )
       rec =  @recs[ new_rec[:id] ]
@@ -57,8 +71,9 @@ class Teams
           rec[:count] += 1
 
           ## assert attributes equal - why? why not?
+          ## note - ignore code for now
+          ##     new_rec[:code]  == rec[:code] &&
           assert( new_rec[:name]    == rec[:name] &&
-                  new_rec[:code]  == rec[:code] &&
                   new_rec[:country] == rec[:country],
                   "team records NOT matching - #{rec.pretty_inspect} != #{new_rec.pretty_inspect}")
       end

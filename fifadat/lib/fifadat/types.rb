@@ -13,6 +13,8 @@ MATCH_STATUS = {
 
   ## ???
 
+  7 => 'POSTPONED',  # postponed
+
   9 => 'AWD',    #  awarded !!!
                  #    check if 9/0   is possibly cancelled/annulled (if no score)
                  #             9/12 (AWD 3-0 or such)

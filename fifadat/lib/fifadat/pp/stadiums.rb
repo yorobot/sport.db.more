@@ -1,6 +1,7 @@
 
 
 def build_stadium( h )
+   if h
      id         = h['IdStadium']
      id_country = h['IdCountry']
  ##    id_city    = h['IdCity']
@@ -37,7 +38,18 @@ def build_stadium( h )
    rec[:country] = id_country    ### fix - change to cc/country code - why? why not?
 
    rec
+  else    ## assume nil - dummy record
+     rec =  {
+         id:      '<nil>',
+         name:    '?',
+         street:   nil,
+         city:    '?',   ## use nil - why? why not?
+         country: '?'    ## use nil - why? why not?
+            }
+      rec
+   end
 end
+
 
 
 

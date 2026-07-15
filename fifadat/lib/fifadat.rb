@@ -15,7 +15,32 @@ def read_json_v2( path )
 
   ## check for non-breaking space
   ## fix-fix-fix add unicode normalize!!
+  txt = txt.unicode_normalize(:nfc)
 
+
+## !! ASSERT FAILED - official name alpha expected; got "Luí­s Carlos Mateus Filipe"
+##   Luí­s Carlos Mateus Filipe
+##    "Luí­s Carlos
+
+##   Luí­s Carlos Mateus Filipe
+#        [{"Locale": "en-gb", "Description": "Luí­s Carlos Mateus Filipe"}],
+## !! ASSERT FAILED - official name alpha expected;
+##   got >Luí­s Carlos Mateus Filipe<
+## => L (76) | u (117) | í (237) | ­ (173) | s (115) |   (32) | C (67) | a (97) | r (114) | l (108) | o (111) | s (115) |   (32) | M (77) | a (97) | t (116) | e (101) | u (117) | s (115) |   (32) | F (70) | i (105) | l (108) | i (105) | p (112) | e (101) |
+
+  ## You have run straight into a textbook encoding double-decode bug.
+  ## The actual issue is even more interesting than it looks:
+  ##  Character 173 (0xAD) shouldn't even be there.
+  ## It only exists in your text because a clean UTF-8 string
+  ## was forced through a bad translation process,
+  ##  ripping the letter í completely in half.
+  ##
+  # Clean the string by removing character 173
+  ##    encoding error in   pt/2025-26_matches.json
+  ##     double check upstream source
+  txt = txt.gsub(/\u{AD}/, '')
+  ### # Or using delete
+  ##  txt = txt.delete("\u{AD}")
 
   parse_json( txt )
 end

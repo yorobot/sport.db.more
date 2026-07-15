@@ -106,7 +106,7 @@ if opts[:lint]
     end
 else
 
-   ## addd
+   ## add
    ## step 0) validate slugs & seasons
 
    ## step 1a) prepare

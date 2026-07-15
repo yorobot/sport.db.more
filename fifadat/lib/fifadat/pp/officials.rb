@@ -41,7 +41,10 @@ def build_official( h, id: )
     type      = h['OfficialType']
 
 
-    assert( is_alpha?( name), "official name alpha expected; got #{name.inspect}" )
+    assert( is_alpha?(name), "official name alpha expected; got #{pp_alpha(name)}" )
+
+
+
     assert( [1,2,3,4,5,6,7,8,9,10].include?( type ), "official type 1/2/3/4/5/6/7/8/9/10 expected; got #{type}" )
 
     rec = {}

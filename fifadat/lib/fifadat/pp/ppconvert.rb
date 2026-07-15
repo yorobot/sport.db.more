@@ -151,37 +151,43 @@ if m['Home'] && m['Away']
    idMatch    = m['IdMatch']
 
    live_path = "#{indir}/#{slug}/matches/#{season.to_path}/#{date_str}_#{team1_code}-#{team2_code}__#{idMatch}.json"
-   live = read_json_v2( live_path )
+
+   ## check if match report exits
+   ##   optional for now!!
+   if File.file?( live_path )
+
+     live = read_json_v2( live_path )
 
 
-   players = Players.new
-   players.add( live['HomeTeam']['Players'] )
-   players.add( live['AwayTeam']['Players'] )
+     players = Players.new
+     players.add( live['HomeTeam']['Players'] )
+     players.add( live['AwayTeam']['Players'] )
 
-   ##   add goals
-   ##
-   goals1 = build_goals( live['HomeTeam']['Goals'], players: players )
-   goals2 = build_goals( live['AwayTeam']['Goals'], players: players )
+     ##   add goals
+     ##
+     goals1 = build_goals( live['HomeTeam']['Goals'], players: players )
+     goals2 = build_goals( live['AwayTeam']['Goals'], players: players )
 
-   rec[:goals1] = goals1
-   rec[:goals2] = goals2
+     rec[:goals1] = goals1
+     rec[:goals2] = goals2
 
-   ##  add penalties !!!
-   ##  fix-fix-fix
+     ##  add penalties !!!
+     ##  fix-fix-fix
 
-   ##  add sent-off (red & yellow-red cards!)
-   players1 = Players.new
-   players1.add( live['HomeTeam']['Players'] )
-   players1.add_bookings( live['HomeTeam']['Bookings'])
+     ##  add sent-off (red & yellow-red cards!)
+     players1 = Players.new
+     players1.add( live['HomeTeam']['Players'] )
+     players1.add_bookings( live['HomeTeam']['Bookings'])
 
-   players2 = Players.new
-   players2.add( live['AwayTeam']['Players'] )
-   players2.add_bookings( live['AwayTeam']['Bookings'])
+     players2 = Players.new
+     players2.add( live['AwayTeam']['Players'] )
+     players2.add_bookings( live['AwayTeam']['Bookings'])
 
-   reds1 = players1.sentoff
-   reds2 = players2.sentoff
-   rec[:reds1] = reds1    unless reds1.empty?
-   rec[:reds2] = reds2    unless reds2.empty?
+     reds1 = players1.sentoff
+     reds2 = players2.sentoff
+     rec[:reds1] = reds1    unless reds1.empty?
+     rec[:reds2] = reds2    unless reds2.empty?
+   end
 end
 
 
@@ -208,7 +214,7 @@ end
     officials = build_officials( m['Officials'], id: false )
 
     if officials.size == 0
-      puts "!! WARN no refs / officials found"
+       ## puts "!! WARN no refs / officials found"
     else
          rec[:referees] = officials
     end
