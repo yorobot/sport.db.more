@@ -22,10 +22,17 @@ def build_stage( h )
    seq        = h['SequenceOrder']
    level      = h['StageLevel']      ## note - is optional
 
+   ## note - start/end dates are utc (NOT local)
+   start_date_utc = h['StartDate']
+   end_date_utc   = h['EndDate']
+
+
    rec = {
         ##  id:          h['IdStage'],   ## convert to number - why? why not?
-           seq:         seq,
-           name:        name,
+           seq:             seq,
+           name:            name,
+           start_date_utc:  start_date_utc,
+           end_date_utc:    end_date_utc,
            count:       0,
         }
 

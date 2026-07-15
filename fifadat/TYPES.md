@@ -1,6 +1,10 @@
 
 ### Enums / Types
 
+see <lib/fifadat/types.rb>  for more
+
+
+
 ```
  MatchStatus
               0 =>  complete ??

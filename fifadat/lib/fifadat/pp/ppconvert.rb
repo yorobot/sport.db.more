@@ -1,6 +1,13 @@
 
 
 
+##
+##
+##  fix-fix-fix   -- add (shared)     _build_date_local( m )
+##                                         in pphelper-date.rb
+###
+
+
 def convert( slug:, season:,
                 indir: '.',
                 outdir: './tmp' )
@@ -82,6 +89,8 @@ def convert( slug:, season:,
 
        num  = m['MatchNumber']        # optional
        rec[:num]  = num   if num    ## convert to int if string?
+
+
 
 
        ##  use datetime_utc/local - why? why not?

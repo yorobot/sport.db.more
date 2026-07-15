@@ -11,9 +11,13 @@ puts "  #{datafiles.size} datafile(s)"
 
 datafiles.each_with_index do |path,i|
   puts "==> reading #{i+1}/#{datafiles.size} #{path}..."
-  data = read_json( path )
+  data = read_json_v2( path )
 
   buf, stats, errors =  pp_debug( data )
+
+   puts
+   puts buf
+   puts
 
    ## print some stats
    puts " MatchStatus: #{stats['MatchStatus'].inspect}, "+

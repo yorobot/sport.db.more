@@ -29,17 +29,29 @@ def _parse_score( m )
          ## 5 - aet [on aggregate] (for sure)
          ## 8 -  golden/silver goal in extra time ???
         h[:et] = score   ## assume after extra-time !!!
-     else  ### note - 2 win on pens
+     elsif resultType == 2
+         ### note - 2 win on pens
          ## 2 - win on pens  (with or WITHOUT aet!!)
-        h[:score]
+
+        ## check for competition for now
+        ##    incl. south american
+        if false   ## add some competitions here
+           h[:ft] = score
+        else
+           h[:et] = score
+        end
+     else
+        h[:score] = score
      end
     end
 
     penScore = [m['HomeTeamPenaltyScore'],  m['AwayTeamPenaltyScore']].compact
     aggScore = [m['AggregateHomeTeamScore'],m['AggregateAwayTeamScore']].compact
 
-     h[:p]    if !penScore.empty?
-     h[:agg]  if !aggScore.empty?
+
+    ## note - worldcup has penScore [0,0] for all matches, for example!!!
+     h[:p]   = penScore   if !penScore.empty? && !penScore == [0,0]
+     h[:agg] = aggScore   if !aggScore.empty?
 
 
      h

@@ -10,6 +10,9 @@ def read_json_v2( path )
   ## \u00A0 - non-breaking space
   txt = txt.gsub( /[\u00A0]/, ' ' )
 
+  ## (auto-)remove ™ (e.g. FIFA World Cup™)
+  txt = txt.gsub( '™', '' )
+
   ## check for non-breaking space
   ## fix-fix-fix add unicode normalize!!
 
@@ -95,7 +98,11 @@ require_relative 'fifadat/api-config'  ## base
 require_relative 'fifadat/api'  ## base
 require_relative 'fifadat/helper'
 require_relative 'fifadat/prepare'   ## "all-in-one" prepare (download cache) helpers etc.
+
 require_relative 'fifadat/ppdebug'
+require_relative 'fifadat/ppmatch'
+
+require_relative 'fifadat/types'
 
 
 #####

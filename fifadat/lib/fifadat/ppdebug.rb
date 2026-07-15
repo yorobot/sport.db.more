@@ -1,78 +1,5 @@
 
 
-MATCH_STATUS = {
-  0 => 'FIN',     # finished
-  1 => 'SCHED',   # scheduled
-  2 => 'LIVE',
-  ## ???
-
-  9 => 'AWD',    # awarded !!!
-}
-
-
-##
-## Result: Al Duhail awarded a 3–0 walkover victory.
-## Reason: Auckland City FC withdrew from the tournament
-## due to strict COVID-19 pandemic quarantine and isolation measures
-##  enforced by New Zealand authorities.
-
-##
-## check 2  is only win on pens!!!
-##   might be WITHOUT extra time e.g. copa liber.
-##  [28/142]  0-FIN    3rd Round   Sporting Cristal | SCL (PER) v Carabobo FC | CRB (VEN)
-##                 (2-AET_WIN_ON_PENS)  score: [1, 2] pen: [3, 2] agg: [2, 2]
-##   and others!!!
-##
-##   how to check if  extra time was played?? (use period??)
-
-
-RESULT_TYPE = {
-  0 => 'NO',
-  1 => 'REGULAR',
-  ## note - cannot tell if
-  ##          win on penalties
-  ##    is  after extra-time!!!
-  ##      used many times in copa libertadores
-  ##       check gold cup too
-  2 => 'AET_WIN_ON_PENS',  ## or REG_WIN_ON_PENS or AGG_WIN_ON_PENS
-  3 => 'AET',
-  ##
-  ## note - agg - used for 1st & 2nd leg
-  4 => 'REGULAR/AGG',  ##  aggregate (1st/2nd leg) - regular
-  5 => 'AET/AGG',      ##   aggregate  - after extra-time
-  ## e.g.
-  ## 2nd LegFeb 25, 2026 Juventus 3–2 (AET) Galatasaray
-  ##                is/was    3-0 (REG)!!!
-
-  12 => 'AWD',  ## AWARDED
-}
-
-
-##
-## note - matchStatus  for 12-AWD should also be 9-AWD!!!
-
-## resultType 12
-## The Clausura 2022 match between Querétaro and Atlas on March 5, 2022,
-##  was officially suspended in the 62nd minute
-## and later recorded as a 3–0 victory for Atlas
-##    : Atlas was leading 1–0 at the time of suspension.
-##    Forfeit Victory: Atlas was officially awarded a 3–0 walkover win.
-
-
-=begin
-             0 =>  no result / not played yet
-              1 => regular (90 mins)
-              2 => aet (120 mins), win on pens
-              3 => aet (120 mins)
-
-              8 =>  same as 3?  -aet with golden goal/silver goal in 1998 FRA-PAR
-
-              4 =>    aggregate  leg 1/2 ?? e.g.
-                    "AggregateHomeTeamScore": 2,
-                    "AggregateAwayTeamScore": 4,
-=end
-
-
 
 def pp_debug( data )
 
@@ -122,67 +49,19 @@ matches.each_with_index do |m, i|
 ##      or result type       not 0,1,2,3,4,5  !!!
 
 
-  idCompetition = m['IdCompetition']
-  idSeason      = m['IdSeason']
-  idStage       = m['IdStage']
-  idMatch       = m['IdMatch']
-
-   stageName   = desc( m['StageName'] )
-   groupName   = desc( m['GroupName'] )  # optional
-   matchDay    = m['MatchDay']           # optional
-
-   matchNumber = m['MatchNumber']        # optional
+   buf << "==> [#{i+1}/#{matches.size}]  "
+   buf << pp_match(m)
 
 
-   buf << "==> [#{i+1}/#{matches.size}]"
-   buf << "  #{m['MatchStatus']}-#{MATCH_STATUS[m['MatchStatus']]||'??'}  "
-   buf << "  #{stageName}"
-   buf <<  ", #{groupName}"  if groupName
-   buf << " \##{matchDay}" if matchDay
-   buf << " (#{matchNumber})"  if matchNumber
+   idMatch =  m['IdMatch']
 
-
-
-  team1 = m['Home'] ? { name:    desc( m['Home']['TeamName'] ),
-                        abbrev:  m['Home']['Abbreviation'],
-                        country: m['Home']['IdCountry'],
-                      } : { name: '?', abbrev: '?', country: '?' }
-
-  team2 = m['Away'] ? { name:    desc( m['Away']['TeamName'] ),
-                        abbrev:  m['Away']['Abbreviation'],
-                        country: m['Away']['IdCountry'],
-                      }  : { name: '?', abbrev: '?', country: '?' }
-
-
-  buf <<  "   #{team1[:name]} | #{team1[:abbrev]} (#{team1[:country]})"
-  buf <<  " v "
-  buf <<  "#{team2[:name]} | #{team2[:abbrev]} (#{team2[:country]})  "
-   buf << "\n"
-
-  ###
-  ## check score
-
-  # resultType
-  #            0 =>  no result / not played yet
-  #            1 => regular (90 mins)
-  #            2 => aet (120 mins), win on pens
-  #            3 => aet (120 mins)
-  #            8 =>  same as 3?  -aet with golden goal/silver goal in 1998 FRA-PAR
-
-
-  resultType  = m['ResultType']
+   matchStatus = m['MatchStatus']
+   resultType  = m['ResultType']
 
   ## add aggregate score too
   score        = [m['HomeTeamScore'],        m['AwayTeamScore']].compact
   penScore = [m['HomeTeamPenaltyScore'], m['AwayTeamPenaltyScore']].compact
   aggScore = [m['AggregateHomeTeamScore'],m['AggregateAwayTeamScore']].compact
-
-
-   buf <<  "                "
-   buf <<  " (#{resultType}-#{RESULT_TYPE[resultType]||'??'})"
-   buf <<  "  score: #{score.inspect}"   unless score.empty?
-   buf <<  " pen: #{penScore.inspect}"  unless penScore.empty?
-   buf <<  " agg: #{aggScore.inspect}"  unless aggScore.empty?
 
 
   if resultType == 0 && !score.empty?
@@ -191,52 +70,19 @@ matches.each_with_index do |m, i|
      ##  raise ArgumentError,
      ##    " resultType == 0 but score present idMatch #{m['IdMatch']} #{m['HomeTeamScore']}-#{m['AwayTeamScore']}"
 
-     msg = " resultType == 0 but score present idMatch #{m['IdMatch']} #{score.inspect}"
+     msg = " resultType == 0 but score present idMatch #{idMatch} #{score.inspect}"
      errors << msg
   end
-
-
-
-##
-## "MatchStatus"=>9,  cancelled!!!!
-##
-##  "ResultType"=>12,
-##  21:30  CD Independiente Medellín (COL) v CR Flamengo (BRA)        [cancelled]
-##
-
-  if ![0,1,2,3,4,5,8,12].include?(resultType)
-     msg = "resultType 1,2,3,4,5,8,12 expected; got #{resultType} in: #{m.pretty_inspect}"
-     errors << msg
-  end
-
-       ### add status
-       ##    0 -  FINISHED
-       ##    1 -  SCHEDULED
-       ##    abd.
-       ##    cancelled
-       ##    etc.
-
-
-       ## 0 =>   finished/complete (OK)
-       ## 1 =>   not yet played
-   matchStatus = m['MatchStatus']
 
    if ![0,1,9].include?(matchStatus)
       msg =  "matchStatus 0-FIN,1-SCHED,9-AWD expected; got #{matchStatus} in: #{m.pretty_inspect}"
       errors << msg
    end
 
-
-  # resultType
-  #            0 =>  no result / not played yet
-  #            1 => regular (90 mins)
-  #            2 => aet (120 mins), win on pens
-  #            3 => aet (120 mins)
-  #            8 =>  same as 3?  -aet with golden goal/silver goal in 1998 FRA-PAR
-
-
-
-  buf <<  "\n"
+  if ![0,1,2,3,4,5,8,12].include?(resultType)
+     msg = "resultType 0,1,2,3,4,5,8,12 expected; got #{resultType} in: #{m.pretty_inspect}"
+     errors << msg
+  end
 
 
 
@@ -255,7 +101,7 @@ matches.each_with_index do |m, i|
    stats[ 'Attendance'][!m['MatchDay'].nil?] +=1
    stats[ 'Weather'][!m['Weather'].nil?] +=1
 
-
+=begin
     if m['Home']
       stats[ 'TeamType'][m['Home']['TeamType']] +=1
       stats[ 'AgeType'][m['Home']['AgeType']] +=1
@@ -266,6 +112,7 @@ matches.each_with_index do |m, i|
       stats[ 'AgeType'][m['Away']['AgeType']] +=1
       stats[ 'FootballType'][m['Away']['FootballType']] +=1
     end
+=end
 end
 
 
