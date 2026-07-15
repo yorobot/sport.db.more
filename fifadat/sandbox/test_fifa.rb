@@ -2,6 +2,21 @@
 require_relative '../helper'
 
 
+## name = 'worldcup'
+name = 'uefa.cl'
+idCompetition = Fifa._idComp_by!( name: name )
+
+path = "./seasons/#{name}_seasons.json"
+url  = Fifa::Metal.seasons_url( idCompetition: idCompetition)
+
+fetch_json( url, path )
+
+puts "bye"
+
+
+__END__
+
+
 ##
 ##  https://api.fifa.com/api/v3/calendar/matches?from=2026-03-24T00%3A00%3A00Z
                                                   &to=2026-03-31T23%3A59%3A59Z
@@ -11,8 +26,6 @@ require_relative '../helper'
 ##
 
 
-
-__END__
 
 fetch_json( Fifa.search_seasons_url( name: 'FIFA World Cup'), "./tmp/search_fifa_worldcup_v2.json" )
 
@@ -44,9 +57,9 @@ idSeason = "255711"
 idCompetition = "17"
 
 
-fetch_json( Fifa._timeline_url( idCompetition: idCompetition, 
+fetch_json( Fifa._timeline_url( idCompetition: idCompetition,
                                 idSeason: idSeason,
-                               idStage: idStage, 
+                               idStage: idStage,
                                idMatch: idMatch ), "./tmp/timeline_ARG-FRA.json" )
 
 
@@ -73,6 +86,3 @@ end
 # fetch_json( url, "./tmp/1-201-1094.json" )
 
 puts "bye"
-
-
-

@@ -1,0 +1,41 @@
+####
+## tournaments with clubs
+
+
+code, id_comp,   name
+
+clubworldcup,     10005,      ## note - club world cup is only 2025
+interconticup,    107,        ## note - interconti  incl. all "legacy" club world cup 2000 + 2005-2023
+
+copa.l,           2000001035,     ## CONMEBOL Libertadores
+copa.s,           2000001042,     ## CONMEBOL Sudamericana
+
+ar,             2000000128,        ## ARG - Liga Profesional Argentina
+br,             2000000078,        ## BRA - Serie A
+co,             2000000080,        ## COL - Primera A
+uy,             2000000084,        ## URU - Liga AUF
+
+
+mx,             2000000104,                 ## MEX - Liga MX
+mx.cup,         1rlh9j70dy0rmqwm89v2jmzg6,  ## MEX - Copa MX
+mx.2,           e1kxdivp5g4cpldgpwvnzl1vv,  ## MEX - Liga de Expansión MX
+
+mls,            2000000103,                 ## USA - MLS
+
+
+
+
+au,             2000000086,        ## AUS -  A-League Men
+
+cn,             2000000087,        ## CHN -  Chinese Super League
+
+jp,             2000000085,        ## JPN -  J1 League
+kr,             2000000088,        ## KOR -  K League 1
+
+sa,             2000000091,        ## KSA -  Saudi League
+
+
+eg,             2000000054,                  ##  EGY - Premier League
+ma,             1eruend45vd20g9hbrpiggs5u,   ##  MAR - Botola Pro
+za,             yv73ms6v1995b5wny16jcfi3,    ##  RSA - PSL
+tn,             f4jc2cc5nq7flaoptpi5ua4k4,   ##  TUN - Ligue 1

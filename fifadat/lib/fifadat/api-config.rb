@@ -10,7 +10,7 @@ class Fifa
   end
 
 
-  def self.read_configs( *paths )
+  def self.read_seasons( *paths )
     comps = {}
 
      paths.each do |path|
@@ -42,18 +42,21 @@ class Fifa
   end
 
 
-   COMPETITIONS = read_configs( "#{root}/fifadat/config/worldcup.csv",
-                                "#{root}/fifadat/config/clubworldcup.csv",
-                                "#{root}/fifadat/config/leagues.csv",
-                              )
+   COMPETITIONS = read_seasons( *Dir.glob( "#{root}/fifadat/config/seasons/**/*.csv"))
    pp COMPETITIONS
 
 
 
-def self.read_codes( path )
+def self.read_codes( *paths )
     comps = {}
 
+     paths.each do |path|
         rows = read_csv( path )
+
+        ## hack - use club in base as automagic flag
+        basename = File.basename(path, File.extname(path))
+
+        club = basename.include?('club')   ## otherwise assume nati(onal) teams
 
         rows.each do |row|
             ## note - do NOT convert to integer!!!
@@ -66,27 +69,38 @@ def self.read_codes( path )
             ##     eng|eng.1  etc.
 
             code     = row['code']
-            idComp   = row['id_comp']   || row['IdCompetition']
+            idComp   = row['id_comp'] || row['IdCompetition']
 
-            comps[code] = idComp
+            rec = {  code:           code,
+                     idCompetition:  idComp,
+                     club:           club,     # club | nati(ional team)  flag
+                  }
+
+            comps[code] = rec
         end
+      end
     comps
   end
 
-   COMPETITION_ID = read_codes( "#{root}/fifadat/config/codes.csv" )
-   pp COMPETITION_ID
+
+ ## code (slugs) mappings for competitions
+   CODES = read_codes( "#{root}/fifadat/config/codes_nati.csv",
+                       "#{root}/fifadat/config/codes_club.csv",
+                       "#{root}/fifadat/config/codes_club-europe.csv",
+                              )
+   pp CODES
 
 
    def self._idComp_by!( name: )
        ## note - downcase and remove all spaces from name
        ##  e.g. WORLD CUP => worldcup
        q = name.downcase.gsub( ' ', '' )
-       idComp = COMPETITION_ID[ q ]
-       if idComp.nil?
-         raise ArgumentError, "no idCompetition found for #{name}; sorry"
+       rec = CODES[ q ]
+       if rec.nil?
+         raise ArgumentError, "no competition (idCompetition) found for #{name}; sorry"
        end
 
-       idComp
+       rec[:idCompetition]
    end
 
 

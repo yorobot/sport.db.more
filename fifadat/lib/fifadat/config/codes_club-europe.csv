@@ -1,0 +1,59 @@
+code, id_comp,   name
+
+uefa.cl,        2000001032,                  ##  UEFA Champions League
+uefa.europa,    2000001041,                  ##  UEFA Europa League
+uefa.con,       c7b8o53flg36wbuevfzy3lb10,   ##  UEFA Conference League
+
+
+at,               2000000005,                 ## AUT | Bundesliga
+at.cup,           1ncmha8yglhyyhg6gtaujymqf,  ## AUT | Cup
+
+de,             2000000019,                   ## GER | Bundesliga
+de.2,           722fdbecxzcq9788l6jqclzlw,    ## GER | 2. Bundesliga
+de.cup,         486rhdgz7yc0sygziht7hje65,    ## GER | DFB Pokal
+
+ch,              2000000041,                 ## SUI | Super League
+cz,               2000000020,                ## CZE | Czech Liga
+hu,               2000000023,                ## HUN | NB I
+pl,              2000000030,                 ## POL | Ekstraklasa
+
+
+lu,              48pg4xminsjxun5x4yp5ng8v,   ## LUX | National Division
+nl,              2000000022,                 ## NED | Eredivisie
+be,               2000000009,                ## BEL | First Division A
+
+
+it,                2000000026,                  ## ITA | Serie A
+it.cup,            6694fff47wqxl10lrd9tb91f8,   ## ITA | Coppa Italia
+
+fr,            2000000018,      ## FRA | Ligue 1
+es,            2000000037,      ## ESP | Primera División
+pt,            2000000033,      ## POR | Primeira Liga
+
+
+gr,              2000000044,                  ## GRE | Super League 1
+tr,              482ofyysbdbeoxauk19yg7tdt,   ## TUR | Süper Lig
+
+
+
+
+eng,              2000000000,                   ## ENG | Premier League
+eng.2,            7ntvbsyq31jnzoqoa8850b9b8,    ## ENG | Championship
+eng.facup,        2hj3286pqov1g1g59k2t2qcgm,    ## ENG | FA Cup
+## eng.cup.l,        725gd73msyt08xm76v7gkxj7u,    ## ENG | League Cup
+
+sco,               2000000001,                 ## SCO | Premiership
+wal,               c76z5d6j7dpi1e79tm8fpm39z,  ## WAL | Premier League
+nir,               2000000003,                 ## NIR | Premiership
+
+ie,                2000000015,                 ## IRL | Premier Division
+
+
+
+is,                2000000038,                 ## ISL | Besta deild
+no,              2000000034,                   ## NOR | Eliteserien
+se,              2000000029,                   ## SWE | Allsvenskan
+
+
+
+il,                2000000137,                 ## ISR | Ligat Ha'al

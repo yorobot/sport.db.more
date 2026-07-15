@@ -10,6 +10,7 @@ MATCH_STATUS = {
   0 => 'FIN',     # finished
   1 => 'SCHED',   # scheduled
   2 => 'LIVE',
+
   ## ???
 
   9 => 'AWD',    #  awarded !!!
@@ -58,7 +59,7 @@ RESULT_TYPE = {
   ##    is  after extra-time!!!
   ##      used many times in copa libertadores
   ##       check gold cup too
-  2 => 'AET_WIN_ON_PENS',  ## or REG_WIN_ON_PENS or AGG_WIN_ON_PENS
+  2 => 'AET_WIN_ON_PENS',  ## or REG_WIN_ON_PENS or AGG_WIN_ON_PENS !!!!!!
   3 => 'AET',
   ##
   ## note - agg - used for 1st & 2nd leg
@@ -66,7 +67,8 @@ RESULT_TYPE = {
   5 => 'AET/AGG',      ##   aggregate  - after extra-time
   ## e.g.
   ## 2nd LegFeb 25, 2026 Juventus 3–2 (AET) Galatasaray
-  ##                is/was    3-0 (REG)!!!
+  ##
+  8 => 'AET/GG',   ## after extra-time/golden goal !!!
 
   12 => 'AWD',  ## AWARDED
 }

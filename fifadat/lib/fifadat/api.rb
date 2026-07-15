@@ -52,14 +52,26 @@ class Fifa
 
 class Metal
 
-   def self.competition_url( idCompetition: )  ## note - singular (not plural)
+   def self.competition_url( idCompetition: )  ## note - singular (NOT plural)
       "#{BASE_URL}/competitions/#{idCompetition}?language=en"
    end
 
-   def self.season_url( idSeason: )
+   def self.season_url( idSeason: )   ## note - singular (NOT plural)
       ##      API_ROOT/seasons/278491
       "#{BASE_URL}/seasons/#{idSeason}"
    end
+
+## list_seasons
+## List a competition's seasons/editions (e.g. each World Cup year),
+## newest first, with start and end dates.
+## Takes an idCompetition; returns the idSeason that stage, fixture, and squad lookups need.
+
+   def self.seasons_url( idCompetition: )
+      "#{BASE_URL}/seasons?"+
+        "count=500&idCompetition=#{idCompetition}" +
+        "&language=en"
+   end
+
 
 
    def self.squads_url( idSeason:, idCompetition: )
