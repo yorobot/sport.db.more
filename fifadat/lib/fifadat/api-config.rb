@@ -43,7 +43,7 @@ class Fifa
 
 
    COMPETITIONS = read_seasons( *Dir.glob( "#{root}/fifadat/config/seasons/**/*.csv"))
-   pp COMPETITIONS
+   ## pp COMPETITIONS
 
 
 
@@ -88,7 +88,7 @@ def self.read_codes( *paths )
                        "#{root}/fifadat/config/codes_club.csv",
                        "#{root}/fifadat/config/codes_club-europe.csv",
                               )
-   pp CODES
+   ## pp CODES
 
 
    def self._idComp_by!( name: )

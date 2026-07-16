@@ -69,96 +69,93 @@ def convert( slug:, season:,
 
 
 
-      team1 = m['Home'] ? build_team( m['Home'] ) : { name: '?',
-                                                      abbrev: '?',
-                                                      country: '?' }
-
-      team2 = m['Away'] ? build_team( m['Away'] ) : { name: '?',
-                                                      abbrev: '?',
-                                                      country: '?' }
-
-
        rec[:stage]  = desc( m['StageName'] )
 
-       matchday  = m['MatchDay']           # optional
-       rec[:matchday]  = matchday.to_i(10)  if matchday   ## convert to int if str - why? why not??
-
-       group = desc( m['GroupName'] )  # optional
+       ## check optional  group, matchday, (match) num
+       ##    note - matchday is a string!! (check if always a number)
+       ##      ## convert to int if str - why? why not??
+       group = desc( m['GroupName'] )
        rec[:group]  = group   if group
 
+       matchday  = m['MatchDay']
+       rec[:matchday]  = matchday.to_i(10)  if matchday
 
-       num  = m['MatchNumber']        # optional
-       rec[:num]  = num   if num    ## convert to int if string?
-
-
-
-
-       ##  use datetime_utc/local - why? why not?
-       rec[:date_utc]   = m['Date']     ## utc
-
-       ### fix/fix/fix - change to   UTC+-2/3/etc format!!!
-
-       dateTime       = parse_date( m['Date'] )    ## utc
-       localDateTime  = parse_date( m['LocalDate'] )
-
-        assert( dateTime.sec == 0 && localDateTime.sec == 0,
-                  "sec 00 expected" )
-
-        ## note:  returns Rational (e.g. 3/1 or 1/4 etc.) use to_f/to_i to convert
-        diff_in_hours = ((localDateTime - dateTime) * 24).to_f
-        diff_in_days  =  localDateTime.jd - dateTime.jd
-        ## pp [diff_in_hours, diff_in_days]
-
-
-     ## use   20:30 UTC+1  or 20:30 UTC-3
-     rec[:date_local] = "#{localDateTime.strftime( '%Y-%m-%d %H:%M' )} UTC%+d" % diff_in_hours
+       num  = m['MatchNumber']
+       rec[:num]  = num   if num
 
 
 
+
+       ##  pass along as is for now - why? why not
+       ##   note - Date is date_utc and
+       ##      LocalDate is date_local (also in utc BUT different HH:MM or possible day)
+       ## note - also in utc, that is, timezone is Z (not +03:00 or such!!!)
+
+       dateTime       = parse_date_utc( m['Date'] )
+       localDateTime  = parse_date_utc( m['LocalDate'] )
+
+       ## note - cut-off/remove seconds
+       rec[:date_utc]   = dateTime.strftime( '%Y-%m-%dT%H:%M%z' )
+
+       ## note - use  20:30 UTC+1  or 20:30 UTC-3  for timezone format for now
+       rec[:date_local] = _fmt_date_local( dateTime, localDateTime )
+
+
+
+       team1 =  build_team( m['Home'] )
+       team2 =  build_team( m['Away'] )
 
        rec[:team1] = team1[:name]
        rec[:team2] = team2[:name]
 
-#####
-#  handle score
- ## m = (full) match hash incl.  IdMatch, etc.
+
+  #####
+  #  handle score
+  ## m = (full) match hash incl.  IdMatch, etc.
   ##  returns string e.g.  4-4  or 4-3 a.e.t etc
 
 
-  resultType  = m['ResultType']
+     ### fix - add postponed
+     ##            awarded etc.
+     ##    REGULAR - why? why not?
+     resultType  = m['ResultType']
 
-  score = _parse_score( m )
-  rec[:score] = score    if !score.empty?
+
+     score = _parse_score( m )
+     rec[:score] = score      unless score.empty?
 
 
+       ## check - never in use?
        rec[:home]  = true    if m['IsHome']
 
+
+       ## add country to stadium too - why? why not?
        stadium = build_stadium( m['Stadium'] )
-       rec[:stadium] = {  name: stadium[:name],
-                          city: stadium[:city] }
+       rec[:stadium] = {  name:    stadium[:name],
+                          city:    stadium[:city] }
 
        attendance = m['Attendance']
        rec[:attendance] = attendance.to_i(10)   if attendance
 
 
 
-if m['Home'] && m['Away']
-
    ### get match (live) details
-   date_str = localDateTime.strftime('%Y-%m-%d')
-   team1_code = m['Home']['Abbreviation']
-   team2_code = m['Away']['Abbreviation']
+   ###
+   ##   check if match report exits
+   ##    optional for now!!
+
+   date_str   = localDateTime.strftime('%Y-%m-%d')
+   team1_code = team1[:code]
+   team2_code = team2[:code]
    idMatch    = m['IdMatch']
 
    live_path = "#{indir}/#{slug}/matches/#{season.to_path}/#{date_str}_#{team1_code}-#{team2_code}__#{idMatch}.json"
 
-   ## check if match report exits
-   ##   optional for now!!
    if File.file?( live_path )
 
      live = read_json_v2( live_path )
 
-
+     ## all players (for lookup)
      players = Players.new
      players.add( live['HomeTeam']['Players'] )
      players.add( live['AwayTeam']['Players'] )
@@ -174,6 +171,8 @@ if m['Home'] && m['Away']
      ##  add penalties !!!
      ##  fix-fix-fix
 
+
+     ## players by team1/team2
      ##  add sent-off (red & yellow-red cards!)
      players1 = Players.new
      players1.add( live['HomeTeam']['Players'] )
@@ -187,8 +186,7 @@ if m['Home'] && m['Away']
      reds2 = players2.sentoff
      rec[:reds1] = reds1    unless reds1.empty?
      rec[:reds2] = reds2    unless reds2.empty?
-   end
-end
+ end
 
 
 =begin

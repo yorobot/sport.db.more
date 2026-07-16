@@ -8,12 +8,26 @@ def assert( test, msg )
     end
 end
 
-
+### fix - change/rename to datetime!!!
 def parse_date( date_str )
     date = DateTime.strptime( date_str, '%Y-%m-%dT%H:%M:%S%z' )
 
     assert( date_str == date.strftime('%Y-%m-%dT%H:%M:%SZ'),
               "date parse expected #{date_str} - got #{date.inspect}" )
+    date
+end
+
+
+def parse_date_utc( str )
+    date = DateTime.strptime( str, '%Y-%m-%dT%H:%M:%S%z' )
+
+    ## note: check for seconds is 00
+    ##    AND   timezone  is Z (zulu)  (shortkey for utc!)
+    ##  e.g. hard code   ":00Z" in strftime!!!
+
+    str_exp = date.strftime('%Y-%m-%dT%H:%M:00Z')
+    assert( str == str_exp,
+              "date parse expected #{str_exp} - got #{str} #{date.inspect}" )
     date
 end
 

@@ -7,15 +7,17 @@ def build_team( h )
 
       ##  name = norm_team( name )
 
-      rec = { id:      h['IdTeam'],
+      rec = {
+           id:      h['IdTeam'],
            name:    name,
-           code:   h['Abbreviation'],
+           code:    h['Abbreviation'],
            country: h['IdCountry'],     ## change to cc (country code) - why? why not?
         }
 
      rec
    else    ## assume nil - dummy record
      rec =  {
+         id:     '<nil>',
          name:    '?',
          code:    '?',   ## use nil - why? why not?
          country: '?' ## use nil - why? why not?
@@ -32,16 +34,11 @@ class Teams
       @recs = {}
    end
 
-   def add_matches( matches )  ## use/rename to add_matches - why? why not?
+   def add_matches( matches )
+      ## note -   if team nil - will (auto-)add nil team (<nil>,?,?,?)
       matches.each do |m|
-        ## note - skip if teams not yet know
-        next if m['Home'].nil? && m['Away'].nil?
-
-        team1 = build_team( m['Home'] )
-        team2 = build_team( m['Away'] )
-
-        _add( team1 )
-        _add( team2 )
+        _add( build_team( m['Home'] ) )
+        _add( build_team( m['Away'] ) )
       end
    end
 

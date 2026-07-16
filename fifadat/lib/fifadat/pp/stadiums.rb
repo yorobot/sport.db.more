@@ -23,6 +23,7 @@ def build_stadium( h )
         ## auto-generate id
         ##  use slug of name plus id_city
         ## add city name
+        ##  fix- add   0-9 & dash(-) to name too - why? why not?
         id  =       name.downcase.gsub( /[^a-z]/, '' )
         id += "_" + city_name.downcase.gsub( /[^a-z]/, '' )
      end
@@ -42,7 +43,6 @@ def build_stadium( h )
      rec =  {
          id:      '<nil>',
          name:    '?',
-         street:   nil,
          city:    '?',   ## use nil - why? why not?
          country: '?'    ## use nil - why? why not?
             }
