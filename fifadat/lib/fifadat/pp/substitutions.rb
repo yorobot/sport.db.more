@@ -14,9 +14,10 @@
 =end
 
 
-def build_sub( h, players: )
 
-   ## split into minute
+def _build_sub_minute( h )
+
+    ## split into minute
     ##  and offset (stoppage/injury time)
     ##  e.g. 90'+11'
 
@@ -27,32 +28,56 @@ def build_sub( h, players: )
      ## check what is "Period"=>4
      ##   minute is "" empty!!
 
-    if minute_str.nil? || minute_str.empty?
-           puts "!! minute in sub is nil or empty:"
-           pp h
+          if minute_str.nil? || minute_str.empty?
+            if h['Period'] == 4  ## quick fix - use 46' half-time sub??
+                minute_str = "46'"
+            elsif h['Period'] == 8 ## quick fix - use 116' 1st half-time extra time?
+                minute_str = "116'"
+##  "SubstitutePosition"=>2,
+## "IdPlayerOff"=>"403319",
+## "IdPlayerOn"=>"436537",
+## "PlayerOffName"=>[{"Locale"=>"en-GB", "Description"=>"NASSER ALDAWSARI"}],
+## "PlayerOnName"=>[{"Locale"=>"en-GB", "Description"=>"MUSAB ALJUWAYR"}],
+## "Minute"=>"",
+## "IdTeam"=>"1943992"}
+               elsif h['Period'] == 17  ## quick fix- what is period 17 beyond pens??
+                minute_str = "121'"
 
-           ## exit 1
-           minute = '??'
-           offset = nil
-    else
-     minute, offset = _parse_minute( minute_str )
-    end
+ ##"Period"=>17,
+ ## "SubstitutePosition"=>2,
+ ## "IdPlayerOff"=>"473062",
+ ## "IdPlayerOn"=>"418961",
+ ## "PlayerOffName"=>[{"Locale"=>"en-GB", "Description"=>"Emiliano MARTINEZ"}],
+ ## "PlayerOnName"=>[{"Locale"=>"en-GB", "Description"=>"Anibal MORENO"}],
+ ## "Minute"=>"",
+ ## "IdTeam"=>"1884426"}
+            else
+              puts "!! minute in sub is nil or empty:"
+              pp h
+              exit 1
+            end
+          end
 
-     idPlayerOff = h['IdPlayerOff']
-     idPlayerOn  = h['IdPlayerOn']
-
-     playerOff = players.find!( idPlayerOff )
-     playerOn  = players.find!( idPlayerOn )
-
-     rec = {}
-      rec[ :off] = playerOff[ :name ]
-      rec[ :on ] = playerOn[ :name ]
-
-     rec[ :minute] = minute
-     rec[ :offset] = offset   if offset  ## add optional offset (stoppage/injury time)
-
-     rec
+     minute =   _fmt_minute( *_parse_minute( minute_str ))
+     minute
 end
+
+
+def build_sub( h, players: )
+
+      minute = _build_sub_minute( h )
+
+      playerOff = players.find!( h['IdPlayerOff'] )
+      playerOn  = players.find!( h['IdPlayerOn'] )
+
+      rec = { off:     playerOff[ :name ],
+              on:      playerOn[ :name ],
+              minute:  minute
+            }
+
+      rec
+end
+
 
 
 def build_subs( recs, players: )

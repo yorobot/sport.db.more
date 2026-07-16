@@ -190,6 +190,37 @@ class Players
    end
 
 
+   def redcards
+      recs = @recs.values.select { |rec| rec[:r] }
+
+        recs = recs.map do |rec|
+                  { name:   rec[:name],
+                    minute: rec[:r][:minute] }
+               end
+         recs
+   end
+
+   def yellowcards
+      recs = @recs.values.select { |rec| rec[:y] }
+
+        recs = recs.map do |rec|
+                  { name:   rec[:name],
+                    minute: rec[:y][:minute] }
+               end
+         recs
+   end
+
+   def yellowredcards
+      recs = @recs.values.select { |rec| rec[:yr] }
+
+        recs = recs.map do |rec|
+                  { name:   rec[:name],
+                    minute: rec[:yr][:minute] }
+               end
+         recs
+   end
+
+
 
    def add_bookings( bookings )  ##  yellow/red cards
       bookings.each do |b|
@@ -237,44 +268,14 @@ class Players
 
 
 
-   def add_subs( subs )
+ def add_subs( subs )
         subs.each do |sub|
 
           idPlayerOff = sub['IdPlayerOff']
           idPlayerOn  = sub['IdPlayerOn']
 
           ## note - parse & reformat minute for keep same format
-          minute_str = sub['Minute']
-          if minute_str.nil? || minute_str.empty?
-            if sub['Period'] == 4  ## quick fix - use 46' half-time sub??
-                minute_str = "46'"
-            elsif sub['Period'] == 8 ## quick fix - use 116' 1st half-time extra time?
-                minute_str = "116'"
-##  "SubstitutePosition"=>2,
-## "IdPlayerOff"=>"403319",
-## "IdPlayerOn"=>"436537",
-## "PlayerOffName"=>[{"Locale"=>"en-GB", "Description"=>"NASSER ALDAWSARI"}],
-## "PlayerOnName"=>[{"Locale"=>"en-GB", "Description"=>"MUSAB ALJUWAYR"}],
-## "Minute"=>"",
-## "IdTeam"=>"1943992"}
-               elsif sub['Period'] == 17  ## quick fix- what is period 17 beyond pens??
-                minute_str = "121'"
-
- ##"Period"=>17,
- ## "SubstitutePosition"=>2,
- ## "IdPlayerOff"=>"473062",
- ## "IdPlayerOn"=>"418961",
- ## "PlayerOffName"=>[{"Locale"=>"en-GB", "Description"=>"Emiliano MARTINEZ"}],
- ## "PlayerOnName"=>[{"Locale"=>"en-GB", "Description"=>"Anibal MORENO"}],
- ## "Minute"=>"",
- ## "IdTeam"=>"1884426"}
-            else
-              puts "!! minute in sub is nil or empty:"
-              pp sub
-              exit 1
-            end
-          end
-          minute =   _fmt_minute( *_parse_minute( minute_str ))
+          minute  = _build_sub_minute( sub )
 
           player_off = @recs[ idPlayerOff ]
           player_on  = @recs[ idPlayerOn ]
@@ -282,7 +283,7 @@ class Players
 ##
 ##   note - skip special case for now
 ##              with NO PLAYER ON (e.g. idPlayerOn is nil!!)
-           next if idPlayerOn.nil?
+       ##    next if idPlayerOn.nil?
            ##  todo/fix - report/log warning!!!
 
 
@@ -307,12 +308,8 @@ class Players
 
           player_off[ :sub ] = { minute: minute,
                                  player_ref: player_on }
-          ## id:     player_on[:id],
-          ##         name:   player_on[:name]
-
         end
    end
-
 
 
    def dump

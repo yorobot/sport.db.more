@@ -64,7 +64,7 @@ def prepare_reports( name:,
       ##  e.g. MatchStatus = 1  -- future
       ##       ResultType  = 0  -- not played yet
 
-      if m['Home'].nil? && m['Away'].nil?
+      if m['Home'].nil? || m['Away'].nil?
          puts "[#{i+1}/#{matches.size}]  ??  ??, #{stageName}  (SKIPPED - TO BE DONE)"
          next
       end

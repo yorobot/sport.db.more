@@ -11,8 +11,10 @@ def convert( slug:, season:,
     data = {}
 
     ## add slug & seasons (add name to be done!!)
-    data[:slug]   = slug
-    data[:season] = season
+    data[:meta] = { slug:      slug,
+                    season:    season.to_s,
+                    generated: Time.now.to_s,
+                  }
 
 
    matches =  read_json_v2( "#{indir}/#{slug}/#{season.to_path}_matches.json" )
@@ -47,104 +49,13 @@ def convert( slug:, season:,
 
    recs = []
    matches.each_with_index do |m, i|
-      rec = {}
-
-
 
        ## add/track id too - why? why not?
        ##  rec[:id]  = m['IdMatch']
 
 
-
-       ## 0 =>   FINISHED/complete (OK)
-       ## 1 =>   SCHEDULED/not yet played
-       status = m['MatchStatus']
-       timed  = m['TimeDefined']
-
-
-       if status == 1 && timed    ## note: use TIMED (instead of SCHEDULED)
-          rec[:status] = 'TIMED'
-       else
-          rec[:status] = MATCH_STATUS[ status ] || "#{status}-???"
-       end
-
-
-
-
-       rec[:stage]  = desc( m['StageName'] )
-
-       ## check optional  group, matchday, (match) num
-       ##    note - matchday is a string!! (check if always a number)
-       ##      ## convert to int if str - why? why not??
-       group = desc( m['GroupName'] )
-       rec[:group]  = group   if group
-
-       matchday  = m['MatchDay']
-       rec[:matchday]  = matchday.to_i(10)  if matchday
-
-       num  = m['MatchNumber']
-       rec[:num]  = num   if num
-
-
-
-       dateTime       = parse_date_utc( m['Date'] )
-       localDateTime  = parse_date_utc( m['LocalDate'] )
-
-       if timed
-         ##  pass along as is for now - why? why not
-         ##   note - Date is date_utc and
-         ##      LocalDate is date_local (also in utc BUT different HH:MM or possible day)
-         ## note - also in utc, that is, timezone is Z (not +03:00 or such!!!)
-
-         ## note - use datetime  - why? why not?
-         ##
-         ## note - cut-off/remove seconds
-         rec[:datetime_utc]   = dateTime.strftime( '%Y-%m-%dT%H:%MZ' )
-
-         ## note - use  20:30 UTC+1  or 20:30 UTC-3  for timezone format for now
-         rec[:datetime_local] = _fmt_date_local( dateTime, localDateTime )
-       else
-         rec[:date]      = dateTime.strftime( '%Y-%m-%d' )
-       end
-
-
-
-       team1 =  build_team( m['Home'] )
-       team2 =  build_team( m['Away'] )
-
-       rec[:team1] = team1[:name]
-       rec[:team2] = team2[:name]
-
-
-  #####
-  #  handle score
-  ## m = (full) match hash incl.  IdMatch, etc.
-  ##  returns string e.g.  4-4  or 4-3 a.e.t etc
-
-
-     ### fix - add postponed
-     ##            awarded etc.
-     ##    REGULAR - why? why not?
-     resultType  = m['ResultType']
-
-
-     score = _parse_score( m )
-     rec[:score] = score      unless score.empty?
-
-
-       ## check - never in use?
-       rec[:home]  = true    if m['IsHome']
-
-
-       ## add country to stadium too - why? why not?
-       stadium = build_stadium( m['Stadium'] )
-       rec[:stadium] = {  name:    stadium[:name],
-                          city:    stadium[:city] }
-
-       attendance = m['Attendance']
-       rec[:attendance] = attendance.to_i(10)   if attendance
-
-
+        ## add/fill-up match basic
+       rec = _build_match( m )
 
 
    ### get match (live) details
@@ -154,9 +65,10 @@ def convert( slug:, season:,
 
       live = _read_report( m, report_dir: report_dir )
 
-      if live.nil?
-         puts "warn no match report for #{_report_basename(m)}"
-      end
+
+      ## if live.nil?
+      ##   puts "warn no match report for #{_report_basename(m)}"
+      ## end
 
 
 
@@ -183,6 +95,11 @@ def convert( slug:, season:,
      ## fix-fix-fix  move into _build_report!!
      ## players by team1/team2
      ##  add sent-off (red & yellow-red cards!)
+
+     ##
+     ##  change to sentoff1 and sentoff2
+     ##   use report  (merge red1+yellowred1, red2+yellowred2) !!!
+
      players1 = Players.new
      players1.add( live['HomeTeam']['Players'] )
      players1.add_bookings( live['HomeTeam']['Bookings'])

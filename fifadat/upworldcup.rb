@@ -5,18 +5,16 @@ cache_dir    = '/sports/cache.fifadat'
 convert_dir  = '/sports/cache.api.fifa'
 
 
-name = 'at'
-season = '2025/26'
+name = 'worldcup'
+season = '2026'
 
 Fifa._idSeason_by!( name: name, season: season )
 
 
-=begin
 convert( slug: name,
               season: season,
               indir: cache_dir,
                outdir: convert_dir )
-=end
 
 convert_reports( slug: name,
               season: season,

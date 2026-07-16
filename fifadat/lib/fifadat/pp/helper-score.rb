@@ -13,7 +13,12 @@ def _parse_score( m )
 
   resultType  = m['ResultType']
 
-  score    = [m['HomeTeamScore'], m['AwayTeamScore']].compact
+  score =  if m['HomeTeam'] && m['AwayTeam']  ## assume inside (match) report
+             [m['HomeTeam']['Score'], m['AwayTeam']['Score']].compact
+          else   ## assume (seasons) matches list
+            ## note - report has no "inline/flat" HomeTeamScore/AwayTeamScore
+             [m['HomeTeamScore'], m['AwayTeamScore']].compact
+          end
 
 
    ## is score after extra-time or not?

@@ -143,8 +143,10 @@ require_relative 'fifadat/pp/officials'   ## aka referees
 require_relative 'fifadat/pp/goals'
 require_relative 'fifadat/pp/substitutions'
 
-require_relative 'fifadat/pp/ppconvert'
-require_relative 'fifadat/pp/ppconvert-reports'
 
-require_relative 'fifadat/pp/pphelper'
-require_relative 'fifadat/pp/pphelper-score'
+require_relative 'fifadat/pp/build_report'
+require_relative 'fifadat/pp/convert'
+require_relative 'fifadat/pp/convert-reports'
+
+require_relative 'fifadat/pp/helper'
+require_relative 'fifadat/pp/helper-score'
