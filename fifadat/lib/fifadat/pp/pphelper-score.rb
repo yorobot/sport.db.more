@@ -19,7 +19,9 @@ def _parse_score( m )
    ## is score after extra-time or not?
    ##    note - CANNOT tell for resultType 2!!!
 
-   if !score.empty?
+   if score.empty?
+       ## do nothing
+   else
      if [1,4].include?( resultType )
         ##  1 - regular - 90min
         ##  4 - regular - 90min (on aggregate)
@@ -27,7 +29,7 @@ def _parse_score( m )
      elsif [3,5,8].include?( resultType )
          ## 3 - aet (for sure)
          ## 5 - aet [on aggregate] (for sure)
-         ## 8 -  golden/silver goal in extra time ???
+         ## 8 -  golden goal in extra time  (aet/gg)
         h[:et] = score   ## assume after extra-time !!!
      elsif resultType == 2
          ### note - 2 win on pens
@@ -45,18 +47,21 @@ def _parse_score( m )
      end
     end
 
+
     penScore = [m['HomeTeamPenaltyScore'],  m['AwayTeamPenaltyScore']].compact
     aggScore = [m['AggregateHomeTeamScore'],m['AggregateAwayTeamScore']].compact
 
 
     ## note - worldcup has penScore [0,0] for all matches, for example!!!
-     h[:p]   = penScore   if !penScore.empty? && !penScore == [0,0]
+     if penScore.empty? || penScore == [0,0]
+     else
+        h[:p] = penScore
+     end
+
      h[:agg] = aggScore   if !aggScore.empty?
-
-
      h
-
 end
+
 
 
 

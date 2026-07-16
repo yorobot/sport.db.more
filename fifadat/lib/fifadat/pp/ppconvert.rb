@@ -1,19 +1,13 @@
 
 
 
-##
-##
-##  fix-fix-fix   -- add (shared)     _build_date_local( m )
-##                                         in pphelper-date.rb
-###
-
-
 def convert( slug:, season:,
                 indir: '.',
                 outdir: './tmp' )
 
     season = Season(season)
 
+    ## fix - change data to top or ??? - why? why not?
     data = {}
 
     ## add slug & seasons (add name to be done!!)
@@ -47,6 +41,9 @@ def convert( slug:, season:,
    data[:stadiums] = stadiums.as_json
 
 
+   ## for match-by-match live reports
+   report_dir = "#{indir}/#{slug}/matches/#{season.to_path}"
+
 
    recs = []
    matches.each_with_index do |m, i|
@@ -64,8 +61,13 @@ def convert( slug:, season:,
        status = m['MatchStatus']
        timed  = m['TimeDefined']
 
-       rec[:status] =  status    if status != 0
-       rec[:timed]  =  timed     if status != 0 || timed == false
+
+       if status == 1 && timed    ## note: use TIMED (instead of SCHEDULED)
+          rec[:status] = 'TIMED'
+       else
+          rec[:status] = MATCH_STATUS[ status ] || "#{status}-???"
+       end
+
 
 
 
@@ -85,20 +87,25 @@ def convert( slug:, season:,
 
 
 
-
-       ##  pass along as is for now - why? why not
-       ##   note - Date is date_utc and
-       ##      LocalDate is date_local (also in utc BUT different HH:MM or possible day)
-       ## note - also in utc, that is, timezone is Z (not +03:00 or such!!!)
-
        dateTime       = parse_date_utc( m['Date'] )
        localDateTime  = parse_date_utc( m['LocalDate'] )
 
-       ## note - cut-off/remove seconds
-       rec[:date_utc]   = dateTime.strftime( '%Y-%m-%dT%H:%M%z' )
+       if timed
+         ##  pass along as is for now - why? why not
+         ##   note - Date is date_utc and
+         ##      LocalDate is date_local (also in utc BUT different HH:MM or possible day)
+         ## note - also in utc, that is, timezone is Z (not +03:00 or such!!!)
 
-       ## note - use  20:30 UTC+1  or 20:30 UTC-3  for timezone format for now
-       rec[:date_local] = _fmt_date_local( dateTime, localDateTime )
+         ## note - use datetime  - why? why not?
+         ##
+         ## note - cut-off/remove seconds
+         rec[:datetime_utc]   = dateTime.strftime( '%Y-%m-%dT%H:%MZ' )
+
+         ## note - use  20:30 UTC+1  or 20:30 UTC-3  for timezone format for now
+         rec[:datetime_local] = _fmt_date_local( dateTime, localDateTime )
+       else
+         rec[:date]      = dateTime.strftime( '%Y-%m-%d' )
+       end
 
 
 
@@ -139,39 +146,41 @@ def convert( slug:, season:,
 
 
 
+
    ### get match (live) details
    ###
    ##   check if match report exits
    ##    optional for now!!
 
-   date_str   = localDateTime.strftime('%Y-%m-%d')
-   team1_code = team1[:code]
-   team2_code = team2[:code]
-   idMatch    = m['IdMatch']
+      live = _read_report( m, report_dir: report_dir )
 
-   live_path = "#{indir}/#{slug}/matches/#{season.to_path}/#{date_str}_#{team1_code}-#{team2_code}__#{idMatch}.json"
+      if live.nil?
+         puts "warn no match report for #{_report_basename(m)}"
+      end
 
-   if File.file?( live_path )
 
-     live = read_json_v2( live_path )
 
-     ## all players (for lookup)
-     players = Players.new
-     players.add( live['HomeTeam']['Players'] )
-     players.add( live['AwayTeam']['Players'] )
+   if live
+       ## reuse generated output from report
+        report = _build_report( live )
 
-     ##   add goals
-     ##
-     goals1 = build_goals( live['HomeTeam']['Goals'], players: players )
-     goals2 = build_goals( live['AwayTeam']['Goals'], players: players )
+        goals1 = report[:goals1]
+        goals2 = report[:goals2]
 
-     rec[:goals1] = goals1
-     rec[:goals2] = goals2
+
+       if goals1.empty? && goals2.empty?
+          ## skip if no goals
+       else
+         rec[:goals1] = goals1
+         rec[:goals2] = goals2
+       end
+
 
      ##  add penalties !!!
      ##  fix-fix-fix
 
 
+     ## fix-fix-fix  move into _build_report!!
      ## players by team1/team2
      ##  add sent-off (red & yellow-red cards!)
      players1 = Players.new

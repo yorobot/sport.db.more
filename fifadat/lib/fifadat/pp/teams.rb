@@ -78,10 +78,11 @@ class Teams
 
 
    def as_json( id: false )
+      ## note - always remove code for now
       if id
-        @recs.values
+        @recs.values.map { |rec| rec.except(:code) }
       else
-        @recs.values.map { |rec| rec.except(:id ) }
+        @recs.values.map { |rec| rec.except(:code, :id ) }
       end
    end
 
