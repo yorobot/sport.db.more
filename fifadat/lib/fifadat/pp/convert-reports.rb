@@ -4,6 +4,8 @@
 ##   read & build match report
 
 ## use mk/build_report_basename - why? why not?
+##     fix-fix-fix - change to _match_basename !!!
+##        use by (match)report and (match)timeline !!!
 def _report_basename( m )
       ### get match (live) details
       team1_code = m['Home']['Abbreviation']
@@ -18,6 +20,25 @@ def _report_basename( m )
       basename
 end
 
+
+
+def _read_timeline( m, timeline_dir: )
+      return nil     if m['Home'].nil? || m['Away'].nil?
+
+      basename = _report_basename( m )
+      basename += "__#{m['IdMatch']}"
+
+      path = "#{timeline_dir}/#{basename}.json"
+
+      ## note - skip if no match report available!!!
+      if File.file?( path )
+         timeline = read_json_v2( path )
+         timeline
+      else
+         nil
+      end
+end
+
 def _read_report( m, report_dir: )
       return nil     if m['Home'].nil? || m['Away'].nil?
 
@@ -27,11 +48,11 @@ def _read_report( m, report_dir: )
       basename += "__#{m['IdMatch']}"
 
       ## #{indir}/#{slug}/matches/#{season.to_path}
-      live_path = "#{report_dir}/#{basename}.json"
+      path = "#{report_dir}/#{basename}.json"
 
       ## note - skip if no match report available!!!
-      if File.file?( live_path )
-         live = read_json_v2( live_path )
+      if File.file?( path )
+         live = read_json_v2( path )
          live
       else
          nil
@@ -55,12 +76,18 @@ def convert_reports( slug:, season:,
 
 
    report_dir = "#{indir}/#{slug}/matches/#{season.to_path}"
+   timeline_dir = "#{indir}/#{slug}/timelines/#{season.to_path}"
+
+
 
    matches.each_with_index do |m, i|
-      live = _read_report( m, report_dir: report_dir )
+      live     = _read_report( m, report_dir: report_dir )
 
       ## no report found; continue
       next  if live.nil?
+
+      ## check for optional timeline
+      timeline = _read_timeline( m, timeline_dir: timeline_dir )
 
       rec = {
                meta: {
@@ -70,7 +97,7 @@ def convert_reports( slug:, season:,
                   generated: Time.now.to_s,
                }
             }.merge( _build_match( live ),
-                     _build_report( live ))
+                     _build_report( live, timeline ))
 
 
       ## build basename e.g  2026-07-15_ARG-ENG

@@ -45,6 +45,7 @@ def convert( slug:, season:,
 
    ## for match-by-match live reports
    report_dir = "#{indir}/#{slug}/matches/#{season.to_path}"
+   timeline_dir = "#{indir}/#{slug}/timelines/#{season.to_path}"
 
 
    recs = []
@@ -70,11 +71,11 @@ def convert( slug:, season:,
       ##   puts "warn no match report for #{_report_basename(m)}"
       ## end
 
-
-
    if live
-       ## reuse generated output from report
-        report = _build_report( live )
+      ## check for timeline
+      timeline = _read_timeline( m, timeline_dir: timeline_dir )
+      ## reuse generated output from report
+        report = _build_report( live, timeline )
 
         goals1 = report[:goals1]
         goals2 = report[:goals2]
@@ -88,8 +89,10 @@ def convert( slug:, season:,
        end
 
 
-     ##  add penalties !!!
-     ##  fix-fix-fix
+       #########
+       ##  add penalties
+         penalties = report[:penalties]
+          rec[:penalties] = penalties   if penalties && !penalties.empty?
 
 
       sentoff1 =  (report[:red1]||[]) + (report[:yellowred1]||[])

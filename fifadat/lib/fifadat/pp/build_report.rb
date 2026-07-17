@@ -1,7 +1,7 @@
 
 
 
-def _build_report( live )
+def _build_report( live, timeline=nil )
        rec = {}
 
 ####
@@ -13,6 +13,25 @@ def _build_report( live )
    rec[:goals1] = build_goals( live['HomeTeam']['Goals'], players: players )
    rec[:goals2] = build_goals( live['AwayTeam']['Goals'], players: players )
 
+
+      ##########
+      ##   add penalty kicks / penalties
+      if live['ResultType'] == 2   ## aet, win on pens
+         if timeline.nil?
+            ##
+            team1_code = live['HomeTeam']['Abbreviation']
+            team2_code = live['AwayTeam']['Abbreviation']
+            puts "!! ERROR - no timeline for match #{team1_code} v #{team2_code} with win on penalties!!"
+            exit 1
+         else
+            ### get timeline with penalty shoot-out details
+
+            pens = build_penalties( timeline['Event'], players: players )
+            pp pens
+
+            rec[:penalties] = pens
+         end
+      end
 
 
 ##

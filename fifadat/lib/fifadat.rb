@@ -141,6 +141,7 @@ require_relative 'fifadat/pp/players'
 
 require_relative 'fifadat/pp/officials'   ## aka referees
 require_relative 'fifadat/pp/goals'
+require_relative 'fifadat/pp/penalties'
 require_relative 'fifadat/pp/substitutions'
 
 
