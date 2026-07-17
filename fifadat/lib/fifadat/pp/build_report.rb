@@ -25,8 +25,14 @@ def _build_report( live, timeline=nil )
             exit 1
          else
             ### get timeline with penalty shoot-out details
+            ##     note - requires team1/2_ids!!!
+            team1_id = live['HomeTeam']['IdTeam']
+            team2_id = live['AwayTeam']['IdTeam']
 
-            pens = build_penalties( timeline['Event'], players: players )
+            pens = build_penalties( timeline['Event'],
+                                     players: players,
+                                     team1_id: team1_id,
+                                     team2_id: team2_id )
             pp pens
 
             rec[:penalties] = pens

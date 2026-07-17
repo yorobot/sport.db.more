@@ -8,7 +8,7 @@
 
 MATCH_STATUS = {
   0 => 'FIN',     # finished
-  1 => 'SCHED',   # scheduled
+  1 => 'SCHED',   # scheduled  (with or without time - see timed flag)
   2 => 'LIVE',
 
   ## ???
@@ -76,13 +76,68 @@ RESULT_TYPE = {
 }
 
 
-# GOAL_TYPE = {
-#    1 => 'PENALTY',
-#    2 =>  'REGULAR',
-#    3 =>  'OWN_GOAL',
-# }
+GOAL_TYPE = {
+     1 => 'PENALTY',
+     2 => 'REGULAR',
+     3 => 'OWN_GOAL',
+}
 
 
+PERIOD_TYPE = {
+##   "MatchMinute": "0'",  "1'",  "45'+2'",
+  3   => '1ST_HALF',
+##  "MatchMinute": "46'", "90'+2'",
+  5   => '2ND_HALF',
+##  "MatchMinute": "91'",  "105'+2'",
+  7   => 'EXTRA_TIME_1ST_HALF',
+##   "MatchMinute": "106'", "120'+2'",
+  9   => 'EXTRA_TIME_2ND_HALF',
+##   "MatchMinute": "120'",  "121'",  "122'",  "123'",
+ 11  =>  'PENALTY_SHOOTOUT',
+##     "MatchMinute": "127'", "130'",
+  10  => 'MATCH_END'
+}
+
+=begin
+"MatchMinute": "1'",
+    "Period": 0,  !!!!
+ "MatchMinute": "91'",
+   "Period": 0,   !!!
+=end
+
+
+EVENT_TYPE = {
+  0  => 'Goal!',          ## e.g.  DI MARÍA (Argentina) scores!!
+  1  =>  'Assist',        ## e.g. Assisted by MAC ALLISTER.
+  2  => 'Yellow card',      ## e.g. FERNÁNDEZ (Argentina) is booked by the referee.
+  3  =>  'Red card',         ## e.g. Zinedine ZIDANE (France) is sent off
+
+  5 =>  'Substitution',    ## e.g. ACUÑA (in) comes off the bench to replace DI MARÍA (out) (Argentina)
+  6 => 'Penalty Awarded',
+  7 =>  'Start Time',      ## e.g. The referee signals the start of the first period.
+  8 =>  'End Time',        ## e.g. 'The referee brings the first period to an end.
+
+  12 => 'Attempt at Goal',
+
+  15 => 'Offside',
+  16 => 'Corner',
+  18 => 'Foul',
+  19 =>  'Coin Toss',
+
+  23 => 'Dropped Ball',
+  24 => 'Throw In',
+  25 => 'Clearance',
+  26 => 'Match end',
+  27 => 'Aerial Duel',
+
+  41 => 'Penalty Goal',
+  46 => 'Penalty missed',  ## David TREZEGUET (France) rattles the crossbar from the spot!
+  51 => 'Penalty missed',  ## JULIO CESAR (Brazil) hits the post from the spot!
+  60 => 'Penalty missed',  ## COMAN (France) sees his penalty saved by the goalkeeper.
+  65 => 'Penalty missed',  ## TCHOUAMENI (France) misses from the penalty spot!
+                           ## Michel PLATINI (France) misses from the penalty spot!
+
+}
 
 
 
