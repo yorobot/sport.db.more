@@ -11,12 +11,11 @@ season = '2025/26'
 Fifa._idSeason_by!( name: name, season: season )
 
 
-=begin
+
 convert( slug: name,
               season: season,
               indir: cache_dir,
                outdir: convert_dir )
-=end
 
 convert_reports( slug: name,
               season: season,

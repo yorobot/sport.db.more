@@ -251,10 +251,11 @@ class Players
 
 
          player = @recs[ idPlayer ]
-         assert( player, "booking player not found; sorry- #{b.pretty_inspect}" )
+         assert( player, "booking player not found; sorry - #{b.pretty_inspect}" )
 
            ## note - parse & reformat minute for keep same format
-          minute =   _fmt_minute( *_parse_minute( b['Minute'] ))
+          ## _fmt_minute( *_parse_minute( b['Minute'] ))
+         minute = _build_minute( b )
 
           if card == 1      ## yellow
              player[ :y ] = { minute: minute }

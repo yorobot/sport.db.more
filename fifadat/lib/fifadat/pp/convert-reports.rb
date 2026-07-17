@@ -69,7 +69,8 @@ def convert_reports( slug:, season:,
                   season: season.to_s,
                   generated: Time.now.to_s,
                }
-            }.merge( _build_report( live ))
+            }.merge( _build_match( live ),
+                     _build_report( live ))
 
 
       ## build basename e.g  2026-07-15_ARG-ENG

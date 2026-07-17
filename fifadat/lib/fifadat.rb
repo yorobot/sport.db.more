@@ -144,9 +144,11 @@ require_relative 'fifadat/pp/goals'
 require_relative 'fifadat/pp/substitutions'
 
 
+require_relative 'fifadat/pp/build_match'
 require_relative 'fifadat/pp/build_report'
 require_relative 'fifadat/pp/convert'
 require_relative 'fifadat/pp/convert-reports'
 
-require_relative 'fifadat/pp/helper'
+require_relative 'fifadat/pp/helper-date'
 require_relative 'fifadat/pp/helper-score'
+require_relative 'fifadat/pp/helper-minute'

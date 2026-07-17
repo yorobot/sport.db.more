@@ -11,6 +11,24 @@
       "PlayerOnName": [{"Locale": "en-GB", "Description": "Wataru ENDO"}],
       "Minute": "60'",
       "IdTeam": "1896634"},
+
+  "Period"=>??,
+  "SubstitutePosition"=>2,
+  "IdPlayerOff"=>"403319",
+  "IdPlayerOn"=>"436537",
+  "PlayerOffName"=>[{"Locale"=>"en-GB", "Description"=>"NASSER ALDAWSARI"}],
+  "PlayerOnName"=>[{"Locale"=>"en-GB", "Description"=>"MUSAB ALJUWAYR"}],
+   "Minute"=>"",      ## note - empty string!!
+   "IdTeam"=>"1943992"}
+ ---
+  "Period"=>17,
+   "SubstitutePosition"=>2,
+   "IdPlayerOff"=>"473062",
+   "IdPlayerOn"=>"418961",
+   "PlayerOffName"=>[{"Locale"=>"en-GB", "Description"=>"Emiliano MARTINEZ"}],
+   "PlayerOnName"=>[{"Locale"=>"en-GB", "Description"=>"Anibal MORENO"}],
+    "Minute"=>"",     ## note - empty string!!
+   "IdTeam"=>"1884426"}
 =end
 
 
@@ -18,11 +36,10 @@
 def _build_sub_minute( h )
 
     ## split into minute
-    ##  and offset (stoppage/injury time)
+    ##  and offset (stoppage/injury/added time)
     ##  e.g. 90'+11'
 
      minute_str = h['Minute']
-
 
      ##
      ## check what is "Period"=>4
@@ -33,24 +50,8 @@ def _build_sub_minute( h )
                 minute_str = "46'"
             elsif h['Period'] == 8 ## quick fix - use 116' 1st half-time extra time?
                 minute_str = "116'"
-##  "SubstitutePosition"=>2,
-## "IdPlayerOff"=>"403319",
-## "IdPlayerOn"=>"436537",
-## "PlayerOffName"=>[{"Locale"=>"en-GB", "Description"=>"NASSER ALDAWSARI"}],
-## "PlayerOnName"=>[{"Locale"=>"en-GB", "Description"=>"MUSAB ALJUWAYR"}],
-## "Minute"=>"",
-## "IdTeam"=>"1943992"}
-               elsif h['Period'] == 17  ## quick fix- what is period 17 beyond pens??
+            elsif h['Period'] == 17  ## quick fix- what is period 17 beyond pens??
                 minute_str = "121'"
-
- ##"Period"=>17,
- ## "SubstitutePosition"=>2,
- ## "IdPlayerOff"=>"473062",
- ## "IdPlayerOn"=>"418961",
- ## "PlayerOffName"=>[{"Locale"=>"en-GB", "Description"=>"Emiliano MARTINEZ"}],
- ## "PlayerOnName"=>[{"Locale"=>"en-GB", "Description"=>"Anibal MORENO"}],
- ## "Minute"=>"",
- ## "IdTeam"=>"1884426"}
             else
               puts "!! minute in sub is nil or empty:"
               pp h
@@ -58,9 +59,15 @@ def _build_sub_minute( h )
             end
           end
 
-     minute =   _fmt_minute( *_parse_minute( minute_str ))
-     minute
+     ##  _fmt_minute( *_parse_minute( minute_str ))
+
+     minute, offset  = _parse_minute( minute_str )
+
+     Minute.new( m:      minute,
+                 offset: offset,
+                 period: h['Period'] )
 end
+
 
 
 def build_sub( h, players: )
@@ -99,6 +106,7 @@ __END__
  "PlayerOnName"=>[{"Locale"=>"en-GB", "Description"=>"Jose FAJARDO"}],
  "Minute"=>"",
  "IdTeam"=>"43914"}
+
 !! minute in sub is nil or empty:
 {"IdEvent"=>nil,
  "Period"=>4,
@@ -110,7 +118,8 @@ __END__
  "PlayerOnName"=>[{"Locale"=>"en-GB", "Description"=>"Kojo Peprah OPPONG"}],
  "Minute"=>"",
  "IdTeam"=>"43860"}
-!! minute in sub is nil or empty:
+
+ !! minute in sub is nil or empty:
 {"IdEvent"=>nil,
  "Period"=>4,
  "Reason"=>0,
@@ -121,7 +130,8 @@ __END__
  "PlayerOnName"=>[{"Locale"=>"en-GB", "Description"=>"Abdul FATAWU"}],
  "Minute"=>"",
  "IdTeam"=>"43860"}
-!! minute in sub is nil or empty:
+
+ !! minute in sub is nil or empty:
 {"IdEvent"=>nil,
  "Period"=>4,
  "Reason"=>0,
@@ -132,7 +142,8 @@ __END__
  "PlayerOnName"=>[{"Locale"=>"en-GB", "Description"=>"JOAO NEVES"}],
  "Minute"=>"",
  "IdTeam"=>"43963"}
-!! minute in sub is nil or empty:
+
+ !! minute in sub is nil or empty:
 {"IdEvent"=>nil,
  "Period"=>4,
  "Reason"=>0,
@@ -143,6 +154,7 @@ __END__
  "PlayerOnName"=>[{"Locale"=>"en-GB", "Description"=>"DIOGO DALOT"}],
  "Minute"=>"",
  "IdTeam"=>"43963"}
+
 !! minute in sub is nil or empty:
 {"IdEvent"=>nil,
  "Period"=>4,
@@ -154,6 +166,7 @@ __END__
  "PlayerOnName"=>[{"Locale"=>"en-GB", "Description"=>"Michael Gregoritsch"}],
  "Minute"=>"",
  "IdTeam"=>"43934"}
+
 !! minute in sub is nil or empty:
 {"IdEvent"=>nil,
  "Period"=>4,
@@ -165,6 +178,7 @@ __END__
  "PlayerOnName"=>[{"Locale"=>"en-GB", "Description"=>"Paul WANNER"}],
  "Minute"=>"",
  "IdTeam"=>"43934"}
+
 !! minute in sub is nil or empty:
 {"IdEvent"=>nil,
  "Period"=>4,
@@ -176,6 +190,7 @@ __END__
  "PlayerOnName"=>[{"Locale"=>"en-GB", "Description"=>"Florian GRILLITSCH"}],
  "Minute"=>"",
  "IdTeam"=>"43934"}
+
 !! minute in sub is nil or empty:
 {"IdEvent"=>nil,
  "Period"=>4,
@@ -187,6 +202,7 @@ __END__
  "PlayerOnName"=>[{"Locale"=>"en-GB", "Description"=>"MAHMOUD ALMARDI"}],
  "Minute"=>"",
  "IdTeam"=>"43820"}
+
 !! minute in sub is nil or empty:
 {"IdEvent"=>nil,
  "Period"=>4,
@@ -198,6 +214,7 @@ __END__
  "PlayerOnName"=>[{"Locale"=>"en-GB", "Description"=>"MOUSA ALTAMARI"}],
  "Minute"=>"",
  "IdTeam"=>"43820"}
+
 !! minute in sub is nil or empty:
 {"IdEvent"=>nil,
  "Period"=>4,
@@ -209,6 +226,7 @@ __END__
  "PlayerOnName"=>[{"Locale"=>"en-GB", "Description"=>"Thalente MBATHA"}],
  "Minute"=>"",
  "IdTeam"=>"43883"}
+
 !! minute in sub is nil or empty:
 {"IdEvent"=>nil,
  "Period"=>4,
@@ -220,6 +238,7 @@ __END__
  "PlayerOnName"=>[{"Locale"=>"en-GB", "Description"=>"ENDRICK"}],
  "Minute"=>"",
  "IdTeam"=>"43924"}
+
 !! minute in sub is nil or empty:
 {"IdEvent"=>nil,
  "Period"=>4,
@@ -231,6 +250,7 @@ __END__
  "PlayerOnName"=>[{"Locale"=>"en-GB", "Description"=>"Leon GORETZKA"}],
  "Minute"=>"",
  "IdTeam"=>"43948"}
+
 !! minute in sub is nil or empty:
 {"IdEvent"=>nil,
  "Period"=>17,
@@ -242,7 +262,8 @@ __END__
  "PlayerOnName"=>[{"Locale"=>"en-GB", "Description"=>"Gustavo VELAZQUEZ"}],
  "Minute"=>"",
  "IdTeam"=>"43928"}
-!! minute in sub is nil or empty:
+
+ !! minute in sub is nil or empty:
 {"IdEvent"=>nil,
  "Period"=>4,
  "Reason"=>0,
@@ -253,6 +274,7 @@ __END__
  "PlayerOnName"=>[{"Locale"=>"en-GB", "Description"=>"Yaimar MEDINA"}],
  "Minute"=>"",
  "IdTeam"=>"43927"}
+
 !! minute in sub is nil or empty:
 {"IdEvent"=>nil,
  "Period"=>4,
@@ -264,6 +286,7 @@ __END__
  "PlayerOnName"=>[{"Locale"=>"en-GB", "Description"=>"Angelo PRECIADO"}],
  "Minute"=>"",
  "IdTeam"=>"43927"}
+
 !! minute in sub is nil or empty:
 {"IdEvent"=>nil,
  "Period"=>4,
@@ -275,6 +298,7 @@ __END__
  "PlayerOnName"=>[{"Locale"=>"en-GB", "Description"=>"Romelu LUKAKU"}],
  "Minute"=>"",
  "IdTeam"=>"43935"}
+
 !! minute in sub is nil or empty:
 {"IdEvent"=>nil,
  "Period"=>4,
@@ -286,6 +310,7 @@ __END__
  "PlayerOnName"=>[{"Locale"=>"en-GB", "Description"=>"Florian GRILLITSCH"}],
  "Minute"=>"",
  "IdTeam"=>"43934"}
+
 !! minute in sub is nil or empty:
 {"IdEvent"=>nil,
  "Period"=>4,
@@ -297,6 +322,7 @@ __END__
  "PlayerOnName"=>[{"Locale"=>"en-GB", "Description"=>"Carney CHUKWUEMEKA"}],
  "Minute"=>"",
  "IdTeam"=>"43934"}
+
 !! minute in sub is nil or empty:
 {"IdEvent"=>nil,
  "Period"=>4,
@@ -308,6 +334,7 @@ __END__
  "PlayerOnName"=>[{"Locale"=>"en-GB", "Description"=>"Igor MATANOVIC"}],
  "Minute"=>"",
  "IdTeam"=>"43938"}
+
 !! minute in sub is nil or empty:
 {"IdEvent"=>nil,
  "Period"=>4,
@@ -319,6 +346,7 @@ __END__
  "PlayerOnName"=>[{"Locale"=>"en-GB", "Description"=>"Kai TREWIN"}],
  "Minute"=>"",
  "IdTeam"=>"43976"}
+
 !! minute in sub is nil or empty:
 {"IdEvent"=>nil,
  "Period"=>17,
@@ -330,6 +358,7 @@ __END__
  "PlayerOnName"=>[{"Locale"=>"en-GB", "Description"=>"Awer MABIL"}],
  "Minute"=>"",
  "IdTeam"=>"43976"}
+
 !! minute in sub is nil or empty:
 {"IdEvent"=>nil,
  "Period"=>17,
@@ -341,6 +370,7 @@ __END__
  "PlayerOnName"=>[{"Locale"=>"en-GB", "Description"=>"Paul OKON-ENGSTLER"}],
  "Minute"=>"",
  "IdTeam"=>"43976"}
+
 !! minute in sub is nil or empty:
 {"IdEvent"=>nil,
  "Period"=>8,
@@ -352,6 +382,7 @@ __END__
  "PlayerOnName"=>[{"Locale"=>"en-GB", "Description"=>"HAMZA ABDELKARIM"}],
  "Minute"=>"",
  "IdTeam"=>"43855"}
+
 !! minute in sub is nil or empty:
 {"IdEvent"=>nil,
  "Period"=>4,
@@ -363,6 +394,7 @@ __END__
  "PlayerOnName"=>[{"Locale"=>"en-GB", "Description"=>"Richard RIOS"}],
  "Minute"=>"",
  "IdTeam"=>"43926"}
+
 !! minute in sub is nil or empty:
 {"IdEvent"=>nil,
  "Period"=>4,
@@ -374,6 +406,7 @@ __END__
  "PlayerOnName"=>[{"Locale"=>"en-GB", "Description"=>"Andreas SCHJELDERUP"}],
  "Minute"=>"",
  "IdTeam"=>"43961"}
+
 !! minute in sub is nil or empty:
 {"IdEvent"=>nil,
  "Period"=>4,
@@ -385,6 +418,7 @@ __END__
  "PlayerOnName"=>[{"Locale"=>"en-GB", "Description"=>"Oscar BOBB"}],
  "Minute"=>"",
  "IdTeam"=>"43961"}
+
 !! minute in sub is nil or empty:
 {"IdEvent"=>nil,
  "Period"=>4,
@@ -396,6 +430,7 @@ __END__
  "PlayerOnName"=>[{"Locale"=>"en-GB", "Description"=>"Edson ALVAREZ"}],
  "Minute"=>"",
  "IdTeam"=>"43911"}
+
 !! minute in sub is nil or empty:
 {"IdEvent"=>nil,
  "Period"=>4,

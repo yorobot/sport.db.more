@@ -92,27 +92,17 @@ def convert( slug:, season:,
      ##  fix-fix-fix
 
 
-     ## fix-fix-fix  move into _build_report!!
-     ## players by team1/team2
-     ##  add sent-off (red & yellow-red cards!)
+      sentoff1 =  (report[:red1]||[]) + (report[:yellowred1]||[])
+      sentoff2 =  (report[:red2]||[]) + (report[:yellowred2]||[])
 
-     ##
-     ##  change to sentoff1 and sentoff2
-     ##   use report  (merge red1+yellowred1, red2+yellowred2) !!!
+      ## sort by minute
+      sentoff1 = sentoff1.sort { |l,r|  l[:minute] <=> r[:minute] }
+      sentoff2 = sentoff2.sort { |l,r|  l[:minute] <=> r[:minute] }
 
-     players1 = Players.new
-     players1.add( live['HomeTeam']['Players'] )
-     players1.add_bookings( live['HomeTeam']['Bookings'])
-
-     players2 = Players.new
-     players2.add( live['AwayTeam']['Players'] )
-     players2.add_bookings( live['AwayTeam']['Bookings'])
-
-     reds1 = players1.sentoff
-     reds2 = players2.sentoff
-     rec[:reds1] = reds1    unless reds1.empty?
-     rec[:reds2] = reds2    unless reds2.empty?
+     rec[:sentoff1] = sentoff1    unless sentoff1.empty?
+     rec[:sentoff2] = sentoff2    unless sentoff2.empty?
  end
+
 
 
 =begin
@@ -137,7 +127,7 @@ def convert( slug:, season:,
 ##  add referees
     officials = build_officials( m['Officials'], id: false )
 
-    if officials.size == 0
+    if officials.empty?
        ## puts "!! WARN no refs / officials found"
     else
          rec[:referees] = officials

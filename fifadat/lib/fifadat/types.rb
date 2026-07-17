@@ -76,6 +76,15 @@ RESULT_TYPE = {
 }
 
 
+# GOAL_TYPE = {
+#    1 => 'PENALTY',
+#    2 =>  'REGULAR',
+#    3 =>  'OWN_GOAL',
+# }
+
+
+
+
 
 =begin
 
