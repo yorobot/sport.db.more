@@ -1,8 +1,45 @@
 
 
+def _build_report_score( live, timeline=nil )
+
+    _scores = _build_score_from_goals( live )
+
+
+    score = nil
+
+     case live['ResultType']
+     when 1,4
+         ## 1 => 'REGULAR',
+         ## 4 => 'REGULAR/AGG',  ##  aggregate (1st/2nd leg) - regular
+        ## add ht
+        ##  assert ft match
+        score      = {  ht: _scores[:ht][:score],
+                         ft: _scores[:ft][:score]
+                      }
+     when 3,5,8
+       score       = {   ht: _scores[:ht][:score],
+                         ft: _scores[:ft][:score],
+                         et: _scores[:et][:score],
+                      }
+     when 2
+        ##  todo/fix - pull in timeline check too to check
+        ##     if any events recorded for extra time!!
+        score      = {   ht: _scores[:ht][:score],
+                         ft: _scores[:ft][:score],
+                      }
+
+        ## note - only incl. extra-time (et) if a goal scored in extra time
+        score[:et] = _scores[:et][:score]   unless _scores[:et][:minutes].empty?
+     end
+
+     score
+end
+
+
 
 def _build_report( live, timeline=nil )
        rec = {}
+
 
 ####
 ##  add goals

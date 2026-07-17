@@ -10,6 +10,13 @@ season = '2026'
 
 Fifa._idSeason_by!( name: name, season: season )
 
+prepare_reports( name: name,
+                 season: season,
+                 outdir: cache_dir,
+               )
+
+
+
 
 convert( slug: name,
               season: season,

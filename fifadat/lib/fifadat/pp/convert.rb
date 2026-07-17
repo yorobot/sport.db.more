@@ -77,6 +77,14 @@ def convert( slug:, season:,
       ## reuse generated output from report
         report = _build_report( live, timeline )
 
+        ## try  update of score via goals from (match) report
+        score_more =  _build_report_score( live, timeline )
+        if score_more
+           rec[:score] = rec[:score].merge( score_more )
+        end
+
+
+
         goals1 = report[:goals1]
         goals2 = report[:goals2]
 
@@ -86,6 +94,9 @@ def convert( slug:, season:,
        else
          rec[:goals1] = goals1
          rec[:goals2] = goals2
+
+
+
        end
 
 

@@ -35,6 +35,7 @@ def _parse_score( m )
          ## 3 - aet (for sure)
          ## 5 - aet [on aggregate] (for sure)
          ## 8 -  golden goal in extra time  (aet/gg)
+         ##   fix/fix/fix  - add gold_goal flag for 8!!!
         h[:et] = score   ## assume after extra-time !!!
      elsif resultType == 2
          ### note - 2 win on pens

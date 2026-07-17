@@ -99,6 +99,12 @@ def convert_reports( slug:, season:,
             }.merge( _build_match( live ),
                      _build_report( live, timeline ))
 
+      ## try  update of score via goals from report
+      score_more =  _build_report_score( live, timeline )
+      if score_more
+           rec[:score] = rec[:score].merge( score_more )
+      end
+
 
       ## build basename e.g  2026-07-15_ARG-ENG
       basename = _report_basename( m )
