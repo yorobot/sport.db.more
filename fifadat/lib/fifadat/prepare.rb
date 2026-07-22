@@ -6,7 +6,8 @@
 
 def prepare( name:,
              season:,
-             outdir: '.' )
+             outdir: '.',
+             force: false )
 
  ###
  ### rename name to slug or such
@@ -19,14 +20,14 @@ def prepare( name:,
     idSeason = Fifa._idSeason_by!( name: name, season: season )
 
     fetch_json_if( Fifa::Metal.matches_url( idSeason: idSeason ),
-                "#{outdir}/#{name}/#{season.to_path}_matches.json" )
+                "#{outdir}/#{name}/#{season.to_path}_matches.json", force: force )
 
     fetch_json_if( Fifa::Metal.stages_url( idSeason: idSeason ),
-               "#{outdir}/#{name}/misc/#{season.to_path}_stages.json" )
+               "#{outdir}/#{name}/misc/#{season.to_path}_stages.json", force: force )
 
     fetch_json_if( Fifa::Metal.squads_url( idCompetition: idComp,
                                          idSeason:      idSeason ),
-               "#{outdir}/#{name}/misc/#{season.to_path}_squads.json" )
+               "#{outdir}/#{name}/misc/#{season.to_path}_squads.json", force: force )
 
 end
 
@@ -34,7 +35,8 @@ end
 
 def prepare_reports( name:,
                      season:,
-                     outdir: '.' )
+                     outdir: '.',
+                     force: false )
 
   ## download match reports (via live/football)
     season = Season(season)
@@ -93,13 +95,13 @@ def prepare_reports( name:,
                                   idStage:       idStage,
                                  idMatch:       idMatch )
 
-      fetch_json_if( url, outpath )
+      fetch_json_if( url, outpath, force: force )
 
 
       ###
       ##   add timeline (only)  if score incl. penalty shoot-out
       resultType = m['ResultType']
-      if resultType == 2 ## aet, win on pens
+      if resultType == 2 ## (aet??) win on pens
 
         ## download timeline
         outpath = "#{outdir}/#{name}/timelines/#{season.to_path}/#{localDateTime.strftime('%Y-%m-%d')}_#{teamCode1}-#{teamCode2}__#{idMatch}.json"
@@ -109,7 +111,7 @@ def prepare_reports( name:,
                                 idStage:       idStage,
                                 idMatch:       idMatch )
 
-       fetch_json_if( url, outpath )
+       fetch_json_if( url, outpath, force: force )
     end
   end
 end

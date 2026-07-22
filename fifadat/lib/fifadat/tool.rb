@@ -1,14 +1,19 @@
 
-require_relative './lib/fifadat'
+
+module Fifadat
+
+def self.main( args=ARGV )
 
 
-
-args = ARGV
 opts = {
-  cached: false,
-  season: nil,
-  file:   nil,
-  lint:   false,
+  season:  nil,
+  file:    nil,
+  force:   false,
+  offline: false,
+  reports: true,
+
+  cache_dir:    '/sports/cache.fifadat',
+  convert_dir:  '/sports/cache.api.fifa',
 }
 
 
@@ -22,19 +27,27 @@ parser.banner = "Usage: #{$PROGRAM_NAME} [options] NAME"
 
 
   parser.on( "--cache", "--cached", "--offline",
-               "use cached data in #{'??'} - default is (#{opts[:cached]})" ) do |cached|
-    opts[:cached] = cached
+               "always (and only) use cached data in >#{opts[:cache_dir]}< - default is (#{opts[:offline]})" ) do |offline|
+    opts[:offline] = offline
   end
+
+  parser.on( "--force",
+               "always (force) download fresh copy & overwrite - default is (#{opts[:force]})" ) do |force|
+    opts[:force] = force
+  end
+
+  parser.on( "--[no-]reports",
+               "incl. one-by-one (detailed) match reports - default is (#{opts[:reports]})" ) do |reports|
+    opts[:reports] = reports
+  end
+
+
 
   parser.on( "-f FILE", "--file FILE",
                 "read leagues (and seasons) via .csv file") do |file|
     opts[:file] = file
   end
 
-  parser.on( "--lint",
-               "turn on lint (debug) mode - default is (#{opts[:lint]})" ) do |lint|
-    opts[:lint] = lint
-  end
 
 
 end
@@ -47,8 +60,8 @@ puts "ARGV:"
 pp args
 
 
-cache_dir    = '/sports/cache.fifadat'
-convert_dir  = '/sports/cache.api.fifa'
+cache_dir    = opts[:cache_dir]
+convert_dir  = opts[:convert_dir]
 
 
 
@@ -59,10 +72,16 @@ else
   ## otherwise
   ##   build rec(ord)s from scratch (from command-line args)
   if args.size == 0
-    puts " NAME argument required; use:"
-    pp Fifa::COMPETITION_ID.keys
+    puts " NAME argument (plus season opt) required; use:"
+    Fifa::CODES.each do |code, h|
+        idCompetition = h[:idCompetition]
+        comp = Fifa::COMPETITIONS[idCompetition]
+        seasons = comp.values.map { |c| c[:season] }
+        puts "  #{code}   (#{seasons.size}) #{seasons.join(',')}"
+    end
     exit 1
   end
+
 
   ##
   ## note - all args other than first ignored for now; issue warn - why? why not?
@@ -75,52 +94,30 @@ end
 pp recs
 
 
-if opts[:lint]
+   ################
+   ## step 0) validate slugs & seasons
    recs.each do |rec|
       slug   =  rec['league']
       seasons = Season.parse_line( rec['seasons'] )
       seasons.each do |season|
-        ###
-        ## add debug
-
-
-       data =  read_json( "#{indir}/#{slug}/#{season.to_path}_matches.json" )
-
-
-        page = String.new
-        page << "= #{slug} #{season}\n"
-        page << "#  generated on #{Time.now}\n"
-        page <<  "\n"
-
-        buf = pp_debug( slug: slug, season: season,
-                    indir: cache_dir )
-
-        page << buf
-        puts page
-
-        outpath =  "#{convert_dir}/#{season.to_path}_#{slug}-debug.txt"
-
-        ## write_text( outpath, page )
-        ## puts "  written to >#{outpath}<"
+        pp  Fifa._idSeason_by!( name: slug, season: season )
       end
     end
-else
 
-   ## add
-   ## step 0) validate slugs & seasons
 
-   ## step 1a) prepare
+  if opts[:offline] == false
+    ## step 1a) prepare
    recs.each do |rec|
       slug   =  rec['league']
       seasons = Season.parse_line( rec['seasons'] )
       seasons.each do |season|
-
-        pp  Fifa._idSeason_by!( name: slug, season: season )
 
         prepare( name:    slug,
                  season:  season,
-                 outdir:  cache_dir )    ## note - autoadd slug (name) e..g ./eng !!
+                 outdir:  cache_dir,
+                 force: opts[:force] )    ## note - autoadd slug (name) e..g ./eng !!
 
+=begin
         ###
         ## add debug
         page = String.new
@@ -138,20 +135,27 @@ else
 
         write_text( outpath, page )
         puts "  written to >#{outpath}<"
+=end
       end
     end
 
-    ## step 1b) prepare details
-    recs.each do |rec|
-      slug   =  rec['league']
-      seasons = Season.parse_line( rec['seasons'] )
-      seasons.each do |season|
-        ## match (reports) one-by-one
-        prepare_reports( name:    slug,
+    if opts[:reports]
+      ## step 1b) prepare details
+      recs.each do |rec|
+        slug   =  rec['league']
+        seasons = Season.parse_line( rec['seasons'] )
+        seasons.each do |season|
+          ## match (reports) one-by-one
+          prepare_reports( name:    slug,
                          season:  season,
-                         outdir:  cache_dir )    ## note - autoadd slug (name) e..g ./eng !!
+                         outdir:  cache_dir,    ## note - autoadd slug (name) e..g ./eng !!
+                         force: opts[:force] )
+        end
       end
-    end
+    end # if reports
+  end  ## if online (offline==false)
+
+
 
 
    ## step 2) convert
@@ -171,6 +175,10 @@ else
                                      outdir: convert_dir )
       end
    end
-end
 
 puts "bye"
+
+end
+
+
+end  # module Fifadat

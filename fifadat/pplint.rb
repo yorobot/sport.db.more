@@ -33,3 +33,37 @@ end
 
 
 puts "bye"
+
+__END__
+
+
+if opts[:lint]
+   recs.each do |rec|
+      slug   =  rec['league']
+      seasons = Season.parse_line( rec['seasons'] )
+      seasons.each do |season|
+        ###
+        ## add debug
+
+
+       data =  read_json( "#{indir}/#{slug}/#{season.to_path}_matches.json" )
+
+
+        page = String.new
+        page << "= #{slug} #{season}\n"
+        page << "#  generated on #{Time.now}\n"
+        page <<  "\n"
+
+        buf = pp_debug( slug: slug, season: season,
+                    indir: cache_dir )
+
+        page << buf
+        puts page
+
+        outpath =  "#{convert_dir}/#{season.to_path}_#{slug}-debug.txt"
+
+        ## write_text( outpath, page )
+        ## puts "  written to >#{outpath}<"
+      end
+    end
+else

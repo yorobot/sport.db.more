@@ -5,7 +5,7 @@ cache_dir    = '/sports/cache.fifadat'
 convert_dir  = '/sports/cache.api.fifa'
 
 
-name = 'worldcup'
+name   = 'worldcup'
 season = '2026'
 
 Fifa._idSeason_by!( name: name, season: season )

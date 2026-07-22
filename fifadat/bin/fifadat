@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+## tip: to test run:
+##   ruby -I ./lib bin/fifadat
+
+
+##
+## note - always use latest (local) if present
+$LOAD_PATH.unshift( '/sports/yorobot/sport.db.more/fifadat/lib' )
+
+require 'fifadat'
+
+
+Fifadat.main( ARGV )
