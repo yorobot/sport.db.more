@@ -70,7 +70,7 @@ def _build_report( live, timeline=nil )
                                      players: players,
                                      team1_id: team1_id,
                                      team2_id: team2_id )
-            pp pens
+            ## pp pens
 
             rec[:penalties] = pens
          end

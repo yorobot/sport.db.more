@@ -4,11 +4,6 @@ class Fifa
 ##  read config
 ##     add to (hash) table indexed by idComp
 
-  def self.root
-     ## sport.db.more/fifadat/lib
-    File.expand_path( (File.dirname(File.dirname(__FILE__))) )
-  end
-
 
   def self.read_seasons( *paths )
     comps = {}
@@ -42,7 +37,7 @@ class Fifa
   end
 
 
-   COMPETITIONS = read_seasons( *Dir.glob( "#{root}/fifadat/config/seasons/**/*.csv"))
+   COMPETITIONS = read_seasons( *Dir.glob( "#{Fifadat.root}/config/seasons/**/*.csv"))
    ## pp COMPETITIONS
 
 
@@ -84,9 +79,9 @@ def self.read_codes( *paths )
 
 
  ## code (slugs) mappings for competitions
-   CODES = read_codes( "#{root}/fifadat/config/codes_nati.csv",
-                       "#{root}/fifadat/config/codes_club.csv",
-                       "#{root}/fifadat/config/codes_club-europe.csv",
+   CODES = read_codes( "#{Fifadat.root}/config/codes_nati.csv",
+                       "#{Fifadat.root}/config/codes_club.csv",
+                       "#{Fifadat.root}/config/codes_club-europe.csv",
                               )
    ## pp CODES
 

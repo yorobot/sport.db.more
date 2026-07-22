@@ -31,11 +31,11 @@ def errata_autofix_goal( h )
    if h['Period']     ==  2 &&
       h['IdPlayer'] == '448362' &&         ##
       h['IdTeam']   == '43935'             ## Belgium
-         h['Period']  = 3    ## 1ST_HALF
-         h['Minute']  = "9'"
-
          puts "-- ERRATA - autofix goal  USA v Belgium / Worldcup"
          pp h
+
+         h['Period']  = 3    ## 1ST_HALF
+         h['Minute']  = "9'"
    end
 
    h

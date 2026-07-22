@@ -12,6 +12,7 @@ require_relative 'fifadat/json'    ## read_json_v2, fetch_json, fetch_json_if, e
 
 ###
 ##  our own code
+require_relative 'fifadat/version'
 
 require_relative 'fifadat/api-config'  ## base
 require_relative 'fifadat/api'  ## base
@@ -52,3 +53,7 @@ require_relative 'fifadat/pp/helper-minute'
 
 
 require_relative 'fifadat/tool'      ## fifadat command-line tool
+
+
+
+puts Fifadat.banner  ## say hello
