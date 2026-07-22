@@ -9,23 +9,64 @@ pp datafiles
 puts "  #{datafiles.size} datafile(s)"
 
 
+totals = mk_stats()
+
 datafiles.each_with_index do |path,i|
   puts "==> reading #{i+1}/#{datafiles.size} #{path}..."
   data = read_json_v2( path )
 
-  matches = data['Results']
-  matches.each do |m|
-    matchStatus = m['MatchStatus']
-    resultType  = m['ResultType']
+   stats = mk_stats()
+   collect_stats( data, stats: stats )
+   collect_stats( data, stats: totals )
 
-    if ![0,1].include?(matchStatus) ||
-       ![0,1,2,3,4,5].include?(resultType)
-       buf = pp_match( m, season: true )   ### use format: 'long' or such?
-       puts buf
-    end
-  end
+
+   ## print some stats
+   pp stats.except(  'Leg', 'IsHomeMatch' )
+   ## puts " MatchStatus: #{stats['MatchStatus'].pretty_inspect}, "+
+   ##     "TimeDefined: #{stats['TimeDefined'].pretty_inspect}"
+   ## puts " ResultType: #{stats['ResultType'].pretty_inspect}"
+
 end
 
 
+puts
+pp totals
 
 puts "bye"
+
+
+
+
+__END__
+
+
+if opts[:lint]
+   recs.each do |rec|
+      slug   =  rec['league']
+      seasons = Season.parse_line( rec['seasons'] )
+      seasons.each do |season|
+        ###
+        ## add debug
+
+
+       data =  read_json( "#{indir}/#{slug}/#{season.to_path}_matches.json" )
+
+
+        page = String.new
+        page << "= #{slug} #{season}\n"
+        page << "#  generated on #{Time.now}\n"
+        page <<  "\n"
+
+        buf = pp_debug( slug: slug, season: season,
+                    indir: cache_dir )
+
+        page << buf
+        puts page
+
+        outpath =  "#{convert_dir}/#{season.to_path}_#{slug}-debug.txt"
+
+        ## write_text( outpath, page )
+        ## puts "  written to >#{outpath}<"
+      end
+    end
+else

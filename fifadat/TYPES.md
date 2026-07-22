@@ -33,6 +33,8 @@ matchStatus = 7			->			postponed
 matchStatus = 8			->			cancelled
 matchStatus = 12		->			lineups
 matchStatus = 0			->			full time
+
+
 period = 4				->			half time
 period = 6 				->			extra time
 period = 8				->			extra half time
@@ -41,64 +43,6 @@ period = 10				->			full time
 
 match-lineup	->			matchStatus = 12 and length of 'Players' array in of EVENTS URL > 11 for HomeTeam and AwayTeam
 match-fulltime	->			matchStatus = 0 / 4 / 8
-
-
-note -  Only MatchStatus is not sufficient to find the current state of the match. You need another variable known as Period. This int has five known values viz.,
-
- 4 - ‘half time’
- 6 - ‘extra time’
- 8, - ‘extra half time’
- 10 - ‘full time’
- 11 - ‘penalty shootouts’
-
-So end of the match is detected as — if(MatchStatus == 0 && Period == 10)
-
-
-- [ ] try to decipher period values
-         3  - 1st half    (1'-45' or 45'+7')  -- 0' possible!!
-         5  - 2nd half    (46'-90' or 90'+5')
-         7  - extra time  (91'-105' or 105'+1')
-         9  - 2nd half extra time (106'-120' or 120'+1')
-         11 - penalty shoot-out  (121'-)
-
-
-         0  - ??    91'
-         4  - ??     45'+1'
-         8  - ??   105' or 106'
-
-
-
-
----
-match period:
-
-ai suggests:  This field is much easier because FIFA uses it consistently.
-
-Value	Meaning
-0	Before kickoff
-1	1st Half
-2	Half-time
-3	2nd Half
-4	End of Normal Time
-
-5	ET 1st Half
-6	ET Half-time
-7	ET 2nd Half
-8	End of Extra Time
-
-9	Penalty Shootout
-10	End of Penalties
-
-Some feeds expose this as strings instead
-(1H, HALF, 2H, END-REG,
- ET 1H, HALF-ET, ET 2H, END-ET,
- PENS, END-PENS
-).
-
-
-
-
-
 
 
  ResultType
@@ -147,43 +91,6 @@ guess by google ai
 6: Golden Goal (Older tournament formats)
 7: Silver Goal (Older tournament formats)
 
-
-
----
-
-
-
- TeamType
-            0 => club
-            1 => nati(onal) team
- AgeType
-    0 =>  ??
-    1 =>   U17     U-17 World Cup / U17 National Team Friendlies
-                    MLS Generation Cup U17
-    2 =>   U18     U18 National Team Friendlies
-                       U18 Premier League Cup
-    3 =>   U19     U19 Championship Qualification
-    4 =>   U20     U-20 World Cup / CONMEBOL U20
-
-    5 =>  ??        Olympic Football Tournament / Olympics Intercontinental Play-offs /
-                    AFC U23 Asian Cup
-
-   10 =>   U15     U15 National Team Friendlies
-                   MLS Generation Cup U15
-   11 =>   U16     U16 National Team Friendlies
-   12 =>   U21     U21 Championship / Tournoi Maurice Revello /
-                      U21 National Team Friendlies
-                      Premier League 2
-
-   14 =>   ?? U23     U23 National Team Friendlies /  Asian Games
-
- FootballType
-            0 => "classic"
-            1 =>  Futsal
-            2 => Beach Soccer
-  Gender
-            1 => m
-            2 => f
 
 
 ```

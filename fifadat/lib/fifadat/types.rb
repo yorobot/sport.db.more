@@ -7,16 +7,16 @@
 
 
 MATCH_STATUS = {
-  0 => 'FIN',     # finished
+  0 => 'END',     # finished
   1 => 'SCHED',   # scheduled  (with or without time - see timed flag)
   2 => 'LIVE',
 
   ## ???
 
-  7 => 'POSTPONED',  # postponed
+  7 => 'POSTPONED',  # postponed  - use PPD ??
 
   9 => 'AWD',    #  awarded !!!
-                 #    check if 9/0   is possibly cancelled/annulled (if no score)
+                 #    check if 9/0   is possibly cancelled/annulled/walkover (if no score)
                  #             9/12 (AWD 3-0 or such)
 
 }
@@ -61,18 +61,19 @@ RESULT_TYPE = {
   ##    is  after extra-time!!!
   ##      used many times in copa libertadores
   ##       check gold cup too
-  2 => 'AET_WIN_ON_PENS',  ## or REG_WIN_ON_PENS or AGG_WIN_ON_PENS !!!!!!
+  ##   change to WIN_ON_PENS only - why? why not?
+  2 => 'WIN_ON_PENS',    ## AET_WIN_ON_PENS or REG_WIN_ON_PENS or AGG_WIN_ON_PENS !!!!!!
   3 => 'AET',
   ##
   ## note - agg - used for 1st & 2nd leg
   4 => 'REGULAR/AGG',  ##  aggregate (1st/2nd leg) - regular
   5 => 'AET/AGG',      ##   aggregate  - after extra-time
   ## e.g.
-  ## 2nd LegFeb 25, 2026 Juventus 3–2 (AET) Galatasaray
+  ## 2nd Leg Feb 25, 2026 Juventus 3–2 (AET) Galatasaray
   ##
   8 => 'AET/GG',   ## after extra-time/golden goal !!!
 
-  12 => 'AWD',  ## AWARDED
+  12 => 'AWD',  ## AWARDED  or ???
 }
 
 
@@ -83,19 +84,19 @@ GOAL_TYPE = {
 }
 
 
+## use PERIOD only - why? why not?
 PERIOD_TYPE = {
-##   "MatchMinute": "0'",  "1'",  "45'+2'",
-  3   => '1ST_HALF',
-##  "MatchMinute": "46'", "90'+2'",
-  5   => '2ND_HALF',
-##  "MatchMinute": "91'",  "105'+2'",
-  7   => 'EXTRA_TIME_1ST_HALF',
-##   "MatchMinute": "106'", "120'+2'",
+  3   => '1ST_HALF',            ##   "MatchMinute": "0'",  "1'",  "45'+2'",
+  4   => 'HALF',                ##   "MatchMinute": "46'", "90'+2'",
+  5   => '2ND_HALF',            ##  "MatchMinute": "91'",  "105'+2'",
+  6   => 'EXTRA_TIME',          ## or end of regular time??
+  7   => 'EXTRA_TIME_1ST_HALF', ##   "MatchMinute": "106'", "120'+2'",
+  8   => 'EXTRA_TIME_HALF',
   9   => 'EXTRA_TIME_2ND_HALF',
-##   "MatchMinute": "120'",  "121'",  "122'",  "123'",
- 11  =>  'PENALTY_SHOOTOUT',
-##     "MatchMinute": "127'", "130'",
-  10  => 'MATCH_END'
+  10  => 'END',                 ## or use MATCH_END ???
+                                ## (generic incl. optional extra time and/or penalty shootout)
+  11  => 'PENALTY_SHOOTOUT',    ##   "MatchMinute": "120'",  "121'",  "122'",  "123'",
+                                ##     "MatchMinute": "127'", "130'",
 }
 
 =begin
@@ -141,7 +142,42 @@ EVENT_TYPE = {
 
 
 
-=begin
+__END__
+
+
+
+ TeamType
+            0 => club
+            1 => nati(onal) team
+ AgeType
+    0 =>  ??
+    1 =>   U17     U-17 World Cup / U17 National Team Friendlies
+                    MLS Generation Cup U17
+    2 =>   U18     U18 National Team Friendlies
+                       U18 Premier League Cup
+    3 =>   U19     U19 Championship Qualification
+    4 =>   U20     U-20 World Cup / CONMEBOL U20
+
+    5 =>  ??        Olympic Football Tournament / Olympics Intercontinental Play-offs /
+                    AFC U23 Asian Cup
+
+   10 =>   U15     U15 National Team Friendlies
+                   MLS Generation Cup U15
+   11 =>   U16     U16 National Team Friendlies
+   12 =>   U21     U21 Championship / Tournoi Maurice Revello /
+                      U21 National Team Friendlies
+                      Premier League 2
+
+   14 =>   ?? U23     U23 National Team Friendlies /  Asian Games
+
+ FootballType
+            0 => "classic"
+            1 =>  Futsal
+            2 => Beach Soccer
+  Gender
+            1 => m
+            2 => f
+
 
 note - matchStatus  for 12-AWD should also be 9-AWD!!!
 

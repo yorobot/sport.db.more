@@ -21,6 +21,7 @@ require_relative 'fifadat/prepare'   ## "all-in-one" prepare (download cache) he
 
 require_relative 'fifadat/ppdebug'
 require_relative 'fifadat/ppmatch'
+require_relative 'fifadat/ppstats'
 
 require_relative 'fifadat/types'
 require_relative 'fifadat/errata'
