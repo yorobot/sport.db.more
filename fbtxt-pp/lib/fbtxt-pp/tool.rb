@@ -1,8 +1,4 @@
 
-require_relative './lib/fbtxt-pp'    ## fbtxtpp -or- fbpp
-require_relative 'config'
-
-
 
 
 module Fbpp       ## or use (alternate) Fbtxtpp - why? why not?

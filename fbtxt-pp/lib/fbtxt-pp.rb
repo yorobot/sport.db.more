@@ -20,3 +20,7 @@ require_relative 'fbtxt-pp/pp/ppmatch_min'
 require_relative 'fbtxt-pp/pp/pppenalties'
 require_relative 'fbtxt-pp/pp/pplineup'
 require_relative 'fbtxt-pp/pp/ppsquads'
+
+
+require_relative 'fbtxt-pp/config'
+require_relative 'fbtxt-pp/tool'

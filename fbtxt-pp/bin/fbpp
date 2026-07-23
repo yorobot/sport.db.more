@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+## tip: to test run:
+##   ruby -I ./lib bin/fbpp
+
+
+##
+## note - always use latest (local) if present
+$LOAD_PATH.unshift( '/sports/yorobot/sport.db.more/fbtxt-pp/lib' )
+
+require 'fbtxt-pp'
+
+
+Fbpp.main( ARGV )
