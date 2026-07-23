@@ -1,17 +1,24 @@
 
-require_relative './lib/fbtxt-pp'
+require_relative './lib/fbtxt-pp'    ## fbtxtpp -or- fbpp
 require_relative 'config'
 
 
 
-args = ARGV
+
+module Fbpp       ## or use (alternate) Fbtxtpp - why? why not?
+
+def self.main( args=ARGV )
+
+
+
 opts = {
     full:    false,  ## incl. line-ups, penalties, referees, etc.
-    minimal: false,  ## no dates, no venues, no goals, no half-time score, etc.
+    min:     false,  ## (minimal) no dates, no venues, no goals, no half-time score, etc.
+
     season:  nil,
+    ## use/rename to cache_dir - why? why not?
+    convert_dir:  '/sports/cache.api.fifa',
 }
-
-
 
 
 
@@ -23,7 +30,7 @@ parser.banner = "Usage: #{$PROGRAM_NAME} [options] NAME"
      opts[:full] = true
    end
 
-   parser.on( "--min",
+   parser.on( "--min", "--minimal",
                "turn on min(imal) mode (default: #{opts[:min]})" ) do |min|
      opts[:min] = true
    end
@@ -61,17 +68,15 @@ seasons = opts[:season] ?  [opts[:season]] : config[:seasons]
 
 
 ## outdir = "../../openfootball/clubworldcup"
-outdir = "."
+## outdir = "."
 
+outdir = "./tmp"
 
 
 seasons.each do |season|
 
     name =  config[:name].is_a?(Proc) ? config[:name].call( season )
                                       : config[:name]
-
-    outname = config[:outname].is_a?(Proc) ? config[:outname].call( season )
-                                           : config[:outname]
 
 
     page = String.new
@@ -80,13 +85,17 @@ seasons.each do |season|
 
     buf = if opts[:full]
               pp_matches_full( slug: slug, season: season,
-                                **config[:opts_full] )
+                               indir: opts[:convert_dir],
+                                **config[:opts_full],
+                                 )
           elsif opts[:min]
               pp_matches_min( slug: slug, season: season,
+                               indir: opts[:convert_dir],
                                  **config[:opts] )
           else
                pp_matches( slug: slug, season: season,
-                             **config[:opts] )
+                               indir: opts[:convert_dir],
+                                **config[:opts] )
           end
 
     page << buf
@@ -94,11 +103,11 @@ seasons.each do |season|
     puts page
 
     outpath = if opts[:full]
-                 "#{outdir}/more/#{season}_#{outname}-full.txt"
+                 "#{outdir}/more/#{season}_#{slug}-full.txt"
               elsif opts[:min]
-                 "#{outdir}/min/#{season}_#{outname}.txt"
+                 "#{outdir}/min/#{season}_#{slug}.txt"
               else
-                 "#{outdir}/more/#{season}_#{outname}.txt"
+                 "#{outdir}/more/#{season}_#{slug}.txt"
               end
 
     write_text( outpath, page )
@@ -107,3 +116,11 @@ end
 
 
 puts "bye"
+end
+
+end # module Fbpp
+
+
+
+
+Fbpp.main( ARGV )

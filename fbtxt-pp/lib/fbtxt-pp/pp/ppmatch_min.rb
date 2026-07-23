@@ -11,10 +11,15 @@
 def pp_matches_min(  season:,
                  slug:,
                  opt_country: false,
+                 opt_city:    false,
                  opt_stadium: false,
-                 opt_teams: false  )
+                 opt_timezone: true,
+                 opt_teams: false,
+                 indir: '.'  )
 
-   data =  read_json( "#{CACHE_DIR}/#{season}/#{slug}.json" )
+   season = Season( season )
+
+   data =  read_json( "#{indir}/#{season.to_path}/#{slug}.json" )
    matches = data['matches']
 
    puts "  #{matches.size} match(es) in season #{season}"
@@ -52,8 +57,8 @@ matches.each_with_index do |m, i|
   team2 = teams.find_by!( name: m['team2'] )
 
 
-   dateTime       = parse_date_utc( m['date_utc'] )    ## utc
-   localDateTime  = parse_date_local( m['date_local'] )
+   dateTime       = parse_date_utc( m['datetime_utc'] )    ## utc
+   localDateTime  = parse_date_local( m['datetime_local'] )
 
      assert( dateTime.sec == 0 && localDateTime.sec == 0,
                 "sec 00 expected" )
@@ -68,6 +73,7 @@ matches.each_with_index do |m, i|
      ####
    ## note - make roundName  = stageName + matchDay (optional)
    round  = stage
+   round += ", #{group}"       if group
    round += " - #{matchday}"   if matchday
 
 
@@ -89,6 +95,7 @@ matches.each_with_index do |m, i|
         last_group = nil
    end
 
+=begin
    if group && (last_group.nil? || last_group != group)
 
       ## note - skip extra newline on first group
@@ -98,7 +105,7 @@ matches.each_with_index do |m, i|
 
       last_group = group
    end
-
+=end
 
 
      if opt_country

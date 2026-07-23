@@ -1,8 +1,6 @@
 require 'cocos'
+require 'season-formats'
 
-
-## todo/fix - use a module with method for config!!!
-CACHE_DIR = '/sports/cache.api.fifa'
 
 
 

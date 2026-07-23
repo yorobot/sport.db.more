@@ -4,9 +4,12 @@
 def pp_matches_full( season:,
                      slug:,
                      opt_country: false,
-                     opt_teams: false  )
+                     opt_teams: false,
+                     indir: '.'  )
 
-   data =  read_json( "#{CACHE_DIR}/#{season}/#{slug}.json" )
+   season = Season( season )
+
+   data =  read_json( "#{indir}/#{season.to_path}/#{slug}.json" )
 
    matches = data['matches']
    puts "  #{matches.size} match(es) in season #{season}"
@@ -158,7 +161,7 @@ matches.each_with_index do |m, i|
 
 
    ### get match (live) details
-   live = read_json( "#{CACHE_DIR}/#{season}/#{slug}/#{localDateTime.strftime('%Y-%m-%d')}_#{team1[:code]}-#{team2[:code]}.json" )
+   live = read_json( "#{indir}/#{season.to_path}/#{slug}/#{localDateTime.strftime('%Y-%m-%d')}_#{team1[:code]}-#{team2[:code]}.json" )
 
 =begin
 

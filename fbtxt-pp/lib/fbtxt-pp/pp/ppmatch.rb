@@ -11,10 +11,16 @@
 def pp_matches(  season:,
                  slug:,
                  opt_country: false,
+                 opt_city:    true,
                  opt_stadium: true,
-                 opt_teams: false  )
+                 opt_teams: false,
+                 opt_timezone: true,
+                 indir: '.'  )
 
-    data  =  read_json( "#{CACHE_DIR}/#{season}/#{slug}.json" )
+
+    season = Season( season )
+
+    data  =  read_json( "#{indir}/#{season.to_path}/#{slug}.json" )
    matches = data['matches']  ## only use results (match) array
 
    puts "  #{matches.size} match(es) in season #{season}"
@@ -61,16 +67,20 @@ matches.each_with_index do |m, i|
   team2 = teams.find_by!( name: m['team2'] )
 
 
-    dateTime       = parse_date_utc( m['date_utc'] )    ## utc
-    localDateTime  = parse_date_local( m['date_local'] )
+    dateTime       = parse_date_utc( m['datetime_utc'] )    ## utc
+    localDateTime  = parse_date_local( m['datetime_local'] )
 
      assert( dateTime.sec == 0 && localDateTime.sec == 0,
                 "sec 00 expected" )
 
     ## note:  returns Rational (e.g. 3/1 or 1/4 etc.) use to_f/to_i to convert
-    diff_in_hours = ((localDateTime - dateTime) * 24).to_f
-    diff_in_days  =  localDateTime.jd - dateTime.jd
-    ## pp [diff_in_hours, diff_in_days]
+    ## diff_in_hours = ((localDateTime - dateTime) * 24).to_f
+    ## diff_in_days  =  localDateTime.jd - dateTime.jd
+
+    # note - offset is in rational fraction of a day (e.g. 1/12 for 2hours)
+    diff_in_hours = (localDateTime.offset * 24).to_i
+
+    pp [dateTime, localDateTime, diff_in_hours]
 
 
 #   stageName, groupName = norm_stage( stageName, groupName,
@@ -91,8 +101,9 @@ matches.each_with_index do |m, i|
    matchday    = m['matchday']  # optional
 
    ####
-   ## note - make roundName  = stageName + matchDay (optional)
+   ## note - make roundName  = stageName + groupName (optional) +  matchDay (optional)
    round  = stage
+   round += ", #{group}"       if group
    round += " - #{matchday}"   if matchday
 
 
@@ -111,10 +122,10 @@ matches.each_with_index do |m, i|
          buf << "▪ #{round}\n"
 
         last_round = round
-        last_group = nil
         last_date = nil
    end
 
+=begin
    if group && (last_group.nil? || last_group != group)
       ## note - skip extra newline on first group
       buf << "\n"    if last_group
@@ -124,7 +135,7 @@ matches.each_with_index do |m, i|
       last_group = group
       last_date = nil
    end
-
+=end
 
 
  ##
@@ -145,8 +156,13 @@ matches.each_with_index do |m, i|
        buf << "#{localDateTime.strftime('%a %b %-e')}\n"
       end
 
-     ## use   20:30 UTC+1  or 20:30 UTC-3
-     buf <<  "  #{localDateTime.strftime( '%H:%M' )} UTC%+d" % diff_in_hours
+     ##  always print time for now
+     if opt_timezone
+         ## use   20:30 UTC+1  or 20:30 UTC-3
+         buf <<  "  #{localDateTime.strftime( '%H:%M' )} UTC%+d" % diff_in_hours
+     else
+         buf <<  "  #{localDateTime.strftime( '%H:%M' )}"
+     end
 
 
      ##
@@ -162,10 +178,13 @@ matches.each_with_index do |m, i|
         buf <<  "   #{team1[:name]}  #{score}  #{team2[:name]}   "
      end
 
-     if opt_stadium
+
+     if opt_stadium      ## stadium PLUS city
        buf << "@ #{stadium[:name]}, #{stadium[:city]}"
-     else
+     elsif opt_city      ## city only
        buf << "@ #{stadium[:city]}"
+     else
+        ## add nothing
      end
 
       buf << "\n"
@@ -179,7 +198,7 @@ matches.each_with_index do |m, i|
     next  if m['team1']=='?' && m['team2']=='?'
 
 
-    buf <<  pp_goals( m, indent:  17  )
+     buf <<  pp_goals( m, indent:  17  )
   end
 
   buf

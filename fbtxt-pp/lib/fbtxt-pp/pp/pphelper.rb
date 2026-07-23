@@ -20,13 +20,35 @@ def _fmt_score( m )
 
     if score.empty?
               ''
-    elsif score.key?( 'et' ) && score.key?( 'p' ) &&  !score.key?('ft')
-             "#{score['et'][0]}-#{score['et'][1]} a.e.t., " +
-             "#{score['p'][0]}-#{score['p'][1]} pen."
-    elsif score.key?('et') && !score.key?('p') &&  !score.key?('ft')
-             "#{score['et'][0]}-#{score['et'][1]} a.e.t."
-    elsif score.key?('ft') && !score.key?('et') && !score.key?('p')
-             "#{score['ft'][0]}-#{score['ft'][1]}"
+    elsif score.key?( 'et' ) && score.key?( 'p' )
+             if score.key?( 'ft' ) && score.key?( 'ht')
+               "#{score['et'][0]}-#{score['et'][1]} a.e.t." +
+               " (#{score['ft'][0]}-#{score['ft'][1]}, #{score['ht'][0]}-#{score['ht'][1]}), " +
+               "#{score['p'][0]}-#{score['p'][1]} pen."
+             elsif score.key?( 'ft' )
+               "#{score['et'][0]}-#{score['et'][1]} a.e.t." +
+               " (#{score['ft'][0]}-#{score['ft'][1]}), " +
+               "#{score['p'][0]}-#{score['p'][1]} pen."
+            else
+               "#{score['et'][0]}-#{score['et'][1]} a.e.t., " +
+               "#{score['p'][0]}-#{score['p'][1]} pen."
+             end
+    elsif score.key?('et') && !score.key?('p')
+             if score.key?( 'ft' ) && score.key?( 'ht')
+                "#{score['et'][0]}-#{score['et'][1]} a.e.t."+
+                " (#{score['ft'][0]}-#{score['ft'][1]}, #{score['ht'][0]}-#{score['ht'][1]})"
+             elsif score.key?( 'ft' )
+                "#{score['et'][0]}-#{score['et'][1]} a.e.t."+
+                " (#{score['ft'][0]}-#{score['ft'][1]})"
+             else
+                "#{score['et'][0]}-#{score['et'][1]} a.e.t."
+             end
+    elsif  score.key?('ft') &&  !score.key?('et') && !score.key?('p')
+              if score.key?( 'ht')
+                "#{score['ft'][0]}-#{score['ft'][1]} (#{score['ht'][0]}-#{score['ht'][1]})"
+              else
+               "#{score['ft'][0]}-#{score['ft'][1]}"
+              end
      else
               raise ArgumentError, "unknown/unexpected score hash type #{score} #{score.class.name}"
      end

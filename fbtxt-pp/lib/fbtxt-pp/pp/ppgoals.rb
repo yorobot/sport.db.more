@@ -34,13 +34,16 @@ end
 
 def pp_goals( m,  indent: 4  )
 
+   return ''  if m['goals1'].nil? && m['goals2'].nil?
+
+
    goals1 = build_goals( m['goals1'] )
    goals2 = build_goals( m['goals2'] )
 
-   ## puts
-   ## puts "  #{goals1.size}-#{goals2.size}  "
-   ## pp goals1
-   ## pp goals2
+    puts
+    puts "  #{goals1.size}-#{goals2.size}  "
+    pp goals1
+    pp goals2
 
 
     buf_goals1 = _pp_goals( goals1 )

@@ -10,18 +10,19 @@ end
 
 
 def parse_date_utc( date_str )
-    date = DateTime.strptime( date_str, '%Y-%m-%dT%H:%M:%S%z' )
+    date = DateTime.strptime( date_str, '%Y-%m-%dT%H:%M%z' )
 
-    assert( date_str == date.strftime('%Y-%m-%dT%H:%M:%SZ'),
+    assert( date_str == date.strftime('%Y-%m-%dT%H:%MZ'),
               "date parse expected #{date_str} - got #{date.inspect}" )
     date
 end
 
 def parse_date_local( date_str )
     ## fix - parse UTC+-offset !!!!
-    date = DateTime.strptime( date_str, '%Y-%m-%d %H:%M' )
+    ##  e.g. 2025-08-01 20:30 UTC+2
+    date = DateTime.strptime( date_str, '%Y-%m-%d %H:%M UTC%z' )
 
-    ## assert( date_str == date.strftime('%Y-%m-%dT%H:%M:%SZ'),
+    ## assert( date_str == date.strftime('%Y-%m-%dT%H:%MZ'),
     ##          "date parse expected #{date_str} - got #{date.inspect}" )
     date
 end
@@ -67,7 +68,7 @@ end
 ###
 ## helper matches
 
-def collect_dates( data, dates )
+def collect_dates( matches, dates )
   ## collect min/max dates (duration - start/end)
   ##   e.g.
   ##   {  start: <date>,
@@ -75,10 +76,12 @@ def collect_dates( data, dates )
   ##   }
 
 
-  data.each_with_index do |m, i|
+  matches.each_with_index do |m, i|
 
-    dateTime       = parse_date_utc( m['date_utc'] )    ## utc
-    localDateTime  = parse_date_local( m['date_local'] )
+    puts "[#{i+1}] " + m['datetime_utc'] + "  /  " + m['datetime_local']
+
+    dateTime       = parse_date_utc( m['datetime_utc'] )    ## utc
+    localDateTime  = parse_date_local( m['datetime_local'] )
 
     ## note - alway use local datetime for now
 
@@ -113,9 +116,16 @@ def sort_matches( data  )
    lhs_group  = l['group']   # optional
    rhs_group  = r['group']   # optional
 
+   lhs_matchday  = l['matchday']   # optional
+   rhs_matchday  = r['matchday']   # optional
 
-   if lhs_group && rhs_group && (lhs_stage == rhs_stage)
-       res = lhs_group <=> rhs_group
+   if (lhs_group && rhs_group) && (lhs_stage == rhs_stage)
+       res =    if lhs_matchday && rhs_matchday
+                     lhs_matchday <=> rhs_matchday
+                else
+                     0
+                end
+       res = lhs_group <=> rhs_group   if res == 0
        ## same group; sort by old index (or) date??
        res = l['sort'] <=> r['sort']   if res == 0
        res
