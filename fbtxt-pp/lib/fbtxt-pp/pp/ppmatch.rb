@@ -24,10 +24,6 @@ def pp_matches(  season:,
     doc = Document.read( "#{indir}/#{season.to_path}/#{slug}.json" )
 
 
-    ## matches = data['matches']  ## only use results (match) array
-
-   ## puts "  #{matches.size} match(es) in season #{season}"
-
 
    ## read in stages for sorting
    ##   incl.  SequenceOrder, StageLevel (optional)
@@ -62,13 +58,10 @@ doc.each_match do |m|
 #                             team2: team2,
 #                             date: localDateTime.strftime( '%Y-%m-%d') )
 
-## move to convert !!!
-  ## resultType  = m['ResultType']
-  ##  assert( [0, 1,2,3,4,8].include?(resultType), "resultType 1,2,3,4 expected; got #{resultType}" )
-
 
    ####
-   ## note - make roundName  = stageName + groupName (optional) +  matchDay (optional)
+   ## note - make round
+   ##         =  stage  +  group (optional)  +  matchday (optional)
    round  = m.stage
    round += ", #{m.group}"       if m.group
    round += " - #{m.matchday}"   if m.matchday
@@ -85,14 +78,6 @@ doc.each_match do |m|
         last_date  = nil
    end
 
-
- ##
- ##  move to ppdebug (or ppdump??) !!
- #  buf = String.new
- #  buf << "             #{stageName}"
- #  buf <<  ", #{groupName}"  if groupName
- #  buf << " \##{matchDay}" if matchDay
- #  buf << " (#{matchNumber})"  if matchNumber
 
 
       if last_date && (last_date.year  == m.date_local.year &&
@@ -150,7 +135,7 @@ doc.each_match do |m|
     next   if m.team1.dummy? || m.team2.dummy?
 
 
-     buf <<  pp_goals( m.data, indent:  17  )
+     buf <<  pp_goals( m, indent:  17  )
   end
 
   buf

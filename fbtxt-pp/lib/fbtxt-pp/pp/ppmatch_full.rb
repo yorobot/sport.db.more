@@ -9,91 +9,45 @@ def pp_matches_full( season:,
 
    season = Season( season )
 
-   data =  read_json( "#{indir}/#{season.to_path}/#{slug}.json" )
+   doc = Document.read( "#{indir}/#{season.to_path}/#{slug}.json" )
 
-   matches = data['matches']
-   puts "  #{matches.size} match(es) in season #{season}"
-
-
-   matches = sort_matches( matches )
+   ## matches = sort_matches( matches )
 
 
-
-   teams = Teams.new
-   teams.add( data['teams'] )
-   puts "  #{teams.size} team(s) in season #{season}"
-
-   stadiums = Stadiums.new
-   stadiums.add( data['stadiums'] )
-   puts "  #{stadiums.size} stadium(s) in season #{season}"
 
 
    buf = String.new
 
    ## add stats block (dates, teams, matches, venues, etc.)
-   buf << pp_stats( matches, teams: teams, stadiums: stadiums,
-                          opt_teams: opt_teams,
-                          opt_stadium: true )
+   ## buf << pp_stats( matches, teams: teams, stadiums: stadiums,
+   ##                       opt_teams: opt_teams,
+   ##                       opt_stadium: true )
    buf << "\n"
 
 
 
   last_round  = nil
-  last_group  = nil
 
 
-matches.each_with_index do |m, i|
+  doc.each_match do |m|
 
-  ## note - always lookup full team records (use match inline only as refs)
-  team1 = teams.find_by!( name: m['team1'] )
-  team2 = teams.find_by!( name: m['team2'] )
-
-
-  score = _fmt_score( m )
-
-
-   stage    =  m['stage']
-   group    =  m['group']   # optional
-   num      =  m['num']         # optional
-   matchday =  m['matchday']           # optional
-
-   ####
-   ## note - make roundName  = stageName + matchDay (optional)
-   round  = stage
-   round += " - #{matchday}"   if matchday
+      ####
+   ## note - make round
+   ##         =  stage  +  group (optional)  +  matchday (optional)
+   round  = m.stage
+   round += ", #{m.group}"       if m.group
+   round += " - #{m.matchday}"   if m.matchday
 
 
-
-
-
-    dateTime       = parse_date_utc( m['date_utc'] )    ## utc
-    localDateTime  = parse_date_local( m['date_local'] )
-
-     assert( dateTime.sec == 0 && localDateTime.sec == 0,
-              "sec 00 expected" )
-
-    ## note:  returns Rational (e.g. 3/1 or 1/4 etc.) use to_f/to_i to convert
-    diff_in_hours = ((localDateTime - dateTime) * 24).to_f
-    diff_in_days  =  localDateTime.jd - dateTime.jd
-    ## pp [diff_in_hours, diff_in_days]
-
-
-#   stageName, groupName = norm_stage( stageName, groupName,
-#                             team1: team1,
-#                             team2: team2,
-#                             date: localDateTime.strftime( '%Y-%m-%d') )
-
-
+   score = if m.score
+              m.score.to_s
+           else
+              ''
+           end
 
     ##
     ##  for debugging output match line (before goals, line-up, penalties, etc)
-    puts "  #{team1[:name]} v #{team2[:name]}  #{score}   - #{localDateTime}"
-
-
-    ## note - always lookup full stadium record (use match inline only as ref)
-    stadium  =  stadiums.find!( m['stadium'] )
-
-    attendance = m['attendance']
+    puts "  #{m.team1.name} v #{m.team2.name}  #{score}    - #{m.date_local}"
 
 
 
@@ -102,51 +56,27 @@ matches.each_with_index do |m, i|
          buf << "▪ #{round}\n"
 
         last_round = round
-        last_group = nil
-   end
-
-   if group && (last_group.nil? || last_group != group)
-
-      buf << "▪▪ #{group}\n"
-
-      last_group = group
    end
 
 
-     use_date_utc = false    # true
 
-##
-## e.g. sample with DAY SHIFT!!!
-##          Sat Jan 6 22:00 -300 (01:00 UTC, +1d)
-
-   if use_date_utc
-    ##  Fri Jan 7 20:30 +200 (18:30 UTC)
-     buf << localDateTime.strftime( '%a %b %-e %H:%M' )
-     buf << " %+d00" % diff_in_hours
-
-     if localDateTime.hour    != dateTime.hour &&
-        localDateTime.minutes != dateTime.minutes
-       buf << " (#{dateTime.strftime( '%H:%M')} UTC"
-       buf << ", %+dd" % -diff_in_days   if diff_in_days != 0
-       buf << ")"
-     end
-   else
-        ## use Fir Jan 7 20:30 UTC+1  or 20:30 UTC-3
-     buf << localDateTime.strftime( '%a %b %-e %H:%M' )
-     buf << " UTC%+d" % diff_in_hours
-   end
+     ## use Fir Jan 7 20:30 UTC+1  or 20:30 UTC-3
+     buf << m.date_local.strftime( '%a %b %-e %H:%M' )
+     buf << " UTC%+d" % m.diff_in_hours
 
 
-   buf << " @ #{stadium[:name]}, #{stadium[:city]}"
-   buf << ", Att: #{attendance}"   if attendance
+   buf << " @ #{m.stadium.name}, #{m.stadium.city}"
+   buf << ", Att: #{m.attendance}"   if m.attendance
    buf << "\n"
 
+
+
    if opt_country
-     buf <<  "  #{team1[:name]} (#{team1[:country]}) v #{team2[:name]} (#{team2[:country]})"
-     buf <<  "  #{score}"
+     buf <<  "  #{m.team1.name} (#{m.team1.country}) v #{m.team2.name} (#{m.team2.country})"
    else
-     buf <<  "  #{team1[:name]} v #{team2[:name]}  #{score}"
+     buf <<  "  #{m.team1.name} v #{m.team2.name}"
    end
+   buf <<  "  #{score}"
 
    buf << "\n"
 
@@ -154,14 +84,22 @@ matches.each_with_index do |m, i|
 
    ## skip adding goals if teams not yet known!!
    ##  fix-fix-fix -- add more checks (e.g. ResultType = ??, MatchStatus = ??) !!!
-   next  if m['team1'] == '?' && m['team2'] == '?'
+   next  if m.team1.dummy? || m.team2.dummy?
 
 
    buf <<  pp_goals( m,  indent:  4 )
 
 
+   ##  fix-fix-fix
+   ## hack -   code is missing in teams!!!
+   pp m.team1
+   pp m.team2
+   team1_code = m.team1.code || m.team1.country
+   team2_code = m.team2.code || m.team2.country
+
    ### get match (live) details
-   live = read_json( "#{indir}/#{season.to_path}/#{slug}/#{localDateTime.strftime('%Y-%m-%d')}_#{team1[:code]}-#{team2[:code]}.json" )
+   live = read_json( "#{indir}/#{season.to_path}/#{slug}/#{m.date_local.strftime('%Y-%m-%d')}_#{team1_code}-#{team2_code}.json" )
+
 
 =begin
 
@@ -183,25 +121,34 @@ matches.each_with_index do |m, i|
       buf << "\n"
       buf << "Penalties: #{pp_penalties( pens, indent: 11 )}\n"
    end
-
-
-
+=end
 
 
 
    players1 = Players.new
-   players1.add( live['HomeTeam']['Players'] )
-   players1.add_subs( live['HomeTeam']['Substitutions'])
-   players1.add_bookings( live['HomeTeam']['Bookings'])
+   players1.add_starter( live['lineup1'] )
+##   players1.add_subs( live['HomeTeam']['Substitutions'])
+##   players1.add_bookings( live['HomeTeam']['Bookings'])
 
    players2 = Players.new
-   players2.add( live['AwayTeam']['Players'] )
-   players2.add_subs( live['AwayTeam']['Substitutions'])
-   players2.add_bookings( live['AwayTeam']['Bookings'])
-
+   players2.add_starter( live['lineup2'] )
+##   players2.add_subs( live['AwayTeam']['Substitutions'])
+##   players2.add_bookings( live['AwayTeam']['Bookings'])
 
    lineup1 = players1.lineup
    lineup2 = players2.lineup
+
+   pp lineup1
+   pp lineup2
+
+     buf << "\n"
+     buf << "#{m.team1.name}: "+ pp_lineup( lineup1 ) + "\n"
+     buf << "#{m.team2.name}: "+ pp_lineup( lineup2 ) + "\n"
+     buf << "\n"
+
+
+
+=begin
 
    if players1.size == 0 &&
       players2.size == 0

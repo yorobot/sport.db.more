@@ -9,7 +9,9 @@ class Match
 attr_reader :team1,    :team2,
             :score,
             :date_utc, :date_local,  :utc_offset,
-            :stadium
+            :stadium,
+            :goals1, :goals2
+
 
 
 def initialize( doc, data )
@@ -44,7 +46,12 @@ def initialize( doc, data )
 
 
      @score   =   @h['score'] ? Score.build( @h['score'] ) :  nil
+
+
+     @goals1 =   @h['goals1'] ? @h['goals1'].map { |h| Goal.build( h ) } : nil
+     @goals2 =   @h['goals2'] ? @h['goals2'].map { |h| Goal.build( h ) } : nil
 end
+
 
 
 ## use _data  to mark as "private" and do NOT use - why? why not?

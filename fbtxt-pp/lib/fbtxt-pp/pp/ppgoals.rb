@@ -6,26 +6,24 @@ def _pp_goals( recs )
 
    ## "fold" multiple goals of player
    recs.each do |rec|
-      player_name = rec[:name]
+      player_name = rec.name
 
       goal = String.new
-      goal << _fmt_minute( rec[:minute], rec[:offset] )
+      ## goal << _fmt_minute( rec[:minute], rec[:offset] )
+      goal <<  rec.minute
+      goal << "'"  unless ['?','??'].include?(rec.minute)   ## add minute marker
 
       ## check for goal type (og) or (p)
-      ##  1 -  "penalty"
-      ##  2 -  "regular"
-      ##  3 -  "own goal"
+      goal << "(p)"   if rec.pen?
+      goal << "(og)"  if rec.og?
 
-      goal << "(p)"   if rec[:pen]
-      goal << "(og)"  if rec[:og]
-
-      player_rec = players[ player_name ] ||= { name: player_name, goals: [] }
-      player_rec[:goals] << goal
+      player_rec = players[ player_name ] ||= []
+      player_rec << goal
    end
 
 
-   buf =  players.map do |_,player|
-                    "#{player[:name]} #{player[:goals].join(', ')}"
+   buf =  players.map do |name,goals|
+                    "#{name} #{goals.join(', ')}"
                 end.join( ', ' )
    buf
 end
@@ -34,11 +32,11 @@ end
 
 def pp_goals( m,  indent: 4  )
 
-   return ''  if m['goals1'].nil? && m['goals2'].nil?
+   return ''  if m.goals1.nil? && m.goals2.nil?
 
 
-   goals1 = build_goals( m['goals1'] )
-   goals2 = build_goals( m['goals2'] )
+   goals1 = m.goals1
+   goals2 = m.goals2
 
     puts
     puts "  #{goals1.size}-#{goals2.size}  "

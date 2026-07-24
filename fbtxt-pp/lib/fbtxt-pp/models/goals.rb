@@ -1,32 +1,41 @@
 
 
-def build_goal( h )
-
+class Goal
+  def self.build( h )
     ## split into minute
     ##  and offset (stoppage/injury time)
     ##  e.g. 90'+11'
 
-     minute  = h['minute']
-     offset  = h['offset']
-     owngoal = h['og']   # true|false
-     penalty = h['pen']  # true|false
+    ##
+    ##  keep minute as string and incl. stoppage/injury time - why? why not?
+
+    new( name:   h['name'],
+         minute: h['minute'],
+         og:     h['og'],   # true|false
+         pen:    h['pen']  # true|false
+         )
+  end
 
 
-    rec = {
-             name:     h['name'],
-             minute:    minute,
-          }
+  attr_reader :name,
+              :minute, :og, :pen
 
-     rec[ :offset] = offset   if offset  ## add optional offset (stoppage/injury time)
-     rec[ :og]     = owngoal  if owngoal
-     rec[ :pen]    = penalty  if penalty
+  def initialize( name:, minute:,
+                  og: false, pen: false )
+    @name     = name
+    @minute   = minute
 
-     rec
-end
+    @og, @pen = og, pen
+  end
+
+  def og?()  @og; end
+  def pen?() @pen; end
+
+end # class Goal
 
 
-def build_goals( recs  )
-    recs = recs.map  { |h| build_goal( h ) }
+
+
 
 =begin
     ## sort by minutes
@@ -42,5 +51,3 @@ def build_goals( recs  )
                  res
            end
 =end
-    recs
-end

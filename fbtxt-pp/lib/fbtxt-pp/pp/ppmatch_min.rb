@@ -21,7 +21,6 @@ def pp_matches_min(  season:,
 
     doc = Document.read( "#{indir}/#{season.to_path}/#{slug}.json" )
 
-   ## puts "  #{matches.size} match(es) in season #{season}"
 
    ## matches = sort_matches( matches )
 
@@ -42,36 +41,20 @@ def pp_matches_min(  season:,
   doc.each_match do |m|
 
 
-
-     ####
-   ## note - make roundName  = stageName + matchDay (optional)
    round  = m.stage
    round += ", #{m.group}"       if m.group
    round += " - #{m.matchday}"   if m.matchday
 
 
-#  stageName, groupName = norm_stage( stageName, groupName,
-#                             team1: team1,
-#                             team2: team2,
-#                             date: localDateTime.strftime( '%Y-%m-%d') )
-
-
-
-
    if last_round.nil? || last_round != round
-
          buf << "\n"
-
          buf << "▪ #{round}\n"
 
-        last_round = round
+         last_round = round
    end
 
 
 
-     ##
-     ##
-     ## note - if score empty (e.g. '') use  A v B
      score =   if m.score
                   m.score.to_s
                else
@@ -85,13 +68,12 @@ def pp_matches_min(  season:,
         line <<  "#{m.team2.name} (#{m.team2.country})"
 
         buf <<  "  %-40s  " % line
-        buf <<  "#{score}"
      else
         line = "#{m.team1.name} v #{m.team2.name}"
 
         buf <<  "  %-30s  " % line
-        buf <<  "#{score}"
      end
+     buf <<  "#{score}"
 
       buf << "\n"
   end
