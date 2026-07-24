@@ -20,10 +20,13 @@ def pp_matches(  season:,
 
     season = Season( season )
 
-    data  =  read_json( "#{indir}/#{season.to_path}/#{slug}.json" )
-   matches = data['matches']  ## only use results (match) array
 
-   puts "  #{matches.size} match(es) in season #{season}"
+    doc = Document.read( "#{indir}/#{season.to_path}/#{slug}.json" )
+
+
+    ## matches = data['matches']  ## only use results (match) array
+
+   ## puts "  #{matches.size} match(es) in season #{season}"
 
 
    ## read in stages for sorting
@@ -31,56 +34,27 @@ def pp_matches(  season:,
    ## stages = Stages.new
    ## stages.add( read_json( "./#{slug}/misc/#{season}_stages.json" )['Results'] )
 
-   matches = sort_matches( matches )
+   ## matches = sort_matches( matches )
 
 
 
-   teams = Teams.new
-   teams.add( data['teams'] )
-   puts "  #{teams.size} team(s) in season #{season}"
-
-   stadiums = Stadiums.new
-   stadiums.add( data['stadiums'] )
-   puts "  #{stadiums.size} stadium(s) in season #{season}"
 
 
 
    buf = String.new
 
    ## add stats block (dates, teams, matches, venues, etc.)
-   buf << pp_stats( matches, teams: teams, stadiums: stadiums,
-                              opt_teams: opt_teams,
-                              opt_stadium: opt_stadium )
+   ## buf << pp_stats( matches, teams: teams, stadiums: stadiums,
+   ##                           opt_teams: opt_teams,
+   ##                           opt_stadium: opt_stadium )
    buf << "\n"
 
 
 last_round   = nil
-last_group   = nil
-
-last_date      = nil
+last_date    = nil
 
 
-matches.each_with_index do |m, i|
-
-   ## note - always lookup full team records (use match inline only as refs)
-  team1 = teams.find_by!( name: m['team1'] )
-  team2 = teams.find_by!( name: m['team2'] )
-
-
-    dateTime       = parse_date_utc( m['datetime_utc'] )    ## utc
-    localDateTime  = parse_date_local( m['datetime_local'] )
-
-     assert( dateTime.sec == 0 && localDateTime.sec == 0,
-                "sec 00 expected" )
-
-    ## note:  returns Rational (e.g. 3/1 or 1/4 etc.) use to_f/to_i to convert
-    ## diff_in_hours = ((localDateTime - dateTime) * 24).to_f
-    ## diff_in_days  =  localDateTime.jd - dateTime.jd
-
-    # note - offset is in rational fraction of a day (e.g. 1/12 for 2hours)
-    diff_in_hours = (localDateTime.offset * 24).to_i
-
-    pp [dateTime, localDateTime, diff_in_hours]
+doc.each_match do |m|
 
 
 #   stageName, groupName = norm_stage( stageName, groupName,
@@ -92,26 +66,13 @@ matches.each_with_index do |m, i|
   ## resultType  = m['ResultType']
   ##  assert( [0, 1,2,3,4,8].include?(resultType), "resultType 1,2,3,4 expected; got #{resultType}" )
 
-    score =  _fmt_score( m )
-
-   stage   = m['stage']
-   group   = m['group']     # optional
-   num     = m['number']    # optional
-
-   matchday    = m['matchday']  # optional
+    score = ''  ## _fmt_score( _m )
 
    ####
    ## note - make roundName  = stageName + groupName (optional) +  matchDay (optional)
-   round  = stage
-   round += ", #{group}"       if group
-   round += " - #{matchday}"   if matchday
-
-
-   ## note - always lookup full stadium record (use match inline only as ref)
-   stadium  =  stadiums.find!( m['stadium'] )
-
-    attendance = m['attendance']
-
+   round  = m.stage
+   round += ", #{m.group}"       if m.group
+   round += " - #{m.matchday}"   if m.matchday
 
 
 
@@ -122,20 +83,8 @@ matches.each_with_index do |m, i|
          buf << "▪ #{round}\n"
 
         last_round = round
-        last_date = nil
+        last_date  = nil
    end
-
-=begin
-   if group && (last_group.nil? || last_group != group)
-      ## note - skip extra newline on first group
-      buf << "\n"    if last_group
-
-      buf << "▪▪ #{group}\n"
-
-      last_group = group
-      last_date = nil
-   end
-=end
 
 
  ##
@@ -147,42 +96,46 @@ matches.each_with_index do |m, i|
  #  buf << " (#{matchNumber})"  if matchNumber
 
 
-      if last_date && (last_date.year  == localDateTime.year &&
-                       last_date.month == localDateTime.month &&
-                       last_date.day   == localDateTime.day)
+      if last_date && (last_date.year  == m.date_local.year &&
+                       last_date.month == m.date_local.month &&
+                       last_date.day   == m.date_local.day)
         ## skip date header if same (local) date
       else
           ## e.g.   Fri Jun 7
-       buf << "#{localDateTime.strftime('%a %b %-e')}\n"
+       buf << "#{m.date_local.strftime('%a %b %-e')}\n"
       end
 
      ##  always print time for now
      if opt_timezone
          ## use   20:30 UTC+1  or 20:30 UTC-3
-         buf <<  "  #{localDateTime.strftime( '%H:%M' )} UTC%+d" % diff_in_hours
+         buf <<  "  #{m.date_local.strftime( '%H:%M' )} UTC%+d" % m.diff_in_hours
      else
-         buf <<  "  #{localDateTime.strftime( '%H:%M' )}"
+         buf <<  "  #{m.date_local.strftime( '%H:%M' )}"
      end
 
 
      ##
      ##
      ## note - if score empty (e.g. '') use  A v B
-     score = ' v '  if score.empty?
+     score =   if m.score
+                  m.score.to_s
+               else
+                  ' v '
+               end
 
      if opt_country
-        buf <<  "   #{team1[:name]} (#{team1[:country]})"
+        buf <<  "   #{m.team1.name} (#{m.team1.country})"
         buf <<  "  #{score}  "
-        buf <<  "#{team2[:name]} (#{team2[:country]})   "
+        buf <<  "#{m.team2.name} (#{m.team2.country})   "
      else
-        buf <<  "   #{team1[:name]}  #{score}  #{team2[:name]}   "
+        buf <<  "   #{m.team1.name}  #{score}  #{m.team2.name}   "
      end
 
 
      if opt_stadium      ## stadium PLUS city
-       buf << "@ #{stadium[:name]}, #{stadium[:city]}"
+       buf << "@ #{m.stadium.name}, #{m.stadium.city}"
      elsif opt_city      ## city only
-       buf << "@ #{stadium[:city]}"
+       buf << "@ #{m.stadium.city}"
      else
         ## add nothing
      end
@@ -190,15 +143,15 @@ matches.each_with_index do |m, i|
       buf << "\n"
 
 
-   last_date = localDateTime
+   last_date = m.date_local
 
 
     ## skip adding goals if teams not yet known!!
     ##  fix-fix-fix -- add more checks (e.g. ResultType = ??, MatchStatus = ??) !!!
-    next  if m['team1']=='?' && m['team2']=='?'
+    next   if m.team1.dummy? || m.team2.dummy?
 
 
-     buf <<  pp_goals( m, indent:  17  )
+     buf <<  pp_goals( m.data, indent:  17  )
   end
 
   buf

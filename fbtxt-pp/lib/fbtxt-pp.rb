@@ -5,13 +5,19 @@ require 'season-formats'
 
 
 require_relative 'fbtxt-pp/helper'
-require_relative 'fbtxt-pp/teams'
-require_relative 'fbtxt-pp/stadiums'
 require_relative 'fbtxt-pp/goals'
 
 
+## models
+require_relative 'fbtxt-pp/models/document'  ## note - document is container for LeagueSeason holding teams, matches, etc.
+require_relative 'fbtxt-pp/models/match'
+require_relative 'fbtxt-pp/models/score'
+require_relative 'fbtxt-pp/models/teams'
+require_relative 'fbtxt-pp/models/stadiums'
+
+
+
 ## pretty print
-require_relative 'fbtxt-pp/pp/pphelper'
 require_relative 'fbtxt-pp/pp/ppgoals'
 require_relative 'fbtxt-pp/pp/ppstats'
 require_relative 'fbtxt-pp/pp/ppmatch'

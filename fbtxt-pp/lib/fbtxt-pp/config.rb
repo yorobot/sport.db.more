@@ -112,4 +112,20 @@ CONFIGS = {
         opts_full:   { opt_country: false,
                      },
     },
+
+ 'uefa.cl': {
+        slug:      'uefa.cl',   ## rename to dir / indir / source / source or ???
+        name:      'UEFA | Champions League',
+        seasons:   ['2025/26'],
+        ## default pp opts
+        opts:        { opt_country: true,
+                       opt_stadium: false,
+                       opt_city:    true,
+                       opt_timezone: false,
+                     },
+        opts_full:   { opt_country: false,
+                     },
+    },
+
+
 }

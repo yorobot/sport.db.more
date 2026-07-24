@@ -32,7 +32,7 @@ parser.banner = "Usage: #{$PROGRAM_NAME} [options] NAME"
    end
 
    parser.on( "--season=SEASON",
-               "season (default: #{opts[:season]})" ) do |season|
+               "season (default: #{opts[:season]||'none'})" ) do |season|
      opts[:season] = season
    end
 end
@@ -58,6 +58,23 @@ key = args[0].downcase.to_sym
 config = CONFIGS[ key ]
 puts "CONFIG:"
 pp config
+
+if config.nil?
+  ## auto-fill with defaults!!
+   config = { slug: key,
+              name:  "#{key}",
+              seasons: [],
+              opts:        { opt_country: false,
+                       opt_stadium: false,
+                       opt_city:    false,
+                       opt_timezone: false,
+                     },
+              opts_full:   { opt_country: false,
+                     },
+
+            }
+end
+
 
 slug    = config[:slug]   ## change to source - why? why not?
 seasons = opts[:season] ?  [opts[:season]] : config[:seasons]
@@ -107,6 +124,8 @@ seasons.each do |season|
               end
 
     write_text( outpath, page )
+    ## puts "  opts:"
+    ## pp opts
     puts "  written to >#{outpath}<"
 end
 
@@ -115,8 +134,3 @@ puts "bye"
 end
 
 end # module Fbpp
-
-
-
-
-Fbpp.main( ARGV )
