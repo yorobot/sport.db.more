@@ -10,19 +10,36 @@ def _pp_player( player )
    buf << " [Y #{player[:y][:minute]}]"      if player[:y]
    buf << " [Y/R #{player[:yr][:minute]}]"   if player[:yr]
    buf << " [R #{player[:r][:minute]}]"      if player[:r]
+=end
 
     ## check for sub (recursive)
-    sub = player[:sub]
-    if sub
-       buf << " (#{sub[:minute]} #{_pp_player( sub[:player_ref])})"
+    if player.sub
+       buf << " (#{player.sub.minute}' #{_pp_player( player.sub.player)})"
     end
-=end
 
    buf
 end
 
 
-def pp_lineup( players, indent: 6 )
+##  note - allow (optional formation e.g.   5-3-2 etc.
+##
+
+def pp_lineup( players, indent: 6, formation: nil )
+
+
+    if formation
+         ## split into integers
+         parts = formation.split( /[ ]*-[ ]*/ )
+         ## add 1 upfront for (implied) goalie
+         formation =  ['1']+parts
+         ## e.g.
+         ##  1-4-3-3
+         ##  1-5-8-11
+         sum = 0   ## make cumulate sum (index)
+         formation = formation.map { |part| sum += part.to_i(10) }
+    end
+
+
     lines = []
     line = String.new
 
@@ -35,7 +52,13 @@ def pp_lineup( players, indent: 6 )
 
         next_player = players[i+1]
         if next_player
-           if next_player.pos != player.pos
+           if formation  ### use formation for separators
+                if formation.include?( i+1  )
+                    line << " - "
+                else
+                    line << ", "
+                end
+           elsif next_player.pos != player.pos
                line << " - "  ## separate gk/def/mid/forw
            else
                line  << ", "
@@ -54,12 +77,8 @@ end
 ###########
 #  officials  (that is, referees)
 
-def _pp_official( h )
-   "#{h[:name]} (#{h[:idCountry]})"
-end
-
 def pp_officials( recs )
-   recs.map do |rec|
-                _pp_official( rec )
+   recs.map do |official|
+               "#{official.name} (#{official.country})"
             end.join( ', ' )
 end

@@ -122,12 +122,14 @@ def pp_matches_full( season:,
 
    players1 = Players.new
    players1.add_starter( live['lineup1'] )
-##   players1.add_subs( live['HomeTeam']['Substitutions'])
+   players1.add_bench( live['bench1'] )
+   players1.add_subs( live['subs1'])
 ##   players1.add_bookings( live['HomeTeam']['Bookings'])
 
    players2 = Players.new
    players2.add_starter( live['lineup2'] )
-##   players2.add_subs( live['AwayTeam']['Substitutions'])
+   players2.add_bench( live['bench2'] )
+   players2.add_subs( live['subs2'])
 ##   players2.add_bookings( live['AwayTeam']['Bookings'])
 
    lineup1 = players1.lineup
@@ -137,8 +139,8 @@ def pp_matches_full( season:,
    pp lineup2
 
      buf << "\n"
-     buf << "#{m.team1.name}: "+ pp_lineup( lineup1 ) + "\n"
-     buf << "#{m.team2.name}: "+ pp_lineup( lineup2 ) + "\n"
+     buf << "#{m.team1.name}: "+ pp_lineup( lineup1, formation: live['formation1'] ) + "\n"
+     buf << "#{m.team2.name}: "+ pp_lineup( lineup2, formation: live['formation2'] ) + "\n"
      buf << "\n"
 
 
@@ -181,18 +183,19 @@ def pp_matches_full( season:,
      buf << "#{team2[:name]}: "+ pp_lineup( lineup2 ) + "\n"
      buf << "\n"
    end
+=end
 
 ###
 ##  add referees
-    officials = build_officials( m['Officials'] )
+    officials =  live['referees'].map { |rec| Official.build(rec) }
 
     if officials.size == 0
-      puts "!! WARN no refs / officials found"
+      ## puts "!! WARN no refs / officials found"
     else
       buf << "Refs: " + pp_officials( officials )
       buf << "\n"
     end
-=end
+
 
     buf << "\n\n"
 end

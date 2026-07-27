@@ -14,6 +14,7 @@ require_relative 'fbtxt-pp/models/score'
 require_relative 'fbtxt-pp/models/goals'
 require_relative 'fbtxt-pp/models/teams'
 require_relative 'fbtxt-pp/models/players'
+require_relative 'fbtxt-pp/models/officials'
 require_relative 'fbtxt-pp/models/stadiums'
 
 
