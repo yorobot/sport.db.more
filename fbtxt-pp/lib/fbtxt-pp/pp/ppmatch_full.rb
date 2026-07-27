@@ -3,15 +3,12 @@
 
 def pp_matches_full( season:,
                      slug:,
-                     opt_country: false,
-                     opt_teams: false,
+                     opts:,
                      indir: '.'  )
 
    season = Season( season )
 
    doc = Document.read( "#{indir}/#{season.to_path}/#{slug}.json" )
-
-   ## matches = sort_matches( matches )
 
 
 
@@ -19,9 +16,7 @@ def pp_matches_full( season:,
    buf = String.new
 
    ## add stats block (dates, teams, matches, venues, etc.)
-   ## buf << pp_stats( matches, teams: teams, stadiums: stadiums,
-   ##                       opt_teams: opt_teams,
-   ##                       opt_stadium: true )
+   buf << pp_stats( doc,  opts: opts )
    buf << "\n"
 
 
@@ -71,7 +66,7 @@ def pp_matches_full( season:,
 
 
 
-   if opt_country
+   if opts.country?
      buf <<  "  #{m.team1.name} (#{m.team1.country}) v #{m.team2.name} (#{m.team2.country})"
    else
      buf <<  "  #{m.team1.name} v #{m.team2.name}"

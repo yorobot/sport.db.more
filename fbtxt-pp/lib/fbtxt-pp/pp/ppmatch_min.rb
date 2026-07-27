@@ -2,19 +2,9 @@
 ## pretty print matches ("summary" - not full w/ line-up, penalties etc.)
 
 
-
-##
-## opt_country: true|false   -- add country code for clubs
-## opt_stadium: false|true   -- print only city (NOT long stadium+city)
-
-
 def pp_matches_min(  season:,
                  slug:,
-                 opt_country: false,
-                 opt_city:    false,
-                 opt_stadium: false,
-                 opt_timezone: true,
-                 opt_teams: false,
+                 opts:,
                  indir: '.'  )
 
    season = Season( season )
@@ -22,17 +12,13 @@ def pp_matches_min(  season:,
     doc = Document.read( "#{indir}/#{season.to_path}/#{slug}.json" )
 
 
-   ## matches = sort_matches( matches )
-
 
 
 
    buf = String.new
 
    ## add stats block (dates, teams, matches, venues, etc.)
-##   buf << pp_stats( matches, teams: teams, stadiums: stadiums,
-##                          opt_teams: opt_teams,
-##                          opt_stadium: opt_stadium )
+   buf << pp_stats( doc,  opts: opts )
    buf << "\n"
 
 
@@ -62,7 +48,7 @@ def pp_matches_min(  season:,
                end
 
 
-     if opt_country
+     if opts.country?
         line = "#{m.team1.name} (#{m.team1.country})"
         line <<  " v "
         line <<  "#{m.team2.name} (#{m.team2.country})"

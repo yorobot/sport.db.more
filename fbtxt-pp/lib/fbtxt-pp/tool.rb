@@ -64,13 +64,13 @@ if config.nil?
    config = { slug: key,
               name:  "#{key}",
               seasons: [],
-              opts:        { opt_country: false,
-                       opt_stadium: false,
-                       opt_city:    false,
-                       opt_timezone: false,
-                     },
-              opts_full:   { opt_country: false,
-                     },
+              opts:        { country: false,
+                             stadium: false,
+                             city:    false,
+                            timezone: false,
+                           },
+              opts_full:   { country: false,
+                          },
 
             }
 end
@@ -99,16 +99,15 @@ seasons.each do |season|
     buf = if opts[:full]
               pp_matches_full( slug: slug, season: season,
                                indir: opts[:convert_dir],
-                                **config[:opts_full],
-                                 )
+                                opts: FormatOpts.build_full( **config[:opts_full] ))
           elsif opts[:min]
               pp_matches_min( slug: slug, season: season,
                                indir: opts[:convert_dir],
-                                 **config[:opts] )
+                               opts: FormatOpts.build_min( **config[:opts] ))
           else
                pp_matches( slug: slug, season: season,
                                indir: opts[:convert_dir],
-                                **config[:opts] )
+                               opts: FormatOpts.build(**config[:opts] ))
           end
 
     page << buf

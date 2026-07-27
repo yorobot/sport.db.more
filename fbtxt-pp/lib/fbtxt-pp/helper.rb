@@ -10,6 +10,12 @@ end
 
 
 def parse_date_utc( date_str )
+    ## note - DateTime has NOT daylight saving time (e.g. dst?)
+    ##    or named timezones!!
+    ##        only works with offsets
+    ##
+    ##  use Time for built-in timezones (and check on daylight saving time etc.)
+
     date = DateTime.strptime( date_str, '%Y-%m-%dT%H:%M%z' )
 
     assert( date_str == date.strftime('%Y-%m-%dT%H:%MZ'),
@@ -60,83 +66,4 @@ def _fmt_minute( minute, offset )
      buf << "+#{offset}"   if offset
      buf << "'"
      buf
-end
-
-
-
-
-###
-## helper matches
-
-def collect_dates( matches, dates )
-  ## collect min/max dates (duration - start/end)
-  ##   e.g.
-  ##   {  start: <date>,
-  ##      end:   <date>
-  ##   }
-
-
-  matches.each_with_index do |m, i|
-
-    puts "[#{i+1}] " + m['datetime_utc'] + "  /  " + m['datetime_local']
-
-    dateTime       = parse_date_utc( m['datetime_utc'] )    ## utc
-    localDateTime  = parse_date_local( m['datetime_local'] )
-
-    ## note - alway use local datetime for now
-
-   if dates[:start].nil? || localDateTime < dates[:start]
-        dates[:start] = localDateTime
-   end
-
-   if dates[:end].nil? || localDateTime > dates[:end]
-        dates[:end] = localDateTime
-   end
-  end
-end
-
-
-
-def sort_matches( data  )
-  ###
-  ##   sort results by group if present
-
-  ## add "old" sort index
-  data = data.each_with_index.map {|m,i| m['sort']=i+1; m }
-
-
-  data =  data.sort do |l,r|
-
-   lhs_stage =  l['stage']
-   rhs_stage =  r['stage']
-
-   ## lhs_stage = stages.find!( lhs_stageName )
-   ## rhs_stage = stages.find!( rhs_stageName )
-
-   lhs_group  = l['group']   # optional
-   rhs_group  = r['group']   # optional
-
-   lhs_matchday  = l['matchday']   # optional
-   rhs_matchday  = r['matchday']   # optional
-
-   if (lhs_group && rhs_group) && (lhs_stage == rhs_stage)
-       res =    if lhs_matchday && rhs_matchday
-                     lhs_matchday <=> rhs_matchday
-                else
-                     0
-                end
-       res = lhs_group <=> rhs_group   if res == 0
-       ## same group; sort by old index (or) date??
-       res = l['sort'] <=> r['sort']   if res == 0
-       res
-   else
-       ### sort first by stage (seq) and than keep as is
-       ### res = lhs_stage[:seq] <=> rhs_stage[:seq]
-       ## res = l['sort'] <=> r['sort']    if res == 0
-       ## res
-       l['sort'] <=> r['sort']
-   end
-  end
-
-   data
 end

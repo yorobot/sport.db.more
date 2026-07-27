@@ -19,6 +19,7 @@ require_relative 'fbtxt-pp/models/stadiums'
 
 
 ## pretty print
+require_relative 'fbtxt-pp/pp/ppopts'  ## use ppformat_opts or such - why? why not?
 require_relative 'fbtxt-pp/pp/ppgoals'
 require_relative 'fbtxt-pp/pp/ppstats'
 require_relative 'fbtxt-pp/pp/ppmatch'
