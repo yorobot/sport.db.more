@@ -12,6 +12,7 @@ require_relative 'fbtxt-pp/models/document'  ## note - document is container for
 require_relative 'fbtxt-pp/models/match'
 require_relative 'fbtxt-pp/models/score'
 require_relative 'fbtxt-pp/models/goals'
+require_relative 'fbtxt-pp/models/penalties'
 require_relative 'fbtxt-pp/models/teams'
 require_relative 'fbtxt-pp/models/players'
 require_relative 'fbtxt-pp/models/officials'

@@ -96,41 +96,45 @@ def pp_matches_full( season:,
    live = read_json( "#{indir}/#{season.to_path}/#{slug}/#{m.date_local.strftime('%Y-%m-%d')}_#{team1_code}-#{team2_code}.json" )
 
 
-=begin
-
-   players = Players.new
-   players.add( live['HomeTeam']['Players'] )
-   players.add( live['AwayTeam']['Players'] )
-
 
    ##########
    ##   add penalty kicks / penalties
 
-   if resultType == 2   ## aet, win on pens
-      ### get timeline with penalty shoot-out details
-      timeline = read_json( "./#{slug}/timelines/#{season}/#{localDateTime.strftime('%Y-%m-%d')}_#{team1[:abbrev]}-#{team2[:abbrev]}__#{idMatch}.json" )
+   penalties =  (live['penalties']||[]).map { |rec| Penalty.build(rec) }
 
-      pens = build_penalties( timeline['Event'], players: players )
-      ## pp pens
-
+   unless penalties.empty?
       buf << "\n"
-      buf << "Penalties: #{pp_penalties( pens, indent: 11 )}\n"
+      buf << "Penalties: #{pp_penalties( penalties, indent: 11 )}\n"
    end
-=end
+
 
 
 
    players1 = Players.new
    players1.add_starter( live['lineup1'] )
-   players1.add_bench( live['bench1'] )
-   players1.add_subs( live['subs1'])
-##   players1.add_bookings( live['HomeTeam']['Bookings'])
+   players1.add_bench( live['bench1']||[])
+   players1.add_subs( live['subs1']||[])
+
+   players1.add_yellow( live['yellow1']||[])
+   players1.add_yellowred( live['yellowred1']||[])  ## second yellow (resulting in red)
+   players1.add_red( live['red1']||[])
+   ### check for bookings too (change to bookings/cards - why? why not?)
+   ##   players1.add_bookings( live['HomeTeam']['Bookings'])
+
 
    players2 = Players.new
    players2.add_starter( live['lineup2'] )
-   players2.add_bench( live['bench2'] )
-   players2.add_subs( live['subs2'])
-##   players2.add_bookings( live['AwayTeam']['Bookings'])
+   players2.add_bench( live['bench2']||[])
+   players2.add_subs( live['subs2']||[])
+
+   players2.add_yellow( live['yellow2']||[])
+   players2.add_yellowred( live['yellowred2']||[])  ## second yellow (resulting in red)
+   players2.add_red( live['red2']||[])
+   ### check for bookings too (change to bookings/cards - why? why not?)
+   ##   players2.add_bookings( live['AwayTeam']['Bookings'])
+
+
+
 
    lineup1 = players1.lineup
    lineup2 = players2.lineup
@@ -177,12 +181,6 @@ def pp_matches_full( season:,
         assert( lineup.size == 11, "expected 11 players, got #{lineup.size}" )
        end
      end
-
-     buf << "\n"
-     buf << "#{team1[:name]}: "+ pp_lineup( lineup1 ) + "\n"
-     buf << "#{team2[:name]}: "+ pp_lineup( lineup2 ) + "\n"
-     buf << "\n"
-   end
 =end
 
 ###

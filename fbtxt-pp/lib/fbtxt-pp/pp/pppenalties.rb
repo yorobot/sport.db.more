@@ -1,13 +1,12 @@
 
 
 def _pp_pen( pen )
-   ## (i)  41  - pen goal scored - 41
-   ## (ii)  0  - goal scored - (when following pen awarded !!) 
-   if pen[:type] == 0 || pen[:type] == 41      
-     "#{pen[:pen][0]}-#{pen[:pen][1]} #{pen[:player][:name]}"
+   if pen.scored?
+     "#{pen.score[0]}-#{pen.score[1]} #{pen.name}"
    else
-     "    #{pen[:player][:name]} (missed)"
-   end  
+     ###  fix - check for saved or crossbar or ????
+     "    #{pen.name} (missed)"
+   end
 end
 
 def _pp_pens( pen1, pen2 )
@@ -16,7 +15,7 @@ def _pp_pens( pen1, pen2 )
    if pen2
       buf << ", "
       buf << _pp_pen( pen2 )
-   end  
+   end
    buf
 end
 
@@ -24,7 +23,7 @@ end
 def pp_penalties( pens, indent:  )
       lines = []
       line = String.new
-      
+
       pens.each_slice(2) do |pen1, pen2|
            lines << _pp_pens( pen1, pen2 )
       end

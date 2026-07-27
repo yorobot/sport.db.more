@@ -5,12 +5,12 @@ def _pp_player( player )
    buf << "#{player.name}"
    buf << " [c]"  if player.captain?
 
-=begin
-   ## check for y/r/yr cards
-   buf << " [Y #{player[:y][:minute]}]"      if player[:y]
-   buf << " [Y/R #{player[:yr][:minute]}]"   if player[:yr]
-   buf << " [R #{player[:r][:minute]}]"      if player[:r]
-=end
+
+   ## check for y/yr/r cards
+   ##   todo/check  - change Y/R to YR - why? why ynot?
+   buf << " [Y #{player.y.minute}']"      if player.yellow?
+   buf << " [Y/R #{player.yr.minute}']"   if player.yellowred?
+   buf << " [R #{player.r.minute}']"      if player.red?
 
     ## check for sub (recursive)
     if player.sub
@@ -44,26 +44,30 @@ def pp_lineup( players, indent: 6, formation: nil )
     line = String.new
 
     players.each_with_index do |player,i|
-        if line.length > 68   ## start a new line
-            lines << line.rstrip
-            line = String.new
-        end
-        line  << _pp_player( player )
+        text  = String.new
+        text  <<  _pp_player( player )
+
 
         next_player = players[i+1]
         if next_player
            if formation  ### use formation for separators
                 if formation.include?( i+1  )
-                    line << " - "
+                    text << " - "
                 else
-                    line << ", "
+                    text << ", "
                 end
            elsif next_player.pos != player.pos
-               line << " - "  ## separate gk/def/mid/forw
+               text << " - "  ## separate gk/def/mid/forw
            else
-               line  << ", "
+               text << ", "
            end
         end
+
+       if (line.length+text.length) > 88   ## start a new line
+            lines << line.rstrip
+            line = String.new
+        end
+        line << text
     end
 
     lines << line.rstrip

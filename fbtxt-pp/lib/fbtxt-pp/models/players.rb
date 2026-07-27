@@ -20,11 +20,12 @@ class Player
 
   attr_reader :id,
               :name, :short_name,
-              :captain,
+              :captain,            ## true|false
               :pos,
-              :sub    ## (recursive) sub(stitution) record
+              :y, :yr, :r,  ## cards/bookings - yellow, yellow-red, red
+              :sub          ## (recursive) sub(stitution) record
 
-  attr_accessor :status
+  attr_accessor :status      ## e.g. 1-starter, 2-bench
 
 
 
@@ -39,6 +40,9 @@ class Player
      @pos     = nil  ## fix-fix-fix - add pos(ition)
      @status  = nil  ##  e.g. starter/bench|sub/etc.
 
+     ## todo/check - add "generic" sentoff  for pre-cards era - why? why not?
+     @y, @yr, @r  = nil,nil,nil
+
      @sub     = nil
   end
 
@@ -49,6 +53,25 @@ class Player
   ##  add is_ variants - why? why not?
   alias_method :is_starter?, :starter?
   alias_method :is_bench?,   :bench?
+
+
+  def yellow?()    @y;  end
+  def yellowred?() @yr; end
+  def red?()       @r;  end
+
+
+   class Booking  ## (nested) booking record/struct
+       ## add :reason or such later
+       attr_reader :minute
+       def initialize( minute: nil )
+          @minute = minute
+       end
+   end ## (nested) booking record/struct
+
+   def add_yellow( minute: nil )    @y  = Booking.new( minute: minute ); end
+   def add_yellowred( minute: nil ) @yr = Booking.new( minute: minute ); end
+   def add_red( minute: nil )       @r  = Booking.new( minute: minute ); end
+
 
 
   class Sub  ## (nested) sub(stitution) record/struct
@@ -128,6 +151,31 @@ class Players
    end
 
 
+   def add_yellow( bookings)     _add_bookings( bookings, type: 'y' ); end
+   def add_yellowred( bookings)  _add_bookings( bookings, type: 'yr' ); end
+   def add_red( bookings)        _add_bookings( bookings, type: 'r' ); end
+
+      def _add_bookings( bookings, type: )
+      bookings.each do |b|
+
+          ## note - ignores cards coach and stuff for now upstream!!!
+          player = @recs[ slugify( b['name']) ]
+          assert( player, "booking player not found; sorry- #{b.pretty_inspect}" )
+
+          minute =  b['minute']
+
+          case type.to_sym
+          when :y   then  player.add_yellow( minute: minute )
+          when :r   then  player.add_red( minute: minute )
+          when :yr  then  player.add_yellowred( minute: minute )
+          else
+              raise ArgumentError,
+                "expected :y|:r|:yr - unknown card type for booking: #{b.pretty_inspect}"
+          end
+      end
+   end
+
+
 
 
    def _add( new_rec )
@@ -160,64 +208,10 @@ class Players
    end
 
 
-
    ## all players with red or red-yellow card (sent off)
    def sentoff
       recs = @recs.values.select { |rec| rec[:r] || rec[:yr] }
       recs
-   end
-
-
-
-   def add_bookings( bookings )  ##  yellow/red cards
-      bookings.each do |b|
-
-         card = b['Card']
-         assert( [0,1,2,3].include?( card ), "card 0/1/2/3 expected; got #{b.pretty_inspect}")
-
-         ##
-         ## what is card 0?  ignore for now
-         ##  Palmeiras v FC Porto  0-0   - 2025-06-15T18:00:00+00:00
-         ## !! ASSERT FAILED - card 1/2/3 expected; got {"Card"=>0,
-         ## "Period"=>5,
-         ## "IdEvent"=>nil,
-         ## "EventNumber"=>nil,
-         ## "IdPlayer"=>"495048",
-         ## "IdCoach"=>nil,
-         ## "IdTeam"=>"1884426",
-         ## "Minute"=>"72'",
-         ## "Reason"=>nil}
-         next if card == 0
-
-
-         idPlayer = b['IdPlayer']
-
-         ## booking (card) for coach or stuff!!!!
-         ##   skip for now
-         next   if idPlayer.nil? && (b['IdCoach'] || b['IdStaff'])
-
-
-         player = @recs[ idPlayer ]
-         assert( player, "booking player not found; sorry- #{b.pretty_inspect}" )
-
-           ## note - parse & reformat minute for keep same format
-          minute =   _fmt_minute( *_parse_minute( b['Minute'] ))
-
-          if card == 1      ## yellow
-             player[ :y ] = { minute: minute }
-          elsif card == 2   ## red
-             player[ :r ] = { minute: minute }
-          elsif card == 3   ## yellow/red
-             player[ :yr ] = { minute: minute }
-          end
-      end
-   end
-
-
-
-   def dump
-      pp @recs.values
-      puts "  #{@recs.size} player(s)"
    end
 =end
 
