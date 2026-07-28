@@ -129,6 +129,12 @@ class Players
       end
    end
 
+
+   def find( id_player )
+       rec = @recs[ id_player ]
+       rec
+   end
+
    def find!( id_player )
        rec = @recs[ id_player ]
        raise ArgumentError, "no player w/ id >#{id_player}< found; sorry"  if rec.nil?

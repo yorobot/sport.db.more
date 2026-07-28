@@ -139,8 +139,8 @@ def pp_matches_full( season:,
    lineup1 = players1.lineup
    lineup2 = players2.lineup
 
-   pp lineup1
-   pp lineup2
+   ## pp lineup1
+   ## pp lineup2
 
      buf << "\n"
      buf << "#{m.team1.name}: "+ pp_lineup( lineup1, formation: live['formation1'] ) + "\n"

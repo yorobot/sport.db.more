@@ -135,11 +135,16 @@ class Players
           end
 
           if player_on.nil?
-             puts "!! player_on not found in:"
-             pp sub
-             puts "---"
-             pp @recs.values
-             exit 1
+             ### quick fix for N.N.
+             if sub['on'] == 'N.N.'
+               player_on = Player.build( { 'name' => 'N.N.'} )
+             else
+               puts "!! player_on not found in:"
+               pp sub
+               puts "---"
+               pp @recs.values
+               exit 1
+             end
           end
 
           assert( player_off && player_on,
@@ -176,7 +181,9 @@ class Players
    end
 
 
-
+###
+#  PAK Nam Chol  - North Korea  is two players with same name in the same team!!
+#                      with different jersey number 4/14
 
    def _add( new_rec )
       rec =  @recs[ new_rec.id ]
@@ -184,8 +191,13 @@ class Players
           rec = new_rec
           @recs[ new_rec.id] = new_rec
       else
+         if new_rec.id == 'paknamchol'
+            ## ignore for now
+            ##   fix later (use/prefer numeric ids!!!)
+         else
           assert( false,
                   "duplicate player records  - #{rec.pretty_inspect} != #{new_rec.pretty_inspect}")
+         end
       end
    end
 

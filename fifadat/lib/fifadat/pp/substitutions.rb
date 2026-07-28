@@ -74,8 +74,14 @@ def build_sub( h, players: )
 
       minute = _build_sub_minute( h )
 
-      playerOff = players.find!( h['IdPlayerOff'] )
-      playerOn  = players.find!( h['IdPlayerOn'] )
+      playerOff = players.find( h['IdPlayerOff'] )
+      playerOn  = players.find( h['IdPlayerOn'] )
+
+       ## use N.N.  for  nil - why? why not?
+       playerOn = { name: 'N.N.'}      if playerOn.nil?
+
+      assert( playerOff && playerOn,
+                  "playerOff and/or playerOn is NIL in #{h.pretty_inspect}")
 
       rec = { off:     playerOff[ :name ],
               on:      playerOn[ :name ],
@@ -94,6 +100,21 @@ end
 
 
 __END__
+
+
+!! ASSERT FAILED - playerOff and/or playerOn is NIL in {"IdEvent"=>nil,
+ "Period"=>5,
+ "Reason"=>0,
+ "SubstitutePosition"=>3,
+ "IdPlayerOff"=>"56496",
+ "IdPlayerOn"=>nil,
+ "PlayerOffName"=>[{"Locale"=>"en-GB", "Description"=>"Anatoli PUZACH"}],
+ "PlayerOnName"=>[],
+ "Minute"=>"46'",
+ "IdTeam"=>"44026"}
+
+
+
 
 ! minute in sub is nil or empty:
 {"IdEvent"=>nil,
