@@ -1,0 +1,1 @@
+# worldcup cleanup scripts
