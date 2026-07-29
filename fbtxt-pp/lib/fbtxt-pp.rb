@@ -7,6 +7,23 @@ require 'season-formats'
 require_relative 'fbtxt-pp/helper'
 
 
+def norm_name( str )
+   ##  todo/fix - add/report to console if  space collaped or dash trimmed etc.
+   ##  collapse spaces into one
+   ##  e.g.
+   str = str.gsub( /[ ]+/, ' ' )
+   ##    remove leading & trailing space around dash (-)
+   ##   e.g. Callum HUDSON - ODOI  =>  Callum HUDSON-ODOI
+   str = str.gsub( / - /, '-' )
+   str
+end
+
+
+def slugify( str )
+   str.downcase.gsub( /[^a-z0-9]/, '' )
+end
+
+
 ## models
 require_relative 'fbtxt-pp/models/document'  ## note - document is container for LeagueSeason holding teams, matches, etc.
 require_relative 'fbtxt-pp/models/match'

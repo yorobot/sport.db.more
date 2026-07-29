@@ -1,9 +1,28 @@
 
 
-def slugify( str )
-   str.downcase.gsub( /[^a-z0-9]/, '' )
-end
 
+
+TEAM_MODS = {
+   ## nati(onal) teams (e.g. world cup)
+   ##  map "offical" country names to common country names
+   'Germany FR'          => 'West Germany',
+   'German DR'           => 'East Germany',
+   'Korea Republic'      => 'South Korea',
+   'Korea DPR'           => 'North Korea',
+   'China PR'            => 'China',
+   'Republic of Ireland' => 'Ireland',
+   'IR Iran'             => 'Iran',
+   'United States'       => 'USA',
+   'Czechia'             => 'Czech Republic',
+   'Türkiye'             => 'Turkey',
+   ##  Côte d'Ivoire  [fr]  => Ivory Coast   ???
+
+   ## austria (at)
+   ##   remove cut-out (commerical) sponsor names
+   'RZ Pellets WAC'       => 'Wolfsberger AC',  ## WAC
+   'CASHPOINT SCR Altach' => 'SCR Altach',
+   'SV Guntamatic Ried'   => 'SV Ried',
+}
 
 
 class Team
@@ -17,26 +36,53 @@ class Team
 
 
    attr_reader :id,
-               :name, :code, :country
+               :name,
+               :alt_names,
+               :code, :country
    ## attr_accessor :count       ## read/write - let's you update (match) count
 
    def initialize( name:,
                    code:,
                    country:,
                    id: nil)
-      @name    = name
-      ## name = norm_team( name )
+      @alt_names = []
+
+      norm = norm_name( name )
+      if norm != name
+        puts "  NORM TEAM NAME  >#{name}<  =>  >#{norm}<"
+        @alt_names << name
+        name = norm
+      end
+
+      ## check for mods/canonical  name
+      mod = TEAM_MODS[ name ]
+      if mod
+         puts "   MOD TEAM NAME  >#{name}<  =>  >#{mod}<"
+         @alt_names << name
+         name = mod
+      end
+
+      @name  = name
 
       @code    = code
       @country = country
 
-      if id.nil?
-         id = slugify( name )
-      end
-
       @id  = id
 
       ## @count = 0
+   end
+
+
+
+   ## get lookup keys (id+name+alt_names)
+   def keys
+      keys = []
+      keys << @id                if @id
+      keys << slugify(@name)
+      keys += @alt_names.map {|name| slugify(name)}   unless @alt_names.empty?
+
+      ##  note - make sure keys are unique
+      keys.uniq
    end
 
 
@@ -54,7 +100,8 @@ end   # class Team
 
 class Teams
    def initialize
-      @recs = {}
+      @recs   = []
+      @lookup = {}
    end
 
    def add( recs )
@@ -63,31 +110,34 @@ class Teams
       end
    end
 
+   def _add( new_rec )
+      @recs << new_rec
 
-   def find_by!( name: )
-      if name == '?'    ## return dummy
+      new_rec.keys.each do |key|
+         rec  =  @lookup[ key ]
+         if rec.nil?
+            @lookup[ key ] = new_rec
+         else
+           raise ArgumentError,
+             "duplicate team records  #{rec.pretty_inspect} == #{new_rec.pretty_inspect}"
+         end
+      end
+   end
+
+
+   ## note - search by   id, name or alt_names !!
+   def find!( q )
+      if q == '?'    ## return dummy
         rec = Team::DUMMY
       else
-        id = slugify( name )
-        rec =  @recs[ id ]
-        raise ArgumentError, "no team found for name >#{name}< using id >#{id}<"  if rec.nil?
+        key = slugify( q )
+        rec =  @lookup[ key ]
+        if rec.nil?
+           raise ArgumentError, "no team found for q(uery) >#{q}< using key >#{key}<"
+        end
         rec
       end
    end
-
-
-
-   def _add( new_rec )
-      rec  =  @recs[ new_rec.id ]
-      if rec.nil?
-          rec = new_rec
-          @recs[ new_rec.id ] = new_rec
-      else
-         raise ArgumentError,
-            "duplicate team records  #{rec.pretty_inspect} == #{new_rec.pretty_inspect}"
-      end
-   end
-
 
 
 =begin
@@ -105,12 +155,7 @@ class Teams
 =end
 
 
-   def each( &blk ) @recs.values.each( &blk ); end
-
-
-
-   def size() @recs.size; end
-   ### def values() @recs.values; end
-
+   def each( &blk ) @recs.each( &blk ); end
+   def size()       @recs.size; end
 
 end  # class Teams

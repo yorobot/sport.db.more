@@ -87,6 +87,7 @@ outdir = "./tmp"
 
 
 seasons.each do |season|
+    season = Season(season)
 
     name =  config[:name].is_a?(Proc) ? config[:name].call( season )
                                       : config[:name]
@@ -115,11 +116,11 @@ seasons.each do |season|
     puts page
 
     outpath = if opts[:full]
-                 "#{outdir}/more/#{season}_#{slug}-full.txt"
+                 "#{outdir}/more/#{season.to_path}_#{slug}-full.txt"
               elsif opts[:min]
-                 "#{outdir}/min/#{season}_#{slug}.txt"
+                 "#{outdir}/min/#{season.to_path}_#{slug}.txt"
               else
-                 "#{outdir}/more/#{season}_#{slug}.txt"
+                 "#{outdir}/more/#{season.to_path}_#{slug}.txt"
               end
 
     write_text( outpath, page )

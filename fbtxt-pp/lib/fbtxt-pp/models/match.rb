@@ -21,8 +21,8 @@ def initialize( doc, data )
 
 
      ## note - always lookup full team records (use match inline only as refs)
-     @team1 = @doc.find_team_by!( name: @h['team1'] )
-     @team2 = @doc.find_team_by!( name: @h['team2'] )
+     @team1 = @doc.find_team!( @h['team1'] )
+     @team2 = @doc.find_team!( @h['team2'] )
 
 
      @date_utc       = parse_date_utc(   @h['datetime_utc'] )

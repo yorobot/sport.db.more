@@ -22,6 +22,13 @@ class Goal
 
   def initialize( name:, minute:,
                   og: false, pen: false )
+
+    norm = norm_name( name )
+    if norm != name
+       puts "  NORM GOAL/PLAYER NAME >#{name}<  =>  >#{norm}<"
+       name = norm
+     end
+
     @name     = name
     @minute   = minute
 

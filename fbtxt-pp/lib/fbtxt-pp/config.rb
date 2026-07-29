@@ -15,6 +15,8 @@ CONFIGS = {
                     '2014', '2018', '2022', '2026'],
         ## default pp opts
         opts:        { country:       false,
+                       stadium:       false,
+                       city:          true,
                        show_stadiums: true,
                        show_teams:    false,
                        timezone:      true,
@@ -103,13 +105,29 @@ CONFIGS = {
                      },
     },
 
+   de: {
+        slug:      'de',
+        name:      'Germany | Bundesliga',
+        seasons:   ['2025-26'],
+        ## default pp opts
+        opts:        { country: false,
+                       stadium: false,
+                       city:    false,
+                       timezone: false,
+                     },
+        opts_full:   { country: false,
+                     },
+    },
+
   eng: {
         slug:      'eng',   ## rename to dir / indir / source / source or ???
         name:      'England | Premier League',
         seasons:   ['2025-26'],
         ## default pp opts
         opts:        { country: false,
-                       stadium: true,
+                       stadium: false,
+                       city:    false,
+                       timezone: false,
                      },
         opts_full:   { country: false,
                      },

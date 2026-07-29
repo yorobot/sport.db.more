@@ -32,7 +32,7 @@ def initialize( data )
 end
 
 
-def find_team_by!( name: ) @teams.find_by!( name: name );  end
+def find_team!( q ) @teams.find!( q );  end
 
 def find_stadium!( h ) @stadiums.find!( h );  end
 

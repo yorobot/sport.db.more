@@ -12,7 +12,8 @@ class Player
      new(
            name:        h['name'],
            short_name:  h['short_name'],
-           captain:     h['captain']
+           captain:     h['captain'],
+           id:          h['id']
      )
   end
 
@@ -20,6 +21,7 @@ class Player
 
   attr_reader :id,
               :name, :short_name,
+              :alt_names,
               :captain,            ## true|false
               :pos,
               :y, :yr, :r,  ## cards/bookings - yellow, yellow-red, red
@@ -30,12 +32,23 @@ class Player
 
 
   def initialize( name:, short_name: nil,
-                  captain: false )
+                  captain: false,
+                  id: nil )
+     @alt_names  = []
+
+     norm = norm_name( name )
+     if norm != name
+       puts "  NORM PLAYER NAME >#{name}<  =>  >#{norm}<"
+       @alt_names << name
+       name = norm
+     end
+
      @name       = name
      @short_name = short_name
+
      @captain    = captain
 
-     @id  = slugify( @name )
+     @id  = id
 
      @pos     = nil  ## fix-fix-fix - add pos(ition)
      @status  = nil  ##  e.g. starter/bench|sub/etc.
@@ -45,6 +58,19 @@ class Player
 
      @sub     = nil
   end
+
+   ## get lookup keys (id+name+alt_names)
+   def keys
+      keys = []
+      keys << @id                if @id
+      keys << slugify(@name)
+      keys += @alt_names.map {|name| slugify(name)}   unless @alt_names.empty?
+
+      ##  note - make sure keys are unique
+      keys.uniq
+   end
+
+
 
 
   def captain?()  @captain; end
@@ -98,8 +124,10 @@ end  ## class Player
 
 class Players
    def initialize
-      @recs = {}
+      @recs   = []
+      @lookup = {}
    end
+
 
    def add_starter( recs )
       recs.each do |h|
@@ -118,11 +146,43 @@ class Players
    end
 
 
+###
+#  note:
+#    PAK Nam Chol  - North Korea  is two players with same name in the same team!!
+#                      with different jersey number 4/14
+
+   def _add( new_rec )
+      @recs << new_rec
+
+      new_rec.keys.each do |key|
+         rec  =  @lookup[ key ]
+         if rec.nil?
+            @lookup[ key ] = new_rec
+         else
+           if key == 'paknamchol'
+              ## ignore for now
+              ##   fix later (use/prefer numeric ids!!!)
+           else
+             raise ArgumentError,
+               "duplicate player records  #{rec.pretty_inspect} == #{new_rec.pretty_inspect}"
+           end
+         end
+      end
+   end
+
+
+   def find( q )
+      key = slugify( q )
+      @lookup[ key ]
+   end
+
+
+
    def add_subs( subs )
         subs.each do |sub|
 
-          player_off = @recs[ slugify( sub['off']) ]
-          player_on  = @recs[ slugify( sub['on'])  ]
+          player_off = find( sub['off'] )
+          player_on  = find( sub['on'] )
 
           minute = sub['minute']
 
@@ -130,7 +190,7 @@ class Players
              puts "!! player_off not found in:"
              pp sub
              puts "---"
-             pp @recs.values
+             pp @recs
              exit 1
           end
 
@@ -142,7 +202,7 @@ class Players
                puts "!! player_on not found in:"
                pp sub
                puts "---"
-               pp @recs.values
+               pp @recs
                exit 1
              end
           end
@@ -164,7 +224,7 @@ class Players
       bookings.each do |b|
 
           ## note - ignores cards coach and stuff for now upstream!!!
-          player = @recs[ slugify( b['name']) ]
+          player = find( b['name'])
           assert( player, "booking player not found; sorry- #{b.pretty_inspect}" )
 
           minute =  b['minute']
@@ -181,33 +241,13 @@ class Players
    end
 
 
-###
-#  PAK Nam Chol  - North Korea  is two players with same name in the same team!!
-#                      with different jersey number 4/14
-
-   def _add( new_rec )
-      rec =  @recs[ new_rec.id ]
-      if rec.nil?
-          rec = new_rec
-          @recs[ new_rec.id] = new_rec
-      else
-         if new_rec.id == 'paknamchol'
-            ## ignore for now
-            ##   fix later (use/prefer numeric ids!!!)
-         else
-          assert( false,
-                  "duplicate player records  - #{rec.pretty_inspect} != #{new_rec.pretty_inspect}")
-         end
-      end
-   end
-
 
   ###
    ## todo/check
    ##    add alias (or rename) starter  ??
    ##   add new subs to  status == 2  - why? why not?
    def lineup
-      recs = @recs.values.select { |rec| rec.starter? }
+      recs = @recs.select { |rec| rec.starter? }
       recs
    end
 
