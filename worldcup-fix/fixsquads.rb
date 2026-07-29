@@ -42,7 +42,7 @@ def merge( basedir, year: )
   end
 
 
-   puts buf
+   puts buf[0..200]
 
     write_text( "#{basedir}/squads.txt", buf )
 end
@@ -61,6 +61,20 @@ cups = {
     1962 => '1962--chile',
     1966 => '1966--england',
     1970 => '1970--mexico',
+    1974 => '1974--west_germany',
+    1978 => '1978--argentina',
+    1982 => '1982--spain',
+    1986 => '1986--mexico',
+    1990 => '1990--italy',
+    1994 => '1994--usa',
+    1998 => '1998--france',
+    2002 => '2002--south_korea-n-japan',
+    2006 => '2006--germany',
+    2010 => '2010--south_africa',
+    2014 => '2014--brazil',
+    2018 => '2018--russia',
+    2022 => '2022--qatar',
+    2026 => '2026--canada-usa-mexico',
 }
 
 
