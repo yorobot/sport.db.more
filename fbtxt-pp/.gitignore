@@ -69,13 +69,13 @@ cache.json/
 
 
 ####
-#m  temp directories incl. more/ & min/
-##
+#m  temp directories
+##   and (generated) output
 
 tmp/
 tmp2/
 tmp3/
 tmp4/
 
-more/
-min/
+
+o/

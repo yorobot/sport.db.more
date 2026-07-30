@@ -21,7 +21,8 @@ attr_reader   :ht, :ft, :et, :p, :agg,
 
 
 def initialize( ht: nil, ft: nil, et: nil, p: nil, agg: nil,
-               reported: nil )
+               reported: nil,
+               score: nil )
    @ht, @ft, @et, @p, @agg = ht, ft, et, p, agg
 
    ##
@@ -29,6 +30,12 @@ def initialize( ht: nil, ft: nil, et: nil, p: nil, agg: nil,
    ##             period is not known (might be  full-time or aet)
    ##          or undefined e.g. for  abandoned or awarded (administered) score
    @reported = reported
+
+   if score
+      puts " DEPRECATED - score got score keyword (use reported):"
+      pp [ ht, ft, et, p, agg, reported, score]
+      @reported = score
+   end
 end
 
 
