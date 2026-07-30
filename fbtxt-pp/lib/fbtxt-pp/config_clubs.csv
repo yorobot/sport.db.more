@@ -1,0 +1,37 @@
+
+code, name, seasons,  opts,    opts_full
+
+##
+##  remove seasons - why? why not?
+
+at,      Austria | Bundesliga,     2025/26,,
+de,      Germany | Bundesliga,     2025/26,,
+eng,     England | Premier League, 2025/26,,
+
+
+fr,      France | Ligue 1,          2025/26,,
+it,      Italy | Serie A,           2025/26,,
+es,      Spain | Primera División,   2025/26,,
+
+mx,      Mexico | Liga MX,           2025/26,,
+
+uefa.cl,     UEFA | Champions League,  2025/26, country|city, country
+uefa.europa, UEFA | Europa League,     2025/26, country|city, country
+uefa.con,    UEFA | Conference League, 2025/26, country|city, country
+
+###
+#  opts
+#    default as false everyting!! e.g.
+#                       country: false,
+#                       stadium: false,
+#                       city:    false,
+#                       timezone: false
+#                     { country: false,
+#                       stadium: false,
+#                       city:    false,
+#                       timezone: false,
+#                     }
+# opts_full
+#    default  only country false
+#    { country: false,
+#                     }

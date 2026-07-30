@@ -4,6 +4,7 @@ require 'season-formats'
 
 
 
+require_relative 'fbtxt-pp/version'
 require_relative 'fbtxt-pp/helper'
 
 
@@ -50,4 +51,18 @@ require_relative 'fbtxt-pp/pp/ppsquads'
 
 
 require_relative 'fbtxt-pp/config'
-require_relative 'fbtxt-pp/tool'
+require_relative 'fbtxt-pp/config_worldcup'
+require_relative 'fbtxt-pp/config_more'
+
+
+require_relative 'fbtxt-pp/tool-fbpp'
+
+
+## note - fbhub requires  fbup gem for now
+##            must include "manually"
+require_relative 'fbtxt-pp/tool-fbhub'
+
+
+##
+## say hello
+puts Fbtxt::Module::Fbpp.banner

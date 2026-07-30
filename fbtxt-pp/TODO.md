@@ -3,6 +3,8 @@
 - [ ] add  timezone opt to pp_match!!!
 - [ ] opt_city  - flag (like opt_stadium)
 
+- [ ]  (national) leagues - in full mode (no need to add country code to referees!!)
+        e.g. Refs: Stefan Ebner (AUT), Robert Steinacher (AUT), Mario Diesenberger (AUT)
 
 
 ```

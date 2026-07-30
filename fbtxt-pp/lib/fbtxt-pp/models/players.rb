@@ -159,7 +159,8 @@ class Players
          if rec.nil?
             @lookup[ key ] = new_rec
          else
-           if key == 'paknamchol'
+           if key == 'paknamchol'      ||
+              key == 'deniskovalevich'
               ## ignore for now
               ##   fix later (use/prefer numeric ids!!!)
            else

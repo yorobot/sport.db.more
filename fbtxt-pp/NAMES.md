@@ -31,3 +31,15 @@ note -  dash (-) without space already in use e.g.:
   Stade Bollaert-Delelis
   Stade Saint-Symphorien
 ```
+
+
+cites:
+
+```
+Oswestry / Croesoswallt, Shropshire
+
+####
+## use ???
+
+Oswestry/Croesoswallt
+```
