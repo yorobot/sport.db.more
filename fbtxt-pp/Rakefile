@@ -1,9 +1,10 @@
 require 'hoe'
-## require './lib/fbtxt-pp/version.rb'
+require './lib/fbtxt-pp/version.rb'
+
 
 Hoe.spec 'fbtxt-pp' do
 
-  self.version = '0.0.1'
+  self.version = Fbtxt::Module::Fbpp::VERSION
 
   self.summary = "fbtxt-pp - pretty print (pp) football match fixtures & results in the football.txt format"
   self.description = summary
