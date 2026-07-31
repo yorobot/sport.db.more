@@ -105,6 +105,7 @@ sync  =  Fbup::GitHubSync.new( repos )
 puts "  sync:"
 pp sync
 
+sync.git_fast_forward_if_clean    if opts[:ffwd]
 
 
 
@@ -192,6 +193,9 @@ datasets.each do |slug, seasons|
         end
   end
 end
+
+
+sync.git_push_if_changes   if opts[:push]
 
 
 puts "bye"
