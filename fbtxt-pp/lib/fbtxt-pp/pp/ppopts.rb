@@ -44,6 +44,11 @@ class FormatOpts
                    stadium:,
                    timezone:,
                    country:,
+                   clubs:      true,   ## true|false   (allow use nati(onal) as reverse?)
+                   ####
+                   inline_cards: false,
+                   ##  fix- change to short_names  - why? why not?
+                   short:   false,    ## use short (player/referee/etc.) names true|false
                    ####
                    ## (stats) headers
                    ##    use list_stadiums or such - why? why not?
@@ -58,6 +63,11 @@ class FormatOpts
        ## incl. country code in team name?
        @country  = country
 
+
+       @inline_cards = inline_cards
+       @short        = short
+       @clubs        = clubs
+
        ## stats header
        ##   print/list teams
        @show_teams     = show_teams
@@ -69,6 +79,12 @@ class FormatOpts
    def stadium?()  @stadium; end
    def timezone?() @timezone; end
    def country?()  @country; end
+
+   def inline_cards?() @inline_cards; end
+
+   def short?() @short; end
+
+   def clubs?() @clubs; end
 
    def show_teams?()     @show_teams;  end
    def show_stadiums?()  @show_stadiums;  end

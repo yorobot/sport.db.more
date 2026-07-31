@@ -36,9 +36,9 @@ end
 
 
  MINUTE_RE = %r{  \A
-                       (?<minute>\d{1,3}) '
+                       (?<minute>\d{1,3}) '?
                         (  \+
-                          (?<offset>\d{1,2}) '
+                          (?<offset>\d{1,2}) '?
                         )?
                    \z
                  }x

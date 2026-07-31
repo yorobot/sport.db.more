@@ -1,10 +1,54 @@
 # TODOS
 
 - [ ] add  timezone opt to pp_match!!!
-- [ ] opt_city  - flag (like opt_stadium)
+- [x] opt_city  - flag (like opt_stadium)
 
 - [ ]  (national) leagues - in full mode (no need to add country code to referees!!)
         e.g. Refs: Stefan Ebner (AUT), Robert Steinacher (AUT), Mario Diesenberger (AUT)
+        use   ref/country or ref+country or ref_country
+              team/country
+              use ("generic") country or ref_country ???
+
+
+```
+fix errors in:
+ [:ERROR, "europe/france/2025-26_fr1-full.txt", "103 parse error(s), 2768 tree node(s)"],
+ [:ERROR, "italy/2025-26/1-seriea-full.txt", "114 parse error(s), 3427 tree node(s)"],
+
+- [ ]  wrap (player) name in goal into player too
+       - makes it uniform to check/norm players
+
+- [ ]  add norm check for city and stadium too
+        -  incl.  _/_
+
+-   use CITY_MODS  to downcase some cities
+                   e.g. PARIS => Paris  etc.
+
+-   fix/check in france
+     add match status to pp !!!!
+
+- check in at 2024/25
+   !! ASSERT FAILED - official type 1/2/3/4/5/6/7/8/9/10 expected; got 0
+
+- check/add squads too
+
+-- check conversion error in fifadat (mls) e.g.
+
+fifadat/pp/convert.rb:83:in `block in convert': undefined method `merge' for nil (NoMethodError)
+
+           rec[:score] = rec[:score].merge( score_more )
+                                    ^^^^^^
+        from fifadat/pp/convert.rb:52:in `each'
+        from fifadat/pp/convert.rb:52:in `each_with_index'
+        from fifadat/pp/convert.rb:52:in `convert'
+        from fifadat/tool.rb:167:in `block (2 levels) in main'
+        from fifadat/tool.rb:165:in `each'
+        from fifadat/tool.rb:165:in `block in main'
+        from fifadat/tool.rb:162:in `each'
+        from fifadat/tool.rb:162:in `main'
+
+```
+
 
 
 ```

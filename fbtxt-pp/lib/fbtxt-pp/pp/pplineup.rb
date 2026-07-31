@@ -1,8 +1,13 @@
 
-def _pp_player( player )
+def _pp_player( player, opts: )
    buf = String.new
 
-   buf << "#{player.name}"
+   if opts.short?   ## use/prefer  short name - why? why not?
+     buf << "#{player.short_name || player.name}"
+   else
+     buf << "#{player.name}"
+   end
+
    buf << " [c]"  if player.captain?
 
 
@@ -14,7 +19,7 @@ def _pp_player( player )
 
     ## check for sub (recursive)
     if player.sub
-       buf << " (#{player.sub.minute}' #{_pp_player( player.sub.player)})"
+       buf << " (#{player.sub.minute}' #{_pp_player( player.sub.player, opts: opts )})"
     end
 
    buf
@@ -24,7 +29,8 @@ end
 ##  note - allow (optional formation e.g.   5-3-2 etc.
 ##
 
-def pp_lineup( players, indent: 6, formation: nil )
+def pp_lineup( players, indent: 6, formation: nil,
+                        opts: )
 
 
     if formation
@@ -45,7 +51,7 @@ def pp_lineup( players, indent: 6, formation: nil )
 
     players.each_with_index do |player,i|
         text  = String.new
-        text  <<  _pp_player( player )
+        text  <<  _pp_player( player, opts: opts )
 
 
         next_player = players[i+1]
@@ -81,8 +87,12 @@ end
 ###########
 #  officials  (that is, referees)
 
-def pp_officials( recs )
+def pp_officials( recs, opts: )
    recs.map do |official|
-               "#{official.name} (#{official.country})"
+               if opts.country?
+                  "#{official.name} (#{official.country})"
+               else
+                  "#{official.name}"
+               end
             end.join( ', ' )
 end

@@ -91,7 +91,7 @@ doc.each_match do |m|
                   ' v '
                end
 
-     if opts.country?
+     if opts.clubs? && opts.country?
         buf <<  "   #{m.team1.name} (#{m.team1.country})"
         buf <<  "  #{score}  "
         buf <<  "#{m.team2.name} (#{m.team2.country})   "

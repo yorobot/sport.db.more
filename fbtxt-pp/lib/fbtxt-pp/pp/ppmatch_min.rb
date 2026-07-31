@@ -48,7 +48,7 @@ def pp_matches_min(  season:,
                end
 
 
-     if opts.country?
+     if opts.clubs? && opts.country?
         line = "#{m.team1.name} (#{m.team1.country})"
         line <<  " v "
         line <<  "#{m.team2.name} (#{m.team2.country})"

@@ -66,7 +66,7 @@ def pp_matches_full( season:,
 
 
 
-   if opts.country?
+   if opts.clubs? && opts.country?
      buf <<  "  #{m.team1.name} (#{m.team1.country}) v #{m.team2.name} (#{m.team2.country})"
    else
      buf <<  "  #{m.team1.name} v #{m.team2.name}"
@@ -115,24 +115,26 @@ def pp_matches_full( season:,
    players1.add_bench( live['bench1']||[])
    players1.add_subs( live['subs1']||[])
 
-   players1.add_yellow( live['yellow1']||[])
-   players1.add_yellowred( live['yellowred1']||[])  ## second yellow (resulting in red)
-   players1.add_red( live['red1']||[])
-   ### check for bookings too (change to bookings/cards - why? why not?)
-   ##   players1.add_bookings( live['HomeTeam']['Bookings'])
-
+   if opts.inline_cards?
+     players1.add_yellow( live['yellow1']||[])
+     players1.add_yellowred( live['yellowred1']||[])  ## second yellow (resulting in red)
+     players1.add_red( live['red1']||[])
+     ### check for bookings too (change to bookings/cards - why? why not?)
+     ##   players1.add_bookings( live['HomeTeam']['Bookings'])
+   end
 
    players2 = Players.new
    players2.add_starter( live['lineup2'] )
    players2.add_bench( live['bench2']||[])
    players2.add_subs( live['subs2']||[])
 
-   players2.add_yellow( live['yellow2']||[])
-   players2.add_yellowred( live['yellowred2']||[])  ## second yellow (resulting in red)
-   players2.add_red( live['red2']||[])
-   ### check for bookings too (change to bookings/cards - why? why not?)
-   ##   players2.add_bookings( live['AwayTeam']['Bookings'])
-
+   if opts.inline_cards?
+     players2.add_yellow( live['yellow2']||[])
+     players2.add_yellowred( live['yellowred2']||[])  ## second yellow (resulting in red)
+     players2.add_red( live['red2']||[])
+     ### check for bookings too (change to bookings/cards - why? why not?)
+     ##   players2.add_bookings( live['AwayTeam']['Bookings'])
+   end
 
 
 
@@ -143,10 +145,27 @@ def pp_matches_full( season:,
    ## pp lineup2
 
      buf << "\n"
-     buf << "#{m.team1.name}: "+ pp_lineup( lineup1, formation: live['formation1'] ) + "\n"
-     buf << "#{m.team2.name}: "+ pp_lineup( lineup2, formation: live['formation2'] ) + "\n"
-     buf << "\n"
 
+
+     buf << "#{m.team1.name}: "+ pp_lineup( lineup1, formation: live['formation1'], opts: opts ) + "\n"
+     unless opts.inline_cards?
+        buf << pp_bookings(  live['yellow1']||[],
+                                 live['yellowred1']||[],
+                                 live['red1']||[],
+                                 players: players1, opts: opts )
+        buf << "\n"
+     end
+
+     buf << "#{m.team2.name}: "+ pp_lineup( lineup2, formation: live['formation2'], opts: opts ) + "\n"
+     unless opts.inline_cards?
+        buf << pp_bookings(  live['yellow2']||[],
+                                 live['yellowred2']||[],
+                                 live['red2']||[],
+                                 players: players2, opts: opts )
+     end
+
+
+     buf << "\n"
 
 
 =begin
@@ -190,7 +209,7 @@ def pp_matches_full( season:,
     if officials.size == 0
       ## puts "!! WARN no refs / officials found"
     else
-      buf << "Refs: " + pp_officials( officials )
+      buf << "Refs: " + pp_officials( officials, opts: opts )
       buf << "\n"
     end
 

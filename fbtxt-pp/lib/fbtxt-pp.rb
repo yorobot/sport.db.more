@@ -47,6 +47,7 @@ require_relative 'fbtxt-pp/pp/ppmatch_full'
 require_relative 'fbtxt-pp/pp/ppmatch_min'
 require_relative 'fbtxt-pp/pp/pppenalties'
 require_relative 'fbtxt-pp/pp/pplineup'
+require_relative 'fbtxt-pp/pp/ppbookings'
 require_relative 'fbtxt-pp/pp/ppsquads'
 
 
