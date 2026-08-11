@@ -408,6 +408,17 @@ end
 ## pp worldcup.data.keys
 
 
+
+### note - use a command-line switch/arg to toggle outdir!!
+args = ARGV
+outdir =  if args[0] && ['u', 'up', '-u', '--up'].include?( args[0].downcase )
+              "/sports/openfootball/worldcup/wikipedia"
+           else
+             './o'
+           end
+
+
+
 worldcup.data.each do |code, hash|
 
    ## note - line-up start at 1970
@@ -443,8 +454,6 @@ worldcup.data.each do |code, hash|
      buf << _build_match( rec )
    end
 
-   outdir = './o'
-   # outdir = '/sports/openfootball/worldcup.more/worldcup'
    outpath = "#{outdir}/#{year}.txt"
    write_text( outpath, buf )
 end
