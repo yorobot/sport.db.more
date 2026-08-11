@@ -1,7 +1,7 @@
 
 
 ### shared root datadir
-DATA_DIR = '/sports/more/worldcup/data-csv'
+DATA_DIR = '/sports/more/worldcup2/data-csv'
 
 
 def fmt_name( rec )
@@ -33,7 +33,7 @@ class LineBuffer
    def add( str )
      line = @lines[-1]   ## last
      if line.size + str.size > @width   ## start a new line (if overflow)
-        @lines <<  (line=String.new)  
+        @lines <<  (line=String.new)
         line << ' ' * @indent
         line << str
      else
@@ -53,7 +53,7 @@ class Worldcup    ## todo - use a more generic name e.g League or such - why? wh
   def initialize
     @data = {}   ## data by leagues/cups
   end
- 
+
   def _get_match( tournament_id, match_id )
     matches = @data[ tournament_id ] ||= Hash.new
 
@@ -64,30 +64,30 @@ class Worldcup    ## todo - use a more generic name e.g League or such - why? wh
                                       },
                                       'team2'  => {
                                         'starter'    => [],
-                                        'substitute' => [],                                     
+                                        'substitute' => [],
                                       },
                                       'subs1'  => [],
-                                      'subs2'  => [],                                     
+                                      'subs2'  => [],
                                       'goals1'  => [],
-                                      'goals2'  => [],                                     
+                                      'goals2'  => [],
                                       'penalties1'  => [],
-                                      'penalties2'  => [],                                     
+                                      'penalties2'  => [],
                                       'bookings1'  => [],
-                                      'bookings2'  => [],                                     
+                                      'bookings2'  => [],
                              }
-    m  
+    m
   end
 
 
   def []( tournament_id )
     @data[tournament_id].values
   end
- 
+
   def data() @data; end
 
-  
+
   def collect_subs( recs )
-  ### note - records must be pairs!!  in and out 
+  ### note - records must be pairs!!  in and out
   ##                  going_off and coming_on
 
   rec_offs = []
@@ -107,10 +107,10 @@ class Worldcup    ## todo - use a more generic name e.g League or such - why? wh
     end
 
     raise ArgumentError, "coming_on expected"          if rec['coming_on'] != '1'
-    
+
     if rec_offs.size == 0
       pp rec
-      raise ArgumentError, "no going off pair in queue"  
+      raise ArgumentError, "no going off pair in queue"
     end
 
     ## get first going off to get pairs
@@ -121,7 +121,7 @@ class Worldcup    ## todo - use a more generic name e.g League or such - why? wh
        rec_on['match_id']     != rec_off['match_id']
        pp rec_off
        pp rec_on
-       raise ArgumentError, "sub off/on mismatch"  
+       raise ArgumentError, "sub off/on mismatch"
     end
 
 
@@ -131,13 +131,13 @@ class Worldcup    ## todo - use a more generic name e.g League or such - why? wh
 
 
     subs = if rec['home_team'] == '1' && rec['away_team'] == '0'
-              m['subs1'] 
+              m['subs1']
            elsif rec['home_team'] == '0' && rec['away_team'] == '1'
               m['subs2']
            else
               pp rec
               raise ArgumentError, "expected home_team/away_team 0|1"
-           end 
+           end
 
     sub = { 'off' => {  'shirt_number' => rec_off['shirt_number'].to_i(10),
                         'given_name'   => rec_off['given_name'],
@@ -148,7 +148,7 @@ class Worldcup    ## todo - use a more generic name e.g League or such - why? wh
                           'family_name'  => rec_on['family_name'],},
             'minute_label' => rec['minute_label'],
             'minute_regulation'=> rec['minute_regulation'].to_i(10),
-            'minute_stoppage'=> rec['minute_stoppage'].to_i(10),            
+            'minute_stoppage'=> rec['minute_stoppage'].to_i(10),
     }
 
     subs << sub
@@ -252,7 +252,7 @@ def collect_lineups( recs )
 
     tournament_id = rec['tournament_id']
     match_id      = rec['match_id']
- 
+
     m = _get_match( tournament_id, match_id )
 
     ## add date
@@ -260,15 +260,15 @@ def collect_lineups( recs )
 
 
     team = if rec['home_team'] == '1' && rec['away_team'] == '0'
-              m['team1'] 
+              m['team1']
            elsif rec['home_team'] == '0' && rec['away_team'] == '1'
               m['team2']
            else
               pp rec
               raise ArgumentError, "expected home_team/away_team 0|1"
-           end 
+           end
 
-    team['name'] = rec['team_name'] 
+    team['name'] = rec['team_name']
 
 
     lineup =   if rec['starter'] == '1' && rec['substitute'] == '0'
@@ -282,7 +282,7 @@ def collect_lineups( recs )
 
 
     pos = rec['position_code']
-    
+
     unless POS.include?( pos )
         pp rec
         raise ArgumentError, "unknown position_code"
@@ -307,18 +307,18 @@ def collect_goals( recs )
     next if rec['tournament_name'].index('Women')
 
     tournament_id = rec['tournament_id']
-    match_id      = rec['match_id']    
+    match_id      = rec['match_id']
     m = _get_match( tournament_id, match_id )
-    
+
 
     goals = if rec['home_team'] == '1' && rec['away_team'] == '0'
-              m['goals1'] 
+              m['goals1']
            elsif rec['home_team'] == '0' && rec['away_team'] == '1'
               m['goals2']
            else
               pp rec
               raise ArgumentError, "expected home_team/away_team 0|1"
-           end 
+           end
 
     goal = {
              'shirt_number' => rec['shirt_number'].to_i(10),
@@ -346,16 +346,16 @@ def collect_penalties( recs )
     tournament_id = rec['tournament_id']
     match_id      = rec['match_id']
     m = _get_match( tournament_id, match_id )
-    
+
 
     penalties = if rec['home_team'] == '1' && rec['away_team'] == '0'
-              m['penalties1'] 
+              m['penalties1']
            elsif rec['home_team'] == '0' && rec['away_team'] == '1'
               m['penalties2']
            else
               pp rec
               raise ArgumentError, "expected home_team/away_team 0|1"
-           end 
+           end
 
     pen = {
              'shirt_number' => rec['shirt_number'].to_i(10),
@@ -374,7 +374,7 @@ def collect_matches( recs )
    recs.each do |rec|
       ## skip women's worldcup for now; sorry
       next if rec['tournament_name'].index('Women')
-  
+
       tournament_id = rec['tournament_id']
       match_id      = rec['match_id']
       m = _get_match( tournament_id, match_id )
@@ -386,18 +386,18 @@ def collect_matches( recs )
 
       m['stage_name'] = rec['stage_name']  ## e.g. group phase, group stage, round of 16, etc.
       m['group_name'] = rec['group_name']  ## e.g. Group 1
- 
+
       m['stadium_name'] = rec['stadium_name']  # e.g. Estadio Pocitos
       m['city_name']    = rec['city_name']     # e.g.  Montevideo
       m['country_name'] = rec['country_name']  # e.g. Uruguay
 
-      m['extra_time']       = (rec['extra_time'] == '1') 
+      m['extra_time']       = (rec['extra_time'] == '1')
       m['penalty_shootout'] = (rec['penalty_shootout'] == '1')
 
-      ## note - normalize (unicode) dash 
+      ## note - normalize (unicode) dash
       m['score']           =   rec['score'].gsub( /[–]/, '-' )
-      m['score_penalties'] =   rec['score_penalties'].gsub( /[–]/, '-' ) 
-    end  
+      m['score_penalties'] =   rec['score_penalties'].gsub( /[–]/, '-' )
+    end
 end
 
 
@@ -412,13 +412,13 @@ def collect_bookings( recs )
 
 
     bookings = if rec['home_team'] == '1' && rec['away_team'] == '0'
-              m['bookings1'] 
+              m['bookings1']
            elsif rec['home_team'] == '0' && rec['away_team'] == '1'
               m['bookings2']
            else
               pp rec
               raise ArgumentError, "expected home_team/away_team 0|1"
-           end 
+           end
 
     booking = {
              'shirt_number' => rec['shirt_number'].to_i(10),
@@ -430,7 +430,7 @@ def collect_bookings( recs )
               'yellow_card'        => rec['yellow_card'] == '1',
               'red_card'           => rec['red_card'] == '1',
               'second_yellow_card' => rec['second_yellow_card'] == '1',
-              'sending_off'        => rec['sending_off'] == '1'            
+              'sending_off'        => rec['sending_off'] == '1'
     }
 
     ## only add sending off for now (red card or 2nd_yellow_card)
@@ -442,4 +442,3 @@ end
 
 
 end # class Worldcup
-
