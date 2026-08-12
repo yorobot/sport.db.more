@@ -19,6 +19,7 @@ lib/fbtxt-pp/models/players.rb
 lib/fbtxt-pp/models/score.rb
 lib/fbtxt-pp/models/stadiums.rb
 lib/fbtxt-pp/models/teams.rb
+lib/fbtxt-pp/pp/ppbookings.rb
 lib/fbtxt-pp/pp/ppgoals.rb
 lib/fbtxt-pp/pp/pplineup.rb
 lib/fbtxt-pp/pp/ppmatch.rb
