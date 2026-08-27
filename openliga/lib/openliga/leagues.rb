@@ -1,37 +1,36 @@
 module Openliga
 
-  ## see
- # -  https://www.openligadb.de/Leagues?season=2024
- # -  https://www.openligadb.de/Leagues?season=2023
- # -  https://www.openligadb.de/Leagues?season=2022
- # -  https://www.openligadb.de/Leagues?season=2021
- # -  https://www.openligadb.de/Leagues?season=2020
+
+  def self.config_dir()  "#{File.dirname(File.dirname(__dir__))}/config";  end
 
 
-  LEAGUES = {
-## clubs
-    'de.1'   => 'bl1',
-    'de.2'   => 'bl2',
-    'de.3'   => 'bl3',
-    'de.cup' => 'dfb',  ## dfb (2023), dfb2022, dfb2021, dfb2020
-
-    'at.1'  => 'ÖBL', 
-   #   Ö-Bundesliga	2021 -	ÖBL (2021)		
- 
-   'uefa.cl'  => '',   ## uefacl22 (2022), uefacl (2021)
-    # UEFA CL 2021/22	2021	uefacl
-
-    # UEFA Europa League 2021		el21
+  ## code, season,  league_name, league_season, league_shortcut
+  ##
+  ##  "leagueName": "Champions League 2026/2027",
+  ##  "leagueShortcut": "ucl",
+  ##  "leagueSeason": "2026",
+  ###
+  League = Struct.new( :name, :season, :shortcut)
 
 
-## national teams
-    'world'    => 'WM2022',  
+  LEAGUES = begin
+    leagues = {}
+    ['leagues_de.csv',
+     'leagues_more.csv'].each do |name|
+       path = "#{config_dir}/#{name}"
+       rows = read_csv( path )
+       ## pp rows
+       rows.each do |row|
+          seasons = leagues[row['code']] ||= {}
+          ## note - normalize season!!
+          season = Season.parse( row['season'] )
+          seasons[ season.to_key ] = League.new( name:     row['league_name'],
+                                                 season:   row['league_season'],
+                                                 shortcut: row['league_shortcut'] )
+      end
+    end
+    leagues
+end
 
-    'euro'          => 'em',   ## em (2024), em20 (2020)
-    'southamerica'  => 'CA2024',
 
- ##  Copa América 2024		CA2024
- ## Copa América 2021		CA2021   
-  }
 end   #  module Openliga
-

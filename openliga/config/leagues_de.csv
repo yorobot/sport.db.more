@@ -1,0 +1,65 @@
+####
+#  map known leagues with quality score 100
+
+## see
+# -  https://www.openligadb.de/Leagues?season=2026
+# -  https://www.openligadb.de/Leagues?season=2024
+# -  https://www.openligadb.de/Leagues?season=2023
+# -  https://www.openligadb.de/Leagues?season=2022
+# -  https://www.openligadb.de/Leagues?season=2021
+# -  https://www.openligadb.de/Leagues?season=2020
+
+##
+##  add openliga league_id - why? why not?
+
+##
+##    de.1   => bl1,
+##    de.2   => bl2,
+##    de.3   => bl3,
+##    de.cup => dfb, dfb2022, dfb2021, dfb2020
+
+
+
+
+code, season,  league_name, league_season, league_shortcut
+
+de.1,   2026/27,  1. Fußball-Bundesliga 2026/2027, 2026, bl1
+de.2,   2026/27,  2. Fußball-Bundesliga 2026/2027, 2026, bl2
+de.3,   2026/27,  3. Liga 2026/2027, 2026, bl3
+de.cup, 2026/27,  DFB Pokal 2026/2027, 2026, dfb
+
+
+de.1,   2025/26,  1. Fußball-Bundesliga 2025/2026, 2025, bl1
+de.2,   2025/26,  2. Fußball-Bundesliga 2025/2026, 2025, bl2
+de.3,   2025/26,  3. Liga 2025/2026, 2025, bl3
+de.cup, 2025/26,  DFB Pokal 2025/2026, 2025, dfb
+
+
+de.1,   2024/25,  1. Fußball-Bundesliga 2024/2025, 2024, bl1
+de.2,   2024/25,  2. Fußball-Bundesliga 2024/2025, 2024, bl2
+de.3,   2024/25,  3. Fußball-Bundesliga 2024/2025, 2024, bl3
+de.cup, 2024/25,  DFB-Pokal 2024/25, 2024, dfb
+
+
+de.1,   2023/24,   1. Fußball-Bundesliga 2023/2024, 2023, bl1
+de.2,   2023/24,   2. Fußball-Bundesliga 2023/2024, 2023, bl2
+de.3,   2023/24,   3. Fußball-Bundesliga 2023/2024, 2023, bl3
+de.cup, 2023/24,   DFB-Pokal 2023/2024, 2023, dfb
+
+
+de.1,   2022/23,   1. Fußball-Bundesliga 2022/2023, 2022, bl1
+de.2,   2022/23,   2. Fußball-Bundesliga 2022/2023, 2022, bl2
+de.3,   2022/23,   3. Fußball-Bundesliga 2022/2023, 2022, bl3
+de.cup, 2022/23,   DFB-Pokal 2022/23, 2022, dfb2022
+
+
+de.1,   2021/22,  1. Fußball-Bundesliga 2021/2022, 2021, bl1
+de.2,   2021/22,  2. Fußball-Bundesliga 2021/2022, 2021, bl2
+de.3,   2021/22,  3. Fußball-Bundesliga 2021/2022, 2021, bl3
+de.cup, 2021/22,  DFB-Pokal 2021/22, 2021, dfb2021
+
+
+de.1,   2020/21, 1. Fußball-Bundesliga 2020/2021, 2020, bl1
+de.2,   2020/21, 2. Fußball-Bundesliga 2020/2021, 2020, bl2
+de.3,   2020/21, 3. Fußball-Liga 2020/2021, 2020, bl3
+de.cup, 2020/21, DFB-Pokal 2020/21, 2020, dfb2020

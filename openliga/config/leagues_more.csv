@@ -1,0 +1,43 @@
+
+
+code, season,  league_name, league_season, league_shortcut
+
+
+####
+# clubs
+
+##    at.1  => ÖBL,
+##   #   Ö-Bundesliga	2021 -	ÖBL (2021)
+##
+##    uefa.cl  =>  uefacl22 (2022), uefacl (2021)
+##      UEFA CL 2021/22,  2021,  uefacl
+#       UEFA Europa League 2021,  el21
+
+
+uefa.cl, 2025/26, Champions League 2025/2026, 2025, ucl
+uefa.cl, 2024/25, UEFA Champions League, 2024, ucl24
+uefa.cl, 2023/24, UEFA Champions League 2023/2024, 2023, champion1
+uefa.cl, 2022/23, UEFA Champions League 22/23, 2022, uefacl22
+
+
+#####
+# national teams
+
+##      world    => WM2022,
+##
+##     euro          => em,   ## em (2024), em20 (2020)
+##      southamerica  => CA2024,
+##
+##  Copa América 2024   CA2024
+##  Copa América 2021   CA2021
+
+
+
+
+world, 2026,    WM 2026, 2026, wm26
+world, 2022,    WM-KATAR, 2022, WM2022
+
+euro,  2024,     UEFA EURO 2024, 2024, em
+euro,  2021,    UEFA EURO 2020, 2020, em20
+
+copa,  2024,     Copa América 2024, 2024, CA2024

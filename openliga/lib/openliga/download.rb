@@ -1,5 +1,23 @@
 module Openliga
 
+
+def self.download( league:, season: )
+
+    season = Season( season )   ## cast (ensure) season class (NOT string, integer, etc.)
+
+    info = (LEAGUES[ league.downcase ]||{})[ season.to_key ]
+    if info.nil?
+       puts "!! ERROR - no openliga info found for #{league} #{season}"
+       exit 1
+    end
+    pp info
+
+
+    Metal.matches( info.shortcut, info.season )
+    Metal.teams(   info.shortcut, info.season )
+end
+
+
 ##################
 ##  plumbing metal "helpers"
 
@@ -7,17 +25,17 @@ class Metal
 
   BASE_URL = 'https://api.openligadb.de'
 
- 
+
   def self.leagues
     get( "#{BASE_URL}/getavailableleagues" )
-  end  
- 
+  end
+
 
   def self.teams_url( code, year )
     "#{BASE_URL}/getavailableteams/#{code}/#{year}"
   end
 
-  def self.teams( code, year ) 
+  def self.teams( code, year )
     get( teams_url( code, year ) )
   end
 
@@ -28,14 +46,14 @@ class Metal
   def self.matches( code, year )
     get( matches_url( code, year ) )
   end
- 
-  
+
+
 
   def self.goalgetters( code, year )
     get( "#{BASE_URL}/getgoalgetters/#{code}/#{year}" )
   end
 
-  
+
   def self.get( url )
     headers = {}
     headers['User-Agent']   = 'ruby'
@@ -51,4 +69,3 @@ class Metal
   end
 end  # class Metal
 end # module Footballdata
-

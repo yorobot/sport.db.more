@@ -1,4 +1,4 @@
-$LOAD_PATH.unshift( '../../../rubycocos/webclient/webget/lib' )
+$LOAD_PATH.unshift( '/sports/rubycocos/webclient/webget/lib' )
 $LOAD_PATH.unshift( './lib' )
 require 'openliga'
 
@@ -6,14 +6,15 @@ require 'openliga'
 Webcache.root = './cache'  ### c:\sports\cache
 
 
-pp Openliga::LEAGUES
-puts "  #{Openliga::LEAGUES.keys.size} league(s)"
-
 
 ## try de.1 - 1. bundesliga
-# Openliga::Metal.matches( 'bl1', 2023 )  # 2023/2024
-# Openliga::Metal.teams( 'bl1', 2023 )
-# Openliga::Metal.goalgetters( 'bl1', 2023 )
+
+Openliga::Metal.matches( 'bl1', 2026 )  # 2026/27
+Openliga::Metal.teams( 'bl1', 2026 )
+Openliga::Metal.goalgetters( 'bl1', 2026 )
+
+__END__
+
 
 # Openliga::Metal.matches( 'bl1', 2022 )
 # Openliga::Metal.teams( 'bl1', 2022 )
