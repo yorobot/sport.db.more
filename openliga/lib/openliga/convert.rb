@@ -24,14 +24,27 @@ def self.convert( league:, season: )
 
   matches = data
   matches.each do |h|
-    recs << build_match( h )
+      m =  build_match( h )
+
+      ## note - if match is broken e.g. has no team1 or team2
+      ##          than skip for now
+
+      if m.team1.nil? || m.team2.nil?
+         puts "!! warn - skipping match with team missing:"
+         pp h
+      else
+        recs << m
+      end
   end
 
   recs
 
 
-  buf = pp_matches( recs )
-  buf
+  header = "= #{info.name}\n\n"
+  body = pp_matches( recs )
+
+
+  header + body
 end  # method self.convert
 
 
@@ -68,12 +81,32 @@ def self.build_score( h )
  "resultTypeKind"=>"HalfTime",
  "resultDescription"=>"Ergebnis nach Ende der ersten Halbzeit"}
 
+
+or
+!! ERROR - unknown result type:
+{"resultID"=>118424,
+ "resultName"=>"Nachspielzeit",
+ "pointsTeam1"=>1,
+ "pointsTeam2"=>2,
+ "resultOrderID"=>3,
+ "resultTypeID"=>3,
+ "resultTypeKind"=>"Unknown",
+ "resultDescription"=>"Ergebnis nach Nachspielzeit"}
+
+
+  DFB Pokal 2025/2026
 =end
+
+
+
 
    ht  = nil
    ft  = nil
    et  = nil
    pen = nil
+
+   maybe_ft = nil
+   maybe_et = nil
 
    h.each do |result|
        ## note - assume extra time for both options nows
@@ -95,11 +128,33 @@ def self.build_score( h )
                 result['pointsTeam1'],
                 result['pointsTeam2'],
            ]
+        ##
+        ##  note if resultName is Endergebnis this might actually
+        ##   be   after penalty shootout or extra time!!!
+        ##    check if      "resultName": "nach 90 Minuten"
+        ##    is present too!!
         elsif result['resultTypeKind'] == 'After90Minutes' ## ||
           ##    result['resultName'] == 'Endergebnis' ##  ||
           ##  result['resultName'] == 'nach Nachspielzeit'   ## !!!!
           ## desc => Ergebnis nach Ende der offiziellen Spielzeit
          ft = [
+              result['pointsTeam1'],
+              result['pointsTeam2'],
+         ]
+        ### note:
+        ##   for now resultName: "nach 90 Minutes"  overwrites
+        ##          first After90Minutes!!! (assuming this is kind of Endergebnis really incl. extra-time or penalty shootout)
+        elsif result['resultTypeKind'] == 'Unknown' &&
+              result['resultName'] == 'nach 90 Minuten'
+            puts "!! warn - weirdo Unknown/nach 90 Minuten result found"
+         ft = [
+              result['pointsTeam1'],
+              result['pointsTeam2'],
+         ]
+        elsif result['resultTypeKind'] == 'Unknown' &&
+              result['resultName'] == 'Endergebnis'
+            puts "!! warn - weirdo Unknown/Endergebnis result found"
+         maybe_ft = [
               result['pointsTeam1'],
               result['pointsTeam2'],
          ]
@@ -111,6 +166,13 @@ def self.build_score( h )
             result['pointsTeam1'],
             result['pointsTeam2'],
            ]
+          elsif  result['resultTypeKind'] == 'Unknown' &&
+                 result['resultName'] == 'Nachspielzeit'
+            puts "!! warn - weirdo Unknown/Nachspielzeit result found"
+            maybe_et = [
+             result['pointsTeam1'],
+             result['pointsTeam2'],
+            ]
         elsif  result['resultTypeKind'] == 'AfterPenalties' ## ||
             ##   result['resultName'] == 'Elfmeterschießen'  ||
             ##   result['resultName'] == 'nach Elfmeterschießen'
@@ -126,7 +188,28 @@ def self.build_score( h )
         end
    end
 
+## note -   DFB Pokal 2025/2026
+###   requires hack
+##       if     Nachspielzeit  (et) present
+##      only accept if different from ft  or pen is present!!!
 
+    if maybe_et
+      if pen || maybe_et != ft
+        et = maybe_et
+      else
+         puts "!! WARN - ignoring et (Unknown/Nachspielzeit) result in:"
+         pp h
+      end
+    end
+
+    if maybe_ft
+       if ft.nil?
+          ft = maybe_ft
+       else
+         puts "!! WARN - ignoring ft (Unknown/Endergebnis) result in:"
+         pp h
+       end
+    end
 
    Score.new( ht: ht, ft: ft, et: et, pen: pen )
 end
@@ -144,6 +227,20 @@ def self._clean( str )
     else
       str
     end
+end
+
+=begin
+@ Sportpark Ronhof | Thomas Sommer, Fürth
+@ Sportforum "Sojus 31", Zwickau
+@ "Allianz Arena, München
+=end
+def self._clean_geo( str )
+   return nil if str.nil?
+
+   str = str.gsub( %r{["|]}, '' )       ## remove "|
+   str = str.gsub( %r{[ ]{2,}}, ' ' )   ## squish spaces (maybe move "upstream" to clean)
+
+   _clean( str )
 end
 
 
@@ -214,8 +311,8 @@ def self.build_match( h )
            ## group / round e.g. "1. Runde Gruppenphase"
            round:   _clean(h['group']['groupName']),
 
-           ground:  _clean(location['locationStadium']),
-           city:    _clean(location['locationCity']),
+           ground:  _clean_geo(location['locationStadium']),
+           city:    _clean_geo(location['locationCity']),
 
            att:     h['numberOfViewers']     ## attendance (as integer number)
     )

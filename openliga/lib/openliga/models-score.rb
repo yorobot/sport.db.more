@@ -45,12 +45,17 @@ class Score
     if pen?
         if et?
           buf << "#{@et[0]}-#{@et[1]} a.e.t."
-        end
-        if ft?
+          if ft?
+            buf << " (#{@ft[0]}-#{@ft[1]}"
+            buf << ", #{@ht[0]}-#{@ht[1]}"  if ht?
+            buf << ")"
+          end
+        elsif ft?
+          ###  pen without et e.g. in copa
+          ##          use  2-2 (1-1), 5-3 pen. or such
           buf << " "  unless buf.empty?
-          buf << "(#{@ft[0]}-#{@ft[1]}"
-          buf << ", #{@ht[0]}-#{@ht[1]}"  if ht?
-          buf << ")"
+          buf << "#{@ft[0]}-#{@ft[1]}"
+          buf << " (#{@ht[0]}-#{@ht[1]})"  if ht?
         end
         buf << ", "   unless buf.empty?
         buf << "#{@pen[0]}-#{@pen[1]} pen."
