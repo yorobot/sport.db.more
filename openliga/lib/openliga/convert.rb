@@ -20,6 +20,26 @@ def self.convert( league:, season: )
     ## puts "  #{data_teams.size} team(s)"
 
 
+    body = _convert( data )
+
+###
+###  auto-add header
+  header =<<TXT
+###
+#  converted from openligadb.de json to Football.TXT
+#    for source, see https://api.openligadb.de/getmatchdata/#{info.shortcut}/#{info.season}
+
+= #{info.name}
+
+TXT
+
+  header + body
+end
+
+
+
+def self._convert( data )
+
   recs = []
 
   matches = data
@@ -39,21 +59,8 @@ def self.convert( league:, season: )
 
   ## pp recs
 
-
-  header =<<TXT
-###
-#  converted from openligadb.de json to Football.TXT
-#    for source, see https://api.openligadb.de/getmatchdata/#{info.shortcut}/#{info.season}
-
-= #{info.name}
-
-TXT
-
-  body = pp_matches( recs )
-
-
-  header + body
-end  # method self.convert
+  pp_matches( recs )
+end  # method self._convert
 
 
 

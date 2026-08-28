@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+## tip: to test run:
+##   ruby -I ./lib bin/openliga
+
+
+##
+## note - always use latest (local) if present
+$LOAD_PATH.unshift( '/sports/yorobot/sport.db.more/openliga/lib' )
+
+require 'openliga'
+
+
+Openliga::Tool.main( ARGV )

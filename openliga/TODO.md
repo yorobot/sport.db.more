@@ -1,6 +1,18 @@
 ## Todos
 
 
+**what's missing / to be done?**
+note:  conversion for now ignores
+- groups (Group A, etc.) for matches / teams used in
+- datetime_utc
+- will not work for penalty WITHOUT extra-time (e.g. Copa America)
+
+
+about datetime_utc
+- the worldcup, for example, uses  western european standard time for "local" datetime
+  and  utc for utc (no real local time in use)
+
+
 
 ```
 missing   a.e.t. score in

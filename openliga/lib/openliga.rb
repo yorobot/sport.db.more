@@ -21,3 +21,6 @@ require_relative 'openliga/convert-goals'
 
 
 require_relative 'openliga/pp_matches'
+
+
+require_relative 'openliga/tool'
