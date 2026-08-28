@@ -37,7 +37,7 @@ def self.convert( league:, season: )
       end
   end
 
-  recs
+  ## pp recs
 
 
   header =<<TXT

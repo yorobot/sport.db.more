@@ -12,8 +12,8 @@ Webcache.root = './cache'  ### c:\sports\cache
 
 
 
-## outdir = "./tmp2"
-outdir = "/sports/openfootball/deutschland/openliga"
+outdir = "./tmp2"
+## outdir = "/sports/openfootball/deutschland/openliga"
 
 
 ['de.1', 'de.2', 'de.3', 'de.cup'].each do |code|

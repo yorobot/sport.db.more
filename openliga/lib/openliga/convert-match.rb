@@ -38,6 +38,22 @@ def self._clean_geo( str )
 end
 
 
+def self._clean_name( str ) ## player name
+  ## e.g.
+  ##  Poulsen, Yussuf   =>  Poulsen Yussuf
+  ##    maybe auto-turn around later - why? why not?
+
+   return nil if str.nil?
+
+   str = str.gsub( %r{[,]}, '' )       ## remove ",
+   str = str.gsub( %r{[ ]{2,}}, ' ' )   ## squish spaces (maybe move "upstream" to clean)
+
+   _clean( str )
+end
+
+
+
+
 def self.build_match( h )
 
 =begin
@@ -65,16 +81,31 @@ def self.build_match( h )
 
 =end
 
-     results = h['matchResults']
-     score = if results.is_a?(Array)
-                if results.empty?
+     score = if h['matchResults'].is_a?(Array)
+                if h['matchResults'].empty?
                    nil   ## note - return nil on empty array e.g. []
                 else
-                   build_score( results )
+                   build_score( h['matchResults'] )
                 end
              else
-                raise ArgumentError,  "matchResults array expected; got #{results}"
+                raise ArgumentError,  "matchResults array expected; got #{h['matchResults']}"
              end
+
+
+     team1_id = h['team1']['teamId']
+     team2_id = h['team2']['teamId']
+
+     goals = if h['goals'].is_a?(Array)
+                if h['goals'].empty?
+                   nil   ## note - return nil on empty array e.g. []
+                else
+                   build_goals( h['goals'], team1: team1_id,
+                                            team2: team2_id )
+                end
+             else
+                raise ArgumentError,  "goals array expected; got #{h['goals']}"
+             end
+
 
      location = h['location'] || {}
 
@@ -96,6 +127,7 @@ def self.build_match( h )
 
            finished:  h['matchIsFinished'],  ## assume bool
            score:     score,
+           goals:     goals,
 
            # local time
            date: date,

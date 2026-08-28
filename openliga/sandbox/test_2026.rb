@@ -9,9 +9,14 @@ Webcache.root = './cache'  ### c:\sports\cache
 
 ## try de.1 - 1. bundesliga
 
-Openliga::Metal.matches( 'bl1', 2026 )  # 2026/27
-Openliga::Metal.teams( 'bl1', 2026 )
-Openliga::Metal.goalgetters( 'bl1', 2026 )
+## Openliga::Metal.matches( 'bl1', 2026 )  # 2026/27
+## Openliga::Metal.teams( 'bl1', 2026 )
+## Openliga::Metal.goalgetters( 'bl1', 2026 )
+
+
+buf = Openliga.convert( league: 'de.1', season: '2025/26' )
+puts buf
+
 
 __END__
 
