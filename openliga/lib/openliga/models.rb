@@ -50,7 +50,7 @@ Goal = Struct.new(  :team,  ## expect 1|2 or nil
       buf = String.new
 
       ## score required !!!
-      buf << "#{score[0]}-#{score[1]} "
+      buf << "#{score[0]}-#{score[1]}  "  ## note - use double (two) space for now!!
       buf <<  (name ? name : 'N.N.')      ## note - if no name use N.N. for now!!
       if m
          if stoppage

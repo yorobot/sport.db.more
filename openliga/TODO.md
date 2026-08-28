@@ -1,6 +1,7 @@
 ## Todos
 
 
+
 ```
 missing   a.e.t. score in
 ==> [1/1, 20/37] reading >openliga/tmp/2023-24_uefa.cl.txt<...
@@ -9,7 +10,12 @@ missing   a.e.t. score in
 ```
 
 
-- [ ] add/check goal / goal scorers
+
+
+- [ ] maybe better
+      (re)sort matches to group all matches for stage/round/group together !!
+     maybe sort
+      by rounds and include all matches (even if breaking chronological order) ???
 
 
 ```
@@ -53,9 +59,5 @@ Wed Mar 3
 
 ## check (common) name for Nachtrag spiele or
          even Vortrag (vorgezogene) spiele in english?
-
-
-or  maybe sort
-    by rounds and include all matches (even if breaking chronological order) ???
 
 ```

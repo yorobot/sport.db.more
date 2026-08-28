@@ -66,9 +66,37 @@ To be continued...
 
 
 
+
 ### About the Football (Match) Data
 
-Conversion to Football.TXT Conversion Sample - openliga/2025-26_de.cup.txt:
+Conversion to Football.TXT Conversion Samples
+
+
+openliga/2020-21_de.1.txt:
+
+```
+###
+#  converted from openligadb.de json to Football.TXT
+#    for source, see https://api.openligadb.de/getmatchdata/bl1/2020
+
+= 1. Fußball-Bundesliga 2020/2021
+
+▪ 1. Spieltag
+Fri Sep 18 2020
+  20:30  FC Bayern München  v  FC Schalke 04      8-0 (3-0)  @ Allianz Arena, München
+            (1-0  S. Gnabry 4'
+             2-0  Goretzka 19'
+             3-0  Robert Lewandowski  31' (p)
+             4-0  S. Gnabry 47'
+             5-0  S. Gnabry 59'
+             6-0  T. Müller 69'
+             7-0  Sanê 71'
+             8-0  Musiala  81')
+...
+```
+or
+
+openliga/2025-26_de.cup.txt:
 
 ```
 ###
@@ -102,20 +130,20 @@ Sat Aug 16
 ▪ Halbfinale
 Wed Apr 22
   20:45  Bayer 04 Leverkusen      v FC Bayern München          0-2 (0-1)
-            (0-1 H. Kane 22'
-             0-2 Luis Díaz 90+4')
+            (0-1  H. Kane 22'
+             0-2  Luis Díaz 90+4')
 Thu Apr 23
   20:45  VfB Stuttgart            v SC Freiburg                2-1 aet (1-1, 0-1)
-            (0-1 M. Eggestein 28'
-             1-1 D. Undav 70'
-             2-1 T. Tomas 119')
+            (0-1  M. Eggestein 28'
+             1-1  D. Undav 70'
+             2-1  T. Tomas 119')
 
 ▪ Endspiel
 Sat May 23
   20:00  FC Bayern München        v VfB Stuttgart              3-0 (0-0)
-            (1-0 H. Kane 55'
-             2-0 H. Kane 80'
-             3-0 H. Kane 90+2' (p))
+            (1-0  H. Kane 55'
+             2-0  H. Kane 80'
+             3-0  H. Kane 90+2' (p))
 ```
 
 
@@ -127,7 +155,7 @@ there is no cancelled, annulled, awarded, abandonded, etc.
 
 
 for goal minutes there is only an `is_overtime: true|false` flag for stoppage/injury/added time -
-and whilte auto-calculation is possible if
+and while auto-calculation is possible if
 recorded as `46+ => 45+1` or `95+ => 90+5`  or such  BUT
 some entries are only records  as `45+` or `90+`
 resulting in  `45+0` or `90+0`
@@ -139,7 +167,7 @@ for penalty shootouts there is a weirdo way to map to "plain" goals
 starting with the after-extra time scor  e.g.
 
 ```
-SG Sonnenhof Großaspach  v DSC Arminia Bielefeld      2-2 aet (2-2, 1-2), 5-2 pen
+SG Sonnenhof Großaspach  v  DSC Arminia Bielefeld      2-2 aet (2-2, 1-2), 5-2 pen
             (...
              3-2 Arbnor Nuraj (p)
              4-2 Luca Molinari (p)

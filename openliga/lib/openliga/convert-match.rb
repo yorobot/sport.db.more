@@ -2,84 +2,8 @@ module Openliga
 
 
 
-def self._clean( str )
-  ## note - accept nil
-  ##   turn blank strings e.g "" or "  " into nil
-  ##    remove leading and trailing spaces
-   return nil if str.nil?
-
-    str = str.strip
-    if str.empty?
-       nil
-    else
-      str
-    end
-end
-
-=begin
-@ Sportpark Ronhof | Thomas Sommer, Fürth
-@ Sportforum "Sojus 31", Zwickau
-@ "Allianz Arena, München
-
-  or add into protected_name token - why? why not?
-e.g.
-@ ‹Sportpark Ronhof | Thomas Sommer›, Fürth
-@ ‹Sportforum "Sojus 31"›, Zwickau
-@ ‹"Allianz Arena›, München       -- really better FIX typo
-=end
-
-def self._clean_geo( str )
-   return nil if str.nil?
-
-   str = str.gsub( %r{["|]}, '' )       ## remove "|
-   str = str.gsub( %r{[ ]{2,}}, ' ' )   ## squish spaces (maybe move "upstream" to clean)
-
-   _clean( str )
-end
-
-
-def self._clean_name( str ) ## player name
-  ## e.g.
-  ##  Poulsen, Yussuf   =>  Poulsen Yussuf
-  ##    maybe auto-turn around later - why? why not?
-
-   return nil if str.nil?
-
-   str = str.gsub( %r{[,]}, '' )       ## remove ",
-   str = str.gsub( %r{[ ]{2,}}, ' ' )   ## squish spaces (maybe move "upstream" to clean)
-
-   _clean( str )
-end
-
-
-
-
 def self.build_match( h )
 
-=begin
-    "location": {
-      "locationID": 34,
-      "locationCity": "München",
-      "locationStadium": "Allianz Arena"
-    },
-    "numberOfViewers": 61591
--or-
-   "location": {
-      "locationID": 184,
-      "locationCity": "Dortmund",
-      "locationStadium": "Signal-Iduna-Park"
-    },
-    "numberOfViewers": 300
--or-
-     "location": {
-      "locationID": 1091,
-      "locationCity": "",
-      "locationStadium": null
-    },
-
-  },
-
-=end
 
      score = if h['matchResults'].is_a?(Array)
                 if h['matchResults'].empty?
@@ -92,22 +16,17 @@ def self.build_match( h )
              end
 
 
-     team1_id = h['team1']['teamId']
-     team2_id = h['team2']['teamId']
-
      goals = if h['goals'].is_a?(Array)
                 if h['goals'].empty?
                    nil   ## note - return nil on empty array e.g. []
                 else
-                   build_goals( h['goals'], team1: team1_id,
-                                            team2: team2_id )
+                   build_goals( h['goals'], team1: h['team1']['teamId'],
+                                            team2: h['team2']['teamId'] )
                 end
              else
                 raise ArgumentError,  "goals array expected; got #{h['goals']}"
              end
 
-
-     location = h['location'] || {}
 
      ##
      ## note - ALWAYS parse datetime for now  !!!
@@ -119,6 +38,8 @@ def self.build_match( h )
      date  =   Date.new( datetime.year, datetime.month, datetime.day )
      time  =   "%02d:%02d" % [datetime.hour, datetime.min]
 
+
+     location = h['location'] || {}
 
 
      Match.new(
@@ -146,3 +67,28 @@ end
 
 
 end  ## module Openliga
+
+
+
+__END__
+
+
+    "location": {
+      "locationID": 34,
+      "locationCity": "München",
+      "locationStadium": "Allianz Arena"
+    },
+    "numberOfViewers": 61591
+-or-
+   "location": {
+      "locationID": 184,
+      "locationCity": "Dortmund",
+      "locationStadium": "Signal-Iduna-Park"
+    },
+    "numberOfViewers": 300
+-or-
+     "location": {
+      "locationID": 1091,
+      "locationCity": "",
+      "locationStadium": null
+    },
