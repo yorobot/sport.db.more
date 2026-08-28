@@ -44,7 +44,7 @@ class Score
     buf = String.new
     if pen?
         if et?
-          buf << "#{@et[0]}-#{@et[1]} a.e.t."
+          buf << "#{@et[0]}-#{@et[1]} aet"
           if ft?
             buf << " (#{@ft[0]}-#{@ft[1]}"
             buf << ", #{@ht[0]}-#{@ht[1]}"  if ht?
@@ -58,9 +58,9 @@ class Score
           buf << " (#{@ht[0]}-#{@ht[1]})"  if ht?
         end
         buf << ", "   unless buf.empty?
-        buf << "#{@pen[0]}-#{@pen[1]} pen."
+        buf << "#{@pen[0]}-#{@pen[1]} pen"
     elsif et?
-        buf << "#{@et[0]}-#{@et[1]} a.e.t."
+        buf << "#{@et[0]}-#{@et[1]} aet"
         if ft?
             buf << " (#{@ft[0]}-#{@ft[1]}"
             buf << ", #{@ht[0]}-#{@ht[1]}"  if ht?

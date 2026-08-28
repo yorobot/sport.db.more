@@ -8,8 +8,17 @@ module Openliga
   ##
   ##  "leagueName": "Champions League 2026/2027",
   ##  "leagueShortcut": "ucl",
-  ##  "leagueSeason": "2026",
-  ###
+  ##  "leagueSeason": 2026,
+  ##
+  ## from https://api.openligadb.de
+  ##   Name	Description
+  ##  leagueShortcut  - string - der Shortcut der Liga, z.B. 'bl1' für die erste Bundesliga
+  ##  leagueSeason  - integer($int32) - die Saison der Liga, z.B. 2019 für die Saison 2019/2020
+
+
+
+
+
   League = Struct.new( :name, :season, :shortcut)
 
 
@@ -25,7 +34,7 @@ module Openliga
           ## note - normalize season!!
           season = Season.parse( row['season'] )
           seasons[ season.to_key ] = League.new( name:     row['league_name'],
-                                                 season:   row['league_season'],
+                                                 season:   row['league_season'].to_i(10),
                                                  shortcut: row['league_shortcut'] )
       end
     end

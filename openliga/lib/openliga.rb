@@ -14,6 +14,8 @@ require_relative 'openliga/models-match'
 require_relative 'openliga/models-score'
 
 require_relative 'openliga/convert'
+require_relative 'openliga/convert-match'
+require_relative 'openliga/convert-score'
 
 
 require_relative 'openliga/pp_matches'

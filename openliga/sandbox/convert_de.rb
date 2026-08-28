@@ -1,6 +1,6 @@
 #####
 #  to run use
-#   $ ruby sandbox/test_convert.rb
+#   $ ruby sandbox/convert_de.rb
 
 
 $LOAD_PATH.unshift( '/sports/rubycocos/webclient/webget/lib' )
