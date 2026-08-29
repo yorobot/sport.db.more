@@ -64,9 +64,7 @@ To be continued...
 
 
 
-
-
-### About the Football (Match) Data
+### Bonus - `openliga` Command-Line Tool
 
 Use the `openliga` command-line tool to
 (i) download openligadb.de match data (in JSON) and
@@ -185,6 +183,9 @@ Sat May 23
 ```
 
 
+
+
+### About the OpenLigaDB.de (Football) Match Data
 
 **What's missing (upstream)?**
 
