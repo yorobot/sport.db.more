@@ -33,12 +33,27 @@ class Metal
     get( "#{BASE_URL}/getavailableleagues" )
   end
 
+
+###
+#  note - MUST escape URL path  e.g.  /getmatchdata/BLÖ/2026
+#                                =>   /getmatchdata/BL%C3%96/2026
+#
+#  Extra Tip:
+#  use CGI.escape !!
+#    Avoid URI.encode_www_form_component here
+#    While URI.encode_www_form_component is also built into Ruby,
+#    it turns spaces into plus signs (+) instead of %20.
+#    For URL paths (the parts between the slashes /),
+#     CGI.escape is usually the safer choice because it strictly
+#      uses percent-encoding (%).
+
+
   ## api call - /getavailableteams/{code}/{year}
   def self.teams( code, year )
     get( teams_url( code, year ) )
   end
   def self.teams_url( code, year )
-    "#{BASE_URL}/getavailableteams/#{code}/#{year}"
+    "#{BASE_URL}/getavailableteams/#{CGI.escape(code)}/#{year}"
   end
 
   ## api call - /getmatchdata/{code}/{year}
@@ -46,12 +61,12 @@ class Metal
     get( matches_url( code, year ) )
   end
   def self.matches_url( code, year )
-    "#{BASE_URL}/getmatchdata/#{code}/#{year}"
+    "#{BASE_URL}/getmatchdata/#{CGI.escape(code)}/#{year}"
   end
 
   ## api call - /getgoalgetters/{code}/{year}
   def self.goalgetters( code, year )
-    get( "#{BASE_URL}/getgoalgetters/#{code}/#{year}" )
+    get( "#{BASE_URL}/getgoalgetters/#{CGI.escape(code)}/#{year}" )
   end
 
 

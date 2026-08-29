@@ -2,6 +2,8 @@
 require 'season/formats'   ## add season support
 require 'webget'           ## incl. webget, webcache, webclient, etc.
 
+require 'cgi'  ## todo - check if already required upstream!!!
+               ##   pulled-in for CGI.escpape  (URI path) e.g. /getmatchdata/BLÖ/2026
 
 
 ###

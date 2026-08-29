@@ -66,8 +66,46 @@ To be continued...
 
 
 
-
 ### About the Football (Match) Data
+
+Use the `openliga` command-line tool to
+(i) download openligadb.de match data (in JSON) and
+(ii) convert to the Football.TXT format. Try:
+
+```
+$ openliga -h
+```
+
+resulting in:
+
+```
+Usage: openliga [options] CODE
+    -m, --metal           use openligadb.de shortcuts/codes and seasons/years (default: false)
+    -o, --output=PATH     write football.txt conversion to output path (default: none)
+        --season=SEASON   season (default: none)
+```
+
+examples with "common football.txt codes"
+e.g. `de.1`, `de.2`, `de.3`, `de.cup`:
+
+```
+$ openliga de.1
+$ openliga de.cup
+
+$ openliga de.1  --output=2026-27_de.1.txt
+$ openliga de.1  --season=2020/21 --output=2020-21_de.1.txt
+$ openliga de.cup --season=2025/26 --output=2025-26_de.cup.txt
+```
+
+or use the original openligadb.de code/shortcut (and season/year)
+with the `-m/--metal` flag:
+
+```
+$ openliga bl1 --metal
+$ openliga bl1 --metal --season=2020
+```
+
+
 
 Conversion to Football.TXT Conversion Samples
 
@@ -169,12 +207,22 @@ starting with the after-extra time scor  e.g.
 ```
 SG Sonnenhof Großaspach  v  DSC Arminia Bielefeld      2-2 aet (2-2, 1-2), 5-2 pen
             (...
-             3-2 Arbnor Nuraj (p)
-             4-2 Luca Molinari (p)
-             5-2 Franz Xaver Bleicher (p))
+             3-2  Arbnor Nuraj (p)
+             4-2  Luca Molinari (p)
+             5-2  Franz Xaver Bleicher (p))
+
+-or-
+
+England  v Spanien                    1-1 aet, 1-1 pen
+            (0-1  M. Caldentey 25'
+             1-1  Alessia RUSSO 57'
+             1-2  P. Guijarro (p)
+             2-2  A. Greenwood (p)
+             3-2  N. Charles (p)
+             4-2  C. Kelly (p))
 ```
 
-and there's no way to record missed/saved penalties (??).
+and there's no way to record missed/saved penalties.
 
 
 

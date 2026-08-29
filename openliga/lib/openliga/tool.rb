@@ -19,14 +19,14 @@ opts = {
 
 
 parser = OptionParser.new do |parser|
-parser.banner = "Usage: #{$PROGRAM_NAME} [options] NAME"
+parser.banner = "Usage: #{$PROGRAM_NAME} [options] CODE"
 
-   parser.on( "--metal",
+   parser.on( "--metal",  "-m",
                "use openligadb.de shortcuts/codes and seasons/years (default: #{opts[:metal]})" ) do |metal|
      opts[:metal] = true
    end
 
-   parser.on( "-o PATH", "--output",
+   parser.on( "--output=PATH", "-o",
                "write football.txt conversion to output path (default: #{opts[:outpath]||'none'})" ) do |outpath|
      opts[:outpath] = outpath
    end
@@ -104,7 +104,12 @@ end
    data = Metal.matches( code, year )
 
    puts "   #{data.size} match(es)"
-   pp data[0]    ## dump first match
+
+   if data.empty?
+     ## do nothing; skip convert (& write)
+   else
+
+    pp data[0]    ## dump first match
 
 ##################
 ### step 2 - convert to football.txt
@@ -115,20 +120,22 @@ end
 ###
 ###  auto-add header
 ###    note - use leagueName from first match
+   title = data[0]['leagueName']
+
   header =<<TXT
 ###
 #  converted from openligadb.de json to Football.TXT
 #    for source, see https://api.openligadb.de/getmatchdata/#{code}/#{year}
 
-= #{data[0]['leagueName']}
+= #{title}
 TXT
 
+     puts header+body
 
-   puts header+body
-
-   if opts[:outpath]
-       puts "  writing football.txt to >#{opts[:outpath]}<"
-       write_text( opts[:outpath], header+body )
+     if opts[:outpath]
+         puts "  writing football.txt to >#{opts[:outpath]}<"
+         write_text( opts[:outpath], header+body )
+     end
    end
 
    puts "bye"
