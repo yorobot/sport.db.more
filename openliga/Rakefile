@@ -4,7 +4,7 @@ require 'hoe'
 
 Hoe.spec 'openliga' do
 
-  self.version = '0.0.1'
+  self.version = '1.0.0'
 
   self.summary = "openliga - openligadb.de api client/wrapper and football.txt format converter"
   self.description = summary

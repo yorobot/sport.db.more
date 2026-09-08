@@ -1,4 +1,4 @@
-# openliga - openligadb.de api client/wrapper and football.txt format converter
+# openliga -  openligadb.de api client/wrapper and football.txt format converter
 
 
 * home  :: [github.com/sportdb/sport.db](https://github.com/sportdb/sport.db)
