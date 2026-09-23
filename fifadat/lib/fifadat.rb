@@ -1,3 +1,8 @@
+##
+## note - always use latest (local) version if present
+$LOAD_PATH.unshift( '/sports/rubycocos/webclient/webclient/lib' )
+$LOAD_PATH.unshift( '/sports/rubycocos/webclient/webget/lib' )
+
 require 'cocos'   ## check if incl webclient already?
 require 'webclient'
 

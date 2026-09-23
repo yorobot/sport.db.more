@@ -52,7 +52,7 @@ def collect_seasons( data )
 end
 
 
-outdir = "./lib/fifadat/config/seasons"
+outdir = "./config/seasons"
 
 
 args = ARGV
@@ -73,7 +73,8 @@ if name == 'clubs' || name == 'club'
       path = "./cache.json/seasons/#{code}_seasons.json"
       url  = Fifa::Metal.seasons_url( idCompetition: idCompetition)
 
-      fetch_json_if( url, path )
+      ## fetch_json_if( url, path )
+      fetch_json( url, path )
 
       data = read_json_v2( path )
       recs = collect_seasons( data )
@@ -90,7 +91,8 @@ else
   path = "./cache.json/seasons/#{name}_seasons.json"
   url  = Fifa::Metal.seasons_url( idCompetition: idCompetition)
 
-  fetch_json_if( url, path )
+  ## fetch_json_if( url, path )
+  fetch_json( url, path )
 
   data = read_json_v2( path )
   recs = collect_seasons( data )
