@@ -74,11 +74,15 @@ doc.each_match do |m|
 
 
      ##  always print time for now
-     if opts.timezone?
-         ## use   20:30 UTC+1  or 20:30 UTC-3
-         buf <<  "  #{m.date_local.strftime( '%H:%M' )} UTC%+d" % m.diff_in_hours
+     if m.date_only
+           buf <<  "       "
      else
-         buf <<  "  #{m.date_local.strftime( '%H:%M' )}"
+        if opts.timezone?
+           ## use   20:30 UTC+1  or 20:30 UTC-3
+           buf <<  "  #{m.date_local.strftime( '%H:%M' )} UTC%+d" % m.diff_in_hours
+       else
+           buf <<  "  #{m.date_local.strftime( '%H:%M' )}"
+       end
      end
 
 

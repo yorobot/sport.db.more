@@ -4,7 +4,9 @@ code, name, seasons,  opts,    opts_full
 ##
 ##  remove seasons - why? why not?
 
-at,      Austria | Bundesliga,     2025/26,,
+at,      Austria | Bundesliga,     2025/26 2026/27,,
+at.cup,  Austria | Cup,            2025/26 2026/27,,
+
 de,      Germany | Bundesliga,     2025/26,,
 eng,     England | Premier League, 2025/26,,
 

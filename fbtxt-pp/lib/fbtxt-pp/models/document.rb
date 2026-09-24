@@ -63,8 +63,12 @@ def calc_start_end_dates
   @data['matches'].each do |_m|
 
      ## date_utc       = parse_date_utc(   _m['datetime_utc'] )
-     date_local     = parse_date_local( _m['datetime_local'] )
-
+     ### -fix-fix-fix-   check for date only!!!
+     date_local     =  if _m['date']
+                            Date.strptime( _m['date'], '%Y-%m-%d' )
+                       else
+                         parse_date_local( _m['datetime_local'] )
+                       end
      ## note - alway use local datetime for now
 
      if start_date.nil? || date_local  < start_date
