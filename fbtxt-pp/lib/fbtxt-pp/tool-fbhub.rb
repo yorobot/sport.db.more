@@ -9,12 +9,19 @@ module Fbhub
 
 
 LEAGUE_CODES = {
-    'de'  => 'de.1',
     'eng' => 'eng.1',
+    'de'  => 'de.1',
     'es'  => 'es.1',
     'it'  => 'it.1',
     'fr'  => 'fr.1',
+
     'at'  => 'at.1',
+    'ch'  => 'ch.1',
+    'cz'  => 'cz.1',
+    'tr'  => 'tr.1',
+    'gr'  => 'gr.1',
+    'sco'  => 'sco.1',
+
     'mx'  => 'mx.1',
 }
 
@@ -26,7 +33,9 @@ opts = {
   push:     false,
   ffwd:     false,
 
-  full:     true,   ## add full details page - true|false
+  full: false,
+  ## full:     true,   ## add full details page - true|false
+
   test:     true,  ## true,   ## sets push & ffwd to false
   test_dir:  './o',
   convert_dir:  '/sports/cache.api.fifa',
@@ -112,7 +121,7 @@ sync.git_fast_forward_if_clean    if opts[:ffwd]
 datasets.each do |slug, seasons|
   puts "==> gen #{slug} - #{seasons.size} seasons(s)..."
 
-  config = CONFIGS[ slug ]
+  config = CONFIGS[ slug.to_sym ]  ## note - use symbol for lookup!!
   if config.nil?
      puts "!! no pp config found for slug >#{slug}<; keys/codes include:"
      pp CONFIGS.keys
