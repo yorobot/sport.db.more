@@ -24,9 +24,11 @@ def pp_matches(  season:,
    buf << "\n"
 
 
-last_round   = nil
-last_date    = nil
-last_year    = nil   ## track running year
+last_round       = nil
+last_date        = nil
+last_time        = nil
+last_utc_offset  = nil
+last_year        = nil   ## track running year
 
 
 doc.each_match do |m|
@@ -42,8 +44,8 @@ doc.each_match do |m|
    ## note - make round
    ##         =  stage  +  group (optional)  +  matchday (optional)
    round  = m.stage
-   round += ", #{m.group}"       if m.group
    round += " - #{m.matchday}"   if m.matchday
+   round += ", #{m.group}"       if m.group
 
 
 
@@ -54,7 +56,9 @@ doc.each_match do |m|
          buf << "▪ #{round}\n"
 
         last_round = round
-        last_date  = nil
+        last_date          = nil
+        last_time          = nil
+        last_utc_offsset   = nil
    end
 
 
@@ -70,19 +74,22 @@ doc.each_match do |m|
             else
                  buf << "#{m.date_local.strftime('%a %b %-e')}\n"
             end
+            last_time          = nil
+            last_utc_offsset   = nil
       end
 
-
-     ##  always print time for now
-     if m.date_only
+     ## note - skip printing same time again (use inheritance)
+     if m.time_local.nil? ||
+        (last_time       == m.time_local &&
+         last_utc_offset == m.utc_offset)
            buf <<  "       "
      else
-        if opts.timezone?
-           ## use   20:30 UTC+1  or 20:30 UTC-3
-           buf <<  "  #{m.date_local.strftime( '%H:%M' )} UTC%+d" % m.diff_in_hours
-       else
-           buf <<  "  #{m.date_local.strftime( '%H:%M' )}"
-       end
+          if opts.timezone?
+             ## use   20:30 UTC+1  or 20:30 UTC-3
+             buf <<  "  #{m.time_local} #{m.utc_offset}"
+          else
+             buf <<  "  #{m.time_local}"
+         end
      end
 
 
@@ -115,8 +122,10 @@ doc.each_match do |m|
       buf << "\n"
 
 
-   last_date = m.date_local
-   last_year = m.date_local.year
+   last_date       = m.date_local
+   last_year       = m.date_local.year
+   last_time       = m.time_local
+   last_utc_offset = m.utc_offset
 
 
     ## skip adding goals if teams not yet known!!

@@ -6,7 +6,7 @@ def self.build( score )
   if score.nil?
         raise ArgumentError, "Score.build - expected Hash or Array; got nil"
   elsif score.is_a?(Hash)
-      new( **score.transform_keys(&:to_sym) )
+      new( **score.transform_keys(&:to_sym).except( :type ) )
   elsif score.is_a?(Array)
        new( reported: score )
   else

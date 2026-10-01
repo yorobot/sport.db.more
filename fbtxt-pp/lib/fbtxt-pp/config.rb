@@ -49,7 +49,7 @@ def read_config_pp( *paths )
             opts_full: {}.merge( FORMAT_OPTS_FULL_DEFAULTS, _parse_format_opts( rec['opts_full'] )),
       }
 
-      config[ key ] = h
+      config[ key.to_sym ] = h
     end
   end
   config

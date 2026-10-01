@@ -8,8 +8,9 @@ class Match
 
 attr_reader :team1,    :team2,
             :score,
-            :date_utc, :date_local,  :utc_offset,
-            :date_only,
+            :datetime_utc,
+            :date_local,
+            :time_local, :utc_offset,
             :stadium,
             :goals1, :goals2
 
@@ -29,29 +30,28 @@ def initialize( doc, data )
 
      ####
      #  note -  match might NOT be timed only scheduled (e.g. only date no time)
-     if @h['date']
-       ## --fix-fix-fix--
-       ##      change date_utc to datetime_utc
-       ##        and break date_local into
-       ##                  date_local & time_local !!!
-        @date_only =   Date.strptime( @h['date'], '%Y-%m-%d' )
-        @date_local = @date_only
+
+     ##
+     ## todo/fix
+     ##   support different date style formats - why? why not?
+     ##  for now use/prefer:
+     ##        "datetime_utc": "2026-08-08T16:15Z",
+     ##        "date_local": "2026-08-08",
+     ##        "time_local": "18:15 UTC+2",
+
+
+     if @h['date_local'] && @h['time_local'].nil?
+       @date_local =  Date.strptime( @h['date_local'], '%Y-%m-%d' )
      else
-       @date_utc       = parse_date_utc(   @h['datetime_utc'] )
-       @date_local     = parse_date_local( @h['datetime_local'] )
+       @datetime_utc   = parse_date_utc( @h['datetime_utc'] )
+       assert( @datetime_utc.sec == 0,  "sec 00 expected" )
 
-       assert( @date_utc.sec == 0 && @date_local.sec == 0,
-                "sec 00 expected" )
+       @date_local     = Date.strptime( @h['date_local'], '%Y-%m-%d' )
+       ## 18:15 UTC+2
+       ##  split into  18:15 and UTC+2
+       @time_local, @utc_offset  = @h['time_local'].split( /[ ]+/, 2)
 
-      ## note:  returns Rational (e.g. 3/1 or 1/4 etc.) use to_f/to_i to convert
-      ## diff_in_hours = ((localDateTime - dateTime) * 24).to_f
-      ## diff_in_days  =  localDateTime.jd - dateTime.jd
-
-       # note - offset is in rational fraction of a day (e.g. 1/12 for 2hours)
-       ##  was diff_in_hours
-       @utc_offset = (@date_local.offset * 24).to_i
-
-       ## pp [@date_utc, @date_local, @utc_offset]
+       ## pp [@datetime_utc, @date_local, @time_local, @utc_offset]
      end
 
 
@@ -75,7 +75,7 @@ def data() @h; end
 
 ##  todo - find a better name for timezone offset
 ##   use utc_offset - why? why not?
-alias_method :diff_in_hours, :utc_offset
+##  alias_method :diff_in_hours, :utc_offset
 
 
 def stage()      @h['stage']; end

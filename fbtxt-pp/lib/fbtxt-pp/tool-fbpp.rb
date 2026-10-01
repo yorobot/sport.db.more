@@ -61,6 +61,7 @@ pp config
 
 if config.nil?
   ## auto-fill with defaults!!
+    puts "note - no config found for #{key}; using defaults"
    config = { slug: key,
               name:  "#{key}",
               seasons: [],
