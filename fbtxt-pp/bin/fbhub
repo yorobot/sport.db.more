@@ -6,8 +6,8 @@
 
 ##
 ## note - always use latest (local) if present
-$LOAD_PATH.unshift( '/sports/yorobot/fbup/fbup/lib' )
-require 'fbup'
+$LOAD_PATH.unshift( '/sports/yorobot/fbup/openfootball/lib' )
+require 'openfootball'
 
 ##
 ## note - always use latest (local) if present

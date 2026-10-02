@@ -100,17 +100,17 @@ pp datasets
 root_dir =  if opts[:test]
                opts[:test_dir]
             else
-               Fbup::GitHubSync.root   # e.g. "/sports"
+               Openfootball::GitHubSync.root   # e.g. "/sports"
             end
 
 puts "  (output) root_dir: >#{root_dir}<"
 
 
-repos = Fbup::GitHubSync.find_repos( datasets )
+repos = Openfootball.find_repos( datasets )
 puts "  #{repos.size} repo(s):"
 pp repos
 
-sync  =  Fbup::GitHubSync.new( repos )
+sync  =  Openfootball::GitHubSync.new( repos )
 puts "  sync:"
 pp sync
 
@@ -129,53 +129,19 @@ datasets.each do |slug, seasons|
   end
 
   seasons.each do |season|
-     ## get repo config for flags and more
-      repo  = Fbup::GitHubSync::REPOS[ slug ]
-      flags = repo['flags'] || {}
-      classic_flag = flags['classic'] || false
 
-      pp repo
+      repo_path      = Openfootball.mkpath( code:   LEAGUE_CODES[slug]||slug,
+                                            season: season )
+      repo_path_full = Openfootball.mkpath( code:   LEAGUE_CODES[slug]||slug,
+                                            season: season,
+                                            suffix: 'full' )
 
-
-      basename = nil
-      if classic_flag
-         league_config = Fbup::LeagueConfig.find_by( code:   LEAGUE_CODES[slug]||slug,
-                                                      season: season )
-         if league_config.nil?
-            puts "!! ERROR - basename league config required for classic format; no config found for #{league_query} #{season}; sorry"
-            exit 1
-         end
-         basename  = league_config['basename']
-      else
-         ## change base name to league key
-         ##   todo - fix - make gsub smarter
-         ##    change at.cup to at_cup - why? why not?
-         basename = (LEAGUE_CODES[slug]||slug).gsub( '.', '' )
-      end
-
-
-      repo_path = "#{repo['owner']}/#{repo['name']}"
-      repo_path << "/#{repo['path']}"    if repo['path']  ## note: do NOT forget to add optional extra path!!!
-
-
-      outpath = "#{root_dir}/#{repo_path}"
-      outpath +=  if classic_flag
-                     "/#{season.to_path}/#{basename}.txt"
-                  else
-                     ## note - add season "inline" (to basename) or use dir
-                     "/#{season.to_path}_#{basename}.txt"
-                  end
-
-      outpath_full = "#{root_dir}/#{repo_path}"
-      outpath_full +=  if classic_flag
-                     "/#{season.to_path}/#{basename}-full.txt"
-                  else
-                     ## note - add season "inline" (to basename) or use dir
-                     "/#{season.to_path}_#{basename}-full.txt"
-                  end
+      outpath      = "#{root_dir}/#{repo_path}"
+      outpath_full = "#{root_dir}/#{repo_path_full}"
 
        puts "   writing to >#{outpath}<..."
        puts "   writing (full) to >#{outpath_full}<..."
+
 
        league_name      = config[:name]
        format_opts      = config[:opts]
